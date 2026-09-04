@@ -1,9 +1,10 @@
 import { createReadStream } from 'node:fs';
-import { stat } from 'node:fs/promises';
+import { lstat, realpath, stat } from 'node:fs/promises';
 import http from 'node:http';
 import path from 'node:path';
 import process from 'node:process';
 import { chromium } from 'playwright';
+import { decodeRequestPath, resolveWithin } from './safe-paths.mjs';
 
 function argument(name) {
   const index = process.argv.indexOf(name);
@@ -17,23 +18,38 @@ if (!lesson) {
   process.exit(1);
 }
 
-const root = path.resolve(process.cwd());
-const lessonDirectory = path.resolve(root, lesson);
-if (!lessonDirectory.startsWith(root)) throw new Error('Lekcja musi znajdować się w tym repozytorium.');
-const outputPath = path.resolve(lessonDirectory, output || 'presentation-backup.pdf');
+const root = await realpath(process.cwd());
+const lessonDirectory = await realpath(resolveWithin(root, lesson));
+resolveWithin(root, lessonDirectory);
+
+const outputName = output || 'presentation-backup.pdf';
+if (path.isAbsolute(outputName) || path.dirname(outputName) !== '.') {
+  throw new Error('Nazwa pliku PDF musi wskazywać plik bezpośrednio w katalogu lekcji.');
+}
+const outputPath = resolveWithin(lessonDirectory, outputName);
+try {
+  if ((await lstat(outputPath)).isSymbolicLink()) {
+    throw new Error('Plik PDF nie może być dowiązaniem symbolicznym.');
+  }
+} catch (error) {
+  if (error.code !== 'ENOENT') throw error;
+}
+
 const mimeTypes = { '.css': 'text/css', '.html': 'text/html', '.js': 'text/javascript', '.md': 'text/markdown', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.woff': 'font/woff', '.woff2': 'font/woff2' };
 
 const server = http.createServer(async (request, response) => {
-  const requestPath = decodeURIComponent(new URL(request.url, 'http://127.0.0.1').pathname);
-  const resolved = path.resolve(root, `.${requestPath}`);
-  if (!resolved.startsWith(root)) return response.writeHead(403).end();
   try {
-    const details = await stat(resolved);
-    const file = details.isDirectory() ? path.join(resolved, 'index.html') : resolved;
+    const requestPath = decodeRequestPath(request.url);
+    const requested = resolveWithin(root, `.${requestPath}`);
+    const details = await stat(requested);
+    const candidate = details.isDirectory() ? path.join(requested, 'index.html') : requested;
+    const file = await realpath(candidate);
+    resolveWithin(root, file);
+    if (!(await stat(file)).isFile()) throw new Error('Not a file');
     response.writeHead(200, { 'Content-Type': mimeTypes[path.extname(file)] || 'application/octet-stream' });
     createReadStream(file).pipe(response);
-  } catch {
-    response.writeHead(404).end();
+  } catch (error) {
+    response.writeHead(error.message?.includes('poza dozwolonym katalogiem') ? 403 : 404).end();
   }
 });
 

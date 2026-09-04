@@ -30,6 +30,9 @@
         slideNumber: 'c/t',
         controlsTutorial: false,
         transition: 'slide',
+        keyboard: {
+          83: () => Reveal.configure({ showNotes: Reveal.getConfig().showNotes ? false : 'inline' })
+        },
         plugins: [RevealMarkdown, RevealNotes]
       });
     </script>

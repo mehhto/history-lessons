@@ -1,10 +1,11 @@
 import { createReadStream } from 'node:fs';
-import { stat } from 'node:fs/promises';
+import { realpath, stat } from 'node:fs/promises';
 import http from 'node:http';
 import path from 'node:path';
 import process from 'node:process';
+import { decodeRequestPath, resolveWithin } from './safe-paths.mjs';
 
-const root = path.resolve(process.cwd());
+const root = await realpath(process.cwd());
 const port = Number(process.env.PORT || process.argv[2] || 8080);
 const mimeTypes = {
   '.css': 'text/css; charset=utf-8', '.html': 'text/html; charset=utf-8',
@@ -15,21 +16,20 @@ const mimeTypes = {
 };
 
 const server = http.createServer(async (request, response) => {
-  const requestPath = decodeURIComponent(new URL(request.url, `http://${request.headers.host}`).pathname);
-  const resolved = path.resolve(root, `.${requestPath}`);
-  if (!resolved.startsWith(root)) {
-    response.writeHead(403).end('Forbidden');
-    return;
-  }
   try {
-    const details = await stat(resolved);
-    const file = details.isDirectory() ? path.join(resolved, 'index.html') : resolved;
+    const requestPath = decodeRequestPath(request.url);
+    const requested = resolveWithin(root, `.${requestPath}`);
+    const details = await stat(requested);
+    const candidate = details.isDirectory() ? path.join(requested, 'index.html') : requested;
+    const file = await realpath(candidate);
+    resolveWithin(root, file);
     const fileDetails = await stat(file);
     if (!fileDetails.isFile()) throw new Error('Not a file');
     response.writeHead(200, { 'Content-Type': mimeTypes[path.extname(file).toLowerCase()] || 'application/octet-stream' });
     createReadStream(file).pipe(response);
-  } catch {
-    response.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' }).end('Nie znaleziono pliku.');
+  } catch (error) {
+    const status = error.message?.includes('poza dozwolonym katalogiem') ? 403 : 404;
+    response.writeHead(status, { 'Content-Type': 'text/plain; charset=utf-8' }).end(status === 403 ? 'Forbidden' : 'Nie znaleziono pliku.');
   }
 });
 
