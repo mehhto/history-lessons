@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Schemat trzech kierunków europejskich wypraw oceanicznych</title>
+  <desc id="desc">Współczesny schemat edukacyjny: szlaki z Europy przez Atlantyk do Karaibów, wokół Afryki do Indii oraz wyprawa dookoła świata.</desc>
+  <defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10z" fill="#c78421"/></marker></defs>
+  <rect width="1600" height="900" fill="#edf4f7"/>
+  <path d="M480 130 C680 100,780 230,780 410 C760 620,700 770,530 810 L400 690 C470 610,450 480,420 340z" fill="#d9e6cc" stroke="#496b5b" stroke-width="5"/>
+  <path d="M980 250 C1090 150,1370 210,1460 390 C1420 590,1250 690,1090 620 C1040 530,1010 430,980 250z" fill="#d9e6cc" stroke="#496b5b" stroke-width="5"/>
+  <path d="M220 190 C300 120,410 170,460 300 L410 430 C330 390,260 330,220 190z" fill="#d9e6cc" stroke="#496b5b" stroke-width="5"/>
+  <g font-family="Arial, sans-serif" fill="#17365d" text-anchor="middle"><text x="800" y="80" font-size="50" font-weight="700">Trzy kierunki wypraw — schemat</text><text x="800" y="855" font-size="24">Opracowanie edukacyjne, 2026. Nie jest mapą historyczną ani źródłem z epoki.</text></g>
+  <circle cx="470" cy="360" r="18" fill="#17365d"/><text x="470" y="325" font-family="Arial" font-size="32" fill="#17365d" text-anchor="middle">Europa</text>
+  <path d="M490 345 C650 230,780 220,930 290" fill="none" stroke="#b64242" stroke-width="12" marker-end="url(#arrow)"/><circle cx="945" cy="300" r="18" fill="#b64242"/><text x="950" y="250" font-family="Arial" font-size="30" fill="#7e2929" text-anchor="middle">Atlantyk → Karaiby</text><text x="950" y="285" font-family="Arial" font-size="26" fill="#7e2929" text-anchor="middle">1492</text>
+  <path d="M490 390 C570 610,750 720,1040 640" fill="none" stroke="#216a72" stroke-width="12" marker-end="url(#arrow)"/><circle cx="1060" cy="635" r="18" fill="#216a72"/><text x="1030" y="705" font-family="Arial" font-size="30" fill="#12505a" text-anchor="middle">wokół Afryki → Indie</text><text x="1030" y="740" font-family="Arial" font-size="26" fill="#12505a" text-anchor="middle">1498</text>
+  <path d="M480 410 C270 620,570 790,980 740 C1370 700,1490 420,1170 260" fill="none" stroke="#c78421" stroke-width="12" stroke-dasharray="25 18" marker-end="url(#arrow)"/><text x="790" y="605" font-family="Arial" font-size="30" fill="#8a5b16" text-anchor="middle">wyprawa dookoła świata</text><text x="790" y="640" font-family="Arial" font-size="26" fill="#8a5b16" text-anchor="middle">1519–1522</text>
+</svg>
