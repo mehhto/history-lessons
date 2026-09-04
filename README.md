@@ -97,6 +97,22 @@ Ustawienia konkretnego slajdu przechowuj w `lesson.css`:
 
 Nie wpisuj zewnętrznych adresów obrazów: zasoby należy najpierw pobrać do `assets/` i opisać w `sources.md`.
 
+### Katalog rozszerzonych komponentów
+
+Pełny, gotowy do obejrzenia wzornik znajduje się w `classes/6/katalog-komponentow-prezentacji/`. Zawiera przykładowe slajdy i źródłowy markup dla: aktywnej mapy lokalnej, opcjonalnego iframe Google Maps, rozwijanych haseł, kart statystyk/liczników, steppera, tabeli, cytatu z portretem, pionowej i poziomej osi czasu, odtwarzanego na żądanie YouTube, listy ikon oraz compare slidera.
+
+| Potrzeba | Element |
+|---|---|
+| lokalna mapa z punktami | `lesson-map` + przyciski `data-map-pin` |
+| rozwijane hasła | `lesson-disclosure` + natywne `details` |
+| statystyki | `lesson-stats`, `lesson-stat`, `lesson-counter` |
+| proces | `lesson-stepper`, `lesson-step` |
+| tabela / cytat / lista | `lesson-table`, `lesson-quote`, `lesson-icon-list` |
+| porównanie obrazów | `lesson-compare` z `input type="range"` |
+| film online | `lesson-video` — iframe ładuje się dopiero po kliknięciu |
+
+Integracje Google Maps i YouTube są opcjonalne oraz wymagają Internetu. Każdy ich slajd musi mieć lokalną treść alternatywną — źródło, schemat, transkrypcję lub zadanie offline.
+
 ## Eksport PDF
 
 Automatycznie (wymaga jednorazowej instalacji przeglądarki Playwright):

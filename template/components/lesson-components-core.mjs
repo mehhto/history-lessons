@@ -1,3 +1,16 @@
+export function clampPercentage(value) {
+  const numeric = Number(value);
+  if (!Number.isFinite(numeric)) return 50;
+  return Math.min(100, Math.max(0, numeric));
+}
+
+export function counterValueAtProgress(target, progress) {
+  const numericTarget = Number(target);
+  const numericProgress = Number(progress);
+  if (!Number.isFinite(numericTarget) || !Number.isFinite(numericProgress) || numericTarget < 0) return 0;
+  return Math.round(numericTarget * Math.min(1, Math.max(0, numericProgress)));
+}
+
 export function isGalleryNavigationKey(key) {
   return ['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Home', 'End', 'Escape', 'Enter', ' '].includes(key);
 }

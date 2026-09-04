@@ -1,0 +1,6 @@
+/* Katalog komponentów: lokalne strojenie wzornika, nie globalnego motywu. */
+#katalog-start { --timeline-accent: var(--gold); }
+#mapa-lokalna lesson-map { --map-pin: #17365d; }
+#statystyki lesson-stats { --stats-columns: 3; }
+#timeline-pozioma lesson-timeline { --timeline-columns: 4; }
+#zestawienie lesson-icon-list { max-width: 24em; margin-inline: auto; }

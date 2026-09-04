@@ -1,7 +1,37 @@
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import test from 'node:test';
-import { galleryNavigationIndex, isGalleryNavigationKey } from '../template/components/lesson-components-core.mjs';
+import { clampPercentage, counterValueAtProgress, galleryNavigationIndex, isGalleryNavigationKey } from '../template/components/lesson-components-core.mjs';
+
+test('counter helpers clamp progress and compare slider values', () => {
+  assert.equal(clampPercentage(-3), 0);
+  assert.equal(clampPercentage(47.5), 47.5);
+  assert.equal(clampPercentage(140), 100);
+  assert.equal(counterValueAtProgress(1200, .25), 300);
+  assert.equal(counterValueAtProgress(-1200, .25), 0);
+});
+
+test('online embeds are deferred until the learner chooses to load them', async () => {
+  const [components, showcase] = await Promise.all([
+    readFile(new URL('../template/components/lesson-components.js', import.meta.url), 'utf8'),
+    readFile(new URL('../classes/6/katalog-komponentow-prezentacji/slides.md', import.meta.url), 'utf8'),
+  ]);
+  assert.match(components, /iframe\[data-map-src\]/);
+  assert.match(showcase, /data-map-open/);
+  assert.match(showcase, /data-map-src="https:\/\/www\.google\.com/);
+  assert.doesNotMatch(showcase, /<iframe[^>]*\ssrc="https:\/\/www\.google\.com/);
+});
+
+test('disclosures isolate Reveal navigation and map panels remain readable in print', async () => {
+  const [components, css] = await Promise.all([
+    readFile(new URL('../template/components/lesson-components.js', import.meta.url), 'utf8'),
+    readFile(new URL('../template/components/lesson-components.css', import.meta.url), 'utf8'),
+  ]);
+  assert.match(components, /class LessonDisclosure/);
+  assert.match(components, /\['lesson-disclosure', LessonDisclosure\]/);
+  assert.match(components, /keepKeysInsideComponent\(summary\)/);
+  assert.match(css.slice(css.indexOf('@media print')), /\[data-map-panel\]\[hidden\].*display: block !important/);
+});
 
 test('gallery keyboard navigation wraps at both ends', () => {
   assert.equal(galleryNavigationIndex(0, 'ArrowLeft', 3), 2);
@@ -32,8 +62,9 @@ test('gallery print styles clear the interactive visual state', async () => {
 
 test('gallery presents activation controls without a false toggle state', async () => {
   const components = await readFile(new URL('../template/components/lesson-components.js', import.meta.url), 'utf8');
-  assert.match(components, /setAttribute\('role', 'button'\)/);
-  assert.doesNotMatch(components, /aria-pressed/);
+  const galleryComponent = components.slice(components.indexOf('class LessonGallery'), components.indexOf('class LessonCounter'));
+  assert.match(galleryComponent, /setAttribute\('role', 'button'\)/);
+  assert.doesNotMatch(galleryComponent, /aria-pressed/);
 });
 
 test('PDF export serves ECMAScript modules as JavaScript', async () => {
