@@ -1,0 +1,107 @@
+lesson-timeline {
+  display: grid;
+  grid-template-columns: repeat(var(--timeline-columns, auto-fit), minmax(8rem, 1fr));
+  gap: 1.1rem;
+  margin-top: .7em;
+}
+
+lesson-event {
+  display: grid;
+  gap: .35rem;
+  padding: .7rem .8rem;
+  border-top: .25rem solid var(--timeline-accent, var(--gold));
+  background: rgba(255, 255, 255, .82);
+  box-shadow: 0 .35rem .9rem rgba(23, 54, 93, .1);
+}
+
+lesson-event::before {
+  content: attr(year);
+  color: var(--timeline-accent, var(--navy));
+  font-weight: 800;
+  font-size: .72em;
+}
+
+lesson-gallery {
+  display: flex;
+  gap: .45rem;
+  min-height: 54vh;
+  margin-top: .5em;
+  overflow: hidden;
+}
+
+lesson-gallery [data-gallery-item] {
+  position: relative;
+  display: grid;
+  flex: 1 1 0;
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  background: var(--gallery-panel, var(--navy));
+  transition: flex .32s ease, filter .2s ease;
+}
+
+lesson-gallery [data-gallery-item] img {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  margin: 0;
+  object-fit: cover;
+  box-shadow: none;
+  transition: transform .32s ease;
+}
+
+lesson-gallery [data-gallery-item] figcaption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: .65rem .75rem;
+  color: #fff;
+  background: linear-gradient(transparent, rgba(12, 25, 42, .9));
+  font-size: .45em;
+  line-height: 1.25;
+  text-align: left;
+}
+
+lesson-gallery.has-active-item [data-gallery-item]:not(.is-active) {
+  filter: brightness(.6) saturate(.7);
+}
+
+lesson-gallery [data-gallery-item].is-active {
+  flex: 7 1 0;
+}
+
+lesson-gallery [data-gallery-item].is-active img {
+  transform: scale(1.025);
+}
+
+lesson-gallery [data-gallery-item]:focus-visible {
+  outline: .18rem solid var(--gallery-focus, var(--gold));
+  outline-offset: -.18rem;
+  z-index: 1;
+}
+
+@media (hover: none), (pointer: coarse) {
+  lesson-gallery { min-height: 46vh; }
+  lesson-gallery [data-gallery-item].is-active { flex: 4 1 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  lesson-gallery [data-gallery-item],
+  lesson-gallery [data-gallery-item] img { transition: none; }
+}
+
+@media print {
+  lesson-gallery { min-height: 0; }
+  lesson-gallery [data-gallery-item],
+  lesson-gallery [data-gallery-item].is-active,
+  lesson-gallery.has-active-item [data-gallery-item]:not(.is-active) {
+    min-height: 9rem;
+    flex: 1 1 0;
+    filter: none;
+  }
+  lesson-gallery [data-gallery-item].is-active img { transform: none; }
+}

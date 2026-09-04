@@ -14,7 +14,7 @@ Uczeń: porządkuje daty 1492, 1498, 1507 i 1519–1522; odczytuje obserwację z
 ## Przebieg
 1. **Wejście, 5 min:** reakcja na zdanie „Nowy ląd był nowy dla wszystkich”.
 2. **Oś czasu, 8 min:** dopasowanie dat do opisów wypraw i mapy.
-3. **Mapa, 17 min:** grupy zapisują obserwację i pytanie do mapy z 1507 r.
+3. **Analiza źródeł, 17 min:** grupy zapisują obserwację i pytanie do mapy z 1507 r.; następnie odróżniają mapę z epoki od późniejszej ryciny.
 4. **Perspektywy, 10 min:** żeglarz, kupiec, mieszkaniec zamieszkanego lądu.
 5. **Bilet wyjścia, 5 min:** jedno zdanie dopowiadające słowo „odkrycie”.
 

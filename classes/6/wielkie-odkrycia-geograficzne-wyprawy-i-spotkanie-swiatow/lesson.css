@@ -1,0 +1,11 @@
+/* Ręcznie dopracowany wygląd lekcji 2. Te poprawki pozostają przy lekcji. */
+
+#chronologia-wypraw {
+  --timeline-accent: #a6502d;
+  --timeline-columns: 4;
+}
+
+#galeria-rycin {
+  --gallery-panel: #102a43;
+  --gallery-focus: #c78a29;
+}

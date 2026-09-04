@@ -17,6 +17,13 @@ Dopasuj opis do daty: **1492 · 1498 · 1507 · 1519–1522**.
 
 **Pytanie:** ______________________________________________
 
+## 2. Materiał późniejszy niż wydarzenie
+Rycina de Bry powstała w 1594 r. Wpisz **jedną rzecz, którą na niej widzisz**, oraz **jedno ograniczenie**.
+
+| Obserwacja | Ograniczenie źródła |
+|---|---|
+| | |
+
 ## 3. Perspektywa
 Dla europejskiego żeglarza przybycie do nowego miejsca mogło oznaczać ____________________________.
 

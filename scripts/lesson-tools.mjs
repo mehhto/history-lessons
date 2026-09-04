@@ -4,6 +4,7 @@ export const REQUIRED_LESSON_ENTRIES = [
   'lesson.md',
   'slides.md',
   'index.html',
+  'lesson.css',
   'worksheet.md',
   'sources.md',
   'assessment.md',

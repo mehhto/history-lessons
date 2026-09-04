@@ -29,6 +29,7 @@
 .reveal .slides section.source-slide,
 .reveal .slides section.map-slide { padding: .75em 1em; background: var(--soft-blue); }
 .reveal .slides section.compare-slide { padding: .8em 1em; border: 2px solid #adc0d2; }
+.reveal .slides section.portrait-source img { max-height: 44vh; }
 
 .source-label { display: inline-block; padding: .22em .55em; border-radius: 999px; background: var(--navy); color: #fff; font-size: .42em; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
 .student-task { padding: .5em .7em; border-radius: .2em; background: #fff; border: 2px solid var(--gold); font-size: .82em; }

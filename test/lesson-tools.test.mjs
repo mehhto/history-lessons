@@ -33,6 +33,7 @@ test('reports all missing required lesson files', () => {
 
   assert.deepEqual(report.missing, [
     'index.html',
+    'lesson.css',
     'worksheet.md',
     'sources.md',
     'assessment.md',
@@ -48,6 +49,7 @@ test('accepts a complete lesson package', () => {
     'lesson.md',
     'slides.md',
     'index.html',
+    'lesson.css',
     'worksheet.md',
     'sources.md',
     'assessment.md',

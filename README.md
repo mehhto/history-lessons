@@ -36,6 +36,51 @@ Otwórz `http://127.0.0.1:8080/classes/6/wielkie-odkrycia-geograficzne/`.
 5. Po lekcji uzupełnij `reflection.md`; jeśli problem powtarza się, popraw szablon lub regułę, nie tylko jedną lekcję.
 6. Przed lekcją utwórz PDF: `npm run export:pdf -- --lesson classes/6/wielkie-odkrycia-geograficzne`.
 
+## Komponenty i trwałe poprawki wyglądu
+
+`slides.md` pozostaje źródłem treści. Każdy pakiet lekcji ma też `lesson.css`, ładowany **po** wspólnym motywie i bibliotece komponentów. Ręczne zmiany wyglądu zapisuj tam, aby przetrwały generowanie, eksport PDF i pracę na innym komputerze.
+
+Nadaj niestandardowemu slajdowi trwałe `id`:
+
+```md
+<!-- .slide: id="chronologia-wypraw" class="context-slide timeline-slide" -->
+```
+
+### Oś czasu
+
+```md
+<lesson-timeline>
+  <lesson-event year="1492">Kolumb dociera do Karaibów</lesson-event>
+  <lesson-event year="1498">Vasco da Gama dociera do Indii</lesson-event>
+</lesson-timeline>
+```
+
+### Galeria źródeł
+
+Galeria działa offline. Na komputerze obraz rozwija się po najechaniu; klawiatura obsługuje `Tab`, strzałki, `Home`, `End` i `Esc`; na ekranie dotykowym wybór następuje po dotknięciu.
+
+```md
+<lesson-gallery aria-label="Dwa źródła historyczne">
+  <figure data-gallery-item>
+    <img src="assets/zrodlo-1.jpg" alt="Opis grafiki">
+    <figcaption>Autor, data — ograniczenie źródła.</figcaption>
+  </figure>
+  <figure data-gallery-item>
+    <img src="assets/zrodlo-2.jpg" alt="Opis grafiki">
+    <figcaption>Autor, data — ograniczenie źródła.</figcaption>
+  </figure>
+</lesson-gallery>
+```
+
+Ustawienia konkretnego slajdu przechowuj w `lesson.css`:
+
+```css
+#chronologia-wypraw { --timeline-accent: #a6502d; }
+#galeria-zrodel { --gallery-focus: #c78a29; }
+```
+
+Nie wpisuj zewnętrznych adresów obrazów: zasoby należy najpierw pobrać do `assets/` i opisać w `sources.md`.
+
 ## Eksport PDF
 
 Automatycznie (wymaga jednorazowej instalacji przeglądarki Playwright):
