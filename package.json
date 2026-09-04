@@ -1,0 +1,19 @@
+{
+  "name": "history-lessons",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Lokalny, offline-first system tworzenia lekcji historii dla klas IV–VIII.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "new": "node scripts/new-lesson.mjs",
+    "check": "node scripts/check-lessons.mjs",
+    "serve": "node scripts/serve.mjs",
+    "sync:reveal": "node scripts/sync-reveal.mjs",
+    "export:pdf": "PLAYWRIGHT_BROWSERS_PATH=.playwright-browsers node scripts/export-pdf.mjs"
+  },
+  "dependencies": {
+    "playwright": "1.62.1",
+    "reveal.js": "6.0.1"
+  }
+}

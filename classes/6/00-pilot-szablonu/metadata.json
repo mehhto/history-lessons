@@ -1,0 +1,12 @@
+{
+  "id": "00-pilot-szablonu",
+  "title": "Pilot szablonu — test techniczny",
+  "grade": 6,
+  "duration_minutes": 45,
+  "status": "GOTOWE TECHNICZNIE",
+  "curriculum_requirement": "Nie dotyczy — materiał techniczny.",
+  "main_question": "Czy lokalny workflow prezentacji i PDF działa?",
+  "source_reviewed": true,
+  "offline_checked": true,
+  "pdf_exported": true
+}

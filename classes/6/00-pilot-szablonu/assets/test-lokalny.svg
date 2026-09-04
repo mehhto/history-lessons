@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-label="Schemat lokalnego działania: Markdown, Reveal.js, przeglądarka, PDF">
+  <rect width="1200" height="600" fill="#e8f0f5"/>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <rect x="70" y="210" width="230" height="150" rx="18" fill="#17365d"/>
+    <text x="185" y="270" fill="white" font-size="38" font-weight="700">Markdown</text>
+    <text x="185" y="315" fill="white" font-size="25">slides.md</text>
+    <path d="M330 285h150" stroke="#c78a29" stroke-width="16"/><path d="M465 260l45 25-45 25" fill="#c78a29"/>
+    <rect x="520" y="210" width="230" height="150" rx="18" fill="#216a72"/>
+    <text x="635" y="270" fill="white" font-size="38" font-weight="700">Reveal.js</text>
+    <text x="635" y="315" fill="white" font-size="25">lokalnie</text>
+    <path d="M780 285h150" stroke="#c78a29" stroke-width="16"/><path d="M915 260l45 25-45 25" fill="#c78a29"/>
+    <rect x="970" y="210" width="160" height="150" rx="18" fill="#fff5dc" stroke="#c78a29" stroke-width="5"/>
+    <text x="1050" y="270" fill="#17365d" font-size="33" font-weight="700">HTML</text>
+    <text x="1050" y="315" fill="#17365d" font-size="25">+ PDF</text>
+    <text x="600" y="105" fill="#17365d" font-size="46" font-weight="700">Test lokalnego workflow</text>
+    <text x="600" y="500" fill="#53627a" font-size="28">Ten schemat jest materiałem technicznym, nie źródłem historycznym.</text>
+  </g>
+</svg>

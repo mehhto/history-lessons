@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <title>Lekcja historii</title>
+    <link rel="stylesheet" href="../../../template/reveal/reveal.css">
+    <link rel="stylesheet" href="../../../template/reveal/theme/white.css">
+    <link rel="stylesheet" href="../../../template/theme.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section
+          data-markdown="slides.md"
+          data-separator="^\r?\n---\r?\n$"
+          data-separator-notes="^\s*notes?:"
+          data-charset="utf-8">
+        </section>
+      </div>
+    </div>
+
+    <script src="../../../template/reveal/reveal.js"></script>
+    <script src="../../../template/reveal/plugin/markdown.js"></script>
+    <script src="../../../template/reveal/plugin/notes.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        slideNumber: 'c/t',
+        controlsTutorial: false,
+        transition: 'slide',
+        plugins: [RevealMarkdown, RevealNotes]
+      });
+    </script>
+  </body>
+</html>

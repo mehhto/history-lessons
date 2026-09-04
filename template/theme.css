@@ -1,0 +1,41 @@
+/* Wspólny motyw — zmieniaj świadomie: dotyczy każdej lekcji. */
+:root {
+  --ink: #172033;
+  --muted: #53627a;
+  --paper: #f8f5ee;
+  --navy: #17365d;
+  --gold: #c78a29;
+  --teal: #216a72;
+  --soft-blue: #e8f0f5;
+  --soft-gold: #fff5dc;
+}
+
+.reveal { color: var(--ink); font-family: Aptos, "Segoe UI", Arial, sans-serif; font-size: 36px; }
+.reveal .slides { text-align: left; }
+.reveal h1, .reveal h2, .reveal h3 { color: var(--navy); font-family: Georgia, "Times New Roman", serif; line-height: 1.12; text-transform: none; }
+.reveal h1 { font-size: 1.7em; }
+.reveal h2 { font-size: 1.35em; }
+.reveal p, .reveal li { line-height: 1.28; }
+.reveal strong { color: var(--teal); }
+.reveal blockquote { width: auto; margin: .6em 0; padding: .55em .8em; border-left: .22em solid var(--gold); background: var(--soft-gold); box-shadow: none; font-size: .88em; }
+.reveal img { max-height: 62vh; border: 0; box-shadow: 0 12px 30px rgba(23, 54, 93, .16); }
+.reveal .slide-number { background: var(--navy); color: #fff; }
+.reveal .progress { color: var(--gold); }
+.reveal .controls { color: var(--navy); }
+
+.reveal .slides section.question-slide,
+.reveal .slides section.exit-ticket-slide { padding: 1.1em 1.3em; border-top: .32em solid var(--gold); background: linear-gradient(135deg, #fffdf7, var(--soft-gold)); }
+.reveal .slides section.context-slide { border-left: .32em solid var(--teal); padding-left: 1em; }
+.reveal .slides section.source-slide,
+.reveal .slides section.map-slide { padding: .75em 1em; background: var(--soft-blue); }
+.reveal .slides section.compare-slide { padding: .8em 1em; border: 2px solid #adc0d2; }
+
+.source-label { display: inline-block; padding: .22em .55em; border-radius: 999px; background: var(--navy); color: #fff; font-size: .42em; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+.student-task { padding: .5em .7em; border-radius: .2em; background: #fff; border: 2px solid var(--gold); font-size: .82em; }
+.two-column { display: grid; grid-template-columns: 3fr 2fr; gap: 1em; align-items: center; }
+.small { font-size: .68em; color: var(--muted); }
+
+@media print {
+  .reveal { font-size: 25px; }
+  .reveal .slides section { padding: .6em .8em; }
+}

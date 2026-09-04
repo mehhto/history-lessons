@@ -1,0 +1,12 @@
+{
+  "id": "__SLUG__",
+  "title": "__TITLE__",
+  "grade": 0,
+  "duration_minutes": 45,
+  "status": "SZKIC",
+  "curriculum_requirement": "[DECYZJA NAUCZYCIELA]",
+  "main_question": "[DECYZJA NAUCZYCIELA]",
+  "source_reviewed": false,
+  "offline_checked": false,
+  "pdf_exported": false
+}
