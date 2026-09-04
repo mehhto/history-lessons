@@ -9,6 +9,7 @@
     "new": "node scripts/new-lesson.mjs",
     "check": "node scripts/check-lessons.mjs",
     "serve": "node scripts/serve.mjs",
+    "preview": "node scripts/preview.mjs",
     "sync:reveal": "node scripts/sync-reveal.mjs",
     "export:pdf": "PLAYWRIGHT_BROWSERS_PATH=.playwright-browsers node scripts/export-pdf.mjs"
   },

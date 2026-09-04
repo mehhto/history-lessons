@@ -16,6 +16,22 @@ npm run serve
 
 Otwórz `http://127.0.0.1:8080/classes/6/wielkie-odkrycia-geograficzne/`.
 
+## Podgląd przez SSH przed pushem
+
+Do przeglądu pojedynczej lekcji bez publikowania zmian w Git uruchom ograniczony serwer podglądu:
+
+```bash
+npm run preview -- --lesson classes/6/wielkie-odkrycia-geograficzne-wyprawy-i-spotkanie-swiatow --host 0.0.0.0 --port 8090
+```
+
+Serwer udostępnia wyłącznie wybraną lekcję, jej zasoby oraz wymagane pliki Reveal.js, motywu i komponentów; blokuje inne lekcje, `.git` i skrypty repozytorium. Z drugiej maszyny otwórz tunel SSH do aktualnego adresu kontenera:
+
+```bash
+ssh -N -L 8090:172.18.0.2:8090 USER@192.168.0.129
+```
+
+Następnie otwórz w swojej przeglądarce adres podany przez serwer, zastępując host `0.0.0.0` przez `127.0.0.1`, np. `http://127.0.0.1:8090/classes/6/wielkie-odkrycia-geograficzne-wyprawy-i-spotkanie-swiatow/`. Adres kontenera może zmienić się po restarcie — sprawdź go poleceniem `hostname -I` w kontenerze przed utworzeniem tunelu.
+
 ### Sterowanie prezentacją
 
 | Klawisz | Działanie |
