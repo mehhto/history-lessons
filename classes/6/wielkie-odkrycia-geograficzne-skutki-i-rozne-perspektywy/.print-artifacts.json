@@ -3,8 +3,9 @@
   "documents": {
     "worksheet.pdf": {
       "version": 1,
-      "input_hash": "25d42041a22614c2263b1d7c7d0e5e07215071c72a719272a5ead90132cc6322",
+      "input_hash": "10bea7b4ea651c2a5cfc2cfed3bd219e4a53dfb139ceaa4edeee8ea23b132085",
       "inputs": [
+        "metadata.json",
         "package.json",
         "scripts/export-print-pack.mjs",
         "scripts/print-pack.mjs",
@@ -14,9 +15,10 @@
     },
     "teacher-guide.pdf": {
       "version": 1,
-      "input_hash": "3d0bc7c27967441b51a3d8cccd873154461b402acb2a7999dfc256599d3eabd1",
+      "input_hash": "91340cb6260642380d581e8cf2e4eb352476c6159b831e4cb31e1aa432aeecf4",
       "inputs": [
         "assessment.md",
+        "metadata.json",
         "package.json",
         "scripts/export-print-pack.mjs",
         "scripts/print-pack.mjs",
@@ -26,8 +28,9 @@
     },
     "student-summary.pdf": {
       "version": 1,
-      "input_hash": "8106eae96c0b33929e252791d1d8717832cd855c34c3df71b36c82e9c1935ba6",
+      "input_hash": "e8ff2eba2a12d06eb198f103e0c6f77fa1368ea0728713d29ae7cd4b5acb7e96",
       "inputs": [
+        "metadata.json",
         "package.json",
         "scripts/export-print-pack.mjs",
         "scripts/print-pack.mjs",
