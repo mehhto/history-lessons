@@ -33,6 +33,13 @@ test('disclosures isolate Reveal navigation and map panels remain readable in pr
   assert.match(css.slice(css.indexOf('@media print')), /\[data-map-panel\]\[hidden\].*display: block !important/);
 });
 
+test('component styles normalize card alignment and establish a structured table hierarchy', async () => {
+  const css = await readFile(new URL('../template/components/lesson-components.css', import.meta.url), 'utf8');
+  assert.match(css, /\.reveal lesson-event \{[^}]*font-size: \.48em/);
+  assert.match(css, /\.reveal lesson-step h3 \{[^}]*font-size: \.58em/);
+  assert.match(css, /lesson-table \{[^}]*border-radius: \.45rem/);
+  assert.match(css, /lesson-table td:first-child \{[^}]*font-weight: 800/);
+});
 test('gallery keyboard navigation wraps at both ends', () => {
   assert.equal(galleryNavigationIndex(0, 'ArrowLeft', 3), 2);
   assert.equal(galleryNavigationIndex(2, 'ArrowRight', 3), 0);
