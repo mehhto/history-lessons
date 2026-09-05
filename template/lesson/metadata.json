@@ -3,10 +3,12 @@
   "title": "__TITLE__",
   "grade": 0,
   "duration_minutes": 45,
+  "kind": "lesson",
   "status": "SZKIC",
   "curriculum_requirement": "[DECYZJA NAUCZYCIELA]",
   "main_question": "[DECYZJA NAUCZYCIELA]",
   "source_reviewed": false,
+  "teacher_reviewed": false,
   "offline_checked": false,
   "pdf_exported": false
 }

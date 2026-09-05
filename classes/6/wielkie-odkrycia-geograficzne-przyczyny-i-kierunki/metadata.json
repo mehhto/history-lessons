@@ -3,10 +3,12 @@
   "title": "Wielkie odkrycia geograficzne — przyczyny i kierunki",
   "grade": 6,
   "duration_minutes": 45,
+  "kind": "lesson",
   "status": "DO WERYFIKACJI NAUCZYCIELA",
   "curriculum_requirement": "[DECYZJA NAUCZYCIELA]",
   "main_question": "Dlaczego europejscy żeglarze szukali nowych dróg morskich i dokąd dopłynęli?",
   "source_reviewed": false,
+  "teacher_reviewed": false,
   "offline_checked": true,
   "pdf_exported": true
 }

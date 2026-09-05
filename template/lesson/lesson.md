@@ -15,6 +15,12 @@
 2. [Cel mierzalny 2]
 3. [Cel mierzalny 3]
 
+## Cele → zadanie → dowód
+| Cel ucznia | Zadanie podczas lekcji | Dowód osiągnięcia celu |
+|---|---|---|
+| [Cel 1] | [Co robi uczeń] | [Co uczeń zapisze / powie / wykona] |
+| [Cel 2] | [Co robi uczeń] | [Co uczeń zapisze / powie / wykona] |
+
 ## Pytanie główne
 [Jedno pytanie problemowe.]
 
@@ -32,6 +38,12 @@
 | Aktywność | 10–12 min | [Jasne polecenie] | [Pracują w parach] |
 | Wniosek | 5–7 min | [Zbiera argumenty] | [Formułują tezę] |
 | Bilet wyjścia | 3–5 min | [Pytanie] | [Odpowiadają] |
+
+## Warianty prowadzenia
+- **Rdzeń:** [co musi się wydarzyć, aby osiągnąć cel i wykonać bilet wyjścia].
+- **Pomoc:** [wskazówka / początek zdania / prostszy materiał].
+- **Rozszerzenie:** [zadanie dla ucznia pracującego szybciej].
+- **Punkt skrócenia:** [co skrócić, zachowując wniosek i bilet wyjścia].
 
 ## Dostosowania i ryzyka
 - Wsparcie dla ucznia potrzebującego pomocy: [DECYZJA NAUCZYCIELA]

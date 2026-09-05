@@ -24,13 +24,13 @@ Do przeglądu pojedynczej lekcji bez publikowania zmian w Git uruchom ograniczon
 npm run preview -- --lesson classes/6/wielkie-odkrycia-geograficzne-wyprawy-i-spotkanie-swiatow --host 0.0.0.0 --port 8090
 ```
 
-Serwer udostępnia wyłącznie wybraną lekcję, jej zasoby oraz wymagane pliki Reveal.js, motywu i komponentów; blokuje inne lekcje, `.git` i skrypty repozytorium. Z drugiej maszyny otwórz tunel SSH do aktualnego adresu kontenera:
+Serwer udostępnia wyłącznie wybraną lekcję, jej zasoby oraz wymagane pliki Reveal.js, motywu i komponentów; blokuje inne lekcje, `.git` i skrypty repozytorium. W środowisku Docker nie kieruj tunelu do adresu bridge kontenera. Opublikuj port w Compose na hoście, najlepiej do loopback albo zaufanego interfejsu LAN, a następnie użyj adresu hosta:
 
 ```bash
-ssh -N -L 8090:172.18.0.2:8090 USER@192.168.0.129
+ssh -N -L 8090:127.0.0.1:8090 USER@MINIPC
 ```
 
-Następnie otwórz w swojej przeglądarce adres podany przez serwer, zastępując host `0.0.0.0` przez `127.0.0.1`, np. `http://127.0.0.1:8090/classes/6/wielkie-odkrycia-geograficzne-wyprawy-i-spotkanie-swiatow/`. Adres kontenera może zmienić się po restarcie — sprawdź go poleceniem `hostname -I` w kontenerze przed utworzeniem tunelu.
+Po opublikowaniu portu na interfejsie LAN podgląd można też otworzyć bezpośrednio pod `http://ADRES-MINIPC:8090/`. Następnie w przeglądarce otwórz `http://127.0.0.1:8090/classes/6/wielkie-odkrycia-geograficzne-wyprawy-i-spotkanie-swiatow/`. Tunel i proces preview muszą działać przez cały czas przeglądu.
 
 ### Sterowanie prezentacją
 
@@ -112,6 +112,30 @@ Pełny, gotowy do obejrzenia wzornik znajduje się w `classes/6/katalog-komponen
 | film online | `lesson-video` — iframe ładuje się dopiero po kliknięciu |
 
 Integracje Google Maps i YouTube są opcjonalne oraz wymagają Internetu. Każdy ich slajd musi mieć lokalną treść alternatywną — źródło, schemat, transkrypcję lub zadanie offline.
+
+## Status jakości i pakiet do druku
+
+`npm run check` rozdziela trzy sprawy: kompletność pakietu, sprawność techniczną oraz akceptację nauczyciela. Wynik techniczny nie zatwierdza faktów ani zgodności z programem; nierozwiązane znaczniki i brak przeglądu pozostają jawne. Gdy choć jeden pakiet jest niegotowy, polecenie kończy się kodem niepowodzenia — użyj `npm run check -- --allow-pending` wyłącznie do nieblokującego raportu stanu.
+
+Każda lekcja ma dodatkowo:
+- `teacher-guide.md` — operacyjna ściąga prowadzącego; podczas eksportu dołączany jest do niej `assessment.md`;
+- `student-summary.md` — jednostronicowe podsumowanie dla ucznia: główna odpowiedź, wnioski, pojęcia, porządek wiedzy, częsty błąd i pytania do powtórki.
+
+Wygeneruj materiały A4 lokalnie:
+
+```bash
+npm run export:print -- --lesson classes/6/wielkie-odkrycia-geograficzne-wyprawy-i-spotkanie-swiatow
+```
+
+Powstaną `worksheet.pdf`, `teacher-guide.pdf` i `student-summary.pdf`. Klucz z `assessment.md` trafia wyłącznie do dokumentu prowadzącego. Eksport odrzuca podsumowanie ucznia dłuższe niż jedna strona A4. Manifest przy wydrukach wykrywa zmianę źródłowego Markdown, CSS, eksportera lub przypiętej wersji Playwright i oznacza stary pakiet jako nieaktualny.
+
+Techniczną kontrolę renderu wykonaj lokalnie przed oceną wizualną:
+
+```bash
+npm run check:render -- --lesson classes/6/katalog-komponentow-prezentacji
+```
+
+Sprawdza błędy konsoli i przepełnienia; nie zastępuje obejrzenia slajdów przez człowieka.
 
 ## Eksport PDF
 

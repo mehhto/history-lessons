@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "input_hash": "e1b2d0c0b6f35e73811da123a89de17b08fb8b910ef2a046373c314e989b0546",
+  "inputs": [
+    "index.html",
+    "lesson.css",
+    "package.json",
+    "scripts/export-pdf.mjs",
+    "slides.md",
+    "template/components/lesson-components.css",
+    "template/components/lesson-components.js",
+    "template/theme.css"
+  ]
+}

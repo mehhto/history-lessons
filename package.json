@@ -11,7 +11,9 @@
     "serve": "node scripts/serve.mjs",
     "preview": "node scripts/preview.mjs",
     "sync:reveal": "node scripts/sync-reveal.mjs",
-    "export:pdf": "PLAYWRIGHT_BROWSERS_PATH=.playwright-browsers node scripts/export-pdf.mjs"
+    "export:pdf": "PLAYWRIGHT_BROWSERS_PATH=.playwright-browsers node scripts/export-pdf.mjs",
+    "export:print": "PLAYWRIGHT_BROWSERS_PATH=.playwright-browsers node scripts/export-print-pack.mjs",
+    "check:render": "PLAYWRIGHT_BROWSERS_PATH=.playwright-browsers node scripts/render-check.mjs"
   },
   "dependencies": {
     "playwright": "1.62.1",

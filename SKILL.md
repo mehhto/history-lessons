@@ -34,7 +34,8 @@ Typowy rytm: wejście 3–5 min → kontekst 6–8 min → praca z materiałem 1
 - Stosuj klasy: `question-slide`, `context-slide`, `source-slide`, `map-slide`, `compare-slide`, `exit-ticket-slide`.
 - Każdy pakiet ma `lesson.css`, ładowany po motywie i komponentach. Ręczne poprawki konkretnej lekcji zapisuj wyłącznie tam.
 - Dla niestandardowego slajdu użyj trwałego `id` w dyrektywie `.slide`; selektory w `lesson.css` odnoszą się do tego identyfikatora.
-- Dostępne komponenty lokalne: `lesson-timeline` z `lesson-event` oraz `lesson-gallery` z elementami `figure[data-gallery-item]`.
+- Dostępne komponenty lokalne: `lesson-timeline` / `lesson-event`, `lesson-gallery`, `lesson-map`, `lesson-disclosure`, `lesson-stats` / `lesson-stat` / `lesson-counter`, `lesson-stepper` / `lesson-step`, `lesson-table`, `lesson-quote`, `lesson-icon-list`, `lesson-video` i `lesson-compare`. Pełne przykłady są w `classes/6/katalog-komponentow-prezentacji/`.
+- Mapy Google i YouTube są opcjonalne: iframe uzyskuje `src` wyłącznie po kliknięciu, a slajd ma lokalną alternatywę.
 - Galeria wymaga opisowych `alt` i podpisów; hover jest dodatkiem — musi działać także przez `Tab`, strzałki, `Home`, `End`, `Escape` i dotknięcie.
 
 ## Źródła, fakty i prywatność

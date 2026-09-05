@@ -1,0 +1,19 @@
+@page { size: A4; margin: 14mm; }
+:root { color: #172033; font-family: Aptos, "Segoe UI", Arial, sans-serif; font-size: 11pt; line-height: 1.42; }
+body { margin: 0; background: #fff; }
+main { max-width: 182mm; margin: 0 auto; }
+section { break-inside: avoid; }
+section + section { break-before: page; }
+h1 { margin: 0 0 5mm; color: #17365d; font-family: Georgia, "Times New Roman", serif; font-size: 21pt; line-height: 1.12; }
+h2 { margin: 6mm 0 2mm; color: #17365d; font-size: 13pt; }
+h3 { margin: 4mm 0 1.5mm; color: #216a72; font-size: 11.5pt; }
+p, li { orphans: 3; widows: 3; }
+p { margin: 0 0 2.5mm; }
+ul { margin: 0 0 3mm; padding-left: 5mm; }
+li + li { margin-top: 1.2mm; }
+code { padding: .2mm 1mm; background: #e8f0f5; font-family: ui-monospace, monospace; }
+.student h1 { border-bottom: 1.2pt solid #c78a29; padding-bottom: 2mm; }
+.student h2 { color: #17365d; }
+.teacher section + section { break-before: auto; border-top: 1pt solid #adc0d2; margin-top: 7mm; padding-top: 5mm; }
+.teacher h1 { color: #9a3b2e; }
+@media print { body { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }

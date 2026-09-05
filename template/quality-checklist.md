@@ -13,6 +13,9 @@
 - [ ] Uczeń pracuje z dowodem, nie tylko ogląda slajdy.
 - [ ] Zadanie ma wersję podstawową i rozszerzenie lub wsparcie dla ucznia potrzebującego pomocy.
 - [ ] Bilet wyjścia naprawdę sprawdza cel lekcji.
+- [ ] Tabela cel → zadanie → dowód jest uzupełniona.
+- [ ] Wskazano rdzeń, pomoc, rozszerzenie i punkt skrócenia.
+- [ ] Podsumowanie ucznia zawiera wnioski, pojęcia, „Nie pomyl” i pytania do powtórki.
 
 ## Źródła, technika i dostępność
 - [ ] Każdy materiał ma wpis w `sources.md`, w tym prawa/licencję i ograniczenia.

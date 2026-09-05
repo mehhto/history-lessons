@@ -1,9 +1,10 @@
 import { createReadStream } from 'node:fs';
-import { lstat, realpath, stat } from 'node:fs/promises';
+import { lstat, readFile, realpath, stat, writeFile } from 'node:fs/promises';
 import http from 'node:http';
 import path from 'node:path';
 import process from 'node:process';
 import { chromium } from 'playwright';
+import { createArtifactManifest } from './artifact-freshness.mjs';
 import { decodeRequestPath, resolveWithin } from './safe-paths.mjs';
 
 function argument(name) {
@@ -21,6 +22,17 @@ if (!lesson) {
 const root = await realpath(process.cwd());
 const lessonDirectory = await realpath(resolveWithin(root, lesson));
 resolveWithin(root, lessonDirectory);
+const presentationInputPaths = [
+  ['slides.md', path.join(lessonDirectory, 'slides.md')],
+  ['lesson.css', path.join(lessonDirectory, 'lesson.css')],
+  ['index.html', path.join(lessonDirectory, 'index.html')],
+  ['template/theme.css', path.join(root, 'template/theme.css')],
+  ['template/components/lesson-components.css', path.join(root, 'template/components/lesson-components.css')],
+  ['template/components/lesson-components.js', path.join(root, 'template/components/lesson-components.js')],
+  ['scripts/export-pdf.mjs', new URL('./export-pdf.mjs', import.meta.url)],
+  ['package.json', path.join(root, 'package.json')],
+];
+const presentationInputs = Object.fromEntries(await Promise.all(presentationInputPaths.map(async ([name, source]) => [name, await readFile(source, 'utf8')])));
 
 const outputName = output || 'presentation-backup.pdf';
 if (path.isAbsolute(outputName) || path.dirname(outputName) !== '.') {
@@ -62,7 +74,9 @@ try {
   await page.goto(`http://127.0.0.1:${port}/${publicLessonPath}/?print-pdf`, { waitUntil: 'networkidle' });
   await page.waitForFunction(() => window.Reveal && window.Reveal.isReady());
   await page.emulateMedia({ media: 'print' });
-  await page.pdf({ path: outputPath, format: 'A4', landscape: true, printBackground: true, margin: { top: '0', right: '0', bottom: '0', left: '0' } });
+  const pdf = await page.pdf({ path: outputPath, format: 'A4', landscape: true, printBackground: true, margin: { top: '0', right: '0', bottom: '0', left: '0' } });
+  if (!pdf.subarray(0, 5).equals(Buffer.from('%PDF-'))) throw new Error('Eksport prezentacji nie utworzył prawidłowego PDF.');
+  await writeFile(path.join(lessonDirectory, '.presentation-artifact.json'), `${JSON.stringify(createArtifactManifest(presentationInputs), null, 2)}\n`, 'utf8');
   console.log(`Zapisano PDF: ${path.relative(root, outputPath)}`);
 } finally {
   await browser.close();

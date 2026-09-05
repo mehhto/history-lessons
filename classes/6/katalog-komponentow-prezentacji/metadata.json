@@ -3,10 +3,12 @@
   "title": "Katalog komponentów prezentacji",
   "grade": 6,
   "duration_minutes": 45,
+  "kind": "demo",
   "status": "SZKIC",
   "curriculum_requirement": "[DECYZJA NAUCZYCIELA]",
   "main_question": "[DECYZJA NAUCZYCIELA]",
   "source_reviewed": false,
-  "offline_checked": false,
-  "pdf_exported": false
+  "teacher_reviewed": false,
+  "offline_checked": true,
+  "pdf_exported": true
 }
