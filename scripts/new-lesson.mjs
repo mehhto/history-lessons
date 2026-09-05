@@ -1,4 +1,4 @@
-import { cp, mkdir, readFile, writeFile, access } from 'node:fs/promises';
+import { cp, mkdir, readFile, rm, writeFile, access } from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
 import { lessonDirectory, normalizeLessonSlug } from './lesson-tools.mjs';
@@ -10,14 +10,17 @@ function argument(name) {
 
 function usage(message) {
   if (message) console.error(`Błąd: ${message}\n`);
-  console.error('Użycie: npm run new -- --class 6 --title "Wielkie odkrycia geograficzne"');
+  console.error('Użycie: npm run new -- --class 6 --title "Wielkie odkrycia geograficzne" [--type new-knowledge|practice]');
   process.exitCode = 1;
 }
 
 const grade = argument('--class');
 const title = argument('--title');
+const lessonType = argument('--type') || 'new-knowledge';
 if (!grade || !title) {
   usage('Wymagane są parametry --class oraz --title.');
+} else if (!['new-knowledge', 'practice'].includes(lessonType)) {
+  usage('Parametr --type musi mieć wartość new-knowledge albo practice.');
 } else {
   try {
     const slug = normalizeLessonSlug(title);
@@ -38,11 +41,12 @@ if (!grade || !title) {
     const teacherGuidePath = path.join(target, 'teacher-guide.md');
     const studentSummaryPath = path.join(target, 'student-summary.md');
     const worksheetPath = path.join(target, 'worksheet.md');
+    if (lessonType === 'practice') await rm(studentSummaryPath);
     const replacements = [
       [lessonPath, [['__TITLE__', title], ['__GRADE__', String(grade)]]],
       [slidesPath, [['__TITLE__', title], ['__GRADE__', String(grade)]]],
       [teacherGuidePath, [['__TITLE__', title], ['__GRADE__', String(grade)]]],
-      [studentSummaryPath, [['__TITLE__', title], ['__GRADE__', String(grade)]]],
+      ...(lessonType === 'new-knowledge' ? [[studentSummaryPath, [['__TITLE__', title], ['__GRADE__', String(grade)]]]] : []),
       [worksheetPath, [['__TITLE__', title], ['__GRADE__', String(grade)]]],
     ];
 
@@ -56,6 +60,7 @@ if (!grade || !title) {
     metadata.id = slug;
     metadata.title = title;
     metadata.grade = Number(grade);
+    metadata.lesson_type = lessonType;
     await writeFile(metadataPath, `${JSON.stringify(metadata, null, 2)}\n`, 'utf8');
 
     console.log(`Utworzono: ${relativeTarget}`);

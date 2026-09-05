@@ -1,9 +1,9 @@
-import { lstat, readFile, realpath, writeFile } from 'node:fs/promises';
+import { lstat, readFile, realpath, unlink, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
 import { chromium } from 'playwright';
 import { createArtifactManifest } from './artifact-freshness.mjs';
-import { documentKindsForLesson, documentPlan, printableHtml } from './print-pack.mjs';
+import { documentKindsForLesson, omittedDocumentKindsForLesson, documentPlan, printableHtml } from './print-pack.mjs';
 import { resolveWithin } from './safe-paths.mjs';
 
 function argument(name) {
@@ -32,7 +32,12 @@ const hasSummary = await readFile(summaryPath, 'utf8').then((content) => Boolean
   if (error.code === 'ENOENT') return false;
   throw error;
 });
-const kinds = only ? [only] : documentKindsForLesson({ lessonType: metadata.lesson_type, hasSummary });
+const expectedKinds = documentKindsForLesson({ lessonType: metadata.lesson_type, hasSummary });
+if (only && !expectedKinds.includes(only)) {
+  console.error(`Dokument ${only} nie należy do pakietu tej lekcji.`);
+  process.exit(1);
+}
+const kinds = only ? [only] : expectedKinds;
 const css = await readFile(path.join(root, 'template/print/print.css'), 'utf8');
 const renderer = await readFile(new URL('./print-pack.mjs', import.meta.url), 'utf8');
 const exporter = await readFile(new URL('./export-print-pack.mjs', import.meta.url), 'utf8');
@@ -43,6 +48,19 @@ try {
   if (previous?.version === 1 && previous.documents && typeof previous.documents === 'object') artifactManifest = previous;
 } catch (error) {
   if (error.code !== 'ENOENT') throw error;
+}
+if (!only) {
+  for (const kind of omittedDocumentKindsForLesson({ lessonType: metadata.lesson_type, hasSummary })) {
+    const output = resolveWithin(lessonDirectory, documentPlan(kind).output);
+    try {
+      if ((await lstat(output)).isSymbolicLink()) throw new Error('Plik wyjściowy nie może być dowiązaniem symbolicznym.');
+      await unlink(output);
+      console.log(`Usunięto niepotrzebny PDF: ${path.relative(root, output)}`);
+    } catch (error) {
+      if (error.code !== 'ENOENT') throw error;
+    }
+    delete artifactManifest.documents[documentPlan(kind).output];
+  }
 }
 const browser = await chromium.launch({ headless: true });
 try {
@@ -76,6 +94,7 @@ try {
       'scripts/print-pack.mjs': renderer,
       'scripts/export-print-pack.mjs': exporter,
       'package.json': packageSpec,
+      'metadata.json': JSON.stringify(metadata),
     });
     console.log(`Zapisano PDF: ${path.relative(root, output)}`);
   }

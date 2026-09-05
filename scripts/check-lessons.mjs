@@ -4,7 +4,7 @@ import process from 'node:process';
 import { validateLessonPackage } from './lesson-tools.mjs';
 import { assessLessonQuality, parseLessonMetadata } from './lesson-quality.mjs';
 import { isArtifactFresh } from './artifact-freshness.mjs';
-import { documentKindsForLesson, documentPlan } from './print-pack.mjs';
+import { documentKindsForLesson, omittedDocumentKindsForLesson, documentPlan } from './print-pack.mjs';
 
 async function lessonDirectories(root) {
   const found = [];
@@ -61,7 +61,12 @@ async function printPackFresh(lessonDirectory, repoRoot, metadata) {
       if (error.code === 'ENOENT') return false;
       throw error;
     });
-  for (const kind of documentKindsForLesson({ lessonType: metadata.lesson_type, hasSummary })) {
+  const expectedKinds = documentKindsForLesson({ lessonType: metadata.lesson_type, hasSummary });
+  for (const kind of omittedDocumentKindsForLesson({ lessonType: metadata.lesson_type, hasSummary })) {
+    const output = documentPlan(kind).output;
+    if ((await exists(path.join(lessonDirectory, output))) || manifest.documents?.[output]) return false;
+  }
+  for (const kind of expectedKinds) {
     const plan = documentPlan(kind);
     if (!(await exists(path.join(lessonDirectory, plan.output)))) return false;
     const inputs = Object.fromEntries(await Promise.all(plan.sources.map(async (source) => [source, await readFile(path.join(lessonDirectory, source), 'utf8')])));
@@ -69,6 +74,7 @@ async function printPackFresh(lessonDirectory, repoRoot, metadata) {
     inputs['scripts/print-pack.mjs'] = renderer;
     inputs['scripts/export-print-pack.mjs'] = exporter;
     inputs['package.json'] = packageSpec;
+    inputs['metadata.json'] = JSON.stringify(metadata);
     if (!isArtifactFresh(manifest.documents?.[plan.output], inputs)) return false;
   }
   return true;

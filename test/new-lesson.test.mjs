@@ -24,3 +24,17 @@ test('new lesson replaces title and grade placeholders in every learner and teac
     await rm(directory, { recursive: true, force: true });
   }
 });
+
+test('new practice lesson omits the optional student summary', async () => {
+  const directory = await mkdtemp(path.join(os.tmpdir(), 'history-lesson-'));
+  try {
+    await cp(path.join(root, 'template'), path.join(directory, 'template'), { recursive: true });
+    await run(process.execPath, [path.join(root, 'scripts/new-lesson.mjs'), '--class', '6', '--title', 'Ćwiczenie jakości', '--type', 'practice'], { cwd: directory });
+    const lesson = path.join(directory, 'classes/6/cwiczenie-jakosci');
+    const metadata = JSON.parse(await readFile(path.join(lesson, 'metadata.json'), 'utf8'));
+    assert.equal(metadata.lesson_type, 'practice');
+    await assert.rejects(readFile(path.join(lesson, 'student-summary.md'), 'utf8'), { code: 'ENOENT' });
+  } finally {
+    await rm(directory, { recursive: true, force: true });
+  }
+});

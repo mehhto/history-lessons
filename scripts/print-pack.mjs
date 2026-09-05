@@ -10,6 +10,11 @@ export function documentKindsForLesson({ lessonType, hasSummary }) {
     : ['worksheet', 'teacher', 'summary'];
 }
 
+export function omittedDocumentKindsForLesson(context) {
+  const selected = new Set(documentKindsForLesson(context));
+  return Object.keys(PLANS).filter((kind) => !selected.has(kind));
+}
+
 export function documentPlan(kind) {
   const plan = PLANS[kind];
   if (!plan) throw new Error('Dokument musi mieć typ worksheet, teacher albo summary.');

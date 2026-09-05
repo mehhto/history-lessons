@@ -135,7 +135,7 @@ Wygeneruj materiały A4 lokalnie:
 npm run export:print -- --lesson classes/6/wielkie-odkrycia-geograficzne-wyprawy-i-spotkanie-swiatow
 ```
 
-Powstaną `worksheet.pdf`, `teacher-guide.pdf` i `student-summary.pdf`. Klucz z `assessment.md` trafia wyłącznie do dokumentu prowadzącego. Eksport odrzuca podsumowanie ucznia dłuższe niż jedna strona A4. Manifest przy wydrukach wykrywa zmianę źródłowego Markdown, CSS, eksportera lub przypiętej wersji Playwright i oznacza stary pakiet jako nieaktualny.
+Powstaną `worksheet.pdf` i `teacher-guide.pdf`; w lekcji `new-knowledge` oraz w ćwiczeniowej z dodatkową syntezą także `student-summary.pdf`. Jeżeli lekcja `practice` nie ma podsumowania, pełny eksport usuwa ewentualny stary `student-summary.pdf` i jego wpis manifestu. Klucz z `assessment.md` trafia wyłącznie do dokumentu prowadzącego. Eksport odrzuca podsumowanie ucznia dłuższe niż jedna strona A4. Manifest przy wydrukach wykrywa zmianę źródłowego Markdown, metadanych, CSS, eksportera lub przypiętej wersji Playwright i oznacza stary pakiet jako nieaktualny.
 
 Techniczną kontrolę renderu wykonaj lokalnie przed oceną wizualną:
 
