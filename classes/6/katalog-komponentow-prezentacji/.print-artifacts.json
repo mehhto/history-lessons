@@ -3,7 +3,7 @@
   "documents": {
     "worksheet.pdf": {
       "version": 1,
-      "input_hash": "faa8b1bcb8a79e0519cb668b0425cc918434d7ebd1266286b81b2d886ae86c11",
+      "input_hash": "e8ca31991ff6f9d5cc58fa2c9e287b6723022fa8911865b3d50e8434499d69d0",
       "inputs": [
         "package.json",
         "scripts/export-print-pack.mjs",
@@ -14,7 +14,7 @@
     },
     "teacher-guide.pdf": {
       "version": 1,
-      "input_hash": "053b80ac15f22b7d143b821554dcc4936014043fd77f7cd3bf455b61c11718cf",
+      "input_hash": "5dede4eda68457fae61f7d83bad5f07937959e11bb028e62e9be79f1437f61f9",
       "inputs": [
         "assessment.md",
         "package.json",
@@ -26,7 +26,7 @@
     },
     "student-summary.pdf": {
       "version": 1,
-      "input_hash": "034230e75fb50eeae912b55dec17a4eccd255811c3651d4e5a4a7b6d814def58",
+      "input_hash": "5f93859727bb4277b22bac3b981edd62f3529e8c0a36ddd51514c8a8112c1589",
       "inputs": [
         "package.json",
         "scripts/export-print-pack.mjs",

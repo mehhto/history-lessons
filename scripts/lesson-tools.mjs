@@ -9,7 +9,6 @@ export const REQUIRED_LESSON_ENTRIES = [
   'sources.md',
   'assessment.md',
   'teacher-guide.md',
-  'student-summary.md',
   'reflection.md',
   'metadata.json',
   'assets/',

@@ -43,14 +43,20 @@ Po opublikowaniu portu na interfejsie LAN podgląd można też otworzyć bezpoś
 | `F` | pełny ekran |
 | `Esc` | widok wszystkich slajdów |
 
-## Codzienny workflow
+## Model lekcji i workflow
 
-1. Uzupełnij `lesson.md`: klasa, temat, wymaganie, cele, pytanie główne i materiał, który masz.
-2. Wybierz i ręcznie zweryfikuj lokalne materiały; zapisz ich pochodzenie i licencję w `sources.md`.
-3. Poproś AI o pierwszy szkic `slides.md` zgodnie z `SKILL.md`; nie zlecaj mu wymyślania źródeł ani faktów.
-4. Dodaj pliki do `assets/`, uruchom `npm run check`, a następnie obejrzyj lekcję lokalnie.
-5. Po lekcji uzupełnij `reflection.md`; jeśli problem powtarza się, popraw szablon lub regułę, nie tylko jedną lekcję.
-6. Przed lekcją utwórz PDF: `npm run export:pdf -- --lesson classes/6/wielkie-odkrycia-geograficzne`.
+1. Wybierz typ w `metadata.json`: `new-knowledge` (nowa wiedza) albo `practice` (ćwiczeniowa / źródłowa).
+2. Uzupełnij `lesson.md`: wymaganie, pytanie główne oraz mapę **wymaganie → wiedza konieczna → zadanie → dowód zrozumienia**.
+3. W lekcji nowej wiedzy przygotuj pełne wyjaśnienie dla ucznia: pojęcia, chronologię, mechanizm, przykład i konieczne rozróżnienia. W ćwiczeniowej podaj tylko przypomnienie konieczne do samodzielnej pracy.
+4. Wybierz i ręcznie zweryfikuj lokalne materiały wyłącznie wtedy, gdy wzmacniają cel; zapisz ich pochodzenie i licencję w `sources.md`.
+5. Poproś AI o pierwszy szkic `slides.md` zgodnie z `SKILL.md`; nie zlecaj mu wymyślania źródeł ani faktów. Nie ma globalnego limitu słów ani slajdów — obowiązują funkcja, czytelność i realny czas lekcji.
+6. Dodaj szczegółowe notatki nauczyciela tylko do trudnych wyjaśnień, źródeł i zadań wymagających moderacji; umieść je w `teacher-guide.md` lub po `notes:`.
+7. Dodaj pliki do `assets/`, uruchom `npm run check`, a następnie obejrzyj lekcję lokalnie.
+8. Po lekcji nowej wiedzy przygotuj `student-summary.md`; po ćwiczeniowej użyj go tylko, gdy porządkuje nową całość.
+9. Po lekcji uzupełnij `reflection.md`; jeśli problem powtarza się, popraw szablon lub regułę, nie tylko jedną lekcję.
+10. Przed lekcją utwórz PDF: `npm run export:pdf -- --lesson classes/6/wielkie-odkrycia-geograficzne`.
+
+**Zasada:** prezentacja dostarcza kompletnego, zwięzłego wyjaśnienia. Podręcznik jest uzupełnieniem, a nie miejscem, do którego odsyłamy po brakujący kontekst.
 
 ## Komponenty i trwałe poprawki wyglądu
 
@@ -115,11 +121,13 @@ Integracje Google Maps i YouTube są opcjonalne oraz wymagają Internetu. Każdy
 
 ## Status jakości i pakiet do druku
 
-`npm run check` rozdziela trzy sprawy: kompletność pakietu, sprawność techniczną oraz akceptację nauczyciela. Wynik techniczny nie zatwierdza faktów ani zgodności z programem; nierozwiązane znaczniki i brak przeglądu pozostają jawne. Gdy choć jeden pakiet jest niegotowy, polecenie kończy się kodem niepowodzenia — użyj `npm run check -- --allow-pending` wyłącznie do nieblokującego raportu stanu.
+`npm run check` rozdziela cztery sprawy: kompletność pakietu, sprawność techniczną, akceptację nauczyciela oraz **nieblokujące ostrzeżenia dydaktyczne**. Ostrzeżenia wskazują m.in. brak mapy wymaganie → treść → zadanie → dowód, pełnego minimum wiedzy w lekcji nowej wiedzy, podsumowania ucznia lub sekcji trudnych momentów. Wynik techniczny nie zatwierdza faktów ani zgodności z programem; nierozwiązane znaczniki i brak przeglądu pozostają jawne. Gdy choć jeden pakiet jest niegotowy, polecenie kończy się kodem niepowodzenia — użyj `npm run check -- --allow-pending` wyłącznie do nieblokującego raportu stanu.
 
-Każda lekcja ma dodatkowo:
+Lekcja nowej wiedzy ma dodatkowo:
 - `teacher-guide.md` — operacyjna ściąga prowadzącego; podczas eksportu dołączany jest do niej `assessment.md`;
 - `student-summary.md` — jednostronicowe podsumowanie dla ucznia: główna odpowiedź, wnioski, pojęcia, porządek wiedzy, częsty błąd i pytania do powtórki.
+
+Lekcja ćwiczeniowa może dołączyć `student-summary.md` wyłącznie wtedy, gdy powstaje nowa synteza wiedzy.
 
 Wygeneruj materiały A4 lokalnie:
 

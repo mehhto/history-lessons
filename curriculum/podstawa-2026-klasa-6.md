@@ -1,10 +1,14 @@
 # Program nauczania — klasa VI
 
-> Wklej zweryfikowany, realizowany w szkole tekst wymagań. Zapisz link do dokumentu i datę kontroli; nie używaj streszczenia wygenerowanego przez AI jako źródła prawdy.
+Obowiązującym źródłem roboczym jest:
 
-- Źródło dokumentu: [DECYZJA NAUCZYCIELA]
-- Data weryfikacji: [DECYZJA NAUCZYCIELA]
-- Program / podręcznik: [DECYZJA NAUCZYCIELA]
+[`podstawa-programowa-historia-iv-viii-2026-2027.md`](podstawa-programowa-historia-iv-viii-2026-2027.md)
 
-## Wymagania wykorzystywane w lekcjach
-- [Wklej dokładne brzmienie]
+Zawiera urzędowe źródło, odnośnik do opcjonalnej lokalnej kopii PDF, datę kontroli, podział działów dla klas IV–VIII oraz dokładne wymagania dla działu VIII „Wielkie odkrycia geograficzne”.
+
+Przed zatwierdzeniem rocznego planu uzupełnij wyłącznie dane lokalne:
+
+- program / podręcznik używany w szkole;
+- liczbę realnych godzin do dyspozycji w klasie VI;
+- terminy sprawdzianów, powtórek, wycieczek i rezerwy;
+- ewentualne wymagania szkolnego programu wykraczające poza podstawę.

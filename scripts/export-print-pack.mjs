@@ -3,7 +3,7 @@ import path from 'node:path';
 import process from 'node:process';
 import { chromium } from 'playwright';
 import { createArtifactManifest } from './artifact-freshness.mjs';
-import { documentPlan, printableHtml } from './print-pack.mjs';
+import { documentKindsForLesson, documentPlan, printableHtml } from './print-pack.mjs';
 import { resolveWithin } from './safe-paths.mjs';
 
 function argument(name) {
@@ -27,7 +27,12 @@ const root = await realpath(process.cwd());
 const lessonDirectory = await realpath(resolveWithin(root, lesson));
 resolveWithin(root, lessonDirectory);
 const metadata = JSON.parse(await readFile(path.join(lessonDirectory, 'metadata.json'), 'utf8'));
-const kinds = only ? [only] : ['worksheet', 'teacher', 'summary'];
+const summaryPath = path.join(lessonDirectory, 'student-summary.md');
+const hasSummary = await readFile(summaryPath, 'utf8').then((content) => Boolean(content.trim())).catch((error) => {
+  if (error.code === 'ENOENT') return false;
+  throw error;
+});
+const kinds = only ? [only] : documentKindsForLesson({ lessonType: metadata.lesson_type, hasSummary });
 const css = await readFile(path.join(root, 'template/print/print.css'), 'utf8');
 const renderer = await readFile(new URL('./print-pack.mjs', import.meta.url), 'utf8');
 const exporter = await readFile(new URL('./export-print-pack.mjs', import.meta.url), 'utf8');

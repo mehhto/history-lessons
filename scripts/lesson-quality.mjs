@@ -25,6 +25,9 @@ export function parseLessonMetadata(text) {
   if (!Number.isInteger(metadata.duration_minutes) || metadata.duration_minutes <= 0) {
     throw new Error('Pole duration_minutes w metadata.json musi być dodatnią liczbą całkowitą.');
   }
+  if (metadata.lesson_type !== undefined && !['new-knowledge', 'practice'].includes(metadata.lesson_type)) {
+    throw new Error('Pole lesson_type w metadata.json musi mieć wartość new-knowledge albo practice.');
+  }
   for (const field of ['source_reviewed', 'teacher_reviewed', 'offline_checked', 'pdf_exported']) {
     if (typeof metadata[field] !== 'boolean') {
       throw new Error(`Pole ${field} w metadata.json musi być true albo false.`);
@@ -55,5 +58,25 @@ export function assessLessonQuality({ metadata, requiredFilesPresent, requiredCo
   if (approvalRequired && !metadata.source_reviewed) approvalIssues.push('Nie potwierdzono przeglądu źródeł.');
   if (approvalRequired && markers.length) approvalIssues.push(...markers.map((marker) => `Nierozwiązany znacznik: ${marker}`));
   const teacherApproval = { required: approvalRequired, ok: approvalIssues.length === 0, issues: approvalIssues };
-  return { structure, technical, teacherApproval, ready: structure.ok && technical.ok && teacherApproval.ok };
+  const lessonContent = requiredContent?.['lesson.md'] || '';
+  const studentSummary = requiredContent?.['student-summary.md'] || '';
+  const teacherGuide = requiredContent?.['teacher-guide.md'] || '';
+  const teachingIssues = [];
+  if (metadata.kind === 'lesson') {
+    if (!metadata.lesson_type) teachingIssues.push('Brakuje jawnie wskazanego typu lekcji.');
+    if (!/##\s+Cele\s*→\s*zadanie\s*→\s*dowód/i.test(lessonContent)) {
+      teachingIssues.push('Brakuje mapy: wymaganie → treść → zadanie → dowód.');
+    }
+    if (metadata.lesson_type === 'new-knowledge' && !/##\s+Pełne minimum wiedzy/i.test(lessonContent)) {
+      teachingIssues.push('Lekcja nowej wiedzy nie ma pełnego minimum wiedzy.');
+    }
+    if (metadata.lesson_type === 'new-knowledge' && !studentSummary.trim()) {
+      teachingIssues.push('Lekcja nowej wiedzy nie ma podsumowania ucznia.');
+    }
+    if (!/##\s+Trudne momenty i notatki nauczyciela/i.test(teacherGuide)) {
+      teachingIssues.push('Brakuje sekcji trudnych momentów i notatek nauczyciela.');
+    }
+  }
+  const teachingWarnings = { ok: teachingIssues.length === 0, issues: teachingIssues };
+  return { structure, technical, teacherApproval, teachingWarnings, ready: structure.ok && technical.ok && teacherApproval.ok };
 }

@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import { documentPlan, markdownToHtml } from '../scripts/print-pack.mjs';
+import { documentKindsForLesson, documentPlan, markdownToHtml } from '../scripts/print-pack.mjs';
 
 test('defines separate teacher, worksheet, and student-summary print sources', () => {
   assert.deepEqual(documentPlan('summary'), {
@@ -19,6 +19,12 @@ test('defines separate teacher, worksheet, and student-summary print sources', (
     sources: ['worksheet.md'],
     audience: 'student',
   });
+});
+
+test('omits an unnecessary summary from a practice lesson print pack', () => {
+  assert.deepEqual(documentKindsForLesson({ lessonType: 'practice', hasSummary: false }), ['worksheet', 'teacher']);
+  assert.deepEqual(documentKindsForLesson({ lessonType: 'practice', hasSummary: true }), ['worksheet', 'teacher', 'summary']);
+  assert.deepEqual(documentKindsForLesson({ lessonType: 'new-knowledge', hasSummary: false }), ['worksheet', 'teacher', 'summary']);
 });
 
 test('renders markdown as safe printable HTML without executing embedded markup', () => {

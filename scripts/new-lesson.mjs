@@ -35,9 +35,15 @@ if (!grade || !title) {
     const metadataPath = path.join(target, 'metadata.json');
     const lessonPath = path.join(target, 'lesson.md');
     const slidesPath = path.join(target, 'slides.md');
+    const teacherGuidePath = path.join(target, 'teacher-guide.md');
+    const studentSummaryPath = path.join(target, 'student-summary.md');
+    const worksheetPath = path.join(target, 'worksheet.md');
     const replacements = [
       [lessonPath, [['__TITLE__', title], ['__GRADE__', String(grade)]]],
       [slidesPath, [['__TITLE__', title], ['__GRADE__', String(grade)]]],
+      [teacherGuidePath, [['__TITLE__', title], ['__GRADE__', String(grade)]]],
+      [studentSummaryPath, [['__TITLE__', title], ['__GRADE__', String(grade)]]],
+      [worksheetPath, [['__TITLE__', title], ['__GRADE__', String(grade)]]],
     ];
 
     for (const [file, tokens] of replacements) {

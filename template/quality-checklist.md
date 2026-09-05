@@ -1,26 +1,30 @@
 # Checklist jakości przed lekcją
 
-## Merytoryka
+## Merytoryka i podstawa
+- [ ] Wymaganie programu jest zacytowane dokładnie albo wskazane jako wymagające zatwierdzenia.
+- [ ] Jest mapa: wymaganie → wiedza konieczna → zadanie → dowód zrozumienia.
 - [ ] Ręcznie zweryfikowano każdą datę, cytat, autora, mapę i podpis.
 - [ ] Jest jasne, czy materiał jest źródłem z epoki, opracowaniem, rekonstrukcją czy grafiką AI.
 - [ ] Nie ma fałszywych cytatów ani treści wygenerowanych bez sprawdzenia.
 - [ ] Trudne treści są opisane językiem odpowiednim dla wieku.
 
-## Program i metodyka
-- [ ] Lekcja realizuje jedno konkretne wymaganie szkolnego programu.
-- [ ] Uczeń ćwiczy chronologię, mapę, analizę źródła, przyczynę–skutek lub argumentację.
-- [ ] Jest krótkie minimum wiedzy potrzebne przed analizą.
-- [ ] Uczeń pracuje z dowodem, nie tylko ogląda slajdy.
+## Typ i przebieg lekcji
+- [ ] `metadata.json` wskazuje `new-knowledge` albo `practice`.
+- [ ] Lekcja nowej wiedzy zawiera pełne wyjaśnienie: pojęcia, chronologię, mechanizm, przykład i rozróżnienia potrzebne uczniowi.
+- [ ] Lekcja ćwiczeniowa / źródłowa zawiera przypomnienie koniecznej wiedzy, materiał, pytania, produkt ucznia i model odpowiedzi lub kryteria.
+- [ ] Źródło, mapa lub wizualizacja pojawiają się dlatego, że wzmacniają cel — nie jako obowiązkowy ozdobnik.
+- [ ] Uczeń wykonuje działanie, które wykorzystuje wyjaśnioną wiedzę; nie tylko ogląda slajdy.
 - [ ] Zadanie ma wersję podstawową i rozszerzenie lub wsparcie dla ucznia potrzebującego pomocy.
 - [ ] Bilet wyjścia naprawdę sprawdza cel lekcji.
-- [ ] Tabela cel → zadanie → dowód jest uzupełniona.
 - [ ] Wskazano rdzeń, pomoc, rozszerzenie i punkt skrócenia.
-- [ ] Podsumowanie ucznia zawiera wnioski, pojęcia, „Nie pomyl” i pytania do powtórki.
+- [ ] Po lekcji nowej wiedzy istnieje kompletne `student-summary.md`; po ćwiczeniowej tylko, gdy organizuje nową całość.
+- [ ] `teacher-guide.md` zawiera notatki tylko do trudnych momentów, źródeł, nowych pojęć lub zadań z typowymi błędami — albo jawnie stwierdza ich brak.
 
-## Źródła, technika i dostępność
+## Slajdy, technika i dostępność
+- [ ] Liczba slajdów i objętość tekstu wynikają z celu oraz czasu, nie z globalnego limitu.
+- [ ] Każdy slajd ma jasną funkcję i jest czytelny z końca klasy: bloki tekstu, wyróżnienia, tabela, oś czasu lub ilustracja wspierają rozumienie.
 - [ ] Każdy materiał ma wpis w `sources.md`, w tym prawa/licencję i ograniczenia.
 - [ ] Wszystkie obrazy i biblioteki są lokalne; prezentacja nie wymaga Internetu.
-- [ ] Tekst na slajdzie nie przekracza 24 słów i jest czytelny z końca klasy.
 - [ ] Przetestowano obrazy, klawiaturę, pełny ekran, notatki (`S`) i czarny ekran (`B`).
-- [ ] Utworzono oraz otwarto `presentation-backup.pdf`.
+- [ ] Utworzono oraz otwarto aktualne `presentation-backup.pdf`.
 - [ ] Karta pracy jest czytelna po wydruku czarno-białym.

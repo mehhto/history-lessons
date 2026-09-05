@@ -4,6 +4,7 @@
   "grade": 0,
   "duration_minutes": 45,
   "kind": "lesson",
+  "lesson_type": "new-knowledge",
   "status": "SZKIC",
   "curriculum_requirement": "[DECYZJA NAUCZYCIELA]",
   "main_question": "[DECYZJA NAUCZYCIELA]",

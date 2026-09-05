@@ -4,7 +4,7 @@ import process from 'node:process';
 import { validateLessonPackage } from './lesson-tools.mjs';
 import { assessLessonQuality, parseLessonMetadata } from './lesson-quality.mjs';
 import { isArtifactFresh } from './artifact-freshness.mjs';
-import { documentPlan } from './print-pack.mjs';
+import { documentKindsForLesson, documentPlan } from './print-pack.mjs';
 
 async function lessonDirectories(root) {
   const found = [];
@@ -46,7 +46,7 @@ async function presentationFresh(lessonDirectory, repoRoot) {
   return isArtifactFresh(manifest, inputs);
 }
 
-async function printPackFresh(lessonDirectory, repoRoot) {
+async function printPackFresh(lessonDirectory, repoRoot, metadata) {
   const manifestPath = path.join(lessonDirectory, '.print-artifacts.json');
   if (!(await exists(manifestPath))) return false;
   let manifest;
@@ -55,7 +55,13 @@ async function printPackFresh(lessonDirectory, repoRoot) {
   const renderer = await readFile(path.join(repoRoot, 'scripts/print-pack.mjs'), 'utf8');
   const exporter = await readFile(path.join(repoRoot, 'scripts/export-print-pack.mjs'), 'utf8');
   const packageSpec = await readFile(path.join(repoRoot, 'package.json'), 'utf8');
-  for (const kind of ['worksheet', 'teacher', 'summary']) {
+  const hasSummary = await readFile(path.join(lessonDirectory, 'student-summary.md'), 'utf8')
+    .then((content) => Boolean(content.trim()))
+    .catch((error) => {
+      if (error.code === 'ENOENT') return false;
+      throw error;
+    });
+  for (const kind of documentKindsForLesson({ lessonType: metadata.lesson_type, hasSummary })) {
     const plan = documentPlan(kind);
     if (!(await exists(path.join(lessonDirectory, plan.output)))) return false;
     const inputs = Object.fromEntries(await Promise.all(plan.sources.map(async (source) => [source, await readFile(path.join(lessonDirectory, source), 'utf8')])));
@@ -96,13 +102,14 @@ if (lessons.length === 0) {
         requiredContent,
         artifacts: {
           presentationPdf: metadata.pdf_exported && await presentationFresh(lesson.directory, process.cwd()),
-          printPack: await printPackFresh(lesson.directory, process.cwd()),
+          printPack: await printPackFresh(lesson.directory, process.cwd(), metadata),
         },
       });
       const status = report.ready ? 'GOTOWA' : 'WYMAGA DALSZEGO PRZEGLĄDU';
       if (!report.ready) pending += 1;
       console.log(`${status}  ${label}`);
       for (const issue of [...report.technical.issues, ...report.teacherApproval.issues]) console.log(`  · ${issue}`);
+      for (const warning of report.teachingWarnings.issues) console.log(`  ⚠ ${warning}`);
     } catch (error) {
       errors += 1;
       console.error(`BŁĄD  ${label}: ${error.message}`);

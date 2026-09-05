@@ -5,3 +5,4 @@ test-results/
 .hermes/
 .playwright-browsers/
 .scratch-*.png
+curriculum/official/*.pdf

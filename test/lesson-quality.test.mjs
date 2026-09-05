@@ -25,6 +25,7 @@ const metadata = {
 test('reports malformed metadata instead of accepting it as ready', () => {
   assert.throws(() => parseLessonMetadata('{oops}'), /niepoprawny/);
   assert.throws(() => parseLessonMetadata(JSON.stringify({ ...metadata, kind: 'other' })), /kind/);
+  assert.throws(() => parseLessonMetadata(JSON.stringify({ ...metadata, lesson_type: 'other' })), /lesson_type/);
 });
 
 test('finds unresolved authoring markers including annotated decisions', () => {
@@ -46,6 +47,42 @@ test('separates package completeness, technical checks, and teacher approval', (
   assert.equal(report.technical.ok, false);
   assert.equal(report.teacherApproval.ok, false);
   assert.equal(report.ready, false);
+});
+
+test('reports pedagogical gaps as warnings without changing technical readiness', () => {
+  const report = assessLessonQuality({
+    metadata: { ...metadata, lesson_type: 'new-knowledge', offline_checked: true, pdf_exported: true },
+    requiredFilesPresent: true,
+    requiredContent: {
+      'lesson.md': '## Pytanie główne\nPytanie?',
+      'student-summary.md': '',
+      'teacher-guide.md': '## Przebieg',
+    },
+    artifacts: { presentationPdf: true, printPack: true },
+  });
+
+  assert.equal(report.ready, false, 'approval remains a separate blocking status');
+  assert.equal(report.technical.ok, true);
+  assert.deepEqual(report.teachingWarnings.issues, [
+    'Brakuje mapy: wymaganie → treść → zadanie → dowód.',
+    'Lekcja nowej wiedzy nie ma pełnego minimum wiedzy.',
+    'Lekcja nowej wiedzy nie ma podsumowania ucznia.',
+    'Brakuje sekcji trudnych momentów i notatek nauczyciela.',
+  ]);
+});
+
+test('warns when a lesson has no declared type during the transition', () => {
+  const report = assessLessonQuality({
+    metadata: { ...metadata, offline_checked: true, pdf_exported: true },
+    requiredFilesPresent: true,
+    requiredContent: {
+      'lesson.md': '## Cele → zadanie → dowód',
+      'teacher-guide.md': '## Trudne momenty i notatki nauczyciela',
+    },
+    artifacts: { presentationPdf: true, printPack: true },
+  });
+
+  assert.deepEqual(report.teachingWarnings.issues, ['Brakuje jawnie wskazanego typu lekcji.']);
 });
 
 test('keeps a demo out of curricular approval requirements', () => {

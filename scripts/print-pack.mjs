@@ -4,6 +4,12 @@ const PLANS = {
   summary: { output: 'student-summary.pdf', sources: ['student-summary.md'], audience: 'student' },
 };
 
+export function documentKindsForLesson({ lessonType, hasSummary }) {
+  return lessonType === 'practice' && !hasSummary
+    ? ['worksheet', 'teacher']
+    : ['worksheet', 'teacher', 'summary'];
+}
+
 export function documentPlan(kind) {
   const plan = PLANS[kind];
   if (!plan) throw new Error('Dokument musi mieć typ worksheet, teacher albo summary.');
