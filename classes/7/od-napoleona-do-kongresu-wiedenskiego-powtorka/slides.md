@@ -318,7 +318,7 @@ Dobra odpowiedź nie brzmi po prostu „tak” albo „nie”. Uczeń ma uchwyci
 <!-- .slide: class="practice-slide" -->
 ## Zadanie: od ekspansji do nowego ładu
 
-W parach uzupełnijcie cztery wiersze na karcie pracy:
+Każda para uzupełnia jeden przydzielony wiersz na karcie pracy. Podczas omówienia dopiszcie odpowiedzi pozostałych par:
 
 1. Dlaczego Napoleon długo zwyciężał?
 2. Dlaczego ostatecznie przegrał?
@@ -328,7 +328,7 @@ W parach uzupełnijcie cztery wiersze na karcie pracy:
 **Warunek dobrej odpowiedzi:** każdy wniosek ma zawierać dwa dowody — datę, bitwę, reformę, mapę albo decyzję polityczną.
 
 notes:
-Daj 4 minuty pracy i 2 minuty na sprawdzenie w parach. Jeśli czasu brakuje, przydziel każdej parze tylko jeden wiersz, a potem zbierz cztery odpowiedzi na forum.
+Daj 4 minuty pracy nad przydzielonym wierszem i 2 minuty na zebranie czterech odpowiedzi na forum. Nie wymagaj, by każda para samodzielnie opracowała wszystkie cztery problemy.
 
 ---
 

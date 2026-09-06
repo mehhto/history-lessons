@@ -4,13 +4,13 @@
 
 Oryginały znajdują się lokalnie w `curriculum/sources/teacher-2026-09-06/original/`. Są ignorowane przez Git, ponieważ metadane DOCX zawierają dane autora. Hermes może czytać je bezpośrednio narzędziem `read_file`.
 
-Automatyczne utworzenie wersjonowanych kopii tekstowych zostało zablokowane przez warstwę bezpieczeństwa narzędzia. Nie zastępuj ich ręcznym, niezweryfikowanym streszczeniem. Przy cytowaniu wymagania czytaj właściwy DOCX i porównuj układ tabel z dokumentem źródłowym.
+Publiczny projekt IBE jest dostępny pod adresem https://ibe.edu.pl/images/Zmiany_w_szkolach/Projekty_podstaw_programowych/Historia_IBE_PIB.pdf; jego SHA-256 (sprawdzono 2026-09-06) to `b4c2d510c21193fd731cb6c2a776baacc7930cedfaa74f7b3fccab00c43a61bb`. Lokalny DOCX służy kontroli integralności i nie jest publikowany.
 
 ## Integralność i rola
 
 | Plik lokalny | SHA-256 | Rola | Status w 2026/2027 |
 |---|---|---|---|
-| `podstawa-nowa-historia-2026.docx` | `ec29f31b1bbd6160a169ea673662e0b703dead822c90eabe20774c4ebbecdea0` | nowa podstawa przekazana przez nauczyciela | aktywna dla klasy IV |
+| `podstawa-nowa-historia-2026.docx` | `e6ae8049bd6fea5c0632b71eff09ff45b2e9e39d110d041820e29b9f6069c7e` | nowa podstawa przekazana przez nauczyciela | aktywna dla klasy IV |
 | `podstawa-stara-klasy-5-8.docx` | `0160bf7677c315958b539dbb89a7d3f912c931e7b7768023bf905f8997ab4590` | starsza, pełniejsza kopia podstawy | materiał porównawczy; aktywny tekst prawny w repo ma pierwszeństwo |
 | `wymagania-edukacyjne-klasa-4.docx` | `9a833a65a5f3d40c5de59d1b1adcda9ec2e12f72b447b3b3938bf64686ebb007` | wymagania „Wczoraj i dziś”, edycja 2020–2022 | starszy materiał do dostosowania, nie aktywny plan klasy IV |
 | `wymagania-edukacyjne-klasa-5.docx` | `dd750ec04462b18d7dadb7597cbfcf66ed50db675ba730664cc82f9c68b0db49` | wymagania edukacyjne klasy V | używać pomocniczo ze starą podstawą |

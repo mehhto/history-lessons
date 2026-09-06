@@ -15,7 +15,7 @@
     },
     "worksheet.pdf": {
       "version": 1,
-      "input_hash": "14c9022584e38e35ef8781ca23b2681d032a7f1317bd99f6a24296566a6a15a5",
+      "input_hash": "353ce609b7c20763fde5302646c5a21427facf1bc43c772128a6bdebc3988dd7",
       "inputs": [
         "metadata.json",
         "package.json",
@@ -27,7 +27,7 @@
     },
     "teacher-guide.pdf": {
       "version": 1,
-      "input_hash": "994108357e81d27335bc5ea4819f0e72ffc7ae300d64489cfc129a19c6b74219",
+      "input_hash": "25099b6cf90518d000ed4bec0f7586ab68753a91a9583557c69435156294c3ff",
       "inputs": [
         "assessment.md",
         "metadata.json",

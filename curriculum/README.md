@@ -18,7 +18,7 @@ Przed utworzeniem lub zmianą lekcji:
 3. wymagania edukacyjne i kryteria oceniania;
 4. kolejność podręcznika i materiały pomocnicze.
 
-Dokumenty przekazane 2026-09-06 są zarejestrowane w [`sources/teacher-2026-09-06/MANIFEST.md`](sources/teacher-2026-09-06/MANIFEST.md). Oryginalne DOCX pozostają lokalnie poza Gitem z powodu osadzonych metadanych autora.
+Dokumenty przekazane 2026-09-06 są zarejestrowane w [`sources/teacher-2026-09-06/MANIFEST.md`](sources/teacher-2026-09-06/MANIFEST.md). Oryginalne DOCX pozostają lokalnie poza Gitem z powodu osadzonych metadanych autora; publiczny projekt IBE i jego suma kontrolna zapewniają odtwarzalny punkt odniesienia.
 
 ## Stan na rok szkolny 2026/2027
 

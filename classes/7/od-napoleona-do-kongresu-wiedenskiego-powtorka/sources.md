@@ -14,7 +14,7 @@ Tryb lekcji: offline-first; wszystkie grafiki użyte w prezentacji są zapisane 
 ### S02. Wymagania edukacyjne klasy VI, rozdział VI, tematy 3–6
 - **Dokument:** przekazany przez nauczyciela plik `wymagania-edukacyjne-klasa-6.docx`.
 - **Lokalna kopia oryginału:** `../../../curriculum/sources/teacher-2026-09-06/original/wymagania-edukacyjne-klasa-6.docx`
-- **SHA-256:** `13cdb6142bd866ac89c3e0fe6719a23c3d9ab95e393600441c7cb168f6a4757f`
+- **SHA-256:** `d0791856874247feaa82a74fe3ab58af5582add2ed48f259b3b6f3640d70a20b`
 - **Zakres użycia:** „Epoka Napoleona Bonapartego”, „Upadek Napoleona”, „Legiony Polskie we Włoszech”, „Księstwo Warszawskie”.
 - **Status:** źródło nauczycielskie; zakres lekcji przypominającej.
 
@@ -74,36 +74,40 @@ Tryb lekcji: offline-first; wszystkie grafiki użyte w prezentacji są zapisane 
 - **Użycie i ograniczenie:** obraz przedstawia Napoleona koronującego Józefinę, nie chwilę, w której Napoleon sam wkłada koronę na własną głowę; późniejsze oficjalne przedstawienie ceremonii.
 
 ### A06. „Polacy w Mediolanie”
-- **Nazwa w Commons:** `File:Polish people in Milan 1797.jpg`
-- **Strona metadanych:** https://commons.wikimedia.org/wiki/File:Polish_people_in_Milan_1797.jpg
+- **Nazwa w Commons:** `File:CHODZKO(1839) p253 LES POLONAIS A MILAN, EN 1797.jpg`
+- **Strona metadanych:** https://commons.wikimedia.org/wiki/File:CHODZKO(1839)_p253_LES_POLONAIS_A_MILAN,_EN_1797.jpg
 - **Źródło:** British Library, publikacja Leonarda Chodźki, 1839; autor ryciny niewskazany na stronie pliku.
 - **Licencja:** domena publiczna / Public Domain Mark 1.0.
 - **Lokalny plik:** `assets/legiony-polskie-we-wloszech.jpg`
+- **Weryfikacja lokalna:** wariant Commons 1920 px, SHA-1 `67caa35e76e68f490546704c06ccdb63898cddfd`; ponowne pobranie 6 września 2026 r. było identyczne bajtowo.
 - **Użycie i ograniczenie:** Dąbrowski odczytujący odezwę Polakom przed katedrą w Mediolanie 20 stycznia 1797 r.; rycina wydana 42 lata po wydarzeniu, zatem późniejsze wyobrażenie.
 
 ### A07. Somosierra
-- **Nazwa w Commons:** `File:Battle of Somosierra by January Suchodolski.PNG`
-- **Strona metadanych:** https://commons.wikimedia.org/wiki/File:Battle_of_Somosierra_by_January_Suchodolski.PNG
+- **Nazwa w Commons:** `File:January Suchodolski, Bitwa pod Somosierrą.jpg`
+- **Strona metadanych:** https://commons.wikimedia.org/wiki/File:January_Suchodolski,_Bitwa_pod_Somosierr%C4%85.jpg
 - **Autor i data:** January Suchodolski, 1860.
 - **Licencja:** domena publiczna / Public Domain Mark 1.0.
 - **Lokalny plik:** `assets/somosierra.jpg`
+- **Weryfikacja lokalna:** wariant Commons 1920 px, SHA-1 `c6ae6080ad98eb3bb7ea6c6dbf7a7abdea652944`; ponowne pobranie 6 września 2026 r. było identyczne bajtowo.
 - **Użycie i ograniczenie:** późniejsze malarskie przedstawienie szarży z 1808 r.; nie zapis naoczny ani kompletne przedstawienie przebiegu bitwy.
 
 ### A08. Raszyn
-- **Nazwa w Commons:** `File:Wojciech Kossak - Bitwa pod Raszynem 1809.PNG`
-- **Strona metadanych:** https://commons.wikimedia.org/wiki/File:Wojciech_Kossak_-_Bitwa_pod_Raszynem_1809.PNG
+- **Nazwa w Commons:** `File:Battle of Raszyn 1809 by Wojciech Kossak.PNG`
+- **Strona metadanych:** https://commons.wikimedia.org/wiki/File:Battle_of_Raszyn_1809_by_Wojciech_Kossak.PNG
 - **Autor i data:** Wojciech Kossak, 1913; Muzeum Narodowe w Warszawie.
 - **Licencja:** domena publiczna / Public Domain Mark 1.0.
 - **Lokalny plik:** `assets/raszyn-1809.png`
+- **Weryfikacja lokalna:** oryginalny plik Commons, SHA-1 `0ec63e5a597a50deb9eec32d8c8ec6f408354c95`.
 - **Użycie i ograniczenie:** późniejsze malarskie przedstawienie bitwy z 1809 r.
 
 ### A09. Józef Poniatowski pod Lipskiem
-- **Nazwa w Commons:** `File:Józef Poniatowski at Leipzig.JPG`
-- **Strona metadanych:** https://commons.wikimedia.org/wiki/File:J%C3%B3zef_Poniatowski_at_Leipzig.JPG
+- **Nazwa w Commons:** `File:Jan Chełmiński - Prince Józef Poniatowski leading the army near Leipzig - MP 2001 MNW - National Museum in Warsaw.jpg`
+- **Strona metadanych:** https://commons.wikimedia.org/wiki/File:Jan_Che%C5%82mi%C5%84ski_-_Prince_J%C3%B3zef_Poniatowski_leading_the_army_near_Leipzig_-_MP_2001_MNW_-_National_Museum_in_Warsaw.jpg
 - **Autor i data:** Jan Chełmiński, 1913.
 - **Licencja:** domena publiczna / Public Domain Mark 1.0.
 - **Lokalny plik:** `assets/poniatowski-lipsk.jpg`
-- **Użycie i ograniczenie:** pokazuje Poniatowskiego prowadzącego wojsko pod Lipskiem; nie przedstawia chwili jego śmierci.
+- **Weryfikacja lokalna:** wariant Commons 1920 px, SHA-1 `cddeb2174f10168e62a812abb3f5c2df243174d6`; ponowne pobranie 6 września 2026 r. było identyczne bajtowo.
+- **Użycie i ograniczenie:** późniejsze przedstawienie Poniatowskiego prowadzącego wojsko pod Lipskiem, nie fotografia ani zapis chwili śmierci.
 
 ## Ograniczony rekonesans publicznego ZPE
 - **Data:** 6 września 2026 r.

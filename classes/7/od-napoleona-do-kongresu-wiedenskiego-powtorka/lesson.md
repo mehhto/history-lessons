@@ -59,7 +59,7 @@ Po lekcji:
 | Bilet wyjścia | 3 min | wyświetla polecenie | zapisują indywidualną odpowiedź | odpowiedź oceniana według klucza |
 
 ## Zadanie główne
-W parach wykorzystaj oś czasu, mapę polityczną Europy, wykres Minarda i porównanie map Księstwa Warszawskiego. Uzupełnij tabelę:
+W parach wykorzystaj oś czasu, mapę polityczną Europy, wykres Minarda i porównanie map Księstwa Warszawskiego. Każda para najpierw uzupełnia jeden przydzielony wiersz, a podczas omówienia dopisuje dowody i wnioski z pozostałych par:
 
 | Problem | Dowód 1 | Dowód 2 | Wniosek |
 |---|---|---|---|

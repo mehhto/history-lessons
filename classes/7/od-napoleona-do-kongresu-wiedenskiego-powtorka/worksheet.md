@@ -55,7 +55,17 @@ Uzupełnij łańcuch:
 
 **rewolucja i wojny we Francji** → ____________________ → **francuska dominacja i kolejne koalicje** → ____________________ → **zmienione granice i obaleni władcy** → **kongres wiedeński**
 
-## 5. Mój wniosek
+## 5. Tabela dowodów
+Najpierw uzupełnij z parą przydzielony wiersz. Podczas omówienia dopisz dowody i wnioski z pozostałych par.
+
+| Problem | Dowód 1 | Dowód 2 | Wniosek |
+|---|---|---|---|
+| Dlaczego Napoleon długo zwyciężał? | ________________ | ________________ | ________________ |
+| Dlaczego ostatecznie przegrał? | ________________ | ________________ | ________________ |
+| Dlaczego Polacy go popierali? | ________________ | ________________ | ________________ |
+| Dlaczego Europa potrzebowała nowego porządku? | ________________ | ________________ | ________________ |
+
+## 6. Mój wniosek
 Dlaczego po epoce Napoleona europejscy władcy uznali, że muszą na nowo urządzić Europę?
 
 Uważam, że ____________________________________________________________
