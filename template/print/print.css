@@ -14,6 +14,9 @@ li + li { margin-top: 1.2mm; }
 table { width: 100%; border-collapse: collapse; margin: 3mm 0 4mm; font-size: 10.5pt; break-inside: avoid; }
 th, td { border: .6pt solid #adc0d2; padding: 2.2mm 2.5mm; text-align: left; vertical-align: middle; }
 th { background: #e8f0f5; color: #17365d; font-weight: 700; }
+th.align-left, td.align-left { text-align: left; }
+th.align-center, td.align-center { text-align: center; }
+th.align-right, td.align-right { text-align: right; }
 tbody tr:nth-child(even) { background: #f7fafc; }
 code { padding: .2mm 1mm; background: #e8f0f5; font-family: ui-monospace, monospace; }
 .student h1 { border-bottom: 1.2pt solid #c78a29; padding-bottom: 2mm; }

@@ -38,6 +38,24 @@ test('renders Markdown tables as printable semantic tables', () => {
   assert.match(html, /<td>Mapa Waldseemüllera<\/td><td>1507<\/td>/);
 });
 
+test('preserves Markdown column alignment in printable tables', () => {
+  const html = markdownToHtml('| Nazwa | Data |\n| :--- | ---: |\n| Wyprawa | 1492 |');
+  assert.match(html, /<th class="align-left">Nazwa<\/th><th class="align-right">Data<\/th>/);
+  assert.match(html, /<td class="align-left">Wyprawa<\/td><td class="align-right">1492<\/td>/);
+});
+
+test('keeps escaped pipes inside table cells', () => {
+  const html = markdownToHtml('| Przykład | Znaczenie |\n|---|---|\n| A\\|B | C |');
+  assert.match(html, /<td>A\|B<\/td><td>C<\/td>/);
+});
+
+test('renders one-column pipe tables', () => {
+  const html = markdownToHtml('| Opis |\n| --- |\n| Jedna kolumna |');
+  assert.match(html, /<table>/);
+  assert.match(html, /<th>Opis<\/th>/);
+  assert.match(html, /<td>Jedna kolumna<\/td>/);
+});
+
 test('accepts standard tables without outer pipe characters', () => {
   const html = markdownToHtml('Opis | Data\n---|---\nWyprawa Kolumba | 1492');
   assert.match(html, /<table>/);

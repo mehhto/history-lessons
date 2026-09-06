@@ -38,15 +38,44 @@ function inline(text) {
 }
 
 function tableCells(line) {
-  return line.trim().replace(/^\|/, '').replace(/\|$/, '').split('|').map((cell) => cell.trim());
+  const source = line.trim().replace(/^\|/, '').replace(/\|$/, '');
+  const cells = [];
+  let cell = '';
+  for (let index = 0; index < source.length; index += 1) {
+    const character = source[index];
+    if (character === '\\' && source[index + 1] === '|') {
+      cell += '|';
+      index += 1;
+    } else if (character === '|') {
+      cells.push(cell.trim());
+      cell = '';
+    } else {
+      cell += character;
+    }
+  }
+  cells.push(cell.trim());
+  return cells;
 }
 
 function isTableSeparator(line) {
-  return /^\s*\|?\s*:?-{3,}:?\s*(?:\|\s*:?-{3,}:?\s*)+\|?\s*$/.test(line);
+  return /^\s*\|?\s*:?-{3,}:?\s*(?:\|\s*:?-{3,}:?\s*)*\|?\s*$/.test(line);
 }
 
 function isTableRow(line) {
-  return /^\s*\|?.+\|.+\|?\s*$/.test(line);
+  return /^\s*\|.+\|\s*$/.test(line) || /^\s*.+\|.+\s*$/.test(line);
+}
+
+function tableAlignment(cell) {
+  const marker = cell.trim();
+  if (marker.startsWith(':') && marker.endsWith(':')) return 'align-center';
+  if (marker.endsWith(':')) return 'align-right';
+  if (marker.startsWith(':')) return 'align-left';
+  return '';
+}
+
+function tableCell(tag, value, alignment) {
+  const className = alignment ? ` class="${alignment}"` : '';
+  return `<${tag}${className}>${inline(value)}</${tag}>`;
 }
 
 export function markdownToHtml(markdown) {
@@ -61,11 +90,12 @@ export function markdownToHtml(markdown) {
     if (isTableRow(line) && isTableSeparator(lines[index + 1] || '')) {
       closeList();
       const headers = tableCells(line);
-      output.push(`<table><thead><tr>${headers.map((cell) => `<th>${inline(cell)}</th>`).join('')}</tr></thead><tbody>`);
+      const alignments = tableCells(lines[index + 1]).map(tableAlignment);
+      output.push(`<table><thead><tr>${headers.map((cell, column) => tableCell('th', cell, alignments[column])).join('')}</tr></thead><tbody>`);
       index += 2;
       while (index < lines.length && isTableRow(lines[index])) {
         const cells = tableCells(lines[index]);
-        output.push(`<tr>${headers.map((_, column) => `<td>${inline(cells[column] || '')}</td>`).join('')}</tr>`);
+        output.push(`<tr>${headers.map((_, column) => tableCell('td', cells[column] || '', alignments[column])).join('')}</tr>`);
         index += 1;
       }
       output.push('</tbody></table>');
