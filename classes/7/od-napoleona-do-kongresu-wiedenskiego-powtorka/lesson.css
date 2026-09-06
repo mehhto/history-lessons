@@ -107,8 +107,15 @@
   width: 100%;
   max-height: 61vh;
   object-fit: contain;
-  border: 0.16rem solid var(--napoleon-navy);
-  background: white;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.reveal .visual-two-column figure,
+.reveal .photo-strip figure,
+.reveal .map-compare figure {
+  margin: 0;
 }
 
 .reveal .full-map img { max-height: 66vh; }
@@ -129,11 +136,61 @@
 }
 .reveal #legiony .callout { font-size: 0.55em; }
 
-.reveal .caption {
-  margin-top: 0.25rem;
+.reveal #koronacja .visual-two-column {
+  grid-template-columns: minmax(0, 1.25fr) minmax(18rem, 1fr);
+  align-items: start;
+}
+
+.reveal #koronacja figure { margin: 0; }
+
+.reveal #koronacja .visual-two-column img {
+  display: block;
+  height: 44vh;
+  max-height: none;
+  margin: 0;
+  object-fit: cover;
+  object-position: 50% 54%;
+}
+
+.reveal #koronacja li {
+  margin-bottom: 0.22rem;
+  font-size: 0.68em;
+  line-height: 1.22;
+}
+
+.reveal #koronacja .callout { font-size: 0.58em; }
+
+.reveal #mapa-ksiestwa .map-compare img {
+  height: 35vh;
+  object-fit: contain;
+}
+
+.reveal #polacy-w-walkach .photo-strip img {
+  height: 24vh;
+  margin: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.reveal #polacy-w-walkach .photo-strip figure:nth-child(2) img {
+  object-position: 50% 55%;
+}
+
+.reveal .caption,
+.reveal .photo-strip figcaption,
+.reveal .map-compare figcaption {
+  margin: 0.38rem 0 0;
+  padding-left: 0.58rem;
+  border-left: 0.16rem solid var(--napoleon-gold);
   color: #445166;
   font-size: 0.42em;
-  line-height: 1.25;
+  line-height: 1.28;
+  text-align: left;
+}
+
+.reveal .photo-strip figcaption strong,
+.reveal .map-compare figcaption strong {
+  color: var(--napoleon-navy);
 }
 
 .reveal .battle-grid {
@@ -186,21 +243,16 @@
 
 .reveal .photo-strip figure {
   margin: 0;
-  background: white;
-  border: 1px solid #c9b991;
-  padding: 0.4rem;
+  background: transparent;
+  border: 0;
+  padding: 0;
 }
 
 .reveal .photo-strip img {
   width: 100%;
   height: 28vh;
   object-fit: contain;
-}
-
-.reveal .photo-strip figcaption {
-  font-size: 0.42em;
-  line-height: 1.2;
-  color: #39465a;
+  box-shadow: none;
 }
 
 .reveal .map-compare {
@@ -212,18 +264,18 @@
 
 .reveal .map-compare figure {
   margin: 0;
-  background: #fff;
-  border: 0.12rem solid var(--napoleon-navy);
-  padding: 0.3rem;
+  background: transparent;
+  border: 0;
+  padding: 0;
 }
 
 .reveal .map-compare img {
   width: 100%;
   height: 41vh;
   object-fit: contain;
+  box-shadow: none;
 }
 
-.reveal .map-compare figcaption,
 .reveal .map-conclusion {
   font-size: 0.44em;
   line-height: 1.2;
