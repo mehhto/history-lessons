@@ -27,17 +27,14 @@ daj 45 sekund na hipotezę w parach. nie pytaj, który obraz jest „lepszy”; 
 <!-- .slide: id="przodkowie" class="explanation-slide" -->
 ## Przodkowie współczesnych ludzi: rozgałęzienie, nie drabina
 
-<div class="branch-board">
-<article><strong>Australopiteki</strong><span>Afryka<br>ok. 4,2–2 mln lat temu</span></article>
-<div class="branch-arrow">↘</div>
-<article><strong>Homo habilis</strong><span>Afryka<br>ok. 2,4–1,4 mln lat temu</span></article>
-<div class="branch-arrow">↗ ↘</div>
-<article><strong>Homo erectus</strong><span>Afryka i Azja<br>ok. 1,9 mln–110 tys. lat temu</span></article>
-<article><strong>Neandertalczycy</strong><span>Europa i Azja<br>ok. 400–40 tys. lat temu</span></article>
-<article class="active"><strong>Homo sapiens</strong><span>Afryka<br>od ok. 300 tys. lat temu</span></article>
+<div class="hominin-gallery">
+<figure><img src="assets/australopitek-czaszka.jpg" alt="Fotografia czaszki australopiteka na ekspozycji muzealnej"><figcaption><strong>Australopitek</strong><br>Afryka · ok. 4,2–2 mln lat temu<br>eksponat muzealny</figcaption></figure>
+<figure><img src="assets/homo-erectus-odlew.jpg" alt="Fotografia muzealnego odlewu czaszki Homo erectus"><figcaption><strong>Homo erectus</strong><br>Afryka i Azja · ok. 1,9 mln–110 tys. lat temu<br>odlew muzealny</figcaption></figure>
+<figure><img src="assets/neandertalczyk-czaszka.jpg" alt="Fotografia czaszki neandertalczyka w muzeum"><figcaption><strong>Neandertalczyk</strong><br>Europa i Azja · ok. 400–40 tys. lat temu<br>eksponat muzealny</figcaption></figure>
+<figure><img src="assets/homo-sapiens-odlew.jpg" alt="Fotografia muzealnego odlewu czaszki Homo sapiens"><figcaption><strong>Homo sapiens</strong><br>Afryka · od ok. 300 tys. lat temu<br>odlew muzealny</figcaption></figure>
 </div>
 
-> **Praludzie** to szkolne określenie dawnych gatunków człowiekowatych i ludzi z rodzaju *Homo*. Nie tworzyli jednej prostej kolejki prowadzącej do nas; część gatunków żyła w tym samym czasie.
+> **Praludzie** to szkolne określenie dawnych gatunków człowiekowatych i ludzi z rodzaju *Homo*. Różniły się m.in. budową ciała i czaszki oraz miejscem życia. Nie tworzyły jednej prostej kolejki prowadzącej do nas — część gatunków żyła równocześnie.
 
 notes:
 powiedz „wspólni, bardzo dawni przodkowie”, nie „człowiek pochodzi od współczesnej małpy”. daty są orientacyjne; nie wymagaj ich zapamiętania poza porządkiem: bardzo dawno → Homo sapiens w Afryce.
@@ -100,15 +97,13 @@ model tras nie pozwala opowiedzieć o doświadczeniach wszystkich grup ani wskaz
 <!-- .slide: id="od-lowcy-do-rolnika" class="explanation-slide" -->
 ## Od zdobywania żywności do jej wytwarzania
 
-<div class="transition-flow">
-<article><span>1</span><strong>Obserwacja roślin i zwierząt</strong><p>ludzie poznają pory roku, nasiona i zachowanie stad</p></article>
-<div class="flow-arrow">→</div>
-<article><span>2</span><strong>Uprawa i hodowla</strong><p>część roślin jest sadzona, a część zwierząt rozmnażana i chroniona</p></article>
-<div class="flow-arrow">→</div>
-<article><span>3</span><strong>Zapasy i osady</strong><p>warto zostać przy polach, domach i magazynach</p></article>
-</div>
+<ol class="process-list">
+<li><strong>Obserwacja roślin i zwierząt</strong><span>Ludzie poznają pory roku, nasiona i zachowanie stad.</span></li>
+<li><strong>Uprawa i hodowla</strong><span>Część roślin jest sadzona, a wybrane zwierzęta rozmnażane i chronione.</span></li>
+<li><strong>Zapasy i osady</strong><span>Warto zostać przy polach, domach i magazynach.</span></li>
+</ol>
 
-<div class="student-task">Ułóż własny łańcuch: <strong>uprawa / hodowla → … → …</strong>. Niech ostatnie ogniwo będzie skutkiem dla życia ludzi.</div>
+<p class="plain-task"><strong>Twoje zadanie:</strong> ułóż własny łańcuch: <strong>uprawa / hodowla → … → …</strong>. Ostatnie ogniwo ma być skutkiem dla życia ludzi.</p>
 
 notes:
 podkreśl, że ten proces nie wydarzył się wszędzie jednocześnie. nie twierdź, że rolnictwo „wynaleziono raz i od razu wszędzie”.
@@ -185,8 +180,8 @@ każda grupa zapisuje decyzję w wierszu karty pracy. gdy czasu jest mało, wys�
 ## Wytapianie żelaza: dawniej i dziś
 
 <div class="iron-compare">
-<article><h3>Dawniej: dymarka</h3><div class="furnace old"><span>dym</span><b>ruda żelaza<br>+ węgiel drzewny<br>+ powietrze</b><i>gąbka żelaza</i></div><p>mały piec; dużo pracy ręcznej i przekuwania.</p></article>
-<article><h3>Dzisiaj: huta</h3><div class="furnace modern"><span>instalacja</span><b>ruda / złom<br>+ paliwo + tlen</b><i>żelazo i stal</i></div><p>duża skala i precyzyjna kontrola składu metalu.</p></article>
+<figure><img src="assets/dymarka-eksperymentalna.jpg" alt="Współczesny eksperymentalny wytop żelaza w rekonstrukcji pradziejowego pieca"><figcaption><strong>Dawniej: dymarka</strong><br>Współczesna rekonstrukcja eksperymentalna. Ruda żelaza, węgiel drzewny i powietrze dawały gąbkę żelaza, którą trzeba było przekuwać.</figcaption></figure>
+<figure><img src="assets/huta-nowa-huta.jpg" alt="Fotografia wielkiego pieca w hucie w Nowej Hucie"><figcaption><strong>Dzisiaj: huta</strong><br>Fotografia współczesnego wielkiego pieca w Nowej Hucie. Proces ma wielką skalę i pozwala precyzyjnie kontrolować skład metalu.</figcaption></figure>
 </div>
 
 > Wspólne: surowiec, wysoka temperatura i doprowadzanie powietrza / tlenu. Różne: skala, urządzenia i kontrola procesu.
@@ -201,7 +196,7 @@ każda grupa zapisuje decyzję w wierszu karty pracy. gdy czasu jest mało, wys�
 <article><strong>„Ale miała też koszty…”</strong><p>cięższa praca · ryzyko nieurodzaju · choroby w osadach · nierówności</p></article>
 </div>
 
-<div class="student-task">Każda strona dyskusji podaje jeden argument i wyjaśnia go słowem <strong>„ponieważ”</strong>. Nie wybieramy „zwycięzcy” — szukamy pełniejszego obrazu zmiany.</div>
+<p class="plain-task"><strong>Każda strona</strong> podaje jeden argument i wyjaśnia go słowem <strong>„ponieważ”</strong>. Nie wybieramy „zwycięzcy” — szukamy pełniejszego obrazu zmiany.</p>
 
 notes:
 nie oceniaj historycznych społeczności według współczesnego komfortu. dobry wniosek zawiera korzyść i koszt.
@@ -211,12 +206,12 @@ nie oceniaj historycznych społeczności według współczesnego komfortu. dobry
 <!-- .slide: id="synteza" class="compare-slide" -->
 ## Uporządkuj odpowiedź na pytanie główne
 
-<lesson-stepper>
-<lesson-step><strong>Praludzie i Homo sapiens</strong><br>ewolucja była rozgałęziona; Homo sapiens ma afrykańskie początki.</lesson-step>
-<lesson-step><strong>Koczownicy</strong><br>zdobywali żywność, przemieszczali się i mieli niewielkie zapasy.</lesson-step>
-<lesson-step><strong>Rewolucja neolityczna</strong><br>uprawa i hodowla sprzyjały osadom, zapasom i nowym problemom.</lesson-step>
-<lesson-step><strong>Epoki materiałów</strong><br>kamień → brąz → żelazo zmieniały narzędzia oraz pracę.</lesson-step>
-</lesson-stepper>
+<ul class="synthesis-list">
+<li><strong>Praludzie i Homo sapiens:</strong> ewolucja była rozgałęziona; Homo sapiens ma afrykańskie początki.</li>
+<li><strong>Koczownicy:</strong> zdobywali żywność, przemieszczali się i mieli niewielkie zapasy.</li>
+<li><strong>Rewolucja neolityczna:</strong> uprawa i hodowla sprzyjały osadom, zapasom i nowym problemom.</li>
+<li><strong>Epoki materiałów:</strong> kamień → brąz → żelazo zmieniały narzędzia oraz pracę.</li>
+</ul>
 
 > **Zmiana sposobu zdobywania żywności uruchomiła dalsze zmiany: w osadnictwie, pracy, zapasach, technice i relacjach społecznych.**
 

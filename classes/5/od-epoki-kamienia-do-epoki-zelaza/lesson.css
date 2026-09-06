@@ -27,19 +27,15 @@
 
 .reveal .opening-pair,
 .reveal .visual-two { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
-.reveal .opening-pair img { width: 100%; height: 31vh; object-fit: cover; object-position: center; }
-.reveal .visual-two img { width: 100%; height: 44vh; object-fit: cover; object-position: center; }
-.reveal #zycie-lowcow .visual-two img { object-position: 50% 52%; }
-.reveal #dom-neolityczny .visual-two img { object-position: 50% 55%; }
+.reveal .opening-pair img { width: 100%; height: 27vh; object-fit: cover; object-position: 50% 50%; }
+.reveal .visual-two img { width: 100%; height: 38vh; object-fit: cover; object-position: 50% 50%; }
+.reveal #zycie-lowcow .visual-two img { object-position: 50% 48%; }
+.reveal #dom-neolityczny .visual-two img { object-position: 50% 53%; }
 
-.reveal .branch-board { display: grid; grid-template-columns: 1.15fr .18fr 1.15fr .32fr 1.15fr; gap: .45rem; align-items: center; margin: .7rem 0; }
-.reveal .branch-board article { min-height: 6.8rem; padding: .72rem; border-radius: .52rem; background: rgba(255,255,255,.92); border-top: .42rem solid var(--preh-teal); box-shadow: 0 .2rem .6rem rgba(24,50,75,.11); }
-.reveal .branch-board article:nth-of-type(3) { border-top-color: var(--preh-rust); }
-.reveal .branch-board article:nth-of-type(4) { border-top-color: #806d98; }
-.reveal .branch-board article.active { border-top-color: #2c9969; }
-.reveal .branch-board strong { display:block; color:var(--preh-navy); font-size:.7em; }
-.reveal .branch-board span { display:block; margin-top:.35rem; font-size:.48em; line-height:1.28; }
-.reveal .branch-arrow { color:var(--preh-rust); font-size:1.65em; font-weight:800; text-align:center; }
+.reveal .hominin-gallery { display:grid; grid-template-columns:repeat(4, minmax(0, 1fr)); gap:.72rem; align-items:start; margin:.35rem 0 .45rem; }
+.reveal .hominin-gallery img { display:block; width:100%; height:20vh; object-fit:cover; object-position:50% 45%; }
+.reveal .hominin-gallery figcaption { margin-top:.28rem; font-size:.34em; line-height:1.2; }
+.reveal .hominin-gallery figcaption strong { color:var(--preh-navy); font-size:1.14em; }
 
 .reveal .migration-map img { display:block; width:100%; height:48vh; object-fit:contain; }
 .reveal #migracje .migration-map img { height:40vh; }
@@ -51,12 +47,12 @@
 .reveal .big-term { margin:.15rem 0 .45rem; color:var(--preh-navy); font-size:1.03em; }
 .reveal #dom-neolityczny li { font-size:.64em; margin-bottom:.35rem; }
 
-.reveal .transition-flow { display:grid; grid-template-columns:1fr auto 1fr auto 1fr; gap:.55rem; align-items:center; }
-.reveal .transition-flow article { min-height:10.5rem; padding:.85rem; border-radius:.6rem; background:#fff; border-top:.52rem solid var(--preh-gold); box-shadow:0 .25rem .65rem rgba(24,50,75,.12); }
-.reveal .transition-flow span { display:inline-grid; place-items:center; width:1.5em; height:1.5em; border-radius:50%; background:var(--preh-teal); color:#fff; font-weight:800; }
-.reveal .transition-flow strong { display:block; margin-top:.45rem; color:var(--preh-navy); font-size:.69em; }
-.reveal .transition-flow p { font-size:.5em; line-height:1.3; }
-.reveal .flow-arrow { color:var(--preh-rust); font-size:1.7em; font-weight:800; }
+.reveal .process-list { display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:1.1rem; margin:.55rem 0 .7rem; padding:0; list-style:none; counter-reset:process; }
+.reveal .process-list li { position:relative; min-height:7.3rem; padding:.2rem 0 .2rem 3rem; border-left:.22rem solid var(--preh-gold); counter-increment:process; }
+.reveal .process-list li::before { content:counter(process); position:absolute; left:.7rem; top:.1rem; color:var(--preh-teal); font-size:1.15em; font-weight:800; }
+.reveal .process-list strong { display:block; color:var(--preh-navy); font-size:.7em; line-height:1.15; }
+.reveal .process-list span { display:block; margin-top:.45rem; font-size:.52em; line-height:1.3; }
+.reveal .plain-task { margin:.25rem 0 0; padding:.52rem 0 0; border-top:.13rem solid var(--preh-gold); color:#24364a; font-size:.64em; line-height:1.28; }
 
 .reveal .impact-grid,
 .reveal .role-grid,
@@ -87,21 +83,15 @@
 .reveal .small-note { margin:.55rem 0 0; font-size:.48em; color:#526775; }
 
 .reveal .iron-compare { display:grid; grid-template-columns:repeat(2,1fr); gap:1.25rem; }
-.reveal .iron-compare article { padding:.7rem; background:rgba(255,255,255,.75); }
-.reveal .iron-compare h3 { margin:.1rem 0 .45rem; color:var(--preh-navy); font-size:.82em; }
-.reveal .iron-compare p { font-size:.53em; line-height:1.28; }
-.reveal .furnace { display:grid; justify-items:center; align-content:center; min-height:14rem; margin:.25rem 0; color:#fff; text-align:center; }
-.reveal .furnace.old { clip-path:polygon(31% 100%, 38% 18%, 62% 18%, 69% 100%); background:linear-gradient(#5b4434 0 18%, #a45e37 18% 100%); }
-.reveal .furnace.modern { border-radius:30% 30% 8% 8%; background:linear-gradient(#435561 0 25%, #627e8c 25% 100%); }
-.reveal .furnace span { font-size:.48em; font-weight:800; letter-spacing:.08em; text-transform:uppercase; }
-.reveal .furnace b { margin:.65rem 0; padding:.5rem; background:rgba(0,0,0,.22); font-size:.53em; }
-.reveal .furnace i { color:#ffd26f; font-size:.48em; font-style:normal; font-weight:800; }
+.reveal .iron-compare img { display:block; width:100%; height:31vh; object-fit:cover; object-position:50% 52%; }
+.reveal .iron-compare figcaption { font-size:.39em; }
 
 .reveal .debate-grid { grid-template-columns:repeat(2,1fr); }
 .reveal .debate-grid article:first-child { border-top:.55rem solid #4d9c6d; }
 .reveal .debate-grid article:last-child { border-top:.55rem solid var(--preh-rust); }
-.reveal lesson-step { min-height:8.8rem; }
-.reveal lesson-step strong { color:var(--preh-navy); }
+.reveal .synthesis-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.75rem 1.2rem; margin:.55rem 0 .75rem; padding:0; list-style:none; }
+.reveal .synthesis-list li { padding-left:.75rem; border-left:.2rem solid var(--preh-teal); font-size:.57em; line-height:1.32; }
+.reveal .synthesis-list strong { color:var(--preh-navy); }
 
 @media print {
   .reveal .opening-pair,

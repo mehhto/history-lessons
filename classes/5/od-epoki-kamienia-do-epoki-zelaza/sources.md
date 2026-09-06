@@ -49,13 +49,83 @@
 - **Rola na lekcji:** odczytanie Afryki jako obszaru początkowego i głównych kierunków wędrówek.
 - **Ograniczenia:** model naukowy z trasami i datami przybliżonymi; nie pokazuje jednej wyprawy ani pełnej różnorodności populacji.
 
-### source-04 — schematy na slajdach
-- **Nazwa:** diagramy rozgałęzienia ewolucji, przejścia do rolnictwa, rewolucji neolitycznej, epok i porównania wytopu żelaza
-- **Typ:** lokalne opracowanie dydaktyczne w HTML/CSS
-- **Autor:** pakiet lekcji; fakty oparte na wymaganiu urzędowym, przekazanych wymaganiach klasy V i przeglądzie źródeł wyżej
-- **Licencja / status:** własne elementy układu; nie są źródłami z epoki ani rekonstrukcjami naukowymi
-- **Rola na lekcji:** porządkowanie pojęć i związków przyczynowo-skutkowych.
-- **Ograniczenia:** celowo upraszczają długie i regionalnie zróżnicowane procesy; slajdy podają to wprost.
+### source-04 — australopitek
+- **Nazwa:** *Australopithecus afarensis skull — Naturmuseum Senckenberg*
+- **Typ:** fotografia muzealnej czaszki / eksponatu
+- **Autor fotografii:** Daderot
+- **Data fotografii:** 21 lipca 2012
+- **Lokalny plik:** `assets/australopitek-czaszka.jpg`
+- **SHA-256 lokalnego pliku:** `1c4769089d5b2826a22cc1be13bf7746ba230739a91dbf4a46482de0681eb812`
+- **Strona źródłowa:** https://commons.wikimedia.org/wiki/File:Australopithecus_afarensis_skull_-_Naturmuseum_Senckenberg_-_DSC02102.JPG
+- **Bezpośredni wariant pobrany:** https://commons.wikimedia.org/wiki/Special:Redirect/file/Australopithecus_afarensis_skull_-_Naturmuseum_Senckenberg_-_DSC02102.JPG?width=960
+- **Licencja:** CC0
+- **Rola na lekcji:** galeria eksponatów na slajdzie o rozgałęzionej ewolucji człowiekowatych.
+- **Ograniczenia:** czaszka nie jest pełnym wizerunkiem ani dowodem na jedną prostą linię rozwoju.
+
+### source-05 — Homo erectus
+- **Nazwa:** *Homo erectus skull cast, World Museum Liverpool*
+- **Typ:** fotografia muzealnego odlewu czaszki
+- **Autor fotografii:** Rept0n1x
+- **Data fotografii:** 6 października 2013
+- **Lokalny plik:** `assets/homo-erectus-odlew.jpg`
+- **SHA-256 lokalnego pliku:** `5347dd7548e62d3df83aeb3e39e59aebbf8bf36c9fcea855141fd6378bf031dd`
+- **Strona źródłowa:** https://commons.wikimedia.org/wiki/File:Homo_erectus_skull_cast,_World_Museum_Liverpool.JPG
+- **Bezpośredni wariant pobrany:** https://commons.wikimedia.org/wiki/Special:Redirect/file/Homo_erectus_skull_cast,_World_Museum_Liverpool.JPG?width=960
+- **Licencja:** CC BY-SA 3.0
+- **Rola na lekcji:** przykład muzealnego odlewu w galerii gatunków.
+- **Ograniczenia:** odlew muzealny, nie bezpośrednia fotografia skamieniałości.
+
+### source-06 — neandertalczyk
+- **Nazwa:** *Le Moustier Neanderthal Skull, Neues Museum Berlin*
+- **Typ:** fotografia muzealnej czaszki
+- **Autor fotografii:** Gary Todd
+- **Data fotografii:** 3 sierpnia 2016
+- **Lokalny plik:** `assets/neandertalczyk-czaszka.jpg`
+- **SHA-256 lokalnego pliku:** `a53a8437bee012bb5866ada3fa7bade1a7e51c602716ae0160e43f4c11668717`
+- **Strona źródłowa:** https://commons.wikimedia.org/wiki/File:Le_Moustier_Neanderthal_Skull_Neues_Museum_Berlin.jpg
+- **Bezpośredni wariant pobrany:** https://commons.wikimedia.org/wiki/Special:Redirect/file/Le_Moustier_Neanderthal_Skull_Neues_Museum_Berlin.jpg?width=960
+- **Licencja:** CC0
+- **Rola na lekcji:** przykład eksponatu w galerii gatunków.
+- **Ograniczenia:** pojedynczy eksponat nie opisuje wszystkich neandertalczyków.
+
+### source-07 — Homo sapiens
+- **Nazwa:** *Homo sapiens sapiens (Modern man), World Museum Liverpool*
+- **Typ:** fotografia muzealnego odlewu czaszki
+- **Autor fotografii:** Rept0n1x
+- **Data fotografii:** 6 października 2013
+- **Lokalny plik:** `assets/homo-sapiens-odlew.jpg`
+- **SHA-256 lokalnego pliku:** `0c5d5ebf44ce57982d098136368594ccc43f6f64559376aa12ad64c6e292fb94`
+- **Strona źródłowa:** https://commons.wikimedia.org/wiki/File:Homo_sapiens_sapiens_(Modern_man),_World_Museum_Liverpool.JPG
+- **Bezpośredni wariant pobrany:** https://commons.wikimedia.org/wiki/Special:Redirect/file/Homo_sapiens_sapiens_(Modern_man),_World_Museum_Liverpool.JPG?width=960
+- **Licencja:** CC BY-SA 3.0
+- **Rola na lekcji:** współczesny człowiek w galerii gatunków.
+- **Ograniczenia:** odlew muzealny, nie wizerunek konkretnej żyjącej osoby.
+
+### source-08 — eksperymentalna dymarka
+- **Nazwa:** *Prehistoric Experimental Iron Smelting*
+- **Typ:** fotografia współczesnej rekonstrukcji eksperymentalnej
+- **Autor fotografii:** Richard Croft
+- **Data fotografii:** 14 września 2008
+- **Lokalny plik:** `assets/dymarka-eksperymentalna.jpg`
+- **SHA-256 lokalnego pliku:** `756120d29a113c7b2fe5857ed7137fadddd0325ff9089c5560a06966ee3e6375`
+- **Strona źródłowa:** https://commons.wikimedia.org/wiki/File:Prehistoric_Experimental_Iron_Smelting_-_geograph.org.uk_-_998084.jpg
+- **Bezpośredni wariant pobrany:** https://commons.wikimedia.org/wiki/Special:Redirect/file/Prehistoric_Experimental_Iron_Smelting_-_geograph.org.uk_-_998084.jpg?width=1280
+- **Licencja:** CC BY-SA 2.0
+- **Rola na lekcji:** porównanie dawnego sposobu wytopu z nowoczesną hutą.
+- **Ograniczenia:** współczesny eksperyment, nie fotografia z epoki żelaza.
+
+### source-09 — współczesna huta
+- **Nazwa:** *Sendzimir's (Nowa Huta) steel mill, blast furnace*
+- **Typ:** fotografia współczesnego wielkiego pieca
+- **Autor fotografii:** Zygmunt Put (Zetpe0202)
+- **Data fotografii:** 16 lipca 2011
+- **Lokalny plik:** `assets/huta-nowa-huta.jpg`
+- **SHA-256 lokalnego pliku:** `a2fddd34b07d4e827ee4b51faf9106ffee69734932d8dfd13f1dcb06ce102ef2`
+- **Strona źródłowa:** https://commons.wikimedia.org/wiki/File:Sendzimir%27s_(Nowa_Huta)_steel_mill,_blast_furnace,_1_Ujastek_street,_Nowa_Huta,_Krakow,_Poland.jpg
+- **Bezpośredni wariant pobrany:** https://commons.wikimedia.org/wiki/Special:Redirect/file/Sendzimir's_(Nowa_Huta)_steel_mill,_blast_furnace,_1_Ujastek_street,_Nowa_Huta,_Krakow,_Poland.jpg?width=1280
+- **Licencja:** CC BY-SA 4.0
+- **Rola na lekcji:** rzeczywisty współczesny punkt porównania dla dymarki.
+- **Ograniczenia:** pokazuje konkretną instalację, nie cały proces produkcji stali.
 
 ## Kontrola faktów przed akceptacją nauczyciela
 - [ ] Nauczyciel potwierdza kolejność tematu w lokalnym rozkładzie klasy V.
