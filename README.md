@@ -45,18 +45,19 @@ Po opublikowaniu portu na interfejsie LAN podgląd można też otworzyć bezpoś
 
 ## Model lekcji i workflow
 
-1. Wybierz typ w `metadata.json`: `new-knowledge` (nowa wiedza) albo `practice` (ćwiczeniowa / źródłowa).
-2. Uzupełnij `lesson.md`: wymaganie, pytanie główne oraz mapę **wymaganie → wiedza konieczna → zadanie → dowód zrozumienia**.
-3. Wykonaj krótki rekonesans publicznego ZPE: wyszukaj temat, klasę i pojęcia z celu, oceń kilka najtrafniejszych materiałów i zapisz wynik w sekcji „Rekonesans ZPE” w `sources.md`. Sprawdzenie jest obowiązkowe, użycie materiału — nie.
-4. Materiał ZPE wykorzystaj tylko wtedy, gdy wzmacnia cel, pasuje do wieku, ma sprawdzalne fakty oraz jasną licencję/status prawny. Pobierz do `assets/` tylko to, na co pozwalają prawa; w innym przypadku użyj materiału jako inspiracji lub odrzuć. Nie udostępniaj konta ani hasła i nie uzależniaj lekcji od dostępu do ZPE.
-5. W lekcji nowej wiedzy przygotuj pełne wyjaśnienie dla ucznia: pojęcia, chronologię, mechanizm, przykład i konieczne rozróżnienia. W ćwiczeniowej podaj tylko przypomnienie konieczne do samodzielnej pracy.
-6. Wybierz i ręcznie zweryfikuj pozostałe lokalne materiały wyłącznie wtedy, gdy wzmacniają cel; zapisz ich pochodzenie i licencję w `sources.md`.
-7. Poproś AI o pierwszy szkic `slides.md` zgodnie z `SKILL.md`; nie zlecaj mu wymyślania źródeł ani faktów. Nie ma globalnego limitu słów ani slajdów — obowiązują funkcja, czytelność i realny czas lekcji.
-8. Dodaj szczegółowe notatki nauczyciela tylko do trudnych wyjaśnień, źródeł i zadań wymagających moderacji; umieść je w `teacher-guide.md` lub po `notes:`.
-9. Dodaj pliki do `assets/`, uruchom `npm run check`, a następnie obejrzyj lekcję lokalnie.
-10. Po lekcji nowej wiedzy przygotuj `student-summary.md`; po ćwiczeniowej użyj go tylko, gdy porządkuje nową całość.
-11. Po lekcji uzupełnij `reflection.md`; jeśli problem powtarza się, popraw szablon lub regułę, nie tylko jedną lekcję.
-12. Przed lekcją utwórz PDF: `npm run export:pdf -- --lesson classes/6/wielkie-odkrycia-geograficzne`.
+1. Ustal rok szkolny i klasę. W `curriculum/rollout-2026.md` wybierz `nowa-2026` albo `stara-przejsciowa`, następnie przeczytaj właściwy plik klasy. Nie wybieraj podstawy tylko po numerze klasy.
+2. Zapisz rok szkolny i wariant podstawy w `metadata.json`. Wybierz typ: `new-knowledge` (nowa wiedza) albo `practice` (ćwiczeniowa / źródłowa).
+3. Uzupełnij `lesson.md`: dokładne wymaganie z aktywnej podstawy, pytanie główne oraz mapę **wymaganie → wiedza konieczna → zadanie → dowód zrozumienia**. Wymagań edukacyjnych używaj do poziomowania, nie do nadpisywania podstawy.
+4. Wykonaj krótki rekonesans publicznego ZPE: wyszukaj temat, klasę i pojęcia z celu, oceń kilka najtrafniejszych materiałów i zapisz wynik w sekcji „Rekonesans ZPE” w `sources.md`. Sprawdzenie jest obowiązkowe, użycie materiału — nie.
+5. Materiał ZPE wykorzystaj tylko wtedy, gdy wzmacnia cel, pasuje do wieku, ma sprawdzalne fakty oraz jasną licencję/status prawny. Pobierz do `assets/` tylko to, na co pozwalają prawa; w innym przypadku użyj materiału jako inspiracji lub odrzuć. Nie udostępniaj konta ani hasła i nie uzależniaj lekcji od dostępu do ZPE.
+6. W lekcji nowej wiedzy przygotuj pełne wyjaśnienie dla ucznia: pojęcia, chronologię, mechanizm, przykład i konieczne rozróżnienia. W ćwiczeniowej podaj tylko przypomnienie konieczne do samodzielnej pracy.
+7. Wybierz i ręcznie zweryfikuj pozostałe lokalne materiały wyłącznie wtedy, gdy wzmacniają cel; zapisz ich pochodzenie i licencję w `sources.md`.
+8. Poproś AI o pierwszy szkic `slides.md` zgodnie z `SKILL.md`; nie zlecaj mu wymyślania źródeł ani faktów. Nie ma globalnego limitu słów ani slajdów — obowiązują funkcja, czytelność i realny czas lekcji.
+9. Dodaj szczegółowe notatki nauczyciela tylko do trudnych wyjaśnień, źródeł i zadań wymagających moderacji; umieść je w `teacher-guide.md` lub po `notes:`.
+10. Dodaj pliki do `assets/`, uruchom `npm run check`, a następnie obejrzyj lekcję lokalnie.
+11. Po lekcji nowej wiedzy przygotuj `student-summary.md`; po ćwiczeniowej użyj go tylko, gdy porządkuje nową całość.
+12. Po lekcji uzupełnij `reflection.md`; jeśli problem powtarza się, popraw szablon lub regułę, nie tylko jedną lekcję.
+13. Przed lekcją utwórz PDF: `npm run export:pdf -- --lesson classes/6/wielkie-odkrycia-geograficzne`.
 
 **Zasada:** prezentacja dostarcza kompletnego, zwięzłego wyjaśnienia. Podręcznik jest uzupełnieniem, a nie miejscem, do którego odsyłamy po brakujący kontekst.
 
@@ -160,7 +161,7 @@ PDF zapisze się jako `presentation-backup.pdf` w katalogu lekcji. Możesz też 
 
 ## Struktura
 
-- `curriculum/` — wymagania i szkolny wariant programu; uzupełnij je tylko zweryfikowanym tekstem.
+- `curriculum/` — macierz wdrażania, aktywna podstawa dla każdej kohorty, wymagania edukacyjne i rejestr źródeł.
 - `template/` — stały motyw, lokalny Reveal.js, szablony i checklista.
 - `asset-library/` — ponownie wykorzystywane lokalne materiały wraz z rejestrem praw/licencji.
 - `classes/4` … `classes/8` — katalogi rzeczywistych lekcji.
@@ -169,7 +170,7 @@ PDF zapisze się jako `presentation-backup.pdf` w katalogu lekcji. Możesz też 
 
 ## Jakość i bezpieczeństwo
 
-- Ten repozytorium nie zawiera tekstu podstawy programowej. Wklej jej właściwy wariant dla szkoły do `curriculum/` i zapisz źródło oraz datę weryfikacji.
+- Przed każdą nową lekcją wybierz aktywną podstawę według roku i klasy; nie mieszaj nowej podstawy 2026 ze starą podstawą kończoną przez starsze kohorty.
 - Nie przedstawiaj grafiki AI jako źródła historycznego.
 - Nie dodawaj danych osobowych ani prac uczniów bez anonimizacji i podstawy prawnej.
 - Każda data, cytat, autor, mapa, licencja i podpis wymaga kontroli nauczyciela przed użyciem.

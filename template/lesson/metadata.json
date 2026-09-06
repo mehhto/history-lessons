@@ -2,6 +2,8 @@
   "id": "__SLUG__",
   "title": "__TITLE__",
   "grade": 0,
+  "school_year": "[DECYZJA NAUCZYCIELA]",
+  "curriculum_version": "[DECYZJA NAUCZYCIELA]",
   "duration_minutes": 45,
   "kind": "lesson",
   "lesson_type": "new-knowledge",

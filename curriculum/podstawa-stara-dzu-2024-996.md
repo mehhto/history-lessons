@@ -1,4 +1,4 @@
-# Podstawa programowa historii — szkoła podstawowa, klasy IV–VIII (rok szkolny 2026/2027)
+# Stara podstawa historii — Dz. U. 2024 poz. 996
 
 ## Źródło urzędowe i kontrola
 
@@ -10,7 +10,9 @@
 - **Data pobrania i kontroli:** 2026-09-05.
 - **Wypis stron obejmujących historię:** `curriculum/official/D2024000099601-historia-pp-104-117.txt`.
 
-> To jest źródło robocze dla projektu. Przed zatwierdzeniem rocznego rozkładu nauczyciel potwierdza, że szkoła nie realizuje własnego programu o odmiennym rozkładzie tematów.
+> W roku szkolnym 2026/2027 jest to aktywne źródło dla klas V–VIII. Klasa IV pracuje według nowej podstawy 2026. W kolejnych latach stosuj macierz z `rollout-2026.md`.
+
+Przed zatwierdzeniem rocznego rozkładu nauczyciel potwierdza lokalny program i sprawdza, czy akt nie został zmieniony.
 
 ## Zalecany podział działów między klasy
 

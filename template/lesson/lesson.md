@@ -2,11 +2,13 @@
 
 ## Metadane
 - Klasa: __GRADE__
+- Rok szkolny: [DECYZJA NAUCZYCIELA]
 - Czas: 45 minut
 - Typ lekcji: `new-knowledge` / `practice` — wybierz także w `metadata.json`
 - Temat: __TITLE__
 - Podręcznik / dział: [DECYZJA NAUCZYCIELA]
-- Wariant programu i źródło wymagań: [DECYZJA NAUCZYCIELA]
+- Wariant podstawy: `nowa-2026` / `stara-przejsciowa` — wybierz według `curriculum/rollout-2026.md`
+- Źródło wymagania: [DECYZJA NAUCZYCIELA]
 
 ## Wymaganie programowe
 > [Wklej dokładne, zweryfikowane brzmienie wymagania lub spójnej grupy wymagań.]

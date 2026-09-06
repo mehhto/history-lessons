@@ -20,6 +20,9 @@ test('new lesson replaces title and grade placeholders in every learner and teac
       assert.equal(content.includes('__TITLE__'), false, `${name} still contains title placeholder`);
       assert.equal(content.includes('__GRADE__'), false, `${name} still contains grade placeholder`);
     }
+    const metadata = JSON.parse(await readFile(path.join(lesson, 'metadata.json'), 'utf8'));
+    assert.equal(metadata.school_year, '[DECYZJA NAUCZYCIELA]');
+    assert.equal(metadata.curriculum_version, '[DECYZJA NAUCZYCIELA]');
   } finally {
     await rm(directory, { recursive: true, force: true });
   }

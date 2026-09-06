@@ -1,7 +1,11 @@
 # Checklist jakości przed lekcją
 
 ## Merytoryka i podstawa
+- [ ] Zapisano rok szkolny i klasę oraz wybrano podstawę według `curriculum/rollout-2026.md`.
+- [ ] `metadata.json` i `lesson.md` wskazują ten sam wariant: `nowa-2026` albo `stara-przejsciowa`.
 - [ ] Wymaganie programu jest zacytowane dokładnie albo wskazane jako wymagające zatwierdzenia.
+- [ ] Wymagania edukacyjne służą do poziomowania i oceniania, ale nie nadpisują aktywnej podstawy.
+- [ ] Ewentualny konflikt między podstawą, programem, wymaganiami i podręcznikiem jest jawnie zapisany, a nie rozstrzygnięty domysłem.
 - [ ] Jest mapa: wymaganie → wiedza konieczna → zadanie → dowód zrozumienia.
 - [ ] Ręcznie zweryfikowano każdą datę, cytat, autora, mapę i podpis.
 - [ ] Jest jasne, czy materiał jest źródłem z epoki, opracowaniem, rekonstrukcją czy grafiką AI.

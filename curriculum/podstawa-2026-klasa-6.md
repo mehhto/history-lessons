@@ -1,14 +1,13 @@
-# Program nauczania — klasa VI
+# Program nauczania — klasa VI, rok 2026/2027
 
-Obowiązującym źródłem roboczym jest:
+## Aktywna podstawa
 
-[`podstawa-programowa-historia-iv-viii-2026-2027.md`](podstawa-programowa-historia-iv-viii-2026-2027.md)
+- Wariant: `stara-przejsciowa`.
+- Reguła kohortowa: [`rollout-2026.md`](rollout-2026.md).
+- Zweryfikowane źródło urzędowe starej podstawy: [`podstawa-stara-dzu-2024-996.md`](podstawa-stara-dzu-2024-996.md).
 
-Zawiera urzędowe źródło, odnośnik do opcjonalnej lokalnej kopii PDF, datę kontroli, podział działów dla klas IV–VIII oraz dokładne wymagania dla działu VIII „Wielkie odkrycia geograficzne”.
+## Wymagania edukacyjne
 
-Przed zatwierdzeniem rocznego planu uzupełnij wyłącznie dane lokalne:
+Używaj pomocniczo lokalnego dokumentu `sources/teacher-2026-09-06/original/wymagania-edukacyjne-klasa-6.docx`. Służy do poziomowania i oceniania; dokładne wymaganie programowe cytuj ze źródła aktywnej podstawy.
 
-- program / podręcznik używany w szkole;
-- liczbę realnych godzin do dyspozycji w klasie VI;
-- terminy sprawdzianów, powtórek, wycieczek i rezerwy;
-- ewentualne wymagania szkolnego programu wykraczające poza podstawę.
+Przekazana kopia `podstawa-stara-klasy-5-8.docx` jest materiałem porównawczym. W razie rozbieżności pierwszeństwo ma zweryfikowany tekst urzędowy.

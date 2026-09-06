@@ -8,8 +8,8 @@ Nie jesteś źródłem faktów historycznych ani arbitrem zgodności z programem
 
 ## Przed rozpoczęciem
 
-1. Przeczytaj właściwy plik w `curriculum/`, `template/quality-checklist.md` oraz `template/lesson/lesson.md`.
-2. Ustal: klasę, czas, temat, dosłowne wymaganie szczegółowe, pytanie główne i **typ lekcji**: `new-knowledge` albo `practice`.
+1. Ustal rok szkolny i klasę. Odczytaj `curriculum/rollout-2026.md`, wybierz `nowa-2026` albo `stara-przejsciowa`, a potem przeczytaj właściwy plik klasy, `template/quality-checklist.md` oraz `template/lesson/lesson.md`.
+2. Ustal: klasę, czas, temat, dosłowne wymaganie z aktywnej podstawy, pytanie główne i **typ lekcji**: `new-knowledge` albo `practice`. Wymagań edukacyjnych używaj do poziomowania; nie mogą nadpisywać podstawy.
 3. Zbuduj mapę: **wymaganie → wiedza konieczna → działanie ucznia → dowód zrozumienia**.
 4. Wykonaj ograniczony rekonesans publicznego ZPE: wyszukaj temat, klasę i pojęcia z celu, oceń kilka najtrafniejszych materiałów i zapisz decyzję w `sources.md`. ZPE trzeba sprawdzić, ale materiału nie trzeba użyć.
 5. Materiał ZPE wykorzystaj tylko wtedy, gdy wnosi konkretną wartość dla celu, jest odpowiedni dla wieku, ma zweryfikowane fakty i stronę z jasną licencją/status...[truncated]

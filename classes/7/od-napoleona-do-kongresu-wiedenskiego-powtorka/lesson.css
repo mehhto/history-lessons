@@ -1,0 +1,261 @@
+:root {
+  --napoleon-navy: #13243a;
+  --napoleon-blue: #284b70;
+  --napoleon-red: #9f2f2f;
+  --napoleon-gold: #c69a43;
+  --napoleon-cream: #f4ead7;
+}
+
+.reveal .slides section {
+  background-image:
+    linear-gradient(135deg, rgba(198, 154, 67, 0.08), transparent 32%),
+    linear-gradient(315deg, rgba(40, 75, 112, 0.06), transparent 38%);
+}
+
+.reveal .napoleon-title h1,
+.reveal .napoleon-title h2 {
+  color: var(--napoleon-navy);
+}
+
+.reveal .source-label {
+  color: var(--napoleon-red);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.reveal .power-ladder,
+.reveal .cause-chain,
+.reveal .polish-balance,
+.reveal .coalition-loop {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 1.1rem;
+}
+
+.reveal .power-ladder {
+  grid-template-columns: repeat(4, 1fr);
+  align-items: stretch;
+}
+
+.reveal .power-ladder article,
+.reveal .cause-chain article,
+.reveal .polish-balance article,
+.reveal .coalition-loop article {
+  border: 2px solid color-mix(in srgb, var(--napoleon-blue), white 45%);
+  border-top: 0.55rem solid var(--napoleon-gold);
+  border-radius: 0.55rem;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 0.8rem;
+  box-shadow: 0 0.25rem 0.65rem rgba(19, 36, 58, 0.12);
+}
+
+.reveal .power-ladder article:nth-child(4),
+.reveal .cause-chain article:last-child {
+  border-top-color: var(--napoleon-red);
+}
+
+.reveal .power-ladder h3,
+.reveal .cause-chain h3,
+.reveal .polish-balance h3,
+.reveal .coalition-loop h3 {
+  margin: 0 0 0.35rem;
+  color: var(--napoleon-navy);
+  font-size: 0.78em;
+}
+
+.reveal .power-ladder p,
+.reveal .cause-chain p,
+.reveal .polish-balance p,
+.reveal .coalition-loop p {
+  margin: 0;
+  font-size: 0.62em;
+  line-height: 1.3;
+}
+
+.reveal .coalition-loop {
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  align-items: center;
+}
+
+.reveal .coalition-loop .arrow {
+  color: var(--napoleon-red);
+  font-size: 1.8em;
+  font-weight: 800;
+}
+
+.reveal .cause-chain {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.reveal .polish-balance {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.reveal .polish-balance article:nth-child(1) { border-top-color: var(--napoleon-blue); }
+.reveal .polish-balance article:nth-child(2) { border-top-color: #4d7f52; }
+.reveal .polish-balance article:nth-child(3) { border-top-color: var(--napoleon-red); }
+
+.reveal .visual-two-column {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(15rem, 0.75fr);
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.reveal .visual-two-column img,
+.reveal .full-map img {
+  width: 100%;
+  max-height: 61vh;
+  object-fit: contain;
+  border: 0.16rem solid var(--napoleon-navy);
+  background: white;
+}
+
+.reveal .full-map img { max-height: 66vh; }
+
+.reveal #mapa-kampanii img { max-height: 50vh; }
+.reveal #minard-1812 img { max-height: 46vh; }
+
+.reveal #legiony .visual-two-column {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+}
+
+.reveal #legiony .visual-two-column img { max-height: 43vh; }
+.reveal #legiony .visual-two-column li {
+  margin-bottom: 0.24rem;
+  font-size: 0.6em;
+  line-height: 1.28;
+}
+.reveal #legiony .callout { font-size: 0.55em; }
+
+.reveal .caption {
+  margin-top: 0.25rem;
+  color: #445166;
+  font-size: 0.42em;
+  line-height: 1.25;
+}
+
+.reveal .battle-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.65rem;
+}
+
+.reveal .battle-grid article {
+  border-radius: 0.5rem;
+  background: var(--napoleon-cream);
+  padding: 0.7rem;
+  min-height: 7.4rem;
+}
+
+.reveal .battle-grid strong {
+  display: block;
+  color: var(--napoleon-red);
+  font-size: 0.8em;
+}
+
+.reveal .battle-grid span,
+.reveal .battle-grid p {
+  font-size: 0.53em;
+  line-height: 1.25;
+}
+
+.reveal #timeline-napoleonska lesson-event {
+  min-height: 10.3rem;
+}
+
+.reveal #timeline-upadku lesson-event {
+  min-height: 8.5rem;
+}
+
+.reveal .compact-table table {
+  font-size: 0.62em;
+}
+
+.reveal .compact-table th,
+.reveal .compact-table td {
+  padding: 0.34rem 0.46rem;
+}
+
+.reveal .photo-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.65rem;
+}
+
+.reveal .photo-strip figure {
+  margin: 0;
+  background: white;
+  border: 1px solid #c9b991;
+  padding: 0.4rem;
+}
+
+.reveal .photo-strip img {
+  width: 100%;
+  height: 28vh;
+  object-fit: contain;
+}
+
+.reveal .photo-strip figcaption {
+  font-size: 0.42em;
+  line-height: 1.2;
+  color: #39465a;
+}
+
+.reveal .map-compare {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+  align-items: start;
+}
+
+.reveal .map-compare figure {
+  margin: 0;
+  background: #fff;
+  border: 0.12rem solid var(--napoleon-navy);
+  padding: 0.3rem;
+}
+
+.reveal .map-compare img {
+  width: 100%;
+  height: 41vh;
+  object-fit: contain;
+}
+
+.reveal .map-compare figcaption,
+.reveal .map-conclusion {
+  font-size: 0.44em;
+  line-height: 1.2;
+}
+
+.reveal .map-conclusion {
+  margin: 0.35rem 0;
+}
+
+.reveal .minard-key {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.35rem;
+  margin: 0.25rem 0;
+}
+
+.reveal .minard-key span {
+  padding: 0.22rem 0.35rem;
+  border-radius: 0.35rem;
+  background: var(--napoleon-cream);
+  color: var(--napoleon-navy);
+  font-size: 0.42em;
+  text-align: center;
+}
+
+@media print {
+  .reveal .power-ladder,
+  .reveal .cause-chain,
+  .reveal .polish-balance,
+  .reveal .coalition-loop,
+  .reveal .photo-strip,
+  .reveal .visual-two-column {
+    break-inside: avoid;
+  }
+}

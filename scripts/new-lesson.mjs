@@ -64,7 +64,7 @@ if (!grade || !title) {
     await writeFile(metadataPath, `${JSON.stringify(metadata, null, 2)}\n`, 'utf8');
 
     console.log(`Utworzono: ${relativeTarget}`);
-    console.log('Następnie: uzupełnij lesson.md i sources.md, dodaj lokalne pliki do assets/, potem npm run check.');
+    console.log('Następnie: ustal rok i wariant podstawy z curriculum/rollout-2026.md, uzupełnij lesson.md i sources.md, dodaj lokalne pliki do assets/, potem npm run check.');
   } catch (error) {
     usage(error.message);
   }
