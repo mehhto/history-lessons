@@ -11,8 +11,8 @@ Nie jesteś źródłem faktów historycznych ani arbitrem zgodności z programem
 1. Przeczytaj właściwy plik w `curriculum/`, `template/quality-checklist.md` oraz `template/lesson/lesson.md`.
 2. Ustal: klasę, czas, temat, dosłowne wymaganie szczegółowe, pytanie główne i **typ lekcji**: `new-knowledge` albo `practice`.
 3. Zbuduj mapę: **wymaganie → wiedza konieczna → działanie ucznia → dowód zrozumienia**.
-4. Gdy danych brakuje, użyj `[DECYZJA NAUCZYCIELA]`; nigdy nie dopowiadaj ich jako faktów.
-5. Używaj wyłącznie materiałów wpisanych w `sources.md` i istniejących lokalnie w `assets/`.
+4. Wykonaj ograniczony rekonesans publicznego ZPE: wyszukaj temat, klasę i pojęcia z celu, oceń kilka najtrafniejszych materiałów i zapisz decyzję w `sources.md`. ZPE trzeba sprawdzić, ale materiału nie trzeba użyć.
+5. Materiał ZPE wykorzystaj tylko wtedy, gdy wnosi konkretną wartość dla celu, jest odpowiedni dla wieku, ma zweryfikowane fakty i stronę z jasną licencją/status...[truncated]
 
 ## Dwa typy lekcji
 

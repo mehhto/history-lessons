@@ -12,6 +12,8 @@
 - [ ] `metadata.json` wskazuje `new-knowledge` albo `practice`.
 - [ ] Lekcja nowej wiedzy zawiera pełne wyjaśnienie: pojęcia, chronologię, mechanizm, przykład i rozróżnienia potrzebne uczniowi.
 - [ ] Lekcja ćwiczeniowa / źródłowa zawiera przypomnienie koniecznej wiedzy, materiał, pytania, produkt ucznia i model odpowiedzi lub kryteria.
+- [ ] Wykonano ograniczony rekonesans publicznego ZPE i zapisano kandydatów oraz decyzje w `sources.md` — także wtedy, gdy niczego nie wybrano.
+- [ ] Jeśli wykorzystano materiał ZPE, wzmacnia on cel, pasuje do wieku, ma sprawdzone fakty oraz jasną licencję/status prawny.
 - [ ] Źródło, mapa lub wizualizacja pojawiają się dlatego, że wzmacniają cel — nie jako obowiązkowy ozdobnik.
 - [ ] Uczeń wykonuje działanie, które wykorzystuje wyjaśnioną wiedzę; nie tylko ogląda slajdy.
 - [ ] Zadanie ma wersję podstawową i rozszerzenie lub wsparcie dla ucznia potrzebującego pomocy.

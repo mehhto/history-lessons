@@ -47,14 +47,16 @@ Po opublikowaniu portu na interfejsie LAN podgląd można też otworzyć bezpoś
 
 1. Wybierz typ w `metadata.json`: `new-knowledge` (nowa wiedza) albo `practice` (ćwiczeniowa / źródłowa).
 2. Uzupełnij `lesson.md`: wymaganie, pytanie główne oraz mapę **wymaganie → wiedza konieczna → zadanie → dowód zrozumienia**.
-3. W lekcji nowej wiedzy przygotuj pełne wyjaśnienie dla ucznia: pojęcia, chronologię, mechanizm, przykład i konieczne rozróżnienia. W ćwiczeniowej podaj tylko przypomnienie konieczne do samodzielnej pracy.
-4. Wybierz i ręcznie zweryfikuj lokalne materiały wyłącznie wtedy, gdy wzmacniają cel; zapisz ich pochodzenie i licencję w `sources.md`.
-5. Poproś AI o pierwszy szkic `slides.md` zgodnie z `SKILL.md`; nie zlecaj mu wymyślania źródeł ani faktów. Nie ma globalnego limitu słów ani slajdów — obowiązują funkcja, czytelność i realny czas lekcji.
-6. Dodaj szczegółowe notatki nauczyciela tylko do trudnych wyjaśnień, źródeł i zadań wymagających moderacji; umieść je w `teacher-guide.md` lub po `notes:`.
-7. Dodaj pliki do `assets/`, uruchom `npm run check`, a następnie obejrzyj lekcję lokalnie.
-8. Po lekcji nowej wiedzy przygotuj `student-summary.md`; po ćwiczeniowej użyj go tylko, gdy porządkuje nową całość.
-9. Po lekcji uzupełnij `reflection.md`; jeśli problem powtarza się, popraw szablon lub regułę, nie tylko jedną lekcję.
-10. Przed lekcją utwórz PDF: `npm run export:pdf -- --lesson classes/6/wielkie-odkrycia-geograficzne`.
+3. Wykonaj krótki rekonesans publicznego ZPE: wyszukaj temat, klasę i pojęcia z celu, oceń kilka najtrafniejszych materiałów i zapisz wynik w sekcji „Rekonesans ZPE” w `sources.md`. Sprawdzenie jest obowiązkowe, użycie materiału — nie.
+4. Materiał ZPE wykorzystaj tylko wtedy, gdy wzmacnia cel, pasuje do wieku, ma sprawdzalne fakty oraz jasną licencję/status prawny. Pobierz do `assets/` tylko to, na co pozwalają prawa; w innym przypadku użyj materiału jako inspiracji lub odrzuć. Nie udostępniaj konta ani hasła i nie uzależniaj lekcji od dostępu do ZPE.
+5. W lekcji nowej wiedzy przygotuj pełne wyjaśnienie dla ucznia: pojęcia, chronologię, mechanizm, przykład i konieczne rozróżnienia. W ćwiczeniowej podaj tylko przypomnienie konieczne do samodzielnej pracy.
+6. Wybierz i ręcznie zweryfikuj pozostałe lokalne materiały wyłącznie wtedy, gdy wzmacniają cel; zapisz ich pochodzenie i licencję w `sources.md`.
+7. Poproś AI o pierwszy szkic `slides.md` zgodnie z `SKILL.md`; nie zlecaj mu wymyślania źródeł ani faktów. Nie ma globalnego limitu słów ani slajdów — obowiązują funkcja, czytelność i realny czas lekcji.
+8. Dodaj szczegółowe notatki nauczyciela tylko do trudnych wyjaśnień, źródeł i zadań wymagających moderacji; umieść je w `teacher-guide.md` lub po `notes:`.
+9. Dodaj pliki do `assets/`, uruchom `npm run check`, a następnie obejrzyj lekcję lokalnie.
+10. Po lekcji nowej wiedzy przygotuj `student-summary.md`; po ćwiczeniowej użyj go tylko, gdy porządkuje nową całość.
+11. Po lekcji uzupełnij `reflection.md`; jeśli problem powtarza się, popraw szablon lub regułę, nie tylko jedną lekcję.
+12. Przed lekcją utwórz PDF: `npm run export:pdf -- --lesson classes/6/wielkie-odkrycia-geograficzne`.
 
 **Zasada:** prezentacja dostarcza kompletnego, zwięzłego wyjaśnienia. Podręcznik jest uzupełnieniem, a nie miejscem, do którego odsyłamy po brakujący kontekst.
 
