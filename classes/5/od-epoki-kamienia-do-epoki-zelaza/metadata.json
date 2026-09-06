@@ -1,0 +1,17 @@
+{
+  "id": "od-epoki-kamienia-do-epoki-zelaza",
+  "title": "Od epoki kamienia do epoki żelaza",
+  "grade": 5,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa",
+  "duration_minutes": 45,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "status": "SZKIC_DO_AKCEPTACJI_NAUCZYCIELA",
+  "curriculum_requirement": "Cywilizacje starożytne: uczeń porównuje koczowniczy tryb życia z osiadłym.",
+  "main_question": "Jak zmiana sposobu zdobywania żywności zmieniła życie ludzi od epoki kamienia do epoki żelaza?",
+  "source_reviewed": false,
+  "teacher_reviewed": false,
+  "offline_checked": false,
+  "pdf_exported": false
+}
