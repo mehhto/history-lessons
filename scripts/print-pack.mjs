@@ -37,15 +37,40 @@ function inline(text) {
     .replace(/`(.+?)`/g, '<code>$1</code>');
 }
 
+function tableCells(line) {
+  return line.trim().replace(/^\|/, '').replace(/\|$/, '').split('|').map((cell) => cell.trim());
+}
+
+function isTableSeparator(line) {
+  return /^\s*\|?\s*:?-{3,}:?\s*(?:\|\s*:?-{3,}:?\s*)+\|?\s*$/.test(line);
+}
+
+function isTableRow(line) {
+  return /^\s*\|?.+\|.+\|?\s*$/.test(line);
+}
+
 export function markdownToHtml(markdown) {
   const lines = String(markdown).replace(/\r/g, '').split('\n');
   const output = [];
   let list = false;
   const closeList = () => { if (list) { output.push('</ul>'); list = false; } };
-  for (const line of lines) {
+  for (let index = 0; index < lines.length; index += 1) {
+    const line = lines[index];
     const heading = line.match(/^(#{1,3})\s+(.+)$/);
     const item = line.match(/^\s*[-*]\s+(.+)$/);
-    if (heading) {
+    if (isTableRow(line) && isTableSeparator(lines[index + 1] || '')) {
+      closeList();
+      const headers = tableCells(line);
+      output.push(`<table><thead><tr>${headers.map((cell) => `<th>${inline(cell)}</th>`).join('')}</tr></thead><tbody>`);
+      index += 2;
+      while (index < lines.length && isTableRow(lines[index])) {
+        const cells = tableCells(lines[index]);
+        output.push(`<tr>${headers.map((_, column) => `<td>${inline(cells[column] || '')}</td>`).join('')}</tr>`);
+        index += 1;
+      }
+      output.push('</tbody></table>');
+      index -= 1;
+    } else if (heading) {
       closeList();
       const level = heading[1].length;
       output.push(`<h${level}>${inline(heading[2])}</h${level}>`);

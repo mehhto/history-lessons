@@ -11,6 +11,10 @@ p, li { orphans: 3; widows: 3; }
 p { margin: 0 0 2.5mm; }
 ul { margin: 0 0 3mm; padding-left: 5mm; }
 li + li { margin-top: 1.2mm; }
+table { width: 100%; border-collapse: collapse; margin: 3mm 0 4mm; font-size: 10.5pt; break-inside: avoid; }
+th, td { border: .6pt solid #adc0d2; padding: 2.2mm 2.5mm; text-align: left; vertical-align: middle; }
+th { background: #e8f0f5; color: #17365d; font-weight: 700; }
+tbody tr:nth-child(even) { background: #f7fafc; }
 code { padding: .2mm 1mm; background: #e8f0f5; font-family: ui-monospace, monospace; }
 .student h1 { border-bottom: 1.2pt solid #c78a29; padding-bottom: 2mm; }
 .student h2 { color: #17365d; }
