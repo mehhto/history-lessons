@@ -1,4 +1,4 @@
-html[data-style="atlas"] .reveal { --font-heading: "DejaVu Serif", Georgia, "Times New Roman", serif; }
+html[data-style="atlas"] .reveal { --font-heading: "History Serif", "DejaVu Serif", Georgia, "Times New Roman", serif; }
 html[data-style="atlas"] .reveal .slides section[data-slide-canvas] {
   background-color: var(--color-canvas) !important;
   background-image:

@@ -9,7 +9,7 @@ Typ lekcji: practice. Celem nie jest ponowne wygłoszenie całego działu, lecz 
 
 ---
 
-<!-- .slide: class="question-slide napoleon-title" -->
+<!-- .slide: id="slide-01" class="question-slide napoleon-title" data-purpose="question" data-layout="statement" -->
 ## Pytanie na start
 
 <div class="coalition-loop">
@@ -27,7 +27,7 @@ Daj 45 sekund na rozmowę w parach. Zbierz dwie hipotezy. Nie oceniaj ich jeszcz
 
 ---
 
-<!-- .slide: class="practice-slide" -->
+<!-- .slide: id="slide-02" class="practice-slide" data-purpose="practice" data-layout="activity-brief" -->
 ## Co pamiętasz z klasy VI?
 
 Połącz cztery hasła w jedno wyjaśnienie:
@@ -46,7 +46,7 @@ Uczniowie mogą pamiętać koronację, lecz pomijać konsulat. Dopytaj: „Czy w
 
 ---
 
-<!-- .slide: id="droga-do-cesarstwa" class="context-slide napoleon-title" -->
+<!-- .slide: id="droga-do-cesarstwa" class="context-slide napoleon-title" data-purpose="explanation" data-layout="statement" -->
 ## Od generała do cesarza
 
 <div class="power-ladder">
@@ -63,7 +63,7 @@ Podkreśl stopniowe przejście, nie jeden skok. Plebiscyty nie czyniły systemu 
 
 ---
 
-<!-- .slide: id="koronacja" class="image-slide" -->
+<!-- .slide: id="koronacja" class="image-slide" data-purpose="evidence" data-layout="evidence" -->
 <span class="source-label">późniejsze przedstawienie wydarzenia · obraz z lat 1805–1807</span>
 
 ## Koronacja — nowa dynastia
@@ -89,7 +89,7 @@ David był oficjalnym malarzem Napoleona. Obraz przedstawia koronowanie Józefin
 
 ---
 
-<!-- .slide: id="kodeks" class="compare-slide" -->
+<!-- .slide: id="kodeks" class="compare-slide" data-purpose="explanation" data-layout="split" -->
 ## Kodeks Napoleona: zmiana i ograniczenia
 
 <lesson-table>
@@ -110,7 +110,7 @@ Kodeks cywilny ogłoszono 21 marca 1804 r. Unikaj uproszczenia, że „zrównał
 
 ---
 
-<!-- .slide: id="timeline-napoleonska" class="context-slide timeline-slide" -->
+<!-- .slide: id="timeline-napoleonska" class="context-slide timeline-slide" data-purpose="explanation" data-layout="process" -->
 ## Oś epoki napoleońskiej — część I
 
 <lesson-timeline>
@@ -128,7 +128,7 @@ Oś ma zostać uzupełniona, nie tylko obejrzana. Trafalgar był 21 październik
 
 ---
 
-<!-- .slide: id="koalicje" class="compare-slide compact-table" -->
+<!-- .slide: id="koalicje" class="compare-slide compact-table" data-purpose="explanation" data-layout="split" -->
 ## Wielkie koalicje: przeciwnicy wracają
 
 <lesson-table>
@@ -152,7 +152,7 @@ Nie każ uczniom zapamiętywać pełnego składu każdej koalicji. Ważny jest m
 
 ---
 
-<!-- .slide: id="mapa-kampanii" class="map-slide full-map" -->
+<!-- .slide: id="mapa-kampanii" class="map-slide full-map" data-purpose="evidence" data-layout="evidence" -->
 <span class="source-label">współczesne opracowanie kartograficzne · Europa przed kampanią rosyjską</span>
 
 ## Europa u szczytu dominacji Napoleona — 1812
@@ -164,7 +164,7 @@ Mapa polityczna, nie mapa przebiegu wszystkich bitew. Objaśnij angielską legen
 
 ---
 
-<!-- .slide: id="bitwy" class="context-slide" -->
+<!-- .slide: id="bitwy" class="context-slide" data-purpose="explanation" data-layout="statement" -->
 ## Bitwy, które zmieniały układ sił
 
 <div class="battle-grid">
@@ -183,7 +183,7 @@ Rdzeń pamięciowy to Trafalgar + Austerlitz + Lipsk + Waterloo. Pozostałe bitw
 
 ---
 
-<!-- .slide: id="rosja-1812" class="context-slide napoleon-title" -->
+<!-- .slide: id="rosja-1812" class="context-slide napoleon-title" data-purpose="explanation" data-layout="statement" -->
 ## Dlaczego 1812 r. był katastrofą?
 
 <div class="cause-chain">
@@ -201,7 +201,7 @@ Napoleon wkroczył do Moskwy po Borodino, lecz car nie poprosił o pokój. Wielk
 
 ---
 
-<!-- .slide: id="minard-1812" class="map-slide full-map" -->
+<!-- .slide: id="minard-1812" class="map-slide full-map" data-purpose="evidence" data-layout="evidence" -->
 <span class="source-label">współczesne angielskie przerysowanie wykresu Charles’a Minarda z 1869 r.</span>
 
 ## 1812 na jednej infografice
@@ -220,7 +220,7 @@ Poproś o dwa dowody, że armia słabła przed najniższymi temperaturami. To wy
 
 ---
 
-<!-- .slide: id="timeline-upadku" class="context-slide timeline-slide" -->
+<!-- .slide: id="timeline-upadku" class="context-slide timeline-slide" data-purpose="explanation" data-layout="process" -->
 ## Oś epoki napoleońskiej — część II
 
 <lesson-timeline>
@@ -238,7 +238,7 @@ Kongres zaczął się we wrześniu 1814 r., akt końcowy podpisano 9 czerwca 181
 
 ---
 
-<!-- .slide: id="legiony" class="image-slide" -->
+<!-- .slide: id="legiony" class="image-slide" data-purpose="evidence" data-layout="evidence" -->
 <span class="source-label">sprawa polska · od rozbiorów do Legionów</span>
 
 ## 1797: Legiony Polskie we Włoszech
@@ -264,7 +264,7 @@ Wspomnij San Domingo 1802–1803: część dawnych legionistów wysłano do tłu
 
 ---
 
-<!-- .slide: id="mapa-ksiestwa" class="map-slide full-map" -->
+<!-- .slide: id="mapa-ksiestwa" class="map-slide full-map" data-purpose="evidence" data-layout="evidence" -->
 <span class="source-label">współczesne mapy porównawcze · Księstwo w latach 1807–1809 i 1809–1815</span>
 
 ## Księstwo Warszawskie
@@ -281,7 +281,7 @@ Władcą był Fryderyk August I, król Saksonii. Konstytucja znosiła poddaństw
 
 ---
 
-<!-- .slide: id="polacy-w-walkach" class="image-slide" -->
+<!-- .slide: id="polacy-w-walkach" class="image-slide" data-purpose="evidence" data-layout="evidence" -->
 <span class="source-label">późniejsze przedstawienia artystyczne · sprawdź ograniczenia źródłowe</span>
 
 ## Polacy w wojnach Napoleona
@@ -299,7 +299,7 @@ Wszystkie trzy prace mogą być późniejszymi wyobrażeniami. Podaj datę dzie�
 
 ---
 
-<!-- .slide: id="bilans-polski" class="compare-slide napoleon-title" -->
+<!-- .slide: id="bilans-polski" class="compare-slide napoleon-title" data-purpose="explanation" data-layout="split" -->
 ## Czy Napoleon spełnił polskie nadzieje?
 
 <div class="polish-balance">
@@ -315,7 +315,7 @@ Dobra odpowiedź nie brzmi po prostu „tak” albo „nie”. Uczeń ma uchwyci
 
 ---
 
-<!-- .slide: class="practice-slide" -->
+<!-- .slide: id="slide-17" class="practice-slide" data-purpose="practice" data-layout="activity-brief" -->
 ## Zadanie: od ekspansji do nowego ładu
 
 Każda para uzupełnia jeden przydzielony wiersz na karcie pracy. Podczas omówienia dopiszcie odpowiedzi pozostałych par:
@@ -332,7 +332,7 @@ Daj 4 minuty pracy nad przydzielonym wierszem i 2 minuty na zebranie czterech od
 
 ---
 
-<!-- .slide: id="pomost-do-kongresu" class="compare-slide napoleon-title" -->
+<!-- .slide: id="pomost-do-kongresu" class="compare-slide napoleon-title" data-purpose="explanation" data-layout="split" -->
 ## Dlaczego potrzebny był kongres?
 
 <div class="cause-chain">
@@ -350,7 +350,7 @@ Wróć do hipotez z początku. Zapowiedz, że następna lekcja pokaże trzy zasa
 
 ---
 
-<!-- .slide: class="exit-ticket-slide napoleon-title" -->
+<!-- .slide: id="slide-19" class="exit-ticket-slide napoleon-title" data-purpose="exit-ticket" data-layout="plain" -->
 ## Bilet wyjścia
 
 **W trzech zdaniach wyjaśnij, dlaczego zwycięskie mocarstwa zwołały kongres wiedeński.**

@@ -7,7 +7,7 @@ Omawiamy europejskie wyprawy, ale nie zaczynamy historii lądów od chwili przyb
 
 ---
 
-<!-- .slide: class="question-slide" -->
+<!-- .slide: id="slide-01" class="question-slide" data-purpose="question" data-layout="statement" -->
 ## „Nowy” dla kogo?
 
 Dokończ zdanie: **„Odkrycie może znaczyć…”**
@@ -17,7 +17,7 @@ Nie oczekuj definicji. Uruchom różne perspektywy przed pracą z mapą.
 
 ---
 
-<!-- .slide: id="chronologia-wypraw" class="context-slide timeline-slide" -->
+<!-- .slide: id="chronologia-wypraw" class="context-slide timeline-slide" data-purpose="explanation" data-layout="process" -->
 ## Daty kontrolne
 
 <lesson-timeline>
@@ -32,7 +32,7 @@ Daty są punktami orientacyjnymi, nie pełną opowieścią. Sprawdź je przed le
 
 ---
 
-<!-- .slide: class="map-slide" -->
+<!-- .slide: id="slide-03" class="map-slide" data-purpose="evidence" data-layout="evidence" -->
 <span class="source-label">źródło z epoki · 1507</span>
 
 ## Mapa Waldseemüllera
@@ -44,7 +44,7 @@ Pytaj o elementy łatwe do rozpoznania oraz o pytania, które budzi mapa. Nie wy
 
 ---
 
-<!-- .slide: class="source-slide portrait-source" -->
+<!-- .slide: id="slide-04" class="source-slide portrait-source" data-purpose="evidence" data-layout="evidence" -->
 ## Rycina o Kolumbie — źródło późniejsze
 
 ![Kolumb na pokładzie statku, rycina de Bry, 1594](assets/kolumb-na-pokladzie-de-bry-1594.jpg)
@@ -54,7 +54,7 @@ Ta rycina powstała w 1594 r., ponad 100 lat po wyprawie z 1492 r. Nie jest „f
 
 ---
 
-<!-- .slide: class="source-slide" -->
+<!-- .slide: id="slide-05" class="source-slide" data-purpose="evidence" data-layout="evidence" -->
 ## Spotkanie przedstawione po latach
 
 ![Przyjęcie Vasco da Gamy przez samorina, rycina Appelmansa, 1672](assets/vasco-da-gama-u-samorina-appelmans-1672.jpg)
@@ -64,7 +64,7 @@ Rycina przedstawia spotkanie, ale została wykonana w 1672 r. Zwróć uwagę na 
 
 ---
 
-<!-- .slide: id="galeria-rycin" class="source-slide gallery-slide" -->
+<!-- .slide: id="galeria-rycin" class="source-slide gallery-slide" data-purpose="evidence" data-layout="evidence" -->
 ## Galeria późniejszych przedstawień
 
 <lesson-gallery aria-label="Dwie późniejsze ryciny o europejskich wyprawach">
@@ -83,7 +83,7 @@ Na komputerze najedź na wybraną rycinę; na klawiaturze przejdź Tabem, potem 
 
 ---
 
-<!-- .slide: class="source-slide" -->
+<!-- .slide: id="slide-07" class="source-slide" data-purpose="evidence" data-layout="evidence" -->
 ## Co mapa może powiedzieć?
 
 - jak przedstawiano świat
@@ -95,7 +95,7 @@ Mapa nie daje bezpośredniego głosu każdej społeczności, której dotyczy.
 
 ---
 
-<!-- .slide: class="compare-slide" -->
+<!-- .slide: id="slide-08" class="compare-slide" data-purpose="explanation" data-layout="split" -->
 ## Trzy perspektywy
 
 | Żeglarz | Kupiec | Mieszkaniec zamieszkanego lądu |
@@ -107,7 +107,7 @@ To uproszczenie do rozmowy. Nie przypisuj wszystkim osobom jednej reakcji.
 
 ---
 
-<!-- .slide: class="student-task" -->
+<!-- .slide: id="slide-09" class="student-task" data-purpose="practice" data-layout="activity-brief" -->
 ## Dopowiedz słowo
 
 „Dla europejskiego żeglarza było to…, ale dla ludzi mieszkających tam było to…”
@@ -117,7 +117,7 @@ Pary zapisują dwa różne końce zdania.
 
 ---
 
-<!-- .slide: class="exit-ticket-slide" -->
+<!-- .slide: id="slide-10" class="exit-ticket-slide" data-purpose="exit-ticket" data-layout="plain" -->
 ## Bilet wyjścia
 
 Dlaczego słowo **„odkrycie”** potrzebuje dopowiedzenia?

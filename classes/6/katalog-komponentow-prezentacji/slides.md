@@ -7,7 +7,7 @@ To jest katalog do oglądania i strojenia stylów. Treści, dane i cytaty są pr
 
 ---
 
-<!-- .slide: id="katalog-start" class="question-slide" -->
+<!-- .slide: id="katalog-start" class="question-slide" data-purpose="reference" data-layout="plain" -->
 ## Katalog komponentów
 
 **10 gotowych wzorców** do wykorzystania w kolejnych prezentacjach.
@@ -19,7 +19,7 @@ Przejdź po katalogu jak po bibliotece: wybierz komponenty, które pasują do ce
 
 ---
 
-<!-- .slide: id="mapa-lokalna" class="map-slide" -->
+<!-- .slide: id="mapa-lokalna" class="map-slide" data-purpose="reference" data-layout="plain" -->
 <span class="source-label">komponent · mapa lokalna</span>
 
 ## Mapa z aktywnymi punktami
@@ -43,7 +43,7 @@ Mapa jest offline-first: obraz i punkty są lokalne. Kliknięcie punktu zmienia 
 
 ---
 
-<!-- .slide: id="mapa-google" class="map-slide" -->
+<!-- .slide: id="mapa-google" class="map-slide" data-purpose="reference" data-layout="plain" -->
 <span class="source-label">komponent · tryb online</span>
 
 ## Osadzona mapa Google
@@ -59,7 +59,7 @@ Google Maps nie jest zasobem offline. Stosuj tylko opcjonalnie; nie ukrywaj tre�
 
 ---
 
-<!-- .slide: id="hasla" class="context-slide" -->
+<!-- .slide: id="hasla" class="context-slide" data-purpose="reference" data-layout="plain" -->
 <span class="source-label">komponent · rozwijane hasła</span>
 
 ## Kliknij hasło, zobacz kontekst
@@ -75,7 +75,7 @@ To są natywne elementy details: działają myszą, dotykiem i klawiaturą takż
 
 ---
 
-<!-- .slide: id="statystyki" class="context-slide" -->
+<!-- .slide: id="statystyki" class="context-slide" data-purpose="reference" data-layout="plain" -->
 <span class="source-label">komponent · dane</span>
 
 ## Dane na pierwszy rzut oka
@@ -91,7 +91,7 @@ Liczniki animują się tylko jako dodatek. W PDF i przy ograniczonym ruchu pokaz
 
 ---
 
-<!-- .slide: id="stepper" class="context-slide" -->
+<!-- .slide: id="stepper" class="context-slide" data-purpose="reference" data-layout="plain" -->
 <span class="source-label">komponent · kroki procesu</span>
 
 ## Stepper: jak pracować ze źródłem
@@ -108,7 +108,7 @@ W wersji pionowej użyj atrybutu orientation="vertical" na lesson-stepper.
 
 ---
 
-<!-- .slide: id="tabela" class="compare-slide" -->
+<!-- .slide: id="tabela" class="compare-slide" data-purpose="reference" data-layout="plain" -->
 <span class="source-label">komponent · tabela</span>
 
 ## Tabela porównawcza
@@ -129,7 +129,7 @@ Tabela nie powinna mieć zbyt wielu kolumn. Trzy kolumny i trzy–pięć wierszy
 
 ---
 
-<!-- .slide: id="cytat" class="source-slide" -->
+<!-- .slide: id="cytat" class="source-slide" data-purpose="reference" data-layout="plain" -->
 <span class="source-label">komponent · postać i cytat</span>
 
 ## Testimonial / cytat źródłowy
@@ -144,7 +144,7 @@ Nie używaj fikcyjnego cytatu jako historycznego. Ten slajd jest wyłącznie wzo
 
 ---
 
-<!-- .slide: id="timeline-pozioma" class="context-slide timeline-slide" -->
+<!-- .slide: id="timeline-pozioma" class="context-slide timeline-slide" data-purpose="reference" data-layout="plain" -->
 <span class="source-label">komponent · oś pozioma</span>
 
 ## Timeline pozioma
@@ -158,7 +158,7 @@ Nie używaj fikcyjnego cytatu jako historycznego. Ten slajd jest wyłącznie wzo
 
 ---
 
-<!-- .slide: id="timeline-pionowa" class="context-slide timeline-slide" -->
+<!-- .slide: id="timeline-pionowa" class="context-slide timeline-slide" data-purpose="reference" data-layout="plain" -->
 <span class="source-label">komponent · oś pionowa</span>
 
 ## Timeline pionowa
@@ -175,7 +175,7 @@ Pionowa wersja jest dobra dla procesu, który wymaga krótkiego opisu przy każd
 
 ---
 
-<!-- .slide: id="video" class="source-slide" -->
+<!-- .slide: id="video" class="source-slide" data-purpose="reference" data-layout="plain" -->
 <span class="source-label">komponent · wideo</span>
 
 ## Wideo YouTube z kontrolą startu
@@ -192,7 +192,7 @@ Adres jest technicznym przykładem. Przed użyciem zastąp go zweryfikowanym fil
 
 ---
 
-<!-- .slide: id="lista-ikony" class="context-slide" -->
+<!-- .slide: id="lista-ikony" class="context-slide" data-purpose="reference" data-layout="plain" -->
 <span class="source-label">komponent · lista z ikonami</span>
 
 ## Lista bez zwykłych punktorów
@@ -209,7 +209,7 @@ Można używać emoji albo krótkich symboli. Nie opieraj znaczenia wyłącznie 
 
 ---
 
-<!-- .slide: id="compare-slider" class="source-slide" -->
+<!-- .slide: id="compare-slider" class="source-slide" data-purpose="reference" data-layout="plain" -->
 <span class="source-label">komponent · compare slider</span>
 
 ## Przesuń: schemat i mapa źródłowa
@@ -226,7 +226,7 @@ Suwak ma prawdziwy input range, więc jest obsługiwany klawiaturą i dotykiem. 
 
 ---
 
-<!-- .slide: id="zestawienie" class="exit-ticket-slide" -->
+<!-- .slide: id="zestawienie" class="exit-ticket-slide" data-purpose="reference" data-layout="takeaways" -->
 ## Jak wybierać komponent?
 
 <lesson-icon-list style="--icon-list-columns:1">
@@ -235,5 +235,14 @@ Suwak ma prawdziwy input range, więc jest obsługiwany klawiaturą i dotykiem. 
   <li data-icon="③">sprawdź offline, na projektorze i w PDF</li>
 </lesson-icon-list>
 
+---
+
+<!-- .slide: id="formula" class="context-slide" data-purpose="reference" data-layout="equation" -->
+## Wzorzec: formuła → skutek
+
+<div class="concept-equation"><span>warunek A</span><span class="operator">+</span><span>warunek B</span><span class="operator">=</span><span class="result">zmiana</span></div>
+
+> Użyj, gdy uczeń ma dostrzec związek składników, warunków albo przyczyn — nie jako dekoracji.
+
 notes:
-Zanotuj komponenty do wdrożenia w realnych lekcjach oraz potrzebne zmiany stylu w lesson.css.
+Formula jest statycznym wzorcem HTML/CSS; nie potrzebuje nowego JavaScriptu ani tematycznego komponentu.

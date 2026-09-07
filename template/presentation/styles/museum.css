@@ -1,4 +1,4 @@
-html[data-style="museum"] .reveal { --font-heading: "DejaVu Serif", Georgia, "Times New Roman", serif; }
+html[data-style="museum"] .reveal { --font-heading: "History Serif", "DejaVu Serif", Georgia, "Times New Roman", serif; }
 html[data-style="museum"] .reveal .slides section[data-slide-canvas] {
   background: linear-gradient(135deg, rgba(255,255,255,.76), rgba(229,218,194,.36)) !important;
   box-shadow: inset 0 .12rem 0 var(--color-accent), inset 0 -.05rem 0 rgba(97,71,35,.2);

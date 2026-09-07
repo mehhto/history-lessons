@@ -7,7 +7,7 @@ Pilnuj pytania „dla kogo, gdzie i kiedy?”. Nie upraszczaj skutków do listy 
 
 ---
 
-<!-- .slide: class="question-slide" -->
+<!-- .slide: id="slide-01" class="question-slide" data-purpose="question" data-layout="statement" -->
 ## Czy jedna zmiana jest taka sama dla wszystkich?
 
 Podaj przykład ze współczesności.
@@ -17,7 +17,7 @@ Wybierz neutralny przykład, np. nowa droga. Przenieś ideę perspektywy na tema
 
 ---
 
-<!-- .slide: class="compare-slide" -->
+<!-- .slide: id="slide-02" class="compare-slide" data-purpose="explanation" data-layout="split" -->
 ## Dwie mapy, dwa momenty
 
 1502 i 1507 — co zmienia się w europejskim obrazie świata?
@@ -27,7 +27,7 @@ Uczniowie mają wskazać różnicę lub pytanie, nie drobiazgowo analizować map
 
 ---
 
-<!-- .slide: class="source-slide" -->
+<!-- .slide: id="slide-03" class="source-slide" data-purpose="evidence" data-layout="evidence" -->
 <span class="source-label">źródło z epoki · 1502</span>
 
 ![Planisfera Cantino](assets/cantino-planisfera-1502.jpg)
@@ -37,7 +37,7 @@ Mapa pokazuje pracę kartografa, nie pełne doświadczenia ludzi żyjących w pr
 
 ---
 
-<!-- .slide: class="source-slide" -->
+<!-- .slide: id="slide-04" class="source-slide" data-purpose="evidence" data-layout="evidence" -->
 <span class="source-label">źródło z epoki · 1507</span>
 
 ![Mapa Waldseemüllera](assets/waldseemuller-mapa-1507.jpg)
@@ -47,7 +47,7 @@ Nie opieraj lekcji na czytaniu łacińskich podpisów. Uczniowie wskazują eleme
 
 ---
 
-<!-- .slide: class="context-slide" -->
+<!-- .slide: id="slide-05" class="context-slide" data-purpose="explanation" data-layout="statement" -->
 ## Skutek — dla kogo?
 
 - handel i towary
@@ -60,7 +60,7 @@ Każdy punkt wymaga kontekstu z podręcznika. Nie uogólniaj doświadczeń cały
 
 ---
 
-<!-- .slide: class="student-task" -->
+<!-- .slide: id="slide-06" class="student-task" data-purpose="practice" data-layout="activity-brief" -->
 ## Łańcuch skutków
 
 **wyprawa → kontakt → skutek → perspektywa**
@@ -72,7 +72,7 @@ Pary losują kartę skutku. Oceniaj uzasadnienie oraz wskazanie perspektywy.
 
 ---
 
-<!-- .slide: class="exit-ticket-slide" -->
+<!-- .slide: id="slide-07" class="exit-ticket-slide" data-purpose="exit-ticket" data-layout="plain" -->
 ## Bilet wyjścia
 
 „Jednym skutkiem wypraw było…, ale dla… oznaczało to…”.

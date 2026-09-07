@@ -7,7 +7,7 @@ To nie jest gotowa lekcja historii. Służy wyłącznie do sprawdzenia lokalnego
 
 ---
 
-<!-- .slide: class="question-slide" -->
+<!-- .slide: id="slide-01" class="question-slide" data-purpose="question" data-layout="statement" -->
 ## Czy widzisz kolejne slajdy?
 
 Naciśnij **spację** albo strzałkę w prawo.
@@ -17,7 +17,7 @@ Sprawdź, czy przejście i numer slajdu działają.
 
 ---
 
-<!-- .slide: class="context-slide" -->
+<!-- .slide: id="slide-02" class="context-slide" data-purpose="explanation" data-layout="statement" -->
 ## Test bez Internetu
 
 - Treść: lokalny Markdown
@@ -29,7 +29,7 @@ Odłącz sieć tylko podczas świadomego testu na komputerze używanym na lekcji
 
 ---
 
-<!-- .slide: class="source-slide" -->
+<!-- .slide: id="slide-03" class="source-slide" data-purpose="evidence" data-layout="evidence" -->
 <span class="source-label">schemat testowy</span>
 
 ## Czy obraz jest widoczny?
@@ -43,7 +43,7 @@ Ten plik nie jest źródłem historycznym. Sprawdź też widok notatek klawiszem
 
 ---
 
-<!-- .slide: class="exit-ticket-slide" -->
+<!-- .slide: id="slide-04" class="exit-ticket-slide" data-purpose="exit-ticket" data-layout="plain" -->
 ## Gotowość techniczna
 
 Czy działają: slajdy, obraz, notatki, pełny ekran i PDF?

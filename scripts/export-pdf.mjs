@@ -29,6 +29,8 @@ const presentationInputPaths = [
   ['index.html', path.join(lessonDirectory, 'index.html')],
   ['template/theme.css', path.join(root, 'template/theme.css')],
   ['template/presentation/base.css', path.join(root, 'template/presentation/base.css')],
+  ['template/presentation/fonts.css', path.join(root, 'template/presentation/fonts.css')],
+  ['template/presentation/patterns.css', path.join(root, 'template/presentation/patterns.css')],
   ['template/presentation/canvas.css', path.join(root, 'template/presentation/canvas.css')],
   ['template/presentation/boot.mjs', path.join(root, 'template/presentation/boot.mjs')],
   ['template/presentation/appearance.mjs', path.join(root, 'template/presentation/appearance.mjs')],
@@ -37,6 +39,8 @@ const presentationInputPaths = [
   ...Object.values((await import('../template/presentation/catalog.mjs')).catalog.styles).map((style) => [`template/presentation/styles/${style.stylesheet}`, path.join(root, 'template/presentation/styles', style.stylesheet)]),
   ['template/components/lesson-components.css', path.join(root, 'template/components/lesson-components.css')],
   ['template/components/lesson-components.js', path.join(root, 'template/components/lesson-components.js')],
+  ['template/components/lesson-components-core.mjs', path.join(root, 'template/components/lesson-components-core.mjs')],
+  ['scripts/slide-contract.mjs', path.join(root, 'scripts/slide-contract.mjs')],
   ['scripts/export-pdf.mjs', new URL('./export-pdf.mjs', import.meta.url)],
   ['package.json', path.join(root, 'package.json')],
 ];

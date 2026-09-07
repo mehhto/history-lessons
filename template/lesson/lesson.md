@@ -27,6 +27,11 @@
 | [Cel 1] | [Co uczeń musi zrozumieć] | [Co robi uczeń] | [Co zapisze / powie / wykona] |
 | [Cel 2] | [Co uczeń musi zrozumieć] | [Co robi uczeń] | [Co zapisze / powie / wykona] |
 
+## Storyboard prezentacji
+| Kolejność / ID | Cel | Purpose / layout | Główny komunikat | Wymagania wstępne | Materiał: rola / ograniczenie | Działanie / produkt ucznia | Ryzyko błędnego przekonania | Czas |
+|---:|---|---|---|---|---|---|---|---:|
+| 1 | [DO UZUPEŁNIENIA] | opening / statement | [DO UZUPEŁNIENIA] | — | [DO UZUPEŁNIENIA] | [DO UZUPEŁNIENIA] | [DO UZUPEŁNIENIA] | [DO UZUPEŁNIENIA] |
+
 ## Pełne minimum wiedzy
 > W lekcji `new-knowledge` wpisz tu wyjaśnienia, nie same hasła: pojęcia, chronologię, mechanizm, przykład oraz potrzebne rozróżnienia. W lekcji `practice` wpisz zwięzłe przypomnienie potrzebne do samodzielnego zadania.
 

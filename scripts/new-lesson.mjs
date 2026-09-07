@@ -1,4 +1,4 @@
-import { cp, mkdir, readFile, rm, writeFile, access } from 'node:fs/promises';
+import { cp, mkdir, readFile, rm, writeFile, access, copyFile } from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
 import { lessonDirectory, normalizeLessonSlug } from './lesson-tools.mjs';
@@ -47,6 +47,8 @@ if (!grade || !title) {
     const metadataPath = path.join(target, 'metadata.json');
     const lessonPath = path.join(target, 'lesson.md');
     const slidesPath = path.join(target, 'slides.md');
+    const deckTemplate = path.resolve(process.cwd(), 'template', 'presentation', 'decks', `${lessonType}.md`);
+    await copyFile(deckTemplate, slidesPath);
     const teacherGuidePath = path.join(target, 'teacher-guide.md');
     const studentSummaryPath = path.join(target, 'student-summary.md');
     const worksheetPath = path.join(target, 'worksheet.md');

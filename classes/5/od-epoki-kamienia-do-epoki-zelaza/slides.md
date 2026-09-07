@@ -9,7 +9,7 @@ typ lekcji: nowa wiedza. prezentacja używa trzech lokalnych materiałów common
 
 ---
 
-<!-- .slide: id="pytanie-glowne" class="question-slide" -->
+<!-- .slide: id="pytanie-glowne" class="question-slide" data-purpose="question" data-layout="statement" -->
 ## Co może zmienić sposób zdobywania jedzenia?
 
 <div class="opening-pair">
@@ -24,7 +24,7 @@ daj 45 sekund na hipotezę w parach. nie pytaj, który obraz jest „lepszy”; 
 
 ---
 
-<!-- .slide: id="przodkowie" class="explanation-slide" -->
+<!-- .slide: id="przodkowie" class="explanation-slide" data-purpose="explanation" data-layout="statement" -->
 ## Przodkowie współczesnych ludzi: rozgałęzienie, nie drabina
 
 <div class="hominin-gallery">
@@ -41,7 +41,7 @@ powiedz „wspólni, bardzo dawni przodkowie”, nie „człowiek pochodzi od ws
 
 ---
 
-<!-- .slide: id="migracje" class="map-slide" -->
+<!-- .slide: id="migracje" class="map-slide" data-purpose="evidence" data-layout="evidence" -->
 <span class="source-label">współczesne opracowanie kartograficzne · model tras</span>
 
 ## Z Afryki na inne kontynenty
@@ -55,7 +55,7 @@ model tras nie pozwala opowiedzieć o doświadczeniach wszystkich grup ani wskaz
 
 ---
 
-<!-- .slide: id="zycie-lowcow" class="image-slide" -->
+<!-- .slide: id="zycie-lowcow" class="image-slide" data-purpose="evidence" data-layout="evidence" -->
 <span class="source-label">fotografia zabytku · jeden przykład narzędzia</span>
 
 ## Życie człowieka pierwotnego
@@ -75,7 +75,7 @@ model tras nie pozwala opowiedzieć o doświadczeniach wszystkich grup ani wskaz
 
 ---
 
-<!-- .slide: id="tryby-zycia" class="compare-slide" -->
+<!-- .slide: id="tryby-zycia" class="compare-slide" data-purpose="explanation" data-layout="split" -->
 ## Koczowniczy czy osiadły?
 
 <lesson-table>
@@ -94,7 +94,7 @@ model tras nie pozwala opowiedzieć o doświadczeniach wszystkich grup ani wskaz
 
 ---
 
-<!-- .slide: id="od-lowcy-do-rolnika" class="explanation-slide" -->
+<!-- .slide: id="od-lowcy-do-rolnika" class="explanation-slide" data-purpose="explanation" data-layout="process" -->
 ## Od zdobywania żywności do jej wytwarzania
 
 <ol class="process-list">
@@ -110,7 +110,7 @@ podkreśl, że ten proces nie wydarzył się wszędzie jednocześnie. nie twierd
 
 ---
 
-<!-- .slide: id="dom-neolityczny" class="image-slide" -->
+<!-- .slide: id="dom-neolityczny" class="image-slide" data-purpose="evidence" data-layout="evidence" -->
 <span class="source-label">współczesna rekonstrukcja archeologiczna · nie zdjęcie z neolitu</span>
 
 ## Rewolucja neolityczna
@@ -130,7 +130,7 @@ podkreśl, że ten proces nie wydarzył się wszędzie jednocześnie. nie twierd
 
 ---
 
-<!-- .slide: id="skutki-neolitu" class="explanation-slide" -->
+<!-- .slide: id="skutki-neolitu" class="explanation-slide" data-purpose="explanation" data-layout="statement" -->
 ## Co zmieniła rewolucja neolityczna?
 
 <div class="impact-grid">
@@ -144,14 +144,14 @@ podkreśl, że ten proces nie wydarzył się wszędzie jednocześnie. nie twierd
 
 ---
 
-<!-- .slide: id="rada-osady" class="practice-slide" -->
+<!-- .slide: id="rada-osady" class="practice-slide" data-purpose="practice" data-layout="activity-brief" -->
 ## Praca w grupach: Rada osady
 
 <div class="role-grid">
 <article><strong>Łowcy i zbieracze</strong><p>Co zyskujemy, gdy wędrujemy? Jakie mamy ograniczenia?</p></article>
 <article><strong>Pierwsi rolnicy</strong><p>Dlaczego chcemy zostać przy polach i stadach?</p></article>
 <article><strong>Budowniczowie osady</strong><p>Co trzeba zbudować, aby żyć dłużej w jednym miejscu?</p></article>
-<article><strong>Kowale / metalurdzy</strong><p>Jak narzędzia z metalu mogą zmienić pracę?</p></article>
+<article><strong>Opiekunowie zapasów</strong><p>Co możemy przechować na później i jakie ryzyko niesie zależność od plonów?</p></article>
 </div>
 
 <div class="student-task">W grupie wybierzcie: <strong>wędrujemy czy budujemy osadę?</strong> Przygotujcie dwa dowody i jeden skutek swojej decyzji. Macie 6 minut, potem po 30 sekund na wypowiedź.</div>
@@ -161,8 +161,12 @@ każda grupa zapisuje decyzję w wierszu karty pracy. gdy czasu jest mało, wys�
 
 ---
 
-<!-- .slide: id="epoki" class="context-slide" -->
+<!-- .slide: id="epoki" class="context-slide" data-purpose="explanation" data-layout="equation" -->
 ## Od kamienia do metalu
+
+<div class="concept-equation" aria-label="Miedź plus cyna daje brąz"><span>miedź</span><span class="operator">+</span><span>cyna</span><span class="operator">=</span><span class="result">brąz</span></div>
+
+<p class="small-note">Stop wymagał dwóch surowców: dlatego łączył rozwój narzędzi z wymianą między społecznościami.</p>
 
 <div class="age-track">
 <article class="stone"><strong>Epoka kamienia</strong><p>kamień, drewno i kość</p><span>np. pięściak, siekiera, ostrze</span></article>
@@ -176,7 +180,7 @@ każda grupa zapisuje decyzję w wierszu karty pracy. gdy czasu jest mało, wys�
 
 ---
 
-<!-- .slide: id="zelazo" class="compare-slide" -->
+<!-- .slide: id="zelazo" class="compare-slide" data-purpose="explanation" data-layout="split" -->
 ## Wytapianie żelaza: dawniej i dziś
 
 <div class="iron-compare">
@@ -188,7 +192,7 @@ każda grupa zapisuje decyzję w wierszu karty pracy. gdy czasu jest mało, wys�
 
 ---
 
-<!-- .slide: id="dyskusja" class="practice-slide" -->
+<!-- .slide: id="dyskusja" class="practice-slide" data-purpose="practice" data-layout="activity-brief" -->
 ## Dyskusja: czy rewolucja neolityczna była postępem dla każdego?
 
 <div class="debate-grid">
@@ -203,7 +207,7 @@ nie oceniaj historycznych społeczności według współczesnego komfortu. dobry
 
 ---
 
-<!-- .slide: id="synteza" class="compare-slide" -->
+<!-- .slide: id="synteza" class="compare-slide" data-purpose="synthesis" data-layout="takeaways" -->
 ## Uporządkuj odpowiedź na pytanie główne
 
 <ul class="synthesis-list">
@@ -217,7 +221,7 @@ nie oceniaj historycznych społeczności według współczesnego komfortu. dobry
 
 ---
 
-<!-- .slide: id="bilet" class="exit-ticket-slide" -->
+<!-- .slide: id="bilet" class="exit-ticket-slide" data-purpose="exit-ticket" data-layout="plain" -->
 ## Bilet wyjścia
 
 Dokończ zdanie w zeszycie lub na karcie:

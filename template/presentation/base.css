@@ -1,4 +1,6 @@
 @import url('../theme.css');
+@import url('./fonts.css');
+@import url('./patterns.css');
 
 :root {
   --slide-width: 1280px;
@@ -12,8 +14,16 @@
   --color-heading: #253e5a;
   --color-accent: #a85d2b;
   --color-border: #d7c5aa;
-  --font-heading: "DejaVu Serif", Georgia, "Times New Roman", serif;
-  --font-body: "DejaVu Sans", Aptos, "Segoe UI", Arial, sans-serif;
+  --font-heading: "History Serif", "DejaVu Serif", Georgia, "Times New Roman", serif;
+  --font-body: "History Sans", "DejaVu Sans", "Segoe UI", Arial, sans-serif;
+  --surface-raised: var(--color-surface);
+  --surface-muted: color-mix(in srgb, var(--color-surface) 82%, var(--color-canvas));
+  --text-on-accent: #fff;
+  --rule-width: 3px;
+  --corner-radius: 18px;
+  --shadow-card: 0 10px 24px color-mix(in srgb, var(--color-heading) 16%, transparent);
+  --overlay-caption: color-mix(in srgb, var(--color-heading) 90%, transparent);
+  --spacing-region: 1.1em;
   --ink: var(--color-text);
   --muted: var(--color-muted);
   --paper: var(--color-canvas);

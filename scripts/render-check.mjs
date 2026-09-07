@@ -20,7 +20,7 @@ function argument(name) {
   return index === -1 ? undefined : process.argv[index + 1];
 }
 
-async function startServer(root) {
+export async function startServer(root) {
   const types = { '.css': 'text/css', '.html': 'text/html', '.js': 'text/javascript', '.mjs': 'text/javascript', '.json': 'application/json', '.md': 'text/markdown', '.svg': 'image/svg+xml', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png', '.webp': 'image/webp', '.woff': 'font/woff', '.woff2': 'font/woff2' };
   const server = http.createServer(async (request, response) => {
     try {
@@ -36,7 +36,7 @@ async function startServer(root) {
   return server;
 }
 
-async function inspectEverySlide(page) {
+export async function inspectEverySlide(page) {
   await page.evaluate(() => Reveal.configure({ transition: 'none', backgroundTransition: 'none' }));
   const targets = await page.evaluate(() => Reveal.getSlides()
     .filter((slide) => slide.hasAttribute('data-slide-canvas'))
@@ -51,13 +51,13 @@ async function inspectEverySlide(page) {
     await page.evaluate(() => Reveal.getCurrentSlide().querySelectorAll('.fragment').forEach((fragment) => fragment.classList.add('visible')));
     await page.waitForTimeout(20);
     const report = await inspectPresentation(page);
-    const currentSlide = await awaitSlideName(page);
+    const currentSlide = await currentSlideName(page);
     output.push(...report.slides.filter((slide) => slide.slide === currentSlide));
   }
   return output;
 }
 
-async function awaitSlideName(page) {
+export async function currentSlideName(page) {
   return page.evaluate(() => {
     const slide = Reveal.getCurrentSlide();
     return slide.id ? `#${slide.id}` : `slajd ${Reveal.getIndices().h + 1}`;
@@ -81,9 +81,8 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     await page.waitForFunction(() => document.documentElement.dataset.presentationReady === 'true');
     const slides = await inspectEverySlide(page);
     const report = await inspectPresentation(page);
-    const overflow = slides.filter((slide) => slide.content.some((node) => false)).map((slide) => slide.slide);
     const canvasIssues = slides.flatMap((slide) => findCanvasIssues({ ...slide, viewport: report.viewport }));
-    const issues = renderIssues({ consoleErrors: errors, overflow, canvasIssues });
+    const issues = renderIssues({ consoleErrors: errors, overflow: [], canvasIssues });
     if (issues.length) { console.error(issues.map((issue) => `· ${issue}`).join('\n')); process.exitCode = 1; }
     else console.log(`Render OK: ${relative} (pełne płótno i treść; wymagana osobna ocena wizualna).`);
   } finally { await browser.close(); await new Promise((resolve) => server.close(resolve)); }

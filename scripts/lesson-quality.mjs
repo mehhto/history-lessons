@@ -1,6 +1,7 @@
 const MARKER = /\[(?:DECYZJA NAUCZYCIELA(?:\s*:[^\]]+)?|DO WERYFIKACJI|DO UZUPEŁNIENIA)\]/gi;
 import { catalog } from '../template/presentation/catalog.mjs';
 import { resolveAppearance } from '../template/presentation/appearance.mjs';
+import { auditSlideContract, parseSlideDirectives } from './slide-contract.mjs';
 const KINDS = new Set(['lesson', 'demo']);
 
 export function parseLessonMetadata(text) {
@@ -81,5 +82,9 @@ export function assessLessonQuality({ metadata, requiredFilesPresent, requiredCo
     }
   }
   const teachingWarnings = { ok: teachingIssues.length === 0, issues: teachingIssues };
-  return { structure, technical, teacherApproval, teachingWarnings, ready: structure.ok && technical.ok && teacherApproval.ok };
+  const slideContract = auditSlideContract(parseSlideDirectives(requiredContent?.['slides.md'] || ''), {
+    lessonType: metadata.lesson_type,
+    kind: metadata.kind,
+  });
+  return { structure, technical, teacherApproval, teachingWarnings, slideContract, ready: structure.ok && technical.ok && teacherApproval.ok && slideContract.errors.length === 0 };
 }

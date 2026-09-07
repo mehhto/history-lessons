@@ -9,9 +9,8 @@ export function findCanvasIssues({ slide, canvas, viewport, content }) {
   const issues = [];
   if (!isCanvasRectInsideViewport(canvas, viewport, 1)) issues.push(`Płótno poza ekranem ${slide}`);
   for (const node of content) {
-    if (!node.text?.trim()) continue;
     if (!inside(node.rect, canvas)) issues.push(`Treść poza płótnem ${slide}: ${node.selector}`);
-    if (!textSizeIsLegible(node.computedFontSize, node.kind)) issues.push(`Zbyt mały tekst ${slide}: ${node.selector}`);
+    if (node.text?.trim() && !textSizeIsLegible(node.computedFontSize, node.kind)) issues.push(`Zbyt mały tekst ${slide}: ${node.selector}`);
   }
   return issues;
 }
@@ -30,7 +29,7 @@ export async function inspectPresentation(page) {
       viewport: { width: innerWidth, height: innerHeight },
       slides: slides.map((slide, index) => {
         const canvas = slide.getBoundingClientRect();
-        const content = [...slide.querySelectorAll('.slide-content :is(h1,h2,h3,h4,p,li,figcaption,td,th,summary,button,label)')]
+        const content = [...slide.querySelectorAll('.slide-content :is(h1,h2,h3,h4,p,li,figcaption,td,th,summary,button,label,img,svg,table,lesson-gallery,lesson-map,lesson-compare,lesson-stepper,lesson-disclosure)')]
           .filter(visible)
           .map((element) => ({
             selector: descriptor(element), text: element.textContent,

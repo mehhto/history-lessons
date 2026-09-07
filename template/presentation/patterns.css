@@ -1,0 +1,59 @@
+/* Layouts are selected with data-layout; purpose remains a pedagogical contract. */
+.reveal [data-slide-canvas][data-layout="statement"] .slide-content {
+  position: relative;
+}
+
+.reveal [data-slide-canvas][data-layout="split"] .slide-content,
+.reveal [data-slide-canvas][data-layout="matrix"] .slide-content {
+  display: grid;
+  gap: var(--spacing-region);
+}
+
+.reveal [data-slide-canvas][data-layout="equation"] .slide-content {
+  display: grid;
+  align-content: center;
+  gap: .8em;
+}
+
+.concept-equation {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1.2fr);
+  align-items: center;
+  gap: .3em;
+  margin: .45em 0;
+  font-family: var(--font-heading);
+  font-size: 1.22em;
+  font-weight: 700;
+}
+.concept-equation > * { min-width: 0; text-align: center; }
+.concept-equation .operator { color: var(--color-accent); font-family: var(--font-body); }
+.concept-equation .result { padding: .32em .45em; border-radius: var(--corner-radius); background: var(--surface-muted); box-shadow: var(--shadow-card); }
+
+.reveal [data-slide-canvas][data-layout="activity-brief"] .student-task {
+  display: grid;
+  gap: .42em;
+  border-inline-start: var(--rule-width) solid var(--color-accent);
+  border-radius: 0 var(--corner-radius) var(--corner-radius) 0;
+  box-shadow: var(--shadow-card);
+}
+
+.reveal [data-slide-canvas][data-layout="takeaways"] .slide-content > ul,
+.reveal [data-slide-canvas][data-layout="takeaways"] .slide-content > ol,
+.takeaways {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+  gap: .45em;
+  padding: 0;
+  list-style: none;
+}
+.takeaways > li { padding: .45em .6em; border-radius: var(--corner-radius); background: var(--surface-raised); box-shadow: var(--shadow-card); }
+
+.reveal [data-slide-canvas][data-layout="evidence"] figure { margin-inline: 0; }
+.reveal .slides section[data-slide-canvas] > .slide-content > p > img,
+.reveal .slides section[data-slide-canvas] > .slide-content > img { display: block; max-width: 100%; max-height: 8em; margin: .35em auto; object-fit: contain; }
+.reveal [data-slide-canvas][data-layout="evidence"] figcaption { color: var(--color-muted); }
+
+@media print {
+  .concept-equation { font-size: 1em; }
+  .takeaways { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

@@ -7,7 +7,7 @@ notes:
 
 ---
 
-<!-- .slide: class="question-slide" -->
+<!-- .slide: id="slide-01" class="question-slide" data-purpose="question" data-layout="statement" -->
 ## Po co płynąć tam, gdzie nie ma znanej drogi?
 
 Zapisz **dwie możliwe przyczyny**.
@@ -17,7 +17,7 @@ Zbierz hipotezy, bez oceniania. Wróć do nich w podsumowaniu.
 
 ---
 
-<!-- .slide: class="context-slide" -->
+<!-- .slide: id="slide-02" class="context-slide" data-purpose="explanation" data-layout="statement" -->
 ## Co ułatwiło wyprawy?
 
 - statki oceaniczne
@@ -30,7 +30,7 @@ Sama ciekawość nie wystarczała: wyprawa wymagała wiedzy, pieniędzy i organi
 
 ---
 
-<!-- .slide: class="context-slide" -->
+<!-- .slide: id="slide-03" class="context-slide" data-purpose="explanation" data-layout="statement" -->
 ## Czego szukano?
 
 - drogi do rynków Azji
@@ -42,7 +42,7 @@ Nie przedstawiaj jednej przyczyny jako wyjaśnienia wszystkich wypraw.
 
 ---
 
-<!-- .slide: class="map-slide" -->
+<!-- .slide: id="slide-04" class="map-slide" data-purpose="evidence" data-layout="evidence" -->
 <span class="source-label">źródło z epoki · 1502</span>
 
 ## Co widzisz na tej mapie?
@@ -54,7 +54,7 @@ Pytaj o kształt lądów, linie na oceanie i róże wiatrów. Nie wymagaj odczyt
 
 ---
 
-<!-- .slide: class="source-slide" -->
+<!-- .slide: id="slide-05" class="source-slide" data-purpose="evidence" data-layout="evidence" -->
 ## Obserwacja ≠ wniosek
 
 **Obserwacja:** „Widzę wiele linii na oceanie.”
@@ -66,7 +66,7 @@ Pokaż różnicę między tym, co widoczne, a tym, co wymaga dodatkowej wiedzy.
 
 ---
 
-<!-- .slide: class="compare-slide" -->
+<!-- .slide: id="slide-06" class="compare-slide" data-purpose="explanation" data-layout="split" -->
 ## Trzy kierunki — schemat
 
 ![Schemat edukacyjny trzech kierunków wypraw](assets/schemat-kierunki-wypraw.svg)
@@ -76,7 +76,7 @@ To współczesne opracowanie, nie mapa historyczna. Daty sprawdź w `sources.md`
 
 ---
 
-<!-- .slide: class="student-task" -->
+<!-- .slide: id="slide-07" class="student-task" data-purpose="practice" data-layout="activity-brief" -->
 ## Zadanie w parach
 
 **„Płynięto, aby…, a trudność stanowiło…”**
@@ -86,7 +86,7 @@ Daj 4 minuty. Wsparcie: bank słów z karty pracy.
 
 ---
 
-<!-- .slide: class="exit-ticket-slide" -->
+<!-- .slide: id="slide-08" class="exit-ticket-slide" data-purpose="exit-ticket" data-layout="plain" -->
 ## Bilet wyjścia
 
 Jedna przyczyna. Jeden kierunek. Jedno pytanie do mapy.
