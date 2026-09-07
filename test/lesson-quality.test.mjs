@@ -28,6 +28,11 @@ test('reports malformed metadata instead of accepting it as ready', () => {
   assert.throws(() => parseLessonMetadata(JSON.stringify({ ...metadata, lesson_type: 'other' })), /lesson_type/);
 });
 
+test('rejects malformed presentation appearance in metadata', () => {
+  const broken = { ...metadata, appearance: { style: 'atlas', palette: 'sand' } };
+  assert.throws(() => parseLessonMetadata(JSON.stringify(broken)), /nie obsługuje palety/);
+});
+
 test('finds unresolved authoring markers including annotated decisions', () => {
   assert.deepEqual(
     unresolvedMarkers('Cel: [DECYZJA NAUCZYCIELA: wybierz wariant]. Fakt: [DO WERYFIKACJI].'),

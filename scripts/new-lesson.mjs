@@ -2,6 +2,8 @@ import { cp, mkdir, readFile, rm, writeFile, access } from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
 import { lessonDirectory, normalizeLessonSlug } from './lesson-tools.mjs';
+import { catalog } from '../template/presentation/catalog.mjs';
+import { resolveAppearance } from '../template/presentation/appearance.mjs';
 
 function argument(name) {
   const index = process.argv.indexOf(name);
@@ -10,19 +12,26 @@ function argument(name) {
 
 function usage(message) {
   if (message) console.error(`Błąd: ${message}\n`);
-  console.error('Użycie: npm run new -- --class 6 --title "Wielkie odkrycia geograficzne" [--type new-knowledge|practice]');
+  console.error('Użycie: npm run new -- --class 6 --title "Wielkie odkrycia geograficzne" [--type new-knowledge|practice] [--style museum|editorial|atlas] [--palette nazwa]');
   process.exitCode = 1;
 }
 
 const grade = argument('--class');
 const title = argument('--title');
 const lessonType = argument('--type') || 'new-knowledge';
+const style = argument('--style');
+const palette = argument('--palette');
 if (!grade || !title) {
   usage('Wymagane są parametry --class oraz --title.');
 } else if (!['new-knowledge', 'practice'].includes(lessonType)) {
   usage('Parametr --type musi mieć wartość new-knowledge albo practice.');
 } else {
   try {
+    const requestedAppearance = {
+      ...(style === undefined ? {} : { style }),
+      ...(palette === undefined ? {} : { palette }),
+    };
+    const appearance = resolveAppearance(requestedAppearance, catalog);
     const slug = normalizeLessonSlug(title);
     const relativeTarget = lessonDirectory({ grade, slug });
     const target = path.resolve(process.cwd(), relativeTarget);
@@ -61,6 +70,7 @@ if (!grade || !title) {
     metadata.title = title;
     metadata.grade = Number(grade);
     metadata.lesson_type = lessonType;
+    metadata.appearance = appearance.background ? appearance : { style: appearance.style, palette: appearance.palette };
     await writeFile(metadataPath, `${JSON.stringify(metadata, null, 2)}\n`, 'utf8');
 
     console.log(`Utworzono: ${relativeTarget}`);

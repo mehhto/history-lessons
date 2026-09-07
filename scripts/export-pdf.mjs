@@ -24,9 +24,17 @@ const lessonDirectory = await realpath(resolveWithin(root, lesson));
 resolveWithin(root, lessonDirectory);
 const presentationInputPaths = [
   ['slides.md', path.join(lessonDirectory, 'slides.md')],
+  ['metadata.json', path.join(lessonDirectory, 'metadata.json')],
   ['lesson.css', path.join(lessonDirectory, 'lesson.css')],
   ['index.html', path.join(lessonDirectory, 'index.html')],
   ['template/theme.css', path.join(root, 'template/theme.css')],
+  ['template/presentation/base.css', path.join(root, 'template/presentation/base.css')],
+  ['template/presentation/canvas.css', path.join(root, 'template/presentation/canvas.css')],
+  ['template/presentation/boot.mjs', path.join(root, 'template/presentation/boot.mjs')],
+  ['template/presentation/appearance.mjs', path.join(root, 'template/presentation/appearance.mjs')],
+  ['template/presentation/catalog.mjs', path.join(root, 'template/presentation/catalog.mjs')],
+  ['template/presentation/geometry.mjs', path.join(root, 'template/presentation/geometry.mjs')],
+  ...Object.values((await import('../template/presentation/catalog.mjs')).catalog.styles).map((style) => [`template/presentation/styles/${style.stylesheet}`, path.join(root, 'template/presentation/styles', style.stylesheet)]),
   ['template/components/lesson-components.css', path.join(root, 'template/components/lesson-components.css')],
   ['template/components/lesson-components.js', path.join(root, 'template/components/lesson-components.js')],
   ['scripts/export-pdf.mjs', new URL('./export-pdf.mjs', import.meta.url)],
@@ -47,7 +55,7 @@ try {
   if (error.code !== 'ENOENT') throw error;
 }
 
-const mimeTypes = { '.css': 'text/css', '.html': 'text/html', '.js': 'text/javascript', '.mjs': 'text/javascript', '.md': 'text/markdown', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.woff': 'font/woff', '.woff2': 'font/woff2' };
+const mimeTypes = { '.css': 'text/css', '.html': 'text/html', '.js': 'text/javascript', '.mjs': 'text/javascript', '.json': 'application/json', '.md': 'text/markdown', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.woff': 'font/woff', '.woff2': 'font/woff2' };
 
 const server = http.createServer(async (request, response) => {
   try {
@@ -72,9 +80,9 @@ const browser = await chromium.launch({ headless: true });
 try {
   const page = await browser.newPage({ viewport: { width: 1600, height: 900 } });
   await page.goto(`http://127.0.0.1:${port}/${publicLessonPath}/?print-pdf`, { waitUntil: 'networkidle' });
-  await page.waitForFunction(() => window.Reveal && window.Reveal.isReady());
+  await page.waitForFunction(() => document.documentElement.dataset.presentationReady === 'true');
   await page.emulateMedia({ media: 'print' });
-  const pdf = await page.pdf({ path: outputPath, format: 'A4', landscape: true, printBackground: true, margin: { top: '0', right: '0', bottom: '0', left: '0' } });
+  const pdf = await page.pdf({ path: outputPath, width: '1280px', height: '720px', preferCSSPageSize: true, printBackground: true, margin: { top: '0', right: '0', bottom: '0', left: '0' } });
   if (!pdf.subarray(0, 5).equals(Buffer.from('%PDF-'))) throw new Error('Eksport prezentacji nie utworzył prawidłowego PDF.');
   await writeFile(path.join(lessonDirectory, '.presentation-artifact.json'), `${JSON.stringify(createArtifactManifest(presentationInputs), null, 2)}\n`, 'utf8');
   console.log(`Zapisano PDF: ${path.relative(root, outputPath)}`);

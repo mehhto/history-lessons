@@ -11,6 +11,6 @@ export function isLessonPackageDirectory(lessonDirectory, classesDirectory) {
   return segments.length === 2 && segments.every(Boolean);
 }
 
-export function isAllowedPreviewFile(file, { lessonDirectory, revealDirectory, componentsDirectory, themePath }) {
-  return file === themePath || [lessonDirectory, revealDirectory, componentsDirectory].some((directory) => isWithin(directory, file));
+export function isAllowedPreviewFile(file, { lessonDirectory, revealDirectory, componentsDirectory, themePath, presentationDirectory }) {
+  return file === themePath || [lessonDirectory, revealDirectory, componentsDirectory, presentationDirectory].filter(Boolean).some((directory) => isWithin(directory, file));
 }

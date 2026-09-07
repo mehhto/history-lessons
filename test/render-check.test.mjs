@@ -8,4 +8,5 @@ test('reports console errors and visible overflow without claiming visual approv
     'Przepełnienie: #slide',
   ]);
   assert.deepEqual(renderIssues({ consoleErrors: [], overflow: [] }), []);
+  assert.deepEqual(renderIssues({ consoleErrors: [], overflow: [], canvasIssues: ['Treść poza płótnem #a: p'] }), ['Treść poza płótnem #a: p']);
 });

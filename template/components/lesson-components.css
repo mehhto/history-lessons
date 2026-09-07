@@ -43,7 +43,7 @@ lesson-stats { display: grid; grid-template-columns: repeat(var(--stats-columns,
 lesson-stat { display: grid; grid-template-rows: minmax(2.35em, auto) auto 1fr; gap: .25rem; min-height: 9.4rem; padding: .8em; border-radius: .38rem; color: #fff; background: linear-gradient(145deg, var(--navy), #28527c); box-shadow: 0 .35rem .8rem rgba(23,54,93,.2); text-align: left; }
 lesson-counter { display: block; align-self: start; font-size: 1.22em; font-weight: 800; letter-spacing: -.04em; line-height: 1.05; }
 lesson-stat small { align-self: start; font-size: .4em; font-weight: 700; line-height: 1.25; }
-lesson-stat p { align-self: end; margin: 0; font-size: .36em; line-height: 1.3; opacity: .9; }
+lesson-stat p { align-self: end; margin: 0; font-size: .4em; line-height: 1.3; opacity: .9; }
 lesson-stat:nth-child(2n) { background: linear-gradient(145deg, var(--teal), #348b8e); }
 lesson-stat:nth-child(3n) { color: var(--ink); background: linear-gradient(145deg, #f3c977, var(--soft-gold)); }
 
@@ -54,7 +54,7 @@ lesson-step::before { content: counter(step); position: absolute; top: .72em; le
 lesson-step[data-state="current"] { border-color: var(--gold); background: var(--soft-gold); }
 lesson-step[data-state="current"]::before { background: var(--gold); }
 .reveal lesson-step h3 { margin: 0; color: var(--navy); font-size: .58em; line-height: 1.08; }
-.reveal lesson-step p { margin: 0; font-size: .38em; line-height: 1.28; }
+.reveal lesson-step p { margin: 0; font-size: .4em; line-height: 1.28; }
 
 .reveal lesson-table { display: block; overflow: hidden; border: 1px solid #c6d7e3; border-radius: .45rem; background: #fff; box-shadow: 0 .4rem 1rem rgba(23,54,93,.1); }
 .reveal lesson-table table { width: 100%; margin: 0; border-collapse: separate; border-spacing: 0; table-layout: fixed; font-size: .48em; line-height: 1.3; }

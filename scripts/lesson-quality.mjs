@@ -1,4 +1,6 @@
 const MARKER = /\[(?:DECYZJA NAUCZYCIELA(?:\s*:[^\]]+)?|DO WERYFIKACJI|DO UZUPEŁNIENIA)\]/gi;
+import { catalog } from '../template/presentation/catalog.mjs';
+import { resolveAppearance } from '../template/presentation/appearance.mjs';
 const KINDS = new Set(['lesson', 'demo']);
 
 export function parseLessonMetadata(text) {
@@ -33,6 +35,7 @@ export function parseLessonMetadata(text) {
       throw new Error(`Pole ${field} w metadata.json musi być true albo false.`);
     }
   }
+  resolveAppearance(metadata.appearance, catalog);
   return metadata;
 }
 

@@ -13,5 +13,6 @@
   "source_reviewed": true,
   "teacher_reviewed": false,
   "offline_checked": true,
-  "pdf_exported": true
+  "pdf_exported": true,
+  "appearance": { "style": "editorial", "palette": "ink" }
 }

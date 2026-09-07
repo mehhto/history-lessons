@@ -1,0 +1,14 @@
+html[data-style="atlas"] .reveal { --font-heading: Georgia, "Times New Roman", serif; }
+html[data-style="atlas"] .reveal .slides section[data-slide-canvas] {
+  background-color: var(--color-canvas) !important;
+  background-image:
+    radial-gradient(ellipse at 15% 110%, transparent 0 22%, rgba(31,118,128,.12) 22.3% 22.8%, transparent 23.1%),
+    radial-gradient(ellipse at 85% -5%, transparent 0 17%, rgba(31,118,128,.12) 17.3% 17.8%, transparent 18.1%),
+    linear-gradient(135deg, transparent 0 49.6%, rgba(31,118,128,.06) 49.8% 50.1%, transparent 50.3%) !important;
+}
+html[data-style="atlas"] .reveal h1,
+html[data-style="atlas"] .reveal h2 { color: var(--color-accent); letter-spacing: .012em; }
+html[data-style="atlas"] .reveal .source-label { color: var(--color-accent); letter-spacing: .12em; }
+html[data-style="atlas"] .reveal .slides section.question-slide,
+html[data-style="atlas"] .reveal .slides section.explanation-slide { border-top: .18rem solid var(--color-accent); }
+html[data-style="atlas"] .reveal lesson-table { border-color: var(--color-accent); border-radius: 0; }

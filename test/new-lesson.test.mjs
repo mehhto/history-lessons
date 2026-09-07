@@ -41,3 +41,15 @@ test('new practice lesson omits the optional student summary', async () => {
     await rm(directory, { recursive: true, force: true });
   }
 });
+
+test('new lesson records a validated presentation style and palette', async () => {
+  const directory = await mkdtemp(path.join(os.tmpdir(), 'history-lesson-'));
+  try {
+    await cp(path.join(root, 'template'), path.join(directory, 'template'), { recursive: true });
+    await run(process.execPath, [path.join(root, 'scripts/new-lesson.mjs'), '--class', '6', '--title', 'Motyw jakości', '--style', 'editorial', '--palette', 'burgundy'], { cwd: directory });
+    const metadata = JSON.parse(await readFile(path.join(directory, 'classes/6/motyw-jakosci/metadata.json'), 'utf8'));
+    assert.deepEqual(metadata.appearance, { style: 'editorial', palette: 'burgundy' });
+  } finally {
+    await rm(directory, { recursive: true, force: true });
+  }
+});

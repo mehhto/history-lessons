@@ -34,12 +34,12 @@
 
 .reveal .hominin-gallery { display:grid; grid-template-columns:repeat(4, minmax(0, 1fr)); gap:.72rem; align-items:start; margin:.35rem 0 .45rem; }
 .reveal .hominin-gallery img { display:block; width:100%; height:20vh; object-fit:cover; object-position:50% 45%; }
-.reveal .hominin-gallery figcaption { margin-top:.28rem; font-size:.34em; line-height:1.2; }
+.reveal .hominin-gallery figcaption { margin-top:.28rem; font-size:.4em; line-height:1.2; }
 .reveal .hominin-gallery figcaption strong { color:var(--preh-navy); font-size:1.14em; }
 
 .reveal .migration-map img { display:block; width:100%; height:48vh; object-fit:contain; }
 .reveal #migracje .migration-map img { height:40vh; }
-.reveal #migracje .migration-map figcaption { margin-top:.22rem; font-size:.37em; }
+.reveal #migracje .migration-map figcaption { margin-top:.22rem; font-size:.4em; }
 .reveal #migracje .student-task { margin:.3em 0 0; padding:.34em .55em; font-size:.62em; }
 .reveal .icon-list { margin: .25rem 0; padding-left: 1.05em; }
 .reveal .icon-list li { margin-bottom:.5rem; font-size:.64em; line-height:1.3; }

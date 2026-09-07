@@ -35,9 +35,17 @@ async function presentationFresh(lessonDirectory, repoRoot) {
   if (!pdf.subarray(0, 5).equals(Buffer.from('%PDF-'))) return false;
   const inputs = Object.fromEntries(await Promise.all([
     ['slides.md', path.join(lessonDirectory, 'slides.md')],
+    ['metadata.json', path.join(lessonDirectory, 'metadata.json')],
     ['lesson.css', path.join(lessonDirectory, 'lesson.css')],
     ['index.html', path.join(lessonDirectory, 'index.html')],
     ['template/theme.css', path.join(repoRoot, 'template/theme.css')],
+    ['template/presentation/base.css', path.join(repoRoot, 'template/presentation/base.css')],
+    ['template/presentation/canvas.css', path.join(repoRoot, 'template/presentation/canvas.css')],
+    ['template/presentation/boot.mjs', path.join(repoRoot, 'template/presentation/boot.mjs')],
+    ['template/presentation/appearance.mjs', path.join(repoRoot, 'template/presentation/appearance.mjs')],
+    ['template/presentation/catalog.mjs', path.join(repoRoot, 'template/presentation/catalog.mjs')],
+    ['template/presentation/geometry.mjs', path.join(repoRoot, 'template/presentation/geometry.mjs')],
+    ...Object.values((await import('../template/presentation/catalog.mjs')).catalog.styles).map((style) => [`template/presentation/styles/${style.stylesheet}`, path.join(repoRoot, 'template/presentation/styles', style.stylesheet)]),
     ['template/components/lesson-components.css', path.join(repoRoot, 'template/components/lesson-components.css')],
     ['template/components/lesson-components.js', path.join(repoRoot, 'template/components/lesson-components.js')],
     ['scripts/export-pdf.mjs', path.join(repoRoot, 'scripts/export-pdf.mjs')],

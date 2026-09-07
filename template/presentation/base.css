@@ -1,0 +1,63 @@
+@import url('../theme.css');
+
+:root {
+  --slide-width: 1280px;
+  --slide-height: 720px;
+  --slide-padding-y: 48px;
+  --slide-padding-x: 64px;
+  --color-canvas: #f7f2e8;
+  --color-surface: #fffdf8;
+  --color-text: #1f2933;
+  --color-muted: #596575;
+  --color-heading: #253e5a;
+  --color-accent: #a85d2b;
+  --color-border: #d7c5aa;
+  --font-heading: Georgia, "Times New Roman", serif;
+  --font-body: Aptos, "Segoe UI", Arial, sans-serif;
+  --ink: var(--color-text);
+  --muted: var(--color-muted);
+  --paper: var(--color-canvas);
+  --navy: var(--color-heading);
+  --gold: var(--color-accent);
+  --teal: var(--color-accent);
+  --soft-blue: var(--color-surface);
+  --soft-gold: var(--color-surface);
+}
+
+.reveal { color: var(--color-text); font-family: var(--font-body); font-size: 36px; }
+.reveal .slides { text-align: left; }
+.reveal h1, .reveal h2, .reveal h3 { color: var(--color-heading); font-family: var(--font-heading); }
+.reveal strong { color: var(--color-accent); }
+.reveal .slide-number { background: var(--color-heading); color: #fff; }
+.reveal .progress, .reveal .controls { color: var(--color-accent); }
+.reveal .slides section[data-slide-canvas] { background: var(--color-canvas); color: var(--color-text); }
+.reveal .slides section[data-slide-canvas]::before { background-image: var(--appearance-backdrop, none); }
+.reveal .slides section[data-slide-canvas] > .slide-content { position: relative; z-index: 1; }
+.reveal .slides section[data-slide-canvas][data-backdrop]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-size: cover;
+  background-position: center;
+  opacity: .12;
+}
+.reveal .slides section[data-slide-canvas][data-backdrop] > .slide-content::before {
+  content: "";
+  position: absolute;
+  inset: -48px -64px;
+  z-index: -1;
+  background: color-mix(in srgb, var(--color-canvas) 92%, transparent);
+}
+.reveal .slides section[data-slide-canvas][data-backdrop="subtle"]::before { opacity: .07; }
+.reveal .slides section[data-slide-canvas][data-backdrop="off"]::before,
+.reveal .slides section[data-slide-canvas][data-backdrop="off"] > .slide-content::before { content: none; }
+
+.source-label { background: var(--color-heading); }
+.student-task { border-color: var(--color-accent); background: var(--color-surface); }
+.small { color: var(--color-muted); }
+
+@media print {
+  .reveal { font-size: 36px; }
+}

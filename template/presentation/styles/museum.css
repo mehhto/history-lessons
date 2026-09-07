@@ -1,0 +1,10 @@
+html[data-style="museum"] .reveal { --font-heading: Georgia, "Times New Roman", serif; }
+html[data-style="museum"] .reveal .slides section[data-slide-canvas] {
+  background: linear-gradient(135deg, rgba(255,255,255,.76), rgba(229,218,194,.36)) !important;
+  box-shadow: inset 0 .12rem 0 var(--color-accent), inset 0 -.05rem 0 rgba(97,71,35,.2);
+}
+html[data-style="museum"] .reveal h1,
+html[data-style="museum"] .reveal h2 { font-variant: small-caps; letter-spacing: .015em; }
+html[data-style="museum"] .reveal .slides section.question-slide,
+html[data-style="museum"] .reveal .slides section.explanation-slide { border-left: .32rem solid var(--color-accent); }
+html[data-style="museum"] .reveal .source-label { letter-spacing: .09em; }

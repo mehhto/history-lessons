@@ -1,0 +1,12 @@
+html[data-style="editorial"] .reveal { --font-heading: Aptos, "Segoe UI", Arial, sans-serif; }
+html[data-style="editorial"] .reveal .slides section[data-slide-canvas] {
+  background: linear-gradient(90deg, var(--color-accent) 0 .18rem, var(--color-canvas) .18rem 100%) !important;
+}
+html[data-style="editorial"] .reveal h1,
+html[data-style="editorial"] .reveal h2 { font-weight: 850; letter-spacing: -.035em; }
+html[data-style="editorial"] .reveal h1::after,
+html[data-style="editorial"] .reveal h2::after { content: ''; display: block; width: 2.9em; border-bottom: .085em solid var(--color-accent); margin-top: .18em; }
+html[data-style="editorial"] .reveal .eyebrow,
+html[data-style="editorial"] .reveal .source-label { font-family: Aptos, "Segoe UI", Arial, sans-serif; font-weight: 800; letter-spacing: .11em; }
+html[data-style="editorial"] .reveal lesson-step,
+html[data-style="editorial"] .reveal lesson-stat { border-radius: 0; box-shadow: none; }

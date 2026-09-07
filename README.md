@@ -106,6 +106,38 @@ Ustawienia konkretnego slajdu przechowuj w `lesson.css`:
 
 Nie wpisuj zewnętrznych adresów obrazów: zasoby należy najpierw pobrać do `assets/` i opisać w `sources.md`.
 
+## Motywy prezentacji i stałe płótno
+
+Każda aktywna prezentacja działa na jednym płótnie **1280×720 (16:9)**. Reveal skaluje całe płótno proporcjonalnie do ekranu; nie wolno zmieniać wymiarów sekcji, paddingiem zwiększać ich rozmiaru ani ukrywać przepełnionego tekstu. Jeśli treść nie mieści się, popraw układ lub podziel slajd, zachowując wyjaśnienie.
+
+W `metadata.json` wybierz zatwierdzony styl i paletę:
+
+```json
+"appearance": { "style": "atlas", "palette": "marine" }
+```
+
+| Styl | Palety |
+|---|---|
+| `museum` | `sand`, `stone` |
+| `editorial` | `ink`, `burgundy` |
+| `atlas` | `marine`, `earth` |
+
+Nowy pakiet można utworzyć ze stylem: `npm run new -- --class 6 --title "Temat" --style atlas --palette marine`.
+
+Opcjonalne tło jest lokalnym, dekoracyjnym plikiem lekcji; nie może zastępować materiału analizowanego przez ucznia:
+
+```json
+"background": { "asset": "assets/mapa-tlo.webp", "scope": "opening-and-sections" }
+```
+
+Dozwolone zakresy: `opening`, `opening-and-sections`, `subtle-all`. Tło pod tekstem dostaje jasną powierzchnię zapewniającą kontrast; na slajdzie mapy, tabeli lub analizy źródła ustaw `data-backdrop="off"`. Zasób musi być lokalny, opisany w `sources.md` i mieć sprawdzone prawa. Nie wpisuj URL, dowolnego CSS ani motywu dla pojedynczego slajdu.
+
+Kontrola renderu odwiedza każdy slajd i sprawdza rzeczywiste płótno oraz treść; nie zastępuje oględzin przez nauczyciela:
+
+```bash
+npm run check:render -- --lesson classes/6/temat
+```
+
 ### Katalog rozszerzonych komponentów
 
 Pełny, gotowy do obejrzenia wzornik znajduje się w `classes/6/katalog-komponentow-prezentacji/`. Zawiera przykładowe slajdy i źródłowy markup dla: aktywnej mapy lokalnej, opcjonalnego iframe Google Maps, rozwijanych haseł, kart statystyk/liczników, steppera, tabeli, cytatu z portretem, pionowej i poziomej osi czasu, odtwarzanego na żądanie YouTube, listy ikon oraz compare slidera.

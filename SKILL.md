@@ -51,7 +51,8 @@ Każdy slajd musi mieć jasną funkcję oraz być czytelny z końca klasy:
 - tekst porządkuj w krótkie bloki, tabele, osie czasu i wyróżnienia zamiast w ściany tekstu;
 - wprowadzaj ograniczoną liczbę nowych pojęć naraz;
 - rozdziel wyjaśnienie od ćwiczenia;
-- sprawdź rzeczywisty render 16:9, przepełnienia i czas całej lekcji;
+- sprawdź rzeczywiste płótno Reveal 1280×720, przepełnienia i czas całej lekcji; sam zrzut okna 16:9 nie wystarcza;
+- nie ukrywaj nadmiaru przez `overflow`, przewijanie, ellipsis ani mikrotekst — popraw kompozycję lub podziel slajd, zachowując wyjaśnienie;
 - nie skracaj prawidłowego wyjaśnienia tylko po to, aby spełnić liczbowy limit.
 
 ## `slides.md` i notatki nauczyciela
@@ -61,7 +62,7 @@ Każdy slajd musi mieć jasną funkcję oraz być czytelny z końca klasy:
 - Szczegółowe notatki są wymagane tylko przy trudnym wyjaśnieniu, nowym pojęciu, źródle, materiale kontrowersyjnym, pytaniu wymagającym moderacji albo zadaniu z typowymi błędami.
 - Każdy pakiet ma `lesson.css`, ładowany po motywie i komponentach. Ręczne poprawki konkretnej lekcji zapisuj wyłącznie tam.
 - Dla niestandardowego slajdu użyj trwałego `id` w dyrektywie `.slide`; selektory w `lesson.css` odnoszą się do tego identyfikatora.
-- Zachowuj `index.html`, `theme.css`, ścieżki do bibliotek i ścieżki do lokalnych zasobów, chyba że nauczyciel wyraźnie zleci inaczej.
+- Zachowuj wspólny bootstrap prezentacji, ścieżki do bibliotek i ścieżki do lokalnych zasobów. Wygląd wybieraj przez `metadata.json.appearance`: `museum`, `editorial` lub `atlas` i zatwierdzoną dla niego paletę; nie dodawaj dowolnego CSS ani zdalnych fontów.
 - Stosuj klasy zależnie od funkcji, np. `question-slide`, `explanation-slide`, `context-slide`, `source-slide`, `map-slide`, `practice-slide`, `compare-slide`, `exit-ticket-slide`.
 
 Dostępne komponenty lokalne: `lesson-timeline` / `lesson-event`, `lesson-gallery`, `lesson-map`, `lesson-disclosure`, `lesson-stats` / `lesson-stat` / `lesson-counter`, `lesson-stepper` / `lesson-step`, `lesson-table`, `lesson-quote`, `lesson-icon-list`, `lesson-video` i `lesson-compare`. Pełne przykłady są w `classes/6/katalog-komponentow-prezentacji/`.
