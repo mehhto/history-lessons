@@ -25,8 +25,8 @@ lesson-map .map-stage > img, lesson-map .map-stage > svg { width: 100%; height: 
 lesson-map [data-map-pin] { position: absolute; z-index: 1; width: 1.45em; height: 1.45em; padding: 0; border: .12rem solid #fff; border-radius: 50%; color: #fff; background: var(--map-pin, var(--navy)); box-shadow: 0 .15rem .4rem rgba(0,0,0,.22); cursor: pointer; font-size: .55em; font-weight: 800; }
 lesson-map [data-map-pin][aria-pressed="true"], lesson-map [data-map-pin]:focus-visible { outline: .14rem solid var(--gold); outline-offset: .13rem; background: var(--teal); }
 lesson-map .map-info { display: grid; align-content: center; padding: .7em; background: var(--soft-gold); text-align: left; }
-lesson-map [data-map-panel] { margin: 0; font-size: .62em; line-height: 1.35; }
-lesson-map .map-kicker { color: var(--teal); font-size: .48em; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+lesson-map .map-info p, lesson-map [data-map-panel] { margin: 0; font-size: .48em; line-height: 1.35; }
+lesson-map .map-kicker { color: var(--teal); font-size: .48em; font-weight: 800; letter-spacing: .08em; text-transform: none; }
 lesson-map iframe { width: 100%; min-height: 52vh; border: 0; }
 
 lesson-disclosure { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); align-items: start; gap: .6rem; }
@@ -72,7 +72,7 @@ lesson-quote img { width: 100%; aspect-ratio: 1; max-height: none; margin: 0; bo
 lesson-quote blockquote { margin: 0; padding: 0; border: 0; background: none; font-size: .7em; font-style: italic; }
 lesson-quote figcaption { margin-top: .55em; color: var(--teal); font-size: .43em; font-weight: 800; }
 
-lesson-video { position: relative; display: grid; place-items: center; min-height: 48vh; overflow: hidden; background: linear-gradient(145deg, #102947, #275978); box-shadow: 0 .35rem 1rem rgba(23,54,93,.2); }
+lesson-video { position: relative; display: grid; place-items: center; min-height: 9em; overflow: hidden; background: linear-gradient(145deg, #102947, #275978); box-shadow: 0 .35rem 1rem rgba(23,54,93,.2); }
 lesson-video .video-fallback { display: grid; gap: .35rem; max-width: 20em; padding: 1em; color: #fff; text-align: center; }
 lesson-video .video-fallback strong { color: #fff; font-size: .85em; }
 lesson-video .video-fallback p { margin: 0; font-size: .48em; line-height: 1.35; }

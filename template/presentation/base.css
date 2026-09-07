@@ -12,8 +12,8 @@
   --color-heading: #253e5a;
   --color-accent: #a85d2b;
   --color-border: #d7c5aa;
-  --font-heading: Georgia, "Times New Roman", serif;
-  --font-body: Aptos, "Segoe UI", Arial, sans-serif;
+  --font-heading: "DejaVu Serif", Georgia, "Times New Roman", serif;
+  --font-body: "DejaVu Sans", Aptos, "Segoe UI", Arial, sans-serif;
   --ink: var(--color-text);
   --muted: var(--color-muted);
   --paper: var(--color-canvas);

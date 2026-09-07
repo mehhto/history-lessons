@@ -31,7 +31,7 @@
 .reveal .slides section.compare-slide { padding: .8em 1em; border: 2px solid #adc0d2; }
 .reveal .slides section.portrait-source img { max-height: 44vh; }
 
-.source-label { display: inline-block; padding: .22em .55em; border-radius: 999px; background: var(--navy); color: #fff; font-size: .42em; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+.source-label { display: inline-block; padding: .22em .55em; border-radius: 999px; background: var(--navy); color: #fff; font-size: .42em; font-weight: 700; letter-spacing: .04em; text-transform: none; }
 .student-task { padding: .5em .7em; border-radius: .2em; background: #fff; border: 2px solid var(--gold); font-size: .82em; }
 .two-column { display: grid; grid-template-columns: 3fr 2fr; gap: 1em; align-items: center; }
 .small { font-size: .68em; color: var(--muted); }

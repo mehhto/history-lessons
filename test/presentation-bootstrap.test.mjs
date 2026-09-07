@@ -12,3 +12,14 @@ test('template starts presentations through the shared fixed-canvas bootstrap', 
   assert.match(html, /presentation\/boot\.mjs/);
   assert.doesNotMatch(html, /Reveal\.initialize\s*\(/);
 });
+
+test('shared styles preserve Polish lowercase characters instead of forcing small caps', async () => {
+  const sharedStyles = await Promise.all([
+    'template/theme.css',
+    'template/components/lesson-components.css',
+    'template/presentation/styles/museum.css',
+    'template/presentation/styles/editorial.css',
+    'template/presentation/styles/atlas.css',
+  ].map((file) => readFile(path.join(root, file), 'utf8')));
+  for (const stylesheet of sharedStyles) assert.doesNotMatch(stylesheet, /font-variant:\s*small-caps|text-transform:\s*uppercase/i);
+});

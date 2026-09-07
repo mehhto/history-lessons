@@ -1,4 +1,4 @@
-html[data-style="editorial"] .reveal { --font-heading: Aptos, "Segoe UI", Arial, sans-serif; }
+html[data-style="editorial"] .reveal { --font-heading: "DejaVu Sans", Aptos, "Segoe UI", Arial, sans-serif; }
 html[data-style="editorial"] .reveal .slides section[data-slide-canvas] {
   background: linear-gradient(90deg, var(--color-accent) 0 .18rem, var(--color-canvas) .18rem 100%) !important;
 }
