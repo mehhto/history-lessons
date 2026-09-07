@@ -2,6 +2,12 @@ import { catalog } from './catalog.mjs';
 import { resolveAppearance } from './appearance.mjs';
 import { revealConfiguration } from './geometry.mjs';
 
+async function verifyBackgroundAsset(background) {
+  if (!background) return;
+  const response = await fetch(background.asset, { cache: 'no-store' });
+  if (!response.ok) throw new Error(`Nie znaleziono lokalnego tła: ${background.asset}`);
+}
+
 function setTokens(palette) {
   const root = document.documentElement;
   for (const [token, value] of Object.entries(palette)) root.style.setProperty(`--color-${token}`, value);
@@ -68,6 +74,7 @@ async function start() {
   metadata = await response.json();
   const appearance = resolveAppearance(metadata.appearance, catalog);
   const style = catalog.styles[appearance.style];
+  await verifyBackgroundAsset(appearance.background);
   document.documentElement.dataset.style = appearance.style;
   document.documentElement.dataset.palette = appearance.palette;
   setTokens(catalog.palettes[appearance.palette]);
