@@ -28,7 +28,10 @@
 .reveal .opening-pair,
 .reveal .visual-two { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
 .reveal .opening-pair img { width: 100%; height: 27vh; object-fit: cover; object-position: 50% 50%; }
+/* The portrait source is intentionally not cropped: pupils need the complete tool outline. */
+.reveal #pytanie-glowne .opening-pair .handaxe-photo img { display:block; width:auto; max-width:100%; height:34vh; object-fit:contain; object-position:50% 50%; }
 .reveal .visual-two img { width: 100%; height: 38vh; object-fit: cover; object-position: 50% 50%; }
+.reveal #zycie-lowcow .visual-two .handaxe-photo img { display:block; width:auto; max-width:100%; height:38vh; object-fit:contain; object-position:50% 50%; }
 .reveal #zycie-lowcow .visual-two img { object-position: 50% 48%; }
 .reveal #dom-neolityczny .visual-two img { object-position: 50% 53%; }
 

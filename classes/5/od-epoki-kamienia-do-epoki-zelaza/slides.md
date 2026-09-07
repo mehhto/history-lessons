@@ -13,7 +13,7 @@ typ lekcji: nowa wiedza. prezentacja używa trzech lokalnych materiałów common
 ## Co może zmienić sposób zdobywania jedzenia?
 
 <div class="opening-pair">
-<figure><img src="assets/piesciak.jpg" alt="Fotografia kamiennego pięściaka, narzędzia z epoki kamienia"><figcaption>Pięściak — narzędzie z kamienia.</figcaption></figure>
+<figure class="handaxe-photo"><img src="assets/piesciak.jpg" alt="Fotografia całego kamiennego pięściaka, narzędzia z epoki kamienia"><figcaption>Pięściak — narzędzie z kamienia.</figcaption></figure>
 <figure><img src="assets/dom-neolityczny.webp" alt="Współczesna rekonstrukcja neolitycznego domu"><figcaption>Współczesna rekonstrukcja domu neolitycznego.</figcaption></figure>
 </div>
 
@@ -61,7 +61,7 @@ model tras nie pozwala opowiedzieć o doświadczeniach wszystkich grup ani wskaz
 ## Życie człowieka pierwotnego
 
 <div class="visual-two">
-<figure><img src="assets/piesciak.jpg" alt="Kamienny pięściak sfotografowany na ekspozycji"><figcaption>Pięściak: narzędzie wykonywane przez obijanie kamienia. Jego kształt pozwalał m.in. ciąć i rozbijać.</figcaption></figure>
+<figure class="handaxe-photo"><img src="assets/piesciak.jpg" alt="Cały kamienny pięściak sfotografowany na ekspozycji"><figcaption>Pięściak: narzędzie wykonywane przez obijanie kamienia. Jego kształt pozwalał m.in. ciąć i rozbijać.</figcaption></figure>
 <div>
 <ul class="icon-list">
 <li><strong>Pożywienie:</strong> polowanie, zbieractwo i rybołówstwo.</li>
