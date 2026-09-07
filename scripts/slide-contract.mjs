@@ -10,17 +10,24 @@ const PURPOSES = new Set(SLIDE_PURPOSES);
 const LAYOUTS = new Set(SLIDE_LAYOUTS);
 
 function attribute(directive, name) {
-  return directive.match(new RegExp(`\\b${name}="([^"]*)"`))?.[1] || '';
+  return directive?.match(new RegExp(`\\b${name}="([^"]*)"`))?.[1] || '';
 }
 
+const SLIDE_DIRECTIVE = /<!--\s*\.slide:\s*([\s\S]*?)-->/;
+const REVEAL_SLIDE_SEPARATOR = /^\r?\n---\r?\n$/m;
+
 export function parseSlideDirectives(markdown) {
-  return [...String(markdown).matchAll(/<!--\s*\.slide:\s*([\s\S]*?)-->/g)]
-    .map((match, index) => ({
-      id: attribute(match[1], 'id'),
-      purpose: attribute(match[1], 'data-purpose'),
-      layout: attribute(match[1], 'data-layout'),
-      index,
-    }));
+  return String(markdown).split(REVEAL_SLIDE_SEPARATOR)
+    .map((block, index) => {
+      const directive = block.match(SLIDE_DIRECTIVE)?.[1];
+      return {
+        id: attribute(directive, 'id'),
+        purpose: attribute(directive, 'data-purpose'),
+        layout: attribute(directive, 'data-layout'),
+        index,
+        hasDirective: Boolean(directive),
+      };
+    });
 }
 
 export function auditSlideContract(slides, { lessonType, kind = 'lesson' } = {}) {

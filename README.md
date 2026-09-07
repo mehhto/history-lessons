@@ -57,7 +57,7 @@ Po opublikowaniu portu na interfejsie LAN podgląd można też otworzyć bezpoś
 10. Dodaj pliki do `assets/`, uruchom `npm run check`, a następnie obejrzyj lekcję lokalnie.
 11. Po lekcji nowej wiedzy przygotuj `student-summary.md`; po ćwiczeniowej użyj go tylko, gdy porządkuje nową całość.
 12. Po lekcji uzupełnij `reflection.md`; jeśli problem powtarza się, popraw szablon lub regułę, nie tylko jedną lekcję.
-13. Przed lekcją utwórz PDF: `npm run export:pdf -- --lesson classes/6/wielkie-odkrycia-geograficzne`.
+13. Po render check i ręcznym podglądzie poproś nauczyciela o jawną akceptację. **Dopiero po niej** utwórz PDF: `npm run export:pdf -- --lesson classes/6/wielkie-odkrycia-geograficzne`.
 
 **Zasada:** prezentacja dostarcza kompletnego, zwięzłego wyjaśnienia. Podręcznik jest uzupełnieniem, a nie miejscem, do którego odsyłamy po brakujący kontekst.
 
@@ -68,7 +68,7 @@ Po opublikowaniu portu na interfejsie LAN podgląd można też otworzyć bezpoś
 Nadaj niestandardowemu slajdowi trwałe `id`:
 
 ```md
-<!-- .slide: id="chronologia-wypraw" class="context-slide timeline-slide" -->
+<!-- .slide: id="chronologia-wypraw" class="timeline-slide" data-purpose="explanation" data-layout="process" -->
 ```
 
 ### Oś czasu

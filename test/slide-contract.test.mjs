@@ -2,8 +2,12 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { auditSlideContract, parseSlideDirectives } from '../scripts/slide-contract.mjs';
 
-test('parses ordered Reveal slide directives into semantic facts', () => {
-  const slides = parseSlideDirectives(`<!-- .slide: id="pytanie" data-purpose="question" data-layout="statement" -->
+test('parses every Reveal slide block and retains its optional semantic directive', () => {
+  const slides = parseSlideDirectives(`# Otwarcie bez dyrektywy
+
+---
+
+<!-- .slide: id="pytanie" data-purpose="question" data-layout="statement" -->
 # Pytanie
 
 ---
@@ -11,9 +15,14 @@ test('parses ordered Reveal slide directives into semantic facts', () => {
 <!-- .slide: id="proces" data-purpose="explanation" data-layout="process" -->
 # Proces`);
   assert.deepEqual(slides, [
-    { id: 'pytanie', purpose: 'question', layout: 'statement', index: 0 },
-    { id: 'proces', purpose: 'explanation', layout: 'process', index: 1 },
+    { id: '', purpose: '', layout: '', index: 0, hasDirective: false },
+    { id: 'pytanie', purpose: 'question', layout: 'statement', index: 1, hasDirective: true },
+    { id: 'proces', purpose: 'explanation', layout: 'process', index: 2, hasDirective: true },
   ]);
+  const report = auditSlideContract(slides, { lessonType: 'new-knowledge' });
+  assert.match(report.errors.join('\n'), /Slajd 1.*id/i);
+  assert.match(report.errors.join('\n'), /Slajd 1.*purpose/i);
+  assert.match(report.errors.join('\n'), /Slajd 1.*layout/i);
 });
 
 test('accepts a complete new-knowledge arc', () => {

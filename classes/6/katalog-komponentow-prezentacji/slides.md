@@ -1,3 +1,4 @@
+<!-- .slide: id="otwarcie-katalogu" class="opening-slide" data-purpose="reference" data-layout="plain" -->
 # Katalog komponentów prezentacji
 
 Klasa VI · Wzornik interaktywnych slajdów · wersja robocza

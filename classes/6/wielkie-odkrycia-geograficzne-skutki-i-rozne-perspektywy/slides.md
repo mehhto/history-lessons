@@ -1,3 +1,4 @@
+<!-- .slide: id="otwarcie" class="opening-slide" data-purpose="opening" data-layout="statement" -->
 # Wielkie odkrycia geograficzne
 
 Klasa VI · Lekcja 3: skutki i różne perspektywy

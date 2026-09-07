@@ -1,3 +1,4 @@
+<!-- .slide: id="otwarcie" class="opening-slide" data-purpose="opening" data-layout="statement" -->
 # Od epoki kamienia do epoki żelaza
 
 Klasa V · Historia · 45 minut

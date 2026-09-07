@@ -1,3 +1,4 @@
+<!-- .slide: id="otwarcie" class="opening-slide" data-purpose="opening" data-layout="statement" -->
 # Od Napoleona do Kongresu wiedeńskiego
 
 **Powtórka: władza · wojny · sprawa polska · upadek**

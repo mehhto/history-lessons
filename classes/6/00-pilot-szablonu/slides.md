@@ -1,3 +1,4 @@
+<!-- .slide: id="pilot-start" class="opening-slide" data-purpose="reference" data-layout="plain" -->
 # Pilot szablonu — test techniczny
 
 Klasa 6 · Prezentacja kontrolna · 45 minut
