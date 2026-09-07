@@ -23,3 +23,14 @@ test('shared styles preserve Polish lowercase characters instead of forcing smal
   ].map((file) => readFile(path.join(root, file), 'utf8')));
   for (const stylesheet of sharedStyles) assert.doesNotMatch(stylesheet, /font-variant:\s*small-caps|text-transform:\s*uppercase/i);
 });
+
+test('shared bootstrap disables Reveal and CSS motion when the user prefers reduced motion', async () => {
+  const [boot, css] = await Promise.all([
+    readFile(path.join(root, 'template/presentation/boot.mjs'), 'utf8'),
+    readFile(path.join(root, 'template/presentation/base.css'), 'utf8'),
+  ]);
+  assert.match(boot, /prefers-reduced-motion: reduce/);
+  assert.match(boot, /transition: reducedMotion \? 'none' : 'slide'/);
+  assert.match(boot, /backgroundTransition: reducedMotion \? 'none' : 'fade'/);
+  assert.match(css, /@media \(prefers-reduced-motion: reduce\)/);
+});

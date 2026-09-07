@@ -80,12 +80,14 @@ async function start() {
   setTokens(catalog.palettes[appearance.palette]);
   await loadStyle(style);
 
+  const reducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
   Reveal.initialize({
     ...revealConfiguration(),
     hash: true,
     slideNumber: 'c/t',
     controlsTutorial: false,
-    transition: 'slide',
+    transition: reducedMotion ? 'none' : 'slide',
+    backgroundTransition: reducedMotion ? 'none' : 'fade',
     keyboard: { 83: () => Reveal.configure({ showNotes: Reveal.getConfig().showNotes ? false : 'inline' }) },
     plugins: [RevealMarkdown, RevealNotes],
   });
