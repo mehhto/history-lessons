@@ -5,6 +5,7 @@ import path from 'node:path';
 import process from 'node:process';
 import { chromium } from 'playwright';
 import { createArtifactManifest } from './artifact-freshness.mjs';
+import { presentationInputs as loadPresentationInputs } from './presentation-inputs.mjs';
 import { decodeRequestPath, resolveWithin } from './safe-paths.mjs';
 
 function argument(name) {
@@ -22,29 +23,7 @@ if (!lesson) {
 const root = await realpath(process.cwd());
 const lessonDirectory = await realpath(resolveWithin(root, lesson));
 resolveWithin(root, lessonDirectory);
-const presentationInputPaths = [
-  ['slides.md', path.join(lessonDirectory, 'slides.md')],
-  ['metadata.json', path.join(lessonDirectory, 'metadata.json')],
-  ['lesson.css', path.join(lessonDirectory, 'lesson.css')],
-  ['index.html', path.join(lessonDirectory, 'index.html')],
-  ['template/theme.css', path.join(root, 'template/theme.css')],
-  ['template/presentation/base.css', path.join(root, 'template/presentation/base.css')],
-  ['template/presentation/fonts.css', path.join(root, 'template/presentation/fonts.css')],
-  ['template/presentation/patterns.css', path.join(root, 'template/presentation/patterns.css')],
-  ['template/presentation/canvas.css', path.join(root, 'template/presentation/canvas.css')],
-  ['template/presentation/boot.mjs', path.join(root, 'template/presentation/boot.mjs')],
-  ['template/presentation/appearance.mjs', path.join(root, 'template/presentation/appearance.mjs')],
-  ['template/presentation/catalog.mjs', path.join(root, 'template/presentation/catalog.mjs')],
-  ['template/presentation/geometry.mjs', path.join(root, 'template/presentation/geometry.mjs')],
-  ...Object.values((await import('../template/presentation/catalog.mjs')).catalog.styles).map((style) => [`template/presentation/styles/${style.stylesheet}`, path.join(root, 'template/presentation/styles', style.stylesheet)]),
-  ['template/components/lesson-components.css', path.join(root, 'template/components/lesson-components.css')],
-  ['template/components/lesson-components.js', path.join(root, 'template/components/lesson-components.js')],
-  ['template/components/lesson-components-core.mjs', path.join(root, 'template/components/lesson-components-core.mjs')],
-  ['scripts/slide-contract.mjs', path.join(root, 'scripts/slide-contract.mjs')],
-  ['scripts/export-pdf.mjs', new URL('./export-pdf.mjs', import.meta.url)],
-  ['package.json', path.join(root, 'package.json')],
-];
-const presentationInputs = Object.fromEntries(await Promise.all(presentationInputPaths.map(async ([name, source]) => [name, await readFile(source, 'utf8')])));
+const presentationInputs = await loadPresentationInputs({ repoRoot: root, lessonDirectory });
 
 const outputName = output || 'presentation-backup.pdf';
 if (path.isAbsolute(outputName) || path.dirname(outputName) !== '.') {
