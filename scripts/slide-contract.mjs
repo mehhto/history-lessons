@@ -4,6 +4,7 @@ export const SLIDE_PURPOSES = Object.freeze([
 
 export const SLIDE_LAYOUTS = Object.freeze([
   'statement', 'split', 'equation', 'process', 'evidence', 'matrix', 'activity-brief', 'takeaways', 'plain',
+  'hero-source', 'statement-centered', 'map-focus', 'source-split', 'photo-pair', 'timeline-band', 'argument', 'task-board', 'comparison', 'impact-flow',
 ]);
 
 const PURPOSES = new Set(SLIDE_PURPOSES);
