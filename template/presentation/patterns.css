@@ -41,7 +41,7 @@
 .reveal [data-slide-canvas][data-layout="takeaways"] .slide-content > ol,
 .takeaways {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+  grid-template-columns: repeat(var(--takeaway-columns, 3), minmax(0, 1fr));
   gap: .45em;
   padding: 0;
   list-style: none;
@@ -52,6 +52,44 @@
 .reveal .slides section[data-slide-canvas] > .slide-content > p > img,
 .reveal .slides section[data-slide-canvas] > .slide-content > img { display: block; max-width: 100%; max-height: 8em; margin: .35em auto; object-fit: contain; }
 .reveal [data-slide-canvas][data-layout="evidence"] figcaption { color: var(--color-muted); }
+
+/* Documentary atlas: reusable narrative geometry.  Images are evidence, not cards. */
+.reveal [data-slide-canvas][data-layout="hero-source"] { overflow: hidden; background: var(--color-heading); color: var(--text-on-accent); }
+.reveal [data-slide-canvas][data-layout="hero-source"] .slide-content { display: grid; align-content: end; min-height: 100%; color: var(--text-on-accent); background: linear-gradient(90deg, color-mix(in srgb, var(--color-heading) 86%, transparent), transparent 72%); }
+.reveal [data-slide-canvas][data-layout="hero-source"] h1, .reveal [data-slide-canvas][data-layout="hero-source"] h2 { color: var(--text-on-accent); max-width: 12em; }
+.reveal [data-slide-canvas][data-layout="hero-source"] .hero-source-image { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; max-width: none; max-height: none; margin: 0; object-fit: cover; object-position: var(--image-position, center); }
+.reveal [data-slide-canvas][data-layout="statement-centered"] .slide-content { display: grid; min-height: 100%; max-width: 22em; margin: auto; place-content: center; text-align: center; }
+.reveal [data-slide-canvas][data-layout="map-focus"] .map-focus-grid { display: grid; grid-template-columns: minmax(0, 2.8fr) minmax(15rem, 1fr); gap: var(--spacing-region); align-items: center; }
+.reveal [data-slide-canvas][data-layout="map-focus"] figure { margin: 0; }
+.reveal [data-slide-canvas][data-layout="map-focus"] img { display: block; width: 100%; height: 13.5em; max-height: none; margin: 0; object-fit: contain; }
+.reveal [data-slide-canvas][data-layout="map-focus"] .analysis-panel, .reveal [data-slide-canvas][data-layout="source-split"] .analysis-panel { padding: .7em; border-inline-start: var(--rule-width) solid var(--color-evidence); background: var(--surface-muted); }
+.reveal [data-slide-canvas][data-layout="source-split"] .source-split-grid { display: grid; grid-template-columns: minmax(0, 1.9fr) minmax(14rem, 1fr); gap: var(--spacing-region); align-items: center; }
+.reveal [data-slide-canvas][data-layout="source-split"] figure { margin: 0; }
+.reveal [data-slide-canvas][data-layout="source-split"] img { display: block; width: 100%; height: 13em; max-height: none; margin: 0; object-fit: contain; }
+.reveal [data-slide-canvas][data-layout="photo-pair"] .photo-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--spacing-region); }
+.reveal [data-slide-canvas][data-layout="photo-pair"] .photo-pair figure { display: grid; grid-template-rows: minmax(0, 1fr) auto; min-width: 0; margin: 0; }
+.reveal [data-slide-canvas][data-layout="photo-pair"] .photo-pair img { width: 100%; height: 11em; max-height: none; margin: 0; object-fit: var(--image-fit, contain); object-position: var(--image-position, center); }
+.reveal [data-slide-canvas][data-layout="timeline-band"] .timeline-band { display: grid; grid-template-columns: repeat(var(--timeline-columns, 3), minmax(0, 1fr)); gap: .45em; align-items: stretch; margin-top: 1.2em; }
+.timeline-band > * { position: relative; padding: .55em .65em; border-top: .18em solid var(--color-connection); background: var(--surface-muted); }
+.timeline-band strong { display: block; font-size: 1.35em; }
+.reveal [data-slide-canvas][data-layout="argument"] .argument-evidence { display: grid; grid-template-columns: minmax(0, 1.35fr) repeat(2, minmax(0, 1fr)); gap: var(--spacing-region); align-items: stretch; }
+.argument-evidence > * { padding: .65em; border-inline-start: var(--rule-width) solid var(--color-evidence); background: var(--surface-muted); }
+.argument-evidence > :first-child { border-color: var(--color-danger); font-size: 1.12em; }
+.reveal [data-slide-canvas][data-layout="task-board"] .student-task { display: grid; grid-template-columns: minmax(0, 2fr) repeat(3, minmax(0, 1fr)); gap: .55em; padding: .8em; border-inline-start: .25em solid var(--color-accent); background: var(--surface-muted); }
+.student-task > [data-task-role] { min-width: 0; }
+.student-task > [data-task-role="prompt"] { grid-row: span 2; font-size: 1.12em; }
+.student-task [data-task-label] { display: block; color: var(--color-muted); font-size: .62em; font-weight: 800; letter-spacing: .05em; }
+.reveal [data-slide-canvas][data-layout="comparison"] .comparison-grid { display: grid; grid-template-columns: repeat(var(--comparison-columns, 2), minmax(0, 1fr)); gap: var(--spacing-region); }
+.comparison-grid > * { padding: .65em; border-top: var(--rule-width) solid var(--color-region-a); background: var(--surface-muted); }
+.comparison-grid > :nth-child(2) { border-color: var(--color-region-b); }
+.reveal [data-slide-canvas][data-layout="impact-flow"] .impact-flow { display: grid; grid-template-columns: minmax(0, 1fr) minmax(4rem, .3fr) minmax(0, 1fr); gap: .6em; align-items: center; }
+.impact-flow > * { padding: .65em; background: var(--surface-muted); }
+.impact-flow .flow-connection { color: var(--text-on-accent); background: var(--color-connection); text-align: center; }
+
+@media print {
+  .reveal [data-slide-canvas][data-layout="hero-source"] .hero-source-image { object-fit: contain; }
+  .reveal [data-slide-canvas][data-layout="map-focus"] img, .reveal [data-slide-canvas][data-layout="source-split"] img { height: 12em; }
+}
 
 @media print {
   .concept-equation { font-size: 1em; }
