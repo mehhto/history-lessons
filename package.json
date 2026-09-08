@@ -15,6 +15,7 @@
     "export:print": "PLAYWRIGHT_BROWSERS_PATH=.playwright-browsers node scripts/export-print-pack.mjs",
     "check:render": "PLAYWRIGHT_BROWSERS_PATH=.playwright-browsers node scripts/render-check.mjs",
     "check:render:all": "PLAYWRIGHT_BROWSERS_PATH=.playwright-browsers node scripts/check-all-renders.mjs",
+    "check:composition": "node scripts/check-slide-composition.mjs",
     "review:slides": "PLAYWRIGHT_BROWSERS_PATH=.playwright-browsers node scripts/review-slides.mjs"
   },
   "dependencies": {
