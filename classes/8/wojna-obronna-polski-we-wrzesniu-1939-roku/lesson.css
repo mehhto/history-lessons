@@ -1,0 +1,20 @@
+/* Układ lokalnej mapy i fotografii źródłowych. */
+.source-figure {
+  margin: 0.2em auto 0;
+  max-width: 62%;
+}
+.source-figure img {
+  display: block;
+  max-height: 4.15em !important;
+  margin: 0 auto;
+  object-fit: contain;
+}
+.source-figure figcaption {
+  font-size: 0.42em;
+  line-height: 1.12;
+  margin-top: 0.15em;
+  text-align: center;
+}
+#mapa-kampanii .source-figure { max-width: 46%; }
+#fotografie lesson-gallery { min-height: 4.6em; max-height: 4.6em; }
+#fotografie .source-figure { max-width: 39%; }

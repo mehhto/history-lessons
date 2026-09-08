@@ -1,0 +1,19 @@
+/* Lokalny układ materiałów źródłowych; nie zastępuje wspólnego motywu. */
+.source-figure {
+  margin: 0.22em auto 0;
+  max-width: 62%;
+}
+.source-figure img {
+  display: block;
+  max-height: 4.25em !important;
+  margin: 0 auto;
+  object-fit: contain;
+}
+.source-figure figcaption {
+  font-size: 0.43em;
+  line-height: 1.12;
+  margin-top: 0.15em;
+  text-align: center;
+}
+#mapa-aztekow .source-figure { max-width: 44%; }
+#zrodla .source-figure { max-width: 32%; }
