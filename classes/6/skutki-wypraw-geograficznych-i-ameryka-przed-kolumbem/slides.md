@@ -23,9 +23,9 @@
 ---
 
 <!-- .slide: id="mapa-aztekow" class="map-slide" data-purpose="evidence" data-layout="evidence" data-backdrop="off" -->
-## Czytam mapę: państwo Azteków w 1519 r.
-<figure class="source-figure"><img src="assets/mapa-panowania-aztekow.png" alt="Mapa zasięgu państwa Azteków w środkowym Meksyku w 1519 roku"><figcaption>Aldan-2, 2019, CC BY-SA 4.0. Mapa pokazuje zasięg; nie pokazuje życia ani losów wszystkich mieszkańców.</figcaption></figure>
-<p><strong>Zadanie:</strong> wskaż obszar państwa Azteków. Dopisz: „Mapa pokazuje…, ale nie pokazuje…”.</p>
+## Państwo Azteków w 1519 r.
+<figure class="source-figure"><img src="assets/mapa-panowania-aztekow.png" alt="Mapa zasięgu państwa Azteków w środkowym Meksyku w 1519 roku"><figcaption>Aldan-2, 2019, CC BY-SA 4.0. Mapa pokazuje zasięg, a nie życie ani losy wszystkich mieszkańców.</figcaption></figure>
+<p><strong>Spójrz na mapę:</strong> wskaż obszar państwa Azteków. Następnie dokończ zdanie: „Mapa pokazuje…, ale nie pokazuje…”.</p>
 
 ---
 

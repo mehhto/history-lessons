@@ -1,20 +1,9 @@
-/* Układ lokalnej mapy i fotografii źródłowych. */
-.source-figure {
-  margin: 0.2em auto 0;
-  max-width: 62%;
-}
-.source-figure img {
-  display: block;
-  max-height: 4.15em !important;
-  margin: 0 auto;
-  object-fit: contain;
-}
-.source-figure figcaption {
-  font-size: 0.42em;
-  line-height: 1.12;
-  margin-top: 0.15em;
-  text-align: center;
-}
-#mapa-kampanii .source-figure { max-width: 46%; }
-#fotografie lesson-gallery { min-height: 4.6em; max-height: 4.6em; }
-#fotografie .source-figure { max-width: 39%; }
+/* Materiały źródłowe mają być czytelne z końca klasy, bez kart i ramek. */
+.source-figure { margin:.16em auto 0; max-width:84%; }
+.source-figure img { display:block; width:100%; max-height:7.2em !important; margin:0 auto; object-fit:contain; }
+.source-figure figcaption { font-size:.46em; line-height:1.2; margin:.16em 0 0; padding-left:.55em; border-left:3px solid var(--accent); text-align:left; }
+#mapa-kampanii .source-figure { max-width:80%; }
+#fotografie lesson-gallery { min-height:6.25em; max-height:6.25em; }
+#fotografie .source-figure { max-width:47%; }
+#fotografie .source-figure img { max-height:4.8em !important; }
+#fotografie p { margin-top:.1em; font-size:.78em; }

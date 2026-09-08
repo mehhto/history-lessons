@@ -18,15 +18,15 @@
 ---
 
 <!-- .slide: id="mapa-kampanii" class="map-slide" data-purpose="evidence" data-layout="evidence" data-backdrop="off" -->
-## Czytam mapę: wojna z dwóch stron
+## Kampania polska: atak z dwóch stron
 <figure class="source-figure"><img src="assets/mapa-kampanii-polskiej-1939.png" alt="Mapa kampanii polskiej 1939 roku z kierunkami działań wojennych"><figcaption>Listowy, mapa opracowania, 2006, CC BY-SA 3.0. Podpisy są po angielsku.</figcaption></figure>
-<p><strong>Zadanie:</strong> wskaż kierunek ataku Niemiec, a potem kierunek ataku Związku Sowieckiego. Czego mapa nie mówi o losie pojedynczej osoby?</p>
+<p><strong>Odczytaj mapę:</strong> wskaż kierunek ataku Niemiec, a następnie kierunek ataku Związku Sowieckiego. Dopisz, czego taka mapa nie mówi o losie pojedynczej osoby.</p>
 
 ---
 
 <!-- .slide: id="pierwsze-dni" class="explanation-slide" data-purpose="explanation" data-layout="process" -->
 ## Pierwsze dni: daty, które trzeba połączyć
-<ol class="process-list"><li><strong>1 IX</strong><span>Niemcy napadają na Polskę.</span></li><li><strong>3 IX</strong><span>Wielka Brytania i Francja wypowiadają Niemcom wojnę.</span></li><li><strong>17 IX</strong><span>Związek Sowiecki napada na Polskę od wschodu.</span></li></ol>
+<ol class="process-list"><li><strong>1&nbsp;IX</strong><span>Niemcy napadają na Polskę.</span></li><li><strong>3&nbsp;IX</strong><span>Wielka Brytania i Francja wypowiadają Niemcom wojnę.</span></li><li><strong>17&nbsp;IX</strong><span>Związek Sowiecki napada na Polskę od wschodu.</span></li></ol>
 <p>Wypowiedzenie wojny przez aliantów nie przyniosło Polsce skutecznej ofensywy na Zachodzie.</p>
 
 ---
@@ -59,7 +59,7 @@
 
 <!-- .slide: id="chronologia" class="practice-slide" data-purpose="practice" data-layout="activity-brief" -->
 ## Praca w parach: uporządkuj kampanię
-Ułóż na osi: <strong>1 IX, 3 IX, 17 IX, 28 IX, 5 X</strong>. Przy dwóch datach dopisz, jak zmieniały sytuację Polski. Następnie wybierz jedną przyczynę klęski i połącz ją z wydarzeniem z osi.
+Ułóż na osi: <strong>1&nbsp;IX, 3&nbsp;IX, 17&nbsp;IX, 28&nbsp;IX, 5&nbsp;X</strong>. Przy dwóch datach dopisz, jak zmieniły sytuację Polski. Następnie wybierz jedną przyczynę klęski i połącz ją z wydarzeniem z osi.
 
 ---
 
