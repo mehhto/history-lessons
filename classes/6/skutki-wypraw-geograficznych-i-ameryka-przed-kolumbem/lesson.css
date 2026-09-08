@@ -1,6 +1,1 @@
-/* Materiały źródłowe mają być czytelne z końca klasy, bez kart i ramek. */
-.source-figure { margin: .16em auto 0; max-width: 84%; }
-.source-figure img { display:block; width:100%; max-height: 7.25em !important; margin:0 auto; object-fit:contain; }
-.source-figure figcaption { font-size:.46em; line-height:1.2; margin:.16em 0 0; padding-left:.55em; border-left:3px solid var(--accent); text-align:left; }
-#mapa-aztekow .source-figure, #zrodla .source-figure { max-width:78%; }
-#fotografia-inkow .source-figure { max-width:70%; }
+/* Kompozycja i czytelność są dostarczane przez wspólny Atlas dokumentalny. */

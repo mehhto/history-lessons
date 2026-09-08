@@ -1,0 +1,5 @@
+{
+  "lesson": "classes/6/skutki-wypraw-geograficznych-i-ameryka-przed-kolumbem/slides.md",
+  "requiredLayouts": ["hero-source", "statement-centered", "comparison", "map-focus", "source-split", "argument", "timeline-band", "impact-flow", "task-board"],
+  "requiredIds": ["otwarcie", "pytanie", "mapa-aztekow", "fotografia-inkow", "zrodla", "wymiana", "ocena", "exit"]
+}
