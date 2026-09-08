@@ -40,8 +40,8 @@
 
 <!-- .slide: id="fotografie" class="evidence-slide" data-purpose="evidence" data-layout="evidence" data-backdrop="off" -->
 ## Fotografia archiwalna: co pokazuje, a czego nie?
-<figure class="source-figure"><img src="assets/fotografia-upadek-warszawy-1939.jpg" alt="Archiwalna fotografia związana z upadkiem Warszawy we wrześniu 1939 roku"><figcaption>Wojskowa Agencja Fotograficzna, koniec IX 1939, domena publiczna.</figcaption></figure>
-<p>Najpierw opisz to, co widać i co podaje podpis. Nie dopowiadaj wydarzeń, których fotografia nie pokazuje. Druga lokalna fotografia archiwalna służy do porównania na karcie pracy.</p>
+<div class="lesson-gallery"><figure class="source-figure"><img src="assets/fotografia-upadek-warszawy-1939.jpg" alt="Archiwalna fotografia związana z upadkiem Warszawy we wrześniu 1939 roku"><figcaption>Wojskowa Agencja Fotograficzna, koniec IX 1939, domena publiczna.</figcaption></figure><figure class="source-figure"><img src="assets/fotografia-inwazja-niemiecko-sowiecka-1939.jpg" alt="Archiwalna fotografia z 6 października 1939 roku z okresu inwazji niemiecko-sowieckiej na Polskę"><figcaption>Polish Official Photographer, 6 X 1939, domena publiczna.</figcaption></figure></div>
+<p>Najpierw opisz to, co widać i co podaje podpis. Porównaj zakres obu zdjęć; nie dopowiadaj wydarzeń, których fotografia nie pokazuje.</p>
 
 ---
 

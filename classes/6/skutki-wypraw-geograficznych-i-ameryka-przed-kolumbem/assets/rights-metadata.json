@@ -27,7 +27,10 @@
     },
     "local_file": "assets/mapa-panowania-aztekow.png",
     "download_sha256": "e184ac6d67d18af556374be7fb4515d77184943270c41b882462676ed77ede1b",
-    "download_size_bytes": 7915281
+    "download_size_bytes": 7915281,
+    "commons_sha1": "2360a8bf14740e9034b632e2eefe98943228f8fc",
+    "verified_at": "2026-09-08T19:48:41Z",
+    "verification_method": "Local SHA-256, byte count and image header compared with Wikimedia Commons API imageinfo metadata."
   },
   {
     "commons_title": "File:A Picture of the Same Part of the City Photographed the Year Before.jpg",
@@ -59,7 +62,10 @@
     },
     "local_file": "assets/fotografia-machu-picchu-1911.jpg",
     "download_sha256": "b32f87251a5aa60bdc94810a00a98fdf89b69e973e76d93f665b3fb1601e9f53",
-    "download_size_bytes": 1154653
+    "download_size_bytes": 1154653,
+    "commons_sha1": "56ea8339520ce3832e5b81033d79b2e26c5ad624",
+    "verified_at": "2026-09-08T19:48:41Z",
+    "verification_method": "Local SHA-256, byte count and image header compared with Wikimedia Commons API imageinfo metadata."
   },
   {
     "commons_title": "File:Columbus's letter on the first voyage.jpg",
@@ -88,6 +94,9 @@
     },
     "local_file": "assets/list-kolumba-1493.jpg",
     "download_sha256": "68a8f81f7bf5d0e31fb6732ca959c111b7ef8f3ece92567622480b94eaae4876",
-    "download_size_bytes": 149935
+    "download_size_bytes": 149935,
+    "commons_sha1": "f49331f248a10a1e1ccb4739430b8f47207df164",
+    "verified_at": "2026-09-08T19:48:41Z",
+    "verification_method": "Local SHA-256, byte count and image header compared with Wikimedia Commons API imageinfo metadata."
   }
 ]

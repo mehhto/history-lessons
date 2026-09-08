@@ -1,7 +1,7 @@
 # Źródła i materiały: Skutki wypraw geograficznych i Ameryka przed Kolumbem
 
 ## Zasada użycia
-Wszystkie pliki w `assets/` pobrano lokalnie 8 września 2026 r. z podanych stron plików Wikimedia Commons. Rekord techniczny (oryginalny URL, wymiary, rozmiar, licencja i SHA-256) jest zachowany w `assets/rights-metadata.json`. Weryfikacja techniczna agenta nie zastępuje przeglądu merytorycznego ani prawnego przez nauczyciela; `source_reviewed` pozostaje `false`.
+Wszystkie pliki w `assets/` pobrano lokalnie 8 września 2026 r. z podanych stron plików Wikimedia Commons. Rekord techniczny (oryginalny URL, wymiary, rozmiar, licencja i SHA-256) jest zachowany w `assets/rights-metadata.json`; tego dnia ponownie porównano lokalny nagłówek pliku, liczbę bajtów i SHA-256 z aktualnymi metadanymi Commons API. Weryfikacja techniczna agenta nie zastępuje przeglądu merytorycznego ani prawnego przez nauczyciela; `source_reviewed` pozostaje `false`.
 
 ## Rekonesans ZPE
 - Data sprawdzenia: 8 września 2026 r.
