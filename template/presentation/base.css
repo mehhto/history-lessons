@@ -41,6 +41,12 @@
 .reveal .slide-number { background: var(--color-heading); color: #fff; }
 .reveal .progress, .reveal .controls { color: var(--color-accent); }
 .reveal .slides section[data-slide-canvas] { background: var(--color-canvas); color: var(--color-text); }
+.reveal .slides section[data-slide-canvas][data-purpose="opening"] .slide-content { display: grid; align-content: end; min-height: 100%; padding-bottom: 76px; }
+.reveal .slides section[data-slide-canvas][data-purpose="question"] .slide-content { display: grid; align-content: center; max-width: 24em; margin: auto; text-align: center; }
+.reveal .slides section[data-slide-canvas][data-purpose="evidence"] .slide-content { display: grid; grid-template-rows: auto minmax(0, 1fr) auto; gap: .35em; }
+.reveal .slides section[data-slide-canvas][data-purpose="practice"] .slide-content { display: grid; align-content: center; gap: .65em; }
+.reveal .slides section[data-slide-canvas][data-purpose="synthesis"] .slide-content { display: grid; align-content: center; }
+.reveal .slides section[data-slide-canvas][data-purpose="exit-ticket"] .slide-content { display: grid; align-content: center; max-width: 23em; margin: auto; border-inline-start: var(--rule-width) solid var(--color-accent); }
 .reveal .slides section[data-slide-canvas]::before { background-image: var(--appearance-backdrop, none); }
 .reveal .slides section[data-slide-canvas] > .slide-content { position: relative; z-index: 1; }
 .reveal .slides section[data-slide-canvas][data-backdrop]::before {

@@ -9,8 +9,8 @@
   max-height: var(--slide-height) !important;
   padding: 0 !important;
   margin: 0 !important;
-  border: 0 !important;
-  overflow: visible !important;
+  /* Paint belongs to the selected appearance and purpose, not the canvas. */
+  overflow: visible;
   isolation: isolate;
 }
 .reveal .slides section[data-slide-canvas] > .slide-content {
