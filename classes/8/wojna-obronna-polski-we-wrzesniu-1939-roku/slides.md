@@ -1,8 +1,6 @@
 <!-- .slide: id="otwarcie" class="opening-slide" data-purpose="opening" data-layout="hero-source" -->
 <img class="hero-source-image" src="assets/fotografia-upadek-warszawy-1939.jpg" data-fit="cover" data-position="center" alt="Archiwalna fotografia związana z upadkiem Warszawy we wrześniu 1939 roku">
-<p class="source-label">Wojskowa Agencja Fotograficzna · koniec IX 1939 · domena publiczna</p>
-# Wojna obronna Polski
-## 1&nbsp;IX&nbsp;1939
+<div class="hero-copy"><p class="source-label">Wojskowa Agencja Fotograficzna · koniec września 1939 · domena publiczna</p><p class="hero-date">1&nbsp;IX&nbsp;1939</p><h1>Wojna obronna Polski</h1></div>
 
 ---
 
@@ -39,9 +37,9 @@
 ---
 
 <!-- .slide: id="fotografie" class="evidence-slide" data-purpose="evidence" data-layout="photo-pair" data-backdrop="off" -->
-## Fotografia archiwalna: co pokazuje, a czego nie?
-<div class="photo-pair"><lesson-gallery aria-label="Dwie fotografie do porównania"><figure class="source-figure" data-gallery-item><img src="assets/fotografia-upadek-warszawy-1939.jpg" data-fit="contain" alt="Archiwalna fotografia związana z upadkiem Warszawy we wrześniu 1939 roku"><figcaption>Wojskowa Agencja Fotograficzna, koniec IX 1939, domena publiczna.</figcaption></figure><figure class="source-figure" data-gallery-item><img src="assets/fotografia-inwazja-niemiecko-sowiecka-1939.jpg" data-fit="contain" alt="Archiwalna fotografia z 6 października 1939 roku z okresu inwazji niemiecko-sowieckiej na Polskę"><figcaption>Polish Official Photographer, 6 X 1939, domena publiczna.</figcaption></figure></lesson-gallery></div>
-<p>Najpierw opisz to, co widać i co podaje podpis. Nie dopowiadaj wydarzeń, których fotografia nie pokazuje.</p>
+## Co mówi fotografia?
+<p class="source-method"><strong>Zobacz → opisz → sprawdź podpis → nazwij ograniczenie</strong></p>
+<lesson-gallery class="photo-pair" aria-label="Dwie fotografie do porównania"><figure class="source-figure" data-gallery-item><img src="assets/fotografia-upadek-warszawy-1939.jpg" data-fit="cover" data-position="center" alt="Archiwalna fotografia związana z upadkiem Warszawy we wrześniu 1939 roku"><figcaption>Wojskowa Agencja Fotograficzna, koniec września 1939, domena publiczna.</figcaption></figure><figure class="source-figure" data-gallery-item><img src="assets/fotografia-inwazja-niemiecko-sowiecka-1939.jpg" data-fit="cover" data-position="center" alt="Archiwalna fotografia z 6 października 1939 roku z okresu inwazji niemiecko-sowieckiej na Polskę"><figcaption>Polish Official Photographer, 6 października 1939, domena publiczna.</figcaption></figure></lesson-gallery>
 
 ---
 
