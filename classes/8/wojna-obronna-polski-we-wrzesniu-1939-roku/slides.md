@@ -1,74 +1,74 @@
-<!-- .slide: id="otwarcie" class="opening-slide" data-purpose="opening" data-layout="statement" -->
+<!-- .slide: id="otwarcie" class="opening-slide" data-purpose="opening" data-layout="hero-source" -->
+<img class="hero-source-image" src="assets/fotografia-upadek-warszawy-1939.jpg" data-fit="cover" data-position="center" alt="Archiwalna fotografia związana z upadkiem Warszawy we wrześniu 1939 roku">
+<p class="source-label">Wojskowa Agencja Fotograficzna · koniec IX 1939 · domena publiczna</p>
 # Wojna obronna Polski
-## Wrzesień 1939 r.
+## 1&nbsp;IX&nbsp;1939
 
 ---
 
-<!-- .slide: id="pytanie" class="question-slide" data-purpose="question" data-layout="plain" -->
-## Pytanie główne
-**Dlaczego Polska mimo oporu nie mogła obronić się w wojnie prowadzonej od 1 września przez Niemcy, a od 17 września także przez Związek Sowiecki?**
+<!-- .slide: id="pytanie" class="question-slide" data-purpose="question" data-layout="statement-centered" -->
+## Pytanie przewodnie
+**Dlaczego Polska mimo oporu nie mogła obronić się przed agresją Niemiec, a od 17&nbsp;IX także Związku Sowieckiego?**
 
 ---
 
-<!-- .slide: id="polozenie" class="explanation-slide" data-purpose="explanation" data-layout="takeaways" -->
+<!-- .slide: id="polozenie" class="explanation-slide" data-purpose="explanation" data-layout="source-split" -->
 ## Położenie Polski przed wojną
-<ul class="takeaways"><li>Niemcy dążyły do wojny i przygotowały agresję.</li><li>Polska miała sojusze z Francją i Wielką Brytanią.</li><li>Pakt Ribbentrop–Mołotow stworzył warunki do niemieckiej i sowieckiej agresji na Polskę.</li></ul>
-<p><strong>Ważne:</strong> sojusz nie oznacza automatycznie szybkiej i skutecznej pomocy wojskowej.</p>
+<div class="source-split-grid"><figure class="source-figure"><img src="assets/mapa-kampanii-polskiej-1939.png" data-fit="contain" alt="Mapa kampanii polskiej 1939 roku z kierunkami działań wojennych"><figcaption>Listowy, mapa opracowania, 2006, CC BY-SA 3.0. Podpisy są po angielsku.</figcaption></figure><aside class="analysis-panel"><strong>Odczytaj układ:</strong> Niemcy dążyły do wojny; Polska miała sojusze z Francją i Wielką Brytanią; pakt Ribbentrop–Mołotow otworzył drogę do agresji dwóch państw.<br><br>Sojusz nie oznaczał automatycznie szybkiej i skutecznej pomocy wojskowej.</aside></div>
 
 ---
 
-<!-- .slide: id="mapa-kampanii" class="map-slide" data-purpose="evidence" data-layout="evidence" data-backdrop="off" -->
+<!-- .slide: id="mapa-kampanii" class="map-slide" data-purpose="evidence" data-layout="map-focus" data-backdrop="off" -->
 ## Kampania polska: atak z dwóch stron
-<figure class="source-figure"><img src="assets/mapa-kampanii-polskiej-1939.png" alt="Mapa kampanii polskiej 1939 roku z kierunkami działań wojennych"><figcaption>Listowy, mapa opracowania, 2006, CC BY-SA 3.0. Podpisy są po angielsku.</figcaption></figure>
-<p><strong>Odczytaj mapę:</strong> wskaż kierunek ataku Niemiec, a następnie kierunek ataku Związku Sowieckiego. Dopisz, czego taka mapa nie mówi o losie pojedynczej osoby.</p>
+<div class="map-focus-grid"><figure class="source-figure"><img src="assets/mapa-kampanii-polskiej-1939.png" data-fit="contain" alt="Mapa kampanii polskiej 1939 roku z kierunkami działań wojennych"><figcaption>Listowy, mapa opracowania, 2006, CC BY-SA 3.0. Podpisy są po angielsku.</figcaption></figure><aside class="analysis-panel"><strong>Odczytaj mapę.</strong><br>Wskaż kierunek ataku Niemiec, a następnie Związku Sowieckiego.<br><br>Dopisz, czego taka mapa nie mówi o losie pojedynczej osoby.</aside></div>
 
 ---
 
-<!-- .slide: id="pierwsze-dni" class="explanation-slide" data-purpose="explanation" data-layout="process" -->
+<!-- .slide: id="pierwsze-dni" class="explanation-slide" data-purpose="explanation" data-layout="timeline-band" -->
 ## Pierwsze dni: daty, które trzeba połączyć
-<ol class="process-list"><li><strong>1&nbsp;IX</strong><span>Niemcy napadają na Polskę.</span></li><li><strong>3&nbsp;IX</strong><span>Wielka Brytania i Francja wypowiadają Niemcom wojnę.</span></li><li><strong>17&nbsp;IX</strong><span>Związek Sowiecki napada na Polskę od wschodu.</span></li></ol>
+<div class="timeline-band"><article><strong>1&nbsp;IX</strong>Niemcy napadają na Polskę.</article><article><strong>3&nbsp;IX</strong>Wielka Brytania i Francja wypowiadają Niemcom wojnę.</article><article><strong>17&nbsp;IX</strong>Związek Sowiecki napada na Polskę od wschodu.</article></div>
 <p>Wypowiedzenie wojny przez aliantów nie przyniosło Polsce skutecznej ofensywy na Zachodzie.</p>
 
 ---
 
-<!-- .slide: id="opór" class="explanation-slide" data-purpose="explanation" data-layout="matrix" -->
+<!-- .slide: id="opor" class="explanation-slide" data-purpose="explanation" data-layout="comparison" -->
 ## Opór był rzeczywisty — kampania miała wiele miejsc
-<div class="matrix-grid"><article><strong>Westerplatte</strong><br>obrona 1–7 września</article><article><strong>Bzura</strong><br>największa polska operacja zaczepna, 9–19 września</article><article><strong>Warszawa</strong><br>obrona miasta do 28 września</article><article><strong>Kock</strong><br>walki trwały do 5 października</article></div>
+<div class="comparison-grid" style="--comparison-columns: 4"><article><strong>Westerplatte</strong><br>obrona 1–7 września</article><article><strong>Bzura</strong><br>największa polska operacja zaczepna, 9–19 września</article><article><strong>Warszawa</strong><br>obrona miasta do 28 września</article><article><strong>Kock</strong><br>walki trwały do 5 października</article></div>
 <p>Przykłady oporu nie są zaprzeczeniem klęski państwa; pokazują, że klęska miała przyczyny strategiczne.</p>
 
 ---
 
-<!-- .slide: id="fotografie" class="evidence-slide" data-purpose="evidence" data-layout="evidence" data-backdrop="off" -->
+<!-- .slide: id="fotografie" class="evidence-slide" data-purpose="evidence" data-layout="photo-pair" data-backdrop="off" -->
 ## Fotografia archiwalna: co pokazuje, a czego nie?
-<div class="lesson-gallery"><figure class="source-figure"><img src="assets/fotografia-upadek-warszawy-1939.jpg" alt="Archiwalna fotografia związana z upadkiem Warszawy we wrześniu 1939 roku"><figcaption>Wojskowa Agencja Fotograficzna, koniec IX 1939, domena publiczna.</figcaption></figure><figure class="source-figure"><img src="assets/fotografia-inwazja-niemiecko-sowiecka-1939.jpg" alt="Archiwalna fotografia z 6 października 1939 roku z okresu inwazji niemiecko-sowieckiej na Polskę"><figcaption>Polish Official Photographer, 6 X 1939, domena publiczna.</figcaption></figure></div>
-<p>Najpierw opisz to, co widać i co podaje podpis. Porównaj zakres obu zdjęć; nie dopowiadaj wydarzeń, których fotografia nie pokazuje.</p>
+<div class="photo-pair"><lesson-gallery aria-label="Dwie fotografie do porównania"><figure class="source-figure" data-gallery-item><img src="assets/fotografia-upadek-warszawy-1939.jpg" data-fit="contain" alt="Archiwalna fotografia związana z upadkiem Warszawy we wrześniu 1939 roku"><figcaption>Wojskowa Agencja Fotograficzna, koniec IX 1939, domena publiczna.</figcaption></figure><figure class="source-figure" data-gallery-item><img src="assets/fotografia-inwazja-niemiecko-sowiecka-1939.jpg" data-fit="contain" alt="Archiwalna fotografia z 6 października 1939 roku z okresu inwazji niemiecko-sowieckiej na Polskę"><figcaption>Polish Official Photographer, 6 X 1939, domena publiczna.</figcaption></figure></lesson-gallery></div>
+<p>Najpierw opisz to, co widać i co podaje podpis. Nie dopowiadaj wydarzeń, których fotografia nie pokazuje.</p>
 
 ---
 
-<!-- .slide: id="dlaczego-kleska" class="explanation-slide" data-purpose="explanation" data-layout="matrix" -->
+<!-- .slide: id="dlaczego-kleska" class="explanation-slide" data-purpose="explanation" data-layout="argument" -->
 ## Dlaczego opór nie wystarczył?
-<div class="matrix-grid"><article><strong>Dwaj agresorzy</strong><br>od 17 IX Polska musiała liczyć się także z atakiem ze wschodu</article><article><strong>Przewaga przeciwników</strong><br>większe możliwości prowadzenia wojny</article><article><strong>Brak skutecznego odciążenia</strong><br>alianci wypowiedzieli wojnę, ale nie otworzyli skutecznego frontu zachodniego</article><article><strong>Rozległy front</strong><br>trudność obrony granic i organizowania odwrotu</article></div>
+<div class="argument-evidence"><article><strong>Klęska wynikała z przewagi strategicznej agresorów, nie z braku oporu.</strong></article><article><strong>Dwaj agresorzy</strong><br>Od 17&nbsp;IX Polska musiała liczyć się także z atakiem ze wschodu.</article><article><strong>Brak odciążenia</strong><br>Alianci wypowiedzieli wojnę, lecz nie otworzyli skutecznego frontu zachodniego.</article></div>
 
 ---
 
-<!-- .slide: id="bohaterstwo" class="explanation-slide" data-purpose="explanation" data-layout="takeaways" -->
+<!-- .slide: id="bohaterstwo" class="explanation-slide" data-purpose="explanation" data-layout="comparison" -->
 ## Bohaterstwo: mów konkretnie
-<ul class="takeaways"><li>Żołnierze bronili m.in. Westerplatte, Warszawy i wielu innych miejsc.</li><li>Mieszkańcy miast doświadczali bombardowań, ewakuacji i obrony cywilnej.</li><li>Przykład oporu podaj z miejscem, czasem i działaniem — bez tworzenia legendy zamiast wyjaśnienia.</li></ul>
+<div class="comparison-grid"><article><strong>Żołnierze</strong><br>Bronili m.in. Westerplatte, Warszawy i wielu innych miejsc.</article><article><strong>Mieszkańcy</strong><br>Doświadczali bombardowań, ewakuacji i obrony cywilnej.</article><article><strong>Język dowodu</strong><br>Podaj miejsce, czas i działanie — bez tworzenia legendy zamiast wyjaśnienia.</article></div>
 
 ---
 
-<!-- .slide: id="chronologia" class="practice-slide" data-purpose="practice" data-layout="activity-brief" -->
+<!-- .slide: id="chronologia" class="practice-slide" data-purpose="practice" data-layout="task-board" -->
 ## Praca w parach: uporządkuj kampanię
-Ułóż na osi: <strong>1&nbsp;IX, 3&nbsp;IX, 17&nbsp;IX, 28&nbsp;IX, 5&nbsp;X</strong>. Przy dwóch datach dopisz, jak zmieniły sytuację Polski. Następnie wybierz jedną przyczynę klęski i połącz ją z wydarzeniem z osi.
+<div class="student-task"><div data-task-role="prompt">Ułóż oś: <strong>1&nbsp;IX, 3&nbsp;IX, 17&nbsp;IX, 28&nbsp;IX, 5&nbsp;X</strong>. Przy dwóch datach wyjaśnij zmianę sytuacji Polski.</div><div data-task-role="time"><span data-task-label>Czas</span>5 minut</div><div data-task-role="product"><span data-task-label>Produkt</span>Oś z dwoma dopiskami</div><div data-task-role="criterion"><span data-task-label>Kryterium sukcesu</span>Data połączona z wydarzeniem i przyczyną</div></div>
 
 ---
 
-<!-- .slide: id="synteza" class="synthesis-slide" data-purpose="synthesis" data-layout="takeaways" -->
+<!-- .slide: id="synteza" class="synthesis-slide" data-purpose="synthesis" data-layout="argument" -->
 ## Co porządkuje tę lekcję?
-<ul class="takeaways"><li>Agresja Niemiec rozpoczęła wojnę, a agresja Związku Sowieckiego pogłębiła kryzys Polski.</li><li>Sojusznicy wypowiedzieli Niemcom wojnę, lecz nie udzielili Polsce skutecznej pomocy militarnej na Zachodzie.</li><li>Opór żołnierzy i cywilów był ważny, ale nie usuwał przewagi strategicznej agresorów.</li></ul>
+<div class="argument-evidence"><article><strong>Agresja dwóch państw i przewaga strategiczna przesądziły o klęsce państwa.</strong></article><article>Sojusznicy wypowiedzieli Niemcom wojnę, lecz nie udzielili Polsce skutecznej pomocy militarnej na Zachodzie.</article><article>Opór żołnierzy i cywilów był ważny, ale nie usuwał przewagi agresorów.</article></div>
 
 ---
 
-<!-- .slide: id="bilet" class="exit-ticket-slide" data-purpose="exit-ticket" data-layout="plain" -->
+<!-- .slide: id="bilet" class="exit-ticket-slide" data-purpose="exit-ticket" data-layout="statement-centered" -->
 ## Bilet wyjścia
-W 3–4 zdaniach odpowiedz: <strong>Dlaczego Polska mimo oporu nie mogła obronić się we wrześniu 1939 r.?</strong> Użyj dwóch dowodów: daty lub wydarzenia oraz przyczyny strategicznej.
+W 3–4 zdaniach odpowiedz: <strong>dlaczego Polska mimo oporu nie mogła obronić się we wrześniu 1939 r.?</strong> Użyj daty lub wydarzenia oraz przyczyny strategicznej.

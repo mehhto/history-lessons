@@ -104,6 +104,11 @@ lesson-compare output { position: absolute; z-index: 2; right: .7em; bottom: .55
 .reveal .student-task [data-task-role="time"],
 .reveal .student-task [data-task-role="product"],
 .reveal .student-task [data-task-role="criterion"] { font-size: .82em; }
+/* A documentary pair is deliberately non-interactive in its resting composition. */
+.reveal lesson-gallery.photo-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.1em; min-height: 0; height: 8.5em; overflow: visible; }
+.reveal lesson-gallery.photo-pair [data-gallery-item] { display: grid; grid-template-rows: minmax(0, 1fr) auto; min-height: 0; height: auto; overflow: visible; background: transparent; }
+.reveal lesson-gallery.photo-pair [data-gallery-item] img { width: 100%; height: 100%; max-height: none; object-fit: contain; }
+.reveal lesson-gallery.photo-pair [data-gallery-item] figcaption { position: static; padding: .3em 0 0; color: var(--color-muted, var(--muted)); background: none; }
 
 @media (hover: none), (pointer: coarse) { lesson-gallery { min-height: 8em; } lesson-gallery [data-gallery-item].is-active { flex: 4 1 0; } }
 @media (prefers-reduced-motion: reduce) { lesson-gallery [data-gallery-item], lesson-gallery [data-gallery-item] img { transition: none; } }

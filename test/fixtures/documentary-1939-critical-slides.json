@@ -1,0 +1,5 @@
+{
+  "lesson": "classes/8/wojna-obronna-polski-we-wrzesniu-1939-roku/slides.md",
+  "requiredLayouts": ["hero-source", "statement-centered", "source-split", "map-focus", "timeline-band", "photo-pair", "argument", "comparison", "task-board"],
+  "requiredIds": ["otwarcie", "pytanie", "mapa-kampanii", "pierwsze-dni", "fotografie", "chronologia", "bilet"]
+}
