@@ -11,5 +11,5 @@
   "teacher_reviewed": false,
   "offline_checked": true,
   "pdf_exported": true,
-  "appearance": { "style": "editorial", "palette": "ink" }
+  "appearance": { "style": "atlas", "palette": "encounter-atlas" }
 }

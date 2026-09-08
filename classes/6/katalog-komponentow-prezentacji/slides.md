@@ -261,3 +261,64 @@ Formula jest statycznym wzorcem HTML/CSS; nie potrzebuje nowego JavaScriptu ani 
 ## Wzorzec: macierz czterech elementów
 <div class="matrix-grid"><article class="surface-card">warunek</article><article class="surface-card">działanie</article><article class="surface-card">skutek</article><article class="surface-card">dowód</article></div>
 <p class="small">Użyj dla krótkiej syntezy — każdy panel ma zawierać jedną myśl.</p>
+
+---
+
+<!-- .slide: id="atlas-hero" data-purpose="opening" data-layout="hero-source" -->
+<img class="hero-source-image" src="assets/postac-symboliczna.svg" data-fit="cover" alt="Symboliczna ilustracja do demonstracji układu hero">
+# Hero źródłowy
+<p>Użyj dla jednego źródła i jednej daty; nie przykrywaj legendy ani skali.</p>
+
+---
+
+<!-- .slide: id="atlas-statement" data-purpose="question" data-layout="statement-centered" -->
+## Teza lub pytanie wycentrowane
+Jedno napięcie poznawcze, maksymalnie 35 słów. Nie dodawaj listy ani dekoracyjnego obrazu.
+
+---
+
+<!-- .slide: id="atlas-map" data-purpose="evidence" data-layout="map-focus" -->
+## Mapa jako dowód
+<div class="map-focus-grid"><figure class="source-figure"><img src="assets/waldseemuller-mapa-1507.jpg" data-fit="contain" alt="Fragment mapy Waldseemüllera z 1507 roku"><figcaption>Autor · data · licencja · ograniczenie.</figcaption></figure><aside class="analysis-panel">Mapa ma zajmować 65–78% szerokości. Panel daje jedno polecenie i jedno ograniczenie.</aside></div>
+
+---
+
+<!-- .slide: id="atlas-source" data-purpose="evidence" data-layout="source-split" -->
+## Źródło i analiza
+<div class="source-split-grid"><figure class="source-figure"><img src="assets/waldseemuller-mapa-1507.jpg" data-fit="contain" alt="Fragment mapy Waldseemüllera z 1507 roku"><figcaption>Autor · data · licencja.</figcaption></figure><aside class="analysis-panel">Źródło 62–68%; analiza: obserwacja, pytanie, ograniczenie.</aside></div>
+
+---
+
+<!-- .slide: id="atlas-pair" data-purpose="evidence" data-layout="photo-pair" -->
+## Dwa równorzędne źródła
+<div class="photo-pair"><figure><img src="assets/waldseemuller-mapa-1507.jpg" data-fit="contain" alt="Fragment mapy Waldseemüllera"><figcaption>Źródło A · podpis co najmniej 18 px.</figcaption></figure><figure><img src="assets/schemat-swiata.svg" data-fit="contain" alt="Schemat świata"><figcaption>Źródło B · nie stosuj cover bez bezpiecznego kadru.</figcaption></figure></div>
+
+---
+
+<!-- .slide: id="atlas-timeline" data-purpose="explanation" data-layout="timeline-band" -->
+## Oś czasu
+<div class="timeline-band"><article><strong>Data</strong>zdarzenie</article><article><strong>Data</strong>zwrot</article><article><strong>Data</strong>skutek</article></div>
+
+---
+
+<!-- .slide: id="atlas-argument" data-purpose="explanation" data-layout="argument" -->
+## Argument, nie cztery równe karty
+<div class="argument-evidence"><article><strong>Jedno twierdzenie do sprawdzenia.</strong></article><article>Dowód o większej wadze.</article><article>Drugi dowód lub zastrzeżenie.</article></div>
+
+---
+
+<!-- .slide: id="atlas-task" data-purpose="practice" data-layout="task-board" -->
+## Task-board
+<div class="student-task"><div data-task-role="prompt">Polecenie i oczekiwane rozumowanie.</div><div data-task-role="time"><span data-task-label>Czas</span>4 min</div><div data-task-role="product"><span data-task-label>Produkt</span>krótki dowód</div><div data-task-role="criterion"><span data-task-label>Kryterium</span>źródło połączone z wnioskiem</div></div>
+
+---
+
+<!-- .slide: id="atlas-comparison" data-purpose="explanation" data-layout="comparison" -->
+## Porównanie
+<div class="comparison-grid"><article><strong>Wariant A</strong><br>jedno kryterium</article><article><strong>Wariant B</strong><br>to samo kryterium</article><article><strong>Wniosek</strong><br>podobieństwo lub różnica</article></div>
+
+---
+
+<!-- .slide: id="atlas-impact" data-purpose="explanation" data-layout="impact-flow" -->
+## Przepływ skutków
+<div class="impact-flow"><article><strong>Strona A</strong><br>co przepływa i jaki ma skutek</article><div class="flow-connection">wymiana</div><article><strong>Strona B</strong><br>co przepływa i jaki ma skutek</article></div>

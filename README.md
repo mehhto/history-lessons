@@ -120,8 +120,8 @@ W `metadata.json` wybierz zatwierdzony styl i paletę:
 | Styl | Palety |
 |---|---|
 | `museum` | `sand`, `stone` |
-| `editorial` | `ink`, `burgundy` |
-| `atlas` | `marine`, `earth` |
+| `editorial` | `ink`, `burgundy`, `documentary-1939` |
+| `atlas` | `marine`, `earth`, `encounter-atlas` |
 
 Nowy pakiet można utworzyć ze stylem: `npm run new -- --class 6 --title "Temat" --style atlas --palette marine`.
 
