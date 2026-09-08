@@ -15,3 +15,11 @@ export function paletteContrastIssues(palette) {
     .map(([foreground, background]) => ({ foreground, background, ratio: contrastRatio(palette[foreground], palette[background]) }))
     .filter(({ ratio }) => ratio < 4.5);
 }
+
+export function componentContrastIssues(palette) {
+  return [
+    ['text', 'canvas', 4.5], ['muted', 'canvas', 4.5], ['text', 'surface', 4.5],
+    ['textOnAccent', 'accent', 4.5], ['border', 'canvas', 3],
+  ].map(([foreground, background, minimum]) => ({ foreground, background, ratio: contrastRatio(palette[foreground], palette[background]), minimum }))
+    .filter(({ ratio, minimum }) => ratio < minimum);
+}

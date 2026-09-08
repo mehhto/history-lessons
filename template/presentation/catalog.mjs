@@ -7,12 +7,12 @@ export const catalog = Object.freeze({
     }),
     editorial: Object.freeze({
       defaultPalette: 'ink',
-      palettes: Object.freeze(['ink', 'burgundy']),
+      palettes: Object.freeze(['ink', 'burgundy', 'documentary-1939']),
       stylesheet: 'editorial.css',
     }),
     atlas: Object.freeze({
       defaultPalette: 'marine',
-      palettes: Object.freeze(['marine', 'earth']),
+      palettes: Object.freeze(['marine', 'earth', 'encounter-atlas']),
       stylesheet: 'atlas.css',
     }),
   }),
@@ -23,6 +23,14 @@ export const catalog = Object.freeze({
     burgundy: Object.freeze({ canvas: '#f8f3f2', surface: '#fffdfc', text: '#2c2023', muted: '#705c61', heading: '#4a1824', accent: '#8b273b', border: '#dfc9cf' }),
     marine: Object.freeze({ canvas: '#edf4f5', surface: '#fbfdfd', text: '#18323a', muted: '#526b72', heading: '#104658', accent: '#1b7182', border: '#b8d3d8' }),
     earth: Object.freeze({ canvas: '#f6f1e6', surface: '#fffdf7', text: '#30291f', muted: '#706754', heading: '#55411d', accent: '#92722b', border: '#d9c99b' }),
+    'documentary-1939': Object.freeze({
+      canvas: '#f5f1e8', surface: '#fffdfa', text: '#20252d', muted: '#4d5968', heading: '#172b44', accent: '#9a2427', border: '#706b62',
+      evidence: '#234f70', danger: '#9a2427', regionA: '#4c5f36', regionB: '#234f70', connection: '#596575', mutedSurface: '#e5e0d5', textOnAccent: '#ffffff',
+    }),
+    'encounter-atlas': Object.freeze({
+      canvas: '#f8f2e4', surface: '#fffdf7', text: '#1d2c2e', muted: '#52615c', heading: '#213f3a', accent: '#9b3e2c', border: '#706c58',
+      evidence: '#1f625b', danger: '#9b3e2c', regionA: '#1f625b', regionB: '#9b3e2c', connection: '#806419', mutedSurface: '#e8dfca', textOnAccent: '#ffffff',
+    }),
   }),
 });
 
