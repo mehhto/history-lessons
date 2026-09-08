@@ -1,7 +1,8 @@
 # Pytanie do mapy
 
-- **Co pokazuje mapa?**
-- **Gdzie to się dzieje?**
-- **Jaki wzorzec lub zmianę dostrzegasz?**
-- **Jaki fragment mapy jest dowodem?**
-- **Jakie pytanie pozostaje otwarte?**
+- **Tytuł/temat i data lub zakres czasu:** …
+- **Legenda, skala i kierunki:** co pomagają odczytać?
+- **Autor i pochodzenie:** kto ją przygotował?
+- **Czy to mapa historyczna, czy współczesna rekonstrukcja?**
+- **Dowód przestrzenny:** który fragment mapy uzasadnia wniosek?
+- **Ograniczenie:** czego mapa nie pokazuje?

@@ -1,7 +1,9 @@
 # Przyczyna → skutek
 
-- **Warunek / przyczyna:**
-- **Działanie / proces:**
-- **Skutek bezpośredni:**
-- **Skutek długofalowy:**
-- **Dowód w materiale:**
+- **Kilka przyczyn:** …
+- **Mechanizm:** jak przyczyny prowadzą do zmiany?
+- **Skutek bezpośredni:** …
+- **Skutek długofalowy:** …
+- **Dowód w materiale:** …
+
+> Samo następstwo w czasie nie dowodzi przyczynowości: wyjaśnij mechanizm i wskaż dowód.
