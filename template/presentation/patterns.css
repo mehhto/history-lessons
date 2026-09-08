@@ -5,6 +5,7 @@
 
 .reveal [data-slide-canvas][data-layout="split"] .split-grid,
 .reveal [data-slide-canvas][data-layout="matrix"] .matrix-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--spacing-region); align-items: start; }
+.split-grid > *, .matrix-grid > * { padding: .5em .65em; border-radius: var(--corner-radius); background: var(--surface-raised); box-shadow: var(--shadow-card); }
 .reveal [data-slide-canvas][data-layout="process"] .process-list { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: var(--spacing-region); align-items: center; }
 .reveal [data-slide-canvas][data-layout="plain"] .slide-content { max-width: 28em; }
 

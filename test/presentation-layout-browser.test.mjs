@@ -2,13 +2,14 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
-import { chromium } from 'playwright';
 
 const root = path.resolve(import.meta.dirname, '..');
+process.env.PLAYWRIGHT_BROWSERS_PATH ??= path.join(root, '.playwright-browsers');
+const { chromium } = await import('playwright');
 const css = await readFile(path.join(root, 'template/presentation/patterns.css'), 'utf8');
 
 for (const [layout, wrapper] of [['split', 'split-grid'], ['matrix', 'matrix-grid']]) test(`${layout} places panels in its wrapper without moving heading or instruction`, async () => {
-  const browser = await chromium.launch();
+  const browser = await chromium.launch({ executablePath: path.join(root, '.playwright-browsers/chromium-1234/chrome-linux64/chrome') });
   try {
     const page = await browser.newPage({ viewport: { width: 1000, height: 700 } });
     await page.setContent(`<div class="reveal"><section data-slide-canvas data-layout="${layout}"><div class="slide-content"><h2>Heading</h2><div class="${wrapper}"><article>One</article><article>Two</article></div><p>Instruction</p></div></section></div>`);

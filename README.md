@@ -54,10 +54,11 @@ Po opublikowaniu portu na interfejsie LAN podgląd można też otworzyć bezpoś
 7. Wybierz i ręcznie zweryfikuj pozostałe lokalne materiały wyłącznie wtedy, gdy wzmacniają cel; zapisz ich pochodzenie i licencję w `sources.md`.
 8. Poproś AI o pierwszy szkic `slides.md` zgodnie z `SKILL.md`; nie zlecaj mu wymyślania źródeł ani faktów. Nie ma globalnego limitu słów ani slajdów — obowiązują funkcja, czytelność i realny czas lekcji.
 9. Dodaj szczegółowe notatki nauczyciela tylko do trudnych wyjaśnień, źródeł i zadań wymagających moderacji; umieść je w `teacher-guide.md` lub po `notes:`.
-10. Dodaj pliki do `assets/`, uruchom `npm run check`, a następnie obejrzyj lekcję lokalnie.
-11. Po lekcji nowej wiedzy przygotuj `student-summary.md`; po ćwiczeniowej użyj go tylko, gdy porządkuje nową całość.
-12. Po lekcji uzupełnij `reflection.md`; jeśli problem powtarza się, popraw szablon lub regułę, nie tylko jedną lekcję.
-13. Po render check i ręcznym podglądzie poproś nauczyciela o jawną akceptację. **Dopiero po niej** utwórz PDF: `npm run export:pdf -- --lesson classes/6/wielkie-odkrycia-geograficzne`.
+10. Wybierz tylko potrzebny wzorzec z [`template/patterns/README.md`](template/patterns/README.md), skopiuj go do `lesson.md`, `worksheet.md` albo `slides.md` i uzupełnij zweryfikowanym materiałem — nie kopiuj całego katalogu do każdej lekcji.
+11. Dodaj pliki do `assets/`, uruchom `npm run check`, a następnie obejrzyj lekcję lokalnie.
+12. Po lekcji nowej wiedzy przygotuj `student-summary.md`; po ćwiczeniowej użyj go tylko, gdy porządkuje nową całość.
+13. Po lekcji uzupełnij `reflection.md`; jeśli problem powtarza się, popraw szablon lub regułę, nie tylko jedną lekcję.
+14. Po render check i ręcznym podglądzie poproś nauczyciela o jawną akceptację. **Dopiero po niej** utwórz PDF: `npm run export:pdf -- --lesson classes/6/wielkie-odkrycia-geograficzne`.
 
 **Zasada:** prezentacja dostarcza kompletnego, zwięzłego wyjaśnienia. Podręcznik jest uzupełnieniem, a nie miejscem, do którego odsyłamy po brakujący kontekst.
 

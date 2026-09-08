@@ -247,3 +247,17 @@ Suwak ma prawdziwy input range, więc jest obsługiwany klawiaturą i dotykiem. 
 
 notes:
 Formula jest statycznym wzorcem HTML/CSS; nie potrzebuje nowego JavaScriptu ani tematycznego komponentu.
+
+---
+
+<!-- .slide: id="split-grid" class="context-slide" data-purpose="reference" data-layout="split" -->
+## Wzorzec: dwa panele
+<div class="split-grid"><article class="surface-card"><h3>Materiał A</h3><p>Jedna perspektywa, źródło lub argument.</p></article><article class="surface-card"><h3>Materiał B</h3><p>Druga perspektywa, źródło lub argument.</p></article></div>
+<p class="small">Nagłówek i instrukcja pozostają poza siatką; porównaj oba panele według jednego kryterium.</p>
+
+---
+
+<!-- .slide: id="matrix-grid" class="context-slide" data-purpose="reference" data-layout="matrix" -->
+## Wzorzec: macierz czterech elementów
+<div class="matrix-grid"><article class="surface-card">warunek</article><article class="surface-card">działanie</article><article class="surface-card">skutek</article><article class="surface-card">dowód</article></div>
+<p class="small">Użyj dla krótkiej syntezy — każdy panel ma zawierać jedną myśl.</p>
