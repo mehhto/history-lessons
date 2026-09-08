@@ -7,4 +7,5 @@ const root = path.resolve(import.meta.dirname, '..');
 test('every declared layout has a shared CSS selector', async () => {
   const css = await readFile(path.join(root, 'template/presentation/patterns.css'), 'utf8');
   for (const layout of ['statement', 'split', 'matrix', 'process', 'plain', 'equation', 'activity-brief', 'takeaways', 'evidence']) assert.match(css, new RegExp(`data-layout="${layout}"`), layout);
+  for (const layout of ['split', 'matrix', 'process']) assert.match(css, new RegExp(`data-layout="${layout}"[^}]*display:\\s*grid`), `${layout} must create a grid`);
 });
