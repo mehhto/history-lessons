@@ -2,6 +2,108 @@ import { clampPercentage, counterValueAtProgress, galleryNavigationIndex, isGall
 
 const revealKeys = new Set(['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Home', 'End', ' ', 'PageUp', 'PageDown']);
 
+const lightbox = document.createElement('dialog');
+lightbox.className = 'lesson-image-lightbox';
+lightbox.setAttribute('aria-label', 'Powiększony obraz');
+const lightboxClose = document.createElement('button');
+lightboxClose.type = 'button';
+lightboxClose.className = 'lesson-image-lightbox__close';
+lightboxClose.dataset.lightboxClose = '';
+lightboxClose.setAttribute('aria-label', 'Zamknij powiększony obraz');
+const lightboxImage = document.createElement('img');
+const lightboxCaption = document.createElement('p');
+lightboxCaption.className = 'lesson-image-lightbox__caption';
+const lightboxHint = document.createElement('span');
+lightboxHint.className = 'lesson-image-lightbox__hint';
+lightboxHint.textContent = 'Kliknij obraz lub naciśnij Esc, aby wrócić';
+lightboxClose.append(lightboxImage);
+lightbox.append(lightboxClose, lightboxCaption, lightboxHint);
+document.body.append(lightbox);
+
+let lightboxOpener = null;
+
+function isExpandableImage(image) {
+  return image instanceof HTMLImageElement
+    && image.closest('.reveal .slides')
+    && !image.matches('[data-no-lightbox]')
+    && image.alt.trim().length > 0;
+}
+
+function openImageLightbox(sourceImage) {
+  if (!isExpandableImage(sourceImage)) return;
+  lightboxOpener = sourceImage.closest('[data-gallery-item]') || sourceImage;
+  lightboxImage.src = sourceImage.currentSrc || sourceImage.src;
+  lightboxImage.alt = sourceImage.alt;
+  const caption = sourceImage.closest('figure')?.querySelector('figcaption')?.textContent?.trim();
+  lightboxCaption.textContent = caption || sourceImage.alt;
+  lightbox.showModal();
+  lightboxClose.focus({ preventScroll: true });
+}
+
+function closeImageLightbox() {
+  if (!lightbox.open) return;
+  lightbox.close();
+}
+
+function prepareExpandableImages(root = document) {
+  root.querySelectorAll?.('.reveal .slides img:not([data-no-lightbox])').forEach((image) => {
+    if (!isExpandableImage(image) || image.dataset.lightboxReady) return;
+    image.dataset.lightboxReady = 'true';
+    const galleryItem = image.closest('[data-gallery-item]');
+    if (galleryItem) {
+      galleryItem.setAttribute('aria-label', `Powiększ obraz: ${image.alt}`);
+      galleryItem.setAttribute('aria-haspopup', 'dialog');
+      return;
+    }
+    image.tabIndex = 0;
+    image.setAttribute('role', 'button');
+    image.setAttribute('aria-haspopup', 'dialog');
+    image.setAttribute('aria-label', `Powiększ obraz: ${image.alt}`);
+  });
+}
+
+lightbox.addEventListener('click', (event) => {
+  if (event.target === lightbox || event.target.closest('[data-lightbox-close]')) closeImageLightbox();
+});
+lightbox.addEventListener('close', () => {
+  lightboxOpener?.focus?.({ preventScroll: true });
+  lightboxOpener = null;
+});
+
+document.addEventListener('click', (event) => {
+  const image = event.target.closest?.('.reveal .slides img');
+  if (!isExpandableImage(image)) return;
+  event.preventDefault();
+  event.stopImmediatePropagation();
+  openImageLightbox(image);
+}, true);
+
+document.addEventListener('keydown', (event) => {
+  if (lightbox.open) {
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      closeImageLightbox();
+    } else if (revealKeys.has(event.key)) event.stopImmediatePropagation();
+    return;
+  }
+  if (!['Enter', ' '].includes(event.key)) return;
+  const image = event.target.matches?.('.reveal .slides img')
+    ? event.target
+    : event.target.closest?.('[data-gallery-item]')?.querySelector('img');
+  if (!isExpandableImage(image)) return;
+  event.preventDefault();
+  event.stopImmediatePropagation();
+  openImageLightbox(image);
+}, true);
+
+prepareExpandableImages();
+new MutationObserver((records) => {
+  for (const record of records) {
+    for (const node of record.addedNodes) if (node instanceof Element) prepareExpandableImages(node);
+  }
+}).observe(document.querySelector('.reveal') || document.body, { childList: true, subtree: true });
+
 function keepKeysInsideComponent(element) {
   element.addEventListener('keydown', (event) => {
     if (revealKeys.has(event.key)) event.stopPropagation();
