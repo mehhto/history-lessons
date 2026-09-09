@@ -3,7 +3,7 @@
 - **Klasa / czas:** VIII, 45 minut
 - **Typ:** `new-knowledge`
 - **Podstawa:** `stara-przejsciowa`, 2026/2027, Dz.U. 2024 poz. 996, XXXI: „charakteryzuje położenie międzynarodowe Polski w przededniu wybuchu II wojny światowej; omawia etapy i kluczowe wydarzenia wojny obronnej Polski; wymienia przykłady bohaterstwa Polaków, uwzględniając żołnierzy i ludność cywilną”.
-- **Pytanie główne:** Dlaczego Polska mimo oporu nie mogła obronić się w wojnie prowadzonej od 1 września przez Niemcy, a od 17 września także przez Związek Sowiecki?
+- **Pytanie główne:** Co przesądziło o klęsce Polski w kampanii 1939 roku?
 
 ## Cele → zadanie → dowód
 
@@ -23,11 +23,11 @@ Kampania nie była jedną bitwą. Od pierwszych dni walczyli obrońcy Westerplat
 
 ## Przebieg
 
-1. **Otwarcie — 5 min:** uczniowie zaznaczają na schemacie, z których stron Polska była zagrożona po 17 września.
-2. **Wyjaśnienie — 14 min:** położenie międzynarodowe, dwa ataki, ograniczona pomoc sojuszników i chronologia kampanii.
-3. **Mapa i fotografie archiwalne — 10 min:** uczniowie odczytują kierunki agresji oraz oddzielają informację z mapy od informacji z fotografii.
-4. **Praca w parach — 11 min:** układanie osi czasu oraz argument: dlaczego opór nie wystarczył do uniknięcia klęski.
-5. **Synteza / bilet wyjścia — 5 min:** odpowiedź na pytanie główne na podstawie dwóch dowodów.
+1. **Otwarcie — 5 min:** uczniowie poznają pytanie przewodnie i formułują pierwsze hipotezy.
+2. **Wyjaśnienie — 14 min:** położenie międzynarodowe, agresja Niemiec i Związku Sowieckiego, ograniczona pomoc sojuszników oraz pierwsze daty kampanii.
+3. **Mapa i fotografie archiwalne — 10 min:** uczniowie odczytują kierunki agresji z mapy i opisują informacje widoczne na fotografiach.
+4. **Praca w parach — 11 min:** uczniowie układają oś czasu oraz wyjaśniają, jak wybrane wydarzenia zmieniały sytuację Polski. Nauczyciel sprawdza poprawność chronologii i związku między wydarzeniem a jego skutkiem.
+5. **Synteza / bilet wyjścia — 5 min:** odpowiedź na pytanie główne na podstawie dwóch faktów z lekcji.
 
 ## Różnicowanie
 

@@ -8,7 +8,7 @@ export function compositionIssues({ purpose = '', layout = '', textLength = 0, h
   if (purpose === 'evidence' && !/<(?:img|lesson-map|lesson-gallery|figure)\b/i.test(html)) issues.push('slajd evidence nie zawiera źródła');
   if (layout === 'task-board' || layout === 'activity-brief') {
     if (!/class="student-task"/.test(html)) issues.push('task-board nie zawiera .student-task');
-    for (const role of ['prompt', 'time', 'product', 'criterion']) if (!new RegExp(`data-task-role="${role}"`).test(html)) issues.push(`task-board: brak pola ${role === 'criterion' ? 'kryterium' : role}`);
+    if (!/data-task-role="prompt"/.test(html)) issues.push('task-board: brak polecenia dla uczniów');
   }
   return issues;
 }

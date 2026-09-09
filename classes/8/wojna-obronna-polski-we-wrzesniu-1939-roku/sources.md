@@ -24,7 +24,7 @@ Wszystkie pliki w `assets/` pobrano lokalnie 8 września 2026 r. Zapis SHA-256, 
 - Lokalny plik: `assets/mapa-kampanii-polskiej-1939.png` (958 × 923 px, PNG, 240 639 B; SHA-256 `124663778036b820598e8f770a8ac48ce1917f62d18ec59b8dc1c4b7218c6e47`).
 - Adres strony źródłowej: https://commons.wikimedia.org/wiki/File:Invasion_of_Poland-1939.png
 - Licencja / status prawny: CC BY-SA 3.0; wymagane autorstwo i udostępnienie zmian na tych samych warunkach.
-- Rola na lekcji: określenie kierunków agresji i rozmowa o tym, że mapa nie ukazuje całego doświadczenia ludzi.
+- Rola na lekcji: określenie kierunków niemieckiego i sowieckiego natarcia na Polskę.
 - Ograniczenia: podpisy mapy są po angielsku; przed lekcją nauczyciel porównuje jej zakres i legendę z własnym opracowaniem.
 - Sprawdzone przez nauczyciela: nie.
 
@@ -48,6 +48,6 @@ Wszystkie pliki w `assets/` pobrano lokalnie 8 września 2026 r. Zapis SHA-256, 
 - Lokalny plik: `assets/fotografia-inwazja-niemiecko-sowiecka-1939.jpg` (800 × 552 px, JPEG, 66 551 B; SHA-256 `90f6b01c247a1df88391da2f4daa40837c536b9fed847884d0657c932c97b719`).
 - Adres strony źródłowej: https://commons.wikimedia.org/wiki/File:The_Nazi-soviet_Invasion_of_Poland,_1939_HU106375.jpg
 - Licencja / status prawny: domena publiczna według metadanych Commons.
-- Rola na lekcji: drugie źródło fotograficzne do porównania zakresu informacji fotografii i mapy.
+- Rola na lekcji: drugie źródło fotograficzne do opisu i porównania informacji widocznych na obu zdjęciach.
 - Ograniczenia: sam tytuł i data nie zwalniają z krytyki źródła; materiał nie zastępuje mapy, osi czasu ani weryfikacji przez nauczyciela.
 - Sprawdzone przez nauczyciela: nie.

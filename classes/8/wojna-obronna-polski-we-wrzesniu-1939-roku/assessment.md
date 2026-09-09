@@ -7,7 +7,7 @@ Uczeń:
 - wskazuje na mapie dwa kierunki agresji i podaje konkretny przykład oporu żołnierzy lub ludności cywilnej.
 
 ## Bilet wyjścia
-- **Pytanie:** Odpowiedz w 3–4 zdaniach: dlaczego Polska mimo oporu nie mogła obronić się we wrześniu 1939 r.? Użyj dwóch dowodów: daty lub wydarzenia oraz przyczyny strategicznej.
+- **Pytanie:** Odpowiedz w 3–4 zdaniach: co przesądziło o klęsce Polski w kampanii 1939 roku? Odwołaj się do dwóch faktów z lekcji.
 - **Przykładowa odpowiedź:** „Polska od 1 września broniła się przed Niemcami, a 17 września została zaatakowana także od wschodu przez Związek Sowiecki. Walczyła więc przeciw dwóm agresorom. Francja i Wielka Brytania wypowiedziały Niemcom wojnę, ale nie przeprowadziły skutecznej ofensywy na Zachodzie. Mimo tego opór trwał, na przykład w Warszawie do 28 września i pod Kockiem do 5 października.”
 - **Typowe błędne przekonanie:** „Kampania skończyła się 17 września” albo „skoro państwo przegrało, nie było oporu”.
 
