@@ -30,7 +30,8 @@ test('September dossier gives archival media projector-scale visual dominance', 
 
     await page.evaluate(() => Reveal.slide(Reveal.getIndices(document.querySelector('#mapa-kampanii')).h));
     const map = await rect(page, '#mapa-kampanii img');
-    assert.ok(map.width >= 690 && map.height >= 420, `map ${map.width}x${map.height}`);
+    assert.ok(map.width >= 500 && map.height >= 420, `map ${map.width}x${map.height}`);
+    assert.ok(map.width / map.height < 1.15, `map element must follow the source aspect ratio, got ${map.width / map.height}`);
     const mapBackground = await page.$eval('#mapa-kampanii img', (image) => getComputedStyle(image).backgroundColor);
     assert.equal(mapBackground, 'rgba(0, 0, 0, 0)');
 

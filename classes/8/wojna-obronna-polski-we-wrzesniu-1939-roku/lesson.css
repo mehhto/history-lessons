@@ -114,12 +114,13 @@ html .reveal .slides #otwarcie .slide-content > img.hero-source-image {
 }
 #mapa-kampanii .source-figure { display: grid; grid-template-rows: minmax(0, 1fr) auto; min-height: 0; }
 html .reveal .slides #mapa-kampanii .source-figure img {
-  width: 100%;
+  width: auto;
   height: 458px;
+  max-width: 100%;
   max-height: none;
+  margin: 0 auto;
   object-fit: contain;
   background: transparent;
-  filter: drop-shadow(0 12px 18px rgba(17,27,37,.18));
 }
 #mapa-kampanii .source-figure figcaption { font-size: 18px; line-height: 1.15; }
 #mapa-kampanii .analysis-panel {
@@ -136,7 +137,7 @@ html .reveal .slides #mapa-kampanii .source-figure img {
 
 /* Slajd wprowadzający korzysta z tej samej skali mapy. */
 #polozenie .source-split-grid { grid-template-columns: minmax(0, 2.5fr) minmax(300px, 1fr); gap: 28px; }
-html .reveal .slides #polozenie .source-figure img { height: 420px; max-height: none; object-fit: contain; background: transparent; filter: drop-shadow(0 12px 18px rgba(17,27,37,.16)); }
+html .reveal .slides #polozenie .source-figure img { display:block; width:auto; height:420px; max-width:100%; max-height:none; margin:0 auto; object-fit:contain; background:transparent; }
 #polozenie .analysis-panel { padding: 26px; color:#fff; background:var(--dossier-blue); font-size:.66em; line-height:1.3; }
 
 /* Fotografie zajmują niemal całe pole robocze. */
