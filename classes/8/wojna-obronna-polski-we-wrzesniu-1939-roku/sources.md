@@ -5,11 +5,10 @@ Pakiet jest offline-first: wszystkie obrazy wyświetlane na slajdach znajdują s
 
 ## Źródła faktów i cytatu
 
-### fact-01 — skala niemieckiego uderzenia
-- Źródło: United States Holocaust Memorial Museum, [Invasion of Poland, Fall 1939](https://encyclopedia.ushmm.org/content/en/article/invasion-of-poland-fall-1939).
-- Wykorzystane informacje: blisko 1,5 mln żołnierzy niemieckich w 60 dywizjach, ponad 2000 czołgów; około 1300 niemieckich samolotów bojowych wobec nieco ponad 300 polskich możliwych do użycia.
-- Sposób użycia: trzy przybliżone wskaźniki skali, nie kompletny bilans sił ani samodzielne wyjaśnienie klęski.
-- Ograniczenie: liczby zależą od definicji kategorii i momentu zestawienia; na lekcji zachowano określenia „blisko”, „ponad” i „około”.
+### fact-01 — dysproporcja sił Polski i Niemiec
+- Źródło: Zintegrowana Platforma Edukacyjna, [„Kampania polska”](https://zpe.gov.pl/a/kampania-polska/DCAT9iDAA), tabela „Potencjał militarny Polski i Niemiec”.
+- Wykorzystane informacje: żołnierze — Polska 1 mln, Niemcy 2,75 mln; czołgi ciężkie i średnie — Polska 211, Niemcy 3206; samoloty bojowe — Polska 400, Niemcy 3500.
+- Sposób użycia: bezpośrednie porównanie tych samych trzech kategorii po obu stronach oraz pokazanie skali przewagi Niemiec.
 - Ponownie sprawdzone: 9 września 2026 r.
 - Sprawdzone przez nauczyciela: nie.
 
@@ -17,7 +16,7 @@ Pakiet jest offline-first: wszystkie obrazy wyświetlane na slajdach znajdują s
 - Tekst: [Przemówienie Józefa Becka w Sejmie RP 5 maja 1939 r.](https://pl.wikisource.org/wiki/Przem%C3%B3wienie_J%C3%B3zefa_Becka_w_Sejmie_RP_5_maja_1939_r.), Wikiźródła.
 - Cytowany fragment: „My w Polsce nie znamy pojęcia pokoju za wszelką cenę. Jest jedna tylko rzecz w życiu ludzi, narodów i państw, która jest bezcenna. Tą rzeczą jest honor.”
 - Kontekst: sejmowe wystąpienie ministra spraw zagranicznych z 5 maja 1939 r., odnoszące się do żądań i przemówienia Adolfa Hitlera.
-- Sposób użycia: źródło decyzji i języka politycznego; nie dowód zdolności militarnej ani przebiegu kampanii.
+- Sposób użycia: rozpoznanie decyzji politycznej uzasadnianej przez Józefa Becka.
 - Ponownie sprawdzone: 9 września 2026 r.
 - Sprawdzone przez nauczyciela: nie.
 
@@ -45,7 +44,7 @@ Pakiet jest offline-first: wszystkie obrazy wyświetlane na slajdach znajdują s
 - [Strona źródłowa](https://commons.wikimedia.org/wiki/File:Fall_of_Warsaw_in_1939.jpg).
 - Status: domena publiczna według metadanych Commons.
 - Rola: pełnoekranowe otwarcie i sformułowanie pytania o wynik kampanii.
-- Ograniczenia: fotografia nie pokazuje początku wojny ani całego doświadczenia mieszkańców; podpis wyraźnie lokuje ją pod koniec września.
+
 - Sprawdzone przez nauczyciela: nie.
 
 ### source-03 — Józef Beck w Sejmie
@@ -54,7 +53,7 @@ Pakiet jest offline-first: wszystkie obrazy wyświetlane na slajdach znajdują s
 - [Strona źródłowa](https://commons.wikimedia.org/wiki/File:Beck_przem%C3%B3wienie.jpg).
 - Status: domena publiczna według metadanych Commons.
 - Rola: wizualny kontekst cytatu z 5 maja 1939 r.
-- Ograniczenia: zdjęcie dokumentuje wystąpienie, ale nie pozwala wnioskować o odbiorze całego społeczeństwa ani o możliwościach militarnych.
+
 - Sprawdzone przez nauczyciela: nie.
 
 ### source-04 — Westerplatte po kapitulacji
@@ -62,8 +61,7 @@ Pakiet jest offline-first: wszystkie obrazy wyświetlane na slajdach znajdują s
 - Lokalny plik: `assets/fotografia-westerplatte-po-walkach-1939.jpg` (800 × 627 px; SHA-256 `0ceeb52ba158af14de0d3eb4bf3751094d77de211c1aabb776ce62a9fd8412dc`).
 - [Strona źródłowa](https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-E10718,_Danzig,_Westerplatte,_Wald.jpg).
 - Licencja: CC BY-SA 3.0 de; wymagane autorstwo: Bundesarchiv, Bild 183-E10718 / Haine.
-- Rola: studium przypadku obrony Westerplatte i ćwiczenie odróżniania walki od jej następstwa.
-- Ograniczenia: wykonana dzień po kapitulacji; pokazuje niemieckich żołnierzy oraz zniszczony teren, nie polską załogę w czasie obrony. Pierwotny opis powstał po stronie niemieckiej.
+- Rola: ilustracja studium przypadku siedmiodniowej obrony Westerplatte.
 - Sprawdzone przez nauczyciela: nie.
 
 ### source-05 — budowa barykady w Warszawie
@@ -71,8 +69,7 @@ Pakiet jest offline-first: wszystkie obrazy wyświetlane na slajdach znajdują s
 - Lokalny plik: `assets/fotografia-warszawa-budowa-barykady-1939.jpg` (1200 × 802 px; SHA-256 `90e8b11358d652bcfe5ff78a194cee139f73e65dcd45fe5fb4330bda19ee3017`).
 - [Strona źródłowa](https://commons.wikimedia.org/wiki/File:Budowa_barykady_na_ulicy_Nowogrodzkiej_w_Warszawie_1939.jpg).
 - Status: domena publiczna według metadanych Commons.
-- Rola: bezpośredni przykład udziału części ludności cywilnej w pracach obronnych.
-- Ograniczenia: pojedynczy kadr nie dowodzi motywacji osób, powszechności działania ani innych form udziału cywilów.
+- Rola: przykład udziału ludności cywilnej w pracach obronnych.
 - Sprawdzone przez nauczyciela: nie.
 
 ## Materiał lokalny zachowany, lecz niewyświetlany w obecnej talii

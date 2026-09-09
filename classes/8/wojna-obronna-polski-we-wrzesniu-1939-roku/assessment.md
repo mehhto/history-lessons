@@ -5,8 +5,8 @@ Uczeń:
 - poprawnie układa: 23 VIII, 1 IX, 3 IX, 17 IX i 28 IX oraz wie, że walki pod Kockiem trwały do 5 X;
 - wyjaśnia co najmniej dwie przyczyny klęski i wiąże każdą z konkretnym dowodem: mapą, danymi lub wydarzeniem;
 - odróżnia wypowiedzenie wojny przez sojuszników od skutecznej ofensywy odciążającej;
-- opisuje jeden przykład oporu żołnierzy i jeden przykład udziału cywilów przez miejsce, czas i działanie;
-- wskazuje co najmniej jedną granicę interpretacji cytatu lub fotografii;
+- porównuje potencjał Polski i Niemiec w co najmniej dwóch kategoriach;
+- opisuje jeden przykład oporu żołnierzy i jeden przykład udziału cywilów przez miejsce, czas, działanie i znaczenie;
 - nie przedstawia agresji ZSRR 17 IX jako końca wszystkich walk ani jako przyczyny pierwszych niepowodzeń z początku kampanii.
 
 ## Zadanie w parach — obserwacja formatywna
@@ -34,11 +34,10 @@ Uczeń:
 ## Typowe błędne przekonania i reakcje
 - **„Kampania skończyła się 17 IX”.** Poproś o wskazanie dat obrony Warszawy i walk pod Kockiem.
 - **„Alianci nie zrobili nic”.** Doprecyzuj: wypowiedzieli wojnę, lecz nie przeprowadzili skutecznej ofensywy odciążającej.
-- **„Zdjęcie Westerplatte pokazuje polskich żołnierzy w walce”.** Wróć do daty 8 IX i widocznych na zdjęciu niemieckich żołnierzy.
-- **„Skoro cywile budowali barykady, wszyscy walczyli”.** Oddziel obserwację konkretnego kadru od uogólnienia o całej ludności.
-- **„Jedna liczba dowodzi, że porażka była nieunikniona”.** Poproś o drugą kategorię wyjaśnienia: sposób walki, położenie, pomoc sojuszników albo drugi agresor.
+- **„Przewaga dotyczyła tylko liczby żołnierzy”.** Wróć do porównania czołgów i samolotów bojowych.
+- **„Skoro Polska przegrała, nie stawiała oporu”.** Poproś o przykład Westerplatte, Bzury, Warszawy albo Kocka.
 
 ## Kontrola przed lekcją
 - [ ] Nauczyciel sprawdził mapę, cytat i podpisy fotografii w `sources.md`.
 - [ ] Nauczyciel zaakceptował sposób rozmowy o przemocy wojennej i ludności cywilnej odpowiedni dla klasy.
-- [ ] Nauczyciel nie zmienił liczb przybliżonych w pozornie dokładny bilans bez dodatkowego źródła.
+- [ ] Nauczyciel sprawdził tabelę porównawczą ZPE i nie miesza jej z liczbami dotyczącymi wyłącznie sił użytych 1 września.

@@ -2,28 +2,42 @@
 
 Imię i nazwisko: ________________________________  Data: ______________
 
-## 1. Głos epoki — decyzja i granica źródła
+## 1. Głos epoki — decyzja Polski
 > „My w Polsce nie znamy pojęcia pokoju za wszelką cenę. […] Tą rzeczą jest honor.”
 
 *Józef Beck, przemówienie w Sejmie, 5 maja 1939 r.*
 
-1. Jaką cenę polityczną Polska odrzucała według sensu wypowiedzi?
-________________________________________________________________________________
-2. Jakiej informacji o wojnie nie można uzyskać z tego cytatu?
+Jaką decyzję Polski uzasadniał Józef Beck?
+
 ________________________________________________________________________________
 
-## 2. Mapa i liczby — dowód przewagi
-1. Z ilu stron nacierały wojska niemieckie? ____________________
+## 2. Mapa i liczby — przewaga Niemiec
+
+1. Wskaż obszary, z których 1 września ruszyło niemieckie natarcie.
+
+________________________________________________________________________________
+
 2. Co zmieniło się 17 września? ________________________________________________
-3. Wybierz jedną informację: **blisko 1,5 mln żołnierzy / ponad 2000 czołgów / ok. 1300 wobec ponad 300 samolotów bojowych**.
-4. Dokończ ostrożny wniosek:
 
-Liczba __________________ pokazuje ______________________________________________,
-ale sama nie wyjaśnia ___________________________________________________________.
+3. Porównaj potencjał militarny obu państw.
+
+| Rodzaj sił | Polska | Niemcy |
+|---|---:|---:|
+| Żołnierze | 1 mln | 2,75 mln |
+| Czołgi ciężkie i średnie | 211 | 3206 |
+| Samoloty bojowe | 400 | 3500 |
+
+4. W której kategorii różnica była największa? _________________________________
+
+5. Dokończ wniosek:
+
+Niemcy miały przewagę, ponieważ _________________________________________________
+
+________________________________________________________________________________
 
 ## 3. Oś wydarzeń i przyczyn — praca w parach, 7 minut
 
-### A. Ułóż pięć kart w kolejności
+### A. Ułóż pięć wydarzeń w kolejności
 Wpisz numery od 1 do 5.
 
 | Wydarzenie | Kolejność |
@@ -34,7 +48,7 @@ Wpisz numery od 1 do 5.
 | Niemcy napadają na Polskę — 1 IX. | |
 | Francja i Wielka Brytania wypowiadają Niemcom wojnę — 3 IX. | |
 
-### B. Połącz trzy karty z odpowiednią przyczyną
+### B. Połącz trzy wydarzenia z odpowiednią przyczyną
 Narysuj strzałki do haseł:
 
 - sytuacja Polski przed wojną;
@@ -52,7 +66,7 @@ Polska broniła się mimo __________________________________________________, al
 | Gdzie i kiedy? | | |
 | Jakie konkretne działanie podjęli ludzie? | | |
 | Dlaczego to przykład oporu? | | |
-| Czego fotografia nie pokazuje lub nie pozwala uogólnić? | | |
+| Jakie znaczenie miał ten przykład? | | |
 
 ## 5. Bilet wyjścia
 W dwóch zdaniach wyjaśnij, dlaczego jeden przykład bohaterstwa nie wystarczył do odwrócenia wyniku kampanii. Użyj jednego przykładu oporu i co najmniej dwóch przyczyn klęski.
@@ -62,4 +76,4 @@ ________________________________________________________________________
 ________________________________________________________________________
 
 ## Dla chętnych
-Porównaj wartość dowodową cytatu Becka, mapy kampanii i fotografii Westerplatte po kapitulacji. Na jakie inne pytanie odpowiada każde z tych źródeł?
+Wyjaśnij, dlaczego obrona Westerplatte stała się symbolem polskiego oporu.

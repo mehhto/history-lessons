@@ -20,20 +20,20 @@
 
 <!-- .slide: id="glos-epoki" class="quote-source-slide" data-purpose="evidence" data-layout="source-split" data-backdrop="off" -->
 ## Głos epoki: decyzja przed wojną
-<div class="quote-layout"><figure class="source-figure quote-portrait"><img src="assets/fotografia-beck-przemowienie-1939.jpg" data-fit="cover" data-position="center" alt="Minister Józef Beck przemawia w Sejmie 5 maja 1939 roku"><figcaption>Józef Beck w Sejmie, 5 maja 1939 r. · autor fotografii nieustalony</figcaption></figure><div class="quote-copy"><blockquote>„My w Polsce nie znamy pojęcia pokoju za wszelką cenę. Jest jedna tylko rzecz w życiu ludzi, narodów i państw, która jest bezcenna. Tą rzeczą jest honor.”</blockquote><p class="quote-context">Minister spraw zagranicznych odpowiadał na wystąpienie Adolfa Hitlera i uzasadniał odrzucenie polityki ustępstw.</p><p class="source-question">Co cytat wyjaśnia o decyzji Polski, a czego nie mówi o szansach obrony?</p></div></div>
+<div class="quote-layout"><figure class="source-figure quote-portrait"><img src="assets/fotografia-beck-przemowienie-1939.jpg" data-fit="cover" data-position="center" alt="Minister Józef Beck przemawia w Sejmie 5 maja 1939 roku"><figcaption>Józef Beck w Sejmie, 5 maja 1939 r. · autor fotografii nieustalony</figcaption></figure><div class="quote-copy"><blockquote>„My w Polsce nie znamy pojęcia pokoju za wszelką cenę. Jest jedna tylko rzecz w życiu ludzi, narodów i państw, która jest bezcenna. Tą rzeczą jest honor.”</blockquote><p class="quote-context">Kilka dni wcześniej Adolf Hitler wypowiedział polsko-niemiecką deklarację o niestosowaniu przemocy i ponowił żądania wobec Polski.</p><p class="source-question">Jaką decyzję Polski uzasadniał Józef Beck?</p></div></div>
 
 ---
 
 <!-- .slide: id="mapa-kampanii" class="map-slide" data-purpose="evidence" data-layout="map-focus" data-backdrop="off" -->
-## Dwa kierunki agresji
-<div class="map-focus-grid"><figure class="source-figure"><img src="assets/mapa-kampanii-polskiej-1939.png" data-fit="contain" alt="Mapa kampanii polskiej 1939 roku z kierunkami działań wojennych"><figcaption>Kierunki niemieckiego i sowieckiego natarcia na Polskę w 1939 r.</figcaption></figure><aside class="analysis-panel"><strong>Spójrz na mapę.</strong><br>Z ilu stron nacierały wojska niemieckie?<br><br>Jak po 17 września zmieniło się położenie obrońców?</aside></div>
+## Kampania na mapie
+<div class="map-focus-grid"><figure class="source-figure"><img src="assets/mapa-kampanii-polskiej-1939.png" data-fit="contain" alt="Mapa kampanii polskiej 1939 roku z kierunkami działań wojennych"><figcaption>Kierunki niemieckiego i sowieckiego natarcia na Polskę w 1939 r.</figcaption></figure><aside class="analysis-panel"><strong>Spójrz na mapę.</strong><br>Wskaż na mapie obszary, z których 1 września ruszyło niemieckie natarcie.<br><br>Jak po 17 września zmieniło się położenie obrońców?</aside></div>
 
 ---
 
 <!-- .slide: id="przewaga-sil" class="force-evidence-slide" data-purpose="evidence" data-layout="evidence" -->
-## Skala niemieckiego uderzenia
-<figure class="force-figure"><div class="force-metrics"><article data-force-metric="personnel"><span class="metric-value">blisko 1,5 mln</span><strong>żołnierzy</strong><p>Niemcy skierowali do inwazji 60 dywizji.</p></article><article data-force-metric="tanks"><span class="metric-value">ponad 2000</span><strong>czołgów</strong><p>Tworzyły siłę uderzeniową wspartą lotnictwem.</p></article><article data-force-metric="aircraft"><span class="metric-value">ok. 1300 : ponad 300</span><strong>samolotów bojowych</strong><p>Niemieckie bombowce i myśliwce wobec polskich maszyn możliwych do użycia.</p></article></div><figcaption class="source-note">Dane przybliżone: United States Holocaust Memorial Museum, „Invasion of Poland, Fall 1939”.</figcaption></figure>
-<p class="evidence-conclusion">Przewaga sprzętu i mobilności pozwalała Niemcom szybko przełamywać front. Same liczby nie wyjaśniają jednak całej kampanii.</p>
+## Dysproporcja sił
+<figure class="force-figure"><div class="force-metrics"><article data-force-metric="personnel"><strong>żołnierze</strong><div class="force-pair"><p data-side="germany"><span>2,75 mln</span>Niemcy</p><p data-side="poland"><span>1 mln</span>Polska</p></div><p class="force-ratio">około 2,8 raza więcej</p></article><article data-force-metric="tanks"><strong>czołgi ciężkie i średnie</strong><div class="force-pair"><p data-side="germany"><span>3206</span>Niemcy</p><p data-side="poland"><span>211</span>Polska</p></div><p class="force-ratio">około 15 razy więcej</p></article><article data-force-metric="aircraft"><strong>samoloty bojowe</strong><div class="force-pair"><p data-side="germany"><span>3500</span>Niemcy</p><p data-side="poland"><span>400</span>Polska</p></div><p class="force-ratio">prawie 9 razy więcej</p></article></div><figcaption class="source-note">Porównanie potencjału militarnego Polski i Niemiec · Zintegrowana Platforma Edukacyjna, „Kampania polska”.</figcaption></figure>
+<p class="evidence-conclusion">Niemcy miały więcej żołnierzy oraz wielokrotną przewagę w czołgach i samolotach bojowych.</p>
 
 ---
 
@@ -52,13 +52,13 @@
 
 <!-- .slide: id="bohaterstwo-zolnierzy" class="case-study-slide" data-purpose="evidence" data-layout="source-split" data-backdrop="off" -->
 ## Studium przypadku: Westerplatte
-<div class="case-layout"><figure class="source-figure"><img src="assets/fotografia-westerplatte-po-walkach-1939.jpg" data-fit="cover" data-position="center" alt="Zniszczony las na Westerplatte i niemieccy żołnierze po kapitulacji polskiej placówki"><figcaption>Zniszczony teren Westerplatte po kapitulacji, 8 IX 1939 · fot. Haine, Bundesarchiv</figcaption></figure><div class="case-copy"><p class="case-kicker">ŻOŁNIERZE · <span data-case-role="date">1–7 IX</span></p><h3 data-case-role="place">Westerplatte: siedem dni w odizolowanej placówce</h3><ul><li data-case-role="action">Załoga Wojskowej Składnicy Tranzytowej odpierała kolejne ataki i ostrzał.</li><li>Obrona zakończyła się kapitulacją po siedmiu dniach.</li></ul><p class="case-reading" data-case-role="meaning"><strong>Znaczenie i granica źródła:</strong> obrona stała się symbolem oporu. Zdjęcie pokazuje zniszczony teren, ale wykonano je już po walce i z niemieckiej perspektywy.</p></div></div>
+<div class="case-layout"><figure class="source-figure"><img src="assets/fotografia-westerplatte-po-walkach-1939.jpg" data-fit="cover" data-position="center" alt="Zniszczony las na Westerplatte i niemieccy żołnierze po kapitulacji polskiej placówki"><figcaption>Zniszczony teren Westerplatte po kapitulacji, 8 IX 1939 · fot. Haine, Bundesarchiv</figcaption></figure><div class="case-copy"><p class="case-kicker">ŻOŁNIERZE · <span data-case-role="date">1–7 IX</span></p><h3 data-case-role="place">Westerplatte: siedem dni w odizolowanej placówce</h3><ul><li data-case-role="action">Załoga Wojskowej Składnicy Tranzytowej odpierała kolejne ataki i ostrzał.</li><li>Obrona zakończyła się kapitulacją po siedmiu dniach.</li></ul><p class="case-reading" data-case-role="meaning"><strong>Znaczenie:</strong> siedmiodniowa obrona stała się jednym z symboli polskiego oporu.</p></div></div>
 
 ---
 
 <!-- .slide: id="bohaterstwo-cywilow" class="case-study-slide civilian-case" data-purpose="evidence" data-layout="source-split" data-backdrop="off" -->
 ## Studium przypadku: cywile w Warszawie
-<div class="case-layout case-layout-reverse"><figure class="source-figure"><img src="assets/fotografia-warszawa-budowa-barykady-1939.jpg" data-fit="cover" data-position="center" alt="Mieszkańcy Warszawy budują barykadę na ulicy Nowogrodzkiej we wrześniu 1939 roku"><figcaption>Budowa barykady przy Nowogrodzkiej i Marszałkowskiej, IX 1939 · fot. Julien Bryan</figcaption></figure><div class="case-copy"><p class="case-kicker">LUDNOŚĆ CYWILNA · <span data-case-role="date">WRZESIEŃ 1939</span></p><h3 data-case-role="place">Warszawa: obrona miasta nie była wyłącznie zadaniem wojska</h3><ul><li data-case-role="action">Mieszkańcy pomagali przygotowywać barykady i inne umocnienia uliczne.</li><li>Ich praca wspierała obronę miasta podczas nalotów, ostrzału i walk na przedpolach.</li></ul><p class="case-reading" data-case-role="meaning"><strong>Znaczenie i granica źródła:</strong> fotografia dokumentuje konkretną pracę cywilów; nie dowodzi, że wszyscy mieszkańcy walczyli z bronią.</p></div></div>
+<div class="case-layout case-layout-reverse"><figure class="source-figure"><img src="assets/fotografia-warszawa-budowa-barykady-1939.jpg" data-fit="cover" data-position="center" alt="Mieszkańcy Warszawy budują barykadę na ulicy Nowogrodzkiej we wrześniu 1939 roku"><figcaption>Budowa barykady przy Nowogrodzkiej i Marszałkowskiej, IX 1939 · fot. Julien Bryan</figcaption></figure><div class="case-copy"><p class="case-kicker">LUDNOŚĆ CYWILNA · <span data-case-role="date">WRZESIEŃ 1939</span></p><h3 data-case-role="place">Warszawa: obrona miasta nie była wyłącznie zadaniem wojska</h3><ul><li data-case-role="action">Mieszkańcy pomagali przygotowywać barykady i inne umocnienia uliczne.</li><li>Ich praca wspierała obronę miasta podczas nalotów, ostrzału i walk na przedpolach.</li></ul><p class="case-reading" data-case-role="meaning"><strong>Znaczenie:</strong> obrona stolicy angażowała nie tylko wojsko, lecz także ludność cywilną.</p></div></div>
 
 ---
 
@@ -70,16 +70,15 @@
 
 <!-- .slide: id="chronologia" class="practice-slide" data-purpose="practice" data-layout="task-board" -->
 ## Zadanie w parach: oś wydarzeń i przyczyn
-<div class="student-task"><div data-task-role="prompt">Ułóżcie pięć kart wydarzeń na osi czasu. Następnie połączcie strzałkami trzy wybrane wydarzenia lub informacje z przyczynami klęski. Pod osią zapiszcie jedno zdanie zaczynające się od: <em>„Polska broniła się mimo…, ale…”</em></div><div data-task-role="time"><span data-task-label>Czas</span>7 minut</div></div>
-<div class="task-tags"><span>sytuacja przed wojną</span><span>działania Niemiec</span><span>17 września</span><span>przykład oporu</span></div>
+<div class="student-task"><div data-task-role="prompt">Ułóżcie wydarzenia z części 3 karty pracy na osi czasu. Następnie połączcie trzy z nich z odpowiednimi przyczynami klęski. Pod osią zapiszcie jedno zdanie zaczynające się od: <em>„Polska broniła się mimo…, ale…”</em></div><div data-task-role="time"><span data-task-label>Czas</span>7 minut</div></div>
 <p class="task-question">Który dowód najlepiej pokazuje różnicę między <strong>oporem</strong> a <strong>szansą na zwycięstwo</strong>?</p>
 
 ---
 
-<!-- .slide: id="synteza" class="synthesis-slide" data-purpose="synthesis" data-layout="argument" -->
+<!-- .slide: id="synteza" class="synthesis-slide" data-purpose="synthesis" data-layout="takeaways" -->
 ## Odpowiedź na pytanie przewodnie
-<p class="synthesis-lead">Polska przegrała kampanię nie dlatego, że nie stawiała oporu, lecz dlatego, że…</p>
-<div class="argument-evidence synthesis-grid"><article><strong>Niemcy miały przewagę</strong><br>w liczbie i ruchliwości sił oraz w możliwościach lotnictwa i wojsk pancernych.</article><article><strong>Obrona była osamotniona</strong><br>sojusznicy nie przeprowadzili skutecznej ofensywy odciążającej.</article><article><strong>17 września zaatakował ZSRR</strong><br>otwierając drugi front w trakcie walk.</article><article><strong>Opór miał znaczenie</strong><br>objął żołnierzy i część ludności cywilnej, lecz nie mógł zrównoważyć przewagi agresorów.</article></div>
+<div class="synthesis-contrast"><article><span>Co pokazują przykłady?</span><strong>Polska stawiała opór</strong><p>Żołnierze walczyli m.in. na Westerplatte, nad Bzurą, w Warszawie i pod Kockiem. Cywile wspierali obronę miast.</p></article><div class="contrast-mark">≠</div><article><span>Dlaczego to nie wystarczyło?</span><strong>Opór nie wyrównał szans</strong><p>Niemcy miały znacznie większe siły, nie nadeszła skuteczna ofensywa sojuszników, a 17 września zaatakował ZSRR.</p></article></div>
+<p class="synthesis-answer">O wyniku kampanii przesądziła przewaga agresorów i położenie Polski — nie brak odwagi obrońców.</p>
 
 ---
 

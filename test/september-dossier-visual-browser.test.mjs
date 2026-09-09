@@ -108,7 +108,9 @@ test('September dossier gives archival media projector-scale visual dominance', 
     }
 
     await page.evaluate(() => Reveal.slide(Reveal.getIndices(document.querySelector('#synteza')).h));
-    const summaryContrasts = await page.$$eval('#synteza .argument-evidence strong', (labels) => {
+    const synthesisPanels = await page.$$eval('#synteza .synthesis-contrast article', (panels) => panels.map((panel) => {
+      const box = panel.getBoundingClientRect();
+      const label = panel.querySelector('strong');
       const parse = (value) => value.match(/[\d.]+/g).slice(0, 3).map(Number);
       const luminance = (rgb) => {
         const linear = rgb.map((channel) => {
@@ -117,13 +119,17 @@ test('September dossier gives archival media projector-scale visual dominance', 
         });
         return .2126 * linear[0] + .7152 * linear[1] + .0722 * linear[2];
       };
-      return labels.map((label) => {
-        const foreground = luminance(parse(getComputedStyle(label).color));
-        const background = luminance(parse(getComputedStyle(label.closest('article')).backgroundColor));
-        return (Math.max(foreground, background) + .05) / (Math.min(foreground, background) + .05);
-      });
-    });
-    assert.ok(summaryContrasts.every((ratio) => ratio >= 4.5), `summary contrast ${summaryContrasts}`);
+      const foreground = luminance(parse(getComputedStyle(label).color));
+      const background = luminance(parse(getComputedStyle(panel).backgroundColor));
+      return {
+        width: box.width,
+        height: box.height,
+        contrast: (Math.max(foreground, background) + .05) / (Math.min(foreground, background) + .05),
+      };
+    }));
+    assert.equal(synthesisPanels.length, 2);
+    assert.ok(synthesisPanels.every((panel) => panel.width >= 400 && panel.height >= 250), JSON.stringify(synthesisPanels));
+    assert.ok(synthesisPanels.every((panel) => panel.contrast >= 4.5), `synthesis contrast ${JSON.stringify(synthesisPanels)}`);
   } finally {
     await browser.close();
     await new Promise((resolve) => server.close(resolve));

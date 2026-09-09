@@ -169,12 +169,12 @@ html .reveal .slides #otwarcie .slide-content > img.hero-source-image {
 /* Mapy: maksymalna wysokość i wyraźny panel analizy. */
 #mapa-kampanii .slide-content { grid-template-rows: auto minmax(0, 1fr); }
 #mapa-kampanii .map-focus-grid {
-  grid-template-columns: minmax(0, 3.15fr) minmax(250px, .85fr);
-  gap: 26px;
+  grid-template-columns: minmax(0, 2.9fr) minmax(300px, 1.1fr);
+  gap: 22px;
   align-items: stretch;
   min-height: 500px;
 }
-#mapa-kampanii .source-figure { display: grid; grid-template-rows: minmax(0, 1fr) auto; min-height: 0; }
+#mapa-kampanii .source-figure { display: grid; grid-template-rows: minmax(0, 1fr) auto; min-height: 0; margin: 0; }
 html .reveal .slides #mapa-kampanii .source-figure img {
   width: auto;
   height: 458px;
@@ -199,12 +199,13 @@ html .reveal .slides #mapa-kampanii .source-figure img {
 #mapa-kampanii .analysis-panel {
   display: grid;
   align-content: center;
-  padding: 30px;
+  min-height: 0;
+  padding: 24px;
   border: 0;
   color: #fff;
   background: var(--dossier-navy);
-  font-size: .67em;
-  line-height: 1.34;
+  font-size: .62em;
+  line-height: 1.3;
 }
 #mapa-kampanii .analysis-panel strong { color: #ff7778; font-size: 1.25em; }
 
@@ -313,10 +314,8 @@ html .reveal .slides #fotografie lesson-gallery.photo-pair figcaption {
 }
 
 /* Zamiast monotonnych białych kart: pola o różnym ciężarze. */
-#dlaczego-kleska .argument-evidence,
-#synteza .argument-evidence { gap: 0; }
-#dlaczego-kleska .argument-evidence article,
-#synteza .argument-evidence article {
+#dlaczego-kleska .argument-evidence { gap: 0; }
+#dlaczego-kleska .argument-evidence article {
   min-height: 8.1em;
   padding: .82em;
   border: 0;
@@ -324,13 +323,11 @@ html .reveal .slides #fotografie lesson-gallery.photo-pair figcaption {
   color: #f7f3e9;
   background: var(--dossier-blue);
 }
-#dlaczego-kleska .argument-evidence article:first-child,
-#synteza .argument-evidence article:first-child {
+#dlaczego-kleska .argument-evidence article:first-child {
   border-left: .25em solid var(--dossier-red);
   background: #0c1e31;
 }
-#dlaczego-kleska .argument-evidence strong,
-#synteza .argument-evidence strong { color: #fff; }
+#dlaczego-kleska .argument-evidence strong { color: #fff; }
 
 #opor .comparison-grid,
 #bohaterstwo .comparison-grid { gap: 18px; }
@@ -463,16 +460,20 @@ html .reveal .slides #glos-epoki .source-figure img { height: 390px; }
   display: grid;
   align-content: start;
   min-width: 0;
-  min-height: 225px;
-  padding: 28px 24px;
+  min-height: 265px;
+  padding: 24px 20px 20px;
   border-top: 7px solid var(--dossier-red);
   color: #eef2f5;
   background: var(--dossier-blue);
 }
 #przewaga-sil [data-force-metric]:first-child { background: #17344e; }
-#przewaga-sil .metric-value { display: block; color: #fff; font: 800 1.22em/1 var(--font-heading); letter-spacing: -.035em; }
-#przewaga-sil [data-force-metric] strong { display: block; margin-top: .28em; color: #ff8587; font-size: .72em; text-transform: uppercase; letter-spacing: .04em; }
-#przewaga-sil [data-force-metric] p { margin: .75em 0 0; color: #e1e7eb; font-size: .58em; line-height: 1.32; }
+#przewaga-sil [data-force-metric] > strong { display: block; min-height: 2.4em; color: #ff8587; font-size: .62em; line-height: 1.12; letter-spacing: .01em; }
+#przewaga-sil .force-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: .45em; }
+#przewaga-sil .force-pair p { display: grid; gap: 7px; margin: 0; padding: 12px 8px; color: #dfe7ec; background: rgba(255,255,255,.08); font-size: .45em; font-weight: 750; text-align: center; }
+#przewaga-sil .force-pair p[data-side="germany"] { border-bottom: 4px solid var(--dossier-red); }
+#przewaga-sil .force-pair p[data-side="poland"] { border-bottom: 4px solid #d4c7ae; }
+#przewaga-sil .force-pair span { color: #fff; font: 800 1.65em/1 var(--font-heading); letter-spacing: -.04em; }
+#przewaga-sil [data-force-metric] .force-ratio { margin: .65em 0 0; color: #fff; font-size: .48em; font-weight: 750; line-height: 1.2; text-align: center; }
 #przewaga-sil .evidence-conclusion { margin: .6em 0 .2em; font-size: .68em; line-height: 1.25; }
 #przewaga-sil .source-note { margin: .45em 0 0; color: #bfc8cf; font-size: .42em; text-align: left; }
 
@@ -532,13 +533,16 @@ html .reveal .slides #glos-epoki .source-figure img { height: 390px; }
 .case-study-slide li + li { margin-top: .35em; }
 .case-study-slide .case-reading { margin: 0; padding: .65em .72em; border-left: 5px solid var(--dossier-red); color: #2f3b46; background: #e3dbc9; font-size: .54em; line-height: 1.3; }
 
-#dlaczego-kleska .cause-grid,
-#synteza .synthesis-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-#dlaczego-kleska .cause-grid article,
-#synteza .synthesis-grid article { min-height: 4.55em; font-size: .72em; line-height: 1.26; }
-#synteza .synthesis-lead { margin: 0 0 .55em; color: #d9d1c3; font-size: .7em; }
-#chronologia .task-tags { display: flex; flex-wrap: wrap; gap: 10px; margin: .55em 0 .25em; }
-#chronologia .task-tags span { padding: .35em .65em; color: var(--dossier-navy); background: rgba(255,255,255,.55); font-size: .46em; font-weight: 800; }
+#dlaczego-kleska .cause-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+#dlaczego-kleska .cause-grid article { min-height: 4.55em; font-size: .72em; line-height: 1.26; }
+#synteza .synthesis-contrast { display: grid; grid-template-columns: minmax(0, 1fr) 70px minmax(0, 1fr); align-items: stretch; gap: 18px; margin: .8em 0 .55em; }
+#synteza .synthesis-contrast article { display: grid; align-content: center; min-height: 300px; padding: 28px; border-top: 7px solid #d4c7ae; color: #edf1f4; background: var(--dossier-blue); }
+#synteza .synthesis-contrast article:last-child { border-top-color: var(--dossier-red); background: #0c1e31; }
+#synteza .synthesis-contrast span { color: #d8d0c2; font-size: .43em; font-weight: 800; letter-spacing: .03em; }
+#synteza .synthesis-contrast strong { display: block; margin: .25em 0 .55em; color: #fff; font: 800 .82em/1.08 var(--font-heading); }
+#synteza .synthesis-contrast p { margin: 0; color: #edf1f4; font-size: .56em; line-height: 1.3; }
+#synteza .contrast-mark { display: grid; place-content: center; color: #ff7778; font: 900 1.7em/1 var(--font-heading); }
+#synteza .synthesis-answer { margin: 0; padding-left: 16px; border-left: 5px solid var(--dossier-red); color: #fff; font-size: .64em; font-weight: 750; line-height: 1.25; }
 #chronologia .task-question { margin: .35em 0 0; font-size: .62em; line-height: 1.25; }
 #bilet .statement { font-size: 1.1em; line-height: 1.25; }
 #bilet .exit-hint { color: #f7dedf; font-size: .68em; }

@@ -6,15 +6,18 @@ Polska przegrała kampanię mimo rzeczywistego oporu, ponieważ Niemcy miały pr
 ## Przed wojną
 - Polska miała układy sojusznicze z Francją i Wielką Brytanią oraz odrzuciła żądania Niemiec.
 - **23 sierpnia 1939 r.** Niemcy i ZSRR podpisały pakt Ribbentrop–Mołotow. Tajny protokół przewidywał podział stref wpływów, w tym ziem polskich.
-- Józef Beck 5 maja 1939 r. publicznie uzasadniał odrzucenie ustępstw słowami o „pokoju za wszelką cenę” i „honorze”. Cytat pokazuje decyzję polityczną, nie stan armii.
+- Józef Beck 5 maja 1939 r. publicznie uzasadniał odrzucenie niemieckich żądań i dalszych ustępstw słowami o „pokoju za wszelką cenę” i „honorze”.
 
-## Skala niemieckiego uderzenia
-Dane przybliżone dla sił skierowanych przez Niemcy do inwazji:
-- blisko **1,5 mln żołnierzy** w 60 dywizjach;
-- ponad **2000 czołgów**;
-- około **1300 niemieckich samolotów bojowych** wobec nieco ponad **300 polskich** możliwych do użycia.
+## Dysproporcja sił
+Zestawienie potencjału militarnego Polski i Niemiec:
 
-Liczby pokazują skalę przewagi, ale wynik zależał także od współdziałania lotnictwa i wojsk lądowych, położenia Polski, problemów mobilizacji i łączności, braku ofensywy odciążającej oraz agresji ZSRR.
+| Rodzaj sił | Polska | Niemcy | Przewaga Niemiec |
+|---|---:|---:|---:|
+| Żołnierze | 1 mln | 2,75 mln | ok. 2,8 raza |
+| Czołgi ciężkie i średnie | 211 | 3206 | ok. 15 razy |
+| Samoloty bojowe | 400 | 3500 | prawie 9 razy |
+
+Przewaga ta ułatwiała Niemcom szybkie przełamania i okrążenia. Wynik zależał także od położenia Polski, problemów mobilizacji i łączności, braku ofensywy odciążającej oraz agresji ZSRR.
 
 ## Oś kampanii
 - **1 IX:** Niemcy napadają na Polskę; rozpoczyna się II wojna światowa.
@@ -26,8 +29,8 @@ Liczby pokazują skalę przewagi, ale wynik zależał także od współdziałani
 - **2–5 X:** walki pod Kockiem; złożenie broni 6 X.
 
 ## Dwa przykłady oporu
-- **Westerplatte:** żołnierze przez siedem dni bronili odizolowanej placówki. Fotografia z 8 IX pokazuje zniszczenia po kapitulacji, nie samą walkę.
-- **Warszawa:** fotografia Juliena Bryana dokumentuje mieszkańców budujących barykadę przy Nowogrodzkiej i Marszałkowskiej. Pokazuje konkretne działanie części cywilów, a nie doświadczenie wszystkich mieszkańców.
+- **Westerplatte:** żołnierze przez siedem dni bronili odizolowanej placówki. Obrona stała się jednym z symboli polskiego oporu.
+- **Warszawa:** mieszkańcy budowali barykady i inne umocnienia uliczne, wspierając obronę stolicy.
 
 ## Nie pomyl
 - Wypowiedzenie wojny Niemcom 3 IX nie było tym samym co skuteczna pomoc wojskowa dla Polski.
@@ -39,9 +42,9 @@ Liczby pokazują skalę przewagi, ale wynik zależał także od współdziałani
 - **agresja:** zbrojny atak jednego państwa na drugie;
 - **ofensywa odciążająca:** działania zmuszające przeciwnika do przeniesienia części sił z innego frontu;
 - **kapitulacja:** zaprzestanie walk na ustalonych warunkach;
-- **źródło z epoki:** materiał powstały w czasie opisywanych wydarzeń; także wymaga ustalenia autora, daty, celu i perspektywy.
+- **potencjał militarny:** ludzie i uzbrojenie, którymi państwo może dysponować podczas wojny.
 
 ## Sprawdź, czy rozumiesz
 1. Podaj dwa różne rodzaje dowodów przewagi Niemiec.
 2. Wyjaśnij, jak 17 IX zmienił sytuację Polski, nie nazywając tej daty końcem kampanii.
-3. Wybierz Westerplatte albo warszawską barykadę. Opisz miejsce, czas, działanie, znaczenie i jedną granicę fotografii.
+3. Wybierz Westerplatte albo warszawską barykadę. Opisz miejsce, czas, działanie i znaczenie tego przykładu.
