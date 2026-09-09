@@ -1,31 +1,47 @@
 # Najważniejsze po lekcji: Wojna obronna Polski we wrześniu 1939 roku
 
 ## Odpowiedź na główne pytanie
-Polska stawiała opór, lecz od 1 września walczyła z Niemcami, a od 17 września także ze Związkiem Sowieckim. Jej położenie pogarszały większe możliwości agresorów i brak skutecznej ofensywy sojuszników na Zachodzie. Klęska państwa nie przekreśla oporu żołnierzy i ludności cywilnej.
+Polska przegrała kampanię mimo rzeczywistego oporu, ponieważ Niemcy miały przewagę liczebną, techniczną i operacyjną, a położenie Polski utrudniało skuteczną obronę. Francja i Wielka Brytania wypowiedziały Niemcom wojnę, lecz nie rozpoczęły ofensywy odciążającej polski front. 17 września Związek Sowiecki zaatakował od wschodu, gdy walki z Niemcami już trwały.
 
-## Najważniejsze wnioski
-- Wypowiedzenie Niemcom wojny przez Francję i Wielką Brytanię 3 września nie oznaczało skutecznej pomocy wojskowej dla Polski.
-- Kampania składała się z wielu walk i etapów: od obrony Westerplatte po bitwę nad Bzurą, obronę Warszawy i walki pod Kockiem.
-- Atak Związku Sowieckiego 17 września stworzył sytuację agresji z dwóch stron.
+## Przed wojną
+- Polska miała układy sojusznicze z Francją i Wielką Brytanią oraz odrzuciła żądania Niemiec.
+- **23 sierpnia 1939 r.** Niemcy i ZSRR podpisały pakt Ribbentrop–Mołotow. Tajny protokół przewidywał podział stref wpływów, w tym ziem polskich.
+- Józef Beck 5 maja 1939 r. publicznie uzasadniał odrzucenie ustępstw słowami o „pokoju za wszelką cenę” i „honorze”. Cytat pokazuje decyzję polityczną, nie stan armii.
 
-## Pojęcia, osoby i daty
-- **1 września 1939 r.:** Niemcy napadły na Polskę; początek II wojny światowej.
-- **3 września 1939 r.:** Francja i Wielka Brytania wypowiedziały wojnę Niemcom.
-- **17 września 1939 r.:** Związek Sowiecki napadł na Polskę od wschodu.
-- **agresja:** zbrojny atak jednego państwa na drugie.
-- **kapitulacja:** zaprzestanie walk przez wojsko, miasto lub twierdzę na ustalonych warunkach.
+## Skala niemieckiego uderzenia
+Dane przybliżone dla sił skierowanych przez Niemcy do inwazji:
+- blisko **1,5 mln żołnierzy** w 60 dywizjach;
+- ponad **2000 czołgów**;
+- około **1300 niemieckich samolotów bojowych** wobec nieco ponad **300 polskich** możliwych do użycia.
 
-## Uporządkuj wiedzę
-**Przed wojną:** zagrożenie ze strony Niemiec, pakt Ribbentrop–Mołotow, sojusze Polski  
-**1 IX:** agresja Niemiec i obrona na wielu frontach  
-**3 IX:** deklaracje wojny aliantów bez skutecznej ofensywy na Zachodzie  
-**9–19 IX:** bitwa nad Bzurą  
-**17 IX:** agresja Związku Sowieckiego  
-**28 IX / 5 X:** kapitulacja Warszawy / koniec walk pod Kockiem.
+Liczby pokazują skalę przewagi, ale wynik zależał także od współdziałania lotnictwa i wojsk lądowych, położenia Polski, problemów mobilizacji i łączności, braku ofensywy odciążającej oraz agresji ZSRR.
+
+## Oś kampanii
+- **1 IX:** Niemcy napadają na Polskę; rozpoczyna się II wojna światowa.
+- **3 IX:** Francja i Wielka Brytania wypowiadają Niemcom wojnę, ale nie przeprowadzają skutecznej ofensywy odciążającej.
+- **1–7 IX:** obrona Westerplatte.
+- **9–19 IX:** bitwa nad Bzurą — największa polska operacja zaczepna kampanii.
+- **17 IX:** ZSRR napada na Polskę od wschodu.
+- **28 IX:** kapitulacja Warszawy.
+- **2–5 X:** walki pod Kockiem; złożenie broni 6 X.
+
+## Dwa przykłady oporu
+- **Westerplatte:** żołnierze przez siedem dni bronili odizolowanej placówki. Fotografia z 8 IX pokazuje zniszczenia po kapitulacji, nie samą walkę.
+- **Warszawa:** fotografia Juliena Bryana dokumentuje mieszkańców budujących barykadę przy Nowogrodzkiej i Marszałkowskiej. Pokazuje konkretne działanie części cywilów, a nie doświadczenie wszystkich mieszkańców.
 
 ## Nie pomyl
-Kampania nie skończyła się 17 września. Opór był rzeczywisty, ale odwaga obrońców nie usuwała przewagi i sytuacji strategicznej dwóch agresji.
+- Wypowiedzenie wojny Niemcom 3 IX nie było tym samym co skuteczna pomoc wojskowa dla Polski.
+- Kampania nie skończyła się 17 IX — Warszawa i oddziały pod Kockiem walczyły nadal.
+- Agresja ZSRR nie wyjaśnia pierwszych niepowodzeń obrony, ale zasadniczo pogorszyła położenie Polski w trakcie kampanii.
+- Bohaterstwo ludzi i szanse państwa na zwycięstwo to dwa różne pytania.
 
-## Sprawdź, czy pamiętasz
-1. Podaj dwie przyczyny klęski Polski we wrześniu 1939 r. i wyjaśnij związek każdej z nich z położeniem państwa.
-2. Wybierz jedno wydarzenie kampanii. Umieść je w czasie i wyjaśnij, dlaczego nie wystarczy ono samo do opisania całej wojny obronnej.
+## Pojęcia
+- **agresja:** zbrojny atak jednego państwa na drugie;
+- **ofensywa odciążająca:** działania zmuszające przeciwnika do przeniesienia części sił z innego frontu;
+- **kapitulacja:** zaprzestanie walk na ustalonych warunkach;
+- **źródło z epoki:** materiał powstały w czasie opisywanych wydarzeń; także wymaga ustalenia autora, daty, celu i perspektywy.
+
+## Sprawdź, czy rozumiesz
+1. Podaj dwa różne rodzaje dowodów przewagi Niemiec.
+2. Wyjaśnij, jak 17 IX zmienił sytuację Polski, nie nazywając tej daty końcem kampanii.
+3. Wybierz Westerplatte albo warszawską barykadę. Opisz miejsce, czas, działanie, znaczenie i jedną granicę fotografii.

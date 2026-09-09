@@ -12,20 +12,51 @@ test('September dossier uses its required documentary layouts and critical slide
   for (const id of fixture.requiredIds) assert.match(slides, new RegExp(`id="${id}"`), id);
 });
 
-test('September dossier uses semantic gallery and a learner-facing task brief', () => {
-  assert.match(slides, /<lesson-gallery[^>]*>[\s\S]*data-gallery-item/);
+test('September dossier turns claims into visible evidence', () => {
+  const metrics = slides.match(/data-force-metric=/g) || [];
+  assert.equal(metrics.length, 3);
+  assert.match(slides, /id="przewaga-sil"[\s\S]*?(?:żołnier|czołg|samolot)/iu);
+  const quote = slides.match(/id="glos-epoki"[\s\S]*?\n---/u)?.[0] ?? '';
+  assert.match(quote, /<blockquote>/);
+  assert.match(quote, /<figcaption>/);
+  assert.match(quote, /5 (?:maja|V) 1939/iu);
+});
+
+test('September dossier uses concrete soldier and civilian case studies', () => {
+  const soldier = slides.match(/id="bohaterstwo-zolnierzy"[\s\S]*?\n---/u)?.[0] ?? '';
+  const civilians = slides.match(/id="bohaterstwo-cywilow"[\s\S]*?\n---/u)?.[0] ?? '';
+  assert.match(soldier, /data-case-role="(?:place|date|action|meaning)"/);
+  assert.match(civilians, /data-case-role="(?:place|date|action|meaning)"/);
+  for (const block of [soldier, civilians]) {
+    for (const role of ['place', 'date', 'action', 'meaning']) assert.match(block, new RegExp(`data-case-role="${role}"`));
+    assert.match(block, /<img[^>]+src="assets\//);
+  }
+});
+
+test('September dossier does not reuse a photograph as a substitute for new evidence', () => {
+  const imageSources = [...slides.matchAll(/<img[^>]+src="([^"]+)"/g)].map((match) => match[1]);
+  assert.equal(new Set(imageSources).size, imageSources.length);
+});
+
+test('September dossier keeps the learner-facing task brief concise', () => {
   assert.match(slides, /data-task-role="prompt"/);
   assert.match(slides, /data-task-role="time"/);
   assert.doesNotMatch(slides, /data-task-role="(?:product|criterion)"/);
   assert.doesNotMatch(slides, /(?:Kryterium sukcesu|Efekt pracy|Produkt)/i);
-  assert.doesNotMatch(slides, /<div class="lesson-gallery"/);
+});
+
+test('September dossier presents resistance as a campaign sequence, not a card catalogue', () => {
+  const resistance = slides.match(/id="opor"[\s\S]*?\n---/u)?.[0] ?? '';
+  assert.match(resistance, /<ol class="resistance-route">/);
+  assert.doesNotMatch(resistance, /comparison-grid/);
+  for (const place of ['Westerplatte', 'Bzura', 'Warszawa', 'Kock']) assert.match(resistance, new RegExp(place));
 });
 
 test('September dossier uses concise, natural learner-facing Polish', () => {
-  assert.match(slides, /^## Pierwsze dni$/m);
-  assert.match(slides, /^## Przyczyny klęski Polski$/m);
-  assert.match(slides, /\*\*Co przesądziło o klęsce Polski w kampanii 1939 roku\?\*\*/);
-  assert.match(slides, /<p class="source-method"><strong>Zobacz\. Opisz\.<\/strong><\/p>/);
+  assert.match(slides, /^## Trzy daty, które zmieniły kampanię$/m);
+  assert.match(slides, /^## Dlaczego obrona zakończyła się klęską\?$/m);
+  assert.match(slides, /Co cytat wyjaśnia o decyzji Polski/);
+  assert.match(slides, /Znaczenie i granica źródła/);
   assert.doesNotMatch(slides, /daty, które trzeba połączyć|nazwij ograniczenie|Język dowodu|mów konkretnie|Co porządkuje tę lekcję/i);
   assert.doesNotMatch(teacherGuide, /z których stron Polska była atakowana po 17 września|wskazuje ograniczenie każdego z nich/i);
 });
@@ -42,6 +73,6 @@ test('September dossier shows the campaign map once and keeps rights in source r
   assert.doesNotMatch(slides, /<figcaption>[^<]*(?:CC BY|domena publiczna|licencj)/i);
   assert.match(sources, /CC BY-SA 3\.0/);
   assert.match(sources, /domena publiczna/);
-  assert.match(slides, /<ol class="campaign-timeline">/);
+  assert.match(slides, /<ol class="resistance-route">/);
   assert.doesNotMatch(slides, /<div class="timeline-band">/);
 });

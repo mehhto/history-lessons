@@ -22,7 +22,7 @@ test('September dossier gives archival media projector-scale visual dominance', 
     const page = await browser.newPage({ viewport: { width: 1600, height: 900 } });
     await page.goto(`http://127.0.0.1:${server.address().port}/classes/8/wojna-obronna-polski-we-wrzesniu-1939-roku/`, { waitUntil: 'networkidle' });
     await page.waitForFunction(() => document.documentElement.dataset.presentationReady === 'true');
-    assert.equal(await page.evaluate(() => Reveal.getTotalSlides()), 12);
+    assert.equal(await page.evaluate(() => Reveal.getTotalSlides()), 14);
 
     const opening = await rect(page, '#otwarcie .hero-source-image');
     assert.ok(opening.width >= 1200 && opening.height >= 680, `opening media ${opening.width}x${opening.height}`);
@@ -67,40 +67,45 @@ test('September dossier gives archival media projector-scale visual dominance', 
     assert.equal(timeline.contentClearsRail, true);
 
     await page.evaluate(() => Reveal.slide(Reveal.getIndices(document.querySelector('#opor')).h));
-    const cardContrast = await page.$eval('#opor .comparison-grid article strong', (label) => {
-      const parse = (value) => value.match(/[\d.]+/g).slice(0, 3).map(Number);
-      const luminance = (rgb) => {
-        const linear = rgb.map((channel) => {
-          const value = channel / 255;
-          return value <= .04045 ? value / 12.92 : ((value + .055) / 1.055) ** 2.4;
-        });
-        return .2126 * linear[0] + .7152 * linear[1] + .0722 * linear[2];
+    const resistance = await page.$eval('#opor .resistance-route', (route) => {
+      const box = route.getBoundingClientRect();
+      const items = [...route.children].map((item) => item.getBoundingClientRect());
+      return {
+        width: box.width,
+        itemCount: items.length,
+        ordered: items.every((item, index) => index === 0 || item.left > items[index - 1].left),
+        fits: items.every((item) => item.right <= box.right + 1 && item.bottom <= box.bottom + 1),
       };
-      const foreground = luminance(parse(getComputedStyle(label).color));
-      const background = luminance(parse(getComputedStyle(label.closest('article')).backgroundColor));
-      return (Math.max(foreground, background) + .05) / (Math.min(foreground, background) + .05);
     });
-    assert.ok(cardContrast >= 4.5, `card heading contrast ${cardContrast}`);
-    const cardLabelsFit = await page.$$eval('#opor .comparison-grid article', (cards) => cards.every((card) => {
-      const cardBox = card.getBoundingClientRect();
-      const labelBox = card.querySelector('strong').getBoundingClientRect();
-      return labelBox.right <= cardBox.right && labelBox.bottom <= cardBox.bottom;
-    }));
-    assert.equal(cardLabelsFit, true);
+    assert.ok(resistance.width >= 900, `resistance width ${resistance.width}`);
+    assert.equal(resistance.itemCount, 4);
+    assert.equal(resistance.ordered, true);
+    assert.equal(resistance.fits, true);
 
-    await page.evaluate(() => Reveal.slide(Reveal.getIndices(document.querySelector('#fotografie')).h));
-    const photos = await page.$$eval('#fotografie [data-gallery-item] img', (images) => images.map((image) => {
-      const box = image.getBoundingClientRect();
-      return { width: box.width, height: box.height };
+    await page.evaluate(() => Reveal.slide(Reveal.getIndices(document.querySelector('#przewaga-sil')).h));
+    const metrics = await page.$$eval('#przewaga-sil [data-force-metric]', (items) => items.map((item) => {
+      const box = item.getBoundingClientRect();
+      const values = [...item.querySelectorAll('strong')].map((value) => value.getBoundingClientRect());
+      return { width: box.width, height: box.height, valuesFit: values.every((value) => value.right <= box.right && value.bottom <= box.bottom) };
     }));
-    assert.equal(photos.length, 2);
-    for (const photo of photos) assert.ok(photo.width >= 480 && photo.height >= 320, `photo ${photo.width}x${photo.height}`);
-    const photoCaption = await page.$eval('#fotografie figcaption', (caption) => {
-      const style = getComputedStyle(caption);
-      return { fontSize: style.fontSize, lineHeight: style.lineHeight, borderLeftWidth: style.borderLeftWidth };
-    });
-    assert.deepEqual(photoCaption, mapCaption);
-    assert.doesNotMatch(await page.$eval('#fotografie', (slide) => slide.innerText), /CC BY|domena publiczna|licencj/i);
+    assert.equal(metrics.length, 3);
+    assert.ok(metrics.every((item) => item.width >= 250 && item.height >= 170 && item.valuesFit), JSON.stringify(metrics));
+
+    await page.evaluate(() => Reveal.slide(Reveal.getIndices(document.querySelector('#glos-epoki')).h));
+    const quote = await rect(page, '#glos-epoki blockquote');
+    assert.ok(quote.width >= 480 && quote.height >= 120, `quote ${quote.width}x${quote.height}`);
+
+    for (const id of ['bohaterstwo-zolnierzy', 'bohaterstwo-cywilow']) {
+      await page.evaluate((slideId) => Reveal.slide(Reveal.getIndices(document.querySelector(`#${slideId}`)).h), id);
+      const image = await rect(page, `#${id} img`);
+      assert.ok(image.width >= 600 && image.height >= 360, `${id} image ${image.width}x${image.height}`);
+      const factBlocks = await page.$$eval(`#${id} [data-case-role]`, (items) => items.map((item) => {
+        const box = item.getBoundingClientRect();
+        return { width: box.width, height: box.height, scrollWidth: item.scrollWidth, scrollHeight: item.scrollHeight };
+      }));
+      assert.equal(factBlocks.length, 4);
+      assert.ok(factBlocks.every((item) => item.scrollWidth <= item.width + 1 && item.scrollHeight <= item.height + 1), JSON.stringify(factBlocks));
+    }
 
     await page.evaluate(() => Reveal.slide(Reveal.getIndices(document.querySelector('#synteza')).h));
     const summaryContrasts = await page.$$eval('#synteza .argument-evidence strong', (labels) => {
