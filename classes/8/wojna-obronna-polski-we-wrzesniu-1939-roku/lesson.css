@@ -118,8 +118,8 @@ html .reveal .slides #mapa-kampanii .source-figure img {
   height: 458px;
   max-height: none;
   object-fit: contain;
-  background: #fff;
-  box-shadow: 0 16px 36px rgba(17,27,37,.20);
+  background: transparent;
+  filter: drop-shadow(0 12px 18px rgba(17,27,37,.18));
 }
 #mapa-kampanii .source-figure figcaption { font-size: 18px; line-height: 1.15; }
 #mapa-kampanii .analysis-panel {
@@ -136,7 +136,7 @@ html .reveal .slides #mapa-kampanii .source-figure img {
 
 /* Slajd wprowadzający korzysta z tej samej skali mapy. */
 #polozenie .source-split-grid { grid-template-columns: minmax(0, 2.5fr) minmax(300px, 1fr); gap: 28px; }
-html .reveal .slides #polozenie .source-figure img { height: 420px; max-height: none; object-fit: contain; background:#fff; }
+html .reveal .slides #polozenie .source-figure img { height: 420px; max-height: none; object-fit: contain; background: transparent; filter: drop-shadow(0 12px 18px rgba(17,27,37,.16)); }
 #polozenie .analysis-panel { padding: 26px; color:#fff; background:var(--dossier-blue); font-size:.66em; line-height:1.3; }
 
 /* Fotografie zajmują niemal całe pole robocze. */

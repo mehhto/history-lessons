@@ -31,6 +31,8 @@ test('September dossier gives archival media projector-scale visual dominance', 
     await page.evaluate(() => Reveal.slide(Reveal.getIndices(document.querySelector('#mapa-kampanii')).h));
     const map = await rect(page, '#mapa-kampanii img');
     assert.ok(map.width >= 690 && map.height >= 420, `map ${map.width}x${map.height}`);
+    const mapBackground = await page.$eval('#mapa-kampanii img', (image) => getComputedStyle(image).backgroundColor);
+    assert.equal(mapBackground, 'rgba(0, 0, 0, 0)');
 
     await page.evaluate(() => Reveal.slide(Reveal.getIndices(document.querySelector('#fotografie')).h));
     const photos = await page.$$eval('#fotografie [data-gallery-item] img', (images) => images.map((image) => {
