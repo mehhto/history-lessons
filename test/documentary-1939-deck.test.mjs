@@ -30,6 +30,13 @@ test('September dossier uses concise, natural learner-facing Polish', () => {
   assert.doesNotMatch(teacherGuide, /z których stron Polska była atakowana po 17 września|wskazuje ograniczenie każdego z nich/i);
 });
 
+test('prewar situation and campaign timeline have distinct teaching roles', () => {
+  const prewarSlide = slides.match(/id="polozenie"[\s\S]*?\n---/u)?.[0] ?? '';
+  assert.match(prewarSlide, /23 sierpnia/);
+  assert.match(prewarSlide, /układy sojusznicze/);
+  assert.doesNotMatch(prewarSlide, /3 września|17 września|skuteczn[a-ząćęłńóśźż]* ofensyw/iu);
+});
+
 test('September dossier shows the campaign map once and keeps rights in source records', () => {
   assert.equal((slides.match(/mapa-kampanii-polskiej-1939\.png/g) || []).length, 1);
   assert.doesNotMatch(slides, /<figcaption>[^<]*(?:CC BY|domena publiczna|licencj)/i);

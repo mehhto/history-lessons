@@ -12,8 +12,8 @@
 
 <!-- .slide: id="polozenie" class="explanation-slide" data-purpose="explanation" data-layout="source-split" -->
 ## Polska przed wybuchem wojny
-<div class="geopolitical-stage"><div class="relation allies"><span>Sojusznicy Polski</span><strong>Francja i Wielka Brytania</strong><p>Łączyły je z Polską układy sojusznicze. 3 września wypowiedziały Niemcom wojnę.</p></div><div class="poland-core"><span>Europa, 1939</span><strong>Polska</strong></div><div class="relation aggressors"><span>Porozumienie agresorów</span><strong>Niemcy i Związek Sowiecki</strong><p>23 sierpnia podpisały pakt Ribbentrop–Mołotow. Tajny protokół przewidywał podział stref wpływów.</p></div></div>
-<p class="stage-conclusion">Wypowiedzenie wojny Niemcom nie oznaczało skutecznej ofensywy aliantów na Zachodzie.</p>
+<div class="geopolitical-stage"><div class="relation allies"><span>Sojusznicy Polski</span><strong>Francja i Wielka Brytania</strong><p>Polskę łączyły z nimi układy sojusznicze. Miały udzielić jej pomocy w razie niemieckiego ataku.</p></div><div class="poland-core"><span>Europa, 1939</span><strong>Polska</strong></div><div class="relation aggressors"><span>Tajny układ</span><strong>Niemcy i Związek Sowiecki</strong><p>23 sierpnia zawarły pakt Ribbentrop–Mołotow. Tajny protokół przewidywał podział ziem polskich między oba państwa.</p></div></div>
+<p class="stage-conclusion">Przed 1 września Polska miała formalnych sojuszników, a jednocześnie była zagrożona przez współpracę Niemiec i Związku Sowieckiego.</p>
 
 ---
 
