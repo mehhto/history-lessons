@@ -23,7 +23,7 @@
 ---
 
 <!-- .slide: id="pierwsze-dni" class="explanation-slide" data-purpose="explanation" data-layout="timeline-band" -->
-## Pierwsze dni: daty, które trzeba połączyć
+## Pierwsze dni
 <div class="timeline-band"><article><strong>1&nbsp;IX</strong>Niemcy napadają na Polskę.</article><article><strong>3&nbsp;IX</strong>Wielka Brytania i Francja wypowiadają Niemcom wojnę.</article><article><strong>17&nbsp;IX</strong>Związek Sowiecki napada na Polskę od wschodu.</article></div>
 <p>Wypowiedzenie wojny przez aliantów nie przyniosło Polsce skutecznej ofensywy na Zachodzie.</p>
 
@@ -31,7 +31,7 @@
 
 <!-- .slide: id="opor" class="explanation-slide" data-purpose="explanation" data-layout="comparison" -->
 ## Opór był rzeczywisty — kampania miała wiele miejsc
-<div class="comparison-grid" style="--comparison-columns: 4"><article><strong>Westerplatte</strong><br>obrona 1–7 września</article><article><strong>Bzura</strong><br>największa polska operacja zaczepna, 9–19 września</article><article><strong>Warszawa</strong><br>obrona miasta do 28 września</article><article><strong>Kock</strong><br>walki trwały do 5 października</article></div>
+<div class="comparison-grid"><article><strong>Westerplatte</strong><br>obrona 1–7 września</article><article><strong>Bzura</strong><br>największa polska operacja zaczepna, 9–19 września</article><article><strong>Warszawa</strong><br>obrona miasta do 28 września</article><article><strong>Kock</strong><br>walki trwały do 5 października</article></div>
 <p>Przykłady oporu nie są zaprzeczeniem klęski państwa; pokazują, że klęska miała przyczyny strategiczne.</p>
 
 ---
@@ -57,7 +57,7 @@
 
 <!-- .slide: id="chronologia" class="practice-slide" data-purpose="practice" data-layout="task-board" -->
 ## Praca w parach: uporządkuj kampanię
-<div class="student-task"><div data-task-role="prompt">Ułóż oś: <strong>1&nbsp;IX, 3&nbsp;IX, 17&nbsp;IX, 28&nbsp;IX, 5&nbsp;X</strong>. Przy dwóch datach wyjaśnij zmianę sytuacji Polski.</div><div data-task-role="time"><span data-task-label>Czas</span>5 minut</div><div data-task-role="product"><span data-task-label>Produkt</span>Oś z dwoma dopiskami</div><div data-task-role="criterion"><span data-task-label>Kryterium sukcesu</span>Data połączona z wydarzeniem i przyczyną</div></div>
+<div class="student-task"><div data-task-role="prompt">Ułóż oś: <strong>1&nbsp;IX, 3&nbsp;IX, 17&nbsp;IX, 28&nbsp;IX, 5&nbsp;X</strong>. Przy dwóch datach wyjaśnij zmianę sytuacji Polski.</div><div data-task-role="time"><span data-task-label>Czas</span>5 minut</div><div data-task-role="product"><span data-task-label>Efekt pracy</span>Oś czasu z dwoma wyjaśnieniami</div><div data-task-role="criterion"><span data-task-label>Kryterium sukcesu</span>Data połączona z wydarzeniem i przyczyną</div></div>
 
 ---
 

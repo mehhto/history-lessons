@@ -35,6 +35,28 @@ test('September dossier gives archival media projector-scale visual dominance', 
     const mapBackground = await page.$eval('#mapa-kampanii img', (image) => getComputedStyle(image).backgroundColor);
     assert.equal(mapBackground, 'rgba(0, 0, 0, 0)');
 
+    await page.evaluate(() => Reveal.slide(Reveal.getIndices(document.querySelector('#opor')).h));
+    const cardContrast = await page.$eval('#opor .comparison-grid article strong', (label) => {
+      const parse = (value) => value.match(/[\d.]+/g).slice(0, 3).map(Number);
+      const luminance = (rgb) => {
+        const linear = rgb.map((channel) => {
+          const value = channel / 255;
+          return value <= .04045 ? value / 12.92 : ((value + .055) / 1.055) ** 2.4;
+        });
+        return .2126 * linear[0] + .7152 * linear[1] + .0722 * linear[2];
+      };
+      const foreground = luminance(parse(getComputedStyle(label).color));
+      const background = luminance(parse(getComputedStyle(label.closest('article')).backgroundColor));
+      return (Math.max(foreground, background) + .05) / (Math.min(foreground, background) + .05);
+    });
+    assert.ok(cardContrast >= 4.5, `card heading contrast ${cardContrast}`);
+    const cardLabelsFit = await page.$$eval('#opor .comparison-grid article', (cards) => cards.every((card) => {
+      const cardBox = card.getBoundingClientRect();
+      const labelBox = card.querySelector('strong').getBoundingClientRect();
+      return labelBox.right <= cardBox.right && labelBox.bottom <= cardBox.bottom;
+    }));
+    assert.equal(cardLabelsFit, true);
+
     await page.evaluate(() => Reveal.slide(Reveal.getIndices(document.querySelector('#fotografie')).h));
     const photos = await page.$$eval('#fotografie [data-gallery-item] img', (images) => images.map((image) => {
       const box = image.getBoundingClientRect();

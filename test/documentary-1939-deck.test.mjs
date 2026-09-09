@@ -13,5 +13,9 @@ test('September dossier uses its required documentary layouts and critical slide
 test('September dossier uses semantic gallery and complete task board markup', () => {
   assert.match(slides, /<lesson-gallery[^>]*>[\s\S]*data-gallery-item/);
   for (const role of ['prompt', 'time', 'product', 'criterion']) assert.match(slides, new RegExp(`data-task-role="${role}"`));
+  assert.match(slides, /<span data-task-label>Efekt pracy<\/span>/);
+  assert.doesNotMatch(slides, /<span data-task-label>Produkt<\/span>/);
+  assert.doesNotMatch(slides, /daty, które trzeba połączyć/i);
+  assert.match(slides, /## Pierwsze dni\s/);
   assert.doesNotMatch(slides, /<div class="lesson-gallery"/);
 });

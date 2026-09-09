@@ -203,14 +203,22 @@ html .reveal .slides #fotografie lesson-gallery.photo-pair figcaption {
 
 #opor .comparison-grid,
 #bohaterstwo .comparison-grid { gap: 18px; }
+#opor .comparison-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 #opor .comparison-grid article,
 #bohaterstwo .comparison-grid article {
-  min-height: 5.4em;
   padding: .72em;
   border: 0;
   border-top: .22em solid var(--dossier-red);
   color: #fff;
   background: var(--dossier-blue);
+}
+#opor .comparison-grid article { min-height: 3.15em; }
+#opor .slide-content > p { margin: .35em 0 0; font-size: .78em; line-height: 1.18; }
+#bohaterstwo .comparison-grid article { min-height: 5.4em; }
+#opor .comparison-grid article strong,
+#bohaterstwo .comparison-grid article strong {
+  color: #fff;
+  font-size: 1.08em;
 }
 
 /* Zadanie: wyraźny obiekt pracy zamiast bladej tabeli. */
