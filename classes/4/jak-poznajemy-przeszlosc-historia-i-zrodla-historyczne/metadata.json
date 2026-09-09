@@ -1,0 +1,21 @@
+{
+  "id": "jak-poznajemy-przeszlosc-historia-i-zrodla-historyczne",
+  "title": "Jak poznajemy przeszłość? Historia i źródła historyczne",
+  "grade": 4,
+  "school_year": "2026/2027",
+  "curriculum_version": "nowa-2026",
+  "duration_minutes": 45,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "status": "SZKIC",
+  "curriculum_requirement": "Klasy IV–VI, 1. Refleksja nad historią jako nauką, podpunkty 1–6",
+  "main_question": "Jak z zachowanych śladów budujemy wiarygodną wiedzę o przeszłości?",
+  "source_reviewed": true,
+  "teacher_reviewed": false,
+  "offline_checked": true,
+  "pdf_exported": false,
+  "appearance": {
+    "style": "museum",
+    "palette": "sand"
+  }
+}
