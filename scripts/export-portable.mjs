@@ -345,7 +345,8 @@ export async function buildPortablePresentation({ repoRoot, lessonDirectory }) {
     readFile(path.join(root, 'template/presentation/portable-assets.js'), 'utf8'),
     bundledRuntime(root),
   ]);
-  const markdown = inlineRawHtmlTokens(inlineMarkdownImages(sourceMarkdown, assets), assets);
+  const normalizedMarkdown = sourceMarkdown.replace(/\r\n?/g, '\n');
+  const markdown = inlineRawHtmlTokens(inlineMarkdownImages(normalizedMarkdown, assets), assets);
   const runtimeAssets = validateMarkdownResources(markdown, assets);
   const title = String(metadata.title || 'Lekcja historii').replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
   const portableConfig = `globalThis.__LESSON_PORTABLE__=${JSON.stringify({ metadata: portableMetadata, assets: runtimeAssets })};`;

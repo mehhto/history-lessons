@@ -107,6 +107,19 @@ test('portable export resolves dot-relative Unicode assets and escapes raw-text 
   }
 });
 
+test('portable export inlines raw HTML images from Windows CRLF Markdown', async () => {
+  const directory = await fixture({
+    slides: '<!-- .slide: id="test" class="opening-slide" data-purpose="opening" data-layout="statement-centered" -->\r\n<img src="assets/zażółć.png" alt="Piksel">\r\n<div>\r\n## Próba\r\n</div>\r\n',
+  });
+  try {
+    const html = await buildPortablePresentation({ repoRoot: root, lessonDirectory: directory });
+    assert.doesNotMatch(html, /src="assets\/zażółć\.png"/);
+    assert.match(html, /src="data:image\/png;base64,/);
+  } finally {
+    await rm(directory, { recursive: true, force: true });
+  }
+});
+
 test('portable export rejects automatic network resources before creating HTML', async () => {
   const variants = [
     '<!-- .slide: id="test" class="source-slide" data-purpose="evidence" data-layout="source-focus" -->\n## Próba\n<img src="https://example.invalid/track.png" alt="Zewnętrzny obraz">\n',
