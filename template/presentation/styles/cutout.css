@@ -1,0 +1,30 @@
+html[data-style="cutout"] .reveal {
+  --font-heading: "Arial Rounded MT Bold", Inter, Aptos, Arial, sans-serif;
+}
+
+html[data-style="cutout"] .reveal .slides section[data-slide-canvas] {
+  background: var(--color-canvas) !important;
+  color: var(--color-text);
+}
+
+html[data-style="cutout"] .reveal h1,
+html[data-style="cutout"] .reveal h2,
+html[data-style="cutout"] .reveal h3 {
+  color: var(--color-heading);
+  font-family: var(--font-heading);
+  font-variant: normal;
+  font-weight: 900;
+  letter-spacing: -.025em;
+  text-transform: none;
+}
+
+html[data-style="cutout"] .reveal .slides section.question-slide,
+html[data-style="cutout"] .reveal .slides section.practice-slide,
+html[data-style="cutout"] .reveal .slides section.exit-ticket-slide {
+  border-left: .28rem solid var(--color-border);
+}
+
+html[data-style="cutout"] .reveal figure,
+html[data-style="cutout"] .reveal .student-task {
+  border-color: var(--color-border);
+}

@@ -1,14 +1,15 @@
 /* Klasa IV: żywa paleta „detektyw przeszłości”, bez zdalnych zasobów. */
 
 :root {
-  --detective-navy: #17324d;
-  --detective-blue: #24577a;
-  --detective-orange: #dc6237;
-  --detective-yellow: #f2bb35;
-  --detective-teal: #23877c;
-  --detective-cream: #fff5dc;
-  --detective-paper: #fffdf7;
-  --detective-ink: #1d2935;
+  --detective-navy: #122c33;
+  --detective-blue: #3c6f78;
+  --detective-orange: #f26b3a;
+  --detective-yellow: #ffd548;
+  --detective-teal: #55c1b3;
+  --detective-lilac: #b7a4e6;
+  --detective-cream: #fff7e2;
+  --detective-paper: #ffffff;
+  --detective-ink: #122c33;
 }
 
 .reveal .prompt-line {
@@ -132,6 +133,7 @@
 
 .reveal #pytanie .mystery-question h2 {
   align-self: start;
+  width: auto;
   margin: 0;
   color: var(--detective-navy);
   font-size: 1.62em;
@@ -521,7 +523,7 @@
   box-shadow: 12px 12px 0 rgba(23,50,77,.35);
   transform: rotate(4deg);
 }
-#zadanie .mission-time small { display: block; margin-top: -14px; font-size: .3em; text-transform: lowercase; }
+#zadanie .mission-time small { display: block; margin-top: -14px; font-size: .3em; }
 
 /* 14. Wniosek */
 .reveal #metoda { background: #fff1bf !important; }
@@ -602,4 +604,306 @@
   box-shadow: 14px 14px 0 var(--detective-orange);
   font-size: 1em;
   line-height: 1.35;
+}
+
+/* Kierunek C — warstwowa wycinanka dla klasy IV. */
+.reveal .slides section {
+  background-color: var(--detective-cream);
+  color: var(--detective-ink);
+}
+
+.reveal .slides section h1,
+.reveal .slides section h2,
+.reveal .slides section h3 {
+  color: var(--detective-ink);
+  font-family: "Arial Rounded MT Bold", Inter, Aptos, Arial, sans-serif;
+  font-weight: 900;
+  font-variant: normal;
+  letter-spacing: -.025em;
+  text-transform: none;
+}
+
+.reveal .slides section h2 {
+  position: relative;
+  z-index: 1;
+  width: max-content;
+  max-width: 100%;
+}
+
+.reveal .slides section h2::after {
+  content: "";
+  position: absolute;
+  right: -12px;
+  bottom: 2px;
+  left: -5px;
+  z-index: -1;
+  height: 15px;
+  background: var(--detective-yellow);
+  transform: rotate(-.5deg);
+}
+
+.reveal .prompt-line {
+  border: 3px solid var(--detective-ink);
+  border-radius: 24px 8px 22px 9px;
+  background: #fff;
+  box-shadow: 6px 6px 0 var(--detective-orange);
+}
+
+/* Otwarcie i pytanie: mocne, ale nie technologiczne. */
+.reveal #otwarcie {
+  background:
+    radial-gradient(circle at 7% 10%, rgba(255,213,72,.21) 0 105px, transparent 108px),
+    linear-gradient(105deg, var(--detective-navy) 0 62%, #e8efed 62% 100%) !important;
+}
+
+#otwarcie figure {
+  border: 4px solid var(--detective-ink);
+  border-radius: 38px 10px 36px 14px;
+  box-shadow: 13px 13px 0 var(--detective-teal);
+  transform: rotate(1.3deg);
+}
+
+#otwarcie figure img { border-radius: 25px 5px 20px 5px; }
+
+.reveal #pytanie {
+  background:
+    radial-gradient(circle at 94% 9%, var(--detective-teal) 0 105px, transparent 108px),
+    radial-gradient(ellipse at 7% 96%, var(--detective-lilac) 0 130px, transparent 133px),
+    var(--detective-cream) !important;
+}
+
+#pytanie .giant-mark {
+  border: 4px solid var(--detective-ink);
+  border-radius: 45% 55% 62% 38%;
+  color: var(--detective-ink);
+  background: var(--detective-yellow);
+  box-shadow: 13px 13px 0 var(--detective-orange);
+}
+
+/* Kategorie: trzy ciepłe, wyraźnie różne wycinanki. */
+#trzy-znaczenia .history-meanings article {
+  border: 4px solid var(--detective-ink);
+  color: var(--detective-ink);
+  box-shadow: 9px 9px 0 var(--detective-ink);
+}
+
+#trzy-znaczenia .history-meanings article:nth-child(1) {
+  border-radius: 42px 12px 35px 10px;
+  background: var(--detective-yellow);
+}
+#trzy-znaczenia .history-meanings article:nth-child(2) {
+  border-radius: 13px 42px 12px 35px;
+  background: var(--detective-teal);
+}
+#trzy-znaczenia .history-meanings article:nth-child(3) {
+  border-radius: 36px 14px 40px 12px;
+  background: var(--detective-lilac);
+}
+
+#trzy-znaczenia .history-meanings span {
+  width: max-content;
+  padding: 7px 11px;
+  border: 3px solid var(--detective-ink);
+  border-radius: 999px;
+  color: var(--detective-ink);
+  background: #fff;
+}
+
+#trzy-znaczenia .history-meanings strong { color: var(--detective-ink); }
+
+/* Zagadki: odpowiedź nadal pojawia się dopiero po decyzji. */
+.reveal #opowiesci {
+  background:
+    radial-gradient(ellipse at 100% 100%, rgba(242,107,58,.25) 0 170px, transparent 173px),
+    var(--detective-cream) !important;
+}
+
+#opowiesci .story-riddles details {
+  border: 4px solid var(--detective-ink);
+  border-radius: 36px 12px 30px 10px;
+  background: var(--detective-yellow);
+  box-shadow: 8px 8px 0 var(--detective-ink);
+}
+#opowiesci .story-riddles details:nth-child(2) {
+  border-radius: 12px 36px 10px 30px;
+  background: var(--detective-teal);
+}
+#opowiesci .story-riddles details:nth-child(3) {
+  border-radius: 34px 12px 38px 10px;
+  background: var(--detective-lilac);
+}
+#opowiesci .story-riddles details[open] summary { border-bottom: 3px dashed var(--detective-ink); }
+#opowiesci .story-riddles summary span {
+  width: max-content;
+  padding: 6px 10px;
+  border: 3px solid var(--detective-ink);
+  border-radius: 999px;
+  color: var(--detective-ink) !important;
+  background: #fff;
+}
+#opowiesci .story-riddles summary::after {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 3px solid var(--detective-ink);
+  border-radius: 50%;
+  color: var(--detective-ink);
+  background: #fff;
+  font-size: 1em;
+}
+#opowiesci .story-riddles summary:focus-visible,
+#opowiesci .story-riddles summary:hover {
+  outline: 5px solid #fff;
+  outline-offset: -10px;
+}
+
+/* Zastosowania i typy źródeł: kolor oznacza równoległą kategorię. */
+.reveal #po-co {
+  background:
+    radial-gradient(circle at 96% 7%, var(--detective-yellow) 0 95px, transparent 98px),
+    var(--detective-cream) !important;
+}
+.reveal #po-co h2 { color: var(--detective-ink); }
+#po-co lesson-icon-list li,
+#zrodla .source-matrix article {
+  border: 4px solid var(--detective-ink);
+  border-radius: 34px 10px 30px 12px;
+  color: var(--detective-ink);
+  box-shadow: 8px 8px 0 var(--detective-ink);
+}
+#po-co lesson-icon-list li:nth-child(1),
+#zrodla .source-matrix article:nth-child(1) { background: var(--detective-yellow); }
+#po-co lesson-icon-list li:nth-child(2),
+#zrodla .source-matrix article:nth-child(2) { background: var(--detective-teal); }
+#po-co lesson-icon-list li:nth-child(3),
+#zrodla .source-matrix article:nth-child(3) { background: var(--detective-lilac); }
+#po-co lesson-icon-list li:nth-child(4),
+#zrodla .source-matrix article:nth-child(4) { background: var(--detective-orange); }
+#po-co lesson-icon-list strong,
+#zrodla .source-matrix strong { color: var(--detective-ink); }
+
+/* Proces pozostaje ścieżką, nie wraca do układu kart. */
+#historyk .detective-trail::before { border-top-color: var(--detective-ink); }
+#historyk .detective-trail span {
+  border: 4px solid var(--detective-ink);
+  color: var(--detective-ink);
+  background: var(--detective-yellow);
+  box-shadow: 7px 7px 0 var(--detective-ink);
+}
+#historyk .detective-trail article:nth-child(2) span,
+#historyk .detective-trail article:nth-child(5) span {
+  background: var(--detective-teal);
+  box-shadow: 7px 7px 0 var(--detective-ink);
+}
+#historyk .detective-trail article:nth-child(3) span {
+  background: var(--detective-lilac);
+  box-shadow: 7px 7px 0 var(--detective-ink);
+}
+#historyk .detective-trail article:nth-child(4) span { background: var(--detective-orange); }
+
+/* Obrazy pozostają neutralne, kolor ma tylko rama lub panel pytania. */
+.reveal #dwaj-badacze { background: #e8efed !important; }
+#dwaj-badacze .researcher-pair figure,
+#sledztwo-foto .source-figure,
+#sledztwo-rzecz .source-figure,
+#sledztwo-dokument .source-figure {
+  padding: 12px;
+  border: 4px solid var(--detective-ink);
+  border-radius: 24px 8px 22px 9px;
+  background: #fff;
+  box-shadow: 9px 9px 0 var(--detective-teal);
+}
+
+.reveal #wiarygodnosc { background: var(--detective-navy) !important; }
+#wiarygodnosc .scanner-core { box-shadow: 9px 9px 0 var(--detective-orange); }
+#wiarygodnosc .source-scanner article {
+  border: 4px solid var(--detective-ink);
+  border-radius: 28px 8px 26px 10px;
+  box-shadow: 7px 7px 0 var(--detective-yellow);
+}
+
+#sledztwo-foto .analysis-panel,
+#sledztwo-rzecz .analysis-panel,
+#sledztwo-dokument .analysis-panel {
+  border: 4px solid var(--detective-ink);
+  border-radius: 34px 10px 30px 12px;
+  color: var(--detective-ink);
+  box-shadow: 9px 9px 0 var(--detective-ink);
+}
+#sledztwo-foto .analysis-panel { background: var(--detective-orange); }
+#sledztwo-rzecz .analysis-panel { background: var(--detective-teal); }
+#sledztwo-dokument .analysis-panel { background: var(--detective-lilac); }
+#sledztwo-foto .analysis-panel strong,
+#sledztwo-rzecz .analysis-panel strong,
+#sledztwo-dokument .analysis-panel strong { color: var(--detective-ink); }
+
+/* Misja, synteza i bilet: jeden gest na funkcję. */
+.reveal #zadanie {
+  background:
+    radial-gradient(circle at 96% 8%, var(--detective-lilac) 0 115px, transparent 118px),
+    linear-gradient(145deg, var(--detective-yellow) 0 74%, var(--detective-orange) 74% 100%) !important;
+  color: var(--detective-ink);
+}
+#zadanie .mission-kicker {
+  width: max-content;
+  padding: 7px 12px;
+  border: 3px solid var(--detective-ink);
+  border-radius: 999px;
+  color: var(--detective-ink);
+  background: #fff;
+  box-shadow: 4px 4px 0 var(--detective-ink);
+}
+.reveal #zadanie .mission-board h2 { color: var(--detective-ink); }
+#zadanie .mission-time {
+  border: 4px solid var(--detective-ink);
+  border-radius: 43% 57% 61% 39%;
+  background: var(--detective-teal);
+  box-shadow: 10px 10px 0 var(--detective-ink);
+}
+
+.reveal #metoda { background: var(--detective-cream) !important; }
+#metoda .method-flow span,
+#metoda .method-flow .result {
+  border: 4px solid var(--detective-ink);
+  border-radius: 35px 10px 34px 12px;
+  color: var(--detective-ink);
+  background: var(--detective-yellow);
+  box-shadow: 7px 7px 0 var(--detective-ink);
+}
+#metoda .method-flow span:nth-of-type(2) { background: var(--detective-teal); }
+#metoda .method-flow span:nth-of-type(3) { background: var(--detective-lilac); }
+#metoda .method-flow .result {
+  border-radius: 12px 38px 10px 36px;
+  background: var(--detective-orange);
+}
+
+#podsumowanie .final-rule span {
+  border: 4px solid var(--detective-ink);
+  border-radius: 28px 9px 26px 10px;
+  color: var(--detective-ink);
+  background: var(--detective-yellow);
+  box-shadow: 7px 7px 0 var(--detective-yellow);
+}
+#podsumowanie .final-rule span:nth-of-type(2) { background: var(--detective-teal); }
+#podsumowanie .final-rule span:nth-of-type(3) { background: var(--detective-orange); }
+
+.reveal #bilet {
+  background:
+    radial-gradient(ellipse at 100% 0, var(--detective-teal) 0 150px, transparent 153px),
+    radial-gradient(ellipse at 0 100%, var(--detective-lilac) 0 140px, transparent 143px),
+    var(--detective-cream) !important;
+}
+#bilet .exit-prompt {
+  border-color: var(--detective-ink);
+  border-radius: 38px 12px 36px 13px;
+}
+
+.reveal #pytanie .mystery-question h2 { width: auto; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition: none !important;
+    animation: none !important;
+  }
 }
