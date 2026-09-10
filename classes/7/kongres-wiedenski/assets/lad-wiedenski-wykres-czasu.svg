@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+<title id="title">Trwałość i napięcia ładu wiedeńskiego w latach 1815–1914</title>
+<desc id="desc">Wykres czasu pokazuje brak wojny obejmującej wszystkie główne mocarstwa przez prawie sto lat oraz liczne rewolucje i wojny regionalne.</desc>
+<rect width="1280" height="720" fill="#152536"/>
+<text x="640" y="68" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="34" font-weight="700" fill="#fff">Ład wiedeński: stabilność nie oznaczała ciszy</text>
+<text x="640" y="112" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="21" fill="#d7e0e8">1815–1914: bez wojny obejmującej wszystkie główne mocarstwa europejskie</text>
+<line x1="100" y1="352" x2="1180" y2="352" stroke="#d5b46c" stroke-width="9"/>
+<g font-family="DejaVu Sans, sans-serif">
+<g fill="#fff"><text x="100" y="400" text-anchor="middle" font-size="25" font-weight="700">1815</text><text x="1180" y="400" text-anchor="middle" font-size="25" font-weight="700">1914</text></g>
+<g stroke="#c85d64" stroke-width="5" fill="#c85d64">
+<line x1="250" y1="330" x2="250" y2="238"/><circle cx="250" cy="352" r="13"/><text x="250" y="208" text-anchor="middle" stroke="none" fill="#fff" font-size="21" font-weight="700">1821–1829</text><text x="250" y="233" text-anchor="middle" stroke="none" fill="#d7e0e8" font-size="17">walka Greków</text>
+<line x1="355" y1="374" x2="355" y2="470"/><circle cx="355" cy="352" r="13"/><text x="355" y="506" text-anchor="middle" stroke="none" fill="#fff" font-size="21" font-weight="700">1830</text><text x="355" y="532" text-anchor="middle" stroke="none" fill="#d7e0e8" font-size="17">rewolucje i powstania</text>
+<line x1="545" y1="330" x2="545" y2="238"/><circle cx="545" cy="352" r="13"/><text x="545" y="208" text-anchor="middle" stroke="none" fill="#fff" font-size="21" font-weight="700">1848</text><text x="545" y="233" text-anchor="middle" stroke="none" fill="#d7e0e8" font-size="17">Wiosna Ludów</text>
+<line x1="690" y1="374" x2="690" y2="470"/><circle cx="690" cy="352" r="13"/><text x="690" y="506" text-anchor="middle" stroke="none" fill="#fff" font-size="21" font-weight="700">1853–1856</text><text x="690" y="532" text-anchor="middle" stroke="none" fill="#d7e0e8" font-size="17">wojna krymska</text>
+<line x1="875" y1="330" x2="875" y2="238"/><circle cx="875" cy="352" r="13"/><text x="875" y="208" text-anchor="middle" stroke="none" fill="#fff" font-size="21" font-weight="700">1859–1871</text><text x="875" y="233" text-anchor="middle" stroke="none" fill="#d7e0e8" font-size="17">wojny o zjednoczenie</text>
+</g>
+<rect x="204" y="594" width="872" height="70" rx="8" fill="#223c55" stroke="#d5b46c" stroke-width="2"/>
+<text x="640" y="625" text-anchor="middle" font-size="20" fill="#fff">Wniosek: koncert mocarstw ograniczył ryzyko wojny powszechnej,</text>
+<text x="640" y="652" text-anchor="middle" font-size="20" fill="#fff">ale nie usunął konfliktów narodowych, rewolucji ani wojen regionalnych.</text>
+</g>
+</svg>

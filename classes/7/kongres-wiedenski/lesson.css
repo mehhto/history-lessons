@@ -1,0 +1,229 @@
+/* Kongres wiedeński — „gabinet dyplomatów i mapa po burzy”. */
+:root {
+  --congress-wine: #6f2438;
+  --congress-wine-dark: #3e1723;
+  --congress-ink: #172434;
+  --congress-blue: #35546d;
+  --congress-gold: #b28745;
+  --congress-paper: #f7f1e7;
+  --congress-paper-2: #eee2d2;
+  --congress-rule: #bcae9c;
+}
+
+.reveal .slides section[data-slide-canvas] {
+  background: var(--congress-paper);
+}
+.reveal .slides section[data-slide-canvas] > .slide-content {
+  padding: 42px 56px;
+}
+.reveal h2 {
+  margin: 0 0 .34em;
+  color: var(--congress-wine-dark);
+  font-size: 1.48em;
+  line-height: 1.03;
+  letter-spacing: -.025em;
+}
+.reveal h2::after {
+  width: 2.3em;
+  margin-top: .14em;
+  border-width: .1em;
+  border-color: var(--congress-gold);
+}
+.reveal .source-label {
+  border-color: var(--congress-gold);
+  color: #5e5045;
+  background: rgba(255,255,255,.62);
+}
+
+/* Otwarcie: dokument zajmuje całą scenę, tytuł pozostaje na ciemnym polu. */
+html .reveal .slides #otwarcie[data-layout="hero-source"] > .slide-content {
+  position: relative;
+  display: grid;
+  align-content: end;
+  width: 100%;
+  height: 100%;
+  padding: 58px 70px;
+  overflow: hidden;
+  background: linear-gradient(90deg, rgba(15,25,36,.96) 0%, rgba(15,25,36,.76) 43%, rgba(15,25,36,.08) 78%);
+}
+html .reveal .slides #otwarcie .hero-source-image {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  object-fit: cover;
+  object-position: center 46%;
+  filter: saturate(.76) contrast(1.1);
+}
+#otwarcie .hero-copy {
+  width: 58%;
+  padding: 27px 32px 30px;
+  border-left: 7px solid var(--congress-gold);
+  color: #fff;
+  background: rgba(20,28,38,.9);
+  box-shadow: 0 18px 44px rgba(0,0,0,.3);
+}
+#otwarcie h1 {
+  margin: .13em 0 .12em;
+  max-width: 8em;
+  color: #fff;
+  font-size: 2.24em;
+  line-height: .98;
+  letter-spacing: -.045em;
+}
+#otwarcie .hero-copy p { margin: 0; color: #f0dfbe; font-size: .9em; }
+#otwarcie .source-label { margin: 0; padding: 0; border: 0; color: #e8c883; background: none; font-size: 17px; }
+
+.dark-statement { color: #f8f2e8; background: var(--congress-ink) !important; }
+.dark-statement h2 { color: #fff; }
+.dark-statement h2::after { border-color: var(--congress-gold); }
+#pytanie .slide-content { max-width: 1000px; }
+#pytanie .slide-content > p { max-width: 850px; margin: .45em auto; font-size: 1.1em; line-height: 1.28; }
+#pytanie .slide-content > p strong { color: #f8f2e8; }
+.choice-line { display: flex; justify-content: center; align-items: center; gap: 24px; margin-top: 1.2em; color: #f0dfbe; font-size: .9em; }
+.choice-line span { padding: .4em .8em; border: 1px solid #9dadbb; }
+.choice-line b { color: #dca858; font-size: .8em; }
+
+/* Dwie nakładające się osie czasu. */
+#chronologia .slide-content { display: grid; grid-template-rows: auto 1fr auto; }
+.dual-track { display: grid; grid-template-columns: 150px 1fr; grid-template-rows: 165px 165px; align-items: center; gap: 14px 22px; margin-top: .4em; }
+.track-label { color: var(--congress-wine); font: 800 19px/1.1 var(--font-body); letter-spacing: .08em; text-align: right; }
+.track { position: relative; height: 82px; border-top: 6px solid var(--congress-rule); }
+.track::before,.track::after { position: absolute; top: -31px; color: #5f554a; font: 700 17px/1 var(--font-body); }
+.track::before { left: 0; content: "1814"; }
+.track::after { right: 0; content: "1815"; }
+.track > span { position: absolute; top: 12px; left: var(--start); width: var(--span); min-height: 62px; padding: 10px 14px; color: #fff; background: var(--congress-wine); }
+.track > span b,.track > span small { display: block; }
+.track > span small { margin-top: 5px; color: #f3ddd3; font-size: 15px; }
+.napoleon-track > span { background: var(--congress-blue); }
+.track > i { position: absolute; top: -13px; left: var(--point); width: 112px; transform: translateX(-50%); color: var(--congress-ink); font: 800 17px/1.1 var(--font-body); text-align: center; font-style: normal; }
+.track > i::before { content: ""; display: block; width: 20px; height: 20px; margin: 0 auto 10px; border: 5px solid var(--congress-paper); border-radius: 50%; background: var(--congress-gold); box-shadow: 0 0 0 3px var(--congress-blue); }
+.track > i small { color: #62584f; font-size: 14px; }
+.date-verdict { justify-self: center; padding: 12px 24px; border-top: 2px solid var(--congress-gold); border-bottom: 2px solid var(--congress-gold); font-size: .74em; }
+.date-verdict span { margin: 0 12px; color: var(--congress-wine); font-weight: 800; text-transform: uppercase; }
+
+/* Materiały źródłowe: obraz dominuje, analiza ma jedną pracę. */
+.reveal .source-split-grid { grid-template-columns: minmax(0, 1.9fr) minmax(300px, .82fr); gap: 25px; min-height: 0; }
+.reveal .source-split-grid .source-figure { display: grid; grid-template-rows: minmax(0,1fr) auto; min-height: 0; margin: 0; }
+html .reveal .slides #elba .source-figure img,
+html .reveal .slides #waterloo .source-figure img {
+  width: 100%; height: 442px; max-height: none; margin: 0; object-fit: cover;
+}
+#elba .source-figure img { object-position: center 46%; }
+#waterloo .source-figure img { object-position: center 50%; }
+.reveal .source-split-grid figcaption { margin: 0; padding: 8px 0 0 12px; border-left: 3px solid var(--congress-gold); color: #62584f; background: none; font-size: 16px; line-height: 1.2; text-align: left; }
+.reveal .source-split-grid .analysis-panel { display: flex; flex-direction: column; justify-content: center; gap: 12px; padding: 24px; border: 1px solid var(--congress-rule); border-top: 7px solid var(--congress-wine); background: #fffdfa; }
+.napoleon-return p { margin: 0; padding-bottom: 10px; border-bottom: 1px solid #d7cabb; font-size: .66em; }
+.napoleon-return p:last-child { border: 0; }
+.napoleon-return strong { display: inline-block; min-width: 74px; color: var(--congress-wine); }
+.battle-chain p { margin: 0; font-size: .64em; font-weight: 650; text-align: center; }
+.battle-chain p:first-child { color: var(--congress-wine); font-size: 1.05em; }
+.battle-chain span { color: #736759; font-size: .58em; font-weight: 800; text-align: center; }
+.battle-chain > strong { margin-top: 8px; padding: 12px; color: #fff; background: var(--congress-wine); font-size: .62em; line-height: 1.28; text-align: center; }
+
+/* Stół negocjacyjny bez portretowego katalogu. */
+.congress-room .slide-content { display: grid; grid-template-rows: auto 1fr auto; }
+.diplomatic-table { position: relative; display: grid; grid-template-columns: repeat(5,1fr); gap: 12px; align-items: stretch; margin: .75em 0 .55em; padding: 84px 18px 30px; border: 3px solid #89715d; border-radius: 50% / 22%; background: #e7d8c4; box-shadow: inset 0 0 0 12px #f5eee4; }
+.diplomatic-table::before { content: "KOMPROMIS"; position: absolute; top: 27px; left: 50%; transform: translateX(-50%); color: #836b56; font: 800 17px/1 var(--font-body); letter-spacing: .12em; }
+.seat { display: grid; align-content: start; min-width: 0; padding: 15px 10px; border-top: 5px solid var(--congress-wine); background: rgba(255,255,255,.86); text-align: center; }
+.seat b { color: var(--congress-wine-dark); font-size: 18px; }
+.seat span { margin-top: 7px; color: var(--congress-ink); font-size: 20px; font-weight: 750; }
+.seat small { margin-top: 9px; color: #62584f; font-size: 17px; line-height: 1.25; }
+.bottom-line { margin: 0; padding-left: 18px; border-left: 5px solid var(--congress-gold); font-size: .64em; line-height: 1.28; }
+
+.congress-equation { grid-template-columns: 1fr auto 1fr auto 1fr auto 1.2fr; gap: 12px; width: 100%; margin: 1.5em 0 1em; }
+.congress-equation > span:not(.operator) { min-height: 142px; padding: 24px 14px; }
+.congress-equation b,.congress-equation small { display: block; }
+.congress-equation b { font-size: 27px; }
+.congress-equation small { margin-top: 12px; font-size: 15px; line-height: 1.25; }
+.warning-ribbon { margin-top: .9em; padding: 13px 20px; color: #fff; background: var(--congress-wine); font-size: .68em; text-align: center; }
+
+.principle-flow { display: grid; grid-template-columns: repeat(3,1fr); gap: 26px; margin: .9em 0 .6em; }
+.principle-flow article { position: relative; min-height: 330px; padding: 36px 25px 24px; border: 1px solid var(--congress-rule); border-top: 8px solid var(--congress-wine); background: #fffdf9; }
+.principle-flow article > span { position: absolute; top: -22px; left: 22px; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; color: #fff; background: var(--congress-wine); font: 800 20px/1 var(--font-body); }
+.principle-flow h3 { margin: 5px 0 24px; color: var(--congress-wine-dark); font-size: .72em; letter-spacing: .05em; }
+.principle-flow p { margin: 0 0 16px; font-size: .63em; line-height: 1.3; }
+.principle-flow p b { color: var(--congress-blue); }
+.memory-line { margin: .3em 0 0; color: var(--congress-wine); font-size: .7em; text-align: center; }
+
+#karykatura .source-split-grid { grid-template-columns: minmax(0, 2.05fr) minmax(300px, .75fr); }
+html .reveal .slides #karykatura .source-figure img { width: 100%; height: 430px; max-height: none; margin: 0; object-fit: contain; background: #e9e0d2; }
+.inquiry-panel p { margin: 0; padding: 14px 0; border-bottom: 1px solid #d7cabb; font-size: 24px; line-height: 1.28; }
+.inquiry-panel p:last-child { border: 0; }
+
+.decision-routes { display: grid; grid-template-columns: 1fr 1fr; column-gap: 44px; row-gap: 0; min-height: 430px; margin-top: .55em; }
+.decision-routes p { display: grid; grid-template-columns: 145px 1fr; gap: 18px; align-items: center; margin: 0; padding: 24px 0; border-bottom: 1px solid var(--congress-rule); font-size: 23px; line-height: 1.26; }
+.decision-routes b { color: var(--congress-wine); font-size: .88em; letter-spacing: .04em; }
+
+/* Mapy mają skalę projektorową. */
+#mapa-europy .map-focus-grid,
+#mapa-konturowa .map-focus-grid { grid-template-columns: minmax(0, 2.7fr) minmax(280px, .82fr); gap: 22px; min-height: 0; height: 420px; }
+#mapa-europy .slide-content { display: grid; grid-template-rows: auto minmax(0,1fr); }
+#mapa-europy .map-focus-grid { height: 530px; }
+#mapa-konturowa .slide-content { display: grid; grid-template-rows: auto minmax(0,1fr); }
+#mapa-europy .source-figure,
+#mapa-konturowa .source-figure { display: grid; grid-template-rows: minmax(0,1fr) auto; min-height: 0; margin: 0; }
+html .reveal .slides #mapa-europy .source-figure img { width: auto; height: 495px; max-width: 100%; max-height: none; margin: 0 auto; object-fit: contain; }
+html .reveal .slides #mapa-konturowa .source-figure img { width: auto; height: 385px; max-width: 100%; max-height: none; margin: 0 auto; object-fit: contain; }
+#mapa-europy .source-figure figcaption,
+#mapa-konturowa .source-figure figcaption { padding: 7px 0 0 10px; border-left: 3px solid var(--congress-gold); color: #62584f; font-size: 15px; line-height: 1.18; text-align: left; }
+#mapa-europy .analysis-panel,
+#mapa-konturowa .analysis-panel { display: flex; flex-direction: column; justify-content: center; padding: 22px; border: 1px solid var(--congress-rule); border-top: 7px solid var(--congress-blue); background: #fffdfa; }
+.map-questions p,.task-map-panel > p:first-child { margin: 0 0 12px; font-size: .68em; }
+.map-questions h3 { margin: 0 0 18px; color: var(--congress-wine-dark); font-size: 25px; line-height: 1.08; }
+.map-questions ol { margin: 0; padding-left: 1.2em; }
+.map-questions li { margin: 0 0 11px; font-size: .58em; line-height: 1.2; }
+.task-map-panel p { margin: 0 0 11px; font-size: .59em; }
+.time-chip { width: fit-content; margin: 13px 0 0 !important; padding: 7px 12px; color: #fff; background: var(--congress-wine); font-weight: 800; }
+
+#sprawa-polska .slide-content { display: grid; grid-template-rows: auto minmax(0,1fr); }
+html .reveal .slides #sprawa-polska .settlement-diagram { width: 100%; height: 540px; max-height: none; margin: 0; object-fit: contain; }
+
+.alliance-grid { display: grid; grid-template-columns: .9fr 1.4fr; gap: 40px; align-items: stretch; margin: .75em 0 .55em; }
+.alliance-signers { position: relative; display: grid; grid-template-columns: 1fr 1fr; place-items: center; min-height: 310px; padding: 30px; background: var(--congress-ink); }
+.alliance-signers::before { content: ""; position: absolute; inset: 54px 90px 82px; border: 4px solid var(--congress-gold); transform: rotate(45deg); }
+.alliance-signers span { z-index: 1; padding: 10px 14px; color: #fff; background: var(--congress-wine); font: 800 18px/1 var(--font-body); }
+.alliance-signers span:nth-child(3) { grid-column: 1 / -1; }
+.alliance-signers b { grid-column: 1 / -1; z-index: 1; color: #e6c98f; font-size: .63em; }
+.alliance-purpose { padding: 26px 30px; border: 1px solid var(--congress-rule); border-left: 8px solid var(--congress-wine); background: #fffdfa; }
+.alliance-purpose h3 { margin: 0 0 16px; color: var(--congress-wine-dark); font-size: .82em; }
+.alliance-purpose p { margin: 0; padding: 13px 0; border-bottom: 1px solid #d7cabb; font-size: .66em; line-height: 1.26; }
+.alliance-purpose p:last-child { border: 0; }
+.not-member { padding: 12px 18px; color: #f8f2e8; background: var(--congress-blue); font-size: .63em; text-align: center; }
+
+.negotiation-task .slide-content { display: grid; grid-template-rows: auto 1fr; }
+.student-task { display: grid; align-content: center; width: 940px; min-height: 410px; margin: 0 auto; padding: 40px 54px; border: 2px solid var(--congress-rule); border-left: 12px solid var(--congress-wine); background: #fffdfa; }
+.student-task > p:first-child { margin: 0 0 22px; font-size: 31px; }
+.student-task ol { margin: 0; padding-left: 1.35em; }
+.student-task li { margin: 0 0 20px; padding-left: 8px; font-size: 26px; line-height: 1.28; }
+.student-task .time-chip { font-size: 21px; }
+
+.model-slide lesson-table table { table-layout: fixed; font-size: .57em; }
+.model-slide th:nth-child(1) { width: 25%; }
+.model-slide th:nth-child(2) { width: 29%; }
+.model-slide th,.model-slide td { padding: 12px 14px; }
+.model-note { margin: .55em 0 0; padding-left: 15px; border-left: 5px solid var(--congress-gold); font-size: .66em; }
+
+#skutek .slide-content { display: grid; grid-template-rows: auto minmax(0,1fr); }
+html .reveal .slides #skutek .legacy-chart { width: 100%; height: 540px; max-height: none; margin: 0; object-fit: contain; }
+
+#synteza .slide-content { max-width: 1080px; }
+.synthesis-sentence { margin: .7em auto .9em; color: #f8f2e8; font-size: .88em; line-height: 1.28; }
+.synthesis-sentence p { margin: .35em 0; }
+.synthesis-sentence strong { color: #e6c276; }
+.synthesis-prompt { margin: 0 auto; padding-top: .75em; border-top: 2px solid #71849a; color: #f1f4f7; font-size: .72em; }
+
+#bilet .slide-content { display: grid; grid-template-rows: auto auto 1fr auto; }
+#bilet .slide-content > p:first-of-type { margin: .35em 0 .55em; font-size: .92em; }
+#bilet ol { align-self: center; width: 78%; margin: 0 auto; padding: 28px 42px 24px 70px; border: 2px solid var(--congress-rule); border-left: 10px solid var(--congress-wine); background: #fffdfa; }
+#bilet li { margin: 0 0 17px; padding-left: 7px; font-size: .78em; }
+.final-line { margin: .55em 0 0; color: var(--congress-blue); font-size: .62em; text-align: center; }
+
+@media print {
+  .diplomatic-table,
+  .alliance-signers { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+}

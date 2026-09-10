@@ -1,0 +1,18 @@
+{
+  "id": "kongres-wiedenski",
+  "title": "Kongres wiedeński",
+  "grade": 7,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa (podstawa 2017, tekst obowiązujący: Dz.U. 2024 poz. 996)",
+  "duration_minutes": 45,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "status": "OCZEKUJE NA WERYFIKACJĘ NAUCZYCIELA",
+  "curriculum_requirement": "XIX. Europa po kongresie wiedeńskim. Uczeń: 1) omawia decyzje kongresu wiedeńskiego w odniesieniu do Europy, w tym do ziem polskich.",
+  "main_question": "Jak zwycięskie mocarstwa urządziły Europę po Napoleonie i czy naprawdę przywróciły dawny porządek?",
+  "source_reviewed": true,
+  "teacher_reviewed": false,
+  "offline_checked": true,
+  "pdf_exported": false,
+  "appearance": { "style": "editorial", "palette": "burgundy" }
+}
