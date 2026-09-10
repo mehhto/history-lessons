@@ -44,7 +44,7 @@
 | otwarcie | zaciekawienie | opening / hero-source | przeszłość zostawia ślady | kodeks: autentyczny zapis, nie „cała przeszłość” | hipoteza: co można zbadać? | 2 min |
 | pytanie | ukierunkowanie | question / statement | pytanie główne | — | pierwsza odpowiedź ustna | 1 min |
 | trzy-znaczenia | pojęcia | explanation / comparison | jedno słowo ma trzy znaczenia | — | dopasowanie przykładów | 5 min |
-| opowiesci | rozróżnienie | explanation / comparison | różne opowieści mają różny związek z dowodami | ilustracja baśni; nie źródło wydarzenia | wskaż podobieństwo i różnicę | 5 min |
+| opowiesci | rozróżnienie | explanation / interactive classification | baśń, legenda i historia mają inny związek z dowodami | trzy przykłady; odpowiedzi odsłaniane po kliknięciu | rozpoznanie kategorii i krótkie uzasadnienie | 5 min |
 | po-co | współczesność | explanation / icon-list | historia pomaga rozumieć ludzi, zmiany i decyzje | — | wybór jednego zastosowania | 3 min |
 | historyk | proces | explanation / process | badacz uzasadnia wnioski źródłami | — | ułożenie kroków | 4 min |
 | dwaj-badacze | role | evidence / photo-pair | historyk i archeolog współpracują | rękopis + współczesne wykopaliska | porównanie materiałów pracy | 4 min |
@@ -89,4 +89,3 @@
 - Dla ucznia pracującego szybciej: porównanie zakresu informacji trzech źródeł i pytanie o brakujące źródło.
 - Fotografia klasy pochodzi z USA, tabliczka z muzeum w Wisconsin, a świadectwo z Polski. Nie wolno składać ich w obraz jednej szkoły ani twierdzić, że wszystkie szkoły wyglądały tak samo.
 - Kodeks Zamoyskich jest XIV-wiecznym odpisem kroniki, a nie autografem Galla Anonima.
-- Ilustracja Kopciuszka jest późniejszą ilustracją baśni, nie dowodem historyczności wydarzeń baśniowych.

@@ -43,19 +43,7 @@ Wszystkie pliki pobrano lokalnie 2026-09-09 z podanych stron Wikimedia Commons. 
 - **Rola:** pokazanie wykopu, warstw i odsłoniętych murów jako kontekstu pracy archeologa.
 - **Ograniczenie:** fotografia nie pokazuje samego archeologa przy pracy ani kolejnych etapów dokumentacji.
 
-### source-03 — ilustracja Kopciuszka
-- **Nazwa:** *Cinderella 1910.jpeg*.
-- **Typ:** późniejsza ilustracja tekstu kultury, nie źródło potwierdzające wydarzenia baśni.
-- **Autor:** Edmund Dulac.
-- **Data:** około 1910.
-- **Lokalny plik:** `assets/cinderella-1910.jpeg`.
-- **SHA-256:** `f7d8e65c5cdfafc77c675b70ce12aea0c5bab6deba6b9abe51803f85db01f96d`.
-- **Strona źródłowa:** https://commons.wikimedia.org/wiki/File:Cinderella_1910.jpeg
-- **Licencja / status:** domena publiczna.
-- **Rola:** konkretny przykład baśni i rozróżnienia fikcji od badania historycznego.
-- **Ograniczenie:** ilustracja powstała wiele lat po spisaniu znanych wersji baśni; pokazuje interpretację artysty.
-
-### source-04 — fotografia klasy
+### source-03 — fotografia klasy
 - **Nazwa:** *Children in Classroom in Keene New Hampshire (5446395402).jpg*.
 - **Typ:** fotografia historyczna.
 - **Instytucja/kolekcja:** Keene and Cheshire County (NH) Historical Photos.
@@ -67,7 +55,7 @@ Wszystkie pliki pobrano lokalnie 2026-09-09 z podanych stron Wikimedia Commons. 
 - **Rola:** źródło A w ćwiczeniu — obserwacja wyposażenia i organizacji jednej klasy.
 - **Ograniczenie:** USA, nie Polska; jedna klasa i niepewne datowanie nie pozwalają opisać wszystkich szkół ani całego okresu.
 
-### source-05 — szkolna tabliczka łupkowa
+### source-04 — szkolna tabliczka łupkowa
 - **Nazwa:** *Slate tablet for school, 1882 — Wisconsin Historical Museum*.
 - **Typ:** fotografia muzealnego przedmiotu historycznego.
 - **Autor fotografii:** Daderot.
@@ -79,7 +67,7 @@ Wszystkie pliki pobrano lokalnie 2026-09-09 z podanych stron Wikimedia Commons. 
 - **Rola:** źródło B — materialny przybór szkolny, ćwiczenie odróżniania obserwacji od wniosku o użyciu.
 - **Ograniczenie:** fotografia muzealna nie pokazuje tabliczki w użyciu; obiekt pochodzi z USA.
 
-### source-06 — świadectwo szkoły elementarnej
+### source-05 — świadectwo szkoły elementarnej
 - **Nazwa:** *Swiadectwo szkoly elementarnej.jpg*.
 - **Typ:** scan polskiego dokumentu szkolnego; źródło pisane.
 - **Autor skanu/użytkownik:** skrobil; twórca formularza nieustalony.

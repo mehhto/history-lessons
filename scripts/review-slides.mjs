@@ -27,6 +27,7 @@ try {
     await page.evaluate((indices) => Reveal.slide(indices.h, indices.v ?? 0, -1), target.indices);
     await page.waitForTimeout(40);
     await page.evaluate(() => Reveal.getCurrentSlide().querySelectorAll('.fragment').forEach((fragment) => fragment.classList.add('visible')));
+    await page.waitForTimeout(260);
     const name = `${String(i + 1).padStart(2, '0')}-${target.id || 'slide'}.png`;
     await page.screenshot({ path: path.join(output, name) });
     const metrics = await page.evaluate(() => {
