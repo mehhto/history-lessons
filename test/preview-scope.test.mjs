@@ -9,8 +9,9 @@ const revealDirectory = path.join(root, 'template/reveal');
 const componentsDirectory = path.join(root, 'template/components');
 const themePath = path.join(root, 'template/theme.css');
 const presentationDirectory = path.join(root, 'template/presentation');
+const fontsDirectory = path.join(root, 'template/fonts');
 
-const scope = { lessonDirectory, revealDirectory, componentsDirectory, themePath, presentationDirectory };
+const scope = { lessonDirectory, revealDirectory, componentsDirectory, themePath, presentationDirectory, fontsDirectory };
 
 test('preview rejects classes and class directories as lesson scopes', () => {
   assert.equal(isLessonPackageDirectory(lessonDirectory, path.join(root, 'classes')), true);
@@ -25,6 +26,7 @@ test('preview serves only the selected lesson and shared presentation assets', (
   assert.equal(isAllowedPreviewFile(path.join(componentsDirectory, 'lesson-components.js'), scope), true);
   assert.equal(isAllowedPreviewFile(themePath, scope), true);
   assert.equal(isAllowedPreviewFile(path.join(presentationDirectory, 'boot.mjs'), scope), true);
+  assert.equal(isAllowedPreviewFile(path.join(fontsDirectory, 'DejaVuSans.ttf'), scope), true);
 });
 
 test('preview rejects repository internals and other lessons', () => {

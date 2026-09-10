@@ -31,9 +31,10 @@ const scope = {
   revealDirectory: await realpath(path.join(root, 'template/reveal')),
   componentsDirectory: await realpath(path.join(root, 'template/components')),
   presentationDirectory: await realpath(path.join(root, 'template/presentation')),
+  fontsDirectory: await realpath(path.join(root, 'template/fonts')),
   themePath: await realpath(path.join(root, 'template/theme.css')),
 };
-const mimeTypes = { '.css': 'text/css', '.html': 'text/html', '.js': 'text/javascript', '.mjs': 'text/javascript', '.json': 'application/json', '.md': 'text/markdown', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.woff': 'font/woff', '.woff2': 'font/woff2' };
+const mimeTypes = { '.css': 'text/css', '.html': 'text/html', '.js': 'text/javascript', '.mjs': 'text/javascript', '.json': 'application/json', '.md': 'text/markdown', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.ttf': 'font/ttf', '.woff': 'font/woff', '.woff2': 'font/woff2' };
 
 const server = http.createServer(async (request, response) => {
   try {
