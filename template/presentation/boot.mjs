@@ -67,18 +67,28 @@ async function waitForVisualAssets() {
   }));
 }
 
+function reportPresentationError(error) {
+  document.documentElement.dataset.presentationReady = 'error';
+  document.body.insertAdjacentHTML('afterbegin', `<p class="presentation-error">Błąd prezentacji: ${error.message}</p>`);
+  console.error(error);
+}
+
 async function start() {
-  let metadata;
-  const response = await fetch('metadata.json', { cache: 'no-store' });
-  if (!response.ok) throw new Error(`Nie można odczytać metadata.json (${response.status}).`);
-  metadata = await response.json();
+  const portable = globalThis.__LESSON_PORTABLE__;
+  const metadata = portable?.metadata ?? await (async () => {
+    const metadataResponse = await fetch('./metadata.json', { cache: 'no-store' });
+    if (!metadataResponse.ok) throw new Error(`Nie udało się wczytać metadata.json (${metadataResponse.status}).`);
+    return metadataResponse.json();
+  })();
   const appearance = resolveAppearance(metadata.appearance, catalog);
   const style = catalog.styles[appearance.style];
-  await verifyBackgroundAsset(appearance.background);
+  if (!portable) {
+    await verifyBackgroundAsset(appearance.background);
+    await loadStyle(style);
+  }
   document.documentElement.dataset.style = appearance.style;
   document.documentElement.dataset.palette = appearance.palette;
   setTokens(catalog.palettes[appearance.palette]);
-  await loadStyle(style);
 
   const reducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
   Reveal.initialize({
@@ -92,19 +102,20 @@ async function start() {
     plugins: [RevealMarkdown, RevealNotes],
   });
   Reveal.on('ready', async () => {
-    for (const slide of leafSlides()) {
-      slide.dataset.slideCanvas = '';
-      wrapSlideContent(slide);
+    try {
+      for (const slide of leafSlides()) {
+        slide.dataset.slideCanvas = '';
+        wrapSlideContent(slide);
+      }
+      setBackdrops(appearance);
+      portable?.finalizeAssets?.(document.querySelector('.reveal'));
+      await waitForVisualAssets();
+      Reveal.layout();
+      document.documentElement.dataset.presentationReady = 'true';
+    } catch (error) {
+      reportPresentationError(error);
     }
-    setBackdrops(appearance);
-    await waitForVisualAssets();
-    Reveal.layout();
-    document.documentElement.dataset.presentationReady = 'true';
   });
 }
 
-start().catch((error) => {
-  document.documentElement.dataset.presentationReady = 'error';
-  document.body.insertAdjacentHTML('afterbegin', `<p class="presentation-error">Błąd prezentacji: ${error.message}</p>`);
-  console.error(error);
-});
+start().catch(reportPresentationError);

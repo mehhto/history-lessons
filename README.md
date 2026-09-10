@@ -47,7 +47,7 @@ Przed wyjściem do szkoły otwórz wygenerowany plik raz bezpośrednio z dysku i
 Można nadać plikowi własną prostą nazwę:
 
 ```bash
-npm run export:portable -- --lesson classes/4/jak-poznajemy-przeszlosc-historia-i-zrodla-historyczne --output historia-klasa-4.html
+npm run export:portable -- --lesson classes/4/jak-poznajemy-przeszlosc-historia-i-zrodla-historyczne --output historia-klasa-4-portable.html
 ```
 
 ### Sterowanie prezentacją
@@ -76,7 +76,7 @@ npm run export:portable -- --lesson classes/4/jak-poznajemy-przeszlosc-historia-
 11. Dodaj pliki do `assets/`, uruchom `npm run check`, a następnie obejrzyj lekcję lokalnie.
 12. Po lekcji nowej wiedzy przygotuj `student-summary.md`; po ćwiczeniowej użyj go tylko, gdy porządkuje nową całość.
 13. Po lekcji uzupełnij `reflection.md`; jeśli problem powtarza się, popraw szablon lub regułę, nie tylko jedną lekcję.
-14. Po render check i ręcznym podglądzie poproś nauczyciela o jawną akceptację. **Dopiero po niej** utwórz PDF: `npm run export:pdf -- --lesson classes/6/wielkie-odkrycia-geograficzne`.
+14. Po render check i ręcznym podglądzie poproś nauczyciela o jawną akceptację. **Dopiero po niej** wygeneruj uzgodnione artefakty: przenośny HTML do pracy w salach poleceniem `npm run export:portable -- --lesson <ścieżka-lekcji>`, a PDF tylko na jawne polecenie nauczyciela.
 
 **Zasada:** prezentacja dostarcza kompletnego, zwięzłego wyjaśnienia. Podręcznik jest uzupełnieniem, a nie miejscem, do którego odsyłamy po brakujący kontekst.
 

@@ -22,5 +22,12 @@
   "dependencies": {
     "playwright": "1.62.1",
     "reveal.js": "6.0.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "marked": "^18.0.12",
+    "parse5": "^8.0.1",
+    "postcss": "^8.5.28",
+    "postcss-value-parser": "^4.2.0"
   }
 }
