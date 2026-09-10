@@ -9,7 +9,7 @@ Ten katalog przechowuje fundamenty dydaktyczne i wizualne rozwijane przed skalow
 - [`visual-grammar-grade4-v1.md`](visual-grammar-grade4-v1.md) — zatwierdzony kierunek C przełożony na zasady dla klasy IV.
 - [`benchmark-grade4-history-sources-v1.md`](benchmark-grade4-history-sources-v1.md) — mapa wiedzy, choreografia, podpisy aktywności, storyboard i audyt lekcji wzorcowej.
 
-Oba dokumenty mają status v1 i wymagają pilotażu na lekcji wzorcowej oraz korekty po doświadczeniu klasowym.
+Standard jakości i biblioteka aktywności mają status v1. Dokumenty klasy IV opisują trwający pilotaż kierunku C i wymagają korekty po doświadczeniu klasowym.
 
 ## Prototypy do decyzji
 
