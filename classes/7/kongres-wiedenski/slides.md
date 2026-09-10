@@ -64,14 +64,12 @@ Nie mów, że „cała Francja” jednomyślnie poparła Napoleona. Jego szybki 
 ---
 
 <!-- .slide: id="waterloo" class="source-slide waterloo-slide" data-purpose="evidence" data-layout="source-split" -->
-<span class="source-label">William Sadler · XIX-wieczne przedstawienie bitwy</span>
-
 ## Waterloo kończy „sto dni”
 
 <div class="source-split-grid">
 <figure class="source-figure">
 <img src="assets/waterloo-sadler.jpg" data-fit="cover" alt="Malarska scena bitwy pod Waterloo z kawalerią i piechotą wśród dymu">
-<figcaption>Scena bitwy — obraz pomaga wyobrazić sobie chaos, ale nie pokazuje całego planu walk.</figcaption>
+<figcaption>Bitwa pod Waterloo, 18 czerwca 1815 r. — obraz Williama Sadlera.</figcaption>
 </figure>
 <aside class="analysis-panel battle-chain">
 <p><b>18 VI 1815</b></p>
@@ -204,7 +202,7 @@ Mapa ma drobne etykiety, dlatego zajmuje większość slajdu i można ją powię
 ## Zaznacz decyzje na konturze
 
 <div class="map-focus-grid">
-<figure class="source-figure"><img src="assets/europa-1815-konturowa.svg" data-fit="contain" alt="Konturowa mapa polityczna Europy w 1815 roku bez nazw państw"><figcaption>Mapa ćwiczeniowa Europy w 1815 r. — granice są podpowiedzią, nie gotową odpowiedzią.</figcaption></figure>
+<figure class="source-figure"><img src="assets/europa-1815-konturowa.svg" data-fit="contain" alt="Konturowa mapa polityczna Europy w 1815 roku bez nazw państw"><figcaption>Mapa Europy w 1815 r.</figcaption></figure>
 <aside class="analysis-panel task-map-panel">
 <p>Na mapie z karty pracy wpisz:</p>
 <p><b>N</b> — Niderlandy</p>

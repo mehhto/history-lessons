@@ -103,6 +103,8 @@ html .reveal .slides #otwarcie .hero-source-image {
 .track > i { position: absolute; top: -13px; left: var(--point); width: 112px; transform: translateX(-50%); color: var(--congress-ink); font: 800 17px/1.1 var(--font-body); text-align: center; font-style: normal; }
 .track > i::before { content: ""; display: block; width: 20px; height: 20px; margin: 0 auto 10px; border: 5px solid var(--congress-paper); border-radius: 50%; background: var(--congress-gold); box-shadow: 0 0 0 3px var(--congress-blue); }
 .track > i small { color: #62584f; font-size: 14px; }
+.napoleon-track > i:last-child { width: 124px; transform: none; text-align: left; }
+.napoleon-track > i:last-child::before { margin-left: -10px; }
 .date-verdict { justify-self: center; padding: 12px 24px; border-top: 2px solid var(--congress-gold); border-bottom: 2px solid var(--congress-gold); font-size: .74em; }
 .date-verdict span { margin: 0 12px; color: var(--congress-wine); font-weight: 800; text-transform: uppercase; }
 
@@ -115,6 +117,9 @@ html .reveal .slides #waterloo .source-figure img {
 }
 #elba .source-figure img { object-position: center 46%; }
 #waterloo .source-figure img { object-position: center 50%; }
+#waterloo .slide-content { display: grid; grid-template-rows: auto minmax(0,1fr); row-gap: 18px; }
+#waterloo .source-split-grid { align-self: start; min-height: 0; }
+html .reveal .slides #waterloo .source-figure img { height: 410px; }
 .reveal .source-split-grid figcaption { margin: 0; padding: 8px 0 0 12px; border-left: 3px solid var(--congress-gold); color: #62584f; background: none; font-size: 16px; line-height: 1.2; text-align: left; }
 .reveal .source-split-grid .analysis-panel { display: flex; flex-direction: column; justify-content: center; gap: 12px; padding: 24px; border: 1px solid var(--congress-rule); border-top: 7px solid var(--congress-wine); background: #fffdfa; }
 .napoleon-return p { margin: 0; padding-bottom: 10px; border-bottom: 1px solid #d7cabb; font-size: .66em; }
@@ -127,7 +132,7 @@ html .reveal .slides #waterloo .source-figure img {
 
 /* Stół negocjacyjny bez portretowego katalogu. */
 .congress-room .slide-content { display: grid; grid-template-rows: auto 1fr auto; }
-.diplomatic-table { position: relative; display: grid; grid-template-columns: repeat(5,1fr); gap: 12px; align-items: stretch; margin: .75em 0 .55em; padding: 84px 18px 30px; border: 3px solid #89715d; border-radius: 50% / 22%; background: #e7d8c4; box-shadow: inset 0 0 0 12px #f5eee4; }
+.diplomatic-table { position: relative; display: grid; grid-template-columns: repeat(5,1fr); gap: 12px; align-items: stretch; margin: .75em 0 .55em; padding: 84px 36px 38px; border: 3px solid #89715d; border-radius: 90px; background: #e7d8c4; box-shadow: inset 0 0 0 12px #f5eee4; }
 .diplomatic-table::before { content: "KOMPROMIS"; position: absolute; top: 27px; left: 50%; transform: translateX(-50%); color: #836b56; font: 800 17px/1 var(--font-body); letter-spacing: .12em; }
 .seat { display: grid; align-content: start; min-width: 0; padding: 15px 10px; border-top: 5px solid var(--congress-wine); background: rgba(255,255,255,.86); text-align: center; }
 .seat b { color: var(--congress-wine-dark); font-size: 18px; }
@@ -168,7 +173,7 @@ html .reveal .slides #karykatura .source-figure img { width: 100%; height: 430px
 #mapa-europy .source-figure,
 #mapa-konturowa .source-figure { display: grid; grid-template-rows: minmax(0,1fr) auto; min-height: 0; margin: 0; }
 html .reveal .slides #mapa-europy .source-figure img { width: auto; height: 495px; max-width: 100%; max-height: none; margin: 0 auto; object-fit: contain; }
-html .reveal .slides #mapa-konturowa .source-figure img { width: auto; height: 385px; max-width: 100%; max-height: none; margin: 0 auto; object-fit: contain; }
+html .reveal .slides #mapa-konturowa .source-figure img { width: auto; height: 415px; max-width: 100%; max-height: none; margin: 0 auto; object-fit: contain; }
 #mapa-europy .source-figure figcaption,
 #mapa-konturowa .source-figure figcaption { padding: 7px 0 0 10px; border-left: 3px solid var(--congress-gold); color: #62584f; font-size: 15px; line-height: 1.18; text-align: left; }
 #mapa-europy .analysis-panel,
@@ -193,7 +198,8 @@ html .reveal .slides #sprawa-polska .settlement-diagram { width: 100%; height: 5
 .alliance-purpose h3 { margin: 0 0 16px; color: var(--congress-wine-dark); font-size: .82em; }
 .alliance-purpose p { margin: 0; padding: 13px 0; border-bottom: 1px solid #d7cabb; font-size: .66em; line-height: 1.26; }
 .alliance-purpose p:last-child { border: 0; }
-.not-member { padding: 12px 18px; color: #f8f2e8; background: var(--congress-blue); font-size: .63em; text-align: center; }
+.not-member { padding: 12px 18px; border-top: 3px solid var(--congress-gold); color: #f8f2e8; background: var(--congress-ink); font-size: .63em; text-align: center; }
+.not-member strong { color: #f2cf86; }
 
 .negotiation-task .slide-content { display: grid; grid-template-rows: auto 1fr; }
 .student-task { display: grid; align-content: center; width: 940px; min-height: 410px; margin: 0 auto; padding: 40px 54px; border: 2px solid var(--congress-rule); border-left: 12px solid var(--congress-wine); background: #fffdfa; }

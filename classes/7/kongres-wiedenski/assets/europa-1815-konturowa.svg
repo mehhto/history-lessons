@@ -33,6 +33,14 @@ Updated various coastlines and boarders and added various islands not previously
 Added Bornholm (http://commons.wikimedia.org/wiki/User:Heb)
 
 Released under CreativeCommons Attribution ShareAlike (http://creativecommons.org/licenses/by-sa/2.5/).</desc>
+  <style>
+    [style*="fill:#c0c0c0"] {
+      fill: #eee7dc !important;
+      stroke: #65574e !important;
+      stroke-width: 1.25 !important;
+      vector-effect: non-scaling-stroke;
+    }
+  </style>
   <metadata
      id="metadata82">
     <rdf:RDF>
