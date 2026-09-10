@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pl" data-variant="editorial">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <title>Prototyp kierunków wizualnych — historia, klasa IV</title>
+    <script>
+      (() => {
+        const allowed = ['editorial', 'archive', 'cutout'];
+        const requested = new URLSearchParams(location.search).get('variant');
+        document.documentElement.dataset.variant = allowed.includes(requested) ? requested : 'editorial';
+      })();
+    </script>
+    <link rel="stylesheet" href="../../../template/reveal/reveal.css">
+    <link rel="stylesheet" href="../../../template/reveal/theme/white.css">
+    <link rel="stylesheet" href="../../../template/components/lesson-components.css">
+    <link rel="stylesheet" href="../../../template/presentation/base.css">
+    <link id="appearance-style" rel="stylesheet" href="">
+    <link rel="stylesheet" href="prototype.css">
+    <link rel="stylesheet" href="../../../template/presentation/canvas.css">
+  </head>
+  <body>
+    <div class="prototype-label" aria-hidden="true">PROTOTYP · NIE JEST LEKCJĄ</div>
+    <nav class="prototype-switcher" aria-label="Wybierz kierunek wizualny">
+      <span>Kierunek:</span>
+      <button type="button" data-choose-variant="editorial">A · Editorial</button>
+      <button type="button" data-choose-variant="archive">B · Archiwum</button>
+      <button type="button" data-choose-variant="cutout">C · Wycinanka</button>
+    </nav>
+    <div class="reveal">
+      <div class="slides">
+        <section
+          data-markdown="slides.md"
+          data-separator="^\r?\n---\r?\n$"
+          data-separator-notes="^\s*notes?:"
+          data-charset="utf-8">
+        </section>
+      </div>
+    </div>
+    <script src="../../../template/reveal/reveal.js"></script>
+    <script src="../../../template/reveal/plugin/markdown.js"></script>
+    <script src="../../../template/reveal/plugin/notes.js"></script>
+    <script type="module" src="../../../template/components/lesson-components.js"></script>
+    <script type="module" src="../../../template/presentation/boot.mjs"></script>
+    <script type="module" src="prototype.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "id": "prototype-visual-directions-grade4",
+  "title": "Prototyp kierunków wizualnych — historia, klasa IV",
+  "grade": 4,
+  "school_year": "2026/2027",
+  "curriculum_version": "nowa-2026",
+  "duration_minutes": 0,
+  "kind": "demo",
+  "lesson_type": "new-knowledge",
+  "status": "PROTOTYP",
+  "curriculum_requirement": "Nie dotyczy — porównanie języków wizualnych na identycznej treści",
+  "main_question": "Który kierunek najlepiej łączy energię, czytelność i powagę źródła?",
+  "source_reviewed": true,
+  "teacher_reviewed": false,
+  "offline_checked": false,
+  "pdf_exported": false,
+  "appearance": {
+    "style": "editorial",
+    "palette": "ink"
+  }
+}
