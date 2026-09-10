@@ -11,14 +11,6 @@ test('resolves a catalogued style and its default palette', () => {
   });
 });
 
-test('resolves the Grade IV cutout direction as a reusable appearance', () => {
-  assert.deepEqual(resolveAppearance({ style: 'cutout' }, catalog), {
-    style: 'cutout',
-    palette: 'grade4',
-    background: null,
-  });
-});
-
 test('rejects an unknown style and palette combination', () => {
   assert.throws(() => resolveAppearance({ style: 'missing' }, catalog), /Nieznany styl/);
   assert.throws(() => resolveAppearance({ style: 'atlas', palette: 'sand' }, catalog), /nie obsługuje palety/);

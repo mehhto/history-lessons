@@ -87,7 +87,7 @@ Zgodny z `design/visual-grammar-grade4-v1.md`: energetyczna wycinanka edukacyjna
 
 ## 8. Ocena po wdrożeniu
 
-Wdrożono kierunek C na wszystkich 16 slajdach oraz jako wielokrotnie używalny styl `cutout` z paletą `grade4`.
+Kierunek C wdrożono lokalnie na wszystkich 16 slajdach lekcji wzorcowej. Metadane nadal korzystają z katalogowego fundamentu `museum` / `sand`; wycinanka nie została zarejestrowana jako styl współdzielony przed zakończeniem pilotażu.
 
 | Wymiar | Status po wdrożeniu | Dowód |
 |---|---|---|
