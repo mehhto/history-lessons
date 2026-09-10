@@ -204,9 +204,11 @@ Sprawdza błędy konsoli i przepełnienia; nie zastępuje obejrzenia slajdów pr
 Automatycznie (wymaga jednorazowej instalacji przeglądarki Playwright):
 
 ```bash
-PLAYWRIGHT_BROWSERS_PATH=.playwright-browsers npx playwright install chromium
-npm run export:pdf -- --lesson classes/6/wielkie-odkrycia-geograficzne
+npm run install:browser
+npm run export:pdf -- --lesson classes/6/wielkie-odkrycia-geograficzne-przyczyny-i-kierunki
 ```
+
+Polecenia działają w PowerShellu, `cmd.exe`, Bashu i Zsh. Dla pozostałych części cyklu podaj katalog `wielkie-odkrycia-geograficzne-wyprawy-i-spotkanie-swiatow` albo `wielkie-odkrycia-geograficzne-skutki-i-rozne-perspektywy`.
 
 PDF zapisze się jako `presentation-backup.pdf` w katalogu lekcji. Możesz też uruchomić `npm run serve`, otworzyć daną lekcję z `?print-pdf` na końcu adresu i użyć drukowania przeglądarki: **poziomo**, **marginesy: brak**, **grafika w tle: włączona**.
 
