@@ -32,6 +32,24 @@ ssh -N -L 8090:127.0.0.1:8090 USER@MINIPC
 
 Po opublikowaniu portu na interfejsie LAN podgląd można też otworzyć bezpośrednio pod `http://ADRES-MINIPC:8090/`. Następnie w przeglądarce otwórz `http://127.0.0.1:8090/classes/6/wielkie-odkrycia-geograficzne-wyprawy-i-spotkanie-swiatow/`. Tunel i proces preview muszą działać przez cały czas przeglądu.
 
+## Prezentacja przenośna — bez instalacji w sali
+
+Na przygotowanym komputerze wygeneruj jeden samodzielny plik HTML:
+
+```bash
+npm run export:portable -- --lesson classes/4/jak-poznajemy-przeszlosc-historia-i-zrodla-historyczne
+```
+
+W katalogu lekcji powstanie plik nazwany według tematu, na przykład `jak-poznajemy-przeszlosc-historia-i-zrodla-historyczne-portable.html`. Zawiera slajdy, Reveal.js, komponenty, style, fonty i obrazy. Można go skopiować na pendrive, Dysk Google lub do wiadomości, a następnie otworzyć dwuklikiem w aktualnym Chrome, Edge albo Firefox. **Na komputerze w sali nie są potrzebne Node.js, npm, serwer lokalny ani Internet.**
+
+Przed wyjściem do szkoły otwórz wygenerowany plik raz bezpośrednio z dysku i sprawdź najważniejsze slajdy oraz interakcje. Jeżeli po zmianie `slides.md`, CSS, metadanych lub obrazów potrzebna jest nowa wersja, uruchom eksport ponownie. Wbudowane odnośniki lub opcjonalne filmy/mapy internetowe nadal wymagają sieci po świadomym kliknięciu, ale podstawowa treść lekcji musi pozostać kompletna offline.
+
+Można nadać plikowi własną prostą nazwę:
+
+```bash
+npm run export:portable -- --lesson classes/4/jak-poznajemy-przeszlosc-historia-i-zrodla-historyczne --output historia-klasa-4.html
+```
+
 ### Sterowanie prezentacją
 
 | Klawisz | Działanie |

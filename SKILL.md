@@ -69,6 +69,16 @@ Dostępne komponenty lokalne: `lesson-timeline` / `lesson-event`, `lesson-galler
 
 Mapy Google i YouTube są opcjonalne: iframe uzyskuje `src` wyłącznie po kliknięciu, a slajd ma lokalną alternatywę. Galeria wymaga opisowych `alt` i podpisów; hover jest dodatkiem — musi działać także przez `Tab`, strzałki, `Home`, `End`, `Escape` i dotknięcie.
 
+## Przenośna prezentacja bez konfiguracji sali
+
+Gdy nauczyciel potrzebuje pracy na obcych komputerach bez Node.js, serwera i Internetu, po ustabilizowaniu źródeł wygeneruj samodzielny plik:
+
+```bash
+npm run export:portable -- --lesson classes/4/temat
+```
+
+Wynik `*-portable.html` jest artefaktem lokalnym, nie źródłem i nie trafia do Git. Można go przenieść niezależnie od repozytorium i otworzyć dwuklikiem. Po każdej zmianie slajdów, CSS, metadanych, komponentów albo obrazów wygeneruj go ponownie. Przed przekazaniem otwórz wynik przez `file://` bez serwera, potwierdź brak żądań sieciowych dla podstawowej treści, pełne wczytanie obrazów, geometrię wszystkich slajdów oraz działanie klawiatury, notatek i komponentów interaktywnych.
+
 ## Źródła, fakty i prywatność
 
 - Nie wymyślaj cytatów, dokumentów, dat, autorów, licencji, map ani danych.
@@ -91,4 +101,4 @@ Ostrzeżenia dydaktyczne nie blokują statusu technicznego. Braki struktury, bez
 
 ## Oczekiwane pliki
 
-Aktualizuj `lesson.md`, `slides.md`, `lesson.css`, `sources.md`, `assessment.md`, `reflection.md`, `teacher-guide.md`, `student-summary.md` i `metadata.json`. W `metadata.json` wpisz `lesson_type`. Przed zakończeniem uruchom `npm run check`, sprawdź render, wygeneruj PDF-y i przejdź checklistę jakości.
+Aktualizuj `lesson.md`, `slides.md`, `lesson.css`, `sources.md`, `assessment.md`, `reflection.md`, `teacher-guide.md`, `student-summary.md` i `metadata.json`. W `metadata.json` wpisz `lesson_type`. Przed zakończeniem uruchom `npm run check`, sprawdź render, wygeneruj tylko artefakty wymagane w aktualnym zakresie i przejdź checklistę jakości. PDF/PPTX powstają dopiero po wyraźnym żądaniu lub akceptacji nauczyciela.

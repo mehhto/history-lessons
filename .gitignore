@@ -5,6 +5,7 @@ test-results/
 .hermes/
 .playwright-browsers/
 .scratch-*.png
+*-portable.html
 curriculum/official/*.pdf
 # Oryginalne DOCX od nauczyciela pozostają lokalne: zawierają metadane autora.
 curriculum/sources/*/original/*.docx
