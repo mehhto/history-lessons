@@ -65,22 +65,23 @@
 | 1 `otwarcie` | wejście w problem | opening / hero-source | Europa potrzebowała umowy po długich wojnach | fotografia aktu; obiekt, nie treść dokumentu | wybór: odtworzyć czy przeprojektować | 2 |
 | 2 `pytanie` | postawić problem | question / statement-centered | czy „stary ład” naprawdę dało się przywrócić? | — | hipoteza | 1 |
 | 3 `chronologia` | uporządkować 1814–1815 | explanation / process | kongres trwał przed i podczas powrotu Napoleona | oś autorska na faktach | korekta chronologii | 3 |
-| 4 `elba` | wyjaśnić powrót | evidence / source-split | część wojska i społeczeństwa poparła Napoleona | obraz z 1836 r., późniejsze przedstawienie | wskazanie zwrotu | 2 |
-| 5 `waterloo` | zamknąć sto dni | evidence / source-split | Waterloo zakończyło próbę odzyskania władzy | obraz, nie fotografia ani plan bitwy | łańcuch przyczynowy | 2 |
-| 6 `wieden` | pokazać obrady | explanation / statement | nie było jednego plenarnego posiedzenia; decydowały mocarstwa | sylwetki w tekście | wskazanie interesów | 2 |
-| 7 `cele` | nazwać problem polityczny | explanation / equation | granice + dynastie + bezpieczeństwo | infografika | przewidywanie | 2 |
-| 8 `zasady` | rozróżnić pojęcia | explanation / process | trzy zasady odpowiadały na różne pytania | autorska infografika | przykłady ustne | 3 |
-| 9 `karykatura` | zobaczyć krytykę ładu | evidence / source-split | mocarstwa ważyły interesy, ludzie nie decydowali | karykatura ZPE, domena publiczna | obserwacja i wniosek | 2 |
-| 10 `decyzje-europa` | zebrać decyzje | explanation / split | nowy układ miał otoczyć Francję i zrównoważyć mocarstwa | lista przy mapie | wyszukanie na mapie | 2 |
-| 11 `mapa-europy` | odczytać przestrzeń | evidence / map-focus | Europa 1815 nie była kopią Europy sprzed rewolucji | mapa ZPE; drobne etykiety wymagają pełnego slajdu | wskazywanie 5 obszarów | 4 |
-| 12 `mapa-konturowa` | przygotować zadanie | practice / map-focus | uczeń sam nanosi najważniejsze zmiany | mapa Commons bez nazw | zaznaczanie symboli | 2 |
-| 13 `sprawa-polska` | omówić podział | explanation / evidence | Księstwo podzielono między nowe i stare organizmy | autorski schemat, nie mapa | odtworzenie 4 następstw | 3 |
-| 14 `swiete-przymierze` | wyjaśnić sojusz | explanation / split | Rosja, Austria i Prusy miały strzec monarchicznego ładu | schemat | odpowiedź „kto i po co?” | 2 |
-| 15 `aktywnosc` | zastosować wiedzę | practice / activity-brief | decyzja ma zostać połączona z zasadą i skutkiem | karta pracy | praca w parach | 7 |
-| 16 `model` | omówić | synthesis / takeaways | te same decyzje mogą łączyć zasadę i interes mocarstwa | model częściowy | samokorekta | 3 |
-| 17 `skutek` | ocenić trwałość | evidence / evidence | stabilność nie oznaczała braku konfliktów | wykres czasu na podstawie ZPE | wniosek | 2 |
-| 18 `synteza` | odpowiedzieć na pytanie | synthesis / statement | odtworzono dynastie, ale zbudowano nową mapę i system mocarstw | — | zdanie „przywrócono…, lecz…” | 2 |
-| 19 `bilet` | sprawdzić cel | exit-ticket / plain | Europa + ziemie polskie + jedna zasada | — | 3 zdania | 2 |
+| 4 `mapa-miejsc` | zorientować wydarzenia w przestrzeni | explanation / evidence | Wiedeń, Waterloo i Elba leżą w Europie; Święta Helena daleko na południowym Atlantyku | mapa pochodna z danych Natural Earth; schemat współczesny | rozróżnienie dwóch miejsc zesłania | 1 |
+| 5 `elba` | wyjaśnić powrót | evidence / source-split | część wojska i społeczeństwa poparła Napoleona | obraz z 1836 r., późniejsze przedstawienie | wskazanie zwrotu | 2 |
+| 6 `waterloo` | zamknąć sto dni | evidence / source-split | Waterloo zakończyło próbę odzyskania władzy | obraz, nie fotografia ani plan bitwy | łańcuch przyczynowy | 2 |
+| 7 `wieden` | pokazać obrady | explanation / statement | nie było jednego plenarnego posiedzenia; decydowały mocarstwa | sylwetki w tekście | wskazanie interesów | 2 |
+| 8 `cele` | nazwać problem polityczny | explanation / equation | granice + dynastie + bezpieczeństwo | infografika | przewidywanie | 2 |
+| 9 `zasady` | rozróżnić pojęcia | explanation / process | trzy zasady odpowiadały na różne pytania | autorska infografika | przykłady ustne | 3 |
+| 10 `karykatura` | zobaczyć krytykę ładu | evidence / source-split | mocarstwa ważyły interesy, ludzie nie decydowali | karykatura ZPE, domena publiczna | obserwacja i wniosek | 2 |
+| 11 `decyzje-europa` | zebrać decyzje | explanation / split | nowy układ miał otoczyć Francję i zrównoważyć mocarstwa | lista przy mapie | wyszukanie na mapie | 2 |
+| 12 `mapa-europy` | odczytać przestrzeń | evidence / map-focus | Europa 1815 nie była kopią Europy sprzed rewolucji | mapa ZPE; drobne etykiety wymagają pełnego slajdu | wskazywanie 5 obszarów | 4 |
+| 13 `mapa-konturowa` | przygotować zadanie | practice / map-focus | uczeń sam nanosi najważniejsze zmiany | mapa Commons bez nazw | zaznaczanie symboli | 2 |
+| 14 `sprawa-polska` | omówić podział | explanation / evidence | Księstwo podzielono między nowe i stare organizmy | autorski schemat, nie mapa | odtworzenie 4 następstw | 3 |
+| 15 `swiete-przymierze` | wyjaśnić sojusz | explanation / split | Rosja, Austria i Prusy miały strzec monarchicznego ładu | schemat | odpowiedź „kto i po co?” | 2 |
+| 16 `aktywnosc` | zastosować wiedzę | practice / activity-brief | decyzja ma zostać połączona z zasadą i skutkiem | karta pracy | praca w parach | 7 |
+| 17 `model` | omówić | synthesis / takeaways | te same decyzje mogą łączyć zasadę i interes mocarstwa | model częściowy | samokorekta | 3 |
+| 18 `skutek` | ocenić trwałość | evidence / evidence | stabilność nie oznaczała braku konfliktów | wykres czasu na podstawie ZPE | wniosek | 2 |
+| 19 `synteza` | odpowiedzieć na pytanie | synthesis / statement | odtworzono dynastie, ale zbudowano nową mapę i system mocarstw | — | zdanie „przywrócono…, lecz…” | 2 |
+| 20 `bilet` | sprawdzić cel | exit-ticket / plain | Europa + ziemie polskie + jedna zasada | — | 3 zdania | 2 |
 
 ## Pełne minimum wiedzy
 - Kongres odbywał się w Wiedniu w latach 1814–1815. Obrady rozpoczęły się jesienią 1814 r.; akt końcowy podpisano 9 czerwca 1815 r.

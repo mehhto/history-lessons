@@ -40,6 +40,19 @@ To najważniejsza korekta chronologiczna. Kongres rozpoczął się jesienią 181
 
 ---
 
+<!-- .slide: id="mapa-miejsc" class="context-slide location-map-slide" data-purpose="explanation" data-layout="evidence" -->
+## Cztery miejsca tej historii
+
+<figure class="location-map-figure">
+<img src="assets/miejsca-napoleona-mapa.svg" alt="Mapa orientacyjna wskazująca Wiedeń, Waterloo, Elbę i wyspę Świętej Heleny">
+<figcaption>Europa i Atlantyk — mapa orientacyjna, nie mapa granic ustalonych przez kongres.</figcaption>
+</figure>
+
+notes:
+Najpierw wskaż trzy blisko położone miejsca europejskie, potem porównaj je ze Świętą Heleną na południowym Atlantyku. Uczniowie mają rozróżnić: Elba — pierwsze zesłanie i miejsce powrotu w 1815 r.; Święta Helena — drugie, odległe zesłanie po klęsce pod Waterloo. Nie wymagaj zapamiętywania współrzędnych.
+
+---
+
 <!-- .slide: id="elba" class="source-slide" data-purpose="evidence" data-layout="source-split" -->
 <span class="source-label">Joseph Beaume, 1836 · późniejsze przedstawienie</span>
 

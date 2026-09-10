@@ -167,6 +167,11 @@ html .reveal .slides #karykatura .source-figure img { width: 100%; height: 430px
 /* Mapy mają skalę projektorową. */
 #mapa-europy .map-focus-grid,
 #mapa-konturowa .map-focus-grid { grid-template-columns: minmax(0, 2.7fr) minmax(280px, .82fr); gap: 22px; min-height: 0; height: 420px; }
+.location-map-slide .slide-content { display: grid; grid-template-rows: auto minmax(0,1fr); }
+.location-map-figure { display: grid; grid-template-rows: minmax(0,1fr) auto; min-height: 0; margin: 0; }
+html .reveal .slides .location-map-figure img { width: 100%; height: 500px; max-width: none; max-height: none; margin: 0; object-fit: contain; }
+.location-map-figure figcaption { padding: 7px 0 0 10px; border-left: 3px solid var(--congress-gold); color: #62584f; font-size: 15px; line-height: 1.18; text-align: left; }
+
 #mapa-europy .slide-content { display: grid; grid-template-rows: auto minmax(0,1fr); }
 #mapa-europy .map-focus-grid { height: 530px; }
 #mapa-konturowa .slide-content { display: grid; grid-template-rows: auto minmax(0,1fr); }

@@ -70,7 +70,8 @@ Tryb: offline-first. Wszystkie materiały konieczne do lekcji są lokalne. Stron
 - **Autor opracowania:** Alphathon; mapa pochodna z danych i materiałów wymienionych na stronie pliku.
 - **Data:** 25 lutego 2012 r.
 - **Licencja:** CC BY-SA 3.0.
-- **Lokalny plik:** `assets/europa-1815-konturowa.svg`; SHA-256 `2347372566970d332996921f3676a19dfdf54ee7f3e8caa907d902afa968fac6`.
+- **Lokalny plik:** `assets/europa-1815-konturowa.svg`; SHA-256 `9bd7f9321f1ce8847eb2dca29f3349dc689b66df7e017aae96012e749c0cfc29`.
+- **Adaptacja lokalna:** zwiększono kontrast wypełnienia i granic na potrzeby projekcji; przebieg granic nie został zmieniony.
 - **Rola:** mapa ćwiczeniowa bez nazw; służy do orientacyjnego nanoszenia czterech zmian.
 - **Ograniczenie:** granice są uproszczonym współczesnym opracowaniem; nie jest źródłem z 1815 r.
 
@@ -99,6 +100,15 @@ Tryb: offline-first. Wszystkie materiały konieczne do lekcji są lokalne. Stron
 - **Podstawa faktów:** S03, sekcja „Skutki kongresu wiedeńskiego”; daty wydarzeń sprawdzone w standardowych opracowaniach encyklopedycznych.
 - **Rola:** rozróżnienie braku wojny powszechnej od rewolucji i konfliktów regionalnych.
 - **Ograniczenie:** wybór wydarzeń jest dydaktyczny, nie stanowi kompletnej listy konfliktów XIX w.
+
+### A09. Mapa orientacyjna miejsc związanych z Napoleonem i kongresem
+- **Dane kartograficzne:** Natural Earth, `Admin 0 – Countries`, skala 1:110 mln.
+- **Plik danych:** https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_0_countries.geojson
+- **Warunki użycia:** Natural Earth udostępnia dane w domenie publicznej; https://www.naturalearthdata.com/about/terms-of-use/
+- **Lokalny plik pochodny:** `assets/miejsca-napoleona-mapa.svg`; SHA-256 `24a36ee0c1da42cbcdd26d54f39d141391a5595e24e474e40f9beabc54b42aac`.
+- **Punkty orientacyjne:** Wiedeń (ok. 48,21°N, 16,37°E), Waterloo (ok. 50,68°N, 4,41°E), Elba (ok. 42,78°N, 10,19°E), Święta Helena (ok. 15,97°S, 5,71°W).
+- **Rola:** orientacja przestrzenna przed omówieniem powrotu Napoleona i decyzji kongresu.
+- **Ograniczenie:** współczesny schemat lokalizacyjny z uproszczonym przebiegiem granic; nie przedstawia granic politycznych z 1815 r. ani trasy podróży w skali.
 
 ## Materiały rozważone, lecz niewłączone
 - **Portretowe/grupowe przedstawienie kongresu Isabeya:** poprawne prawnie warianty domeny publicznej istnieją w Commons, ale zostały odrzucone, ponieważ karykatura lepiej wspiera analizę sposobu podejmowania decyzji, a dodatkowy obraz byłby dekoracyjny.
