@@ -6,7 +6,7 @@
 - Reguła kohortowa: [`rollout-2026.md`](rollout-2026.md).
 - Opis i dokument źródłowy: [`podstawa-nowa-2026.md`](podstawa-nowa-2026.md).
 
-Przed utworzeniem lekcji odczytaj dokładne wymaganie z [publicznego projektu IBE](https://ibe.edu.pl/images/Zmiany_w_szkolach/Projekty_podstaw_programowych/Historia_IBE_PIB.pdf) lub lokalnego źródła kontrolnego i potwierdź temat w szkolnym rozkładzie klasy IV.
+Przed utworzeniem lekcji odczytaj dokładne wymaganie z urzędowego Dz. U. 2026 poz. 378 — z `asset-library/D2026000037801.pdf` albo kontrolowanego wypisu `curriculum/official/D2026000037801-historia-pp-146-170.txt` — i potwierdź temat w szkolnym rozkładzie klasy IV.
 
 ## Wymagania edukacyjne
 

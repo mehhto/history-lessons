@@ -22,7 +22,7 @@ Klasa __GRADE__ · lekcja nowej wiedzy
 <!-- .slide: id="checkpoint" data-purpose="practice" data-layout="activity-brief" -->
 # Krótki checkpoint
 
-<div class="student-task"><strong>Zrób:</strong> [DO UZUPEŁNIENIA: jedno krótkie działanie].<br><strong>Produkt:</strong> [DO UZUPEŁNIENIA].</div>
+<div class="student-task">[DO UZUPEŁNIENIA: jedno bezpośrednie polecenie, które nazywa działanie i oczekiwany rezultat. Cel lub czas dopisz tylko wtedy, gdy pomaga uczniom wykonać zadanie.]</div>
 
 ---
 

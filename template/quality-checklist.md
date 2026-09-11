@@ -15,7 +15,7 @@
 ## Typ i przebieg lekcji
 - [ ] `metadata.json` wskazuje `new-knowledge` albo `practice`.
 - [ ] Lekcja nowej wiedzy zawiera pełne wyjaśnienie: pojęcia, chronologię, mechanizm, przykład i rozróżnienia potrzebne uczniowi.
-- [ ] Lekcja ćwiczeniowa / źródłowa zawiera przypomnienie koniecznej wiedzy, materiał, pytania, produkt ucznia i model odpowiedzi lub kryteria.
+- [ ] Lekcja ćwiczeniowa / źródłowa zawiera przypomnienie koniecznej wiedzy, materiał, pytania, jednoznacznie oczekiwane działanie lub rezultat oraz model odpowiedzi lub kryteria.
 - [ ] Wykonano ograniczony rekonesans publicznego ZPE i zapisano kandydatów oraz decyzje w `sources.md` — także wtedy, gdy niczego nie wybrano.
 - [ ] Jeśli wykorzystano materiał ZPE, wzmacnia on cel, pasuje do wieku, ma sprawdzone fakty oraz jasną licencję/status prawny.
 - [ ] Źródło, mapa lub wizualizacja pojawiają się dlatego, że wzmacniają cel — nie jako obowiązkowy ozdobnik.
@@ -29,6 +29,8 @@
 ## Slajdy, technika i dostępność
 - [ ] Liczba slajdów i objętość tekstu wynikają z celu oraz czasu, nie z globalnego limitu.
 - [ ] Każdy slajd ma jasną funkcję i jest czytelny z końca klasy: bloki tekstu, wyróżnienia, tabela, oś czasu lub ilustracja wspierają rozumienie.
+- [ ] Polecenia nie używają osobnej etykiety „produkt”; wynikają z czasownika i treści zadania. Cel zadania i czas wykonania są widoczne tylko wtedy, gdy realnie pomagają uczniom.
+- [ ] Podpisy źródeł w nowym pakiecie korzystają z lokalnego szablonowego nadpisania do `20px` i pozostają czytelne na projektorze; nie zmieniono przez to starych pakietów.
 - [ ] Każdy materiał ma wpis w `sources.md`, w tym prawa/licencję i ograniczenia.
 - [ ] Wszystkie obrazy i biblioteki są lokalne; prezentacja nie wymaga Internetu.
 - [ ] Przetestowano obrazy, klawiaturę, pełny ekran, notatki (`S`) i czarny ekran (`B`).

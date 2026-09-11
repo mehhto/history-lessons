@@ -8,7 +8,7 @@
 ## Przebieg operacyjny
 1. **Wejście (3–5 min):** [pytanie otwierające i oczekiwana aktywność].
 2. **Wyjaśnienie / przypomnienie (8–15 min):** [najważniejsza narracja i sprawdzenie rozumienia].
-3. **Zastosowanie lub praca z materiałem (10–15 min):** [pytania kierujące i produkt ucznia].
+3. **Zastosowanie lub praca z materiałem (10–15 min):** [pytania kierujące oraz oczekiwane działanie lub rezultat].
 4. **Synteza (5–8 min):** [zbieranie argumentów / porządkowanie wiedzy].
 5. **Bilet wyjścia (3–5 min):** [pytanie z assessment.md].
 

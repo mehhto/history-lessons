@@ -28,7 +28,7 @@
 | [Cel 2] | [Co uczeń musi zrozumieć] | [Co robi uczeń] | [Co zapisze / powie / wykona] |
 
 ## Storyboard prezentacji
-| Kolejność / ID | Cel | Purpose / layout | Główny komunikat | Wymagania wstępne | Materiał: rola / ograniczenie | Działanie / produkt ucznia | Ryzyko błędnego przekonania | Czas |
+| Kolejność / ID | Cel | Purpose / layout | Główny komunikat | Wymagania wstępne | Materiał: rola / ograniczenie | Działanie / oczekiwany rezultat | Ryzyko błędnego przekonania | Czas |
 |---:|---|---|---|---|---|---|---|---:|
 | 1 | [DO UZUPEŁNIENIA] | opening / statement | [DO UZUPEŁNIENIA] | — | [DO UZUPEŁNIENIA] | [DO UZUPEŁNIENIA] | [DO UZUPEŁNIENIA] | [DO UZUPEŁNIENIA] |
 
@@ -40,7 +40,7 @@
 - [Związek przyczyna → wydarzenie → skutek albo porównanie]
 
 ## Przebieg
-| Etap | Czas | Działanie nauczyciela | Działanie uczniów | Dowód / produkt |
+| Etap | Czas | Działanie nauczyciela | Działanie uczniów | Dowód zrozumienia |
 |---|---:|---|---|---|
 | Wejście | 3–5 min | [Pytanie / sytuacja] | [Hipoteza / przypomnienie] | [Krótka odpowiedź] |
 | Wyjaśnienie lub przypomnienie | 8–15 min | [Pełna, uporządkowana narracja] | [Notują / wskazują zależności] | [Sprawdzenie rozumienia] |

@@ -29,8 +29,8 @@ Wzorzec wybieraj według celu ucznia, nie według efektu wizualnego. Każdy koń
 | `photo-pair` | porównanie dwóch zdjęć | dwa równe pola | nie stosuj fałszywej galerii `div` |
 | `timeline-band` | trzy–cztery daty | krótki opis przy dacie | nie łam daty `1&nbsp;IX` |
 | `argument` | twierdzenie i dowody | 1 teza + 2–3 dowody | nie równaj wagi dowodów |
-| `task-board` | praca ucznia | pytanie, czas, produkt, kryterium | nie zostawiaj samego polecenia |
+| `task-board` | praca ucznia | bezpośrednie polecenie i oczekiwany rezultat; czas/kryterium tylko gdy pomagają | nie używaj osobnej etykiety „produkt” |
 | `comparison` | warianty A/B/C | 2–3 pola | nie używaj `auto-fit` |
 | `impact-flow` | wymiana lub przyczyna–skutek | dwa kierunki i łącznik | nie sugeruj symetrii skutków |
 
-Źródła obrazowe wymagają prawdziwego `alt`, podpisu z autorem/datą/licencją oraz `data-fit="contain"`; `cover` wolno zastosować wyłącznie do fotografii z kontrolowanym kadrem. Podpis ma minimum 18 px, zasadnicza treść minimum 24 px. Pełne przykłady obu palet są w showroomie `classes/6/katalog-komponentow-prezentacji/`.
+Źródła obrazowe wymagają prawdziwego `alt`, podpisu z autorem/datą/licencją oraz `data-fit="contain"`; `cover` wolno zastosować wyłącznie do fotografii z kontrolowanym kadrem. Nowe pakiety nadpisują podpis lokalnie na 20 px (wspólny styl dawnych lekcji pozostaje przy 18 px), a zasadnicza treść ma minimum 24 px. Pełne przykłady obu palet są w showroomie `classes/6/katalog-komponentow-prezentacji/`.

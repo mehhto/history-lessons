@@ -22,7 +22,7 @@ Klasa __GRADE__ · lekcja ćwiczeniowa
 <!-- .slide: id="zadanie" data-purpose="practice" data-layout="activity-brief" -->
 # Zadanie
 
-<div class="student-task"><strong>Zrób:</strong> [DO UZUPEŁNIENIA].<br><strong>Produkt:</strong> [DO UZUPEŁNIENIA].<br><strong>Kryterium:</strong> [DO UZUPEŁNIENIA].</div>
+<div class="student-task">[DO UZUPEŁNIENIA: jedno bezpośrednie polecenie, które nazywa działanie i oczekiwany rezultat. Kryterium, cel lub czas dopisz tylko wtedy, gdy pomaga uczniom wykonać albo sprawdzić zadanie.]</div>
 
 ---
 

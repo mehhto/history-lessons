@@ -36,7 +36,7 @@ Cel: uczeń wykorzystuje wyjaśnioną wcześniej wiedzę do analizy, porównania
 Wymagane elementy:
 
 1. krótkie przypomnienie wiedzy koniecznej do zadania;
-2. materiał, pytania kierujące i jasny produkt ucznia;
+2. materiał, pytania kierujące i jednoznaczne polecenie określające oczekiwane działanie lub rezultat;
 3. model odpowiedzi lub kryteria dobrej odpowiedzi;
 4. synteza / powtórka i bilet wyjścia.
 
@@ -58,6 +58,7 @@ Każdy slajd musi mieć jasną funkcję oraz być czytelny z końca klasy:
 ## `slides.md` i notatki nauczyciela
 
 - Widoczna prezentacja ma zawierać pełne, zwięzłe wyjaśnienia dla ucznia.
+- W poleceniu od razu nazwij działanie lub rezultat (`zapisz dwa argumenty`, `ułóż wydarzenia`, `wskaż fragment i uzasadnij`). Nie dodawaj osobnej etykiety „produkt”. Cel zadania i czas wykonania pokazuj uczniom tylko wtedy, gdy ułatwiają rozpoczęcie pracy, organizację lub samokontrolę.
 - Dodawaj notatki po `notes:` (małymi literami); nie są wyświetlane uczniom.
 - Szczegółowe notatki są wymagane tylko przy trudnym wyjaśnieniu, nowym pojęciu, źródle, materiale kontrowersyjnym, pytaniu wymagającym moderacji albo zadaniu z typowymi błędami.
 - Każdy pakiet ma `lesson.css`, ładowany po motywie i komponentach. Ręczne poprawki konkretnej lekcji zapisuj wyłącznie tam.
@@ -86,6 +87,7 @@ Wynik `*-portable.html` jest artefaktem lokalnym, nie źródłem i nie trafia do
 - Oznaczaj materiał jako: źródło z epoki / opracowanie / tekst kultury / rekonstrukcja / grafika AI.
 - Grafika AI nie jest dowodem historycznym.
 - Dla każdego materiału utwórz wpis w `sources.md`.
+- W nowych pakietach zachowaj szablonowe lokalne nadpisanie podpisu do `20px` (wspólny styl dawnych lekcji pozostaje przy 18 px) i potwierdź czytelność na projektorze. Nie zmieniaj z tego powodu już przeprowadzonych lekcji; dalszą korektę zapisuj w `lesson.css` nowego pakietu.
 - Nie używaj danych osobowych, ocen, wizerunku ani niezanonimizowanych prac uczniów.
 
 ## Status jakości

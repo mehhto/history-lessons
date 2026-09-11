@@ -1,5 +1,10 @@
 /* Ręczne poprawki tej lekcji. Plik ładowany po wspólnym motywie i komponentach. */
 
+/* Nowe pakiety: niewielkie zwiększenie względem historycznego wspólnego stylu 18 px. */
+.reveal .source-figure figcaption {
+  font-size: 20px;
+}
+
 /* Przykład:
 #moj-slajd {
   --timeline-accent: #9a3b2e;
