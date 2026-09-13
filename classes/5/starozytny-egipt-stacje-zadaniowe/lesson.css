@@ -1,0 +1,46 @@
+/* Ręczne poprawki tej lekcji. Plik ładowany po wspólnym motywie i komponentach. */
+
+/* Nowe pakiety: niewielkie zwiększenie względem historycznego wspólnego stylu 18 px. */
+.reveal .source-figure figcaption {
+  font-size: 20px;
+}
+
+/* Otwarcie: czytelna mapa obok pytania, bez wyjścia poza płótno 16:9. */
+html .reveal .slides #otwarcie > .slide-content {
+  display: grid;
+  grid-template-columns: minmax(0, .76fr) minmax(0, 1.24fr);
+  grid-template-rows: auto 1fr;
+  gap: 32px 54px;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 64px 70px;
+}
+
+#otwarcie h1 {
+  grid-column: 1;
+  align-self: end;
+  margin: 0;
+  font-size: 64px;
+  line-height: 1.02;
+}
+
+#otwarcie .source-figure {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  min-width: 0;
+}
+
+#otwarcie .source-figure img[data-fit="contain"] {
+  width: 100%;
+  height: 560px;
+}
+
+#otwarcie blockquote {
+  grid-column: 1;
+  align-self: start;
+  margin: 0;
+  font-size: 31px;
+  line-height: 1.25;
+}
