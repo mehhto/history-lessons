@@ -9,12 +9,12 @@
   <rect x="250" y="320" width="590" height="270" rx="16" fill="#e8dfca" stroke="#806419" stroke-width="5"/>
   <text x="285" y="375" font-family="Arial,sans-serif" font-size="31" font-weight="700" fill="#213f3a">Miejsce Święte</text>
   <text x="285" y="425" font-family="Arial,sans-serif" font-size="26" fill="#30291f">modlitwa i obrzędy kapłanów</text>
-  <rect x="665" y="355" width="145" height="180" rx="12" fill="#9b3e2c"/>
+  <rect x="665" y="355" width="145" height="180" rx="12" fill="#1565c0"/>
   <text x="737" y="414" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#fff">Miejsce</text>
   <text x="737" y="445" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#fff">Najświętsze</text>
   <text x="737" y="486" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#fff">Arka Przymierza</text>
   <path d="M120 760 H1480" stroke="#706c58" stroke-width="7"/>
-  <circle cx="250" cy="760" r="17" fill="#92722b"/><circle cx="600" cy="760" r="17" fill="#92722b"/><circle cx="920" cy="760" r="17" fill="#92722b"/><circle cx="1280" cy="760" r="17" fill="#9b3e2c"/>
+  <circle cx="250" cy="760" r="17" fill="#92722b"/><circle cx="600" cy="760" r="17" fill="#92722b"/><circle cx="920" cy="760" r="17" fill="#92722b"/><circle cx="1280" cy="760" r="17" fill="#1565c0"/>
   <text x="250" y="725" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#55411d">X w. p.n.e.</text>
   <text x="250" y="810" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" fill="#30291f">Pierwsza Świątynia</text>
   <text x="600" y="725" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#55411d">587/586 p.n.e.</text>

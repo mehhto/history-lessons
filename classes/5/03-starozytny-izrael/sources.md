@@ -27,6 +27,9 @@ Dostęp do źródeł sieciowych sprawdzono podczas przygotowania pakietu. Prezen
 | `assets/schemat-swiatyni.svg` | funkcje i chronologia Świątyni | opracowanie własne | na podstawie informacji z ZPE; schemat, nie rekonstrukcja |
 | `assets/schemat-chrzescijanstwo.svg` | kierunki wczesnego rozprzestrzeniania chrześcijaństwa | opracowanie własne | synteza celu podstawy; schemat, nie mapa granic |
 
+| `assets/abraham.jpg` | Abraham, detal obrazu „Ofiara Izaaka” | Rembrandt, 1635, domena publiczna | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Rembrandt_%E2%80%94_Sacrifice_of_Isaac_%E2%80%94_1635_%E2%80%94_detail_Abraham.JPG) |
+| `assets/mojzesz.jpg` | Mojżesz uderzający w skałę | dzieło historyczne w Wikimedia Commons, domena publiczna | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Moses_Striking_the_Rock_(SM_2474).png) |
+
 ## Uwagi źródłowe
 - Określenia „Hebrajczycy”, „Izraelici” i „Żydzi” zależą od okresu; prezentacja nie używa ich jako pełnych synonimów.
 - Abraham i Mojżesz są przedstawieni jako postacie tradycji biblijnej bez pozorowania pewnej chronologii archeologicznej.

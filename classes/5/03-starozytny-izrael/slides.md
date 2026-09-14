@@ -27,12 +27,15 @@ Mapa łączy kilka warstw czasowych. Nie odczytuj jej jak obrazu jednego roku. Z
 <!-- .slide: id="tradycja" data-purpose="explanation" data-layout="matrix" -->
 ## Początki w tradycji biblijnej
 
+<div class="biblical-pair">
+<figure><img src="assets/abraham.jpg" alt="Abraham na obrazie Rembrandta" data-fit="cover" /><figcaption>Abraham — późniejsze dzieło sztuki ilustrujące tradycję biblijną.</figcaption></figure>
+<figure><img src="assets/mojzesz.jpg" alt="Mojżesz uderzający w skałę na obrazie" data-fit="cover" /><figcaption>Mojżesz — późniejsze dzieło sztuki ilustrujące tradycję biblijną.</figcaption></figure>
+</div>
 <div class="cards grid-3">
 <div class="card"><strong>Abraham</strong><p>przymierze i początek dziejów rodu</p></div>
 <div class="card"><strong>Mojżesz</strong><p>wyjście z Egiptu, Synaj i Dekalog</p></div>
 <div class="card"><strong>Kanaan</strong><p>ziemia, w której według tradycji osiedlili się Izraelici</p></div>
 </div>
-<figure class="old-testament-source"><img src="assets/tora-zpe.jpg" alt="Zwój Tory zapisany po hebrajsku" data-fit="contain" /><figcaption>Zwój Tory — tekst Biblii hebrajskiej i źródło pamięci wspólnoty.</figcaption></figure>
 
 <p class="callout"><strong>Ważne:</strong> to opowieści kształtujące pamięć wspólnoty; nie mają jednej bezspornej, dokładnej daty.</p>
 
@@ -47,6 +50,13 @@ Mapa łączy kilka warstw czasowych. Nie odczytuj jej jak obrazu jednego roku. Z
 <div><span>ok. 930 p.n.e.</span><strong>Rozpad</strong><p>po śmierci Salomona powstały: Izrael na północy i Juda na południu.</p></div>
 </div>
 <p class="big-question">Co wydarzyło się po śmierci Salomona? Rechoboam odmówił zmniejszenia podatków i przymusowej pracy; północne plemiona wybrały Jeroboama.</p>
+
+---
+
+<!-- .slide: id="podzial-krolestw" data-purpose="evidence" data-layout="hero-source" -->
+## Po śmierci Salomona: Izrael i Juda
+
+<figure class="source-figure division-map"><img src="assets/mapa-palestyny-zpe.jpg" alt="Mapa pokazująca podział na północny Izrael i południową Judę" data-fit="contain" /><figcaption>Na mapie odszukaj dwa królestwa: Izrael na północy i Judę na południu. Mapa syntetyczna ZPE.</figcaption></figure>
 
 ---
 
