@@ -35,6 +35,16 @@ Wszystkie reprodukcje prezentacji są zapisane lokalnie. Ich strony plików i li
 | `assets/biblia-gutenberga.jpg` | strona Biblii Gutenberga | Johannes Gutenberg, domena publiczna | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Gutenberg_Bible_(page).JPG) |
 | `assets/tempietto.jpg` | Tempietto Bramantego w Rzymie | Peter1936F, CC BY-SA 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Tempietto_del_Bramante_(2).jpg) |
 
+| `assets/leonardo-portret.jpg` | domniemany autoportret Leonarda | Leonardo da Vinci, domena publiczna | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_-_presumed_self-portrait_-_WGA12798.jpg) |
+| `assets/leonardo-maszyna-latajaca.jpg` | projekt maszyny latającej, ok. 1488 | Leonardo da Vinci, domena publiczna | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Leonardo_Design_for_a_Flying_Machine,_c._1488.jpg) |
+| `assets/leonardo-projekty-pojazdow.jpg` | szkice pojazdów, ok. 1485 | Leonardo da Vinci, domena publiczna | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Da_Vinci_Scythed_Chariot_and_Armoured_Tank.JPG) |
+| `assets/erazm-holbein.jpg` | portret Erazma | Hans Holbein młodszy, 1523, domena publiczna | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Holbein,_Hans_(II)_-_Erasmus_-_National_Gallery.jpg) |
+| `assets/kopernik-portret.jpg` | pośmiertny portret Kopernika | autor nieznany, ok. 1580, domena publiczna | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Nikolaus_Kopernikus.jpg) |
+| `assets/galileusz-portret.jpg` | Galileusz, „Zasługi Galileusza dla astronomii” | Wikimedia Commons, domena publiczna; udostępnienie ZPE | [ZPE](https://zpe.gov.pl/a/wprowadzenie/DFie5Hl8l) |
+| `assets/kometa-halleya-eso.jpg` | kometa Halleya, 1986 | European Southern Observatory, CC BY 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Comet_1P-Halley_(eso8607d).jpg) |
+| `assets/mapa-wloch-1494.png` | Półwysep Apeniński w 1494 r. | Flankner, domena publiczna; udostępnienie ZPE | [ZPE](https://zpe.gov.pl/a/renesans-i-humanizm/D12CNhgVs) |
+| `assets/replika-prasy-gutenberga.jpg` | replika prasy Gutenberga | vlasta2, CC BY 2.0; udostępnienie ZPE | [ZPE](https://zpe.gov.pl/a/druk---wynalazek-ktory-zmienil-swiat/D8RK90Z5e) |
+
 ## Ważne rozróżnienia
 - Renesans nie rozpoczął się jednego dnia i nie oznaczał pełnego zerwania ze średniowieczem.
 - Humanizm nie był prostym odrzuceniem religii.

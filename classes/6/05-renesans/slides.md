@@ -11,6 +11,16 @@
 
 ---
 
+<!-- .slide: id="wlochy" data-purpose="evidence" data-layout="split" -->
+## Włochy — gdzie zaczęło się odrodzenie?
+
+<div class="italy-split">
+<figure class="source-figure"><img src="assets/mapa-wloch-1494.png" alt="Mapa Półwyspu Apenińskiego w 1494 roku" data-fit="contain" /><figcaption>Mapa Półwyspu Apenińskiego w 1494 r., Flankner, domena publiczna; udostępniona przez ZPE.</figcaption></figure>
+<div><p class="statement">Renesans narodził się najwcześniej w <strong>bogatych miastach włoskich</strong>.</p><div class="city-list"><div><strong>Florencja</strong><span>banki, artyści, Medyceusze</span></div><div><strong>Wenecja</strong><span>handel i druk</span></div><div><strong>Rzym</strong><span>papieże, budowle, artyści</span></div></div><p class="small">Mapa pokazuje wiele państw, nie jedno zjednoczone państwo włoskie.</p></div>
+</div>
+
+---
+
 <!-- .slide: id="epoka" data-purpose="explanation" data-layout="timeline-band" -->
 ## Odrodzenie czego?
 
@@ -21,6 +31,28 @@
 </div>
 
 <p class="callout"><strong>Renesans / odrodzenie</strong> — świadomy powrót do kultury antycznej i nowe sposoby przedstawiania oraz poznawania świata.</p>
+
+---
+
+<!-- .slide: id="mecenat" data-purpose="explanation" data-layout="statement" -->
+## Mecenat — kto umożliwiał sztukę?
+
+<div class="patronage-grid">
+<div><strong>Mecenat</strong><p>finansowanie artystów, uczonych, książek i budowli przez zamożnych ludzi lub instytucje.</p></div>
+<div><strong>Po co?</strong><p>dla prestiżu, pamięci rodu, wiary i znaczenia miasta.</p></div>
+<div><strong>Najważniejszy przykład</strong><p><b>Medyceusze z Florencji</b> wspierali artystów i uczonych; dzięki ich pieniądzom powstawały dzieła, biblioteki i budowle.</p></div>
+</div>
+<p class="callout">Mecenas nie „malował obrazu” — dawał twórcy środki, zamówienie i ochronę.</p>
+
+---
+
+<!-- .slide: id="siedem-postaci" data-purpose="explanation" data-layout="matrix" -->
+## Siedem postaci — mapa epoki
+
+<div class="name-grid">
+<div><strong>Leonardo</strong><span>obserwacja</span></div><div><strong>Michał Anioł</strong><span>ciało i monumentalność</span></div><div><strong>Rafael</strong><span>antyk i perspektywa</span></div><div><strong>Erazm</strong><span>edukacja i krytyczna lektura</span></div><div><strong>Kopernik</strong><span>heliocentryzm</span></div><div><strong>Galileusz</strong><span>obserwacja teleskopowa</span></div><div><strong>Gutenberg</strong><span>druk w Europie</span></div>
+</div>
+<p class="prompt-line">Do tej mapy będziemy wracać, poznając kolejne przykłady.</p>
 
 ---
 
@@ -78,40 +110,34 @@
 ---
 
 <!-- .slide: id="leonardo-obserwacja" data-purpose="evidence" data-layout="split" -->
-## Leonardo: sztuka spotyka obserwację
+## Leonardo: artysta, badacz, konstruktor
 
-<div class="renaissance-split">
-<div>
-<p class="statement">Rysunek był dla Leonarda narzędziem <strong>myślenia i badania</strong>.</p>
-<ul><li>studiował ciało człowieka;</li><li>notował pomysły maszyn;</li><li>łączył doświadczenie artysty i konstruktora.</li></ul>
+<div class="leonardo-intro">
+<figure class="source-figure"><img src="assets/leonardo-portret.jpg" alt="Rysunek tradycyjnie uznawany za autoportret Leonarda da Vinci" data-fit="contain" /><figcaption>Rysunek tradycyjnie uznawany za autoportret Leonarda da Vinci, domena publiczna.</figcaption></figure>
+<div><p class="statement">Leonardo łączył <strong>sztukę, obserwację natury i projekty techniczne</strong>.</p><ul><li>malował: „Mona Lisę” i „Ostatnią Wieczerzę”;</li><li>badał anatomię człowieka;</li><li>rysował projekty maszyn, mostów i pojazdów.</li></ul><p class="small">Nie każdy projekt zbudowano i nie każdy działałby tak, jak zakładał autor.</p></div>
 </div>
-<figure class="source-figure"><img src="assets/notatnik-leonarda.jpg" alt="Rysunki serca i naczyń krwionośnych w notatniku Leonarda da Vinci" data-fit="contain" /><figcaption>Leonardo da Vinci, studia serca i naczyń, domena publiczna, Wikimedia Commons.</figcaption></figure>
-</div>
+
+---
+
+<!-- .slide: id="leonardo-projekty" data-purpose="evidence" data-layout="matrix" -->
+## Leonardo: projekty, nie gotowe wynalazki
+
+<div class="leonardo-projects"><figure><img src="assets/notatnik-leonarda.jpg" alt="Studia serca i naczyń Leonarda da Vinci" data-fit="contain" /><figcaption>Badanie: studia serca i naczyń.</figcaption></figure><figure><img src="assets/leonardo-maszyna-latajaca.jpg" alt="Projekt maszyny latającej Leonarda da Vinci z około 1488 roku" data-fit="contain" /><figcaption>Projekt maszyny latającej, ok. 1488.</figcaption></figure><figure><img src="assets/leonardo-projekty-pojazdow.jpg" alt="Szkic wozu bojowego z kosami i pojazdu opancerzonego Leonarda da Vinci" data-fit="contain" /><figcaption>Szkice pojazdów, ok. 1485.</figcaption></figure></div>
+<p class="callout">W notatnikach widzimy proces myślenia: obserwację, rysunek, poprawkę i kolejny pomysł.</p>
 
 ---
 
 <!-- .slide: id="erazm" data-purpose="explanation" data-layout="statement" -->
 ## Erazm z Rotterdamu — humanista Europy
 
-<div class="profile-card">
-<span>ok. 1466–1536</span>
-<strong>Teksty trzeba czytać uważnie. Ludzi — kształcić.</strong>
-<p>Uczony podróżował po Europie, porównywał rękopisy, przygotował greckie wydanie Nowego Testamentu i krytykował nadużycia w „Pochwale głupoty”.</p>
-</div>
-
-<div class="thinking-question">Jak edukacja i krytyczna lektura łączą się z humanizmem?</div>
+<div class="profile-with-portrait"><figure class="source-figure"><img src="assets/erazm-holbein.jpg" alt="Portret Erazma z Rotterdamu autorstwa Hansa Holbeina młodszego" data-fit="contain" /><figcaption>Erazm z Rotterdamu, Hans Holbein młodszy, 1523 r., domena publiczna.</figcaption></figure><div class="profile-card"><span>ok. 1466–1536</span><strong>Teksty trzeba czytać uważnie. Ludzi — kształcić.</strong><p>Uczony podróżował po Europie, porównywał rękopisy, przygotował greckie wydanie Nowego Testamentu i krytykował nadużycia w „Pochwale głupoty”.</p></div></div>
 
 ---
 
 <!-- .slide: id="kopernik-galileusz" data-purpose="explanation" data-layout="comparison" -->
 ## Nowy obraz kosmosu
 
-<div class="science-compare">
-<div><span>1473–1543</span><strong>Mikołaj Kopernik</strong><p>Przedstawił heliocentryczny model świata w dziele „O obrotach sfer niebieskich” (1543).</p><div class="orbit" aria-label="Schemat Słońca i orbity Ziemi"><i class="sun"></i><i class="earth"></i></div></div>
-<div><span>1564–1642</span><strong>Galileusz</strong><p>Udoskonalił użycie teleskopu w astronomii; obserwował m.in. księżyce Jowisza i fazy Wenus.</p><div class="jupiter-system" aria-label="Schemat Jowisza i czterech księżyców"><i></i><i></i><b></b><i></i><i></i></div></div>
-</div>
-
-<p class="callout">Galileusz działał już na przełomie renesansu i rewolucji naukowej. Jego obserwacje wspierały nowy obraz kosmosu.</p>
+<div class="science-portraits"><article><img src="assets/kopernik-portret.jpg" alt="Pośmiertny portret Mikołaja Kopernika" data-fit="contain" /><span>1473–1543</span><strong>Mikołaj Kopernik</strong><p>Przedstawił heliocentryczny model świata w dziele „O obrotach sfer niebieskich” (1543).</p></article><article><img src="assets/galileusz-portret.jpg" alt="Portret Galileusza" data-fit="contain" /><span>1564–1642</span><strong>Galileusz</strong><p>Udoskonalił użycie teleskopu; obserwował m.in. księżyce Jowisza i fazy Wenus.</p></article><figure><img src="assets/kometa-halleya-eso.jpg" alt="Fotografia komety Halleya" data-fit="cover" /><figcaption>Kometa Halleya, ESO, 1986 r., CC BY 4.0.</figcaption></figure></div>
 
 ---
 
@@ -119,11 +145,10 @@
 ## Gutenberg: książka w wielu zgodnych kopiach
 
 <div class="renaissance-split print-split">
-<div class="print-chain">
-<div><strong>ruchoma metalowa czcionka</strong></div><b>→</b><div><strong>prasa i farba drukarska</strong></div><b>→</b><div><strong>szybsze powielanie</strong></div><b>→</b><div><strong>szerszy obieg wiedzy</strong></div>
+<figure class="source-figure"><img src="assets/replika-prasy-gutenberga.jpg" alt="Replika prasy drukarskiej Gutenberga" data-fit="cover" /><figcaption>Replika prasy drukarskiej Gutenberga, vlasta2, CC BY 2.0; udostępniona przez ZPE.</figcaption></figure>
+<div class="print-chain"><div><strong>ruchoma metalowa czcionka</strong></div><b>→</b><div><strong>prasa i farba drukarska</strong></div><b>→</b><div><strong>szybsze powielanie</strong></div><b>→</b><div><strong>szerszy obieg wiedzy</strong></div></div>
 </div>
-<figure class="source-figure"><img src="assets/biblia-gutenberga.jpg" alt="Strona Biblii Gutenberga" data-fit="contain" /><figcaption>Strona Biblii Gutenberga, lata 50. XV w., domena publiczna, Wikimedia Commons.</figcaption></figure>
-</div>
+<figure class="gutenberg-page"><img src="assets/biblia-gutenberga.jpg" alt="Strona Biblii Gutenberga" data-fit="contain" /><figcaption>Strona Biblii Gutenberga, lata 50. XV w., domena publiczna.</figcaption></figure>
 
 <!-- notes:
 Mów: Gutenberg rozwinął i upowszechnił w Europie system druku z ruchomej metalowej czcionki. Nie: wynalazł druk na świecie.
@@ -145,23 +170,6 @@ Mów: Gutenberg rozwinął i upowszechnił w Europie system druku z ruchomej met
 </div>
 
 <p class="monuments">Zabytki: kopuła katedry we Florencji • Tempietto w Rzymie • bazylika św. Piotra</p>
-
----
-
-<!-- .slide: id="siedem-postaci" data-purpose="practice" data-layout="matrix" -->
-## Siedem postaci — siedem tropów
-
-<div class="name-grid">
-<div><strong>Leonardo</strong><span>obserwacja</span></div>
-<div><strong>Michał Anioł</strong><span>ciało i monumentalność</span></div>
-<div><strong>Rafael</strong><span>antyk i perspektywa</span></div>
-<div><strong>Erazm</strong><span>edukacja i krytyczna lektura</span></div>
-<div><strong>Kopernik</strong><span>heliocentryzm</span></div>
-<div><strong>Galileusz</strong><span>obserwacja teleskopowa</span></div>
-<div><strong>Gutenberg</strong><span>druk w Europie</span></div>
-</div>
-
-<p class="prompt-line">Zakryj tropy i spróbuj odtworzyć osiągnięcia.</p>
 
 ---
 
