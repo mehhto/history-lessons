@@ -1,89 +1,604 @@
-/* Lekcja VI: muzealny piaskowy układ galerii. */
+/*
+ * Klasa VI — lokalny pilot „renesansowy warsztat / żywy album”.
+ * Kierunek opisuje design/visual-grammar-grade6-renaissance-pilot-v1.md.
+ * Nie przenosić do stylu wspólnego przed oceną nauczyciela i próbą klasową.
+ */
+
+:root {
+  --ren-ink: #102a43;
+  --ren-paper: #f4ebdd;
+  --ren-white: #fffdf8;
+  --ren-red: #d94b32;
+  --ren-gold: #d6a83c;
+  --ren-blue: #4f7cac;
+  --ren-muted: #6f6255;
+  --ren-line: rgba(16, 42, 67, .2);
+}
+
+.reveal .slides section[data-slide-canvas] {
+  box-sizing: border-box;
+  padding: 52px 66px;
+  border: 0;
+  color: var(--ren-ink);
+  background:
+    linear-gradient(90deg, transparent 0 63px, rgba(217,75,50,.2) 64px, transparent 65px),
+    var(--ren-paper) !important;
+}
+
+.reveal .slides section[data-slide-canvas]::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: 38px;
+  width: 74px;
+  border-top: 4px solid var(--ren-gold);
+}
+
+.reveal .slides section[data-slide-canvas]::after {
+  content: "";
+  position: absolute;
+  right: 38px;
+  bottom: 30px;
+  width: 16px;
+  height: 16px;
+  border: 3px solid var(--ren-red);
+  border-radius: 50%;
+}
+
+.reveal .slides section[data-slide-canvas] h1,
+.reveal .slides section[data-slide-canvas] h2,
+.reveal .slides section[data-slide-canvas] h3 {
+  color: var(--ren-ink);
+  font-family: "History Serif", "DejaVu Serif", Georgia, serif;
+  font-variant: normal;
+  text-transform: none;
+}
+
+.reveal .slides section[data-slide-canvas] h2 {
+  margin: 0 0 24px;
+  max-width: 1120px;
+  font-size: 48px;
+  line-height: 1.04;
+  letter-spacing: -.018em;
+}
+
 .reveal .source-figure figcaption,
 .reveal .art-grid figcaption,
-.reveal .source-strip { font-size:20px; line-height:1.18; color:var(--muted); }
+.reveal .source-strip {
+  color: var(--ren-muted);
+  font-size: 20px;
+  line-height: 1.18;
+}
 
-.reveal .epoch-line { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:25px; margin-top:40px; }
-.reveal .epoch-line > div { min-height:250px; padding:28px; background:var(--surface); border-top:8px solid var(--accent); }
-.reveal .epoch-line span, .reveal .epoch-line strong { display:block; }
-.reveal .epoch-line span { font-size:24px; color:var(--accent); font-weight:700; }
-.reveal .epoch-line strong { font-size:34px; margin:18px 0; }
-.reveal .epoch-line p { font-size:26px; }
-.reveal .callout { margin:28px auto 0; padding:18px 26px; max-width:1300px; background:var(--muted-surface,#eadfc8); border-radius:14px; font-size:27px; }
+/* 1 — ciemne otwarcie z dominantą źródłową. */
+.reveal #otwarcie {
+  padding: 0;
+  color: #fff;
+  background: var(--ren-ink) !important;
+}
 
-.reveal .humanism-word { margin:15px auto 25px; font-family:Georgia,serif; font-size:62px; letter-spacing:.14em; color:var(--accent); }
-.reveal .humanism-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:18px; }
-.reveal .humanism-grid > div { min-height:205px; padding:25px; background:var(--surface); border-bottom:7px solid var(--accent); }
-.reveal .humanism-grid strong, .reveal .humanism-grid span { display:block; }
-.reveal .humanism-grid strong { font-size:31px; margin-bottom:18px; }
-.reveal .humanism-grid span { font-size:23px; }
-.reveal .myth { margin-top:24px; font-size:26px; text-align:center; }
+.reveal #otwarcie::before {
+  top: 0;
+  right: 42%;
+  width: 18px;
+  height: 100%;
+  border: 0;
+  background: var(--ren-red);
+}
 
-.reveal .art-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; margin-top:22px; }
-.reveal .art-grid figure { margin:0; padding:15px; background:var(--surface); border:2px solid var(--border); }
-.reveal .art-grid img { width:100%; height:390px; object-fit:cover; object-position:center; }
-.reveal .art-grid figure:first-child img { object-position:center 30%; }
-.reveal .art-grid figcaption { margin-top:12px; }
+.reveal #otwarcie::after {
+  right: auto;
+  bottom: 42px;
+  left: 54px;
+  width: 88px;
+  height: 8px;
+  border: 0;
+  border-radius: 0;
+  background: var(--ren-gold);
+}
 
-.reveal .student-task[data-task-kind="panel"] { max-width:1260px; margin:30px auto; padding:32px 46px; background:var(--surface); border-left:10px solid var(--accent); text-align:left; }
-.reveal .student-task[data-task-kind="panel"] strong { font-size:34px; }
-.reveal .student-task[data-task-kind="panel"] li { margin:16px 0; font-size:28px; }
-.reveal .success { text-align:center; font-size:27px; font-weight:800; }
+#otwarcie .atelier-opening {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: 58% 42%;
+  width: auto;
+  height: auto;
+  text-align: left;
+}
 
-.reveal .bio-grid { display:grid; gap:24px; margin-top:38px; }
-.reveal .bio-grid.three { grid-template-columns:repeat(3,minmax(0,1fr)); }
-.reveal .bio-grid > div { min-height:350px; padding:30px; background:var(--surface); border-top:8px solid var(--accent); text-align:left; }
-.reveal .bio-grid strong, .reveal .bio-grid span { display:block; }
-.reveal .bio-grid strong { font-size:33px; }
-.reveal .bio-grid span { margin:12px 0 22px; color:var(--accent); font-size:23px; font-weight:700; }
-.reveal .bio-grid p { font-size:25px; line-height:1.27; }
+#otwarcie .opening-copy {
+  align-self: center;
+  padding: 66px 64px;
+}
 
-.reveal .renaissance-split { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:40px; align-items:center; }
-.reveal .renaissance-split .source-figure img { width:100%; height:400px; object-fit:contain; }
-.reveal .renaissance-split .statement { font-size:34px; }
-.reveal .renaissance-split li { font-size:28px; margin:18px 0; }
+#otwarcie .opening-kicker {
+  display: inline-block;
+  margin: 0 0 22px;
+  padding: 8px 13px;
+  color: var(--ren-ink);
+  background: var(--ren-gold);
+  font-size: 18px;
+  font-weight: 850;
+  letter-spacing: .12em;
+}
 
-.reveal .profile-card { max-width:1220px; margin:36px auto 25px; padding:38px 48px; background:var(--surface); border-top:10px solid var(--accent); text-align:left; }
-.reveal .profile-card span { color:var(--accent); font-size:25px; font-weight:700; }
-.reveal .profile-card strong { display:block; font-family:Georgia,serif; font-size:40px; margin:20px 0; }
-.reveal .profile-card p { font-size:28px; line-height:1.3; }
-.reveal .thinking-question { text-align:center; font-size:28px; font-weight:700; }
+.reveal #otwarcie h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 65px;
+  line-height: .96;
+  letter-spacing: -.035em;
+}
 
-.reveal .science-compare { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:34px; }
-.reveal .science-compare > div { min-height:360px; padding:32px 38px; background:var(--surface); border:2px solid var(--border); }
-.reveal .science-compare span, .reveal .science-compare strong { display:block; }
-.reveal .science-compare span { color:var(--accent); font-size:24px; font-weight:700; }
-.reveal .science-compare strong { font-size:35px; margin:17px 0; }
-.reveal .science-compare p { font-size:27px; }
-.reveal .orbit, .reveal .telescope { margin-top:18px; font-size:60px; color:var(--accent); }
-.reveal .orbit i { font-style:normal; display:inline-block; margin-left:65px; }
+.reveal #otwarcie h2 {
+  margin: 20px 0 30px;
+  color: #e3c979;
+  font-family: "History Sans", "DejaVu Sans", Arial, sans-serif;
+  font-size: 27px;
+  font-weight: 720;
+  letter-spacing: .035em;
+}
 
-.reveal .print-split { grid-template-columns:1.2fr .8fr; }
-.reveal .print-chain { display:grid; grid-template-columns:1fr; gap:8px; }
-.reveal .print-chain div { padding:15px 20px; background:var(--surface); border-left:7px solid var(--accent); font-size:25px; }
-.reveal .print-chain b { text-align:center; color:var(--accent); font-size:27px; }
+.reveal #otwarcie .lead {
+  max-width: 570px;
+  margin: 0;
+  padding-left: 22px;
+  border-left: 5px solid var(--ren-red);
+  color: #fff8ea;
+  font-size: 27px;
+  line-height: 1.32;
+}
 
-.reveal .feature-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
-.reveal .feature-list > div { padding:20px; background:var(--surface); border-left:7px solid var(--accent); }
-.reveal .feature-list strong, .reveal .feature-list span { display:block; }
-.reveal .feature-list strong { font-size:29px; }
-.reveal .feature-list span { font-size:22px; margin-top:8px; }
-.reveal .monuments { margin-top:20px; font-size:23px; text-align:center; }
+#otwarcie figure {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  background: #091a2a;
+}
 
-.reveal .name-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:18px; margin-top:32px; }
-.reveal .name-grid > div { min-height:135px; padding:19px; background:var(--surface); border:2px solid var(--border); }
-.reveal .name-grid strong, .reveal .name-grid span { display:block; }
-.reveal .name-grid strong { font-size:25px; }
-.reveal .name-grid span { margin-top:12px; color:var(--accent); font-size:21px; }
-.reveal .prompt-line { text-align:center; margin-top:25px; font-size:25px; font-weight:700; }
+#otwarcie figure img {
+  display: block;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  width: 100%;
+  height: 720px;
+  object-fit: cover;
+  object-position: 56% center;
+}
 
-.reveal .synthesis-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:22px; margin-top:40px; }
-.reveal .synthesis-grid > div { min-height:220px; padding:28px; background:var(--surface); border-top:8px solid var(--accent); }
-.reveal .synthesis-grid strong, .reveal .synthesis-grid span { display:block; }
-.reveal .synthesis-grid strong { font-size:31px; }
-.reveal .synthesis-grid span { margin-top:20px; font-size:24px; }
-.reveal .final-answer { margin-top:32px; padding:18px; background:var(--muted-surface,#eadfc8); text-align:center; font-size:28px; font-weight:700; }
+#otwarcie figure figcaption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 15px 22px;
+  color: #fff;
+  background: rgba(16,42,67,.9);
+  font-size: 20px;
+  text-align: left;
+}
 
-.reveal .student-task[data-task-kind="exit"] { max-width:1250px; margin:32px auto; padding:30px 46px; background:var(--surface); border:3px solid var(--border); text-align:left; }
-.reveal .student-task[data-task-kind="exit"] li { margin:20px 0; font-size:30px; }
-.reveal .time-badge { text-align:center; font-size:25px; font-weight:700; color:var(--accent); }
+/* 2 — jedna oś epoki, zamiast trzech osobnych kart. */
+#epoka .epoch-line {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  margin: 62px 0 0;
+}
+
+#epoka .epoch-line::before {
+  content: "";
+  position: absolute;
+  top: 57px;
+  right: 6%;
+  left: 6%;
+  border-top: 6px solid var(--ren-ink);
+}
+
+#epoka .epoch-line > div {
+  position: relative;
+  min-height: 230px;
+  padding: 0 30px 20px;
+  border: 0;
+  background: transparent;
+  text-align: left;
+}
+
+#epoka .epoch-line > div::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 43px;
+  left: 30px;
+  width: 26px;
+  height: 26px;
+  border: 7px solid var(--ren-paper);
+  border-radius: 50%;
+  background: var(--ren-red);
+  box-shadow: 0 0 0 3px var(--ren-ink);
+}
+
+#epoka .epoch-line > div:nth-child(2)::before { background: var(--ren-gold); }
+#epoka .epoch-line > div:nth-child(3)::before { background: var(--ren-blue); }
+#epoka .epoch-line span,
+#epoka .epoch-line strong { display: block; }
+#epoka .epoch-line span {
+  color: var(--ren-red);
+  font-family: "History Serif", Georgia, serif;
+  font-size: 31px;
+  font-weight: 850;
+}
+#epoka .epoch-line > div:nth-child(2) span { color: #906a11; }
+#epoka .epoch-line > div:nth-child(3) span { color: var(--ren-blue); }
+#epoka .epoch-line strong {
+  margin: 73px 0 10px;
+  font-size: 31px;
+}
+#epoka .epoch-line p { margin: 0; font-size: 24px; line-height: 1.25; }
+#epoka .callout {
+  margin: 18px 0 0 14%;
+  padding: 18px 28px;
+  max-width: 900px;
+  border: 0;
+  border-left: 8px solid var(--ren-red);
+  border-radius: 0;
+  color: #fff;
+  background: var(--ren-ink);
+  font-size: 25px;
+}
+
+/* 3 — humanistyczny manifest na ciemnej scenie. */
+.reveal #humanizm {
+  color: #fff;
+  background:
+    linear-gradient(115deg, var(--ren-ink) 0 62%, #173b5a 62% 100%) !important;
+}
+.reveal #humanizm::before { width: 160px; border-color: var(--ren-red); }
+.reveal #humanizm::after { border-color: var(--ren-gold); }
+.reveal #humanizm h2 { color: #fff; }
+#humanizm .humanism-word {
+  position: absolute;
+  right: 54px;
+  top: 96px;
+  margin: 0;
+  color: rgba(214,168,60,.16);
+  font-family: "History Serif", Georgia, serif;
+  font-size: 88px;
+  font-weight: 900;
+  letter-spacing: .06em;
+}
+#humanizm .humanism-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 16px 22px;
+  max-width: 950px;
+  margin-top: 42px;
+}
+#humanizm .humanism-grid > div {
+  min-height: 130px;
+  padding: 23px 27px;
+  border: 0;
+  border-left: 8px solid var(--ren-red);
+  background: rgba(255,255,255,.08);
+  text-align: left;
+}
+#humanizm .humanism-grid > div:nth-child(2),
+#humanizm .humanism-grid > div:nth-child(3) { border-left-color: var(--ren-gold); }
+#humanizm .humanism-grid strong,
+#humanizm .humanism-grid span { display: block; }
+#humanizm .humanism-grid strong { margin: 0 0 8px; color: #fff; font-size: 30px; }
+#humanizm .humanism-grid span { color: #eef3f5; font-size: 21px; line-height: 1.25; }
+#humanizm .myth {
+  position: absolute;
+  right: 68px;
+  bottom: 62px;
+  width: 365px;
+  margin: 0;
+  padding: 19px 22px;
+  border-top: 5px solid var(--ren-gold);
+  color: var(--ren-ink);
+  background: var(--ren-white);
+  font-size: 22px;
+  text-align: left;
+}
+
+/* 4 — szeroki tryptyk, reprodukcje bez kart katalogowych. */
+.reveal #galeria { padding: 45px 38px 34px; background: #171717 !important; }
+.reveal #galeria::before,
+.reveal #galeria::after { content: none; }
+.reveal #galeria h2 { margin-left: 28px; color: #fff; }
+#galeria .art-grid {
+  display: grid;
+  grid-template-columns: .78fr 1.25fr 1.05fr;
+  gap: 8px;
+  margin: 0;
+}
+#galeria .art-grid figure { position: relative; margin: 0; padding: 0; overflow: hidden; border: 0; background: #000; }
+#galeria .art-grid img { width: 100%; height: 515px; object-fit: cover; }
+#galeria .art-grid figure:nth-child(1) img { object-position: 50% 28%; }
+#galeria .art-grid figure:nth-child(2) img { object-position: 50% 42%; }
+#galeria .art-grid figure:nth-child(3) img { object-position: 51% center; }
+#galeria .art-grid figcaption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 14px 16px;
+  color: #fff;
+  background: rgba(16,42,67,.94);
+  border-top: 3px solid var(--ren-gold);
+  font-size: 20px;
+  font-weight: 650;
+  line-height: 1.18;
+  text-align: left;
+}
+#galeria .art-grid figcaption strong { color: #fff; font-weight: 850; }
+
+/* 5 i 13 — kontrastowe plansze działania. */
+.reveal #cechy-sztuki,
+.reveal #kuratorzy {
+  color: #fff;
+  background: var(--ren-red) !important;
+}
+.reveal #cechy-sztuki::before,
+.reveal #kuratorzy::before { width: 150px; border-color: var(--ren-gold); }
+.reveal #cechy-sztuki::after,
+.reveal #kuratorzy::after { border-color: #fff; }
+.reveal #cechy-sztuki h2,
+.reveal #kuratorzy h2 { color: #fff; font-size: 54px; }
+#cechy-sztuki .student-task,
+#kuratorzy .student-task {
+  position: relative;
+  max-width: 1040px;
+  margin: 24px auto 0;
+  padding: 30px 42px 28px 190px;
+  border: 0;
+  border-radius: 0;
+  color: var(--ren-ink);
+  background: var(--ren-white);
+  box-shadow: 14px 14px 0 var(--ren-ink);
+  text-align: left;
+}
+#cechy-sztuki .student-task::before,
+#kuratorzy .student-task::before {
+  position: absolute;
+  top: 34px;
+  left: 35px;
+  color: var(--ren-red);
+  font-family: "History Serif", Georgia, serif;
+  font-size: 92px;
+  font-weight: 900;
+  line-height: .8;
+}
+#cechy-sztuki .student-task::before { content: "3′"; }
+#kuratorzy .student-task::before { content: "8′"; }
+#cechy-sztuki .student-task strong,
+#kuratorzy .student-task strong { color: var(--ren-red); font-size: 28px; }
+#cechy-sztuki .student-task li,
+#kuratorzy .student-task li { margin: 12px 0; font-size: 25px; line-height: 1.23; }
+#kuratorzy .success {
+  margin: 29px auto 0;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 800;
+  text-align: center;
+}
+
+/* 6 — biografie jak trzy pionowe rozkładówki, bez równych kart. */
+#artysci .bio-grid {
+  display: grid;
+  grid-template-columns: 1.05fr .9fr 1.05fr;
+  gap: 0;
+  margin: 38px 0 0;
+  border-top: 3px solid var(--ren-ink);
+  border-bottom: 3px solid var(--ren-ink);
+}
+#artysci .bio-grid > div {
+  min-height: 400px;
+  padding: 30px 28px;
+  border: 0;
+  border-right: 2px solid var(--ren-line);
+  background: transparent;
+  text-align: left;
+}
+#artysci .bio-grid > div:nth-child(2) { color: #fff; background: var(--ren-ink); transform: translateY(-18px); }
+#artysci .bio-grid > div:last-child { border-right: 0; }
+#artysci .bio-grid strong,
+#artysci .bio-grid span { display: block; }
+#artysci .bio-grid strong { min-height: 78px; font-family: "History Serif", Georgia, serif; font-size: 35px; line-height: 1.05; }
+#artysci .bio-grid span { margin: 5px 0 35px; color: var(--ren-red); font-size: 23px; font-weight: 800; }
+#artysci .bio-grid > div:nth-child(2) strong { color: #fff; }
+#artysci .bio-grid > div:nth-child(2) span { color: var(--ren-gold); }
+#artysci .bio-grid p { margin: 0; font-size: 24px; line-height: 1.3; }
+
+/* 7 — źródło Leonarda dominuje, tekst jest notatką warsztatową. */
+.reveal #leonardo-obserwacja { background: #e7dfd0 !important; }
+#leonardo-obserwacja .renaissance-split {
+  display: grid;
+  grid-template-columns: .85fr 1.15fr;
+  gap: 38px;
+  align-items: stretch;
+}
+#leonardo-obserwacja .renaissance-split > div {
+  align-self: center;
+  padding: 32px 32px 32px 38px;
+  border-left: 10px solid var(--ren-red);
+  background: var(--ren-white);
+  box-shadow: 11px 11px 0 rgba(16,42,67,.18);
+  text-align: left;
+}
+#leonardo-obserwacja .statement { margin-top: 0; font-size: 31px; line-height: 1.18; }
+#leonardo-obserwacja li { margin: 14px 0; font-size: 24px; }
+#leonardo-obserwacja .source-figure { margin: 0; padding: 12px; background: #fff; box-shadow: 12px 12px 0 var(--ren-blue); }
+#leonardo-obserwacja .source-figure img { width: 100%; height: 430px; object-fit: contain; }
+
+/* 8 — plakat cytatu, nie kolejna karta. */
+.reveal #erazm {
+  color: #fff;
+  background:
+    linear-gradient(90deg, var(--ren-ink) 0 72%, var(--ren-gold) 72% 100%) !important;
+}
+.reveal #erazm::before { right: 36px; width: 250px; border-color: var(--ren-red); }
+.reveal #erazm::after { display: none; }
+.reveal #erazm h2 { max-width: 850px; color: #fff; }
+#erazm .profile-card {
+  position: relative;
+  max-width: 760px;
+  margin: 42px 0 22px;
+  padding: 25px 40px 28px 86px;
+  border: 0;
+  border-left: 4px solid var(--ren-gold);
+  color: #fff;
+  background: transparent;
+  text-align: left;
+}
+#erazm .profile-card::before {
+  content: "„";
+  position: absolute;
+  top: -40px;
+  left: 4px;
+  color: var(--ren-red);
+  font-family: Georgia, serif;
+  font-size: 150px;
+  line-height: 1;
+}
+#erazm .profile-card span { color: var(--ren-gold); font-size: 23px; font-weight: 800; }
+#erazm .profile-card strong { display: block; margin: 16px 0 24px; color: #fff; font-family: Georgia, serif; font-size: 36px; line-height: 1.12; }
+#erazm .profile-card p { color: #e7edf1; font-size: 23px; line-height: 1.28; }
+#erazm .thinking-question { width: 760px; margin: 15px 0 0 86px; color: #fff2c9; font-size: 23px; font-weight: 800; text-align: left; }
+
+/* 9 — nocna tablica kosmosu z geometrią zamiast symboli tekstowych. */
+.reveal #kopernik-galileusz { color: #fff; background: #091827 !important; }
+.reveal #kopernik-galileusz h2 { color: #fff; }
+#kopernik-galileusz .science-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 58px; margin-top: 28px; }
+#kopernik-galileusz .science-compare > div { position: relative; min-height: 350px; padding: 27px 30px; border: 1px solid rgba(255,255,255,.22); background: rgba(255,255,255,.04); text-align: left; }
+#kopernik-galileusz .science-compare > div:first-child { border-top: 8px solid var(--ren-gold); }
+#kopernik-galileusz .science-compare > div:last-child { border-top: 8px solid var(--ren-blue); }
+#kopernik-galileusz .science-compare span,
+#kopernik-galileusz .science-compare strong { display: block; }
+#kopernik-galileusz .science-compare span { color: var(--ren-gold); font-size: 22px; font-weight: 800; }
+#kopernik-galileusz .science-compare > div:last-child span { color: #9cc1e6; }
+#kopernik-galileusz .science-compare strong { margin: 12px 0; color: #fff; font-family: Georgia, serif; font-size: 34px; }
+#kopernik-galileusz .science-compare p { max-width: 410px; color: #e2eaf0; font-size: 23px; line-height: 1.25; }
+#kopernik-galileusz .orbit { position: absolute; right: 28px; bottom: 22px; width: 130px; height: 92px; border: 3px solid var(--ren-gold); border-radius: 50%; transform: rotate(-12deg); }
+#kopernik-galileusz .orbit .sun { position: absolute; left: 48px; top: 30px; width: 27px; height: 27px; border-radius: 50%; background: var(--ren-gold); box-shadow: 0 0 0 7px rgba(214,168,60,.18); }
+#kopernik-galileusz .orbit .earth { position: absolute; right: -8px; top: 29px; width: 18px; height: 18px; border: 3px solid #fff; border-radius: 50%; background: var(--ren-blue); }
+#kopernik-galileusz .jupiter-system {
+  position: absolute;
+  right: 28px;
+  bottom: 42px;
+  display: grid;
+  grid-template-columns: 12px 12px 48px 12px 12px;
+  gap: 13px;
+  align-items: center;
+  width: 174px;
+}
+#kopernik-galileusz .jupiter-system::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  left: 0;
+  border-top: 2px solid rgba(156,193,230,.45);
+}
+#kopernik-galileusz .jupiter-system i,
+#kopernik-galileusz .jupiter-system b {
+  position: relative;
+  z-index: 1;
+  display: block;
+  border-radius: 50%;
+}
+#kopernik-galileusz .jupiter-system i {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #fff;
+  background: var(--ren-blue);
+}
+#kopernik-galileusz .jupiter-system i:nth-child(2),
+#kopernik-galileusz .jupiter-system i:nth-child(5) {
+  width: 7px;
+  height: 7px;
+  background: var(--ren-gold);
+}
+#kopernik-galileusz .jupiter-system b {
+  width: 46px;
+  height: 46px;
+  border: 3px solid var(--ren-gold);
+  background:
+    linear-gradient(180deg, transparent 22%, rgba(214,168,60,.9) 23% 31%, transparent 32% 56%, rgba(214,168,60,.65) 57% 65%, transparent 66%),
+    #d5c29a;
+  box-shadow: 0 0 0 7px rgba(79,124,172,.16);
+}
+#kopernik-galileusz .callout { margin: 22px auto 0; padding: 14px 24px; max-width: 1000px; border-left: 7px solid var(--ren-red); border-radius: 0; color: var(--ren-ink); background: var(--ren-paper); font-size: 21px; }
+
+/* 10 — przepływ druku i duża reprodukcja. */
+#druk .renaissance-split { display: grid; grid-template-columns: 1.08fr .92fr; gap: 38px; align-items: center; }
+#druk .print-chain { counter-reset: print-step; display: grid; grid-template-columns: 1fr; gap: 4px; }
+#druk .print-chain div { counter-increment: print-step; position: relative; padding: 17px 18px 17px 74px; border: 0; border-bottom: 2px solid var(--ren-line); background: transparent; font-size: 25px; text-align: left; }
+#druk .print-chain div::before { content: counter(print-step, decimal-leading-zero); position: absolute; left: 10px; top: 12px; color: var(--ren-red); font-family: Georgia, serif; font-size: 32px; font-weight: 900; }
+#druk .print-chain b { color: var(--ren-gold); font-size: 22px; line-height: .7; text-align: center; }
+#druk .source-figure { margin: 0; padding: 13px; background: #fff; box-shadow: 14px 14px 0 var(--ren-red); }
+#druk .source-figure img { width: 100%; height: 425px; object-fit: contain; }
+
+/* 11 — fotografia architektury jako pionowa dominanta. */
+#architektura .renaissance-split { display: grid; grid-template-columns: .82fr 1.18fr; gap: 42px; align-items: stretch; }
+#architektura .feature-list { display: grid; grid-template-columns: 1fr; gap: 0; align-content: center; }
+#architektura .feature-list > div { position: relative; padding: 17px 20px 17px 56px; border: 0; border-bottom: 2px solid var(--ren-line); background: transparent; text-align: left; }
+#architektura .feature-list > div::before { content: ""; position: absolute; top: 29px; left: 12px; width: 26px; border-top: 4px solid var(--ren-red); }
+#architektura .feature-list strong,
+#architektura .feature-list span { display: block; }
+#architektura .feature-list strong { font-size: 29px; }
+#architektura .feature-list span { margin-top: 4px; font-size: 21px; }
+#architektura .source-figure { position: relative; margin: 0; padding: 0 0 0 18px; border-left: 5px solid var(--ren-gold); }
+#architektura .source-figure img { width: 100%; height: 425px; object-fit: cover; object-position: center 60%; }
+#architektura .source-figure figcaption { margin-top: 8px; }
+#architektura .monuments { margin: 17px 0 0; color: var(--ren-muted); font-size: 20px; text-align: center; }
+
+/* 12 — wielka liczba i siedem tropów w dwóch nieregularnych rzędach. */
+#siedem-postaci .name-grid { position: relative; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px 18px; margin: 38px 0 0 180px; }
+#siedem-postaci .name-grid::before { content: "7"; position: absolute; left: -180px; top: -42px; color: var(--ren-red); font-family: Georgia, serif; font-size: 190px; font-weight: 900; line-height: 1; }
+#siedem-postaci .name-grid > div { min-height: 118px; padding: 18px 18px; border: 0; border-top: 5px solid var(--ren-ink); background: rgba(255,255,255,.45); text-align: left; }
+#siedem-postaci .name-grid > div:nth-child(2n) { transform: translateY(16px); border-top-color: var(--ren-red); }
+#siedem-postaci .name-grid > div:nth-child(3n) { border-top-color: var(--ren-gold); }
+#siedem-postaci .name-grid strong,
+#siedem-postaci .name-grid span { display: block; }
+#siedem-postaci .name-grid strong { font-size: 24px; }
+#siedem-postaci .name-grid span { margin-top: 10px; color: var(--ren-muted); font-size: 20px; }
+#siedem-postaci .prompt-line { margin: 42px 0 0 180px; padding: 13px 18px; border-left: 7px solid var(--ren-red); color: #fff; background: var(--ren-ink); font-size: 22px; font-weight: 750; text-align: left; }
+
+/* 14 — cztery pola zbiegają się w jeden wspólny wniosek. */
+.reveal #synteza { color: #fff; background: var(--ren-ink) !important; }
+.reveal #synteza h2 { color: #fff; }
+#synteza .synthesis-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 3px; margin-top: 42px; }
+#synteza .synthesis-grid > div { position: relative; min-height: 220px; padding: 28px 24px; border: 0; background: rgba(255,255,255,.07); text-align: left; }
+#synteza .synthesis-grid > div:nth-child(1) { border-top: 9px solid var(--ren-red); }
+#synteza .synthesis-grid > div:nth-child(2) { border-top: 9px solid var(--ren-gold); }
+#synteza .synthesis-grid > div:nth-child(3) { border-top: 9px solid var(--ren-blue); }
+#synteza .synthesis-grid > div:nth-child(4) { border-top: 9px solid #fff; }
+#synteza .synthesis-grid > div::after { content: "↓"; position: absolute; right: 0; bottom: -40px; left: 0; color: var(--ren-gold); font-size: 29px; text-align: center; }
+#synteza .synthesis-grid strong,
+#synteza .synthesis-grid span { display: block; }
+#synteza .synthesis-grid strong { color: #fff; font-size: 31px; }
+#synteza .synthesis-grid span { margin-top: 18px; color: #dfe9ef; font-size: 22px; line-height: 1.25; }
+#synteza .final-answer { margin: 55px auto 0; padding: 17px 22px; max-width: 960px; color: var(--ren-ink); background: var(--ren-gold); font-size: 25px; font-weight: 850; text-align: center; }
+
+/* 15 — spokojny finał z trzema wyraźnymi pasami. */
+.reveal #bilet { background: var(--ren-gold) !important; }
+.reveal #bilet::before { width: 150px; border-color: var(--ren-red); }
+.reveal #bilet::after { border-color: var(--ren-ink); }
+.reveal #bilet h2 { font-size: 58px; }
+#bilet .student-task { max-width: 1040px; margin: 28px auto 0; padding: 14px 0; border: 0; background: transparent; text-align: left; }
+#bilet .student-task ol { counter-reset: exit-item; margin: 0; padding: 0; list-style: none; }
+#bilet .student-task li { counter-increment: exit-item; position: relative; margin: 12px 0; padding: 20px 28px 20px 82px; color: var(--ren-ink); background: var(--ren-white); box-shadow: 8px 8px 0 rgba(16,42,67,.17); font-size: 27px; line-height: 1.2; }
+#bilet .student-task li::before { content: counter(exit-item); position: absolute; left: 22px; top: 12px; color: var(--ren-red); font-family: Georgia, serif; font-size: 42px; font-weight: 900; }
+#bilet .time-badge { margin-top: 25px; color: var(--ren-ink); font-size: 23px; font-weight: 850; text-align: center; }
+
+@media print {
+  #artysci .bio-grid > div:nth-child(2),
+  #siedem-postaci .name-grid > div:nth-child(2n) { transform: none; }
+}

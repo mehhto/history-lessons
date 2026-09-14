@@ -1,8 +1,13 @@
 <!-- .slide: id="otwarcie" data-purpose="opening" data-layout="statement" -->
-# W starożytnym Izraelu
-## Dzieje, religia i znaczenie Jerozolimy
-
+<div class="levant-opening">
+<div class="opening-copy">
+<p class="opening-kicker">BLISKI WSCHÓD · STAROŻYTNOŚĆ</p>
+<h1>W starożytnym Izraelu</h1>
+<h2>Dzieje, religia i znaczenie Jerozolimy</h2>
 <p class="lead">Jak jedno miejsce połączyło historię, wiarę i pamięć?</p>
+</div>
+<figure><img src="assets/sciana-zachodnia-zpe.jpg" alt="Współczesny widok Zachodniego Muru w Jerozolimie" data-fit="cover" /><figcaption>Zachodni Mur w Jerozolimie. Fot. Sheepdog85, CC BY-SA 3.0, za ZPE.</figcaption></figure>
+</div>
 
 <!-- notes:
 Poproś o jedną hipotezę: dlaczego Jerozolima mogła być ważna dla wspólnoty nawet po utracie państwa?
@@ -161,7 +166,12 @@ Jeśli korzystasz z podanego filmu YouTube od 5:10, nazwij go współczesną wiz
 <!-- .slide: id="most-chrzescijanstwo" data-purpose="synthesis" data-layout="hero-source" -->
 ## Most do następnej historii
 
-<figure class="source-figure diagram-full"><img src="assets/schemat-chrzescijanstwo.svg" alt="Schemat wczesnego rozprzestrzeniania się chrześcijaństwa od Judei ku miastom Morza Śródziemnego" data-fit="contain" /><figcaption>Schemat autorski: główne kierunki, nie mapa granic politycznych.</figcaption></figure>
+<div class="bridge-route">
+<div><span>1</span><strong>Judea</strong><p>Chrześcijaństwo narodziło się w środowisku żydowskim w rzymskiej Judei.</p></div>
+<div><span>2</span><strong>Miasta i drogi</strong><p>Uczniowie Jezusa oraz pierwsi misjonarze przekazywali naukę przez miasta i porty cesarstwa.</p></div>
+<div><span>3</span><strong>Morze Śródziemne</strong><p>W I–III w. n.e. wspólnoty pojawiały się od wschodniej części cesarstwa po Rzym.</p></div>
+</div>
+<p class="bridge-question">Co pomagało nowej religii rozchodzić się między odległymi miastami?</p>
 
 ---
 

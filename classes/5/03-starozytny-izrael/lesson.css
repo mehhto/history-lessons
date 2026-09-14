@@ -1,55 +1,111 @@
-/* Lekcja V: spokojny atlas w odcieniach ziemi; bez wpływu na inne pakiety. */
-.reveal .slides section { --caption-size: 20px; }
+/* Klasa V — lokalny pilot „atlas–archiwum”. Zob. design/visual-grammar-israel-front-pilots-v1.md. */
+:root { --lev-ink:#243447; --lev-paper:#f4ebdd; --lev-white:#fffdf8; --lev-clay:#b8523a; --lev-gold:#c89c3d; --lev-olive:#65724a; --lev-muted:#6e6254; --lev-line:rgba(36,52,71,.2); }
+.reveal .slides section[data-slide-canvas] { box-sizing:border-box; padding:52px 66px; border:0; color:var(--lev-ink); background:linear-gradient(90deg,transparent 0 63px,rgba(184,82,58,.2) 64px,transparent 65px),var(--lev-paper)!important; }
+.reveal .slides section[data-slide-canvas]::before { content:""; position:absolute; top:30px; right:38px; width:76px; border-top:4px solid var(--lev-gold); }
+.reveal .slides section[data-slide-canvas]::after { content:""; position:absolute; right:38px; bottom:30px; width:15px; height:15px; border:3px solid var(--lev-clay); border-radius:50%; }
+.reveal .slides section[data-slide-canvas] h1,.reveal .slides section[data-slide-canvas] h2,.reveal .slides section[data-slide-canvas] h3 { color:var(--lev-ink); font-family:"History Serif","DejaVu Serif",Georgia,serif; text-transform:none; }
+.reveal .slides section[data-slide-canvas] h2 { margin:0 0 25px; max-width:1120px; font-size:48px; line-height:1.04; letter-spacing:-.018em; }
+.reveal .source-figure figcaption,.reveal .symbol-grid figcaption,.reveal .source-strip { color:var(--lev-muted); font-size:20px; line-height:1.18; }
 
-.reveal .source-figure figcaption,
-.reveal .symbol-grid figcaption,
-.reveal .source-strip { font-size: 20px; line-height: 1.18; color: var(--muted); }
+/* Otwarcie — źródło, nie dekoracja. */
+.reveal #otwarcie { padding:0; color:#fff; background:var(--lev-ink)!important; }
+.reveal #otwarcie::before { top:0; right:43%; width:14px; height:100%; border:0; background:var(--lev-clay); }
+.reveal #otwarcie::after { right:auto; bottom:42px; left:54px; width:88px; height:8px; border:0; border-radius:0; background:var(--lev-gold); }
+#otwarcie .levant-opening { position:absolute; inset:0; display:grid; grid-template-columns:57% 43%; text-align:left; }
+#otwarcie .opening-copy { align-self:center; padding:66px 64px; }
+#otwarcie .opening-kicker { display:inline-block; margin:0 0 22px; padding:8px 13px; color:var(--lev-ink); background:var(--lev-gold); font-size:18px; font-weight:850; letter-spacing:.1em; }
+.reveal #otwarcie h1 { margin:0; color:#fff; font-size:66px; line-height:.96; letter-spacing:-.035em; }
+.reveal #otwarcie h2 { margin:20px 0 30px; color:#e4d19b; font-family:"History Sans","DejaVu Sans",Arial,sans-serif; font-size:27px; font-weight:720; letter-spacing:.03em; }
+.reveal #otwarcie .lead { max-width:570px; margin:0; padding-left:22px; border-left:5px solid var(--lev-clay); color:#fff8ea; font-size:27px; line-height:1.32; }
+#otwarcie figure { position:relative; margin:0; overflow:hidden; background:#182637; }
+#otwarcie figure img { display:block; max-width:none; max-height:none; margin:0; width:100%; height:720px; object-fit:cover; object-position:54% center; }
+#otwarcie figure figcaption { position:absolute; right:0; bottom:0; left:0; margin:0; padding:15px 20px; color:#fff; background:rgba(36,52,71,.92); font-size:20px; text-align:left; }
 
-.reveal .map-full img { width: 100%; height: 430px; object-fit: contain; }
-.reveal .diagram-full img { width: 100%; height: 525px; object-fit: contain; }
-.reveal .map-question { position: absolute; right: 70px; bottom: 64px; padding: 14px 22px; background: rgba(255,253,247,.94); border: 2px solid var(--border); border-radius: 16px; font-size: 27px; }
+/* Mapa jako pole orientacji. */
+#mapa-region .map-full { position:relative; margin:0; padding:13px; background:#fff; box-shadow:14px 14px 0 var(--lev-olive); }
+#mapa-region .map-full img { display:block; width:100%; height:460px; object-fit:contain; }
+#mapa-region .map-question { position:absolute; right:75px; bottom:68px; margin:0; padding:15px 24px; border:0; border-left:8px solid var(--lev-clay); border-radius:0; color:#fff; background:var(--lev-ink); font-size:27px; }
 
-.reveal .lesson-split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 42px; align-items: center; }
-.reveal .text-image .source-figure img { width: 100%; height: 500px; object-fit: contain; }
-.reveal #zachodni-mur .source-figure img { height: 410px; }
-.reveal .flag-split { grid-template-columns: 1.35fr .65fr; }
-.reveal .flag-split .source-figure img { width: 100%; height: 310px; object-fit: contain; }
+/* Tradycja i judaizm — pojęcia na różnych powierzchniach. */
+#tradycja .cards { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:0; margin-top:44px; border-top:3px solid var(--lev-ink); border-bottom:3px solid var(--lev-ink); }
+#tradycja .card { min-height:255px; padding:31px 29px; border:0; border-right:2px solid var(--lev-line); border-radius:0; background:transparent; text-align:left; }
+#tradycja .card:nth-child(2) { color:#fff; background:var(--lev-ink); transform:translateY(-18px); }
+#tradycja .card:last-child { border-right:0; }
+#tradycja .card strong { display:block; margin-bottom:32px; color:var(--lev-clay); font-family:Georgia,serif; font-size:37px; }
+#tradycja .card:nth-child(2) strong { color:var(--lev-gold); }
+#tradycja .card p { margin:0; font-size:25px; line-height:1.28; }
+#tradycja .callout { margin:34px auto 0; max-width:1000px; padding:17px 24px; border-left:8px solid var(--lev-gold); border-radius:0; color:#fff; background:var(--lev-ink); font-size:24px; }
+#judaizm { color:#fff; background:linear-gradient(115deg,var(--lev-ink) 0 65%,#35475d 65% 100%)!important; }
+#judaizm h2 { color:#fff; }
+#judaizm .definition-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:15px 22px; max-width:950px; margin-top:42px; }
+#judaizm .definition-grid > div { min-height:124px; padding:23px 27px; border:0; border-left:8px solid var(--lev-clay); border-radius:0; background:rgba(255,255,255,.08); text-align:left; }
+#judaizm .definition-grid > div:nth-child(2n) { border-left-color:var(--lev-gold); }
+#judaizm .definition-grid strong,#judaizm .definition-grid span { display:block; }
+#judaizm .definition-grid strong { margin-bottom:9px; color:#fff; font-size:30px; }
+#judaizm .definition-grid span { color:#edf1eb; font-size:22px; line-height:1.24; }
+#judaizm .contrast-line { position:absolute; right:65px; bottom:66px; width:390px; margin:0; padding:18px 22px; border-top:5px solid var(--lev-gold); color:var(--lev-ink); background:var(--lev-white); font-size:22px; font-weight:800; text-align:left; }
 
-.reveal .history-line { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 24px; margin-top: 42px; }
-.reveal .history-line > div { min-height: 250px; padding: 28px; border-top: 8px solid var(--accent); background: var(--surface); border-radius: 14px; }
-.reveal .history-line span { display: block; color: var(--accent); font-size: 24px; font-weight: 700; margin-bottom: 18px; }
-.reveal .history-line strong { display: block; font-size: 34px; }
-.reveal .history-line p { font-size: 26px; }
-.reveal .history-line.compact > div { min-height: 220px; }
+/* Oś państwa i łańcuch utraty. */
+#krolestwo .history-line,#powstania .history-line { position:relative; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); margin:61px 0 0; }
+#krolestwo .history-line::before,#powstania .history-line::before { content:""; position:absolute; top:57px; right:6%; left:6%; border-top:6px solid var(--lev-ink); }
+#krolestwo .history-line>div,#powstania .history-line>div { position:relative; min-height:220px; padding:0 29px 18px; background:transparent; text-align:left; }
+#krolestwo .history-line>div::before,#powstania .history-line>div::before { content:""; position:absolute; z-index:1; top:43px; left:29px; width:25px; height:25px; border:7px solid var(--lev-paper); border-radius:50%; background:var(--lev-clay); box-shadow:0 0 0 3px var(--lev-ink); }
+#krolestwo .history-line>div:nth-child(2)::before,#powstania .history-line>div:nth-child(2)::before { background:var(--lev-gold); }
+#krolestwo .history-line>div:nth-child(3)::before,#powstania .history-line>div:nth-child(3)::before { background:var(--lev-olive); }
+#krolestwo .history-line span,#powstania .history-line span { display:block; color:var(--lev-clay); font-family:Georgia,serif; font-size:27px; font-weight:850; }
+#krolestwo .history-line strong,#powstania .history-line strong { display:block; margin:71px 0 10px; font-size:31px; }
+#krolestwo .history-line p,#powstania .history-line p { margin:0; font-size:23px; line-height:1.24; }
+#krolestwo .big-question { margin:24px 0 0 14%; padding:18px 28px; max-width:900px; border-left:8px solid var(--lev-clay); color:#fff; background:var(--lev-ink); font-size:25px; font-weight:800; text-align:left; }
+#wygnanie { color:#fff; background:var(--lev-ink)!important; }
+#wygnanie h2 { color:#fff; }
+#wygnanie .cause-chain { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:3px; margin-top:45px; }
+#wygnanie .cause-chain>div { position:relative; min-height:290px; padding:28px 24px; border:0; border-top:9px solid var(--lev-clay); border-radius:0; background:rgba(255,255,255,.07); text-align:left; }
+#wygnanie .cause-chain>div:nth-child(2){border-top-color:var(--lev-gold)} #wygnanie .cause-chain>div:nth-child(3){border-top-color:var(--lev-olive)} #wygnanie .cause-chain>div:nth-child(4){border-top-color:#fff}
+#wygnanie .cause-chain>div:not(:last-child)::after { content:"→"; position:absolute; z-index:2; right:-17px; top:115px; color:var(--lev-gold); font-size:36px; }
+#wygnanie .cause-chain strong,#wygnanie .cause-chain span { display:block; }
+#wygnanie .cause-chain strong { margin-bottom:27px; color:#fff; font-family:Georgia,serif; font-size:29px; }
+#wygnanie .cause-chain span { color:#e9efe8; font-size:22px; line-height:1.28; }
+#powstania .callout { margin:28px auto 0; padding:16px 25px; max-width:1010px; border-left:8px solid var(--lev-clay); color:var(--lev-ink); background:#eadfca; font-size:24px; }
 
-.reveal .cause-chain { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 18px; margin-top: 50px; }
-.reveal .cause-chain > div { min-height: 280px; padding: 25px; background: var(--surface); border: 2px solid var(--border); border-radius: 16px; }
-.reveal .cause-chain strong { display: block; color: var(--accent); font-size: 31px; margin-bottom: 25px; }
-.reveal .cause-chain span { font-size: 25px; line-height: 1.25; }
+/* Zadanie, źródła i galerie. */
+.reveal #os-czasu { color:#fff; background:var(--lev-clay)!important; }
+.reveal #os-czasu h2 { color:#fff; font-size:54px; }
+#os-czasu .student-task { position:relative; max-width:1030px; margin:24px auto 0; padding:29px 40px 27px 185px; border:0; border-radius:0; color:var(--lev-ink); background:var(--lev-white); box-shadow:14px 14px 0 var(--lev-ink); text-align:left; }
+#os-czasu .student-task::before { content:"6′"; position:absolute; top:36px; left:33px; color:var(--lev-clay); font-family:Georgia,serif; font-size:91px; font-weight:900; line-height:.8; }
+#os-czasu .student-task strong { color:var(--lev-clay); font-size:28px; }
+#os-czasu .student-task li { margin:12px 0; font-size:24px; line-height:1.22; }
+#os-czasu .success { margin-top:28px; color:#fff; font-size:23px; font-weight:800; text-align:center; }
+#tora-prorocy .lesson-split,#zachodni-mur .lesson-split { display:grid; grid-template-columns:.85fr 1.15fr; gap:38px; align-items:center; }
+#tora-prorocy .lesson-split>div,#zachodni-mur .fact-stack { padding:31px 32px 31px 38px; border-left:10px solid var(--lev-clay); background:var(--lev-white); box-shadow:11px 11px 0 rgba(36,52,71,.17); text-align:left; }
+#tora-prorocy .plain-list { margin:0; padding-left:28px; } #tora-prorocy .plain-list li { margin:15px 0; font-size:24px; line-height:1.28; }
+#tora-prorocy .source-figure,#zachodni-mur .source-figure { margin:0; padding:12px; background:#fff; box-shadow:12px 12px 0 var(--lev-olive); }
+#tora-prorocy .source-figure img { width:100%; height:430px; object-fit:contain; }
+#zachodni-mur .fact-stack p { margin:0 0 16px; font-size:25px; line-height:1.28; } #zachodni-mur .fact-stack p:last-child { margin-bottom:0; color:var(--lev-clay); font-weight:800; }
+#zachodni-mur .source-figure img { width:100%; height:415px; object-fit:contain; }
+#swiatynia { background:#e9dfce!important; } #swiatynia .diagram-full,#most-chrzescijanstwo .diagram-full { margin:0; padding:14px; background:#fff; box-shadow:14px 14px 0 var(--lev-gold); }
+#swiatynia .diagram-full img { width:100%; height:470px; object-fit:contain; }
+#most-chrzescijanstwo .diagram-full img { width:100%; height:500px; object-fit:contain; }
+.reveal #symbole { background:#1f2d3a!important; color:#fff; } .reveal #symbole h2 { color:#fff; }
+#symbole .symbol-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; margin-top:28px; }
+#symbole .symbol-grid figure { margin:0; padding:20px; border:0; border-top:7px solid var(--lev-gold); background:rgba(255,255,255,.08); }
+#symbole .symbol-grid figure:nth-child(2) { border-top-color:var(--lev-clay); } #symbole .symbol-grid figure:nth-child(3) { border-top-color:var(--lev-olive); }
+#symbole .symbol-grid img { width:100%; height:245px; object-fit:contain; } #symbole .symbol-grid figcaption { margin-top:12px; color:#fff; font-size:20px; } #symbole .source-strip { color:#dae1da; }
+#izrael-dzis .flag-split { display:grid; grid-template-columns:1.2fr .8fr; gap:44px; align-items:center; }
+#izrael-dzis .flag-split>div { padding:36px 40px; border-left:10px solid var(--lev-gold); background:var(--lev-ink); color:#fff; text-align:left; }
+#izrael-dzis .statement { margin-top:0; color:#fff; font-size:33px; } #izrael-dzis .flag-split p:not(.statement){font-size:24px;line-height:1.28} #izrael-dzis .source-figure{margin:0;padding:16px;background:#fff;box-shadow:12px 12px 0 var(--lev-clay)} #izrael-dzis .source-figure img{width:100%;height:280px;object-fit:contain}
 
-.reveal .student-task[data-task-kind="panel"] { max-width: 1250px; margin: 30px auto; padding: 32px 46px; background: var(--surface); border-left: 10px solid var(--accent); border-radius: 18px; text-align: left; }
-.reveal .student-task[data-task-kind="panel"] strong { font-size: 34px; }
-.reveal .student-task[data-task-kind="panel"] li { margin: 16px 0; font-size: 29px; }
-.reveal .success { font-size: 27px; text-align: center; color: var(--heading); font-weight: 700; }
-
-.reveal .definition-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; margin-top: 35px; }
-.reveal .definition-grid > div { padding: 26px 30px; background: var(--surface); border: 2px solid var(--border); border-radius: 16px; text-align: left; }
-.reveal .definition-grid strong { display:block; color: var(--accent); font-size: 32px; }
-.reveal .definition-grid span { font-size: 26px; }
-.reveal .contrast-line { margin-top: 28px; text-align:center; font-size:29px; font-weight:700; }
-
-.reveal .plain-list { font-size: 27px; line-height: 1.3; }
-.reveal .plain-list li { margin: 18px 0; }
-.reveal .fact-stack p { padding: 18px 22px; background: var(--surface); border-left: 7px solid var(--accent); font-size: 27px; }
-
-.reveal .symbol-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:30px; margin-top:25px; }
-.reveal .symbol-grid figure { margin:0; padding:22px; background:var(--surface); border:2px solid var(--border); border-radius:16px; }
-.reveal .symbol-grid img { width:100%; height:250px; object-fit:contain; }
-.reveal .symbol-grid figcaption { margin-top:12px; }
-
-.reveal .callout { margin-top: 30px; padding: 20px 28px; background: var(--muted-surface, #e8dfca); border-radius: 14px; font-size: 26px; }
-.reveal .big-question { margin-top: 40px; text-align:center; font-size:30px; font-weight:700; }
-.reveal .statement { font-size:34px; }
-.reveal .student-task[data-task-kind="exit"] { max-width: 1250px; margin: 32px auto; padding: 28px 44px; background:var(--surface); border:3px solid var(--border); border-radius:18px; text-align:left; }
-.reveal .student-task[data-task-kind="exit"] li { margin:20px 0; font-size:30px; }
-.reveal .time-badge { text-align:center; font-size:25px; font-weight:700; color:var(--accent); }
+/* Most do chrześcijaństwa: czytelna trasa pojęciowa, nie miniaturowa mapa. */
+.reveal #most-chrzescijanstwo { color:#fff; background:var(--lev-ink)!important; }
+.reveal #most-chrzescijanstwo h2 { color:#fff; }
+#most-chrzescijanstwo .bridge-route { position:relative; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:3px; margin-top:52px; }
+#most-chrzescijanstwo .bridge-route::before { content:""; position:absolute; top:63px; right:10%; left:10%; border-top:5px solid var(--lev-gold); }
+#most-chrzescijanstwo .bridge-route > div { position:relative; min-height:260px; padding:0 27px 20px; background:transparent; text-align:left; }
+#most-chrzescijanstwo .bridge-route > div::before { content:""; position:absolute; z-index:1; top:45px; left:27px; width:27px; height:27px; border:7px solid var(--lev-ink); border-radius:50%; background:var(--lev-clay); box-shadow:0 0 0 3px var(--lev-gold); }
+#most-chrzescijanstwo .bridge-route > div:nth-child(2)::before { background:var(--lev-gold); }
+#most-chrzescijanstwo .bridge-route > div:nth-child(3)::before { background:var(--lev-olive); }
+#most-chrzescijanstwo .bridge-route span { display:block; color:var(--lev-gold); font-family:Georgia,serif; font-size:30px; font-weight:900; }
+#most-chrzescijanstwo .bridge-route strong { display:block; margin:73px 0 12px; color:#fff; font-size:33px; }
+#most-chrzescijanstwo .bridge-route p { margin:0; color:#e8eee7; font-size:23px; line-height:1.27; }
+#most-chrzescijanstwo .bridge-question { margin:12px auto 0; max-width:990px; padding:17px 24px; border-left:8px solid var(--lev-clay); color:var(--lev-ink); background:var(--lev-white); font-size:24px; font-weight:800; text-align:center; }
+.reveal #bilet { background:var(--lev-gold)!important; } #bilet .student-task { max-width:1030px; margin:28px auto 0; padding:14px 0; background:transparent; text-align:left; } #bilet .student-task ol{counter-reset:exit; margin:0;padding:0;list-style:none} #bilet .student-task li{counter-increment:exit;position:relative;margin:12px 0;padding:19px 28px 19px 80px;color:var(--lev-ink);background:var(--lev-white);box-shadow:8px 8px 0 rgba(36,52,71,.17);font-size:26px;line-height:1.2} #bilet .student-task li::before{content:counter(exit);position:absolute;left:22px;top:11px;color:var(--lev-clay);font-family:Georgia,serif;font-size:40px;font-weight:900} #bilet .time-badge{margin-top:24px;color:var(--lev-ink);font-size:23px;font-weight:850;text-align:center}
+@media print { #tradycja .card:nth-child(2){transform:none} }

@@ -1,8 +1,13 @@
 <!-- .slide: id="otwarcie" data-purpose="opening" data-layout="statement" -->
-# Wojna III Rzeszy z ZSRR
-## Front wschodni 1941–1943
-
+<div class="front-opening">
+<div class="opening-copy">
+<p class="opening-kicker">II WOJNA ŚWIATOWA · 1941–1943</p>
+<h1>Wojna III Rzeszy z ZSRR</h1>
+<h2>Front wschodni 1941–1943</h2>
 <p class="lead">Dlaczego plan szybkiego zwycięstwa zamienił się w wojnę wyniszczenia?</p>
+</div>
+<figure><img src="assets/wojska-niemieckie-zima-zpe.jpg" alt="Niemieckie wojska zimą na froncie wschodnim" data-fit="cover" /><figcaption>Wojska niemieckie zimą na froncie wschodnim. Fotografia ZPE.</figcaption></figure>
+</div>
 
 ---
 
@@ -36,7 +41,14 @@
 
 <figure class="source-figure front-map"><img src="assets/mapa-frontu-wschodniego-zpe.jpg" alt="Mapa działań wojennych na froncie wschodnim podczas II wojny światowej" data-fit="contain" /><figcaption>Mapa syntetyczna frontu wschodniego. ZPE, Krystian Chariza i zespół, CC BY 3.0.</figcaption></figure>
 
-<div class="map-legend-focus"><strong>Północ:</strong> Leningrad &nbsp;•&nbsp; <strong>Środek:</strong> Moskwa &nbsp;•&nbsp; <strong>Południe:</strong> Ukraina</div>
+<div class="map-legend-focus">
+<p>Odczytaj mapę przez trzy kierunki natarcia:</p>
+<div class="attack-directions">
+<div><strong>Północ</strong><span>Leningrad</span></div>
+<div><strong>Środek</strong><span>Moskwa</span></div>
+<div><strong>Południe</strong><span>Ukraina</span></div>
+</div>
+</div>
 
 <!-- notes:
 Mapa jest szczegółowa. Najpierw pokaż tylko niebieskie strzałki 1941 r. Potem wskaż trzy pola bitew: Moskwa, Stalingrad i Kursk.

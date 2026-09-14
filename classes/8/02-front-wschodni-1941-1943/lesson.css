@@ -1,80 +1,52 @@
-/* Lekcja VIII: dokumentalny układ źródeł, map i osi czasu. */
-.reveal .source-figure figcaption,
-.reveal .citation { font-size: 20px; line-height: 1.18; color: var(--muted); }
+/* Klasa VIII — lokalny pilot „dokumentalna oś konfliktu”. Zob. design/visual-grammar-israel-front-pilots-v1.md. */
+:root { --war-graphite:#30343d; --war-paper:#ebe5dc; --war-white:#fffdf9; --war-rust:#874153; --war-blue:#59778b; --war-sand:#b59b73; --war-muted:#67615d; --war-line:rgba(48,52,61,.21); }
+.reveal .slides section[data-slide-canvas]{box-sizing:border-box;padding:52px 66px;border:0;color:var(--war-graphite);background:linear-gradient(90deg,transparent 0 63px,rgba(166,75,60,.18) 64px,transparent 65px),var(--war-paper)!important}
+.reveal .slides section[data-slide-canvas]::before{content:"";position:absolute;top:30px;right:38px;width:76px;border-top:4px solid var(--war-sand)}
+.reveal .slides section[data-slide-canvas]::after{content:"";position:absolute;right:38px;bottom:30px;width:15px;height:15px;border:3px solid var(--war-rust);border-radius:50%}
+.reveal .slides section[data-slide-canvas] h1,.reveal .slides section[data-slide-canvas] h2,.reveal .slides section[data-slide-canvas] h3{color:var(--war-graphite);font-family:"History Serif","DejaVu Serif",Georgia,serif;text-transform:none}
+.reveal .slides section[data-slide-canvas] h2{margin:0 0 25px;max-width:1120px;font-size:48px;line-height:1.04;letter-spacing:-.018em}
+.reveal .source-figure figcaption,.reveal .citation{color:var(--war-muted);font-size:20px;line-height:1.18}
 
-.reveal .date-hero { margin: 35px auto; font-size: 64px; font-weight: 800; color: var(--accent); letter-spacing: .02em; }
-.reveal .fact-row { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; }
-.reveal .fact-row > div { min-height:210px; padding:30px; background:var(--surface); border-top:8px solid var(--accent); }
-.reveal .fact-row strong, .reveal .fact-row span { display:block; }
-.reveal .fact-row strong { font-size:32px; margin-bottom:20px; }
-.reveal .fact-row span { font-size:25px; line-height:1.25; }
+/* Otwarcie — fotografia i pytanie, bez militarnej grywalizacji. */
+.reveal #otwarcie{padding:0;color:#fff;background:var(--war-graphite)!important}.reveal #otwarcie::before{top:0;right:44%;width:13px;height:100%;border:0;background:var(--war-rust)}.reveal #otwarcie::after{right:auto;bottom:42px;left:54px;width:88px;height:8px;border:0;border-radius:0;background:var(--war-sand)}
+#otwarcie .front-opening{position:absolute;inset:0;display:grid;grid-template-columns:56% 44%;text-align:left}#otwarcie .opening-copy{align-self:center;padding:66px 64px}#otwarcie .opening-kicker{display:inline-block;margin:0 0 22px;padding:8px 13px;color:var(--war-graphite);background:var(--war-sand);font-size:18px;font-weight:850;letter-spacing:.1em}.reveal #otwarcie h1{margin:0;color:#fff;font-size:61px;line-height:.98;letter-spacing:-.035em}.reveal #otwarcie h2{margin:20px 0 30px;color:#d9c99d;font-family:"History Sans","DejaVu Sans",Arial,sans-serif;font-size:28px;font-weight:720;letter-spacing:.025em}.reveal #otwarcie .lead{max-width:570px;margin:0;padding-left:22px;border-left:5px solid var(--war-rust);color:#f6f2ea;font-size:27px;line-height:1.32}#otwarcie figure{position:relative;margin:0;overflow:hidden;background:#1c242b}#otwarcie figure img{display:block;max-width:none;max-height:none;margin:0;width:100%;height:720px;object-fit:cover;object-position:center}#otwarcie figure figcaption{position:absolute;right:0;bottom:0;left:0;margin:0;padding:15px 20px;color:#fff;background:rgba(40,50,59,.93);font-size:20px;text-align:left}
 
-.reveal .goal-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:34px; margin-top:30px; text-align:left; }
-.reveal .goal-grid > div { padding:32px 38px; background:var(--surface); border:2px solid var(--border); border-radius:14px; }
-.reveal .goal-grid strong { display:block; font-size:36px; margin-bottom:18px; }
-.reveal .goal-grid li { font-size:27px; margin:14px 0; }
-.reveal .goal-grid .ideology { border-top:8px solid var(--danger,#9a2427); }
-.reveal .goal-grid .military { border-top:8px solid var(--evidence,#234f70); }
-.reveal .danger-note { margin:26px auto 0; padding:16px 24px; max-width:1250px; background:var(--muted-surface,#e5e0d5); border-left:8px solid var(--danger,#9a2427); font-size:28px; font-weight:700; }
+/* Data, cele, mapa i pierwszy kryzys. */
+#atak .date-hero{display:inline-block;margin:20px 0 30px;padding:13px 24px;border-left:10px solid var(--war-rust);color:var(--war-graphite);background:var(--war-white);font-family:Georgia,serif;font-size:61px;font-weight:850;box-shadow:10px 10px 0 rgba(40,50,59,.16)}#atak .fact-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:3px;margin-top:16px}#atak .fact-row>div{min-height:245px;padding:28px 26px;border-top:9px solid var(--war-rust);background:rgba(255,255,255,.48);text-align:left}#atak .fact-row>div:nth-child(2){border-top-color:var(--war-sand);background:var(--war-graphite);color:#fff;transform:translateY(-17px)}#atak .fact-row>div:nth-child(3){border-top-color:var(--war-blue)}#atak .fact-row strong,#atak .fact-row span{display:block}#atak .fact-row strong{margin-bottom:25px;font-family:Georgia,serif;font-size:32px}#atak .fact-row span{font-size:24px;line-height:1.28}
+#cele .goal-grid,#kursk .goal-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin-top:35px;text-align:left}#cele .goal-grid>div,#kursk .goal-grid>div{min-height:365px;padding:34px 39px;border:0;border-left:10px solid var(--war-blue);border-radius:0;background:var(--war-white)}#cele .goal-grid .ideology{border-left-color:var(--war-rust);background:#e7ded0}#cele .goal-grid strong,#kursk .goal-grid strong{display:block;margin-bottom:24px;font-family:Georgia,serif;font-size:39px}#cele .goal-grid li{margin:16px 0;font-size:26px;line-height:1.25}#cele .danger-note,#kursk .danger-note{margin:28px auto 0;max-width:1060px;padding:18px 26px;border-left:9px solid var(--war-rust);color:#fff;background:var(--war-graphite);font-size:25px;font-weight:800}
+#barbarossa-mapa h2{display:inline-block;margin-bottom:18px;padding:10px 18px;color:var(--war-white);background:var(--war-graphite)}
+/* Pionowe źródło: mapa zachowuje pełny kadr, a klucz do odczytu pracuje obok niej. */
+#barbarossa-mapa .front-map{position:absolute;top:152px;left:70px;width:500px;margin:0;padding:7px;background:transparent;box-shadow:none}
+#barbarossa-mapa .front-map img{display:block;width:100%;height:460px;object-fit:contain}
+#barbarossa-mapa .front-map figcaption{display:inline-block;max-width:510px;margin-top:7px;padding:5px 8px;color:var(--war-graphite);background:rgba(255,253,249,.82);font-size:18px;line-height:1.15;text-align:left}
+#barbarossa-mapa .map-legend-focus{position:absolute;top:177px;right:73px;width:490px;margin:0;padding:0;border:0;color:var(--war-graphite);background:transparent;text-align:left}
+#barbarossa-mapa .map-legend-focus>p{margin:0 0 20px;padding:13px 18px;border-left:8px solid var(--war-rust);background:var(--war-white);font-size:24px;font-weight:800}
+#barbarossa-mapa .attack-directions{display:grid;gap:3px}
+#barbarossa-mapa .attack-directions>div{position:relative;min-height:82px;padding:17px 22px 17px 105px;border-left:9px solid var(--war-blue);background:var(--war-white)}
+#barbarossa-mapa .attack-directions>div:nth-child(2){border-left-color:var(--war-rust);background:#e6ddd1}
+#barbarossa-mapa .attack-directions>div:nth-child(3){border-left-color:var(--war-sand)}
+#barbarossa-mapa .attack-directions>div::before{position:absolute;left:24px;top:13px;color:var(--war-rust);font-family:Georgia,serif;font-size:51px;font-weight:900;line-height:1}
+#barbarossa-mapa .attack-directions>div:nth-child(1)::before{content:"I"}#barbarossa-mapa .attack-directions>div:nth-child(2)::before{content:"II"}#barbarossa-mapa .attack-directions>div:nth-child(3)::before{content:"III"}
+#barbarossa-mapa .attack-directions strong,#barbarossa-mapa .attack-directions span{display:block}
+#barbarossa-mapa .attack-directions strong{font-family:Georgia,serif;font-size:29px}
+#barbarossa-mapa .attack-directions span{margin-top:4px;font-size:22px}
+#pierwsze-miesiace{color:#fff;background:var(--war-graphite)!important}#pierwsze-miesiace h2{display:inline-block;margin-bottom:18px;padding:10px 18px;color:var(--war-graphite);background:var(--war-white)}
+/* Tytuły dokumentów muszą odciąć się od papierowego tła niezależnie od jego tonu. */
+#dyrektywa h2,#komunikat h2{display:inline-block;margin-bottom:16px;padding:10px 18px;color:var(--war-white);background:var(--war-graphite)}#pierwsze-miesiace .war-line,#stalingrad .war-line{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:56px}#pierwsze-miesiace .war-line::before,#stalingrad .war-line::before{content:"";position:absolute;top:57px;right:6%;left:6%;border-top:6px solid var(--war-sand)}#pierwsze-miesiace .war-line>div,#stalingrad .war-line>div{position:relative;min-height:218px;padding:0 28px 18px;background:transparent;text-align:left}#pierwsze-miesiace .war-line>div::before,#stalingrad .war-line>div::before{content:"";position:absolute;z-index:1;top:43px;left:28px;width:25px;height:25px;border:7px solid var(--war-graphite);border-radius:50%;background:var(--war-rust);box-shadow:0 0 0 3px var(--war-sand)}#pierwsze-miesiace .war-line>div:nth-child(2)::before,#stalingrad .war-line>div:nth-child(2)::before{background:var(--war-sand)}#pierwsze-miesiace .war-line>div:nth-child(3)::before,#stalingrad .war-line>div:nth-child(3)::before{background:var(--war-blue)}#pierwsze-miesiace .war-line span,#stalingrad .war-line span{display:block;color:var(--war-sand);font-size:25px;font-weight:850}#pierwsze-miesiace .war-line strong,#stalingrad .war-line strong{display:block;margin:71px 0 10px;color:#fff;font-size:31px}#pierwsze-miesiace .war-line p,#stalingrad .war-line p{margin:0;color:#e6ebee;font-size:23px;line-height:1.25}#pierwsze-miesiace .myth{margin:26px auto 0;max-width:970px;padding:17px 24px;border-top:5px solid var(--war-rust);color:var(--war-graphite);background:var(--war-white);font-size:25px;text-align:center}
 
-.reveal .front-map img { width:100%; height:430px; object-fit:contain; }
-.reveal .map-legend-focus { position:absolute; left:90px; bottom:64px; padding:14px 22px; background:rgba(255,253,250,.95); border:2px solid var(--border); border-radius:12px; font-size:24px; }
+/* Pojęcie i dokumenty — papier, nie „karta aplikacji”. */
+#wojna-ojczyzniana .term-panel{max-width:1040px;margin:30px auto 16px;padding:25px 35px;border:0;border-left:10px solid var(--war-blue);border-radius:0;background:var(--war-white);font-size:30px;line-height:1.28;text-align:left}#wojna-ojczyzniana .term-panel.muted{border-left-color:var(--war-rust);background:#e7ded0}#wojna-ojczyzniana .not-equal{margin:0;color:var(--war-rust);font-family:Georgia,serif;font-size:58px;font-weight:900;line-height:.75}
+#dyrektywa,#komunikat{background:#e3dacb!important}#dyrektywa .document-source,#komunikat .document-source{margin:0 auto;max-width:1110px;padding:0;background:transparent}#dyrektywa .document-quote,#komunikat .document-quote{position:relative;margin:35px auto 18px;padding:38px 50px;border:0;border-left:12px solid var(--war-rust);color:var(--war-graphite);background:var(--war-white);box-shadow:12px 12px 0 rgba(40,50,59,.18);font-family:Georgia,serif;font-size:33px;line-height:1.3;text-align:left}#dyrektywa .document-quote::before,#komunikat .document-quote::before{content:"ŹRÓDŁO";position:absolute;top:-15px;left:28px;padding:6px 11px;color:var(--war-white);background:var(--war-graphite);font-family:"History Sans",Arial,sans-serif;font-size:16px;font-weight:800;letter-spacing:.12em}#komunikat .document-quote{font-size:31px}#dyrektywa .citation,#komunikat .citation{text-align:center}#dyrektywa .source-question,#komunikat .source-question{max-width:980px;margin:27px auto 0;padding:17px 25px;border-left:8px solid var(--war-sand);color:#fff;background:var(--war-graphite);font-size:25px;font-weight:800}
 
-.reveal .war-line { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; margin-top:34px; }
-.reveal .war-line > div { min-height:265px; padding:28px; background:var(--surface); border-left:8px solid var(--evidence,#234f70); }
-.reveal .war-line span { display:block; color:var(--accent); font-size:24px; font-weight:700; }
-.reveal .war-line strong { display:block; font-size:33px; margin:17px 0; }
-.reveal .war-line p { font-size:25px; line-height:1.22; }
-.reveal .myth { margin-top:24px; font-size:28px; text-align:center; }
+/* Skutki dla ludzi i przełomy. */
+.reveal #wojna-wyniszczenia{color:#fff;background:var(--war-graphite)!important}.reveal #wojna-wyniszczenia h2{color:#fff}#wojna-wyniszczenia .evidence-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:3px;margin-top:37px}#wojna-wyniszczenia .evidence-grid>div{min-height:178px;padding:26px 29px;border-left:8px solid var(--war-rust);background:rgba(255,255,255,.07);text-align:left}#wojna-wyniszczenia .evidence-grid>div:nth-child(2n){border-left-color:var(--war-sand)}#wojna-wyniszczenia .evidence-grid strong,#wojna-wyniszczenia .evidence-grid span{display:block}#wojna-wyniszczenia .evidence-grid strong{margin-bottom:12px;color:#fff;font-size:31px}#wojna-wyniszczenia .evidence-grid span{color:#e8edef;font-size:23px;line-height:1.24}
+#jency .split-evidence{display:grid;grid-template-columns:.78fr 1.22fr;gap:39px;align-items:center}#jency .stat{margin:16px 0;padding:23px 27px;border-left:9px solid var(--war-blue);background:var(--war-white);text-align:left}#jency .stat.danger{border-left-color:var(--war-rust);background:#e7ded0}#jency .stat strong,#jency .stat span{display:block}#jency .stat strong{font-family:Georgia,serif;font-size:48px}#jency .stat span{margin-top:7px;font-size:23px;line-height:1.24}#jency .law-note{padding:14px 4px;font-size:21px;line-height:1.25;text-align:left}#jency .source-figure{margin:0;padding:12px;background:#fff;box-shadow:13px 13px 0 var(--war-rust)}#jency .source-figure img{width:100%;height:445px;object-fit:contain}
+#moskwa .lesson-split{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-top:42px}#moskwa .battle-card{min-height:300px;padding:35px 33px;border-top:9px solid var(--war-blue);background:var(--war-white);text-align:left}#moskwa .battle-card:nth-child(2){border-top-color:var(--war-rust);background:var(--war-graphite);color:#fff}#moskwa .battle-card span,#moskwa .battle-card strong{display:block}#moskwa .battle-card span{color:var(--war-rust);font-size:25px;font-weight:850}#moskwa .battle-card:nth-child(2) span{color:var(--war-sand)}#moskwa .battle-card strong{margin:18px 0;color:inherit;font-family:Georgia,serif;font-size:37px}#moskwa .battle-card p{margin:0;font-size:26px;line-height:1.28}#moskwa .battle-result{margin:29px auto 0;max-width:940px;padding:17px 23px;border-left:8px solid var(--war-rust);background:#ddd2c1;font-size:25px;font-weight:850;text-align:center}
+.reveal #lancuch{color:#fff;background:var(--war-rust)!important}.reveal #lancuch h2{color:#fff;font-size:53px}#lancuch .student-task{position:relative;max-width:1030px;margin:24px auto 0;padding:30px 40px 28px 185px;border:0;border-radius:0;color:var(--war-graphite);background:var(--war-white);box-shadow:14px 14px 0 var(--war-graphite);text-align:left}#lancuch .student-task::before{content:"6′";position:absolute;top:36px;left:33px;color:var(--war-rust);font-family:Georgia,serif;font-size:91px;font-weight:900;line-height:.8}#lancuch .student-task strong{color:var(--war-rust);font-size:28px}#lancuch .student-task li{margin:12px 0;font-size:24px;line-height:1.22}#lancuch .success{margin-top:28px;color:#fff;font-size:23px;font-weight:800;text-align:center}
+.reveal #stalingrad{color:var(--war-graphite);background:#d8cec0!important}.reveal #stalingrad h2{color:var(--war-graphite)}#stalingrad .war-line::before{border-color:var(--war-graphite)}#stalingrad .war-line>div::before{border-color:#d8cec0;box-shadow:0 0 0 3px var(--war-graphite)}#stalingrad .war-line strong{color:var(--war-graphite)}#stalingrad .war-line p{color:var(--war-graphite)}
+#kursk .goal-grid>div{min-height:250px;border-left:9px solid var(--war-blue);background:var(--war-white);text-align:left}#kursk .goal-grid>div:nth-child(2){border-left-color:var(--war-rust);background:#e7ded0}#kursk .goal-grid strong{font-size:34px}#kursk .goal-grid p{margin:0;font-size:26px;line-height:1.27}
+.reveal #trzy-etapy{color:#fff;background:var(--war-graphite)!important}.reveal #trzy-etapy h2{color:#fff}#trzy-etapy .three-battles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:3px;margin-top:45px}#trzy-etapy .three-battles>div{min-height:225px;padding:29px 27px;border-top:9px solid var(--war-rust);background:rgba(255,255,255,.07);text-align:left}#trzy-etapy .three-battles>div:nth-child(2){border-top-color:var(--war-sand)}#trzy-etapy .three-battles>div:nth-child(3){border-top-color:var(--war-blue)}#trzy-etapy .three-battles strong,#trzy-etapy .three-battles span{display:block}#trzy-etapy .three-battles strong{margin-bottom:22px;color:#fff;font-family:Georgia,serif;font-size:36px}#trzy-etapy .three-battles span{color:#e6ecef;font-size:24px;line-height:1.26}#trzy-etapy .final-chain{margin:34px auto 0;padding:17px;max-width:1010px;color:var(--war-graphite);background:var(--war-sand);font-size:25px;font-weight:850;text-align:center}
 
-.reveal .term-panel { max-width:1150px; margin:22px auto; padding:25px 34px; background:var(--surface); border:3px solid var(--evidence,#234f70); border-radius:14px; font-size:31px; }
-.reveal .term-panel.muted { border-color:var(--danger,#9a2427); }
-.reveal .not-equal { font-size:55px; font-weight:800; color:var(--danger,#9a2427); }
-
-.reveal .document-source { margin:0 auto; }
-.reveal .document-quote { max-width:1280px; margin:38px auto 18px; padding:38px 48px; background:var(--surface); border-left:10px solid var(--evidence,#234f70); font-size:34px; line-height:1.3; text-align:left; }
-.reveal .document-quote.compact { font-size:32px; }
-.reveal .citation { text-align:center; }
-.reveal .source-question { max-width:1100px; margin:28px auto 0; padding:20px 26px; background:#26384a; color:#fff; font-size:28px; font-weight:700; }
-
-.reveal .evidence-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; margin-top:36px; }
-.reveal .evidence-grid > div { min-height:190px; padding:28px; background:var(--surface); border-left:8px solid var(--danger,#9a2427); text-align:left; }
-.reveal .evidence-grid strong, .reveal .evidence-grid span { display:block; }
-.reveal .evidence-grid strong { font-size:32px; margin-bottom:13px; }
-.reveal .evidence-grid span { font-size:25px; }
-
-.reveal .split-evidence, .reveal .lesson-split { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:38px; align-items:center; }
-.reveal .split-evidence .source-figure img { width:100%; height:480px; object-fit:contain; }
-.reveal .stat { margin:18px 0; padding:22px 26px; background:var(--surface); border-left:8px solid var(--evidence,#234f70); }
-.reveal .stat strong, .reveal .stat span { display:block; }
-.reveal .stat strong { font-size:48px; }
-.reveal .stat span { font-size:24px; }
-.reveal .stat.danger { border-color:var(--danger,#9a2427); }
-.reveal .law-note { font-size:23px; line-height:1.25; }
-
-.reveal .battle-card { min-height:300px; padding:34px; background:var(--surface); border-top:8px solid var(--evidence,#234f70); }
-.reveal .battle-card span, .reveal .battle-card strong { display:block; }
-.reveal .battle-card span { color:var(--accent); font-size:25px; font-weight:700; }
-.reveal .battle-card strong { font-size:34px; margin:18px 0; }
-.reveal .battle-card p { font-size:27px; }
-.reveal .battle-result { margin-top:28px; font-size:30px; font-weight:800; text-align:center; }
-
-.reveal .student-task[data-task-kind="panel"] { max-width:1250px; margin:30px auto; padding:32px 46px; background:var(--surface); border-left:10px solid var(--accent); border-radius:14px; text-align:left; }
-.reveal .student-task[data-task-kind="panel"] strong { font-size:34px; }
-.reveal .student-task[data-task-kind="panel"] li { margin:16px 0; font-size:28px; }
-.reveal .success { text-align:center; font-size:29px; font-weight:800; color:var(--danger,#9a2427); }
-
-.reveal .stalingrad-line > div { min-height:230px; }
-.reveal .kursk-grid > div { min-height:240px; border-top:8px solid var(--accent); }
-.reveal .kursk-grid p { font-size:27px; }
-
-.reveal .three-battles { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; margin-top:45px; }
-.reveal .three-battles > div { min-height:230px; padding:30px; background:var(--surface); border-top:9px solid var(--accent); }
-.reveal .three-battles strong, .reveal .three-battles span { display:block; }
-.reveal .three-battles strong { font-size:36px; margin-bottom:24px; }
-.reveal .three-battles span { font-size:26px; }
-.reveal .final-chain { margin:32px auto 0; padding:18px; background:var(--muted-surface,#e5e0d5); font-size:27px; font-weight:700; }
-
-.reveal .student-task[data-task-kind="exit"] { max-width:1250px; margin:32px auto; padding:30px 46px; background:var(--surface); border:3px solid var(--border); text-align:left; }
-.reveal .student-task[data-task-kind="exit"] li { margin:20px 0; font-size:29px; }
-.reveal .time-badge { text-align:center; font-size:25px; font-weight:700; color:var(--accent); }
+/* Spokojny finał. */
+.reveal #bilet{background:var(--war-sand)!important}#bilet .student-task{max-width:1030px;margin:28px auto 0;padding:14px 0;background:transparent;text-align:left}#bilet .student-task ol{counter-reset:exit;margin:0;padding:0;list-style:none}#bilet .student-task li{counter-increment:exit;position:relative;margin:12px 0;padding:19px 28px 19px 80px;color:var(--war-graphite);background:var(--war-white);box-shadow:8px 8px 0 rgba(40,50,59,.17);font-size:26px;line-height:1.2}#bilet .student-task li::before{content:counter(exit);position:absolute;left:22px;top:11px;color:var(--war-rust);font-family:Georgia,serif;font-size:40px;font-weight:900}#bilet .time-badge{margin-top:24px;color:var(--war-graphite);font-size:23px;font-weight:850;text-align:center}
+@media print { #atak .fact-row>div:nth-child(2){transform:none} }

@@ -1,8 +1,13 @@
 <!-- .slide: id="otwarcie" data-purpose="opening" data-layout="statement" -->
-# Renesans — narodziny nowej epoki
-## Kultura renesansu w Europie
-
+<div class="atelier-opening">
+<div class="opening-copy">
+<p class="opening-kicker">EUROPA · XIV–XVI WIEK</p>
+<h1>Renesans — narodziny nowej epoki</h1>
+<h2>Kultura renesansu w Europie</h2>
 <p class="lead">Co się zmienia, gdy człowiek staje się miarą poznawania świata?</p>
+</div>
+<figure><img src="assets/szkola-atenska.jpg" alt="Fragment Szkoły Ateńskiej Rafaela Santi" data-fit="cover" /><figcaption>Rafael Santi, „Szkoła Ateńska”, 1509–1511</figcaption></figure>
+</div>
 
 ---
 
@@ -102,8 +107,8 @@
 ## Nowy obraz kosmosu
 
 <div class="science-compare">
-<div><span>1473–1543</span><strong>Mikołaj Kopernik</strong><p>Przedstawił heliocentryczny model świata w dziele „O obrotach sfer niebieskich” (1543).</p><div class="orbit">☉<i>⊕</i></div></div>
-<div><span>1564–1642</span><strong>Galileusz</strong><p>Udoskonalił użycie teleskopu w astronomii; obserwował m.in. księżyce Jowisza i fazy Wenus.</p><div class="telescope">◁━━◉</div></div>
+<div><span>1473–1543</span><strong>Mikołaj Kopernik</strong><p>Przedstawił heliocentryczny model świata w dziele „O obrotach sfer niebieskich” (1543).</p><div class="orbit" aria-label="Schemat Słońca i orbity Ziemi"><i class="sun"></i><i class="earth"></i></div></div>
+<div><span>1564–1642</span><strong>Galileusz</strong><p>Udoskonalił użycie teleskopu w astronomii; obserwował m.in. księżyce Jowisza i fazy Wenus.</p><div class="jupiter-system" aria-label="Schemat Jowisza i czterech księżyców"><i></i><i></i><b></b><i></i><i></i></div></div>
 </div>
 
 <p class="callout">Galileusz działał już na przełomie renesansu i rewolucji naukowej. Jego obserwacje wspierały nowy obraz kosmosu.</p>
