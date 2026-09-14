@@ -1,0 +1,80 @@
+/* Lekcja VIII: dokumentalny układ źródeł, map i osi czasu. */
+.reveal .source-figure figcaption,
+.reveal .citation { font-size: 20px; line-height: 1.18; color: var(--muted); }
+
+.reveal .date-hero { margin: 35px auto; font-size: 64px; font-weight: 800; color: var(--accent); letter-spacing: .02em; }
+.reveal .fact-row { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; }
+.reveal .fact-row > div { min-height:210px; padding:30px; background:var(--surface); border-top:8px solid var(--accent); }
+.reveal .fact-row strong, .reveal .fact-row span { display:block; }
+.reveal .fact-row strong { font-size:32px; margin-bottom:20px; }
+.reveal .fact-row span { font-size:25px; line-height:1.25; }
+
+.reveal .goal-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:34px; margin-top:30px; text-align:left; }
+.reveal .goal-grid > div { padding:32px 38px; background:var(--surface); border:2px solid var(--border); border-radius:14px; }
+.reveal .goal-grid strong { display:block; font-size:36px; margin-bottom:18px; }
+.reveal .goal-grid li { font-size:27px; margin:14px 0; }
+.reveal .goal-grid .ideology { border-top:8px solid var(--danger,#9a2427); }
+.reveal .goal-grid .military { border-top:8px solid var(--evidence,#234f70); }
+.reveal .danger-note { margin:26px auto 0; padding:16px 24px; max-width:1250px; background:var(--muted-surface,#e5e0d5); border-left:8px solid var(--danger,#9a2427); font-size:28px; font-weight:700; }
+
+.reveal .front-map img { width:100%; height:430px; object-fit:contain; }
+.reveal .map-legend-focus { position:absolute; left:90px; bottom:64px; padding:14px 22px; background:rgba(255,253,250,.95); border:2px solid var(--border); border-radius:12px; font-size:24px; }
+
+.reveal .war-line { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; margin-top:34px; }
+.reveal .war-line > div { min-height:265px; padding:28px; background:var(--surface); border-left:8px solid var(--evidence,#234f70); }
+.reveal .war-line span { display:block; color:var(--accent); font-size:24px; font-weight:700; }
+.reveal .war-line strong { display:block; font-size:33px; margin:17px 0; }
+.reveal .war-line p { font-size:25px; line-height:1.22; }
+.reveal .myth { margin-top:24px; font-size:28px; text-align:center; }
+
+.reveal .term-panel { max-width:1150px; margin:22px auto; padding:25px 34px; background:var(--surface); border:3px solid var(--evidence,#234f70); border-radius:14px; font-size:31px; }
+.reveal .term-panel.muted { border-color:var(--danger,#9a2427); }
+.reveal .not-equal { font-size:55px; font-weight:800; color:var(--danger,#9a2427); }
+
+.reveal .document-source { margin:0 auto; }
+.reveal .document-quote { max-width:1280px; margin:38px auto 18px; padding:38px 48px; background:var(--surface); border-left:10px solid var(--evidence,#234f70); font-size:34px; line-height:1.3; text-align:left; }
+.reveal .document-quote.compact { font-size:32px; }
+.reveal .citation { text-align:center; }
+.reveal .source-question { max-width:1100px; margin:28px auto 0; padding:20px 26px; background:#26384a; color:#fff; font-size:28px; font-weight:700; }
+
+.reveal .evidence-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; margin-top:36px; }
+.reveal .evidence-grid > div { min-height:190px; padding:28px; background:var(--surface); border-left:8px solid var(--danger,#9a2427); text-align:left; }
+.reveal .evidence-grid strong, .reveal .evidence-grid span { display:block; }
+.reveal .evidence-grid strong { font-size:32px; margin-bottom:13px; }
+.reveal .evidence-grid span { font-size:25px; }
+
+.reveal .split-evidence, .reveal .lesson-split { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:38px; align-items:center; }
+.reveal .split-evidence .source-figure img { width:100%; height:480px; object-fit:contain; }
+.reveal .stat { margin:18px 0; padding:22px 26px; background:var(--surface); border-left:8px solid var(--evidence,#234f70); }
+.reveal .stat strong, .reveal .stat span { display:block; }
+.reveal .stat strong { font-size:48px; }
+.reveal .stat span { font-size:24px; }
+.reveal .stat.danger { border-color:var(--danger,#9a2427); }
+.reveal .law-note { font-size:23px; line-height:1.25; }
+
+.reveal .battle-card { min-height:300px; padding:34px; background:var(--surface); border-top:8px solid var(--evidence,#234f70); }
+.reveal .battle-card span, .reveal .battle-card strong { display:block; }
+.reveal .battle-card span { color:var(--accent); font-size:25px; font-weight:700; }
+.reveal .battle-card strong { font-size:34px; margin:18px 0; }
+.reveal .battle-card p { font-size:27px; }
+.reveal .battle-result { margin-top:28px; font-size:30px; font-weight:800; text-align:center; }
+
+.reveal .student-task[data-task-kind="panel"] { max-width:1250px; margin:30px auto; padding:32px 46px; background:var(--surface); border-left:10px solid var(--accent); border-radius:14px; text-align:left; }
+.reveal .student-task[data-task-kind="panel"] strong { font-size:34px; }
+.reveal .student-task[data-task-kind="panel"] li { margin:16px 0; font-size:28px; }
+.reveal .success { text-align:center; font-size:29px; font-weight:800; color:var(--danger,#9a2427); }
+
+.reveal .stalingrad-line > div { min-height:230px; }
+.reveal .kursk-grid > div { min-height:240px; border-top:8px solid var(--accent); }
+.reveal .kursk-grid p { font-size:27px; }
+
+.reveal .three-battles { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; margin-top:45px; }
+.reveal .three-battles > div { min-height:230px; padding:30px; background:var(--surface); border-top:9px solid var(--accent); }
+.reveal .three-battles strong, .reveal .three-battles span { display:block; }
+.reveal .three-battles strong { font-size:36px; margin-bottom:24px; }
+.reveal .three-battles span { font-size:26px; }
+.reveal .final-chain { margin:32px auto 0; padding:18px; background:var(--muted-surface,#e5e0d5); font-size:27px; font-weight:700; }
+
+.reveal .student-task[data-task-kind="exit"] { max-width:1250px; margin:32px auto; padding:30px 46px; background:var(--surface); border:3px solid var(--border); text-align:left; }
+.reveal .student-task[data-task-kind="exit"] li { margin:20px 0; font-size:29px; }
+.reveal .time-badge { text-align:center; font-size:25px; font-weight:700; color:var(--accent); }

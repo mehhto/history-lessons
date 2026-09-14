@@ -1,7 +1,9 @@
 # Audyt lekcji wzorcowej klasy IV — przed wdrożeniem kierunku C
 
-Lekcja: `classes/4/jak-poznajemy-przeszlosc-historia-i-zrodla-historyczne/`  
-Standard: `design/quality-standard-v1.md`  
+Lekcja: `classes/4/01-poznajemy-przeszlosc/`
+
+Standard: `design/quality-standard-v1.md`
+
 Status: audyt przed przebudową wizualną; ocena po implementacji będzie osobną sekcją.
 
 ## 1. Mapa wiedzy

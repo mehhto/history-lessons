@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { spawn } from 'node:child_process';
 import test from 'node:test';
 
-const lesson = 'classes/6/wielkie-odkrycia-geograficzne-wyprawy-i-spotkanie-swiatow';
+const lesson = 'classes/6/02-odkrycia-wyprawy';
 
 function startPreview() {
   const child = spawn(process.execPath, ['scripts/preview.mjs', '--lesson', lesson, '--host', '127.0.0.1', '--port', '0'], {

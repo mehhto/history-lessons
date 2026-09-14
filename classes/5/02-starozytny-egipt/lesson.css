@@ -1,0 +1,74 @@
+/* Ręczne poprawki tej lekcji. Plik ładowany po wspólnym motywie i komponentach. */
+
+/* Podpis mapy ma pozostać czytelny, ale nie konkurować z pytaniem. */
+.reveal .source-figure figcaption,
+.reveal figure figcaption {
+  font-size: 20px;
+}
+
+/* Pięć stacji musi być widoczne jednocześnie jako jedna trasa. */
+.reveal .grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+  width: 100%;
+}
+
+.reveal .grid-5 > div {
+  min-width: 0;
+  padding: 22px 12px;
+  font-size: 25px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.reveal .grid-5 > div strong {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-size: 38px;
+}
+
+.reveal .route-line {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 14px;
+  margin-top: 24px;
+  color: var(--accent, #c9943a);
+  font-size: 30px;
+  line-height: 1.12;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: .02em;
+}
+
+.reveal .route-line .arrow {
+  font-size: 42px;
+}
+
+.reveal .grid-5.compact > div {
+  padding: 18px 10px;
+  font-size: 23px;
+}
+
+.reveal .grid-5.compact > div strong {
+  font-size: 30px;
+}
+
+/* Mapa ma pozostać w całości widoczna w układzie obraz + pytanie. */
+#mapa-pytanie .source-figure img[data-fit="contain"] {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+}
+
+/* Pięć wniosków: dwie kolumny, ostatni wniosek na pełną szerokość. */
+#najwazniejsze .takeaways {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  font-size: 26px;
+  line-height: 1.16;
+}
+
+#najwazniejsze .takeaways > li:last-child {
+  grid-column: 1 / -1;
+}

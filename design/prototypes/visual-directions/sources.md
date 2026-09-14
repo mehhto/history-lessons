@@ -1,6 +1,6 @@
 # Źródła prototypu wizualnego
 
-Prototyp wykorzystuje lokalne kopie dwóch materiałów już zweryfikowanych w pakiecie `classes/4/jak-poznajemy-przeszlosc-historia-i-zrodla-historyczne/`. Kopie zachowują te same sumy SHA-256. Nie są nowymi ani zmodyfikowanymi źródłami.
+Prototyp wykorzystuje lokalne kopie dwóch materiałów już zweryfikowanych w pakiecie `classes/4/01-poznajemy-przeszlosc/`. Kopie zachowują te same sumy SHA-256. Nie są nowymi ani zmodyfikowanymi źródłami.
 
 ## Kodeks Zamoyskich
 

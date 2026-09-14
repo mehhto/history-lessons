@@ -1,7 +1,7 @@
-import { cp, mkdir, readFile, rm, writeFile, access, copyFile } from 'node:fs/promises';
+import { cp, mkdir, readFile, readdir, rm, writeFile, access, copyFile } from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
-import { lessonDirectory, normalizeLessonSlug } from './lesson-tools.mjs';
+import { lessonDirectory, nextLessonSequence, numberedLessonSlug } from './lesson-tools.mjs';
 import { catalog } from '../template/presentation/catalog.mjs';
 import { resolveAppearance } from '../template/presentation/appearance.mjs';
 
@@ -12,12 +12,13 @@ function argument(name) {
 
 function usage(message) {
   if (message) console.error(`Błąd: ${message}\n`);
-  console.error('Użycie: npm run new -- --class 6 --title "Wielkie odkrycia geograficzne" [--type new-knowledge|practice] [--style museum|editorial|atlas] [--palette nazwa]');
+  console.error('Użycie: npm run new -- --class 6 --title "Wielkie odkrycia geograficzne" [--slug odkrycia-geograficzne] [--type new-knowledge|practice] [--style museum|editorial|atlas] [--palette nazwa]');
   process.exitCode = 1;
 }
 
 const grade = argument('--class');
 const title = argument('--title');
+const requestedSlug = argument('--slug');
 const lessonType = argument('--type') || 'new-knowledge';
 const style = argument('--style');
 const palette = argument('--palette');
@@ -32,7 +33,16 @@ if (!grade || !title) {
       ...(palette === undefined ? {} : { palette }),
     };
     const appearance = resolveAppearance(requestedAppearance, catalog);
-    const slug = normalizeLessonSlug(title);
+    const gradeDirectory = path.resolve(process.cwd(), 'classes', String(Number(grade)));
+    const entries = await readdir(gradeDirectory).catch((error) => {
+      if (error.code === 'ENOENT') return [];
+      throw error;
+    });
+    const slug = numberedLessonSlug({
+      sequence: nextLessonSequence(entries),
+      title,
+      slug: requestedSlug,
+    });
     const relativeTarget = lessonDirectory({ grade, slug });
     const target = path.resolve(process.cwd(), relativeTarget);
     const source = path.resolve(process.cwd(), 'template', 'lesson');

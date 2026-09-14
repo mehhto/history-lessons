@@ -1,0 +1,18 @@
+{
+  "id": "03-starozytny-izrael",
+  "title": "W starożytnym Izraelu",
+  "grade": 5,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa",
+  "duration_minutes": 45,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "status": "DO WERYFIKACJI NAUCZYCIELA",
+  "curriculum_requirement": "Charakteryzuje religię starożytnego Izraela; wyjaśnia różnicę między politeizmem a monoteizmem; umiejscawia w czasie i przestrzeni narodziny oraz rozprzestrzenianie się chrześcijaństwa.",
+  "main_question": "Jak dzieje starożytnych Izraelitów wpłynęły na judaizm i dlaczego Jerozolima stała się miejscem szczególnym?",
+  "source_reviewed": true,
+  "teacher_reviewed": false,
+  "offline_checked": true,
+  "pdf_exported": false,
+  "appearance": { "style": "atlas", "palette": "earth" }
+}

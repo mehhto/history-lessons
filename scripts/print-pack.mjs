@@ -1,3 +1,6 @@
+import { readFile, realpath } from 'node:fs/promises';
+import path from 'node:path';
+
 const PLANS = {
   worksheet: { output: 'worksheet.pdf', sources: ['worksheet.md'], audience: 'student' },
   teacher: { output: 'teacher-guide.pdf', sources: ['teacher-guide.md', 'assessment.md'], audience: 'teacher' },
@@ -30,11 +33,54 @@ function escapeHtml(value) {
     .replaceAll("'", '&#39;');
 }
 
+function isSafeLessonImage(source) {
+  if (!/^(?:\.\/)?assets\/[A-Za-z0-9._/-]+\.(?:png|jpe?g|webp)$/i.test(source)) return false;
+  return !source.split('/').includes('..') && !source.includes('\\');
+}
+
+const IMAGE_MIME_TYPES = {
+  '.jpg': 'image/jpeg',
+  '.jpeg': 'image/jpeg',
+  '.png': 'image/png',
+  '.webp': 'image/webp',
+};
+
+export async function embedLocalImagesInHtml(html, lessonDirectory) {
+  const sources = [...String(html).matchAll(/<img src="((?:\.\/)?assets\/[A-Za-z0-9._/-]+\.(?:png|jpe?g|webp))" alt="[^"]*">/gi)]
+    .map((match) => match[1]);
+  if (sources.length === 0) return html;
+
+  const assetsDirectory = await realpath(path.join(lessonDirectory, 'assets'));
+  let output = String(html);
+  for (const source of new Set(sources)) {
+    if (!isSafeLessonImage(source)) throw new Error(`Niedozwolona ścieżka obrazu: ${source}`);
+    const imagePath = await realpath(path.join(lessonDirectory, source));
+    if (!imagePath.startsWith(`${assetsDirectory}${path.sep}`)) {
+      throw new Error(`Obraz wychodzi poza katalog assets: ${source}`);
+    }
+    const mimeType = IMAGE_MIME_TYPES[path.extname(imagePath).toLowerCase()];
+    const data = await readFile(imagePath);
+    output = output.replaceAll(`src="${source}"`, `src="data:${mimeType};base64,${data.toString('base64')}"`);
+  }
+  return output;
+}
+
 function inline(text) {
-  return escapeHtml(text)
+  const images = [];
+  const withImageTokens = String(text).replace(/!\[([^\]]*)\]\(([^)\s]+)\)/g, (syntax, alt, source) => {
+    if (!isSafeLessonImage(source)) return syntax;
+    const token = `\uE000${images.length}\uE001`;
+    images.push(`<img src="${escapeHtml(source)}" alt="${escapeHtml(alt)}">`);
+    return token;
+  });
+  let rendered = escapeHtml(withImageTokens)
     .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
     .replace(/\*(.+?)\*/g, '<em>$1</em>')
     .replace(/`(.+?)`/g, '<code>$1</code>');
+  images.forEach((image, index) => {
+    rendered = rendered.replace(`\uE000${index}\uE001`, image);
+  });
+  return rendered;
 }
 
 function tableCells(line) {
@@ -118,7 +164,8 @@ export function markdownToHtml(markdown) {
   return output.join('\n');
 }
 
-export function printableHtml({ title, audience, sections }) {
+export function printableHtml({ title, audience, sections, baseHref }) {
   const body = sections.map(({ heading, markdown }) => `<section><h1>${escapeHtml(heading)}</h1>${markdownToHtml(markdown)}</section>`).join('\n');
-  return `<!doctype html><html lang="pl"><head><meta charset="utf-8"><title>${escapeHtml(title)}</title><link rel="stylesheet" href="/template/print/print.css"></head><body class="${escapeHtml(audience)}"><main>${body}</main></body></html>`;
+  const base = baseHref ? `<base href="${escapeHtml(baseHref)}">` : '';
+  return `<!doctype html><html lang="pl"><head><meta charset="utf-8">${base}<title>${escapeHtml(title)}</title><link rel="stylesheet" href="/template/print/print.css"></head><body class="${escapeHtml(audience)}"><main>${body}</main></body></html>`;
 }

@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "input_hash": "9ea51ac06356cb383264328a87a927e1be9f387d8954f36f0c113485e8b3c4ee",
+  "inputs": [
+    "index.html",
+    "lesson.css",
+    "metadata.json",
+    "package.json",
+    "scripts/export-pdf.mjs",
+    "scripts/slide-contract.mjs",
+    "slides.md",
+    "template/components/lesson-components-core.mjs",
+    "template/components/lesson-components.css",
+    "template/components/lesson-components.js",
+    "template/presentation/appearance.mjs",
+    "template/presentation/base.css",
+    "template/presentation/boot.mjs",
+    "template/presentation/canvas.css",
+    "template/presentation/catalog.mjs",
+    "template/presentation/fonts.css",
+    "template/presentation/geometry.mjs",
+    "template/presentation/patterns.css",
+    "template/presentation/styles/atlas.css",
+    "template/presentation/styles/editorial.css",
+    "template/presentation/styles/museum.css",
+    "template/theme.css"
+  ]
+}

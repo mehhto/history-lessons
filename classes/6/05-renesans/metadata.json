@@ -1,0 +1,18 @@
+{
+  "id": "05-renesans",
+  "title": "Renesans — narodziny nowej epoki. Kultura renesansu w Europie",
+  "grade": 6,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa",
+  "duration_minutes": 45,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "status": "DO WERYFIKACJI NAUCZYCIELA",
+  "curriculum_requirement": "Rozpoznaje charakterystyczne cechy renesansu europejskiego. Wymaganie nauczyciela/programu: charakteryzuje największe osiągnięcia Leonarda da Vinci, Michała Anioła, Rafaela Santi, Erazma z Rotterdamu, Mikołaja Kopernika, Galileusza i Jana Gutenberga.",
+  "main_question": "Jak renesans zmienił sposób patrzenia na człowieka, wiedzę i sztukę?",
+  "source_reviewed": true,
+  "teacher_reviewed": false,
+  "offline_checked": true,
+  "pdf_exported": false,
+  "appearance": { "style": "museum", "palette": "sand" }
+}

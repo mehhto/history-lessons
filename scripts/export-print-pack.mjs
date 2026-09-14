@@ -1,9 +1,10 @@
 import { lstat, readFile, realpath, unlink, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
+import { pathToFileURL } from 'node:url';
 import { chromium } from 'playwright';
 import { createArtifactManifest } from './artifact-freshness.mjs';
-import { documentKindsForLesson, omittedDocumentKindsForLesson, documentPlan, printableHtml } from './print-pack.mjs';
+import { documentKindsForLesson, omittedDocumentKindsForLesson, documentPlan, embedLocalImagesInHtml, printableHtml } from './print-pack.mjs';
 import { resolveWithin } from './safe-paths.mjs';
 
 function argument(name) {
@@ -77,7 +78,13 @@ try {
       if (error.code !== 'ENOENT') throw error;
     }
     const page = await browser.newPage();
-    await page.setContent(printableHtml({ title: metadata.title, audience: plan.audience, sections }), { waitUntil: 'load' });
+    const documentHtml = await embedLocalImagesInHtml(printableHtml({
+      title: metadata.title,
+      audience: plan.audience,
+      sections,
+      baseHref: pathToFileURL(`${lessonDirectory}${path.sep}`).href,
+    }), lessonDirectory);
+    await page.setContent(documentHtml, { waitUntil: 'load' });
     await page.addStyleTag({ content: css });
     await page.emulateMedia({ media: 'print' });
     const pdf = await page.pdf({ path: output, format: 'A4', printBackground: true, margin: { top: '0', right: '0', bottom: '0', left: '0' } });

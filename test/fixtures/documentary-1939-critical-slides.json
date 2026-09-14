@@ -1,5 +1,5 @@
 {
-  "lesson": "classes/8/wojna-obronna-polski-we-wrzesniu-1939-roku/slides.md",
+  "lesson": "classes/8/01-wojna-obronna-1939/slides.md",
   "requiredLayouts": ["hero-source", "statement-centered", "source-split", "map-focus", "timeline-band", "evidence", "argument", "process", "task-board"],
   "requiredIds": ["otwarcie", "pytanie", "polozenie", "glos-epoki", "mapa-kampanii", "przewaga-sil", "pierwsze-dni", "opor", "bohaterstwo-zolnierzy", "bohaterstwo-cywilow", "dlaczego-kleska", "chronologia", "synteza", "bilet"]
 }

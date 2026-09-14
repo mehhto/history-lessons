@@ -14,14 +14,14 @@ npm run check
 npm run serve
 ```
 
-Otwórz `http://127.0.0.1:8080/classes/6/wielkie-odkrycia-geograficzne/`.
+Otwórz `http://127.0.0.1:8080/classes/6/02-odkrycia-wyprawy/`.
 
 ## Podgląd przez SSH przed pushem
 
 Do przeglądu pojedynczej lekcji bez publikowania zmian w Git uruchom ograniczony serwer podglądu:
 
 ```bash
-npm run preview -- --lesson classes/6/wielkie-odkrycia-geograficzne-wyprawy-i-spotkanie-swiatow --host 0.0.0.0 --port 8090
+npm run preview -- --lesson classes/6/02-odkrycia-wyprawy --host 0.0.0.0 --port 8090
 ```
 
 Serwer udostępnia wyłącznie wybraną lekcję, jej zasoby oraz wymagane pliki Reveal.js, motywu i komponentów; blokuje inne lekcje, `.git` i skrypty repozytorium. W środowisku Docker nie kieruj tunelu do adresu bridge kontenera. Opublikuj port w Compose na hoście, najlepiej do loopback albo zaufanego interfejsu LAN, a następnie użyj adresu hosta:
@@ -30,24 +30,24 @@ Serwer udostępnia wyłącznie wybraną lekcję, jej zasoby oraz wymagane pliki 
 ssh -N -L 8090:127.0.0.1:8090 USER@MINIPC
 ```
 
-Po opublikowaniu portu na interfejsie LAN podgląd można też otworzyć bezpośrednio pod `http://ADRES-MINIPC:8090/`. Następnie w przeglądarce otwórz `http://127.0.0.1:8090/classes/6/wielkie-odkrycia-geograficzne-wyprawy-i-spotkanie-swiatow/`. Tunel i proces preview muszą działać przez cały czas przeglądu.
+Po opublikowaniu portu na interfejsie LAN podgląd można też otworzyć bezpośrednio pod `http://ADRES-MINIPC:8090/`. Następnie w przeglądarce otwórz `http://127.0.0.1:8090/classes/6/02-odkrycia-wyprawy/`. Tunel i proces preview muszą działać przez cały czas przeglądu.
 
 ## Prezentacja przenośna — bez instalacji w sali
 
 Na przygotowanym komputerze wygeneruj jeden samodzielny plik HTML:
 
 ```bash
-npm run export:portable -- --lesson classes/4/jak-poznajemy-przeszlosc-historia-i-zrodla-historyczne
+npm run export:portable -- --lesson classes/4/01-poznajemy-przeszlosc
 ```
 
-W katalogu lekcji powstanie plik nazwany według tematu, na przykład `jak-poznajemy-przeszlosc-historia-i-zrodla-historyczne-portable.html`. Zawiera slajdy, Reveal.js, komponenty, style, fonty i obrazy. Można go skopiować na pendrive, Dysk Google lub do wiadomości, a następnie otworzyć dwuklikiem w aktualnym Chrome, Edge albo Firefox. **Na komputerze w sali nie są potrzebne Node.js, npm, serwer lokalny ani Internet.**
+W katalogu lekcji powstanie plik nazwany według katalogu, na przykład `01-poznajemy-przeszlosc-portable.html`. Zawiera slajdy, Reveal.js, komponenty, style, fonty i obrazy. Można go skopiować na pendrive, Dysk Google lub do wiadomości, a następnie otworzyć dwuklikiem w aktualnym Chrome, Edge albo Firefox. **Na komputerze w sali nie są potrzebne Node.js, npm, serwer lokalny ani Internet.**
 
 Przed wyjściem do szkoły otwórz wygenerowany plik raz bezpośrednio z dysku i sprawdź najważniejsze slajdy oraz interakcje. Jeżeli po zmianie `slides.md`, CSS, metadanych lub obrazów potrzebna jest nowa wersja, uruchom eksport ponownie. Wbudowane odnośniki lub opcjonalne filmy/mapy internetowe nadal wymagają sieci po świadomym kliknięciu, ale podstawowa treść lekcji musi pozostać kompletna offline.
 
 Można nadać plikowi własną prostą nazwę:
 
 ```bash
-npm run export:portable -- --lesson classes/4/jak-poznajemy-przeszlosc-historia-i-zrodla-historyczne --output historia-klasa-4-portable.html
+npm run export:portable -- --lesson classes/4/01-poznajemy-przeszlosc --output historia-klasa-4-portable.html
 ```
 
 ### Sterowanie prezentacją
@@ -141,7 +141,7 @@ W `metadata.json` wybierz zatwierdzony styl i paletę:
 | `editorial` | `ink`, `burgundy`, `documentary-1939` |
 | `atlas` | `marine`, `earth`, `encounter-atlas` |
 
-Nowy pakiet można utworzyć ze stylem: `npm run new -- --class 6 --title "Temat" --style atlas --palette marine`.
+Nowy pakiet można utworzyć ze stylem i krótkim slugiem: `npm run new -- --class 6 --title "Temat" --slug krotki-temat --style atlas --palette marine`. Generator automatycznie dopisuje kolejny numer, np. `06-krotki-temat`.
 
 Opcjonalne tło jest lokalnym, dekoracyjnym plikiem lekcji; nie może zastępować materiału analizowanego przez ucznia:
 
@@ -186,7 +186,7 @@ Lekcja ćwiczeniowa może dołączyć `student-summary.md` wyłącznie wtedy, gd
 Wygeneruj materiały A4 lokalnie:
 
 ```bash
-npm run export:print -- --lesson classes/6/wielkie-odkrycia-geograficzne-wyprawy-i-spotkanie-swiatow
+npm run export:print -- --lesson classes/6/02-odkrycia-wyprawy
 ```
 
 Powstaną `worksheet.pdf` i `teacher-guide.pdf`; w lekcji `new-knowledge` oraz w ćwiczeniowej z dodatkową syntezą także `student-summary.pdf`. Jeżeli lekcja `practice` nie ma podsumowania, pełny eksport usuwa ewentualny stary `student-summary.pdf` i jego wpis manifestu. Klucz z `assessment.md` trafia wyłącznie do dokumentu prowadzącego. Eksport odrzuca podsumowanie ucznia dłuższe niż jedna strona A4. Manifest przy wydrukach wykrywa zmianę źródłowego Markdown, metadanych, CSS, eksportera lub przypiętej wersji Playwright i oznacza stary pakiet jako nieaktualny.
@@ -205,14 +205,18 @@ Automatycznie (wymaga jednorazowej instalacji przeglądarki Playwright):
 
 ```bash
 npm run install:browser
-npm run export:pdf -- --lesson classes/6/wielkie-odkrycia-geograficzne-przyczyny-i-kierunki
+npm run export:pdf -- --lesson classes/6/01-odkrycia-przyczyny
 ```
 
-Polecenia działają w PowerShellu, `cmd.exe`, Bashu i Zsh. Dla pozostałych części cyklu podaj katalog `wielkie-odkrycia-geograficzne-wyprawy-i-spotkanie-swiatow` albo `wielkie-odkrycia-geograficzne-skutki-i-rozne-perspektywy`.
+Polecenia działają w PowerShellu, `cmd.exe`, Bashu i Zsh. Dla pozostałych części cyklu podaj katalog `02-odkrycia-wyprawy` albo `03-odkrycia-skutki`.
 
 PDF zapisze się jako `presentation-backup.pdf` w katalogu lekcji. Możesz też uruchomić `npm run serve`, otworzyć daną lekcję z `?print-pdf` na końcu adresu i użyć drukowania przeglądarki: **poziomo**, **marginesy: brak**, **grafika w tle: włączona**.
 
 ## Struktura
+
+### Nazwy katalogów lekcji
+
+Każda rzeczywista lekcja (`metadata.json.kind = "lesson"`) ma w obrębie klasy nazwę `NN-krotki-slug`, na przykład `classes/5/01-od-epoki-kamienia-do-epoki-zelaza/`. `NN` jest dwucyfrowym numerem zgodnym z kolejnością lekcji w klasie. Slug ma być możliwie krótki, ale jednoznacznie wskazywać temat. Długiego tytułu nie należy kopiować w całości do nazwy katalogu; użyj `--slug`. Katalogi demonstracyjne (`kind = "demo"`) nie należą do tej numeracji.
 
 - `curriculum/` — macierz wdrażania, aktywna podstawa dla każdej kohorty, wymagania edukacyjne i rejestr źródeł.
 - `template/` — stały motyw, lokalny Reveal.js, szablony i checklista.

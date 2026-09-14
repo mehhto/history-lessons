@@ -4,7 +4,7 @@ import path from 'node:path';
 import { presentationInputPaths } from '../scripts/presentation-inputs.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
-const lesson = path.join(root, 'classes/5/od-epoki-kamienia-do-epoki-zelaza');
+const lesson = path.join(root, 'classes/5/01-od-epoki-kamienia-do-epoki-zelaza');
 
 test('declares every shared presentation dependency once', () => {
   const names = presentationInputPaths({ repoRoot: root, lessonDirectory: lesson }).map(([name]) => name);

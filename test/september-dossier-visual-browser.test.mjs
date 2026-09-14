@@ -20,7 +20,7 @@ test('September dossier gives archival media projector-scale visual dominance', 
   const browser = await chromium.launch({ executablePath: path.join(root, '.playwright-browsers/chromium-1234/chrome-linux64/chrome') });
   try {
     const page = await browser.newPage({ viewport: { width: 1600, height: 900 } });
-    await page.goto(`http://127.0.0.1:${server.address().port}/classes/8/wojna-obronna-polski-we-wrzesniu-1939-roku/`, { waitUntil: 'networkidle' });
+    await page.goto(`http://127.0.0.1:${server.address().port}/classes/8/01-wojna-obronna-1939/`, { waitUntil: 'networkidle' });
     await page.waitForFunction(() => document.documentElement.dataset.presentationReady === 'true');
     assert.equal(await page.evaluate(() => Reveal.getTotalSlides()), 14);
 

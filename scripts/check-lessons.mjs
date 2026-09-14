@@ -1,7 +1,7 @@
 import { access, readdir, readFile, stat } from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
-import { validateLessonPackage } from './lesson-tools.mjs';
+import { validateLessonIdentity, validateLessonPackage } from './lesson-tools.mjs';
 import { assessLessonQuality, parseLessonMetadata } from './lesson-quality.mjs';
 import { isArtifactFresh } from './artifact-freshness.mjs';
 import { documentKindsForLesson, omittedDocumentKindsForLesson, documentPlan } from './print-pack.mjs';
@@ -111,6 +111,10 @@ if (lessons.length === 0) {
     }
     try {
       const metadata = parseLessonMetadata(await readFile(path.join(lesson.directory, 'metadata.json'), 'utf8'));
+      if (metadata.kind !== 'demo') {
+        const identityIssues = validateLessonIdentity({ directoryName: path.basename(lesson.directory), metadata });
+        if (identityIssues.length > 0) throw new Error(identityIssues.join(' '));
+      }
       const contentFiles = [...lesson.names].filter((name) => name.endsWith('.md') || name === 'metadata.json');
       const requiredContent = Object.fromEntries(await Promise.all(contentFiles
         .map(async (name) => [name, await readFile(path.join(lesson.directory, name), 'utf8')])));

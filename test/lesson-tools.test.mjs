@@ -3,7 +3,10 @@ import assert from 'node:assert/strict';
 
 import {
   lessonDirectory,
+  nextLessonSequence,
   normalizeLessonSlug,
+  numberedLessonSlug,
+  validateLessonIdentity,
   validateLessonPackage,
 } from '../scripts/lesson-tools.mjs';
 
@@ -19,6 +22,23 @@ test('places a lesson inside its class directory', () => {
     lessonDirectory({ grade: 6, slug: '08-wielkie-odkrycia-geograficzne' }),
     'classes/6/08-wielkie-odkrycia-geograficzne',
   );
+});
+
+test('selects the next lesson number and ignores technical directories', () => {
+  assert.equal(nextLessonSequence(['00-pilot-szablonu', '01-pierwsza-lekcja', 'katalog-komponentow']), '02');
+});
+
+test('builds a numbered slug from a short author-provided slug', () => {
+  assert.equal(
+    numberedLessonSlug({ sequence: '07', title: 'Bardzo długi tytuł lekcji', slug: 'krótki temat' }),
+    '07-krotki-temat',
+  );
+});
+
+test('validates numbered lesson directory and matching metadata id', () => {
+  assert.deepEqual(validateLessonIdentity({ directoryName: '03-starozytny-izrael', metadata: { id: '03-starozytny-izrael' } }), []);
+  assert.deepEqual(validateLessonIdentity({ directoryName: 'starozytny-izrael', metadata: { id: 'starozytny-izrael' } }), ['Katalog lekcji musi mieć nazwę NN-krotki-slug.']);
+  assert.deepEqual(validateLessonIdentity({ directoryName: '03-starozytny-izrael', metadata: { id: 'inna-nazwa' } }), ['metadata.id musi być identyczne z nazwą katalogu.']);
 });
 
 test('rejects lesson creation outside classes IV–VIII', () => {

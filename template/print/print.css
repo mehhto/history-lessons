@@ -12,6 +12,10 @@ p { margin: 0 0 2.5mm; }
 ul { margin: 0 0 3mm; padding-left: 5mm; }
 li + li { margin-top: 1.2mm; }
 table { width: 100%; border-collapse: collapse; margin: 3mm 0 4mm; font-size: 10.5pt; break-inside: avoid; }
+img { display: block; max-width: 100%; height: auto; margin: 0 auto; }
+.student h1 { margin-bottom: 4mm; font-size: 21pt; }
+.student th, .student td { padding: 1.5mm 2mm; }
+.student td img { max-height: 28mm; object-fit: contain; }
 th, td { border: .6pt solid #adc0d2; padding: 2.2mm 2.5mm; text-align: left; vertical-align: middle; }
 th { background: #e8f0f5; color: #17365d; font-weight: 700; }
 th.align-left, td.align-left { text-align: left; }

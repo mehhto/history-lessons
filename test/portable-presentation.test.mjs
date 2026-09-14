@@ -12,7 +12,7 @@ const { chromium } = await import('playwright');
 const { buildPortablePresentation, exportPortablePresentation } = await import('../scripts/export-portable.mjs');
 const execFile = promisify(execFileCallback);
 const browserExecutable = path.join(root, '.playwright-browsers/chromium-1234/chrome-linux64/chrome');
-const lesson = path.join(root, 'classes/4/jak-poznajemy-przeszlosc-historia-i-zrodla-historyczne');
+const lesson = path.join(root, 'classes/4/01-poznajemy-przeszlosc');
 const pixel = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=', 'base64');
 
 async function fixture({ slides, css = '' }) {

@@ -3,8 +3,8 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 
 const decks = [
-  ['VIII', new URL('../classes/8/wojna-obronna-polski-we-wrzesniu-1939-roku/slides.md', import.meta.url)],
-  ['VI', new URL('../classes/6/skutki-wypraw-geograficznych-i-ameryka-przed-kolumbem/slides.md', import.meta.url)],
+  ['VIII', new URL('../classes/8/01-wojna-obronna-1939/slides.md', import.meta.url)],
+  ['VI', new URL('../classes/6/04-ameryka-przed-kolumbem/slides.md', import.meta.url)],
 ];
 
 test('baseline documentary decks expose the critical teaching purposes before migration', async () => {

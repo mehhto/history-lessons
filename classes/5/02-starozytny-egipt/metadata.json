@@ -1,0 +1,23 @@
+{
+  "kind": "lesson",
+  "id": "02-starozytny-egipt",
+  "title": "Starożytny Egipt — pięć stacji zadaniowych",
+  "grade": 5,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa",
+  "duration_minutes": 45,
+  "lesson_type": "new-knowledge",
+  "status": "SZKIC_DO_AKCEPTACJI_NAUCZYCIELA",
+  "curriculum_requirement": "I.2–I.4: Egipt jako cywilizacja Starożytnego Wschodu; monarchia i organizacja społeczeństwa; politeizm i życie po śmierci",
+  "main_question": "Jak warunki nad Nilem, organizacja społeczeństwa, wierzenia i wiedza pomagały Egipcjanom budować oraz utrzymywać ich cywilizację?",
+  "curriculum_source": "Rozporządzenie Ministra Edukacji z 28 czerwca 2024 r., Dz.U. 2024 poz. 996",
+  "appearance": {
+    "style": "museum",
+    "palette": "sand"
+  },
+  "source_reviewed": true,
+  "teacher_reviewed": false,
+  "offline_checked": false,
+  "pdf_exported": false,
+  "notes": "Szkic po zmianie na pięć niskonakładowych stacji dla 14–18 uczniów; film ma tekstowy plan B; do akceptacji nauczyciela przed eksportem."
+}

@@ -3,9 +3,9 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 
 const fixture = JSON.parse(await readFile(new URL('./fixtures/documentary-1939-critical-slides.json', import.meta.url), 'utf8'));
-const slides = await readFile(new URL('../classes/8/wojna-obronna-polski-we-wrzesniu-1939-roku/slides.md', import.meta.url), 'utf8');
-const sources = await readFile(new URL('../classes/8/wojna-obronna-polski-we-wrzesniu-1939-roku/sources.md', import.meta.url), 'utf8');
-const teacherGuide = await readFile(new URL('../classes/8/wojna-obronna-polski-we-wrzesniu-1939-roku/teacher-guide.md', import.meta.url), 'utf8');
+const slides = await readFile(new URL('../classes/8/01-wojna-obronna-1939/slides.md', import.meta.url), 'utf8');
+const sources = await readFile(new URL('../classes/8/01-wojna-obronna-1939/sources.md', import.meta.url), 'utf8');
+const teacherGuide = await readFile(new URL('../classes/8/01-wojna-obronna-1939/teacher-guide.md', import.meta.url), 'utf8');
 const learnerAndTeacherPackage = (await Promise.all([
   'slides.md',
   'lesson.md',
@@ -13,7 +13,7 @@ const learnerAndTeacherPackage = (await Promise.all([
   'worksheet.md',
   'student-summary.md',
   'assessment.md',
-].map((file) => readFile(new URL(`../classes/8/wojna-obronna-polski-we-wrzesniu-1939-roku/${file}`, import.meta.url), 'utf8')))).join('\n');
+].map((file) => readFile(new URL(`../classes/8/01-wojna-obronna-1939/${file}`, import.meta.url), 'utf8')))).join('\n');
 
 test('September dossier uses its required documentary layouts and critical slides', () => {
   for (const layout of fixture.requiredLayouts) assert.match(slides, new RegExp(`data-layout="${layout}"`), layout);

@@ -68,6 +68,8 @@ Każdy slajd musi mieć jasną funkcję oraz być czytelny z końca klasy:
 
 Dostępne komponenty lokalne: `lesson-timeline` / `lesson-event`, `lesson-gallery`, `lesson-map`, `lesson-disclosure`, `lesson-stats` / `lesson-stat` / `lesson-counter`, `lesson-stepper` / `lesson-step`, `lesson-table`, `lesson-quote`, `lesson-icon-list`, `lesson-video` i `lesson-compare`. Pełne przykłady są w `classes/6/katalog-komponentow-prezentacji/`.
 
+Każdy katalog rzeczywistej lekcji (`kind: lesson`) nazywaj `NN-krotki-slug`, gdzie `NN` oznacza dwucyfrową kolejność lekcji w obrębie klasy. Nazwa ma być krótka, ale jednoznaczna; pełny tytuł pozostaje w `metadata.json`. Generator dopisuje kolejny numer automatycznie, a krótszą nazwę przyjmuje przez `--slug`. Katalogi demonstracyjne (`kind: demo`) są poza numeracją lekcji.
+
 Mapy Google i YouTube są opcjonalne: iframe uzyskuje `src` wyłącznie po kliknięciu, a slajd ma lokalną alternatywę. Galeria wymaga opisowych `alt` i podpisów; hover jest dodatkiem — musi działać także przez `Tab`, strzałki, `Home`, `End`, `Escape` i dotknięcie.
 
 ## Przenośna prezentacja bez konfiguracji sali
@@ -75,7 +77,7 @@ Mapy Google i YouTube są opcjonalne: iframe uzyskuje `src` wyłącznie po klikn
 Gdy nauczyciel potrzebuje pracy na obcych komputerach bez Node.js, serwera i Internetu, po ustabilizowaniu źródeł wygeneruj samodzielny plik:
 
 ```bash
-npm run export:portable -- --lesson classes/4/temat
+npm run export:portable -- --lesson classes/4/01-temat
 ```
 
 Wynik `*-portable.html` jest artefaktem lokalnym, nie źródłem i nie trafia do Git. Można go przenieść niezależnie od repozytorium i otworzyć dwuklikiem. Po każdej zmianie slajdów, CSS, metadanych, komponentów albo obrazów wygeneruj go ponownie. Przed przekazaniem otwórz wynik przez `file://` bez serwera, potwierdź brak żądań sieciowych dla podstawowej treści, pełne wczytanie obrazów, geometrię wszystkich slajdów oraz działanie klawiatury, notatek i komponentów interaktywnych.
