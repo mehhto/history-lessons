@@ -16,11 +16,7 @@ Poproś o jedną hipotezę: dlaczego Jerozolima mogła być ważna dla wspólnot
 ---
 
 <!-- .slide: id="mapa-region" data-purpose="evidence" data-layout="hero-source" -->
-## Gdzie rozgrywała się ta historia?
-
-<figure class="source-figure map-full"><img src="assets/mapa-palestyny-zpe.jpg" alt="Mapa Palestyny na przełomie drugiego i pierwszego tysiąclecia przed naszą erą" data-fit="contain" /><figcaption>Mapa syntetyczna: trasa tradycji wyjścia, królestwa Dawida i Salomona, podział Izraela i Judy oraz wygnanie do Babilonii. ZPE, Krystian Chariza i zespół.</figcaption></figure>
-
-<div class="map-question">Znajdź: <strong>Egipt • Kanaan • Jerozolimę</strong></div>
+<figure class="source-figure map-full"><img src="assets/mapa-palestyny-zpe.jpg" alt="Mapa Palestyny na przełomie drugiego i pierwszego tysiąclecia przed naszą erą" data-fit="contain" /></figure>
 
 <!-- notes:
 Mapa łączy kilka warstw czasowych. Nie odczytuj jej jak obrazu jednego roku. ZPE oznacza zdobycie Jerozolimy jako 587 r. p.n.e.; w materiałach ucznia użyto 586. Oba datowania występują w literaturze.
@@ -36,6 +32,7 @@ Mapa łączy kilka warstw czasowych. Nie odczytuj jej jak obrazu jednego roku. Z
 <div class="card"><strong>Mojżesz</strong><p>wyjście z Egiptu, Synaj i Dekalog</p></div>
 <div class="card"><strong>Kanaan</strong><p>ziemia, w której według tradycji osiedlili się Izraelici</p></div>
 </div>
+<figure class="old-testament-source"><img src="assets/tora-zpe.jpg" alt="Zwój Tory zapisany po hebrajsku" data-fit="contain" /><figcaption>Zwój Tory — tekst Biblii hebrajskiej i źródło pamięci wspólnoty.</figcaption></figure>
 
 <p class="callout"><strong>Ważne:</strong> to opowieści kształtujące pamięć wspólnoty; nie mają jednej bezspornej, dokładnej daty.</p>
 
@@ -45,12 +42,11 @@ Mapa łączy kilka warstw czasowych. Nie odczytuj jej jak obrazu jednego roku. Z
 ## Od królestwa do dwóch państw
 
 <div class="history-line">
-<div><span>ok. X w. p.n.e.</span><strong>Dawid</strong><p>Jerozolima stolicą</p></div>
-<div><span>tradycja</span><strong>Salomon</strong><p>Pierwsza Świątynia</p></div>
-<div><span>po Salomonie</span><strong>Podział</strong><p>Izrael na północy • Juda na południu</p></div>
+<div><span>ok. X w. p.n.e.</span><strong>Dawid</strong><p>według Biblii zdobył Jerozolimę i uczynił ją stolicą; opowieść o Goliacie łączy go z procą, nie mieczem.</p></div>
+<div><span>tradycja</span><strong>Salomon</strong><p>słynął z mądrego sądu; z jego panowaniem Biblia łączy budowę Pierwszej Świątyni.</p></div>
+<div><span>ok. 930 p.n.e.</span><strong>Rozpad</strong><p>po śmierci Salomona powstały: Izrael na północy i Juda na południu.</p></div>
 </div>
-
-<p class="big-question">Dlaczego stolica i Świątynia wzmacniały wspólnotę?</p>
+<p class="big-question">Co wydarzyło się po śmierci Salomona? Rechoboam odmówił zmniejszenia podatków i przymusowej pracy; północne plemiona wybrały Jeroboama.</p>
 
 ---
 
@@ -70,7 +66,7 @@ Mapa łączy kilka warstw czasowych. Nie odczytuj jej jak obrazu jednego roku. Z
 ## Obce panowanie i powstania
 
 <div class="history-line compact">
-<div><span>167 p.n.e.</span><strong>Machabeusze</strong><p>sprzeciw wobec władzy Seleucydów</p></div>
+<div><span>167 p.n.e.</span><strong>Machabeusze</strong><p>sprzeciw wobec władzy Seleucydów; Chanuka upamiętnia odzyskanie i ponowne poświęcenie Świątyni.</p></div>
 <div><span>66–73 n.e.</span><strong>Powstanie przeciw Rzymowi</strong><p>70 n.e. — zniszczenie Drugiej Świątyni</p></div>
 <div><span>132–135 n.e.</span><strong>Bar Kochba</strong><p>klęska i nasilone represje</p></div>
 </div>
@@ -125,14 +121,24 @@ Mapa łączy kilka warstw czasowych. Nie odczytuj jej jak obrazu jednego roku. Z
 
 ---
 
-<!-- .slide: id="swiatynia" data-purpose="explanation" data-layout="plain" -->
-## Świątynia — centrum kultu
+<!-- .slide: id="swiatynia" data-purpose="evidence" data-layout="plain" -->
+## Świątynia za Salomona — współczesna wizualizacja
 
-<figure class="source-figure diagram-full"><img src="assets/schemat-swiatyni.svg" alt="Schemat funkcji i chronologii Świątyni Jerozolimskiej" data-fit="contain" /><figcaption>Schemat autorski — pokazuje funkcje i chronologię, nie rekonstruuje wyglądu budowli.</figcaption></figure>
+<lesson-video>
+<div class="video-fallback"><strong>Film: 1:20–9:50</strong><p>Obejrzyj początek: Dawid, Jerozolima i rozpoczęcie budowy za Salomona. Zatrzymaj około 2:24. Plan B: kolejny slajd — schemat części Świątyni.</p><button data-video-play type="button">Odtwórz fragment</button></div>
+<iframe data-video-src="https://www.youtube-nocookie.com/embed/Xt6lQAe8ues?start=80&end=590" title="Solomon's Temple Explained — współczesna wizualizacja" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen hidden></iframe>
+</lesson-video>
 
 <!-- notes:
-Jeśli korzystasz z podanego filmu YouTube od 5:10, nazwij go współczesną wizualizacją, nie źródłem z epoki. Plan B to ten schemat.
+Film jest współczesną wizualizacją i ma wyznaniową perspektywę. W pierwszych minutach wykorzystaj tylko informacje o Dawidzie, Salomonie i budowie Świątyni; nie przedstawiaj grafiki jako pewnej rekonstrukcji archeologicznej.
 -->
+
+---
+
+<!-- .slide: id="plan-swiatyni" data-purpose="explanation" data-layout="plain" -->
+## Świątynia — części i wyposażenie
+
+<figure class="source-figure diagram-full"><img src="assets/schemat-swiatyni.svg" alt="Schemat części Świątyni Jerozolimskiej" data-fit="contain" /><figcaption>Schemat na podstawie opisów biblijnych; nie jest pewną rekonstrukcją archeologiczną.</figcaption></figure>
 
 ---
 

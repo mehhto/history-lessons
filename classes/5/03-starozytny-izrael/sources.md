@@ -11,10 +11,9 @@ Dostęp do źródeł sieciowych sprawdzono podczas przygotowania pakietu. Prezen
 | współczesne państwo Izrael | [Encyclopaedia Britannica, „Israel”](https://www.britannica.com/place/Israel) | tylko neutralna informacja o ogłoszeniu niepodległości w 1948 r. i rozróżnienie od starożytnych królestw |
 
 ## Film wskazany przez nauczyciela
-- [„Solomon's Temple Explained”, Messages of Christ, YouTube](https://www.youtube.com/watch?v=Xt6lQAe8ues&t=310s), 9:59.
-- Weryfikacja: film i transkrypcja były dostępne; odcinek **5:15–6:25** pokazuje boczne pomieszczenia, kolumny, drzwi i przejście ku Miejscu Najświętszemu.
-- Sposób użycia: współczesna wizualizacja oparta na opisach biblijnych, najlepiej bez angielskiego komentarza, z polską narracją nauczyciela. To nie jest źródło z epoki ani neutralny film archeologiczny; kanał ma perspektywę wyznaniową.
-- Plan B offline: `assets/schemat-swiatyni.svg`.
+- [„Solomon's Temple Explained”, Messages of Christ, YouTube](https://www.youtube.com/watch?v=Xt6lQAe8ues), 9:59.
+- Sposób użycia: fragment **1:20–9:50**. Do wspólnej analizy wykorzystaj 1:20–2:24 (Dawid, Jerozolima i rozpoczęcie budowy za Salomona); dalsza część jest współczesną wizualizacją o perspektywie wyznaniowej.
+- To nie jest źródło z epoki ani pewna rekonstrukcja archeologiczna. Plan B offline: `assets/schemat-swiatyni.svg`.
 
 ## Media lokalne
 | Plik | Przedstawia | Autor / licencja | Pochodzenie |
