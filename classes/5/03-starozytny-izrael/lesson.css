@@ -23,8 +23,8 @@
 
 /* Mapa jako pole orientacji. */
 #mapa-region .map-full { position:relative; margin:0; padding:13px; background:#fff; box-shadow:14px 14px 0 var(--lev-olive); }
-#mapa-region .map-full img { display:block; width:100%; height:460px; object-fit:contain; }
-#mapa-region .map-question { position:absolute; right:75px; bottom:68px; margin:0; padding:15px 24px; border:0; border-left:8px solid var(--lev-clay); border-radius:0; color:#fff; background:var(--lev-ink); font-size:27px; }
+#mapa-region .map-full img { display:block; width:100%; height:400px; object-fit:contain; }
+#mapa-region .map-question { position:absolute; top:270px; right:75px; bottom:auto; width:430px; margin:0; padding:15px 24px; border:0; border-left:8px solid var(--lev-clay); border-radius:0; color:#fff; background:var(--lev-ink); font-size:23px; line-height:1.25; }
 
 /* Tradycja i judaizm — pojęcia na różnych powierzchniach. */
 #tradycja .cards { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:0; margin-top:44px; border-top:3px solid var(--lev-ink); border-bottom:3px solid var(--lev-ink); }
