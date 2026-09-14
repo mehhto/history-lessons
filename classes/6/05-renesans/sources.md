@@ -45,6 +45,8 @@ Wszystkie reprodukcje prezentacji są zapisane lokalnie. Ich strony plików i li
 | `assets/mapa-wloch-1494.png` | Półwysep Apeniński w 1494 r. | Flankner, domena publiczna; udostępnienie ZPE | [ZPE](https://zpe.gov.pl/a/renesans-i-humanizm/D12CNhgVs) |
 | `assets/replika-prasy-gutenberga.jpg` | replika prasy Gutenberga | vlasta2, CC BY 2.0; udostępnienie ZPE | [ZPE](https://zpe.gov.pl/a/druk---wynalazek-ktory-zmienil-swiat/D8RK90Z5e) |
 
+| `assets/teleskopy-galileusza.jpg` | teleskopy Galileusza w Museo Galileo | fotografia Wikimedia Commons | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:%CE%A4%CE%B7%CE%BB%CE%B5%CF%83%CE%BA%CF%8C%CF%80%CE%B9%CE%B1_%CE%93%CE%B1%CE%BB%CE%B9%CE%BB%CE%B1%CE%AF%CE%BF%CF%85_0623.jpg) |
+
 ## Ważne rozróżnienia
 - Renesans nie rozpoczął się jednego dnia i nie oznaczał pełnego zerwania ze średniowieczem.
 - Humanizm nie był prostym odrzuceniem religii.

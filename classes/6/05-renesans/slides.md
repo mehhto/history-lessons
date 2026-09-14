@@ -52,7 +52,6 @@
 <div class="name-grid">
 <div><strong>Leonardo</strong><span>obserwacja</span></div><div><strong>Michał Anioł</strong><span>ciało i monumentalność</span></div><div><strong>Rafael</strong><span>antyk i perspektywa</span></div><div><strong>Erazm</strong><span>edukacja i krytyczna lektura</span></div><div><strong>Kopernik</strong><span>heliocentryzm</span></div><div><strong>Galileusz</strong><span>obserwacja teleskopowa</span></div><div><strong>Gutenberg</strong><span>druk w Europie</span></div>
 </div>
-<p class="prompt-line">Do tej mapy będziemy wracać, poznając kolejne przykłady.</p>
 
 ---
 
@@ -137,7 +136,7 @@
 <!-- .slide: id="kopernik-galileusz" data-purpose="explanation" data-layout="comparison" -->
 ## Nowy obraz kosmosu
 
-<div class="science-portraits"><article><img src="assets/kopernik-portret.jpg" alt="Pośmiertny portret Mikołaja Kopernika" data-fit="contain" /><span>1473–1543</span><strong>Mikołaj Kopernik</strong><p>Przedstawił heliocentryczny model świata w dziele „O obrotach sfer niebieskich” (1543).</p></article><article><img src="assets/galileusz-portret.jpg" alt="Portret Galileusza" data-fit="contain" /><span>1564–1642</span><strong>Galileusz</strong><p>Udoskonalił użycie teleskopu; obserwował m.in. księżyce Jowisza i fazy Wenus.</p></article><figure><img src="assets/kometa-halleya-eso.jpg" alt="Fotografia komety Halleya" data-fit="cover" /><figcaption>Kometa Halleya, ESO, 1986 r., CC BY 4.0.</figcaption></figure></div>
+<div class="science-portraits"><article><img src="assets/kopernik-portret.jpg" alt="Pośmiertny portret Mikołaja Kopernika" data-fit="contain" /><span>1473–1543</span><strong>Mikołaj Kopernik</strong><p>Przedstawił heliocentryczny model świata w dziele „O obrotach sfer niebieskich” (1543).</p></article><article><img src="assets/galileusz-portret.jpg" alt="Portret Galileusza" data-fit="contain" /><span>1564–1642</span><strong>Galileusz</strong><p>Udoskonalił użycie teleskopu; obserwował m.in. księżyce Jowisza i fazy Wenus.</p></article><figure><img src="assets/teleskopy-galileusza.jpg" alt="Teleskopy Galileusza w Museo Galileo" data-fit="cover" /><figcaption>Teleskopy Galileusza, Museo Galileo we Florencji.</figcaption></figure></div>
 
 ---
 
