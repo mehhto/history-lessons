@@ -28,7 +28,8 @@ Dostęp do źródeł sieciowych sprawdzono podczas przygotowania pakietu. Prezen
 | `assets/schemat-chrzescijanstwo.svg` | kierunki wczesnego rozprzestrzeniania chrześcijaństwa | opracowanie własne | synteza celu podstawy; schemat, nie mapa granic |
 
 | `assets/abraham.jpg` | Abraham, detal obrazu „Ofiara Izaaka” | Rembrandt, 1635, domena publiczna | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Rembrandt_%E2%80%94_Sacrifice_of_Isaac_%E2%80%94_1635_%E2%80%94_detail_Abraham.JPG) |
-| `assets/mojzesz.jpg` | Mojżesz uderzający w skałę | dzieło historyczne w Wikimedia Commons, domena publiczna | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Moses_Striking_the_Rock_(SM_2474).png) |
+| `assets/mojzesz-dekalog.jpg` | Mojżesz otrzymujący Dekalog na Synaju | obraz anonimowy, Nationalmuseum; domena publiczna | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Anonymous_-_Moses_Receives_the_Ten_Commandments_on_Mount_Sinai_-_NM_7227_-_Nationalmuseum.jpg) |
+| `assets/plan-drugiej-swiatyni.jpg` | plan Drugiej Świątyni i dziedzińców z czasów Heroda | Encyclopaedia Britannica, 1911; domena publiczna | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:EB1911_Temple_-_Plan_of_Herod%27s_Temple_and_Courts.jpg) |
 
 ## Uwagi źródłowe
 - Określenia „Hebrajczycy”, „Izraelici” i „Żydzi” zależą od okresu; prezentacja nie używa ich jako pełnych synonimów.

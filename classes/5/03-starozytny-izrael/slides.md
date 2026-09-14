@@ -29,12 +29,7 @@ Mapa łączy kilka warstw czasowych. Nie odczytuj jej jak obrazu jednego roku. Z
 
 <div class="biblical-pair">
 <figure><img src="assets/abraham.jpg" alt="Abraham na obrazie Rembrandta" data-fit="cover" /><figcaption>Abraham — późniejsze dzieło sztuki ilustrujące tradycję biblijną.</figcaption></figure>
-<figure><img src="assets/mojzesz.jpg" alt="Mojżesz uderzający w skałę na obrazie" data-fit="cover" /><figcaption>Mojżesz — późniejsze dzieło sztuki ilustrujące tradycję biblijną.</figcaption></figure>
-</div>
-<div class="cards grid-3">
-<div class="card"><strong>Abraham</strong><p>przymierze i początek dziejów rodu</p></div>
-<div class="card"><strong>Mojżesz</strong><p>wyjście z Egiptu, Synaj i Dekalog</p></div>
-<div class="card"><strong>Kanaan</strong><p>ziemia, w której według tradycji osiedlili się Izraelici</p></div>
+<figure><img src="assets/mojzesz-dekalog.jpg" alt="Mojżesz otrzymujący Dekalog na górze Synaj" data-fit="cover" /><figcaption>Mojżesz otrzymujący Dekalog na Synaju — późniejsze dzieło sztuki ilustrujące tradycję biblijną.</figcaption></figure>
 </div>
 
 <p class="callout"><strong>Ważne:</strong> to opowieści kształtujące pamięć wspólnoty; nie mają jednej bezspornej, dokładnej daty.</p>
@@ -148,7 +143,7 @@ Film jest współczesną wizualizacją i ma wyznaniową perspektywę. W pierwszy
 <!-- .slide: id="plan-swiatyni" data-purpose="explanation" data-layout="plain" -->
 ## Świątynia — części i wyposażenie
 
-<figure class="source-figure diagram-full"><img src="assets/schemat-swiatyni.svg" alt="Schemat części Świątyni Jerozolimskiej" data-fit="contain" /><figcaption>Schemat na podstawie opisów biblijnych; nie jest pewną rekonstrukcją archeologiczną.</figcaption></figure>
+<figure class="source-figure temple-plan"><img src="assets/plan-drugiej-swiatyni.jpg" alt="Historyczny plan Drugiej Świątyni i jej dziedzińców z czasów Heroda" data-fit="contain" /><figcaption>Plan Drugiej Świątyni i dziedzińców z czasów Heroda, Encyclopaedia Britannica (1911), domena publiczna.</figcaption></figure>
 
 ---
 
