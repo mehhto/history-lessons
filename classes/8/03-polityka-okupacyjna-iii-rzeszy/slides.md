@@ -30,7 +30,7 @@
 
 <!-- .slide: id="polska-mapa" data-purpose="evidence" data-layout="hero-source" -->
 ## Ziemie polskie pod okupacją
-<div class="poland-layout"><figure><img src="assets/mapa-polska-1941.png" alt="Mapa ziem polskich pod niemiecką okupacją w 1941 roku" data-fit="contain"><figcaption>Ziemie polskie pod okupacją niemiecką, 1941 r.</figcaption></figure><div class="poland-key"><p><strong>Wcielone do III Rzeszy</strong><br>germanizacja, wysiedlenia i bezpośrednia administracja.</p><p><strong>Generalne Gubernatorstwo</strong><br>terror, grabież, przymus i getta.</p></div></div><p class="map-task">Wskaż na mapie oba obszary. Podział administracyjny nie oznaczał braku wspólnych represji.</p>
+<div class="poland-layout"><figure><img src="assets/mapa-polska-1941.png" alt="Mapa ziem polskich pod niemiecką okupacją w 1941 roku" data-fit="contain"><figcaption>Ziemie polskie pod okupacją niemiecką, 1941 r.</figcaption></figure><div class="poland-key"><p><strong>Wcielone do III Rzeszy</strong><br>germanizacja, wysiedlenia i bezpośrednia administracja.</p><p><strong>Generalne Gubernatorstwo</strong><br>terror, grabież, przymus i getta.</p><p><strong>Wspólne represje</strong><br>okupacyjna kontrola, przemoc i eksploatacja dotykały ludność obu obszarów.<br><em>Wskaż oba obszary na mapie.</em></p></div></div>
 
 ---
 
