@@ -30,7 +30,7 @@
 
 <!-- .slide: id="polska-mapa" data-purpose="evidence" data-layout="hero-source" -->
 ## Ziemie polskie pod okupacją
-<div class="poland-layout"><figure><img src="assets/mapa-polska-1941.png" alt="Mapa ziem polskich pod niemiecką okupacją w 1941 roku" data-fit="contain"><figcaption>Ziemie polskie pod okupacją niemiecką, 1941 r.</figcaption></figure><div><p><strong>Ziemie wcielone do III Rzeszy</strong><br>germanizacja, wysiedlenia i bezpośrednia administracja niemiecka.</p><p><strong>Generalne Gubernatorstwo</strong><br>okupacyjna administracja, terror, grabież, przymus i getta.</p><p class="map-task">Wskaż na mapie oba obszary. Dlaczego podział administracyjny nie oznaczał braku wspólnych represji?</p></div></div>
+<div class="poland-layout"><figure><img src="assets/mapa-polska-1941.png" alt="Mapa ziem polskich pod niemiecką okupacją w 1941 roku" data-fit="contain"><figcaption>Ziemie polskie pod okupacją niemiecką, 1941 r.</figcaption></figure><div class="poland-key"><p><strong>Wcielone do III Rzeszy</strong><br>germanizacja, wysiedlenia i bezpośrednia administracja.</p><p><strong>Generalne Gubernatorstwo</strong><br>terror, grabież, przymus i getta.</p></div></div><p class="map-task">Wskaż na mapie oba obszary. Podział administracyjny nie oznaczał braku wspólnych represji.</p>
 
 ---
 
@@ -89,8 +89,8 @@
 ---
 
 <!-- .slide: id="postawy" data-purpose="practice" data-layout="activity-brief" -->
-## Postawy wobec okupacji: nazwij działanie, nie naród
-<div class="task-board"><div class="student-task" data-task-role="prompt"><strong>Pracujcie w parach · 5 minut</strong><ol><li>W zadaniu 5B nazwijcie cztery postawy.</li><li>Przy każdej dopiszcie jedno uzasadnienie.</li><li>Na końcu zapiszcie zdanie: „Pod okupacją ludzie mogli…”.</li></ol></div><div><p><strong>Pomoc:</strong> Rada Pomocy Żydom „Żegota” organizowała pomoc; Irena Sendlerowa współpracowała z siecią pomocy dzieciom.</p><p><strong>Szantaż:</strong> szmalcownicy szantażowali Żydów w ukryciu i osoby, które im pomagały.</p><p><strong>Ważne:</strong> oceniaj konkretne działania osób, organizacji lub władz — nie całe narody.</p></div></div>
+## Pomoc, współpraca, szantaż — konkretne działania
+<div class="attitudes-evidence"><div><strong>Pomoc</strong><p>Rada Pomocy Żydom „Żegota” organizowała fałszywe dokumenty, wsparcie i kryjówki. Irena Sendlerowa współpracowała z siecią pomocy dzieciom.</p></div><div><strong>Szantaż</strong><p>Szmalcownicy szantażowali Żydów w ukryciu i osoby, które im pomagały.</p></div><div><strong>Odpowiedzialność</strong><p>Opisuj działanie konkretnych osób, organizacji i władz — nie przypisuj jednej postawy całym narodom.</p></div></div>
 
 ---
 

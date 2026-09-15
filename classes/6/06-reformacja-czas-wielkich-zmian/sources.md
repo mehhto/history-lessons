@@ -23,9 +23,14 @@
 4. **The National Archives (UK)**, [„The Act of Supremacy 1534”](https://www.nationalarchives.gov.uk/education/resources/henry-viii/act-of-supremacy/) — kontekst zwierzchnictwa Henryka VIII nad Kościołem Anglii.
 
 ## Materiały lokalne i wizualne
-- Brak plików wizualnych w `assets/`; nie użyto zewnętrznych adresów obrazów ani obrazów AI.
-- `mapa-europy` jest autorskim **schematem orientacyjnym**, nie mapą polityczną ani źródłem z epoki. Wskazuje wyłącznie Wittenbergę, Genewę, Rzym, Anglię i ziemie niemieckie jako miejsca/obszary potrzebne do lekcji.
-- `kalwin` zawiera jawny tekstowy znacznik miejsca na źródło; bez lokalnego, sprawdzonego pliku nie jest prezentowany żaden portret.
+
+| Plik | Autor / data | Status praw i źródło |
+|---|---|---|
+| `mapa-reformacji.svg` | Ernio48, 2017 | [The Protestant Reformation](https://commons.wikimedia.org/wiki/File:The_Protestant_Reformation.svg), CC BY-SA 4.0; współczesna mapa edukacyjna, nie źródło z XVI w. |
+| `marcin-luter-1528.jpg` | Lucas Cranach starszy, 1528 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Lucas_Cranach_d.%C3%84._-_Martin_Luther,_1528_(Veste_Coburg).jpg), domena publiczna. |
+| `95-tez-faksymile.jpg` | Marcin Luter, 1517 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ninety-five_Theses_(Basel).jpg), domena publiczna; faksymile druku. |
+| `jan-kalwin-ok-1550.jpg` | autor anonimowy, ok. 1550 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Portrait_of_John_Calvin_(1509%E2%80%931564),_by_anonymous_-_Museum_Catharijneconvent.jpg), domena publiczna. |
+| `pokoj-augsburski-1555.jpg` | autor nieznany, XVI w. | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Peace-of-augsburg_1555.jpg), domena publiczna; dokument z epoki. |
 
 ## Status źródeł
 - Fakty i cytat mają wskazane źródła referencyjne, ale `source_reviewed` pozostaje **false**, dopóki nauczyciel nie potwierdzi: wydania programu *Wczoraj i dziś*, szczegółowego ujęcia odpustów oraz adresów ZPE przekazanych poza dostępnym zleceniem.

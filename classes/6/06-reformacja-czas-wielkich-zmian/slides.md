@@ -8,16 +8,9 @@
 ---
 
 <!-- .slide: id="mapa-europy" data-purpose="explanation" data-layout="matrix" -->
-## Europa przed sporem — mapa orientacyjna
-
-<div class="europe-map" role="img" aria-label="Schemat orientacyjny Europy z Wittenbergą, Genewą, Anglią, Niemcami i Rzymem">
-  <div class="place england"><strong>Anglia</strong><span>Henryk VIII</span></div>
-  <div class="place wittenberg"><strong>Wittenberga</strong><span>Luter, 1517</span></div>
-  <div class="place geneva"><strong>Genewa</strong><span>Kalwin</span></div>
-  <div class="place rome"><strong>Rzym</strong><span>papież</span></div>
-  <div class="place germany"><strong>ziemie niemieckie</strong><span>liczne księstwa</span></div>
-</div>
-<p class="map-note">Schemat orientacyjny, nie mapa polityczna jednego roku. Najpierw zapamiętaj miejsca, potem ich rolę w historii reformacji.</p>
+## Mapa reformacji: miejsca, ludzie, wydarzenia
+<figure class="reformation-map"><img src="assets/mapa-reformacji.svg" alt="Mapa rozwoju reformacji w Europie"><figcaption>Mapa późniejsza, edukacyjna: najważniejsze obszary rozwoju reformacji.</figcaption></figure>
+<div class="map-legend"><span><b>Wittenberga</b> — Luter, 1517 r., 95 tez</span><span><b>Genewa</b> — Jan Kalwin</span><span><b>Anglia</b> — Henryk VIII, 1534 r.</span><span><b>Rzym</b> — siedziba papieża</span></div>
 
 ---
 
@@ -40,13 +33,7 @@ Nie przedstawiaj wszystkich duchownych jako zepsutych. Mów o krytyce konkretnyc
 
 <!-- .slide: id="luter-1517" data-purpose="explanation" data-layout="timeline-band" -->
 ## Marcin Luter i rok 1517
-
-<lesson-timeline>
-  <lesson-event year="1517">Luter ogłasza 95 tez przeciw nadużyciom związanym z odpustami.</lesson-event>
-  <lesson-event year="1521">Na sejmie w Wormacji odmawia odwołania poglądów; zostaje wykluczony z Kościoła.</lesson-event>
-  <lesson-event year="1522">Ukazuje się jego przekład Nowego Testamentu na język niemiecki.</lesson-event>
-</lesson-timeline>
-<p class="statement">Spór rozpoczął się w Wittenberdze. Szybko przestał być tylko sporem jednego mnicha z kaznodziejami odpustowymi.</p>
+<div class="luther-visual"><figure><img src="assets/marcin-luter-1528.jpg" alt="Portret Marcina Lutra, Lucas Cranach starszy, 1528"><figcaption>Marcin Luter, Lucas Cranach starszy, 1528 r.</figcaption></figure><div><lesson-timeline><lesson-event year="1517">Luter ogłasza 95 tez przeciw nadużyciom związanym z odpustami.</lesson-event><lesson-event year="1521">Na sejmie w Wormacji odmawia odwołania poglądów.</lesson-event><lesson-event year="1522">Ukazuje się przekład Nowego Testamentu na język niemiecki.</lesson-event></lesson-timeline><p class="statement"><strong>Uwaga:</strong> tradycja mówi o przybiciu tez do drzwi kościoła; pewne jest ich rozesłanie i szybkie rozpowszechnienie w druku.</p></div></div>
 
 ---
 
@@ -93,10 +80,7 @@ Wniosek: dla Lutra zbawienia nie można było „kupić”. Nie wymaga się od u
 <!-- .slide: id="kalwin" data-purpose="explanation" data-layout="split" -->
 ## Jan Kalwin i Genewa
 
-<div class="calvin-split">
-<div class="portrait-placeholder" aria-label="Miejsce na lokalny portret Jana Kalwina"><strong>Jan Kalwin</strong><span>1509–1564</span><small>tekstowy znacznik źródła — bez lokalnego obrazu</small></div>
-<div><p class="statement">Kalwin działał głównie w <strong>Genewie</strong>, która stała się ważnym ośrodkiem reformacji.</p><ul><li>podkreślał surową, zdyscyplinowaną wspólnotę;</li><li>głosił predestynację — przekonanie, że Bóg z góry wie, kto zostanie zbawiony;</li><li>jego idee rozpowszechniły się m.in. we Francji, Niderlandach i Szkocji.</li></ul></div>
-</div>
+<div class="calvin-split"><figure class="calvin-portrait"><img src="assets/jan-kalwin-ok-1550.jpg" alt="Portret Jana Kalwina z około 1550 roku"><figcaption>Jan Kalwin, portret anonimowy, ok. 1550 r.</figcaption></figure><div><p class="statement">Kalwin działał głównie w <strong>Genewie</strong>, która stała się ważnym ośrodkiem reformacji.</p><ul><li>podkreślał surową, zdyscyplinowaną wspólnotę;</li><li>głosił predestynację — przekonanie, że Bóg z góry wie, kto zostanie zbawiony;</li><li>jego idee rozpowszechniły się m.in. we Francji, Niderlandach i Szkocji.</li></ul></div></div>
 
 notes:
 Wyjaśnij predestynację ostrożnie: to pogląd religijny Kalwina, nie zachęta, by oceniać ludzi jako „wybranych” lub „potępionych”.
@@ -119,10 +103,17 @@ Wyjaśnij predestynację ostrożnie: to pogląd religijny Kalwina, nie zachęta,
 
 ---
 
+<!-- .slide: id="fronty-reformacji" data-purpose="synthesis" data-layout="hero-source" -->
+## Gdzie reformacja miała swoje „fronty”?
+<figure class="reformation-map front-map"><img src="assets/mapa-reformacji.svg" alt="Mapa Europy pokazująca obszary luteranizmu, kalwinizmu i anglikanizmu"><figcaption>Mapa edukacyjna: reformacja rozwijała się różnie w państwach niemieckich, Skandynawii, Anglii, Szwajcarii, Francji i Niderlandach.</figcaption></figure>
+<p class="callout"><strong>Odczytaj mapę:</strong> gdzie przeważał luteranizm, a gdzie kalwinizm? Dlaczego konflikty nie ograniczyły się do jednego państwa?</p>
+
+---
+
 <!-- .slide: id="augsburg" data-purpose="explanation" data-layout="statement" -->
 ## Pokój augsburski, 1555 r.
 
-<div class="augsburg-rule"><span>cuius regio, eius religio</span><strong>„czyj kraj, tego religia”</strong><p>Władca danego państwa Rzeszy wybierał katolicyzm albo luteranizm. Poddani mieli przyjąć wyznanie władcy lub opuścić jego kraj.</p></div>
+<div class="augsburg-visual"><figure><img src="assets/pokoj-augsburski-1555.jpg" alt="Strona dokumentu pokoju augsburskiego z 1555 roku"><figcaption>Strona dokumentu pokoju augsburskiego, 1555 r.</figcaption></figure><div class="augsburg-rule"><span>cuius regio, eius religio</span><strong>„czyj kraj, tego religia”</strong><p>Władca danego państwa Rzeszy wybierał katolicyzm albo luteranizm. Poddani mieli przyjąć wyznanie władcy lub opuścić jego kraj.</p></div></div>
 <p class="small">Układ dotyczył tylko katolicyzmu i luteranizmu w Rzeszy Niemieckiej — nie rozwiązał wszystkich sporów i nie objął kalwinizmu.</p>
 
 notes:

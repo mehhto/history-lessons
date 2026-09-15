@@ -20,4 +20,7 @@
 
 #synteza-bilet .task-board{display:block;margin:12px auto;max-width:1050px}#synteza-bilet .task-board>div{min-height:0;padding:0;background:transparent}
 
+#polska-mapa h2{text-align:right}#polska-mapa .poland-layout{grid-template-columns:1.5fr .5fr;gap:25px}#polska-mapa .poland-layout img{height:420px}#polska-mapa .poland-key p{font-size:21px;padding:15px 16px}#polska-mapa .map-task{max-width:1060px;margin:12px auto 0;padding:12px 18px;border-left:8px solid var(--red);background:var(--navy);color:#fff;font-size:21px}
+.attitudes-evidence{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:42px}.attitudes-evidence>div{min-height:285px;padding:28px;border-top:9px solid var(--gold);background:var(--white);text-align:left}.attitudes-evidence>div:nth-child(2){border-color:var(--red);background:#e8ded0}.attitudes-evidence>div:nth-child(3){border-color:var(--navy)}.attitudes-evidence strong{display:block;margin-bottom:18px;font-family:Georgia,serif;font-size:31px}.attitudes-evidence p{font-size:22px;line-height:1.26}
+
 @media print{.small-source{position:relative;top:auto;right:auto;margin:15px auto}.resistance-grid{width:100%}}
