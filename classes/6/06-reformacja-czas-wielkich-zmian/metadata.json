@@ -1,0 +1,18 @@
+{
+  "id": "06-reformacja-czas-wielkich-zmian",
+  "title": "Reformacja — czas wielkich zmian",
+  "grade": 6,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa",
+  "duration_minutes": 45,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "status": "DO WERYFIKACJI NAUCZYCIELA",
+  "curriculum_requirement": "„Złoty wiek” w Polsce na tle europejskim: renesans, reformacja i reforma Kościoła katolickiego, Prusy Książęce, gospodarka XVI w., polski renesans, unia lubelska.” (podstawa programowa obowiązująca przejściowo w klasie VI w 2026/2027; uszczegółowienie według programu Wczoraj i dziś: przyczyny, główne nurty i skutki reformacji w Europie).",
+  "main_question": "Dlaczego reformacja podzieliła zachodnie chrześcijaństwo i zmieniła Europę?",
+  "source_reviewed": false,
+  "teacher_reviewed": false,
+  "offline_checked": false,
+  "pdf_exported": false,
+  "appearance": { "style": "editorial", "palette": "burgundy" }
+}
