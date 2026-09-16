@@ -9,6 +9,7 @@
     "new": "node scripts/new-lesson.mjs",
     "check": "node scripts/check-lessons.mjs",
     "serve": "node scripts/serve.mjs",
+    "ui": "node scripts/ui-server.mjs",
     "preview": "node scripts/preview.mjs",
     "sync:reveal": "node scripts/sync-reveal.mjs",
     "install:browser": "node scripts/with-local-playwright.mjs node_modules/playwright/cli.js install chromium",
