@@ -10,7 +10,7 @@ import { resolveLessonAction } from './lesson-actions.mjs';
 import { createJobQueue } from './local-job-queue.mjs';
 import { decodeRequestPath, resolveWithin } from './safe-paths.mjs';
 
-const MIME = { '.css':'text/css; charset=utf-8','.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.webp':'image/webp','.pdf':'application/pdf','.woff':'font/woff','.woff2':'font/woff2','.ttf':'font/ttf','.md':'text/markdown; charset=utf-8' };
+const MIME = { '.css':'text/css; charset=utf-8','.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.mjs':'text/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.webp':'image/webp','.pdf':'application/pdf','.woff':'font/woff','.woff2':'font/woff2','.ttf':'font/ttf','.md':'text/markdown; charset=utf-8' };
 const send = (res, status, payload) => res.writeHead(status, {'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store'}).end(JSON.stringify(payload));
 function safePublicPath(root, requestPath) {
   const file = resolveWithin(root, `.${requestPath}`);
