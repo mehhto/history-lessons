@@ -16,6 +16,7 @@
     "export:pdf": "node scripts/with-local-playwright.mjs scripts/export-pdf.mjs",
     "export:portable": "node scripts/export-portable.mjs",
     "export:print": "node scripts/with-local-playwright.mjs scripts/export-print-pack.mjs",
+    "export:test": "node scripts/with-local-playwright.mjs scripts/export-test-pdf.mjs",
     "check:render": "node scripts/with-local-playwright.mjs scripts/render-check.mjs",
     "check:render:all": "node scripts/with-local-playwright.mjs scripts/check-all-renders.mjs",
     "check:composition": "node scripts/check-slide-composition.mjs",

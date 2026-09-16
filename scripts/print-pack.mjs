@@ -165,7 +165,7 @@ export function markdownToHtml(markdown) {
 }
 
 export function printableHtml({ title, audience, sections, baseHref }) {
-  const body = sections.map(({ heading, markdown }) => `<section><h1>${escapeHtml(heading)}</h1>${markdownToHtml(markdown)}</section>`).join('\n');
+  const body = sections.map(({ heading, markdown }) => `<section>${heading ? `<h1>${escapeHtml(heading)}</h1>` : ''}${markdownToHtml(markdown)}</section>`).join('\n');
   const base = baseHref ? `<base href="${escapeHtml(baseHref)}">` : '';
   return `<!doctype html><html lang="pl"><head><meta charset="utf-8">${base}<title>${escapeHtml(title)}</title><link rel="stylesheet" href="/template/print/print.css"></head><body class="${escapeHtml(audience)}"><main>${body}</main></body></html>`;
 }

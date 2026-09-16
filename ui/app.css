@@ -61,6 +61,26 @@ input {
     margin: 6px 0 14px
 }
 
+.catalog-switch {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 10px
+}
+
+.catalog-switch button {
+    flex: 1;
+    min-height: 36px;
+    background: #edf2f6;
+    color: #173f62;
+    border: 1px solid #afbdca
+}
+
+.catalog-switch button[aria-selected="true"] {
+    background: #245d89;
+    border-color: #245d89;
+    color: white
+}
+
 #catalog {
     overflow-y: auto;
     padding-right: 5px

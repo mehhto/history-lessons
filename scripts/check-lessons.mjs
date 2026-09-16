@@ -5,6 +5,7 @@ import { validateLessonIdentity, validateLessonPackage } from './lesson-tools.mj
 import { assessLessonQuality, parseLessonMetadata } from './lesson-quality.mjs';
 import { isArtifactFresh } from './artifact-freshness.mjs';
 import { documentKindsForLesson, omittedDocumentKindsForLesson, documentPlan } from './print-pack.mjs';
+import { listTests, studentTestMarkdown } from './test-catalog.mjs';
 
 async function lessonDirectories(root) {
   const found = [];
@@ -92,6 +93,26 @@ async function printPackFresh(lessonDirectory, repoRoot, metadata) {
   return true;
 }
 
+async function testPdfFresh(testFile, repoRoot) {
+  const output = testFile.replace(/\.md$/iu, '.pdf');
+  const manifestPath = path.join(path.dirname(testFile), '.test-artifacts.json');
+  if (!(await exists(output)) || !(await exists(manifestPath))) return false;
+  const pdf = await readFile(output);
+  if (!pdf.subarray(0, 5).equals(Buffer.from('%PDF-'))) return false;
+  try {
+    const [manifest, markdown, css, renderer, exporter, packageSpec] = await Promise.all([
+      readFile(manifestPath, 'utf8').then(JSON.parse),
+      readFile(testFile, 'utf8'),
+      readFile(path.join(repoRoot, 'template/print/print.css'), 'utf8'),
+      readFile(path.join(repoRoot, 'scripts/print-pack.mjs'), 'utf8'),
+      readFile(path.join(repoRoot, 'scripts/export-test-pdf.mjs'), 'utf8'),
+      readFile(path.join(repoRoot, 'package.json'), 'utf8'),
+    ]);
+    const inputs = { [path.basename(testFile)]: markdown, 'student-print-view': studentTestMarkdown(markdown), 'template/print/print.css': css, 'scripts/print-pack.mjs': renderer, 'scripts/export-test-pdf.mjs': exporter, 'package.json': packageSpec };
+    return isArtifactFresh(manifest.documents?.[path.basename(output)], inputs);
+  } catch { return false; }
+}
+
 const root = path.resolve(process.cwd(), 'classes');
 const allowPending = process.argv.includes('--allow-pending');
 const lessons = await lessonDirectories(root);
@@ -138,6 +159,20 @@ if (lessons.length === 0) {
       console.error(`BŁĄD  ${label}: ${error.message}`);
     }
   }
+}
+
+const testCatalog = await listTests({ repoRoot: process.cwd() });
+for (const item of testCatalog.tests) {
+  const fresh = await testPdfFresh(path.join(process.cwd(), item.directory), process.cwd());
+  if (!fresh) {
+    pending += 1;
+    console.log(`WYMAGA DALSZEGO PRZEGLĄDU  ${item.directory}`);
+    console.log('  · Brakuje aktualnego PDF kartkówki lub manifestu świeżości.');
+  }
+}
+for (const diagnostic of testCatalog.diagnostics) {
+  errors += 1;
+  console.error(`BŁĄD  ${diagnostic.directory}: ${diagnostic.issues.join(' ')}`);
 }
 
 if (errors > 0 || (pending > 0 && !allowPending)) {

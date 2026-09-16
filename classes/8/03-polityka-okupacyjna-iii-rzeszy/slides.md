@@ -1,15 +1,11 @@
 <!-- .slide: id="otwarcie" data-purpose="opening" data-layout="statement" -->
-<div class="opening-grid">
-  <div class="opening-copy"><p class="kicker">II WOJNA ŚWIATOWA · OKUPACJA</p><h1>Polityka okupacyjna III Rzeszy</h1><h2>i Zagłada Żydów</h2><p>Dlaczego niemiecka okupacja przybierała różne formy, a polityka wobec Żydów doprowadziła do Zagłady?</p></div>
-  <figure><img src="assets/paryz-okupacja.jpg" alt="Paryż podczas niemieckiej okupacji" data-fit="cover"><figcaption>Paryż pod niemiecką okupacją. Fotografia z epoki.</figcaption></figure>
-</div>
+<h1>Polityka okupacyjna III Rzeszy</h1>
 
 ---
 
 <!-- .slide: id="mapa-europy" data-purpose="evidence" data-layout="hero-source" -->
 ## Europa pod niemiecką dominacją w 1942 r.
-<figure class="map-hero"><img src="assets/mapa-europa-1942.svg" alt="Mapa Europy w 1942 roku, przedstawiająca zasięg III Rzeszy, okupacji i państw sojuszniczych" data-fit="contain"><figcaption>Europa w 1942 r. Mapa orientacyjna: odczytaj zasięg kontroli, okupacji i sojuszy.</figcaption></figure>
-<div class="map-prompt">Zanim porównamy politykę okupacyjną: wskaż jeden kraj okupowany i jeden sojuszniczy III Rzeszy.</div>
+<figure class="map-hero"><img src="assets/mapa-europa-1942.svg" alt="Mapa Europy w 1942 roku, przedstawiająca zasięg III Rzeszy, okupacji i państw sojuszniczych" data-fit="contain"></figure>
 
 ---
 
@@ -17,14 +13,13 @@
 ## „Lebensraum” — ideologia podboju
 <div class="term-definition"><strong>„Przestrzeń życiowa”</strong><p>Nazistowska nazwa rzekomego prawa Niemców do zdobywania ziem, zwłaszcza na Wschodzie.</p></div>
 <div class="flow"><div>podbić terytorium</div><div>wysiedlać i podporządkować ludność</div><div>germanizować, eksploatować, kolonizować</div></div>
-<p class="warning">To nie był neutralny plan rozwoju. U podstaw leżał rasizm i przekonanie o „wyższości” Niemców.</p>
 
 ---
 
 <!-- .slide: id="dwa-modele" data-purpose="explanation" data-layout="comparison" -->
-## Okupacja: wspólny cel, różne natężenie przemocy
-<table class="occupation-table"><thead><tr><th></th><th>Europa Zachodnia</th><th>Europa Środkowa i Wschodnia</th></tr></thead><tbody><tr><th>Wspólne</th><td colspan="2">kontrola, eksploatacja gospodarcza, cenzura, represje i terror</td></tr><tr><th>Często szczególnie widoczne</th><td>administracja okupacyjna; wykorzystywanie gospodarki; współpraca części władz miejscowych</td><td>wysiedlenia, germanizacja, praca przymusowa, masowe egzekucje, plany kolonizacyjne</td></tr><tr><th>Związek z ideologią</th><td>dominacja polityczna i gospodarcza</td><td>„Lebensraum” i rasowa hierarchia miały szczególnie bezpośrednie skutki</td></tr></tbody></table>
-<p class="note-line">To porównanie nie oznacza, że na Zachodzie nie było terroru ani prześladowań.</p>
+## Dwa modele niemieckiej okupacji
+<table class="occupation-table"><thead><tr><th></th><th>Europa Zachodnia</th><th>Europa Środkowa i Wschodnia</th></tr></thead><tbody><tr><th>Rasowa ideologia nazistów</th><td>część ludności uznawano za rasowo bliższą Niemcom; nazizm nie traktował jej jednak jako równorzędnej</td><td>Słowian, Żydów i Romów uznawano za „podludzi”; planowano ich wyniszczenie, niewolniczą pracę lub usunięcie</td></tr><tr><th>Codzienne rządy</th><td>w wielu miejscach życie codzienne toczyło się względnie podobnie; w części państw działały rządy kolaborujące z Niemcami</td><td>bezpośrednia dominacja, germanizacja, grabież i kolonizacja; szczególnie brutalne podporządkowanie ludności</td></tr><tr><th>Przemoc</th><td>kontrola, represje, deportacje i terror — różne w zależności od kraju</td><td>terror, odpowiedzialność zbiorowa, obozy koncentracyjne, masowe egzekucje i praca przymusowa</td></tr></tbody></table>
+<p class="note-line">Oba modele były okupacją i łamały prawa mieszkańców; różniły się skalą oraz celem przemocy.</p>
 
 ---
 
@@ -47,14 +42,9 @@
 
 ---
 
-<!-- .slide: id="antysemityzm-nazistowski" data-purpose="explanation" data-layout="statement" -->
-## Zagłada nie zaczęła się nagle
-
-- **Przed 1939 r.:** propaganda antysemicka, ustawy norymberskie i „noc kryształowa”.
-- **Po 1939 r.:** odebranie praw, przymusowe oznakowanie oraz getta.
-- **Od 1941 r.:** masowe rozstrzeliwania Żydów na okupowanym Wschodzie.
-
-> Antysemityzm był częścią ideologii i polityki państwa nazistowskiego jeszcze przed wojną.
+<!-- .slide: id="antysemityzm-nazistowski" data-purpose="evidence" data-layout="split" -->
+## Oznakowanie i getta: izolacja ludności żydowskiej
+<div class="marking-layout"><figure><img src="assets/oznaczenie-zydow-bedzin.jpg" alt="Dwaj policjanci żydowscy w getcie w Będzinie: jeden ma opaskę, drugi widoczną gwiazdę Dawida" data-fit="contain"><figcaption>Getto w Będzinie: opaska i gwiazda jako narzucone oznakowanie Żydów. Kadr propagandowy okupanta.</figcaption></figure><div><p><strong>Oznakowanie</strong> ułatwiało rozpoznanie, wykluczenie i kontrolę osób żydowskich. W okupowanej Polsce nakazywano opaskę z gwiazdą Dawida; w innych krajach stosowano często żółtą gwiazdę.</p><p><strong>Getta</strong> były przymusowo wydzielonymi, zamkniętymi częściami miast. Niemcy izolowali w nich Żydów, ograniczając ruch i dostęp do żywności.</p><p class="source-question"><strong>Przyjrzyj się zdjęciu:</strong> jakie dwa sposoby kontroli ludzi przez okupanta można na nim wskazać?</p></div></div>
 
 ---
 
@@ -83,7 +73,7 @@
 
 <!-- .slide: id="obozy" data-purpose="explanation" data-layout="comparison" -->
 ## Nie każdy obóz miał tę samą funkcję
-<div class="camp-grid"><div><strong>koncentracyjny</strong><p>więzienie, terror i przymus; więźniowie byli prześladowani i wykorzystywani.</p></div><div><strong>pracy</strong><p>wykorzystywanie pracy przymusowej w skrajnych, często śmiertelnych warunkach.</p></div><div><strong>ośrodek zagłady</strong><p>miejsce przeznaczone przede wszystkim do masowego mordowania.</p></div></div>
+<div class="camp-layout"><figure><img src="assets/auschwitz-birkenau-nara-1944.jpg" alt="Lotnicze zdjęcie kompleksu Auschwitz-Birkenau z czerwca 1944 roku" data-fit="contain"><figcaption>Auschwitz-Birkenau z lotu rozpoznawczego, 26 czerwca 1944 r.</figcaption></figure><div class="camp-grid"><div><strong>koncentracyjny</strong><p>więzienie, terror i przymus; więźniowie byli prześladowani i wykorzystywani.</p></div><div><strong>pracy</strong><p>wykorzystywanie pracy przymusowej w skrajnych, często śmiertelnych warunkach.</p></div><div><strong>ośrodek zagłady</strong><p>miejsce przeznaczone przede wszystkim do masowego mordowania.</p></div></div></div>
 <p class="auschwitz-line"><strong>Auschwitz-Birkenau</strong> był kompleksem obozowym, miejscem pracy przymusowej i największym niemieckim ośrodkiem zagłady.</p>
 
 ---

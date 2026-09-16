@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "documents": {
+    "01-pierwsi-ludzie-i-pierwsze-cywilizacje.pdf": {
+      "version": 1,
+      "input_hash": "8e4a0bc26ffca4857806bb4ca265351e5e6ec640e928c331e12b32008b83797c",
+      "inputs": [
+        "01-pierwsi-ludzie-i-pierwsze-cywilizacje.md",
+        "package.json",
+        "scripts/export-test-pdf.mjs",
+        "scripts/print-pack.mjs",
+        "student-print-view",
+        "template/print/print.css"
+      ]
+    }
+  }
+}

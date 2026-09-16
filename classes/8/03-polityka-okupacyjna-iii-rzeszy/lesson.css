@@ -24,3 +24,29 @@
 .attitudes-evidence{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:42px}.attitudes-evidence strong,.attitudes-evidence p{color:var(--ink)!important}.attitudes-evidence>div{min-height:285px;padding:28px;border-top:9px solid var(--gold);background:var(--white);text-align:left}.attitudes-evidence>div:nth-child(2){border-color:var(--red);background:#e8ded0}.attitudes-evidence>div:nth-child(3){border-color:var(--navy)}.attitudes-evidence strong{display:block;margin-bottom:18px;font-family:Georgia,serif;font-size:31px}.attitudes-evidence p{font-size:22px;line-height:1.26}
 
 @media print{.small-source{position:relative;top:auto;right:auto;margin:15px auto}.resistance-grid{width:100%}}
+
+/* Korekta nauczycielska: proste otwarcie, mapa na pełnej szerokości i zdjęcie Auschwitz. */
+.reveal #otwarcie{display:grid;place-items:center;padding:80px!important;text-align:center}
+.reveal #otwarcie h1{max-width:960px;color:#fff;font-size:76px;line-height:1.02}
+#mapa-europy .map-hero{width:1120px;max-width:100%;margin:0 auto}
+#mapa-europy .map-hero img{height:390px}
+#dwa-modele .occupation-table{font-size:18px}
+#dwa-modele .occupation-table th,#dwa-modele .occupation-table td{padding:11px 13px;line-height:1.12}
+#dwa-modele .occupation-table thead th{font-size:22px}
+#dwa-modele .occupation-table tbody th{font-size:20px}
+.camp-layout{display:grid;grid-template-columns:1.04fr .96fr;gap:28px;align-items:center}
+.camp-layout figure{margin:0;padding:9px;background:var(--white);box-shadow:10px 10px 0 rgba(41,51,61,.16)}
+.camp-layout figure img{display:block;width:100%;height:350px;object-fit:contain}
+.camp-layout figure figcaption{padding:8px 10px;text-align:left}
+.camp-layout .camp-grid{grid-template-columns:1fr;gap:5px;margin:0}
+.camp-layout .camp-grid>div{min-height:0;padding:16px 20px}
+.camp-layout .camp-grid strong{margin-bottom:6px;font-size:25px}
+.camp-layout .camp-grid p{font-size:18px;line-height:1.18}
+.marking-layout{display:grid;grid-template-columns:.82fr 1.18fr;gap:34px;align-items:center;max-width:1120px;margin:12px auto}
+.marking-layout figure{margin:0;padding:9px;background:var(--white);box-shadow:10px 10px 0 rgba(41,51,61,.16)}
+.marking-layout img{display:block;width:100%;height:335px;object-fit:contain}
+.marking-layout figcaption{padding:8px 10px;text-align:left}
+.marking-layout>div{text-align:left}
+.marking-layout p{margin:0 0 14px;padding:16px 19px;border-left:7px solid var(--gold);background:var(--white);font-size:22px;line-height:1.24}
+.marking-layout p:nth-child(2){border-color:var(--red);background:#e8ded0}
+.marking-layout .source-question{font-size:20px;font-weight:800}

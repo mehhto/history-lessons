@@ -7,6 +7,8 @@ import { spawn } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { listLessons, revisions } from './lesson-catalog.mjs';
 import { resolveLessonAction } from './lesson-actions.mjs';
+import { listTests, studentTestMarkdown, testRevisions } from './test-catalog.mjs';
+import { resolveTestAction } from './test-actions.mjs';
 import { createJobQueue } from './local-job-queue.mjs';
 import { markdownToHtml } from './print-pack.mjs';
 import { decodeRequestPath, resolveWithin } from './safe-paths.mjs';
@@ -16,8 +18,10 @@ const send = (res, status, payload) => res.writeHead(status, {'Content-Type':'ap
 function safePublicPath(root, requestPath) {
   const file = resolveWithin(root, `.${requestPath}`);
   const relative = path.relative(root, file).split(path.sep);
-  const allowed = (relative[0] === 'classes' && !relative.includes('.git')) || (relative[0] === 'template' && ['reveal','components','presentation','fonts','theme.css'].includes(relative[1]));
-  if (!allowed) throw new Error('Blocked');
+  const allowedLesson = relative[0] === 'classes' && !relative.includes('.git');
+  const allowedTestPdf = relative[0] === 'tests' && relative.length === 3 && relative[2].endsWith('.pdf');
+  const allowedTemplate = relative[0] === 'template' && ['reveal','components','presentation','fonts','theme.css'].includes(relative[1]);
+  if (!allowedLesson && !allowedTestPdf && !allowedTemplate) throw new Error('Blocked');
   return file;
 }
 async function readJson(req) { let raw=''; for await (const chunk of req) { raw += chunk; if (raw.length > 16384) throw new Error('Za duże żądanie.'); } return JSON.parse(raw || '{}'); }
@@ -25,12 +29,16 @@ function runProcess(spec) { return new Promise((resolve, reject) => { const chil
 
 export async function createUiServer({ repoRoot = process.cwd(), port = 8182 }) {
   const root = await realpath(repoRoot);
-  const queue = createJobQueue({ run: async (job) => runProcess(await resolveLessonAction({ repoRoot: root, lesson: job.lesson, action: job.action })) });
+  const queue = createJobQueue({ run: async (job) => runProcess(job.spec) });
   const server = http.createServer(async (req, res) => {
     try {
       const pathname = decodeRequestPath(req.url);
       if (req.method === 'GET' && pathname === '/api/lessons') return send(res,200,await listLessons({repoRoot:root}));
-      if (req.method === 'GET' && pathname === '/api/revisions') return send(res,200,await revisions({repoRoot:root}));
+      if (req.method === 'GET' && pathname === '/api/tests') return send(res,200,await listTests({repoRoot:root}));
+      if (req.method === 'GET' && pathname === '/api/revisions') {
+        const [lessonChanges, testChanges] = await Promise.all([revisions({repoRoot:root}), testRevisions({repoRoot:root})]);
+        return send(res,200,{...lessonChanges, testCatalogRevision:testChanges.catalogRevision, testDocumentRevisions:testChanges.documentRevisions});
+      }
       if (req.method === 'GET' && pathname === '/api/document') {
         const query = new URL(req.url, 'http://127.0.0.1').searchParams;
         const sources = { worksheet: 'worksheet.md', teacher: 'teacher-guide.md', summary: 'student-summary.md' };
@@ -40,32 +48,35 @@ export async function createUiServer({ repoRoot = process.cwd(), port = 8182 }) 
         const markdown = await readFile(resolveWithin(lessonDirectory, source), 'utf8');
         return send(res, 200, { html: markdownToHtml(markdown), baseUrl: `/${lesson}/` });
       }
-      if (req.method === 'POST' && pathname === '/api/jobs') { const body=await readJson(req); await resolveLessonAction({repoRoot:root,lesson:body.lesson,action:body.action}); return send(res,202,queue.enqueue({lesson:body.lesson,action:body.action})); }
+      if (req.method === 'GET' && pathname === '/api/test-document') {
+        const test = new URL(req.url, 'http://127.0.0.1').searchParams.get('test');
+        await resolveTestAction({ repoRoot: root, test, action: 'testPdf' });
+        const markdown = studentTestMarkdown(await readFile(resolveWithin(root, test), 'utf8'));
+        return send(res, 200, { html: markdownToHtml(markdown) });
+      }
+      if (req.method === 'POST' && pathname === '/api/jobs') {
+        const body=await readJson(req);
+        const spec = body.test
+          ? await resolveTestAction({repoRoot:root,test:body.test,action:body.action})
+          : await resolveLessonAction({repoRoot:root,lesson:body.lesson,action:body.action});
+        return send(res,202,queue.enqueue({spec,artifact:spec.artifact}));
+      }
       if (req.method === 'GET' && pathname.startsWith('/api/jobs/')) { const job=queue.get(pathname.slice('/api/jobs/'.length)); return job ? send(res,200,job) : send(res,404,{error:'Nie znaleziono zadania.'}); }
       const mapped = pathname === '/admin/' || pathname === '/admin' ? '/ui/index.html' : pathname.startsWith('/admin/') ? `/ui/${pathname.slice(7)}` : pathname;
       const requested = mapped.startsWith('/ui/') ? resolveWithin(root, `.${mapped}`) : safePublicPath(root,mapped);
       const details = await stat(requested); const file = details.isDirectory()?path.join(requested,'index.html'):requested;
       if (!(await stat(file)).isFile()) throw new Error('Not found');
       res.writeHead(200,{'Content-Type':MIME[path.extname(file).toLowerCase()]||'application/octet-stream','Cache-Control':'no-cache'}); createReadStream(file).pipe(res);
-    } catch (error) { send(res, error.message === 'Nie znaleziono lekcji.' ? 404 : 400, {error:error.message || 'Błąd serwera.'}); }
+    } catch (error) { send(res, error.message === 'Nie znaleziono lekcji.' || error.message === 'Nie znaleziono kartkówki.' ? 404 : 400, {error:error.message || 'Błąd serwera.'}); }
   });
   await new Promise((resolve, reject) => {
     server.once('error', reject);
-    server.listen(port, '127.0.0.1', () => {
-      server.off('error', reject);
-      resolve();
-    });
+    server.listen(port, '127.0.0.1', () => { server.off('error', reject); resolve(); });
   });
   return { server, port:server.address().port, root };
 }
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {
-  try {
-    const { port } = await createUiServer({ port: Number(process.env.PORT || 8182) });
-    console.log(`Panel lekcji: http://127.0.0.1:${port}/admin/`);
-  } catch (error) {
-    if (error.code === 'EADDRINUSE') console.error(`Port ${process.env.PORT || 8182} jest zajęty. Panel może już działać pod http://127.0.0.1:${process.env.PORT || 8182}/admin/; albo uruchom: PORT=8183 npm run ui.`);
-    else console.error(error.message);
-    process.exitCode = 1;
-  }
+  try { const { port } = await createUiServer({ port: Number(process.env.PORT || 8182) }); console.log(`Panel lekcji: http://127.0.0.1:${port}/admin/`); }
+  catch (error) { if (error.code === 'EADDRINUSE') console.error(`Port ${process.env.PORT || 8182} jest zajęty. Panel może już działać pod http://127.0.0.1:${process.env.PORT || 8182}/admin/; albo uruchom: PORT=8183 npm run ui.`); else console.error(error.message); process.exitCode = 1; }
 }
