@@ -73,6 +73,12 @@ function reportPresentationError(error) {
   console.error(error);
 }
 
+function toggleFullscreen() {
+  const target = document.querySelector('.reveal-viewport') || document.documentElement;
+  if (document.fullscreenElement) return document.exitFullscreen();
+  return target.requestFullscreen?.();
+}
+
 async function start() {
   const portable = globalThis.__LESSON_PORTABLE__;
   const metadata = portable?.metadata ?? await (async () => {
@@ -98,7 +104,7 @@ async function start() {
     controlsTutorial: false,
     transition: reducedMotion ? 'none' : 'slide',
     backgroundTransition: reducedMotion ? 'none' : 'fade',
-    keyboard: { 83: () => Reveal.configure({ showNotes: Reveal.getConfig().showNotes ? false : 'inline' }) },
+    keyboard: { 70: () => toggleFullscreen(), 83: () => Reveal.configure({ showNotes: Reveal.getConfig().showNotes ? false : 'inline' }) },
     plugins: [RevealMarkdown, RevealNotes],
   });
   Reveal.on('ready', async () => {

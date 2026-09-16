@@ -50,7 +50,11 @@ export async function listLessons({ repoRoot }) {
           grade, id: metadata.id, title: metadata.title, sequence: Number(numbered[1]), directory: relativeDirectory,
           revision, valid: identityIssues.length === 0 && packageStatus.ok,
           issues: [...identityIssues, ...packageStatus.missing.map((missing) => `Brakuje ${missing}`)],
-          capabilities: { summary: await exists(path.join(directory, 'student-summary.md')) && Boolean((await readFile(path.join(directory, 'student-summary.md'), 'utf8')).trim()) },
+          capabilities: {
+            worksheet: await exists(path.join(directory, 'worksheet.md')),
+            teacher: await exists(path.join(directory, 'teacher-guide.md')),
+            summary: await exists(path.join(directory, 'student-summary.md')) && Boolean((await readFile(path.join(directory, 'student-summary.md'), 'utf8')).trim()),
+          },
         });
       } catch (error) { diagnostics.push({ directory, issues: [error.message] }); }
     }

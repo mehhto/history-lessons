@@ -1,5 +1,5 @@
 import { createReadStream } from 'node:fs';
-import { realpath, stat } from 'node:fs/promises';
+import { realpath, readFile, stat } from 'node:fs/promises';
 import http from 'node:http';
 import path from 'node:path';
 import process from 'node:process';
@@ -8,6 +8,7 @@ import { fileURLToPath } from 'node:url';
 import { listLessons, revisions } from './lesson-catalog.mjs';
 import { resolveLessonAction } from './lesson-actions.mjs';
 import { createJobQueue } from './local-job-queue.mjs';
+import { markdownToHtml } from './print-pack.mjs';
 import { decodeRequestPath, resolveWithin } from './safe-paths.mjs';
 
 const MIME = { '.css':'text/css; charset=utf-8','.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.mjs':'text/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.webp':'image/webp','.pdf':'application/pdf','.woff':'font/woff','.woff2':'font/woff2','.ttf':'font/ttf','.md':'text/markdown; charset=utf-8' };
@@ -30,6 +31,15 @@ export async function createUiServer({ repoRoot = process.cwd(), port = 8182 }) 
       const pathname = decodeRequestPath(req.url);
       if (req.method === 'GET' && pathname === '/api/lessons') return send(res,200,await listLessons({repoRoot:root}));
       if (req.method === 'GET' && pathname === '/api/revisions') return send(res,200,await revisions({repoRoot:root}));
+      if (req.method === 'GET' && pathname === '/api/document') {
+        const query = new URL(req.url, 'http://127.0.0.1').searchParams;
+        const sources = { worksheet: 'worksheet.md', teacher: 'teacher-guide.md', summary: 'student-summary.md' };
+        const kind = query.get('kind'); const lesson = query.get('lesson'); const source = sources[kind];
+        if (!source || typeof lesson !== 'string' || !lesson.startsWith('classes/')) throw new Error('Nieprawidłowy materiał.');
+        const lessonDirectory = resolveWithin(root, lesson);
+        const markdown = await readFile(resolveWithin(lessonDirectory, source), 'utf8');
+        return send(res, 200, { html: markdownToHtml(markdown), baseUrl: `/${lesson}/` });
+      }
       if (req.method === 'POST' && pathname === '/api/jobs') { const body=await readJson(req); await resolveLessonAction({repoRoot:root,lesson:body.lesson,action:body.action}); return send(res,202,queue.enqueue({lesson:body.lesson,action:body.action})); }
       if (req.method === 'GET' && pathname.startsWith('/api/jobs/')) { const job=queue.get(pathname.slice('/api/jobs/'.length)); return job ? send(res,200,job) : send(res,404,{error:'Nie znaleziono zadania.'}); }
       const mapped = pathname === '/admin/' || pathname === '/admin' ? '/ui/index.html' : pathname.startsWith('/admin/') ? `/ui/${pathname.slice(7)}` : pathname;
