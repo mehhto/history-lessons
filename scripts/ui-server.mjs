@@ -39,7 +39,13 @@ export async function createUiServer({ repoRoot = process.cwd(), port = 8182 }) 
       res.writeHead(200,{'Content-Type':MIME[path.extname(file).toLowerCase()]||'application/octet-stream','Cache-Control':'no-cache'}); createReadStream(file).pipe(res);
     } catch (error) { send(res, error.message === 'Nie znaleziono lekcji.' ? 404 : 400, {error:error.message || 'Błąd serwera.'}); }
   });
-  await new Promise((resolve)=>server.listen(port,'127.0.0.1',resolve));
+  await new Promise((resolve, reject) => {
+    server.once('error', reject);
+    server.listen(port, '127.0.0.1', () => {
+      server.off('error', reject);
+      resolve();
+    });
+  });
   return { server, port:server.address().port, root };
 }
 
@@ -48,7 +54,8 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.a
     const { port } = await createUiServer({ port: Number(process.env.PORT || 8182) });
     console.log(`Panel lekcji: http://127.0.0.1:${port}/admin/`);
   } catch (error) {
-    if (error.code === 'EADDRINUSE') throw new Error(`Port ${process.env.PORT || 8182} jest zajęty. Uruchom panel na innym porcie, np. PORT=8183 npm run ui.`);
-    throw error;
+    if (error.code === 'EADDRINUSE') console.error(`Port ${process.env.PORT || 8182} jest zajęty. Panel może już działać pod http://127.0.0.1:${process.env.PORT || 8182}/admin/; albo uruchom: PORT=8183 npm run ui.`);
+    else console.error(error.message);
+    process.exitCode = 1;
   }
 }
