@@ -22,7 +22,7 @@ function safePublicPath(root, requestPath) {
 async function readJson(req) { let raw=''; for await (const chunk of req) { raw += chunk; if (raw.length > 16384) throw new Error('Za duże żądanie.'); } return JSON.parse(raw || '{}'); }
 function runProcess(spec) { return new Promise((resolve, reject) => { const child=spawn(spec.command,spec.args,{cwd:spec.cwd,shell:false,env:process.env}); let stdout='',stderr=''; child.stdout.on('data',(x)=>stdout+=x); child.stderr.on('data',(x)=>stderr+=x); child.on('error',reject); child.on('close',(code)=> { if(code===0) resolve({stdout,stderr,artifact:spec.artifact}); else reject(new Error((stderr||stdout||`Eksport zakończył się kodem ${code}`).slice(-100000))); }); }); }
 
-export async function createUiServer({ repoRoot = process.cwd(), port = 8080 }) {
+export async function createUiServer({ repoRoot = process.cwd(), port = 8182 }) {
   const root = await realpath(repoRoot);
   const queue = createJobQueue({ run: async (job) => runProcess(await resolveLessonAction({ repoRoot: root, lesson: job.lesson, action: job.action })) });
   const server = http.createServer(async (req, res) => {
@@ -44,5 +44,11 @@ export async function createUiServer({ repoRoot = process.cwd(), port = 8080 }) 
 }
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {
-  const {port}=await createUiServer({port:Number(process.env.PORT||8080)}); console.log(`Panel lekcji: http://127.0.0.1:${port}/admin/`);
+  try {
+    const { port } = await createUiServer({ port: Number(process.env.PORT || 8182) });
+    console.log(`Panel lekcji: http://127.0.0.1:${port}/admin/`);
+  } catch (error) {
+    if (error.code === 'EADDRINUSE') throw new Error(`Port ${process.env.PORT || 8182} jest zajęty. Uruchom panel na innym porcie, np. PORT=8183 npm run ui.`);
+    throw error;
+  }
 }
