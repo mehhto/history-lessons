@@ -32,6 +32,10 @@ ssh -N -L 8090:127.0.0.1:8090 USER@MINIPC
 
 Po opublikowaniu portu na interfejsie LAN podgląd można też otworzyć bezpośrednio pod `http://ADRES-MINIPC:8090/`. Następnie w przeglądarce otwórz `http://127.0.0.1:8090/classes/6/02-odkrycia-wyprawy/`. Tunel i proces preview muszą działać przez cały czas przeglądu.
 
+## Stały podgląd na żywo przez Tailscale
+
+Panel administracyjny potrafi automatycznie odświeżać otwartą prezentację po zmianie źródeł, bez commita, pushowania i fetchowania. Zalecane wdrożenie to osobny sidecar Docker w trybie tylko do odczytu oraz prywatny Tailscale Serve na VM. Gotowa konfiguracja i procedura znajdują się w [`deploy/live-preview/README.md`](deploy/live-preview/README.md).
+
 ## Prezentacja przenośna — bez instalacji w sali
 
 Na przygotowanym komputerze wygeneruj jeden samodzielny plik HTML:
