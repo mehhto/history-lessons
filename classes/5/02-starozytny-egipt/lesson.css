@@ -63,12 +63,12 @@
 }
 
 /* Pięć wniosków: dwie kolumny, ostatni wniosek na pełną szerokość. */
-#najwazniejsze .takeaways {
+#notatka .takeaways {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   font-size: 26px;
   line-height: 1.16;
 }
 
-#najwazniejsze .takeaways > li:last-child {
+#notatka .takeaways > li:last-child {
   grid-column: 1 / -1;
 }

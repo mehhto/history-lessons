@@ -199,6 +199,12 @@ Film jest współczesną wizualizacją i ma wyznaniową perspektywę. W pierwszy
 
 ---
 
+<!-- .slide: id="notatka" data-purpose="reference" data-layout="takeaways" -->
+## Notatka do zeszytu
+<div class="notebook-note"><p><strong>Izraelici</strong> tworzyli wspólnotę związaną z wiarą w jednego Boga — <strong>monoteizmem</strong>.</p><p><strong>Judaizm</strong> opiera się m.in. na Torze, prawie, pamięci wspólnoty i tradycji proroków.</p><p>Starożytne królestwa Izraela i Judy istniały w regionie współczesnego Izraela, ale nie są tym samym państwem.</p></div>
+
+---
+
 <!-- .slide: id="bilet" data-purpose="exit-ticket" data-layout="activity-brief" -->
 ## Bilet wyjścia
 

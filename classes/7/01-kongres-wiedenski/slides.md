@@ -311,15 +311,9 @@ Nie mów „sto lat całkowitego pokoju”. W Europie trwały rewolucje i wojny 
 
 ---
 
-<!-- .slide: id="synteza" class="synthesis-slide dark-statement" data-purpose="synthesis" data-layout="statement-centered" -->
-## Stary ład czy nowy projekt?
-
-<div class="synthesis-sentence">
-<p><strong>Przywrócono</strong> część dynastii i monarchii,</p>
-<p><strong>lecz stworzono</strong> nową mapę, nowe państwa i system współpracy mocarstw.</p>
-</div>
-
-<p class="synthesis-prompt">Dokończ: „Kongres był jednocześnie powrotem i zmianą, ponieważ…”</p>
+<!-- .slide: id="notatka" class="synthesis-slide dark-statement" data-purpose="reference" data-layout="statement-centered" -->
+## Notatka do zeszytu
+<div class="synthesis-sentence"><p><strong>Kongres wiedeński (1814–1815)</strong> ustalił nowy ład w Europie po wojnach napoleońskich.</p><p>Jego zasady to <strong>legitymizm</strong>, <strong>restauracja</strong> i <strong>równowaga sił</strong>.</p><p>W sprawie polskiej większość Księstwa Warszawskiego otrzymała Rosja; decyzje podejmowały mocarstwa, nie mieszkańcy.</p></div>
 
 notes:
 Wróć do hipotez z początku. Oczekuj dwóch przykładów: jednego ustrojowego (np. Burbonowie) i jednego terytorialnego lub międzynarodowego (Niderlandy, Związek Niemiecki, koncert mocarstw, podział Księstwa).

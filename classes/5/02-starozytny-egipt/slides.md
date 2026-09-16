@@ -109,8 +109,8 @@ Zbierz pięć krótkich odpowiedzi. Skoryguj tylko najważniejsze nieścisłośc
 
 ---
 
-<!-- .slide: id="najwazniejsze" data-purpose="synthesis" data-layout="takeaways" -->
-## Pięć wniosków
+<!-- .slide: id="notatka" data-purpose="reference" data-layout="takeaways" -->
+## Notatka do zeszytu
 
 <ul class="takeaways">
 <li><strong>Nil:</strong> woda i żyzny muł dawały plony, a rzeka ułatwiała transport.</li>

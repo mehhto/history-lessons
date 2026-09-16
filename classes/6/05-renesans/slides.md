@@ -188,17 +188,9 @@ Mów: Gutenberg rozwinął i upowszechnił w Europie system druku z ruchomej met
 
 ---
 
-<!-- .slide: id="synteza" data-purpose="synthesis" data-layout="takeaways" -->
-## Jak renesans zmienił Europę?
-
-<div class="synthesis-grid">
-<div><strong>człowiek</strong><span>godność, zdolności, edukacja</span></div>
-<div><strong>obraz</strong><span>realizm, perspektywa, proporcje</span></div>
-<div><strong>wiedza</strong><span>lektura, obliczenia, obserwacja</span></div>
-<div><strong>obieg idei</strong><span>druk i więcej zgodnych kopii tekstu</span></div>
-</div>
-
-<p class="final-answer">Renesans połączył inspirację antykiem z nowym zainteresowaniem człowiekiem i światem.</p>
+<!-- .slide: id="notatka" data-purpose="reference" data-layout="takeaways" -->
+## Notatka do zeszytu
+<div class="notebook-note"><p><strong>Renesans</strong> odwoływał się do antyku i stawiał pytania o człowieka, wiedzę oraz świat.</p><p>W sztuce ważne były realizm, perspektywa i proporcje. W nauce — obserwacja, obliczenia i krytyczne czytanie tekstów.</p><p><strong>Druk</strong> pozwalał szybciej powielać zgodne kopie książek, dzięki czemu idee docierały do większej liczby ludzi.</p></div>
 
 ---
 

@@ -94,6 +94,12 @@
 
 ---
 
+<!-- .slide: id="notatka" data-purpose="reference" data-layout="takeaways" -->
+## Notatka do zeszytu
+<div class="notebook-note"><p><strong>Okupacja niemiecka</strong> opierała się na terrorze, grabieży i pracy przymusowej; na ziemiach polskich obejmowała obszary wcielone do III Rzeszy oraz Generalne Gubernatorstwo.</p><p><strong>Holocaust</strong> był planową Zagładą Żydów dokonaną przez nazistowskie Niemcy. Getta izolowały ludność żydowską, a deportacje prowadziły do ośrodków zagłady.</p><p><strong>Postawy:</strong> pomoc organizowały m.in. Żegota i Irena Sendlerowa; szmalcownicy szantażowali osoby ukrywające się i pomagające.</p></div>
+
+---
+
 <!-- .slide: id="synteza-bilet" data-purpose="exit-ticket" data-layout="activity-brief" -->
 ## Bilet wyjścia
 <div class="task-board student-task" data-task-role="prompt"><div class="exit-list student-task" data-task-role="prompt"><ol><li>Wyjaśnij jednym zdaniem, jak Lebensraum wpłynął na okupację na Wschodzie.</li><li>Dlaczego Wannsee nie oznacza początku Zagłady?</li><li>Podaj różnicę między obozem koncentracyjnym a ośrodkiem zagłady oraz nazwij jedną postawę pomocy.</li></ol></div></div>

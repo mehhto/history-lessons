@@ -190,16 +190,9 @@ Opcjonalny film IWM o Stalingradzie 12:17–13:05: https://www.youtube.com/watch
 
 ---
 
-<!-- .slide: id="trzy-etapy" data-purpose="synthesis" data-layout="takeaways" -->
-## Trzy etapy przełomu
-
-<div class="three-battles">
-<div><strong>Moskwa</strong><span>koniec planu zwycięstwa w 1941 r.</span></div>
-<div><strong>Stalingrad</strong><span>okrążenie i zniszczenie 6. Armii</span></div>
-<div><strong>Kursk</strong><span>trwała inicjatywa strategiczna ZSRR</span></div>
-</div>
-
-<div class="final-chain">wojna błyskawiczna zatrzymana → wielka armia zniszczona → inicjatywa utracona</div>
+<!-- .slide: id="notatka" data-purpose="reference" data-layout="takeaways" -->
+## Notatka do zeszytu
+<div class="three-battles"><div><strong>22 VI 1941</strong><span>Niemcy atakują ZSRR w planie „Barbarossa”.</span></div><div><strong>Moskwa i Stalingrad</strong><span>załamały plan szybkiego zwycięstwa i przyniosły wielką klęskę Niemiec.</span></div><div><strong>Kursk</strong><span>od 1943 r. inicjatywa strategiczna należała do ZSRR.</span></div></div><p class="final-chain">Wojna na Wschodzie była wojną wyniszczenia: terror, głód i masowe mordy były częścią niemieckiej polityki.</p>
 
 ---
 
