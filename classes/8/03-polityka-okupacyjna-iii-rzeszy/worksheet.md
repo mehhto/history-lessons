@@ -54,9 +54,9 @@ A. Dopasuj funkcję: **więzienie i terror · praca przymusowa · masowe mordowa
 
 B. Zapisz przy każdym przykładzie: **opór / pomoc / kolaboracja / szantaż**.
 - działalność „Żegoty”: __________________
-- Irena Sendlerowa i sieć pomocy dzieciom: __________________
 - szmalcownicy: __________________
 - współpraca z okupantem: __________________
+- działalność AK lub Résistance: __________________
 
 ### Dla chętnych
 Wyjaśnij w 2–3 zdaniach, dlaczego nie można przypisać jednej postawy całemu społeczeństwu pod okupacją.

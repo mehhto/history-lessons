@@ -3,9 +3,8 @@
 
 ---
 
-<!-- .slide: id="mapa-europy" data-purpose="evidence" data-layout="hero-source" -->
-## Europa pod niemiecką dominacją w 1942 r.
-<figure class="map-hero"><img src="assets/mapa-europa-1942.svg" alt="Mapa Europy w 1942 roku, przedstawiająca zasięg III Rzeszy, okupacji i państw sojuszniczych" data-fit="contain"></figure>
+<!-- .slide: id="mapa-europy" data-purpose="reference" data-layout="plain" -->
+<div class="map-fullscreen"><button class="map-link" type="button" data-lightbox-src="assets/mapa-europa-1942.svg" data-lightbox-alt="Mapa Europy w 1942 roku, przedstawiająca zasięg III Rzeszy, okupacji i państw sojuszniczych" data-lightbox-uncaptioned="true" aria-label="Powiększ mapę Europy"></button></div>
 
 ---
 
@@ -19,13 +18,11 @@
 <!-- .slide: id="dwa-modele" data-purpose="explanation" data-layout="comparison" -->
 ## Dwa modele niemieckiej okupacji
 <table class="occupation-table"><thead><tr><th></th><th>Europa Zachodnia</th><th>Europa Środkowa i Wschodnia</th></tr></thead><tbody><tr><th>Rasowa ideologia nazistów</th><td>część ludności uznawano za rasowo bliższą Niemcom; nazizm nie traktował jej jednak jako równorzędnej</td><td>Słowian, Żydów i Romów uznawano za „podludzi”; planowano ich wyniszczenie, niewolniczą pracę lub usunięcie</td></tr><tr><th>Codzienne rządy</th><td>w wielu miejscach życie codzienne toczyło się względnie podobnie; w części państw działały rządy kolaborujące z Niemcami</td><td>bezpośrednia dominacja, germanizacja, grabież i kolonizacja; szczególnie brutalne podporządkowanie ludności</td></tr><tr><th>Przemoc</th><td>kontrola, represje, deportacje i terror — różne w zależności od kraju</td><td>terror, odpowiedzialność zbiorowa, obozy koncentracyjne, masowe egzekucje i praca przymusowa</td></tr></tbody></table>
-<p class="note-line">Oba modele były okupacją i łamały prawa mieszkańców; różniły się skalą oraz celem przemocy.</p>
 
 ---
 
-<!-- .slide: id="polska-mapa" data-purpose="evidence" data-layout="hero-source" -->
-## Ziemie polskie pod okupacją
-<div class="poland-layout"><figure><img src="assets/mapa-polska-1941.png" alt="Mapa ziem polskich pod niemiecką okupacją w 1941 roku" data-fit="contain"><figcaption>Ziemie polskie pod okupacją niemiecką, 1941 r.</figcaption></figure><div class="poland-key"><p><strong>Wcielone do III Rzeszy</strong><br>germanizacja, wysiedlenia i bezpośrednia administracja.</p><p><strong>Generalne Gubernatorstwo</strong><br>terror, grabież, przymus i getta.</p><p><strong>Wspólne represje</strong><br>okupacyjna kontrola, przemoc i eksploatacja dotykały ludność obu obszarów.<br><em>Wskaż oba obszary na mapie.</em></p></div></div>
+<!-- .slide: id="polska-mapa" data-purpose="reference" data-layout="plain" -->
+<div class="map-fullscreen"><button class="map-link" type="button" data-lightbox-src="assets/mapa-polska-okupacja-zpe.jpg" data-lightbox-alt="Mapa ziem polskich pod okupacją: obszary wcielone do III Rzeszy oraz Generalne Gubernatorstwo" data-lightbox-uncaptioned="true" aria-label="Powiększ mapę ziem polskich pod okupacją"></button></div>
 
 ---
 
@@ -48,20 +45,27 @@
 
 ---
 
-<!-- .slide: id="getto-warszawskie" data-purpose="evidence" data-layout="statement" -->
-## Getto: izolacja, głód i kontrola
-
-<div class="safe-ghetto">
-<figure><img src="assets/mur-getta-warszawskiego-1940.jpg" alt="Mur getta warszawskiego w 1940 roku" data-fit="contain"><figcaption>Mur getta warszawskiego, 1940 r. Fotografia z epoki.</figcaption></figure>
-<div><p><strong>Getto:</strong> przymusowo wydzielona, zamknięta część miasta; Niemcy izolowali w niej Żydów, ograniczając ruch i dostęp do żywności.</p><p><strong>Oznakowanie:</strong> w okupowanej Polsce nakazywano opaskę z gwiazdą Dawida; gdzie indziej często stosowano żółtą gwiazdę.</p><p class="source-question"><strong>Pytanie do źródła:</strong> co widoczny mur mówi o funkcji getta?</p></div>
-</div>
+<!-- .slide: id="gwiazdy-dawida" data-purpose="reference" data-layout="comparison" -->
+## Przymusowe oznakowanie Żydów
+<div class="badge-comparison"><figure><img src="assets/gwiazda-dawida-zolta-jude-zpe.svg" alt="Żółta Gwiazda Dawida z napisem Jude" data-fit="contain"><figcaption>Gwiazda Dawida — żółta z napisem „Jude”. Noszona była przez Żydów na ziemiach wcielonych do III Rzeszy w postaci opaski.</figcaption></figure><figure><img src="assets/gwiazda-dawida-niebieska-gg-zpe.svg" alt="Niebieska Gwiazda Dawida" data-fit="contain"><figcaption>Gwiazda Dawida — niebieska. Noszona była przez Żydów w Generalnym Gubernatorstwie.</figcaption></figure></div>
 
 ---
 
-<!-- .slide: id="eskalacja" data-purpose="explanation" data-layout="timeline-band" -->
+<!-- .slide: id="getto-warszawskie" data-purpose="evidence" data-layout="statement" -->
+## Getto: izolacja, głód i kontrola
+<div class="safe-ghetto"><figure><img src="assets/mur-getta-warszawskiego-1940.jpg" alt="Mur getta warszawskiego w 1940 roku" data-fit="contain"><figcaption>Mur getta warszawskiego, 1940 r. Fotografia z epoki.</figcaption></figure><div><p><strong>Getto:</strong> przymusowo wydzielona, zamknięta część miasta; Niemcy izolowali w niej Żydów, ograniczając ruch i dostęp do żywności.</p><p><strong>Oznakowanie:</strong> w okupowanej Polsce nakazywano opaskę z gwiazdą Dawida; gdzie indziej często stosowano żółtą gwiazdę.</p><p class="source-question"><strong>Pytanie do źródła:</strong> co widoczny mur mówi o funkcji getta?</p></div></div>
+
+---
+
+<!-- .slide: id="eskalacja" data-purpose="explanation" data-layout="statement" -->
 ## Od gett do masowej Zagłady
-<div class="persecution-steps compact"><div><span>1941</span><strong>masowe rozstrzeliwania</strong><p>Einsatzgruppen i inne formacje mordują Żydów na okupowanym Wschodzie.</p></div><div><span>20 I 1942</span><strong>Wannsee</strong><p>urzędnicy koordynują „ostateczne rozwiązanie kwestii żydowskiej”.</p></div><div><span>1942–1945</span><strong>deportacje</strong><p>transporty kierowane do ośrodków zagłady.</p></div></div>
-<p class="note-line">Konferencja w Wannsee koordynowała zbrodnię; nie była początkiem antysemityzmu ani pierwszych mordów.</p>
+<div class="einsatz-layout"><div class="escalation-flow"><ol><li><strong>1941</strong><span>masowe rozstrzeliwania</span></li><li><strong>20 I 1942</strong><span>Wannsee: koordynacja „ostatecznego rozwiązania”</span></li><li><strong>1942–1945</strong><span>deportacje do ośrodków zagłady</span></li></ol></div><article class="einsatz-definition"><div><h3>Einsatzgruppen</h3></div><p>Specjalne oddziały SS i policji, które mordowały Żydów i komunistów oraz inne grupy uznane przez nazistów za wrogów. <small>Konferencja w Wannsee koordynowała zbrodnię; nie była początkiem antysemityzmu ani pierwszych mordów.</small></p></article></div>
+
+---
+
+<!-- .slide: id="frank-zrodlo" data-purpose="evidence" data-layout="source-split" -->
+## Fragment przemówienia Hansa Franka, wygłoszonego 16 grudnia 1941 r. w Krakowie na posiedzeniu rządu Generalnego Gubernatorstwa
+<div class="frank-source-flow"><p>[...] Powiem Panom otwarcie, że z Żydami trzeba skończyć tak czy owak. Führer powiedział kiedyś: jeśli zjednoczonemu żydostwu znowu uda się rozpętać wojnę światową, wówczas nie tylko podburzone do wojny narody złożą swą krew w ofierze, lecz przyjdzie również kres na Żyda w Europie. (…) Dlatego mój zasadniczy stosunek do Żydów opiera się na nadziei, że Żydzi znikną. Trzeba ich usunąć. Rozpocząłem pertraktacje w celu deportowania ich na Wschód. [...]</p><p>Ale co ma się stać z Żydami? (…) Musimy wytępić Żydów, gdziekolwiek ich spotkamy i gdzie się tylko da, aby utrzymać tu strukturalną całość Rzeszy. (...). Żydzi są dla nas niezwykle szkodliwymi żarłokami. Mamy teraz w Generalnym Gubernatorstwie w przybliżeniu 2,5 miliona Żydów, a wliczając spokrewnionych z Żydami i wszystko co się z tym wiąże — być może 3,5 miliona. Owych 3,5 miliona Żydów nie możemy rozstrzelać, nie możemy ich wytruć; będziemy jednak mogli podjąć kroki, prowadzące w jakikolwiek sposób do wyników w tępieniu ich, a to w związku z posunięciami na wielką skalę, które mają być omówione w Rzeszy. Generalne Gubernatorstwo musi być wolne od Żydów tak samo jak Rzesza. Gdzie i jak się to stanie — jest to sprawa instancji, które musimy tu powołać i utworzyć i o działalności których powiadomię Panów we właściwym czasie.</p></div>
 
 ---
 
@@ -80,13 +84,29 @@
 
 <!-- .slide: id="postawy" data-purpose="practice" data-layout="activity-brief" -->
 ## Pomoc, współpraca, szantaż — konkretne działania
-<div class="attitudes-evidence"><div><strong>Pomoc</strong><p>Rada Pomocy Żydom „Żegota” organizowała fałszywe dokumenty, wsparcie i kryjówki. Irena Sendlerowa współpracowała z siecią pomocy dzieciom.</p></div><div><strong>Szantaż</strong><p>Szmalcownicy szantażowali Żydów w ukryciu i osoby, które im pomagały.</p></div><div><strong>Odpowiedzialność</strong><p>Opisuj działanie konkretnych osób, organizacji i władz — nie przypisuj jednej postawy całym narodom.</p></div></div>
+<div class="attitudes-evidence"><div><strong>Pomoc</strong><p>Rada Pomocy Żydom „Żegota” organizowała fałszywe dokumenty, wsparcie finansowe i kryjówki.</p></div><div><strong>Szantaż</strong><p>Szmalcownicy szantażowali Żydów w ukryciu i osoby, które im pomagały.</p></div><div><strong>Odpowiedzialność</strong><p>Opisuj działanie konkretnych osób, organizacji i władz — nie przypisuj jednej postawy całym narodom.</p></div></div>
 
 ---
 
-<!-- .slide: id="notatka" data-purpose="reference" data-layout="takeaways" -->
+<!-- .slide: id="zegota" data-purpose="evidence" data-layout="split" -->
+## Żegota — konspiracyjna pomoc dla Żydów
+<div class="zegota-layout"><figure><img src="assets/zegota-1946.jpg" alt="Fotografia związana z Radą Pomocy Żydom Żegota, wykonana w 1946 roku" data-fit="contain"><figcaption>Fotografia związana z Żegotą, 1946 r. Materiał powojenny.</figcaption></figure><div><p><strong>Rada Pomocy Żydom „Żegota”</strong> działała od 1942 r. przy Delegaturze Rządu RP na Kraj.</p><p>Była konspiracyjną organizacją, która organizowała fałszywe dokumenty, pieniądze, kryjówki i kontakty dla Żydów ukrywających się po „aryjskiej stronie”.</p><p class="source-question"><strong>Dlaczego pomoc wymagała konspiracji?</strong> Odnieś odpowiedź do terroru i kar nakładanych przez okupanta.</p></div></div>
+
+---
+
+<!-- .slide: id="statystyki-zaglady" data-purpose="reference" data-layout="plain" -->
+<div class="statistics-fullscreen"><button class="map-link" type="button" data-lightbox-src="assets/statystyki-zaglada-dzieje.png" data-lightbox-alt="Grafika statystyczna przedstawiająca minimalną liczbę zamordowanych Żydów w poszczególnych krajach Europy podczas II wojny światowej" data-lightbox-uncaptioned="true" aria-label="Powiększ grafikę statystyczną"></button></div>
+
+---
+
+<!-- .slide: id="mapa-obozow" data-purpose="reference" data-layout="plain" -->
+<div class="map-fullscreen"><button class="map-link" type="button" data-lightbox-src="assets/mapa-obozy.jpg" data-lightbox-alt="Mapa niemieckich nazistowskich obozów koncentracyjnych i ośrodków zagłady" data-lightbox-uncaptioned="true" aria-label="Powiększ mapę obozów"></button></div>
+
+---
+
+<!-- .slide: id="notatka" data-purpose="synthesis" data-layout="takeaways" -->
 ## Notatka do zeszytu
-<div class="notebook-note"><p><strong>Okupacja niemiecka</strong> opierała się na terrorze, grabieży i pracy przymusowej; na ziemiach polskich obejmowała obszary wcielone do III Rzeszy oraz Generalne Gubernatorstwo.</p><p><strong>Holocaust</strong> był planową Zagładą Żydów dokonaną przez nazistowskie Niemcy. Getta izolowały ludność żydowską, a deportacje prowadziły do ośrodków zagłady.</p><p><strong>Postawy:</strong> pomoc organizowały m.in. Żegota i Irena Sendlerowa; szmalcownicy szantażowali osoby ukrywające się i pomagające.</p></div>
+<div class="notebook-note"><p><strong>Okupacja niemiecka</strong> opierała się na terrorze, grabieży i pracy przymusowej; na ziemiach polskich obejmowała obszary wcielone do III Rzeszy oraz Generalne Gubernatorstwo.</p><p><strong>Holocaust</strong> był planową Zagładą Żydów dokonaną przez nazistowskie Niemcy. Getta izolowały ludność żydowską, a deportacje prowadziły do ośrodków zagłady.</p><p><strong>Postawy:</strong> pomoc organizowała m.in. Żegota; szmalcownicy szantażowali osoby ukrywające się i pomagające.</p></div>
 
 ---
 

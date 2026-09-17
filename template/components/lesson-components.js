@@ -31,11 +31,29 @@ function isExpandableImage(image) {
 
 function openImageLightbox(sourceImage) {
   if (!isExpandableImage(sourceImage)) return;
+  lightbox.classList.remove('is-uncaptioned');
   lightboxOpener = sourceImage.closest('[data-gallery-item]') || sourceImage;
   lightboxImage.src = sourceImage.currentSrc || sourceImage.src;
   lightboxImage.alt = sourceImage.alt;
   const caption = sourceImage.closest('figure')?.querySelector('figcaption')?.textContent?.trim();
   lightboxCaption.textContent = caption || sourceImage.alt;
+  lightbox.showModal();
+  lightboxClose.focus({ preventScroll: true });
+}
+
+function isExpandableLightboxTarget(target) {
+  return target instanceof HTMLElement
+    && target.matches('[data-lightbox-src]')
+    && target.closest('.reveal .slides');
+}
+
+function openLightboxTarget(target) {
+  if (!isExpandableLightboxTarget(target)) return;
+  lightbox.classList.toggle('is-uncaptioned', target.dataset.lightboxUncaptioned === 'true');
+  lightboxOpener = target;
+  lightboxImage.src = target.dataset.lightboxSrc;
+  lightboxImage.alt = target.dataset.lightboxAlt || target.getAttribute('aria-label') || '';
+  lightboxCaption.textContent = target.dataset.lightboxCaption || '';
   lightbox.showModal();
   lightboxClose.focus({ preventScroll: true });
 }
@@ -60,6 +78,13 @@ function prepareExpandableImages(root = document) {
     image.setAttribute('aria-haspopup', 'dialog');
     image.setAttribute('aria-label', `Powiększ obraz: ${image.alt}`);
   });
+  root.querySelectorAll?.('.reveal .slides [data-lightbox-src]').forEach((target) => {
+    if (!isExpandableLightboxTarget(target) || target.dataset.lightboxReady) return;
+    target.dataset.lightboxReady = 'true';
+    target.tabIndex = 0;
+    target.setAttribute('role', 'button');
+    target.setAttribute('aria-haspopup', 'dialog');
+  });
 }
 
 lightbox.addEventListener('click', (event) => {
@@ -71,6 +96,13 @@ lightbox.addEventListener('close', () => {
 });
 
 document.addEventListener('click', (event) => {
+  const target = event.target.closest?.('[data-lightbox-src]');
+  if (isExpandableLightboxTarget(target)) {
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    openLightboxTarget(target);
+    return;
+  }
   const image = event.target.closest?.('.reveal .slides img');
   if (!isExpandableImage(image)) return;
   event.preventDefault();
@@ -88,6 +120,13 @@ document.addEventListener('keydown', (event) => {
     return;
   }
   if (!['Enter', ' '].includes(event.key)) return;
+  const target = document.activeElement?.closest?.('[data-lightbox-src]');
+  if (isExpandableLightboxTarget(target)) {
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    openLightboxTarget(target);
+    return;
+  }
   const image = event.target.matches?.('.reveal .slides img')
     ? event.target
     : event.target.closest?.('[data-gallery-item]')?.querySelector('img');

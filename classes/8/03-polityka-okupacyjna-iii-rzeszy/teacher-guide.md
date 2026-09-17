@@ -20,12 +20,12 @@
 - **Wannsee:** konferencja z 20 I 1942 r. służyła koordynacji „ostatecznego rozwiązania”; masowe mordy na Wschodzie trwały już wcześniej. Nie przedstawiaj jej jako pojedynczej decyzji, po której „nagle zaczęła się” Zagłada.
 - **Eichmann:** był jednym z urzędników SS odpowiedzialnych za organizację deportacji. Nie wolno przerzucać na niego wyłącznej odpowiedzialności za systemową zbrodnię.
 - **Obozy:** Auschwitz-Birkenau był kompleksem o wielu funkcjach i największym ośrodkiem zagłady. „Obóz koncentracyjny”, „pracy” i „zagłady” nie są synonimami.
-- **Postawy:** pomaganie niosło ryzyko, lecz nie znosiło sprawczości szantażystów. Omawiaj Żegotę, Sendlerową i szmalcowników jako konkretne działania, bez uogólniania ich na całe społeczeństwo.
+- **Postawy:** pomaganie niosło ryzyko, lecz nie znosiło sprawczości szantażystów. Omawiaj Żegotę i szmalcowników jako konkretne działania, bez uogólniania ich na całe społeczeństwo.
 
 ## Oczekiwane odpowiedzi do dyskusji
 - Zachód / Środkowy–Wschód: wspólne są kontrola, eksploatacja i represje; na Wschodzie szczególnie widoczne są wysiedlenia, germanizacja, terror wobec ludności i plany kolonizacji.
 - Opór: AK — konspiracja i walka zbrojna w Polsce; Tito — partyzantka w Jugosławii; Grecja — ruch oporu przeciw okupantom; Francja — Résistance, wywiad i sabotaż.
-- Postawy: Żegota i Sendlerowa — pomoc; szmalcownicy — szantaż; współpracujące administracje — kolaboracja; AK/Résistance — opór.
+- Postawy: Żegota — pomoc; szmalcownicy — szantaż; współpracujące administracje — kolaboracja; AK/Résistance — opór.
 
 ## Warianty
 - **Rdzeń:** mapy, porównanie, sekwencja Zagłady, rozróżnienie obozów, postawy i bilet.

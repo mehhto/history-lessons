@@ -177,6 +177,10 @@ dialog.lesson-image-lightbox::backdrop { background: rgba(5, 10, 17, .97); }
   color: #c5ced8;
   font: 600 14px/1.2 system-ui, sans-serif;
 }
+dialog.lesson-image-lightbox.is-uncaptioned[open] { grid-template-rows: minmax(0, 1fr); padding: 0; }
+dialog.lesson-image-lightbox.is-uncaptioned .lesson-image-lightbox__caption,
+dialog.lesson-image-lightbox.is-uncaptioned .lesson-image-lightbox__hint { display: none; }
+dialog.lesson-image-lightbox.is-uncaptioned .lesson-image-lightbox__close img { width: 100%; height: 100%; max-width: 100vw; max-height: 100vh; object-fit: contain; }
 body:has(dialog.lesson-image-lightbox[open]) { overflow: hidden; }
 
 @media print {

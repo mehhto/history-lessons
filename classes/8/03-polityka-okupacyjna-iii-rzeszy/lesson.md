@@ -26,26 +26,23 @@
 | Czytam mapę okupacji | zasięg III Rzeszy i jej stref wpływów w 1942 r.; ziemie polskie w 1941 r. | wskazanie dwóch obszarów i ich statusu | poprawne zdanie z mapą jako dowodem |
 | Porównuję okupację | cele rasowe i kolonialne; różnice Zachód–Środkowy/Wschód | tabela porównawcza w parach | dwa trafne kontrasty oraz wspólny element terroru |
 | Rozumiem Zagładę | antysemityzm, getto, oznakowanie, masowe rozstrzeliwania, Wannsee, obozy zagłady | porządkowanie etapów i wyjaśnienie terminu Holocaust | poprawna sekwencja i związek decyzji z działaniem |
-| Rozpoznaję postawy | opór, kolaboracja, ratowanie; Żegota, Irena Sendlerowa, szmalcownicy | kwalifikacja przykładów postaw | uzasadnienie bez zbiorowej odpowiedzialności |
+| Rozpoznaję postawy | opór, kolaboracja, ratowanie; Żegota i szmalcownicy | kwalifikacja przykładów postaw | uzasadnienie bez zbiorowej odpowiedzialności |
 
 ## Storyboard prezentacji
 | Kolejność / ID | Cel | Purpose / layout | Główny komunikat | Działanie / oczekiwany rezultat | Czas |
 |---:|---|---|---|---|---:|
-| 1 / otwarcie | postawić problem | opening / statement | okupacja była systemem kontroli, terroru i grabieży | hipoteza do pytania głównego | 2 min |
-| 2 / mapa-europy | orientacja | evidence / hero-source | Niemcy rządziły dużą częścią Europy, ale nie wszędzie tak samo | odczyt mapy | 3 min |
-| 3 / lebensraum | pojęcie | explanation / impact-flow | „przestrzeń życiowa” uzasadniała podboje i rasową hierarchię | definicja własnymi słowami | 3 min |
-| 4 / dwa-modele | porównanie | explanation / comparison | na Zachodzie częściej administracja i eksploatacja; na Wschodzie także kolonizacja, terror i wyniszczenie | tabela kontrastów | 4 min |
-| 5 / polska-mapa | przykład | evidence / hero-source | ziemie polskie zostały podzielone i poddane różnym formom okupacji | wskazanie ziem wcielonych i GG | 3 min |
-| 6 / codziennosc | skutki | evidence / split | wysiedlenia, przymus i propaganda były narzędziami okupacji | obserwacja dwóch fotografii | 3 min |
-| 7 / opor | przykłady | explanation / matrix | opór przybierał różne formy w Polsce i Europie | dopasowanie kraju do przykładu | 4 min |
-| 8 / przedwojenna-nienawisc | geneza | explanation / process | Zagłada nie zaczęła się nagle w 1942 r. | wskazanie ciągłości prześladowań | 3 min |
-| 9 / getto | etap | evidence / split | getta izolowały i pozbawiały praw | opis funkcji muru i oznakowania | 3 min |
-| 10 / eskalacja | proces | explanation / timeline-band | deportacje i masowe rozstrzeliwania rozszerzyły zbrodnię | ułożenie etapów | 3 min |
-| 11 / wannsee | decyzja | explanation / statement | konferencja koordynowała „ostateczne rozwiązanie”, nie była początkiem antysemityzmu | wyjaśnienie roli konferencji | 2 min |
-| 12 / holocaust | pojęcie i skala | evidence / split | Holocaust był planową Zagładą Żydów; Eichmann współorganizował deportacje | odczyt danych i pojęć | 4 min |
-| 13 / obozy | rozróżnienie | explanation / comparison | obóz koncentracyjny, pracy i zagłady nie oznaczają tego samego | klasyfikacja po funkcji | 3 min |
-| 14 / postawy | ocena | practice / activity-brief | obok oporu były kolaboracja, bierność, pomoc i szantaż | praca par z kartą | 5 min |
-| 15 / synteza-bilet | sprawdzenie | exit-ticket / activity-brief | polityka okupacyjna łączyła cele wojenne z rasizmem i przemocą | trzy samodzielne odpowiedzi | 3 min |
+| 1 / otwarcie | postawić problem | opening / statement | okupacja była systemem kontroli, terroru i grabieży | hipoteza do pytania głównego | 1 min |
+| 2 / mapa-europy | orientacja | evidence / hero-source | Niemcy rządziły dużą częścią Europy, ale nie wszędzie tak samo | odczyt mapy | 2 min |
+| 3–4 / lebensraum, dwa-modele | wyjaśnienie i porównanie | explanation / impact-flow, comparison | Lebensraum uzasadniał podboje; modele okupacji różniły się celem i skalą terroru | definicja oraz dwa kontrasty w tabeli | 5 min |
+| 5 / polska-mapa | przykład | evidence / hero-source | ziemie polskie podzielono na obszary wcielone i Generalne Gubernatorstwo | wskazanie obu obszarów | 2 min |
+| 6–7 / codziennosc, opor | skutki i odpowiedzi | evidence / split, explanation / matrix | wysiedlenia i przymus były narzędziami okupacji; opór przybierał różne formy | dopasowanie kraju do przykładu oporu | 4 min |
+| 8–10 / antysemityzm-nazistowski, gwiazdy-dawida, getto-warszawskie | izolacja | evidence | oznakowanie i getta służyły kontroli oraz izolacji | odczyt zdjęcia, oznakowania i muru | 6 min |
+| 11 / eskalacja | proces | explanation / timeline-band | masowe rozstrzeliwania, koordynacja i deportacje rozszerzały zbrodnię | wyjaśnienie terminu Einsatzgruppen | 3 min |
+| 12 / frank-zrodlo | analiza źródła sprawcy | evidence / source-split | przemówienie pokazuje język odczłowieczania i planowanie zbrodni | zaznaczenie języka oraz działania | 5 min |
+| 13–14 / holocaust, obozy | pojęcie i rozróżnienie | evidence / split, explanation / comparison | Zagłada była planową zbrodnią; funkcje obozów nie były takie same | klasyfikacja po funkcji | 4 min |
+| 15–16 / postawy, zegota | postawy i pomoc | practice / activity-brief, evidence / split | pomoc, szantaż i współpraca są działaniami konkretnych osób i organizacji | uzasadnienie kwalifikacji przykładów | 4 min |
+| 17–18 / statystyki-zaglady, mapa-obozow | skala | reference / plain | dane i mapa pozwalają uchwycić skalę Zagłady | odczyt dwóch informacji ze źródeł | 3 min |
+| 19–20 / notatka, synteza-bilet | utrwalenie i sprawdzenie | reference / takeaways, exit-ticket / activity-brief | polityka okupacyjna łączyła ideologię z przemocą | notatka i trzy samodzielne odpowiedzi | 6 min |
 
 ## Pełne minimum wiedzy
 - **Okupacja** to sprawowanie władzy przez państwo obce na zajętym terytorium. Niemcy podporządkowały sobie dużą część Europy, lecz stosowały odmienne metody zależnie od miejsca, planów gospodarczych i rasistowskiej ideologii.
@@ -58,7 +55,7 @@
 - Po ataku na ZSRR w 1941 r. oddziały Einsatzgruppen i inne formacje dokonywały masowych rozstrzeliwań Żydów. Od 1942 r. deportacje kierowano na wielką skalę do ośrodków zagłady. Konferencja w Wannsee 20 stycznia 1942 r. koordynowała udział urzędów w realizacji „ostatecznego rozwiązania kwestii żydowskiej”; nie była początkiem antysemityzmu ani pierwszych mordów.
 - **Holocaust (Zagłada)** to dokonane przez nazistowskie Niemcy i ich współpracowników systematyczne ludobójstwo około sześciu milionów Żydów europejskich. Adolf Eichmann był urzędnikiem SS współorganizującym deportacje; odpowiedzialność za Zagładę nie spoczywała na nim samym, lecz na całym systemie nazistowskiego państwa i jego współpracownikach.
 - Obóz koncentracyjny służył więzieniu i terrorowi; obóz pracy wykorzystywał pracę przymusową; ośrodek zagłady był przeznaczony przede wszystkim do masowego mordowania. Auschwitz-Birkenau pełnił różne funkcje: był kompleksem obozowym, miejscem pracy przymusowej i największym niemieckim ośrodkiem zagłady. Nie każdy obóz był ośrodkiem zagłady.
-- Ludzie reagowali różnie: wielu stawiało opór, część współpracowała z okupantem, część pomagała, część pozostawała bierna lub bezradna wobec terroru. Nie wolno przypisywać jednej postawy całym narodom. W okupowanej Polsce Rada Pomocy Żydom **„Żegota”** organizowała pomoc; Irena Sendlerowa współpracowała z jej siecią pomocy dzieciom. **Szmalcownicy** szantażowali Żydów ukrywających się oraz osoby, które im pomagały.
+- Ludzie reagowali różnie: wielu stawiało opór, część współpracowała z okupantem, część pomagała, część pozostawała bierna lub bezradna wobec terroru. Nie wolno przypisywać jednej postawy całym narodom. W okupowanej Polsce Rada Pomocy Żydom **„Żegota”** organizowała dokumenty, wsparcie finansowe i kryjówki. **Szmalcownicy** szantażowali Żydów ukrywających się oraz osoby, które im pomagały.
 
 ## Przebieg
 | Etap | Czas | Działanie nauczyciela | Działanie uczniów | Dowód zrozumienia |

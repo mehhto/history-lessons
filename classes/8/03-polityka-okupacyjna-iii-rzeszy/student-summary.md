@@ -30,7 +30,7 @@ Niemiecka okupacja była narzędziem panowania, grabieży i terroru. Jej formy r
 
 ## 5. Postawy ludzi
 - **opór:** AK, Résistance, partyzanci;
-- **pomoc:** Rada Pomocy Żydom „Żegota”; Irena Sendlerowa i współpracownicy pomagający dzieciom;
+- **pomoc:** Rada Pomocy Żydom „Żegota”, która organizowała dokumenty, pieniądze, kryjówki i kontakty dla osób ukrywających się;
 - **kolaboracja:** współpraca z okupantem;
 - **szmalcownictwo:** szantażowanie Żydów w ukryciu i osób, które im pomagały.
 

@@ -18,7 +18,7 @@ Kolejność: 1. przedwojenna propaganda i wykluczenie; 2. getta oraz oznakowanie
 ## Zadanie 5
 A. koncentracyjny — więzienie i terror; pracy — praca przymusowa; zagłady — masowe mordowanie.
 
-B. Żegota — pomoc; Sendlerowa i współpracownicy — pomoc; szmalcownicy — szantaż; współpraca z okupantem — kolaboracja.
+B. Żegota — pomoc; szmalcownicy — szantaż; współpraca z okupantem — kolaboracja; AK lub Résistance — opór.
 
 ## Bilet wyjścia — model
 1. **Lebensraum:** rasistowska idea niemieckiego „prawa” do zdobywania ziem na Wschodzie; uzasadniała podboje, wysiedlenia i kolonizację.

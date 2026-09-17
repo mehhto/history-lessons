@@ -8,12 +8,12 @@ const root = await realpath(path.resolve(import.meta.dirname, '..'));
 process.env.PLAYWRIGHT_BROWSERS_PATH ??= path.join(root, '.playwright-browsers');
 const { chromium } = await import('playwright');
 
-async function withDeck(run) {
+async function withDeck(run, lessonPath = '/classes/8/01-wojna-obronna-1939/') {
   const server = await startServer(root);
   const browser = await chromium.launch({ executablePath: path.join(root, '.playwright-browsers/chromium-1234/chrome-linux64/chrome') });
   try {
     const page = await browser.newPage({ viewport: { width: 1600, height: 900 } });
-    await page.goto(`http://127.0.0.1:${server.address().port}/classes/8/01-wojna-obronna-1939/`, { waitUntil: 'networkidle' });
+    await page.goto(`http://127.0.0.1:${server.address().port}${lessonPath}`, { waitUntil: 'networkidle' });
     await page.waitForFunction(() => document.documentElement.dataset.presentationReady === 'true');
     await run(page);
   } finally {
@@ -57,4 +57,18 @@ test('lightbox supports keyboard opening and Escape without changing the slide',
     assert.equal(await page.$eval('dialog.lesson-image-lightbox', (dialog) => dialog.open), false);
     assert.equal(await page.evaluate(() => Reveal.getIndices().h), before);
   });
+});
+
+test('clicking an uncaptioned full-slide map opens the viewport lightbox without navigation', async () => {
+  await withDeck(async (page) => {
+    await page.evaluate(() => Reveal.slide(Reveal.getIndices(document.querySelector('#polska-mapa')).h));
+    await page.waitForFunction(() => window.location.hash.includes('polska-mapa'));
+    const beforeUrl = page.url();
+    await page.click('#polska-mapa .map-link');
+
+    assert.equal(await page.$eval('dialog.lesson-image-lightbox', (dialog) => dialog.open), true);
+    assert.equal(page.url(), beforeUrl);
+    assert.match(await page.$eval('dialog.lesson-image-lightbox img', (image) => image.currentSrc), /mapa-polska-okupacja-zpe\.jpg$/);
+    assert.equal(await page.$eval('.lesson-image-lightbox__caption', (caption) => caption.textContent.trim()), '');
+  }, '/classes/8/03-polityka-okupacyjna-iii-rzeszy/');
 });
