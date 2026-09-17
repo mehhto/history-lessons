@@ -447,3 +447,20 @@ input {
         min-height: 400px
     }
 }
+
+#feedback-modal {
+    width: min(560px, calc(100vw - 32px));
+    border: 1px solid #c8d2dc;
+    border-radius: 14px;
+    padding: 0;
+    color: #16222e;
+    box-shadow: 0 20px 60px rgba(20, 35, 50, .28)
+}
+
+#feedback-modal::backdrop { background: rgba(14, 27, 39, .58) }
+#feedback-form { display: grid; gap: 14px; padding: 24px }
+#feedback-form h2, #feedback-form p { margin: 0 }
+#feedback-lesson { color: #4d6072; font-weight: 700 }
+#feedback-text { min-height: 150px; resize: vertical; padding: 12px; font: inherit; line-height: 1.45 }
+#feedback-error { min-height: 1.2em; color: #a62525 }
+.dialog-actions { display: flex; justify-content: flex-end; gap: 10px }

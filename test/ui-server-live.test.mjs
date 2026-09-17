@@ -36,7 +36,7 @@ test('exposes a secured health endpoint and reports read-only mode', async () =>
     assert.match(csp, /form-action 'self'/);
 
     const config = await fetch(`http://127.0.0.1:${port}/api/config`);
-    assert.deepEqual(await config.json(), { readOnly: true });
+    assert.deepEqual(await config.json(), { readOnly: true, feedbackEnabled: false });
   } finally { await stop(server); }
 });
 
@@ -51,6 +51,72 @@ test('read-only mode rejects export jobs before resolving an action', async () =
     assert.equal(response.status, 403);
     assert.deepEqual(await response.json(), { error: 'Panel działa w trybie tylko do podglądu.' });
   } finally { await stop(server); }
+});
+
+test('feedback endpoint writes a bounded entry inside the selected lesson directory', async () => {
+  const parent = await mkdtemp(path.join(os.tmpdir(), 'history-ui-feedback-'));
+  const root = path.join(parent, 'repo');
+  const lesson = path.join(root, 'classes', '4', '01-feedback');
+  await mkdir(lesson, { recursive: true });
+  await writeFile(path.join(lesson, 'metadata.json'), JSON.stringify({ id: '01-feedback', title: 'Feedback', grade: 4 }));
+  const { server, port } = await createUiServer({ repoRoot: root, port: 0, host: '127.0.0.1', readOnly: true, feedbackEnabled: true });
+  try {
+    const response = await fetch(`http://127.0.0.1:${port}/api/feedback`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ lesson: 'classes/4/01-feedback', text: 'Dobrze zadziałała mapa, ale brakuje czasu na podsumowanie.' }),
+    });
+    assert.equal(response.status, 201);
+    const entry = JSON.parse((await readFile(path.join(lesson, 'feedback.jsonl'), 'utf8')).trim());
+    assert.equal(entry.lesson, 'classes/4/01-feedback');
+    assert.equal(entry.text, 'Dobrze zadziałała mapa, ale brakuje czasu na podsumowanie.');
+    assert.match(entry.createdAt, /^\d{4}-\d{2}-\d{2}T/);
+  } finally {
+    await stop(server);
+    await rm(parent, { recursive: true, force: true });
+  }
+});
+
+test('feedback endpoint rejects a technical directory not listed as a lesson', async () => {
+  const parent = await mkdtemp(path.join(os.tmpdir(), 'history-ui-feedback-scope-'));
+  const root = path.join(parent, 'repo');
+  const scratch = path.join(root, 'classes', '4', 'scratch');
+  await mkdir(scratch, { recursive: true });
+  const { server, port } = await createUiServer({ repoRoot: root, port: 0, host: '127.0.0.1', readOnly: true, feedbackEnabled: true });
+  try {
+    const response = await fetch(`http://127.0.0.1:${port}/api/feedback`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ lesson: 'classes/4/scratch', text: 'Nie powinno się zapisać.' }),
+    });
+    assert.equal(response.status, 404);
+    await assert.rejects(readFile(path.join(scratch, 'feedback.jsonl'), 'utf8'));
+  } finally {
+    await stop(server);
+    await rm(parent, { recursive: true, force: true });
+  }
+});
+
+test('feedback endpoint does not follow a feedback log symlink or disclose its path', async () => {
+  const parent = await mkdtemp(path.join(os.tmpdir(), 'history-ui-feedback-link-'));
+  const root = path.join(parent, 'repo');
+  const lesson = path.join(root, 'classes', '4', '01-feedback');
+  const secret = path.join(parent, 'secret.jsonl');
+  await mkdir(lesson, { recursive: true });
+  await writeFile(path.join(lesson, 'metadata.json'), JSON.stringify({ id: '01-feedback', title: 'Feedback', grade: 4 }));
+  await writeFile(secret, 'secret');
+  await symlink(secret, path.join(lesson, 'feedback.jsonl'));
+  const { server, port } = await createUiServer({ repoRoot: root, port: 0, host: '127.0.0.1', readOnly: true, feedbackEnabled: true });
+  try {
+    const response = await fetch(`http://127.0.0.1:${port}/api/feedback`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ lesson: 'classes/4/01-feedback', text: 'Nie podążaj za symlinkiem.' }),
+    });
+    assert.equal(response.status, 500);
+    assert.deepEqual(await response.json(), { error: 'Nie można bezpiecznie zapisać feedbacku.' });
+    assert.equal(await readFile(secret, 'utf8'), 'secret');
+  } finally {
+    await stop(server);
+    await rm(parent, { recursive: true, force: true });
+  }
 });
 
 test('static serving rejects a symlink that escapes its public directory', async () => {
@@ -93,6 +159,8 @@ test('sidecar healthcheck requires the server to remain read-only', async () => 
   assert.match(compose, /body\.status === 'ok' && body\.readOnly === true/);
   assert.doesNotMatch(compose, /:\/opt\/data:ro/);
   assert.match(compose, /history-lessons[^}]*}:\/workspace:ro/);
+  assert.match(compose, /UI_FEEDBACK_ENABLED: "1"/);
+  assert.match(compose, /history-lessons[^}]*}\/classes:\/workspace\/classes:rw/);
 });
 
 test('read-only browser UI keeps previews and omits export controls', async () => {
@@ -111,6 +179,32 @@ test('read-only browser UI keeps previews and omits export controls', async () =
     await page.waitForFunction(() => document.querySelector('iframe.preview')?.contentDocument?.documentElement?.dataset.presentationReady === 'true');
     assert.equal(await page.locator('.actions').count(), 0);
     assert.deepEqual(cspErrors, []);
+  } finally {
+    await browser.close();
+    await stop(server);
+  }
+});
+
+test('feedback UI sends the current lesson and text through its modal', async () => {
+  const { server, port } = await createUiServer({ repoRoot, port: 0, host: '127.0.0.1', readOnly: true, feedbackEnabled: true });
+  const browser = await chromium.launch({ executablePath: browserExecutable });
+  try {
+    const page = await browser.newPage();
+    let request;
+    await page.route('**/api/feedback', async (route) => {
+      request = route.request().postDataJSON();
+      await route.fulfill({ status: 201, contentType: 'application/json', body: JSON.stringify({ createdAt: '2026-09-17T12:00:00.000Z' }) });
+    });
+    await page.goto(`http://127.0.0.1:${port}/admin/`);
+    await page.locator('#catalog .lesson').first().click();
+    const title = await page.locator('#workspace h2').textContent();
+    await page.getByRole('button', { name: 'Dodaj feedback' }).click();
+    await page.locator('#feedback-text').fill('Dobrze zadziałał materiał źródłowy.');
+    await page.getByRole('button', { name: 'Zapisz feedback' }).click();
+    await page.waitForFunction(() => !document.querySelector('#feedback-modal')?.open);
+    assert.deepEqual(request, { lesson: `classes/4/01-poznajemy-przeszlosc`, text: 'Dobrze zadziałał materiał źródłowy.' });
+    assert.match(await page.locator('#status').textContent(), /Zapisano feedback do lekcji/);
+    assert.equal(await page.locator('#feedback-lesson').textContent(), title);
   } finally {
     await browser.close();
     await stop(server);

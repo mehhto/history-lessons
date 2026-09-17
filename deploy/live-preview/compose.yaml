@@ -10,8 +10,10 @@ services:
       HOST: "0.0.0.0"
       PORT: "8182"
       UI_READ_ONLY: "1"
+      UI_FEEDBACK_ENABLED: "1"
     volumes:
       - "${HISTORY_LESSONS_PATH:-/home/hermes/hermes/data/history-lessons}:/workspace:ro"
+      - "${HISTORY_LESSONS_PATH:-/home/hermes/hermes/data/history-lessons}/classes:/workspace/classes:rw"
     ports:
       - "127.0.0.1:${HISTORY_UI_PORT:-8182}:8182"
     restart: unless-stopped

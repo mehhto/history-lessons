@@ -12,12 +12,22 @@ Tailscale Serve na VM
         │ http://127.0.0.1:8182
         ▼
 sidecar history-ui
-        │ /workspace:ro
+        │ /workspace:ro + /workspace/classes:rw
         ▼
 wspólny katalog history-lessons
 ```
 
 Panel co 2 sekundy sprawdza rewizje źródeł. Zmiany w prezentacjach są widoczne bez commita, pushowania i fetchowania.
+
+## Feedback do konkretnej lekcji
+
+Po wybraniu lekcji panel pokazuje przycisk **Dodaj feedback**. Modal pyta, co zadziałało dobrze i co warto poprawić. Każdy zapis jest jednym wierszem JSON w:
+
+```text
+classes/<klasa>/<katalog-lekcji>/feedback.jsonl
+```
+
+Wpis zawiera identyfikator lekcji, treść i czas UTC. Plik nie jest serwowany jako zasób statyczny panelu ani śledzony przez Git (`**/feedback.jsonl` w `.gitignore`), więc nie trafi przypadkowo do commita ani push. Jeżeli feedback ma zostać zachowany poza VM, należy skopiować go świadomie do prywatnego archiwum. Eksporty nadal pozostają zablokowane przez `UI_READ_ONLY=1`.
 
 ## 1. Potwierdź ścieżkę repozytorium na VM
 
@@ -122,8 +132,9 @@ docker compose -f deploy/live-preview/compose.yaml down
 
 ## Bezpieczeństwo
 
-- sidecar montuje wyłącznie repozytorium `history-lessons` jako `/workspace:ro`, zamiast całego katalogu danych Hermesa;
+- sidecar montuje całe repozytorium jako `/workspace:ro`; jedynym zapisywalnym nakładanym mountem jest `/workspace/classes`, wymagany do zapisu `feedback.jsonl` obok właściwej lekcji;
 - `UI_READ_ONLY=1` ukrywa eksporty i blokuje `POST /api/jobs` kodem HTTP 403;
+- `UI_FEEDBACK_ENABLED=1` włącza wyłącznie wąski endpoint feedbacku: akceptuje katalog istniejącej lekcji, ogranicza tekst do 4000 znaków i zapisuje wyłącznie jej `feedback.jsonl`;
 - kontener nie ma Linux capabilities i działa z `no-new-privileges`;
 - Node słucha na `0.0.0.0` wyłącznie wewnątrz izolowanej sieci kontenera, natomiast port Dockera jest publikowany tylko jako `127.0.0.1:8182` na VM;
 - TLS kończy się w Tailscale Serve, a lokalny odcinek HTTP prowadzi wyłącznie przez loopback VM;

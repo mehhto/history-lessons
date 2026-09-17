@@ -6,6 +6,8 @@ test-results/
 .playwright-browsers/
 .scratch-*.png
 *-portable.html
+# Prywatne obserwacje nauczyciela zapisywane z panelu podglądu.
+**/feedback.jsonl
 curriculum/official/*.pdf
 # Oryginalne DOCX od nauczyciela pozostają lokalne: zawierają metadane autora.
 curriculum/sources/*/original/*.docx

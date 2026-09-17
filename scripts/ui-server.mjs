@@ -1,3 +1,4 @@
+import { constants } from 'node:fs';
 import { open, realpath, readFile, stat } from 'node:fs/promises';
 import http from 'node:http';
 import path from 'node:path';
@@ -25,7 +26,7 @@ const send = (res, status, payload) => res.writeHead(status, {...SECURITY_HEADER
 function safePublicPath(root, requestPath) {
   const file = resolveWithin(root, `.${requestPath}`);
   const relative = path.relative(root, file).split(path.sep);
-  const allowedLesson = relative[0] === 'classes' && !relative.includes('.git');
+  const allowedLesson = relative[0] === 'classes' && !relative.includes('.git') && !relative.includes('feedback.jsonl');
   const allowedTestPdf = relative[0] === 'tests' && relative.length === 3 && relative[2].endsWith('.pdf');
   const allowedTemplate = relative[0] === 'template' && ['reveal','components','presentation','fonts','theme.css'].includes(relative[1]);
   if (!allowedLesson && !allowedTestPdf && !allowedTemplate) throw notFound();
@@ -47,17 +48,47 @@ async function canonicalPublicFile({ base, file }) {
     throw notFound();
   }
 }
+async function canonicalLessonDirectory(root, lesson) {
+  if (typeof lesson !== 'string' || !/^classes\/[4-8]\/[a-z0-9][a-z0-9-]*$/.test(lesson)) {
+    const error = new Error('Nieprawidłowa lekcja.'); error.statusCode = 400; throw error;
+  }
+  const base = path.join(root, 'classes');
+  try {
+    const [realBase, directory] = await Promise.all([realpath(base), realpath(resolveWithin(root, lesson))]);
+    if (!isWithin(realBase, directory) || !(await stat(directory)).isDirectory()) throw notFound();
+    return directory;
+  } catch (error) {
+    if (error.statusCode) throw error;
+    throw notFound();
+  }
+}
+async function appendFeedback(directory, entry) {
+  const file = path.join(directory, 'feedback.jsonl');
+  const flags = constants.O_WRONLY | constants.O_CREAT | constants.O_APPEND | constants.O_NOFOLLOW;
+  try {
+    const handle = await open(file, flags, 0o600);
+    try {
+      if (!(await handle.stat()).isFile()) throw new Error('Nieprawidłowy plik feedbacku.');
+      await handle.write(`${JSON.stringify(entry)}\n`, null, 'utf8');
+    } finally {
+      await handle.close().catch(() => {});
+    }
+  } catch (error) {
+    console.error('Feedback write failed:', error.code || error.message);
+    const safe = new Error('Nie można bezpiecznie zapisać feedbacku.'); safe.statusCode = 500; throw safe;
+  }
+}
 async function readJson(req) { let raw=''; for await (const chunk of req) { raw += chunk; if (raw.length > 16384) throw new Error('Za duże żądanie.'); } return JSON.parse(raw || '{}'); }
 function runProcess(spec) { return new Promise((resolve, reject) => { const child=spawn(spec.command,spec.args,{cwd:spec.cwd,shell:false,env:process.env}); let stdout='',stderr=''; child.stdout.on('data',(x)=>stdout+=x); child.stderr.on('data',(x)=>stderr+=x); child.on('error',reject); child.on('close',(code)=> { if(code===0) resolve({stdout,stderr,artifact:spec.artifact}); else reject(new Error((stderr||stdout||`Eksport zakończył się kodem ${code}`).slice(-100000))); }); }); }
 
-export async function createUiServer({ repoRoot = process.cwd(), port = 8182, host = '127.0.0.1', readOnly = false }) {
+export async function createUiServer({ repoRoot = process.cwd(), port = 8182, host = '127.0.0.1', readOnly = false, feedbackEnabled = false }) {
   const root = await realpath(repoRoot);
   const queue = createJobQueue({ run: async (job) => runProcess(job.spec) });
   const server = http.createServer(async (req, res) => {
     try {
       const pathname = decodeRequestPath(req.url);
       if (req.method === 'GET' && pathname === '/healthz') return send(res,200,{status:'ok',readOnly});
-      if (req.method === 'GET' && pathname === '/api/config') return send(res,200,{readOnly});
+      if (req.method === 'GET' && pathname === '/api/config') return send(res,200,{readOnly,feedbackEnabled});
       if (req.method === 'GET' && pathname === '/api/lessons') return send(res,200,await listLessons({repoRoot:root}));
       if (req.method === 'GET' && pathname === '/api/tests') return send(res,200,await listTests({repoRoot:root}));
       if (req.method === 'GET' && pathname === '/api/revisions') {
@@ -86,6 +117,18 @@ export async function createUiServer({ repoRoot = process.cwd(), port = 8182, ho
         });
         const markdown = studentTestMarkdown(await readFile(testFile, 'utf8'));
         return send(res, 200, { html: markdownToHtml(markdown) });
+      }
+      if (req.method === 'POST' && pathname === '/api/feedback') {
+        if (!feedbackEnabled) return send(res, 403, { error: 'Zbieranie feedbacku jest wyłączone.' });
+        const body = await readJson(req);
+        const text = typeof body.text === 'string' ? body.text.trim() : '';
+        if (!text || text.length > 4000) return send(res, 400, { error: 'Feedback musi mieć od 1 do 4000 znaków.' });
+        const catalog = await listLessons({ repoRoot: root });
+        if (!catalog.lessons.some((item) => item.directory === body.lesson)) return send(res, 404, { error: 'Nie znaleziono lekcji.' });
+        const lessonDirectory = await canonicalLessonDirectory(root, body.lesson);
+        const entry = { lesson: body.lesson, text, createdAt: new Date().toISOString() };
+        await appendFeedback(lessonDirectory, entry);
+        return send(res, 201, { createdAt: entry.createdAt });
       }
       if (req.method === 'POST' && pathname === '/api/jobs') {
         if (readOnly) return send(res,403,{error:'Panel działa w trybie tylko do podglądu.'});
@@ -117,12 +160,13 @@ export async function createUiServer({ repoRoot = process.cwd(), port = 8182, ho
     server.once('error', reject);
     server.listen(port, host, () => { server.off('error', reject); resolve(); });
   });
-  return { server, port:server.address().port, host, root, readOnly };
+  return { server, port:server.address().port, host, root, readOnly, feedbackEnabled };
 }
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {
   const host = process.env.HOST || '127.0.0.1';
   const readOnly = truthy(process.env.UI_READ_ONLY);
-  try { const { port } = await createUiServer({ port: Number(process.env.PORT || 8182), host, readOnly }); console.log(`Panel lekcji: http://${host}:${port}/admin/${readOnly?' (tylko podgląd)':''}`); }
+  const feedbackEnabled = truthy(process.env.UI_FEEDBACK_ENABLED);
+  try { const { port } = await createUiServer({ port: Number(process.env.PORT || 8182), host, readOnly, feedbackEnabled }); console.log(`Panel lekcji: http://${host}:${port}/admin/${readOnly?' (tylko podgląd)':''}`); }
   catch (error) { if (error.code === 'EADDRINUSE') console.error(`Port ${process.env.PORT || 8182} jest zajęty. Panel może już działać pod http://127.0.0.1:${process.env.PORT || 8182}/admin/; albo uruchom: PORT=8183 npm run ui.`); else console.error(error.message); process.exitCode = 1; }
 }
