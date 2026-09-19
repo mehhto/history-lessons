@@ -32,7 +32,7 @@ header {
 
 header button {
     background: white;
-    color: var(--palette-indigo);
+    color: var(--palette-blue);
     border: 1px solid white
 }
 
@@ -77,6 +77,9 @@ input {
     padding: 8px;
     margin: 6px 0 14px
 }
+
+
+
 
 .catalog-switch {
     display: flex;
@@ -129,19 +132,19 @@ input {
 }
 
 .catalog-switch button:hover {
-    color: var(--palette-indigo)
+    color: var(--palette-blue)
 }
 
 .catalog-switch button[aria-selected="true"] {
-    color: var(--palette-indigo)
+    color: var(--palette-blue)
 }
 
 .catalog-switch button[aria-selected="true"]::after {
-    background: var(--palette-indigo)
+    background: var(--palette-blue)
 }
 
 .catalog-switch button:focus-visible {
-    outline: 2px solid var(--palette-indigo);
+    outline: 2px solid var(--palette-blue);
     outline-offset: 4px
 }
 
@@ -168,7 +171,7 @@ input {
 
 .grade summary::before {
     content: '▸';
-    color: var(--palette-indigo);
+    color: var(--palette-blue);
     margin-right: 6px
 }
 
@@ -192,7 +195,7 @@ input {
     background: #edf2f6;
     color: #16222e;
     margin: 1px 0;
-    border-right: 8px solid var(--palette-indigo);
+    border-right: 8px solid var(--palette-blue);
     border-radius: 0
 }
 
@@ -217,7 +220,7 @@ input {
 }
 
 .lesson.selected {
-    background: var(--palette-indigo);
+    background: var(--palette-blue);
     color: white
 }
 
@@ -244,12 +247,12 @@ input {
 }
 
 .preview-head button, .tabs button {
-    background: var(--palette-indigo);
+    background: var(--palette-blue);
     color: white
 }
 
 .open-preview {
-    background: var(--palette-indigo) !important
+    background: var(--palette-blue) !important
 }
 
 .tabs {
@@ -262,11 +265,11 @@ input {
 .tabs button {
     border-radius: 6px 6px 0 0;
     background: #dfe8ef;
-    color: var(--palette-indigo)
+    color: var(--palette-blue)
 }
 
 .tabs button.active {
-    background: var(--palette-indigo);
+    background: var(--palette-blue);
     color: white
 }
 
@@ -334,7 +337,7 @@ input {
 }
 
 .actions button {
-    background: var(--palette-indigo);
+    background: var(--palette-blue);
     color: white
 }
 
@@ -347,7 +350,7 @@ input {
     right: 16px;
     bottom: 16px;
     max-width: 420px;
-    background: var(--palette-indigo);
+    background: var(--palette-blue);
     color: white;
     padding: 10px;
     border-radius: 6px;
@@ -458,7 +461,7 @@ input {
 .document-zoom button {
     border-radius: 0;
     background: #e0e8ee;
-    color: var(--palette-indigo);
+    color: var(--palette-blue);
     padding: 4px 7px;
     font-size: 13px
 }
