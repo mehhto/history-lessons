@@ -29,7 +29,8 @@ function safePublicPath(root, requestPath) {
   const allowedLesson = relative[0] === 'classes' && !relative.includes('.git') && !relative.includes('feedback.jsonl');
   const allowedTestPdf = relative[0] === 'tests' && relative.length === 3 && relative[2].endsWith('.pdf');
   const allowedTemplate = relative[0] === 'template' && ['reveal','components','presentation','fonts','theme.css'].includes(relative[1]);
-  if (!allowedLesson && !allowedTestPdf && !allowedTemplate) throw notFound();
+  const allowedCatalogGlyph = relative[0] === 'template' && relative[1] === 'assets' && relative[2] === 'presentation-glyphs' && relative.length === 4 && relative[3].endsWith('.svg');
+  if (!allowedLesson && !allowedTestPdf && !allowedTemplate && !allowedCatalogGlyph) throw notFound();
   const base = allowedLesson ? path.join(root, 'classes') : allowedTestPdf ? path.join(root, 'tests') : path.join(root, 'template');
   return { base, file };
 }

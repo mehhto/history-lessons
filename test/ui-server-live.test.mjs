@@ -119,6 +119,23 @@ test('feedback endpoint does not follow a feedback log symlink or disclose its p
   }
 });
 
+test('serves the catalog book glyph from the approved presentation-glyphs directory', async () => {
+  const parent = await mkdtemp(path.join(os.tmpdir(), 'history-ui-glyph-'));
+  const root = path.join(parent, 'repo');
+  const glyph = path.join(root, 'template', 'assets', 'presentation-glyphs', 'book-open.svg');
+  await mkdir(path.dirname(glyph), { recursive: true });
+  await writeFile(glyph, '<svg xmlns="http://www.w3.org/2000/svg"></svg>');
+  const { server, port } = await createUiServer({ repoRoot: root, port: 0, host: '127.0.0.1', readOnly: true });
+  try {
+    const response = await fetch(`http://127.0.0.1:${port}/template/assets/presentation-glyphs/book-open.svg`);
+    assert.equal(response.status, 200);
+    assert.equal(response.headers.get('content-type'), 'image/svg+xml');
+  } finally {
+    await stop(server);
+    await rm(parent, { recursive: true, force: true });
+  }
+});
+
 test('static serving rejects a symlink that escapes its public directory', async () => {
   const parent = await mkdtemp(path.join(os.tmpdir(), 'history-ui-'));
   const root = path.join(parent, 'repo');
@@ -175,6 +192,7 @@ test('read-only browser UI keeps previews and omits export controls', async () =
     await page.goto(`http://127.0.0.1:${port}/admin/`);
     const lessonTab = page.getByRole('tab', { name: 'Lekcje' });
     const testTab = page.getByRole('tab', { name: 'Kartkówki' });
+    assert.equal(await testTab.locator('img').evaluate((image) => image.complete && image.naturalWidth > 0), true);
     assert.equal(await lessonTab.getAttribute('aria-selected'), 'true');
     assert.equal(await testTab.getAttribute('tabindex'), '-1');
     await testTab.click();

@@ -113,10 +113,14 @@ input {
     background: transparent
 }
 
-.catalog-switch button svg {
+.catalog-switch button svg,
+.catalog-switch button img {
     width: 20px;
     height: 20px;
     flex: 0 0 20px;
+}
+
+.catalog-switch button svg {
     fill: none;
     stroke: currentColor;
     stroke-width: 1.75;
