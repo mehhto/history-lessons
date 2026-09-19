@@ -14,5 +14,6 @@
   "teacher_reviewed": false,
   "offline_checked": false,
   "pdf_exported": false,
+  "presentationContract": { "version": "1.0" },
   "appearance": { "style": "editorial", "palette": "documentary-1939" }
 }

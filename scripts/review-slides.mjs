@@ -3,6 +3,7 @@ import path from 'node:path';
 import process from 'node:process';
 import { chromium } from 'playwright';
 import { resolveWithin } from './safe-paths.mjs';
+import { clearReviewOutput } from './review-output.mjs';
 import { startServer } from './render-check.mjs';
 
 const arg = (name) => process.argv.includes(name) ? process.argv[process.argv.indexOf(name) + 1] : undefined;
@@ -13,6 +14,7 @@ const directory = await realpath(resolveWithin(root, lesson));
 const relative = path.relative(root, directory).split(path.sep).map(encodeURIComponent).join('/');
 const output = path.join(root, '.hermes', 'reviews', path.relative(path.join(root, 'classes'), directory));
 await mkdir(output, { recursive: true });
+await clearReviewOutput(output);
 const server = await startServer(root);
 const browser = await chromium.launch({ headless: true });
 try {

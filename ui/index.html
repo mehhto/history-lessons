@@ -15,12 +15,18 @@
   <main>
     <aside>
       <div class="catalog-switch" role="tablist" aria-label="Rodzaj materiału">
-        <button id="show-lessons" role="tab" aria-selected="true">Lekcje</button>
-        <button id="show-tests" role="tab" aria-selected="false">Kartkówki</button>
+        <button id="show-lessons" role="tab" aria-selected="true" aria-controls="catalog">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H11v16H6.5A2.5 2.5 0 0 0 4 21.5zM20 5.5A2.5 2.5 0 0 0 17.5 3H13v16h4.5a2.5 2.5 0 0 1 2.5 2.5z"/></svg>
+          <span>Lekcje</span>
+        </button>
+        <button id="show-tests" role="tab" aria-selected="false" aria-controls="catalog" tabindex="-1">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5H6.5A1.5 1.5 0 0 0 5 6.5v13A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5v-13A1.5 1.5 0 0 0 17.5 5H15M9 3h6v4H9zM9 13l2 2 4-4"/></svg>
+          <span>Kartkówki</span>
+        </button>
       </div>
       <label>Szukaj <input id="filter" type="search" placeholder="Tytuł materiału"></label>
       <div id="grade-filters" aria-label="Filtr klas"></div>
-      <div id="catalog"></div>
+      <div id="catalog" role="tabpanel" aria-labelledby="show-lessons" tabindex="0"></div>
     </aside>
     <section id="workspace"><p class="empty">Wybierz materiał z katalogu.</p></section>
   </main>

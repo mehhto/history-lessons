@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import test from 'node:test';
-import { clampPercentage, counterValueAtProgress, galleryNavigationIndex, isGalleryNavigationKey } from '../template/components/lesson-components-core.mjs';
+import { clampPercentage, counterValueAtProgress, galleryNavigationIndex, isGalleryNavigationKey, timelineEventDelay } from '../template/components/lesson-components-core.mjs';
 
 test('counter helpers clamp progress and compare slider values', () => {
   assert.equal(clampPercentage(-3), 0);
@@ -9,6 +9,13 @@ test('counter helpers clamp progress and compare slider values', () => {
   assert.equal(clampPercentage(140), 100);
   assert.equal(counterValueAtProgress(1200, .25), 300);
   assert.equal(counterValueAtProgress(-1200, .25), 0);
+});
+
+test('timeline motion staggers events in a bounded, predictable sequence', () => {
+  assert.equal(timelineEventDelay(0), '0ms');
+  assert.equal(timelineEventDelay(1), '100ms');
+  assert.equal(timelineEventDelay(4), '400ms');
+  assert.equal(timelineEventDelay(-1), '0ms');
 });
 
 test('online embeds are deferred until the learner chooses to load them', async () => {
@@ -39,6 +46,18 @@ test('component styles normalize card alignment and establish a structured table
   assert.match(css, /\.reveal lesson-step h3 \{[^}]*font-size: \.58em/);
   assert.match(css, /lesson-table \{[^}]*border-radius: \.45rem/);
   assert.match(css, /lesson-table td:first-child \{[^}]*font-weight: 800/);
+});
+
+test('timeline axis motion is opt-in and keeps a static reduced-motion fallback', async () => {
+  const [components, css] = await Promise.all([
+    readFile(new URL('../template/components/lesson-components.js', import.meta.url), 'utf8'),
+    readFile(new URL('../template/components/lesson-components.css', import.meta.url), 'utf8'),
+  ]);
+  assert.match(components, /class LessonTimeline/);
+  assert.match(components, /hasAttribute\('reveal-axis'\)/);
+  assert.match(components, /Reveal\.on\('slidechanged'/);
+  assert.match(css, /lesson-timeline\[reveal-axis\]\.is-axis-revealing/);
+  assert.match(css, /@media \(prefers-reduced-motion: reduce\)[\s\S]*lesson-timeline\[reveal-axis\]/);
 });
 test('gallery keyboard navigation wraps at both ends', () => {
   assert.equal(galleryNavigationIndex(0, 'ArrowLeft', 3), 2);

@@ -5,6 +5,16 @@ lesson-timeline[orientation="vertical"] { grid-template-columns: 1fr; gap: .1rem
 .reveal lesson-event::before { content: attr(year); color: var(--timeline-accent, var(--navy)); font-family: var(--font-body); font-weight: 800; font-size: 1.05em; letter-spacing: .02em; }
 lesson-timeline[orientation="vertical"] lesson-event { position: relative; min-height: 0; margin-left: 1em; padding: .65rem .85rem; border-top: 0; border-left: .25rem solid var(--timeline-accent, var(--gold)); }
 lesson-timeline[orientation="vertical"] lesson-event::after { content: ''; position: absolute; left: -1.2em; top: 1.03em; width: .35em; height: .35em; border-radius: 50%; background: var(--timeline-accent, var(--gold)); }
+lesson-timeline[reveal-axis] { position: relative; isolation: isolate; }
+lesson-timeline[reveal-axis]::before { content: ''; position: absolute; z-index: 0; top: .08rem; right: .85rem; left: .85rem; height: .14rem; background: var(--timeline-accent, var(--gold)); transform: scaleX(0); transform-origin: left center; }
+lesson-timeline[reveal-axis] lesson-event { position: relative; z-index: 1; }
+lesson-timeline[reveal-axis].is-axis-revealing::before { animation: lesson-timeline-axis-grow .62s cubic-bezier(.18,.76,.25,1) both; }
+lesson-timeline[reveal-axis].is-axis-revealing lesson-event { animation: lesson-timeline-event-enter .38s ease-out var(--timeline-event-delay, 0ms) both; }
+lesson-timeline[orientation="vertical"][reveal-axis]::before { top: .9rem; right: auto; bottom: .9rem; left: -.06rem; width: .14rem; height: auto; transform: scaleY(0); transform-origin: center top; }
+@keyframes lesson-timeline-axis-grow { to { transform: scaleX(1); } }
+@keyframes lesson-timeline-event-enter { from { opacity: 0; transform: translateY(.45rem); } to { opacity: 1; transform: translateY(0); } }
+@keyframes lesson-timeline-axis-grow-vertical { to { transform: scaleY(1); } }
+lesson-timeline[orientation="vertical"][reveal-axis].is-axis-revealing::before { animation-name: lesson-timeline-axis-grow-vertical; }
 
 lesson-gallery { display: flex; gap: .45rem; min-height: 9.2em; margin-top: .5em; overflow: hidden; }
 lesson-gallery [data-gallery-item] { position: relative; display: grid; flex: 1 1 0; min-width: 0; margin: 0; overflow: hidden; border: 0; outline: 0; cursor: pointer; background: var(--gallery-panel, var(--navy)); transition: flex .32s ease, filter .2s ease; }
@@ -111,7 +121,8 @@ lesson-compare output { position: absolute; z-index: 2; right: .7em; bottom: .55
 .reveal lesson-gallery.photo-pair [data-gallery-item] figcaption { position: static; padding: .3em 0 0; color: var(--color-muted, var(--muted)); background: none; }
 
 @media (hover: none), (pointer: coarse) { lesson-gallery { min-height: 8em; } lesson-gallery [data-gallery-item].is-active { flex: 4 1 0; } }
-@media (prefers-reduced-motion: reduce) { lesson-gallery [data-gallery-item], lesson-gallery [data-gallery-item] img { transition: none; } }
+@media (prefers-reduced-motion: reduce) { lesson-gallery [data-gallery-item], lesson-gallery [data-gallery-item] img { transition: none; } lesson-timeline[reveal-axis]::before { transform: scaleX(1); } lesson-timeline[orientation="vertical"][reveal-axis]::before { transform: scaleY(1); } lesson-timeline[reveal-axis] lesson-event { animation: none; opacity: 1; transform: none; } }
+@media print { lesson-timeline[reveal-axis]::before { transform: scaleX(1); } lesson-timeline[orientation="vertical"][reveal-axis]::before { transform: scaleY(1); } lesson-timeline[reveal-axis] lesson-event { animation: none; opacity: 1; transform: none; } }
 @media (max-width: 700px) { lesson-map, lesson-quote { grid-template-columns: 1fr; } lesson-stats, lesson-stepper, lesson-icon-list { grid-template-columns: 1fr 1fr; } }
 
 /* HTML-only image lightbox. It lives outside Reveal's scaled canvas. */
@@ -132,8 +143,8 @@ dialog.lesson-image-lightbox {
   margin: 0;
   padding: 24px 28px 18px;
   border: 0;
-  color: #fff;
-  background: rgba(5, 10, 17, .97);
+  color: #17212b;
+  background: #fff;
   overflow: hidden;
 }
 dialog.lesson-image-lightbox[open] {
@@ -142,7 +153,7 @@ dialog.lesson-image-lightbox[open] {
   place-items: center;
   gap: 10px;
 }
-dialog.lesson-image-lightbox::backdrop { background: rgba(5, 10, 17, .97); }
+dialog.lesson-image-lightbox::backdrop { background: #fff; }
 .lesson-image-lightbox__close {
   display: grid;
   width: 100%;
@@ -163,18 +174,18 @@ dialog.lesson-image-lightbox::backdrop { background: rgba(5, 10, 17, .97); }
   max-height: calc(100vh - 116px);
   margin: 0;
   object-fit: contain;
-  box-shadow: 0 18px 54px rgba(0,0,0,.48);
+  box-shadow: 0 12px 32px rgba(23,33,43,.24);
 }
-.lesson-image-lightbox__close:focus-visible img { outline: 3px solid #fff; outline-offset: 5px; }
+.lesson-image-lightbox__close:focus-visible img { outline: 3px solid #007eff; outline-offset: 5px; }
 .lesson-image-lightbox__caption {
   max-width: min(1100px, calc(100vw - 56px));
   margin: 0;
-  color: #fff;
+  color: #17212b;
   font: 500 18px/1.25 system-ui, sans-serif;
   text-align: center;
 }
 .lesson-image-lightbox__hint {
-  color: #c5ced8;
+  color: #526473;
   font: 600 14px/1.2 system-ui, sans-serif;
 }
 dialog.lesson-image-lightbox.is-uncaptioned[open] { grid-template-rows: minmax(0, 1fr); padding: 0; }

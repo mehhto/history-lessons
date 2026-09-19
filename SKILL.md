@@ -66,11 +66,13 @@ Każdy slajd musi mieć jasną funkcję oraz być czytelny z końca klasy:
 - Zachowuj wspólny bootstrap prezentacji, ścieżki do bibliotek i ścieżki do lokalnych zasobów. Wygląd wybieraj przez `metadata.json.appearance`: `museum`, `editorial` lub `atlas` i zatwierdzoną dla niego paletę; nie dodawaj dowolnego CSS ani zdalnych fontów.
 - Stosuj klasy zależnie od funkcji, np. `question-slide`, `explanation-slide`, `context-slide`, `source-slide`, `map-slide`, `practice-slide`, `compare-slide`, `exit-ticket-slide`.
 
-Dostępne komponenty lokalne: `lesson-timeline` / `lesson-event`, `lesson-gallery`, `lesson-map`, `lesson-disclosure`, `lesson-stats` / `lesson-stat` / `lesson-counter`, `lesson-stepper` / `lesson-step`, `lesson-table`, `lesson-quote`, `lesson-icon-list`, `lesson-video` i `lesson-compare`. Pełne przykłady są w `classes/6/katalog-komponentow-prezentacji/`.
+Dostępne komponenty lokalne: `lesson-timeline` / `lesson-event`, `lesson-gallery`, `lesson-map`, `lesson-disclosure`, `lesson-stats` / `lesson-stat` / `lesson-counter`, `lesson-stepper` / `lesson-step`, `lesson-table`, `lesson-quote`, `lesson-icon-list`, `lesson-video` i `lesson-compare`. Pełne przykłady są w `classes/6/katalog-komponentow-prezentacji/`. `lesson-timeline reveal-axis` jest opcjonalne: używaj go wyłącznie, gdy rozwinięcie osi ujawnia kolejność; ruch ma statyczny fallback dla druku i `prefers-reduced-motion`.
+
+Przed wybraniem kolorów wybierz jedną pozycję z `design/presentation-palettes-v1.md` (dane: `presentation-palettes-v1.json`) i przypisz jej role zamiast losowych heksów. Semantyczne glyphy SVG są w `template/assets/presentation-glyphs/`; stosuj je oszczędnie, z `data-no-lightbox`, według README tego katalogu. Zasady przejść oraz przykłady ruchu są w `design/presentation-motion-v1.md`.
 
 Każdy katalog rzeczywistej lekcji (`kind: lesson`) nazywaj `NN-krotki-slug`, gdzie `NN` oznacza dwucyfrową kolejność lekcji w obrębie klasy. Nazwa ma być krótka, ale jednoznaczna; pełny tytuł pozostaje w `metadata.json`. Generator dopisuje kolejny numer automatycznie, a krótszą nazwę przyjmuje przez `--slug`. Katalogi demonstracyjne (`kind: demo`) są poza numeracją lekcji.
 
-Mapy Google i YouTube są opcjonalne: iframe uzyskuje `src` wyłącznie po kliknięciu, a slajd ma lokalną alternatywę. Galeria wymaga opisowych `alt` i podpisów; hover jest dodatkiem — musi działać także przez `Tab`, strzałki, `Home`, `End`, `Escape` i dotknięcie.
+Mapy Google i YouTube są opcjonalne: iframe uzyskuje `src` wyłącznie po kliknięciu, a slajd ma lokalną alternatywę. Galeria wymaga opisowych `alt` i podpisów; hover jest dodatkiem — musi działać także przez `Tab`, strzałki, `Home`, `End`, `Escape` i dotknięcie. Lightbox nie kopiuje automatycznie `figcaption`, kredytu, licencji ani adresu źródłowego. Opcjonalny krótki podpis lightboxa podawaj jawnie przez `data-lightbox-caption`; nie umieszczaj w nim źródła. Mapy pełnoekranowe pozostają w lightboxie bez podpisu.
 
 ## Przenośna prezentacja bez konfiguracji sali
 

@@ -13,7 +13,7 @@ Dostęp do źródeł sieciowych sprawdzono podczas przygotowania pakietu. Prezen
 ## Film wskazany przez nauczyciela
 - [„Solomon's Temple Explained”, Messages of Christ, YouTube](https://www.youtube.com/watch?v=Xt6lQAe8ues), 9:59.
 - Sposób użycia: fragment **1:20–9:50**. Do wspólnej analizy wykorzystaj 1:20–2:24 (Dawid, Jerozolima i rozpoczęcie budowy za Salomona); dalsza część jest współczesną wizualizacją o perspektywie wyznaniowej.
-- To nie jest źródło z epoki ani pewna rekonstrukcja archeologiczna. Plan B offline: `assets/schemat-swiatyni.svg`.
+- To nie jest źródło z epoki ani pewna rekonstrukcja archeologiczna. Plan B offline: historyczny plan Drugiej Świątyni na kolejnym slajdzie.
 
 ## Media lokalne
 | Plik | Przedstawia | Autor / licencja | Pochodzenie |
@@ -24,8 +24,7 @@ Dostęp do źródeł sieciowych sprawdzono podczas przygotowania pakietu. Prezen
 | `assets/menora-zpe.png` | menora | Contentplus.pl, CC BY 3.0 | ZPE, zasób `R8kL8Rk4a0d0y` |
 | `assets/gwiazda-dawida-zpe.png` | Gwiazda Dawida | Contentplus.pl, CC BY 3.0 | ZPE, zasób `R7jp3ztEQHhhs` |
 | `assets/flaga-izraela-zpe.png` | flaga współczesnego Izraela | Contentplus.pl, CC BY 3.0 | ZPE, zasób `RC7RBYy0bN2ss` |
-| `assets/schemat-swiatyni.svg` | funkcje i chronologia Świątyni | opracowanie własne | na podstawie informacji z ZPE; schemat, nie rekonstrukcja |
-| `assets/schemat-chrzescijanstwo.svg` | kierunki wczesnego rozprzestrzeniania chrześcijaństwa | opracowanie własne | synteza celu podstawy; schemat, nie mapa granic |
+
 
 | `assets/abraham.jpg` | Abraham, detal obrazu „Ofiara Izaaka” | Rembrandt, 1635, domena publiczna | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Rembrandt_%E2%80%94_Sacrifice_of_Isaac_%E2%80%94_1635_%E2%80%94_detail_Abraham.JPG) |
 | `assets/mojzesz-dekalog.jpg` | Mojżesz otrzymujący Dekalog na Synaju | obraz anonimowy, Nationalmuseum; domena publiczna | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Anonymous_-_Moses_Receives_the_Ten_Commandments_on_Mount_Sinai_-_NM_7227_-_Nationalmuseum.jpg) |

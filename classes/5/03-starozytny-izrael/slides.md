@@ -6,20 +6,11 @@
 <h2>Dzieje, religia i znaczenie Jerozolimy</h2>
 <p class="lead">Jak jedno miejsce połączyło historię, wiarę i pamięć?</p>
 </div>
-<figure><img src="assets/sciana-zachodnia-zpe.jpg" alt="Współczesny widok Zachodniego Muru w Jerozolimie" data-fit="cover" /><figcaption>Zachodni Mur w Jerozolimie. Fot. Sheepdog85, CC BY-SA 3.0, za ZPE.</figcaption></figure>
+<figure><img src="assets/sciana-zachodnia-zpe.jpg" alt="Współczesny widok Zachodniego Muru w Jerozolimie" data-fit="cover" /><figcaption>Zachodni Mur w Jerozolimie.</figcaption></figure>
 </div>
 
 <!-- notes:
 Poproś o jedną hipotezę: dlaczego Jerozolima mogła być ważna dla wspólnoty nawet po utracie państwa?
--->
-
----
-
-<!-- .slide: id="mapa-region" data-purpose="evidence" data-layout="hero-source" -->
-<figure class="source-figure map-full"><img src="assets/mapa-palestyny-zpe.jpg" alt="Mapa Palestyny na przełomie drugiego i pierwszego tysiąclecia przed naszą erą" data-fit="contain" /></figure>
-
-<!-- notes:
-Mapa łączy kilka warstw czasowych. Nie odczytuj jej jak obrazu jednego roku. ZPE oznacza zdobycie Jerozolimy jako 587 r. p.n.e.; w materiałach ucznia użyto 586. Oba datowania występują w literaturze.
 -->
 
 ---
@@ -48,10 +39,8 @@ Mapa łączy kilka warstw czasowych. Nie odczytuj jej jak obrazu jednego roku. Z
 
 ---
 
-<!-- .slide: id="podzial-krolestw" data-purpose="evidence" data-layout="hero-source" -->
-## Po śmierci Salomona: Izrael i Juda
-
-<figure class="source-figure division-map"><img src="assets/mapa-palestyny-zpe.jpg" alt="Mapa pokazująca podział na północny Izrael i południową Judę" data-fit="contain" /><figcaption>Na mapie odszukaj dwa królestwa: Izrael na północy i Judę na południu. Mapa syntetyczna ZPE.</figcaption></figure>
+<!-- .slide: id="podzial-krolestw" data-purpose="evidence" data-layout="plain" -->
+<div class="map-fullscreen"><button class="map-link" type="button" data-lightbox-src="assets/mapa-palestyny-zpe.jpg" data-lightbox-alt="Mapa pokazująca podział na północny Izrael i południową Judę" data-lightbox-uncaptioned="true" aria-label="Powiększ mapę Izraela i Judy"></button></div>
 
 ---
 
@@ -121,7 +110,7 @@ Mapa łączy kilka warstw czasowych. Nie odczytuj jej jak obrazu jednego roku. Z
 <li><strong>Mesjasz:</strong> oczekiwany „pomazaniec”, z którym wiązano nadzieję na odnowę.</li>
 </ul>
 </div>
-<figure class="source-figure"><img src="assets/tora-zpe.jpg" alt="Otwarty zwój Tory zapisany alfabetem hebrajskim" data-fit="contain" /><figcaption>Zwój Tory. Fot. Lewrie Cate, CC BY 2.0, za ZPE.</figcaption></figure>
+<figure class="source-figure"><img src="assets/tora-zpe.jpg" alt="Otwarty zwój Tory zapisany alfabetem hebrajskim" data-fit="contain" /><figcaption>Zwój Tory.</figcaption></figure>
 </div>
 
 ---
@@ -130,7 +119,7 @@ Mapa łączy kilka warstw czasowych. Nie odczytuj jej jak obrazu jednego roku. Z
 ## Świątynia za Salomona — współczesna wizualizacja
 
 <lesson-video>
-<div class="video-fallback"><strong>Film: 1:20–9:50</strong><p>Obejrzyj początek: Dawid, Jerozolima i rozpoczęcie budowy za Salomona. Zatrzymaj około 2:24. Plan B: kolejny slajd — schemat części Świątyni.</p><button data-video-play type="button">Odtwórz fragment</button></div>
+<div class="video-fallback"><strong>Film: 1:20–9:50</strong><p>Obejrzyj początek: Dawid, Jerozolima i rozpoczęcie budowy za Salomona. Zatrzymaj około 2:24. Plan B: kolejny slajd — plan części Świątyni.</p><button data-video-play type="button">Odtwórz fragment</button></div>
 <iframe data-video-src="https://www.youtube-nocookie.com/embed/Xt6lQAe8ues?start=80&end=590" title="Solomon's Temple Explained — współczesna wizualizacja" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen hidden></iframe>
 </lesson-video>
 
@@ -143,7 +132,7 @@ Film jest współczesną wizualizacją i ma wyznaniową perspektywę. W pierwszy
 <!-- .slide: id="plan-swiatyni" data-purpose="explanation" data-layout="plain" -->
 ## Świątynia — części i wyposażenie
 
-<figure class="source-figure temple-plan"><img src="assets/plan-drugiej-swiatyni.jpg" alt="Historyczny plan Drugiej Świątyni i jej dziedzińców z czasów Heroda" data-fit="contain" /><figcaption>Plan Drugiej Świątyni i dziedzińców z czasów Heroda, Encyclopaedia Britannica (1911), domena publiczna.</figcaption></figure>
+<figure class="source-figure temple-plan"><img src="assets/plan-drugiej-swiatyni.jpg" alt="Historyczny plan Drugiej Świątyni i jej dziedzińców z czasów Heroda" data-fit="contain" /><figcaption>Plan Drugiej Świątyni i dziedzińców z czasów Heroda.</figcaption></figure>
 
 ---
 
@@ -156,7 +145,7 @@ Film jest współczesną wizualizacją i ma wyznaniową perspektywę. W pierwszy
 <p><strong>Zachodni Mur</strong> jest częścią muru oporowego dawnego kompleksu Wzgórza Świątynnego.</p>
 <p>Nie jest ścianą samego budynku Świątyni.</p>
 </div>
-<figure class="source-figure"><img src="assets/sciana-zachodnia-zpe.jpg" alt="Współczesny widok Zachodniego Muru w Jerozolimie" data-fit="contain" /><figcaption>Zachodni Mur w Jerozolimie. Fot. Sheepdog85, CC BY-SA 3.0, za ZPE.</figcaption></figure>
+<figure class="source-figure"><img src="assets/sciana-zachodnia-zpe.jpg" alt="Współczesny widok Zachodniego Muru w Jerozolimie" data-fit="contain" /><figcaption>Zachodni Mur w Jerozolimie.</figcaption></figure>
 </div>
 
 ---
@@ -170,11 +159,9 @@ Film jest współczesną wizualizacją i ma wyznaniową perspektywę. W pierwszy
 <figure><img src="assets/gwiazda-dawida-zpe.png" alt="Gwiazda Dawida" /><figcaption><strong>Gwiazda Dawida</strong><br/>symbol upowszechniony znacznie później</figcaption></figure>
 </div>
 
-<p class="source-strip">ZPE: Contentplus.pl, CC BY 3.0; Lewrie Cate, CC BY 2.0.</p>
-
 ---
 
-<!-- .slide: id="most-chrzescijanstwo" data-purpose="synthesis" data-layout="hero-source" -->
+<!-- .slide: id="most-chrzescijanstwo" data-purpose="synthesis" data-layout="statement" -->
 ## Most do następnej historii
 
 <div class="bridge-route">
@@ -194,14 +181,14 @@ Film jest współczesną wizualizacją i ma wyznaniową perspektywę. W pierwszy
 <p class="statement"><strong>1948</strong> — ogłoszenie niepodległości współczesnego państwa Izrael.</p>
 <p>Leży w tym samym regionie, ale nie jest tym samym organizmem politycznym co starożytne królestwa Izraela i Judy.</p>
 </div>
-<figure class="source-figure"><img src="assets/flaga-izraela-zpe.png" alt="Flaga współczesnego państwa Izrael" data-fit="contain" /><figcaption>Flaga Izraela. Contentplus.pl, CC BY 3.0, za ZPE.</figcaption></figure>
+<figure class="source-figure"><img src="assets/flaga-izraela-zpe.png" alt="Flaga współczesnego państwa Izrael" data-fit="contain" /><figcaption>Flaga współczesnego państwa Izrael.</figcaption></figure>
 </div>
 
 ---
 
 <!-- .slide: id="notatka" data-purpose="reference" data-layout="takeaways" -->
 ## Notatka do zeszytu
-<div class="notebook-note"><p><strong>Izraelici</strong> tworzyli wspólnotę związaną z wiarą w jednego Boga — <strong>monoteizmem</strong>.</p><p><strong>Judaizm</strong> opiera się m.in. na Torze, prawie, pamięci wspólnoty i tradycji proroków.</p><p>Starożytne królestwa Izraela i Judy istniały w regionie współczesnego Izraela, ale nie są tym samym państwem.</p></div>
+<div class="notebook-note"><p><strong>1. Izraelici</strong> byli społecznością związaną z wiarą w jednego Boga, czyli <strong>monoteizmem</strong>. Tradycja biblijna łączy ich dzieje z Abrahamem, Mojżeszem, Dawidem i Salomonem.</p><p><strong>2. Po Salomonie</strong> królestwo rozpadło się na Izrael na północy i Judę na południu. Asyria podbiła Izrael w 722 r. p.n.e., a Babilończycy zniszczyli Jerozolimę i Pierwszą Świątynię w 587/586 r. p.n.e.</p><p><strong>3. Judaizm</strong> opiera się na Torze, prawie, tradycji proroków i pamięci wspólnoty. Druga Świątynia została zniszczona przez Rzymian w 70 r. n.e.</p><p><strong>4. Pamiętaj:</strong> starożytne Izrael i Juda nie są tym samym państwem co współczesny Izrael, który powstał w 1948 r.</p></div>
 
 ---
 

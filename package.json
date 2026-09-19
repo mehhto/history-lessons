@@ -8,6 +8,7 @@
     "test": "node --test",
     "new": "node scripts/new-lesson.mjs",
     "check": "node scripts/check-lessons.mjs",
+    "check:contract": "node scripts/check-presentation-contract.mjs",
     "serve": "node scripts/serve.mjs",
     "ui": "node scripts/ui-server.mjs",
     "preview": "node scripts/preview.mjs",

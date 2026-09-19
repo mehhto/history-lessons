@@ -40,9 +40,24 @@ test('clicking a presentation image opens and closes an accessible viewport ligh
     assert.ok(enlarged.height >= 700, `enlarged image ${enlarged.width}x${enlarged.height}`);
     assert.match(await page.$eval('dialog.lesson-image-lightbox img', (image) => image.currentSrc), /mapa-kampanii-polskiej-1939\.png$/);
     assert.equal(await page.$eval('dialog.lesson-image-lightbox img', (image) => image.alt), 'Mapa kampanii polskiej 1939 roku z kierunkami działań wojennych');
+    assert.equal(await page.$eval('.lesson-image-lightbox__caption', (caption) => caption.textContent.trim()), '');
+    assert.equal(await page.$eval('dialog.lesson-image-lightbox', (dialog) => dialog.classList.contains('is-uncaptioned')), true);
 
     await page.click('dialog.lesson-image-lightbox img');
     assert.equal(await page.$eval('dialog.lesson-image-lightbox', (dialog) => dialog.open), false);
+  });
+});
+
+test('lightbox shows only an explicitly opted-in caption', async () => {
+  await withDeck(async (page) => {
+    await page.evaluate(() => Reveal.slide(Reveal.getIndices(document.querySelector('#mapa-kampanii')).h));
+    await page.$eval('#mapa-kampanii img', (image) => {
+      image.dataset.lightboxCaption = 'Kierunki natarcia w 1939 roku';
+    });
+    await page.click('#mapa-kampanii img');
+
+    assert.equal(await page.$eval('.lesson-image-lightbox__caption', (caption) => caption.textContent.trim()), 'Kierunki natarcia w 1939 roku');
+    assert.equal(await page.$eval('dialog.lesson-image-lightbox', (dialog) => dialog.classList.contains('is-uncaptioned')), false);
   });
 });
 

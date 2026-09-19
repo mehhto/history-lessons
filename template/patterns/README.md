@@ -27,7 +27,7 @@ Wzorzec wybieraj według celu ucznia, nie według efektu wizualnego. Każdy koń
 | `map-focus` | odczyt mapy | mapa 65–78%, panel ≤35% | nie chowaj legendy |
 | `source-split` | źródło i krytyka | źródło 62–68% | nie mieszaj wielu pytań |
 | `photo-pair` | porównanie dwóch zdjęć | dwa równe pola | nie stosuj fałszywej galerii `div` |
-| `timeline-band` | trzy–cztery daty | krótki opis przy dacie | nie łam daty `1&nbsp;IX` |
+| `timeline-band` | trzy–cztery daty | krótki opis przy dacie | nie łam daty `1&nbsp;IX`; dodaj `reveal-axis` tylko wtedy, gdy ruch ma ujawnić kolejność |
 | `argument` | twierdzenie i dowody | 1 teza + 2–3 dowody | nie równaj wagi dowodów |
 | `task-board` | praca ucznia | bezpośrednie polecenie i oczekiwany rezultat; czas/kryterium tylko gdy pomagają | nie używaj osobnej etykiety „produkt” |
 | `comparison` | warianty A/B/C | 2–3 pola | nie używaj `auto-fit` |

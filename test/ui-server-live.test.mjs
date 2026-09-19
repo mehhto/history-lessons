@@ -173,12 +173,41 @@ test('read-only browser UI keeps previews and omits export controls', async () =
       if (/content security policy|violates.*style-src|refused to load/i.test(message.text())) cspErrors.push(message.text());
     });
     await page.goto(`http://127.0.0.1:${port}/admin/`);
+    const lessonTab = page.getByRole('tab', { name: 'Lekcje' });
+    const testTab = page.getByRole('tab', { name: 'Kartkówki' });
+    assert.equal(await lessonTab.getAttribute('aria-selected'), 'true');
+    assert.equal(await testTab.getAttribute('tabindex'), '-1');
+    await testTab.click();
+    assert.equal(await testTab.getAttribute('aria-selected'), 'true');
+    assert.equal(await page.locator('#catalog').getAttribute('aria-labelledby'), 'show-tests');
+    await testTab.press('ArrowLeft');
+    assert.equal(await lessonTab.getAttribute('aria-selected'), 'true');
+    assert.equal(await lessonTab.evaluate((tab) => document.activeElement === tab), true);
     await page.locator('#catalog .lesson').first().click();
     const preview = page.locator('iframe.preview');
     await preview.waitFor();
     await page.waitForFunction(() => document.querySelector('iframe.preview')?.contentDocument?.documentElement?.dataset.presentationReady === 'true');
     assert.equal(await page.locator('.actions').count(), 0);
     assert.deepEqual(cspErrors, []);
+  } finally {
+    await browser.close();
+    await stop(server);
+  }
+});
+
+test('read-only browser UI opens a full-slide lightbox inside the presentation iframe', async () => {
+  const { server, port } = await createUiServer({ repoRoot, port: 0, host: '127.0.0.1', readOnly: true });
+  const browser = await chromium.launch({ executablePath: browserExecutable });
+  try {
+    const page = await browser.newPage();
+    await page.goto(`http://127.0.0.1:${port}/admin/`);
+    await page.locator('#catalog .lesson').filter({ hasText: 'Polityka okupacyjna III Rzeszy' }).click();
+    await page.waitForFunction(() => document.querySelector('iframe.preview')?.contentDocument?.documentElement?.dataset.presentationReady === 'true');
+    const preview = page.frames().find((frame) => frame.url().includes('/classes/8/03-polityka-okupacyjna-iii-rzeszy/'));
+    assert.ok(preview, 'presentation iframe');
+    await preview.evaluate(() => Reveal.slide(Reveal.getIndices(document.querySelector('#polska-mapa')).h));
+    await preview.locator('#polska-mapa .map-link').click();
+    assert.equal(await preview.locator('dialog.lesson-image-lightbox').evaluate((dialog) => dialog.open), true);
   } finally {
     await browser.close();
     await stop(server);

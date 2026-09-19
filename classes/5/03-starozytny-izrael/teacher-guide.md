@@ -3,11 +3,11 @@
 ## Przed lekcją
 - Przygotuj po jednej karcie pracy i podsumowaniu dla maksymalnie 18 uczniów.
 - Ustaw pracę w parach; niczego nie trzeba wycinać.
-- Film `https://www.youtube.com/watch?v=Xt6lQAe8ues&t=310s` pochodzi z kanału religijnego „Messages of Christ” i jest po angielsku. Użyj **5:15–6:25** jako współczesnej wizualizacji opartej na opisach biblijnych: najlepiej wycisz angielski komentarz i nazwij po polsku boczne pomieszczenia, wejście, Miejsce Święte oraz Miejsce Najświętsze. Nie przedstawiaj rekonstrukcji jako źródła z epoki. Plan B: autorski schemat na slajdzie.
+- Film `https://www.youtube.com/watch?v=Xt6lQAe8ues&t=310s` pochodzi z kanału religijnego „Messages of Christ” i jest po angielsku. Użyj **5:15–6:25** jako współczesnej wizualizacji opartej na opisach biblijnych: najlepiej wycisz angielski komentarz i nazwij po polsku boczne pomieszczenia, wejście, Miejsce Święte oraz Miejsce Najświętsze. Nie przedstawiaj rekonstrukcji jako źródła z epoki. Plan B: kolejny slajd — historyczny plan części Świątyni.
 
 ## Przebieg operacyjny
-1. **0–5 min:** mapa regionu; uczniowie odnajdują Egipt, Kanaan i Jerozolimę.
-2. **5–17 min:** narracja od tradycji Abrahama i Mojżesza przez Dawida i Salomona po wygnanie babilońskie i powrót.
+1. **0–5 min:** otwarcie i tradycja Abrahama oraz Mojżesza.
+2. **5–17 min:** narracja od Dawida i Salomona przez podział na Izrael i Judę po wygnanie babilońskie i powrót.
 3. **17–24 min:** pary porządkują sześć wydarzeń z zadania 1 — bez wycinania.
 4. **24–36 min:** judaizm, Tora, prorocy, Mesjasz, Świątynia i symbole. Uczniowie wykonują zadania 2–3.
 5. **36–40 min:** slajd‑most do chrześcijaństwa i dwa zdania o państwie Izrael.

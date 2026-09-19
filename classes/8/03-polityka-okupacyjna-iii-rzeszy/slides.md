@@ -1,5 +1,15 @@
 <!-- .slide: id="otwarcie" data-purpose="opening" data-layout="statement" -->
-<h1>Polityka okupacyjna III Rzeszy</h1>
+<div class="opening-grid">
+  <div class="opening-copy">
+    <p class="kicker">EUROPA POD OKUPACJĄ · 1939–1945</p>
+    <h1>Polityka okupacyjna III Rzeszy</h1>
+
+  </div>
+  <figure>
+    <img src="assets/paryz-okupacja.jpg" alt="Żołnierze niemieccy rozmawiają z dwiema kobietami przed Moulin Rouge w okupowanym Paryżu" data-fit="cover" />
+    <figcaption>Paryż pod okupacją — fotografia z epoki. To przykład okupacji na Zachodzie, nie obraz całej Europy.</figcaption>
+  </figure>
+</div>
 
 ---
 
@@ -41,7 +51,7 @@
 
 <!-- .slide: id="antysemityzm-nazistowski" data-purpose="evidence" data-layout="split" -->
 ## Oznakowanie i getta: izolacja ludności żydowskiej
-<div class="marking-layout"><figure><img src="assets/oznaczenie-zydow-bedzin.jpg" alt="Dwaj policjanci żydowscy w getcie w Będzinie: jeden ma opaskę, drugi widoczną gwiazdę Dawida" data-fit="contain"><figcaption>Getto w Będzinie: opaska i gwiazda jako narzucone oznakowanie Żydów. Kadr propagandowy okupanta.</figcaption></figure><div><p><strong>Oznakowanie</strong> ułatwiało rozpoznanie, wykluczenie i kontrolę osób żydowskich. W okupowanej Polsce nakazywano opaskę z gwiazdą Dawida; w innych krajach stosowano często żółtą gwiazdę.</p><p><strong>Getta</strong> były przymusowo wydzielonymi, zamkniętymi częściami miast. Niemcy izolowali w nich Żydów, ograniczając ruch i dostęp do żywności.</p><p class="source-question"><strong>Przyjrzyj się zdjęciu:</strong> jakie dwa sposoby kontroli ludzi przez okupanta można na nim wskazać?</p></div></div>
+<div class="marking-layout"><figure><img src="assets/oznaczenie-zydow-bedzin.jpg" alt="Dwaj policjanci żydowscy w getcie w Będzinie: jeden ma opaskę, drugi widoczną gwiazdę Dawida" data-fit="contain"><figcaption>Getto w Będzinie: opaska i gwiazda jako narzucone oznakowanie Żydów. Kadr propagandowy okupanta.</figcaption></figure><div><p><strong>Oznakowanie</strong> ułatwiało rozpoznanie, wykluczenie i kontrolę osób żydowskich. W okupowanej Polsce nakazywano opaskę z gwiazdą Dawida; w innych krajach stosowano często żółtą gwiazdę.</p><p><strong>Getta</strong> były przymusowo wydzielonymi, zamkniętymi częściami miast. Niemcy izolowali w nich Żydów, ograniczając ruch i dostęp do żywności.</p></div></div>
 
 ---
 
@@ -53,7 +63,7 @@
 
 <!-- .slide: id="getto-warszawskie" data-purpose="evidence" data-layout="statement" -->
 ## Getto: izolacja, głód i kontrola
-<div class="safe-ghetto"><figure><img src="assets/mur-getta-warszawskiego-1940.jpg" alt="Mur getta warszawskiego w 1940 roku" data-fit="contain"><figcaption>Mur getta warszawskiego, 1940 r. Fotografia z epoki.</figcaption></figure><div><p><strong>Getto:</strong> przymusowo wydzielona, zamknięta część miasta; Niemcy izolowali w niej Żydów, ograniczając ruch i dostęp do żywności.</p><p><strong>Oznakowanie:</strong> w okupowanej Polsce nakazywano opaskę z gwiazdą Dawida; gdzie indziej często stosowano żółtą gwiazdę.</p><p class="source-question"><strong>Pytanie do źródła:</strong> co widoczny mur mówi o funkcji getta?</p></div></div>
+<div class="safe-ghetto"><figure><img src="assets/mur-getta-warszawskiego-1940.jpg" alt="Mur getta warszawskiego w 1940 roku" data-fit="contain"><figcaption>Mur getta warszawskiego, 1940 r. Fotografia z epoki.</figcaption></figure><div><p><strong>Getto:</strong> przymusowo wydzielona, zamknięta część miasta; Niemcy izolowali w niej Żydów, ograniczając ruch i dostęp do żywności.</p><p><strong>Oznakowanie:</strong> w okupowanej Polsce nakazywano opaskę z gwiazdą Dawida; gdzie indziej często stosowano żółtą gwiazdę.</p></div></div>
 
 ---
 
@@ -64,7 +74,8 @@
 ---
 
 <!-- .slide: id="frank-zrodlo" data-purpose="evidence" data-layout="source-split" -->
-## Fragment przemówienia Hansa Franka, wygłoszonego 16 grudnia 1941 r. w Krakowie na posiedzeniu rządu Generalnego Gubernatorstwa
+## Przemówienie Hansa Franka, Kraków, 16 XII 1941 r.
+
 <div class="frank-source-flow"><p>[...] Powiem Panom otwarcie, że z Żydami trzeba skończyć tak czy owak. Führer powiedział kiedyś: jeśli zjednoczonemu żydostwu znowu uda się rozpętać wojnę światową, wówczas nie tylko podburzone do wojny narody złożą swą krew w ofierze, lecz przyjdzie również kres na Żyda w Europie. (…) Dlatego mój zasadniczy stosunek do Żydów opiera się na nadziei, że Żydzi znikną. Trzeba ich usunąć. Rozpocząłem pertraktacje w celu deportowania ich na Wschód. [...]</p><p>Ale co ma się stać z Żydami? (…) Musimy wytępić Żydów, gdziekolwiek ich spotkamy i gdzie się tylko da, aby utrzymać tu strukturalną całość Rzeszy. (...). Żydzi są dla nas niezwykle szkodliwymi żarłokami. Mamy teraz w Generalnym Gubernatorstwie w przybliżeniu 2,5 miliona Żydów, a wliczając spokrewnionych z Żydami i wszystko co się z tym wiąże — być może 3,5 miliona. Owych 3,5 miliona Żydów nie możemy rozstrzelać, nie możemy ich wytruć; będziemy jednak mogli podjąć kroki, prowadzące w jakikolwiek sposób do wyników w tępieniu ich, a to w związku z posunięciami na wielką skalę, które mają być omówione w Rzeszy. Generalne Gubernatorstwo musi być wolne od Żydów tak samo jak Rzesza. Gdzie i jak się to stanie — jest to sprawa instancji, które musimy tu powołać i utworzyć i o działalności których powiadomię Panów we właściwym czasie.</p></div>
 
 ---
@@ -83,14 +94,18 @@
 ---
 
 <!-- .slide: id="postawy" data-purpose="practice" data-layout="activity-brief" -->
-## Pomoc, współpraca, szantaż — konkretne działania
-<div class="attitudes-evidence"><div><strong>Pomoc</strong><p>Rada Pomocy Żydom „Żegota” organizowała fałszywe dokumenty, wsparcie finansowe i kryjówki.</p></div><div><strong>Szantaż</strong><p>Szmalcownicy szantażowali Żydów w ukryciu i osoby, które im pomagały.</p></div><div><strong>Odpowiedzialność</strong><p>Opisuj działanie konkretnych osób, organizacji i władz — nie przypisuj jednej postawy całym narodom.</p></div></div>
+## Pomoc, szantaż, odpowiedzialność
+<div class="attitudes-evidence">
+  <div><strong>Pomoc</strong><p>Rada Pomocy Żydom „Żegota” organizowała fałszywe dokumenty, wsparcie finansowe i kryjówki.</p></div>
+  <div><strong>Szantaż</strong><p>Szmalcownicy szantażowali Żydów w ukryciu i osoby, które im pomagały.</p></div>
+  <div><strong>Odpowiedzialność</strong><p>Opisuj działanie konkretnych osób, organizacji i władz — nie przypisuj jednej postawy całym narodom.</p></div>
+</div>
 
 ---
 
 <!-- .slide: id="zegota" data-purpose="evidence" data-layout="split" -->
 ## Żegota — konspiracyjna pomoc dla Żydów
-<div class="zegota-layout"><figure><img src="assets/zegota-1946.jpg" alt="Fotografia związana z Radą Pomocy Żydom Żegota, wykonana w 1946 roku" data-fit="contain"><figcaption>Fotografia związana z Żegotą, 1946 r. Materiał powojenny.</figcaption></figure><div><p><strong>Rada Pomocy Żydom „Żegota”</strong> działała od 1942 r. przy Delegaturze Rządu RP na Kraj.</p><p>Była konspiracyjną organizacją, która organizowała fałszywe dokumenty, pieniądze, kryjówki i kontakty dla Żydów ukrywających się po „aryjskiej stronie”.</p><p class="source-question"><strong>Dlaczego pomoc wymagała konspiracji?</strong> Odnieś odpowiedź do terroru i kar nakładanych przez okupanta.</p></div></div>
+<div class="zegota-layout"><figure><img src="assets/zegota-1946.jpg" alt="Fotografia związana z Radą Pomocy Żydom Żegota, wykonana w 1946 roku" data-fit="contain"><figcaption>Fotografia związana z Żegotą, 1946 r. Materiał powojenny.</figcaption></figure><div><p><strong>Rada Pomocy Żydom „Żegota”</strong> działała od 1942 r. przy Delegaturze Rządu RP na Kraj.</p><p>Była konspiracyjną organizacją, która organizowała fałszywe dokumenty, pieniądze, kryjówki i kontakty dla Żydów ukrywających się po „aryjskiej stronie”.</p></div></div>
 
 ---
 
@@ -106,7 +121,7 @@
 
 <!-- .slide: id="notatka" data-purpose="synthesis" data-layout="takeaways" -->
 ## Notatka do zeszytu
-<div class="notebook-note"><p><strong>Okupacja niemiecka</strong> opierała się na terrorze, grabieży i pracy przymusowej; na ziemiach polskich obejmowała obszary wcielone do III Rzeszy oraz Generalne Gubernatorstwo.</p><p><strong>Holocaust</strong> był planową Zagładą Żydów dokonaną przez nazistowskie Niemcy. Getta izolowały ludność żydowską, a deportacje prowadziły do ośrodków zagłady.</p><p><strong>Postawy:</strong> pomoc organizowała m.in. Żegota; szmalcownicy szantażowali osoby ukrywające się i pomagające.</p></div>
+<div class="notebook-note"><p><strong>1. Okupacja niemiecka</strong> na ziemiach polskich oznaczała terror, wysiedlenia, grabież, germanizację i pracę przymusową. Polska została podzielona na ziemie wcielone do III Rzeszy i Generalne Gubernatorstwo.</p><p><strong>2. Ludność żydowska</strong> była izolowana przez oznakowanie, getta, ograniczenia ruchu i głód. Od 1941 r. nasiliły się masowe mordy, a od 1942 r. deportacje do ośrodków zagłady.</p><p><strong>3. Holocaust / Zagłada</strong> to planowe ludobójstwo Żydów europejskich dokonane przez nazistowskie Niemcy i ich współpracowników. Zamordowano około 6 mln Żydów.</p><p><strong>4. Postawy ludzi</strong> były różne: Żegota organizowała pomoc i kryjówki, a szmalcownicy szantażowali Żydów oraz osoby, które im pomagały.</p></div>
 
 ---
 

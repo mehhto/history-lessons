@@ -1,4 +1,4 @@
-import { clampPercentage, counterValueAtProgress, galleryNavigationIndex, isGalleryNavigationKey } from './lesson-components-core.mjs';
+import { clampPercentage, counterValueAtProgress, galleryNavigationIndex, isGalleryNavigationKey, timelineEventDelay } from './lesson-components-core.mjs';
 
 const revealKeys = new Set(['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Home', 'End', ' ', 'PageUp', 'PageDown']);
 
@@ -31,12 +31,12 @@ function isExpandableImage(image) {
 
 function openImageLightbox(sourceImage) {
   if (!isExpandableImage(sourceImage)) return;
-  lightbox.classList.remove('is-uncaptioned');
+  const caption = sourceImage.dataset.lightboxCaption?.trim() || '';
+  lightbox.classList.toggle('is-uncaptioned', !caption);
   lightboxOpener = sourceImage.closest('[data-gallery-item]') || sourceImage;
   lightboxImage.src = sourceImage.currentSrc || sourceImage.src;
   lightboxImage.alt = sourceImage.alt;
-  const caption = sourceImage.closest('figure')?.querySelector('figcaption')?.textContent?.trim();
-  lightboxCaption.textContent = caption || sourceImage.alt;
+  lightboxCaption.textContent = caption;
   lightbox.showModal();
   lightboxClose.focus({ preventScroll: true });
 }
@@ -232,6 +232,39 @@ class LessonCounter extends HTMLElement {
   }
 }
 
+class LessonTimeline extends HTMLElement {
+  connectedCallback() {
+    if (this.dataset.ready) return;
+    this.dataset.ready = 'true';
+    if (!this.hasAttribute('reveal-axis')) return;
+    [...this.querySelectorAll('lesson-event')].forEach((event, index) => {
+      event.style.setProperty('--timeline-event-delay', timelineEventDelay(index));
+    });
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      this.dataset.axisState = 'complete';
+      return;
+    }
+    this.replay = this.replay.bind(this);
+    this.handleReveal = this.handleReveal.bind(this);
+    if (window.Reveal?.on) {
+      window.Reveal.on('ready', this.handleReveal);
+      window.Reveal.on('slidechanged', this.handleReveal);
+      this.handleReveal({ currentSlide: window.Reveal.getCurrentSlide?.() });
+    } else requestAnimationFrame(() => this.replay());
+  }
+
+  handleReveal({ currentSlide } = {}) {
+    if (currentSlide && !currentSlide.contains(this)) return;
+    this.replay();
+  }
+
+  replay() {
+    this.dataset.axisRun = String((Number(this.dataset.axisRun) || 0) + 1);
+    this.classList.remove('is-axis-revealing');
+    requestAnimationFrame(() => this.classList.add('is-axis-revealing'));
+  }
+}
+
 class LessonMap extends HTMLElement {
   connectedCallback() {
     if (this.dataset.ready) return;
@@ -301,6 +334,7 @@ for (const [name, component] of [
   ['lesson-gallery', LessonGallery],
   ['lesson-disclosure', LessonDisclosure],
   ['lesson-counter', LessonCounter],
+  ['lesson-timeline', LessonTimeline],
   ['lesson-map', LessonMap],
   ['lesson-compare', LessonCompare],
   ['lesson-video', LessonVideo],

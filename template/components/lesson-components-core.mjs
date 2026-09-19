@@ -11,6 +11,13 @@ export function counterValueAtProgress(target, progress) {
   return Math.round(numericTarget * Math.min(1, Math.max(0, numericProgress)));
 }
 
+export function timelineEventDelay(index, stagger = 100) {
+  const eventIndex = Number(index);
+  const interval = Number(stagger);
+  if (!Number.isFinite(eventIndex) || eventIndex < 0 || !Number.isFinite(interval) || interval < 0) return '0ms';
+  return `${Math.round(eventIndex * interval)}ms`;
+}
+
 export function isGalleryNavigationKey(key) {
   return ['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Home', 'End', 'Escape', 'Enter', ' '].includes(key);
 }

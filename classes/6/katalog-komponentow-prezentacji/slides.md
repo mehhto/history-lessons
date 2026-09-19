@@ -150,7 +150,7 @@ Nie używaj fikcyjnego cytatu jako historycznego. Ten slajd jest wyłącznie wzo
 
 ## Timeline pozioma
 
-<lesson-timeline>
+<lesson-timeline reveal-axis>
   <lesson-event year="1492">Początek przykładowej osi</lesson-event>
   <lesson-event year="1498">Drugie wydarzenie</lesson-event>
   <lesson-event year="1507">Trzeci punkt</lesson-event>

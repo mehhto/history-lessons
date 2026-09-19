@@ -1,0 +1,747 @@
+{
+  "version": "1.0",
+  "source": {
+    "name": "ColorBrewer 2",
+    "url": "https://colorbrewer2.org/export/colorbrewer.json",
+    "retrieved": "2026-09-19"
+  },
+  "palettes": [
+    {
+      "id": "atlas-blue",
+      "use": "mapy, geografia i sieci",
+      "source": {
+        "scheme": "Blues",
+        "class": "sequential",
+        "colors": [
+          "#EFF3FF",
+          "#BDD7E7",
+          "#6BAED6",
+          "#3182BD",
+          "#08519C"
+        ],
+        "url": "https://colorbrewer2.org/export/colorbrewer.json"
+      },
+      "roles": {
+        "canvas": "#EFF3FF",
+        "surface": "#FFFFFF",
+        "ink": "#1F2933",
+        "accent": "#08519C",
+        "evidence": "#3182BD",
+        "signal": "#6BAED6"
+      }
+    },
+    {
+      "id": "maritime-teal",
+      "use": "morze, handel i podróże",
+      "source": {
+        "scheme": "BuGn",
+        "class": "sequential",
+        "colors": [
+          "#EDF8FB",
+          "#B2E2E2",
+          "#66C2A4",
+          "#2CA25F",
+          "#006D2C"
+        ],
+        "url": "https://colorbrewer2.org/export/colorbrewer.json"
+      },
+      "roles": {
+        "canvas": "#EDF8FB",
+        "surface": "#FFFFFF",
+        "ink": "#1F2933",
+        "accent": "#006D2C",
+        "evidence": "#2CA25F",
+        "signal": "#66C2A4"
+      }
+    },
+    {
+      "id": "archive-violet",
+      "use": "źródła, prawo i pamięć",
+      "source": {
+        "scheme": "BuPu",
+        "class": "sequential",
+        "colors": [
+          "#EDF8FB",
+          "#B3CDE3",
+          "#8C96C6",
+          "#8856A7",
+          "#810F7C"
+        ],
+        "url": "https://colorbrewer2.org/export/colorbrewer.json"
+      },
+      "roles": {
+        "canvas": "#EDF8FB",
+        "surface": "#FFFFFF",
+        "ink": "#1F2933",
+        "accent": "#810F7C",
+        "evidence": "#8856A7",
+        "signal": "#8C96C6"
+      }
+    },
+    {
+      "id": "river-cyan",
+      "use": "rzeki, miasta i rozwój",
+      "source": {
+        "scheme": "GnBu",
+        "class": "sequential",
+        "colors": [
+          "#F0F9E8",
+          "#BAE4BC",
+          "#7BCCC4",
+          "#43A2CA",
+          "#0868AC"
+        ],
+        "url": "https://colorbrewer2.org/export/colorbrewer.json"
+      },
+      "roles": {
+        "canvas": "#F0F9E8",
+        "surface": "#FFFFFF",
+        "ink": "#1F2933",
+        "accent": "#0868AC",
+        "evidence": "#43A2CA",
+        "signal": "#7BCCC4"
+      }
+    },
+    {
+      "id": "field-green",
+      "use": "środowisko, rolnictwo i krajobraz",
+      "source": {
+        "scheme": "Greens",
+        "class": "sequential",
+        "colors": [
+          "#EDF8E9",
+          "#BAE4B3",
+          "#74C476",
+          "#31A354",
+          "#006D2C"
+        ],
+        "url": "https://colorbrewer2.org/export/colorbrewer.json"
+      },
+      "roles": {
+        "canvas": "#EDF8E9",
+        "surface": "#FFFFFF",
+        "ink": "#1F2933",
+        "accent": "#006D2C",
+        "evidence": "#31A354",
+        "signal": "#74C476"
+      }
+    },
+    {
+      "id": "newsprint-grey",
+      "use": "fotografia dokumentalna i statystyka",
+      "source": {
+        "scheme": "Greys",
+        "class": "sequential",
+        "colors": [
+          "#F7F7F7",
+          "#CCCCCC",
+          "#969696",
+          "#636363",
+          "#252525"
+        ],
+        "url": "https://colorbrewer2.org/export/colorbrewer.json"
+      },
+      "roles": {
+        "canvas": "#F7F7F7",
+        "surface": "#FFFFFF",
+        "ink": "#1F2933",
+        "accent": "#252525",
+        "evidence": "#636363",
+        "signal": "#969696"
+      }
+    },
+    {
+      "id": "terracotta",
+      "use": "starożytność, architektura i rzemiosło",
+      "source": {
+        "scheme": "Oranges",
+        "class": "sequential",
+        "colors": [
+          "#FEEDDE",
+          "#FDBE85",
+          "#FD8D3C",
+          "#E6550D",
+          "#A63603"
+        ],
+        "url": "https://colorbrewer2.org/export/colorbrewer.json"
+      },
+      "roles": {
+        "canvas": "#FEEDDE",
+        "surface": "#FFFFFF",
+        "ink": "#1F2933",
+        "accent": "#A63603",
+        "evidence": "#E6550D",
+        "signal": "#FD8D3C"
+      }
+    },
+    {
+      "id": "warning-oxide",
+      "use": "konflikt, ograniczenia i ryzyko",
+      "source": {
+        "scheme": "OrRd",
+        "class": "sequential",
+        "colors": [
+          "#FEF0D9",
+          "#FDCC8A",
+          "#FC8D59",
+          "#E34A33",
+          "#B30000"
+        ],
+        "url": "https://colorbrewer2.org/export/colorbrewer.json"
+      },
+      "roles": {
+        "canvas": "#FEF0D9",
+        "surface": "#FFFFFF",
+        "ink": "#1F2933",
+        "accent": "#B30000",
+        "evidence": "#E34A33",
+        "signal": "#FC8D59"
+      }
+    },
+    {
+      "id": "civic-blue",
+      "use": "państwo, instytucje i prawo",
+      "source": {
+        "scheme": "PuBu",
+        "class": "sequential",
+        "colors": [
+          "#F1EEF6",
+          "#BDC9E1",
+          "#74A9CF",
+          "#2B8CBE",
+          "#045A8D"
+        ],
+        "url": "https://colorbrewer2.org/export/colorbrewer.json"
+      },
+      "roles": {
+        "canvas": "#F1EEF6",
+        "surface": "#FFFFFF",
+        "ink": "#1F2933",
+        "accent": "#045A8D",
+        "evidence": "#2B8CBE",
+        "signal": "#74A9CF"
+      }
+    },
+    {
+      "id": "coastal-green",
+      "use": "kontakty, porty i wymiana",
+      "source": {
+        "scheme": "PuBuGn",
+        "class": "sequential",
+        "colors": [
+          "#F6EFF7",
+          "#BDC9E1",
+          "#67A9CF",
+          "#1C9099",
+          "#016C59"
+        ],
+        "url": "https://colorbrewer2.org/export/colorbrewer.json"
+      },
+      "roles": {
+        "canvas": "#F6EFF7",
+        "surface": "#FFFFFF",
+        "ink": "#1F2933",
+        "accent": "#016C59",
+        "evidence": "#1C9099",
+        "signal": "#67A9CF"
+      }
+    },
+    {
+      "id": "archive-magenta",
+      "use": "biografia, listy i pamięć kultury",
+      "source": {
+        "scheme": "PuRd",
+        "class": "sequential",
+        "colors": [
+          "#F1EEF6",
+          "#D7B5D8",
+          "#DF65B0",
+          "#DD1C77",
+          "#980043"
+        ],
+        "url": "https://colorbrewer2.org/export/colorbrewer.json"
+      },
+      "roles": {
+        "canvas": "#F1EEF6",
+        "surface": "#FFFFFF",
+        "ink": "#1F2933",
+        "accent": "#980043",
+        "evidence": "#DD1C77",
+        "signal": "#DF65B0"
+      }
+    },
+    {
+      "id": "royal-purple",
+      "use": "dwór, kultura i władza",
+      "source": {
+        "scheme": "Purples",
+        "class": "sequential",
+        "colors": [
+          "#F2F0F7",
+          "#CBC9E2",
+          "#9E9AC8",
+          "#756BB1",
+          "#54278F"
+        ],
+        "url": "https://colorbrewer2.org/export/colorbrewer.json"
+      },
+      "roles": {
+        "canvas": "#F2F0F7",
+        "surface": "#FFFFFF",
+        "ink": "#1F2933",
+        "accent": "#54278F",
+        "evidence": "#756BB1",
+        "signal": "#9E9AC8"
+      }
+    },
+    {
+      "id": "rose-index",
+      "use": "idee, prądy i sieci społeczne",
+      "source": {
+        "scheme": "RdPu",
+        "class": "sequential",
+        "colors": [
+          "#FEEBE2",
+          "#FBB4B9",
+          "#F768A1",
+          "#C51B8A",
+          "#7A0177"
+        ],
+        "url": "https://colorbrewer2.org/export/colorbrewer.json"
+      },
+      "roles": {
+        "canvas": "#FEEBE2",
+        "surface": "#FFFFFF",
+        "ink": "#1F2933",
+        "accent": "#7A0177",
+        "evidence": "#C51B8A",
+        "signal": "#F768A1"
+      }
+    },
+    {
+      "id": "historical-red",
+      "use": "wojna, represje i ostrzeżenia",
+      "source": {
+        "scheme": "Reds",
+        "class": "sequential",
+        "colors": [
+          "#FEE5D9",
+          "#FCAE91",
+          "#FB6A4A",
+          "#DE2D26",
+          "#A50F15"
+        ],
+        "url": "https://colorbrewer2.org/export/colorbrewer.json"
+      },
+      "roles": {
+        "canvas": "#FEE5D9",
+        "surface": "#FFFFFF",
+        "ink": "#1F2933",
+        "accent": "#A50F15",
+        "evidence": "#DE2D26",
+        "signal": "#FB6A4A"
+      }
+    },
+    {
+      "id": "botanical",
+      "use": "kultura materialna i środowisko",
+      "source": {
+        "scheme": "YlGn",
+        "class": "sequential",
+        "colors": [
+          "#FFFFCC",
+          "#C2E699",
+          "#78C679",
+          "#31A354",
+          "#006837"
+        ],
+        "url": "https://colorbrewer2.org/export/colorbrewer.json"
+      },
+      "roles": {
+        "canvas": "#FFFFCC",
+        "surface": "#FFFFFF",
+        "ink": "#1F2933",
+        "accent": "#006837",
+        "evidence": "#31A354",
+        "signal": "#78C679"
+      }
+    },
+    {
+      "id": "map-depth",
+      "use": "migracje, przestrzeń i wody",
+      "source": {
+        "scheme": "YlGnBu",
+        "class": "sequential",
+        "colors": [
+          "#FFFFCC",
+          "#A1DAB4",
+          "#41B6C4",
+          "#2C7FB8",
+          "#253494"
+        ],
+        "url": "https://colorbrewer2.org/export/colorbrewer.json"
+      },
+      "roles": {
+        "canvas": "#FFFFCC",
+        "surface": "#FFFFFF",
+        "ink": "#1F2933",
+        "accent": "#253494",
+        "evidence": "#2C7FB8",
+        "signal": "#41B6C4"
+      }
+    },
+    {
+      "id": "ochre-atlas",
+      "use": "szlaki, gospodarka i starożytne miasta",
+      "source": {
+        "scheme": "YlOrBr",
+        "class": "sequential",
+        "colors": [
+          "#FFFFD4",
+          "#FED98E",
+          "#FE9929",
+          "#D95F0E",
+          "#993404"
+        ],
+        "url": "https://colorbrewer2.org/export/colorbrewer.json"
+      },
+      "roles": {
+        "canvas": "#FFFFD4",
+        "surface": "#FFFFFF",
+        "ink": "#1F2933",
+        "accent": "#993404",
+        "evidence": "#D95F0E",
+        "signal": "#FE9929"
+      }
+    },
+    {
+      "id": "amber-signal",
+      "use": "oś czasu, zmiana i konsekwencje",
+      "source": {
+        "scheme": "YlOrRd",
+        "class": "sequential",
+        "colors": [
+          "#FFFFB2",
+          "#FECC5C",
+          "#FD8D3C",
+          "#F03B20",
+          "#BD0026"
+        ],
+        "url": "https://colorbrewer2.org/export/colorbrewer.json"
+      },
+      "roles": {
+        "canvas": "#FFFFB2",
+        "surface": "#FFFFFF",
+        "ink": "#1F2933",
+        "accent": "#BD0026",
+        "evidence": "#F03B20",
+        "signal": "#FD8D3C"
+      }
+    },
+    {
+      "id": "gentle-accent",
+      "use": "lekka klasyfikacja lub zadania klas V–VI",
+      "source": {
+        "scheme": "Accent",
+        "class": "qualitative",
+        "colors": [
+          "#7FC97F",
+          "#BEAED4",
+          "#FDC086",
+          "#FFFF99",
+          "#386CB0",
+          "#F0027F",
+          "#BF5B17",
+          "#666666"
+        ],
+        "url": "https://colorbrewer2.org/export/colorbrewer.json"
+      },
+      "roles": {
+        "canvas": "#F4F7F8",
+        "surface": "#FFFFFF",
+        "ink": "#1F2933",
+        "accent": "#BEAED4",
+        "evidence": "#7FC97F",
+        "signal": "#FFFF99"
+      }
+    },
+    {
+      "id": "vivid-dark2",
+      "use": "wyraźne kategorie, maksymalnie pięć naraz",
+      "source": {
+        "scheme": "Dark2",
+        "class": "qualitative",
+        "colors": [
+          "#1B9E77",
+          "#D95F02",
+          "#7570B3",
+          "#E7298A",
+          "#66A61E",
+          "#E6AB02",
+          "#A6761D",
+          "#666666"
+        ],
+        "url": "https://colorbrewer2.org/export/colorbrewer.json"
+      },
+      "roles": {
+        "canvas": "#F4F7F8",
+        "surface": "#FFFFFF",
+        "ink": "#1F2933",
+        "accent": "#D95F02",
+        "evidence": "#1B9E77",
+        "signal": "#E7298A"
+      }
+    },
+    {
+      "id": "civic-paired",
+      "use": "porównania A/B i mapy polityczne",
+      "source": {
+        "scheme": "Paired",
+        "class": "qualitative",
+        "colors": [
+          "#A6CEE3",
+          "#1F78B4",
+          "#B2DF8A",
+          "#33A02C",
+          "#FB9A99",
+          "#E31A1C",
+          "#FDBF6F",
+          "#FF7F00",
+          "#CAB2D6",
+          "#6A3D9A"
+        ],
+        "url": "https://colorbrewer2.org/export/colorbrewer.json"
+      },
+      "roles": {
+        "canvas": "#F4F7F8",
+        "surface": "#FFFFFF",
+        "ink": "#1F2933",
+        "accent": "#1F78B4",
+        "evidence": "#A6CEE3",
+        "signal": "#33A02C"
+      }
+    },
+    {
+      "id": "balanced-set2",
+      "use": "łagodne role w ćwiczeniu lub syntezie",
+      "source": {
+        "scheme": "Set2",
+        "class": "qualitative",
+        "colors": [
+          "#66C2A5",
+          "#FC8D62",
+          "#8DA0CB",
+          "#E78AC3",
+          "#A6D854",
+          "#FFD92F",
+          "#E5C494",
+          "#B3B3B3"
+        ],
+        "url": "https://colorbrewer2.org/export/colorbrewer.json"
+      },
+      "roles": {
+        "canvas": "#F4F7F8",
+        "surface": "#FFFFFF",
+        "ink": "#1F2933",
+        "accent": "#FC8D62",
+        "evidence": "#66C2A5",
+        "signal": "#E78AC3"
+      }
+    },
+    {
+      "id": "soft-set3",
+      "use": "wprowadzanie pojęć klas V–VI",
+      "source": {
+        "scheme": "Set3",
+        "class": "qualitative",
+        "colors": [
+          "#8DD3C7",
+          "#FFFFB3",
+          "#BEBADA",
+          "#FB8072",
+          "#80B1D3",
+          "#FDB462",
+          "#B3DE69",
+          "#FCCDE5"
+        ],
+        "url": "https://colorbrewer2.org/export/colorbrewer.json"
+      },
+      "roles": {
+        "canvas": "#F4F7F8",
+        "surface": "#FFFFFF",
+        "ink": "#1F2933",
+        "accent": "#FFFFB3",
+        "evidence": "#8DD3C7",
+        "signal": "#FB8072"
+      }
+    },
+    {
+      "id": "land-sea",
+      "use": "dwie strony konfliktu lub zmiany środowiska",
+      "source": {
+        "scheme": "BrBG",
+        "class": "diverging",
+        "colors": [
+          "#A6611A",
+          "#DFC27D",
+          "#F5F5F5",
+          "#80CDC1",
+          "#018571"
+        ],
+        "url": "https://colorbrewer2.org/export/colorbrewer.json"
+      },
+      "roles": {
+        "canvas": "#F5F5F5",
+        "surface": "#FFFFFF",
+        "ink": "#1F2933",
+        "accent": "#A6611A",
+        "evidence": "#018571",
+        "signal": "#DFC27D"
+      }
+    },
+    {
+      "id": "growth-contrast",
+      "use": "dwie rozbieżne postawy lub skutki",
+      "source": {
+        "scheme": "PiYG",
+        "class": "diverging",
+        "colors": [
+          "#D01C8B",
+          "#F1B6DA",
+          "#F7F7F7",
+          "#B8E186",
+          "#4DAC26"
+        ],
+        "url": "https://colorbrewer2.org/export/colorbrewer.json"
+      },
+      "roles": {
+        "canvas": "#F7F7F7",
+        "surface": "#FFFFFF",
+        "ink": "#1F2933",
+        "accent": "#D01C8B",
+        "evidence": "#4DAC26",
+        "signal": "#F1B6DA"
+      }
+    },
+    {
+      "id": "civic-debate",
+      "use": "spór polityczny, religijny lub prawny",
+      "source": {
+        "scheme": "PRGn",
+        "class": "diverging",
+        "colors": [
+          "#7B3294",
+          "#C2A5CF",
+          "#F7F7F7",
+          "#A6DBA0",
+          "#008837"
+        ],
+        "url": "https://colorbrewer2.org/export/colorbrewer.json"
+      },
+      "roles": {
+        "canvas": "#F7F7F7",
+        "surface": "#FFFFFF",
+        "ink": "#1F2933",
+        "accent": "#7B3294",
+        "evidence": "#008837",
+        "signal": "#C2A5CF"
+      }
+    },
+    {
+      "id": "warm-cool",
+      "use": "porównanie dwóch modeli",
+      "source": {
+        "scheme": "PuOr",
+        "class": "diverging",
+        "colors": [
+          "#E66101",
+          "#FDB863",
+          "#F7F7F7",
+          "#B2ABD2",
+          "#5E3C99"
+        ],
+        "url": "https://colorbrewer2.org/export/colorbrewer.json"
+      },
+      "roles": {
+        "canvas": "#F7F7F7",
+        "surface": "#FFFFFF",
+        "ink": "#1F2933",
+        "accent": "#E66101",
+        "evidence": "#5E3C99",
+        "signal": "#FDB863"
+      }
+    },
+    {
+      "id": "conflict-map",
+      "use": "front, granice i zestawienie stanowisk",
+      "source": {
+        "scheme": "RdBu",
+        "class": "diverging",
+        "colors": [
+          "#CA0020",
+          "#F4A582",
+          "#F7F7F7",
+          "#92C5DE",
+          "#0571B0"
+        ],
+        "url": "https://colorbrewer2.org/export/colorbrewer.json"
+      },
+      "roles": {
+        "canvas": "#F7F7F7",
+        "surface": "#FFFFFF",
+        "ink": "#1F2933",
+        "accent": "#CA0020",
+        "evidence": "#0571B0",
+        "signal": "#F4A582"
+      }
+    },
+    {
+      "id": "evidence-grey",
+      "use": "materiał źródłowy kontra komentarz",
+      "source": {
+        "scheme": "RdGy",
+        "class": "diverging",
+        "colors": [
+          "#CA0020",
+          "#F4A582",
+          "#FFFFFF",
+          "#BABABA",
+          "#404040"
+        ],
+        "url": "https://colorbrewer2.org/export/colorbrewer.json"
+      },
+      "roles": {
+        "canvas": "#FFFFFF",
+        "surface": "#FFFFFF",
+        "ink": "#1F2933",
+        "accent": "#CA0020",
+        "evidence": "#404040",
+        "signal": "#F4A582"
+      }
+    },
+    {
+      "id": "temperature-change",
+      "use": "wieloczynnikowa zmiana i ocena",
+      "source": {
+        "scheme": "RdYlBu",
+        "class": "diverging",
+        "colors": [
+          "#D7191C",
+          "#FDAE61",
+          "#FFFFBF",
+          "#ABD9E9",
+          "#2C7BB6"
+        ],
+        "url": "https://colorbrewer2.org/export/colorbrewer.json"
+      },
+      "roles": {
+        "canvas": "#FFFFBF",
+        "surface": "#FFFFFF",
+        "ink": "#1F2933",
+        "accent": "#D7191C",
+        "evidence": "#2C7BB6",
+        "signal": "#FDAE61"
+      }
+    }
+  ]
+}
