@@ -15,11 +15,11 @@
 
 ## Przebieg operacyjny
 1. **0–4 min — wejście:** pokaż tytuł i mapę orientacyjną. Poproś pary o wskazanie, które dwa miejsca już znają z historii renesansu. Nie oczekuj wiedzy o doktrynach.
-2. **4–12 min — przyczyny i Luter:** omów cztery grupy przyczyn, 1517 r. oraz trzy daty z osi. Uczniowie zapisują w karcie własnymi słowami, czego dotyczył sprzeciw Lutra.
-3. **12–18 min — źródło:** pary czytają dwa krótkie zdania z tez i odpowiadają na pytania na slajdzie. Zbierz odpowiedź: „Ewangelia, nie odpust, jest dla Lutra najważniejsza”.
+2. **4–12 min — przyczyny i Luter:** uczniowie przepisują dziewięć gałęzi mapy myśli w skróconej formie; omów 1517 r. oraz trzy daty z osi.
+3. **12–18 min — źródło:** pary czytają tekst z podręcznika na s. 32 i odpowiadają na pytania ze slajdu. Obraz przybijania tez przedstaw jako tradycję, nie pewny fakt.
 4. **18–27 min — poglądy i rozprzestrzenienie:** wyjaśnij rolę Biblii, wiary i łaski, następnie mechanizm druku, kazań oraz poparcia części władców.
 5. **27–34 min — Kalwin i Anglia:** uczniowie uzupełniają w karcie tabelę trzech nurtów. Zatrzymaj się przy różnicy między Genewą a Anglią.
-6. **34–40 min — konflikty, Augsburg i skutki:** omów, że konflikty miały zarazem przyczyny religijne i polityczne. Przeczytaj zasadę z 1555 r.; uczniowie dopisują jej ograniczenie.
+6. **34–40 min — konflikty, Augsburg i skutki:** omów, że konflikty miały zarazem przyczyny religijne i polityczne. Noc św. Bartłomieja potraktuj jako konkretny przykład przemocy, a edykt nantejski jako ograniczony kompromis — nie pełną wolność religijną.
 7. **40–42 min — porównanie i notatka:** wspólnie odczytaj tabelę; uczniowie przepisują notatkę do zeszytu lub wklejają podsumowanie.
 8. **42–45 min — bilet wyjścia:** praca indywidualna; zbierz odpowiedzi przy wyjściu.
 
@@ -30,6 +30,9 @@
 - **Predestynacja:** nazwij ją poglądem Kalwina, że Bóg z góry wie, kto zostanie zbawiony. Nie proś uczniów o ocenę prawdziwości tego poglądu.
 - **Pokój augsburski:** nie była to współczesna wolność sumienia. Wybór należał do władcy i dotyczył katolicyzmu albo luteranizmu w Rzeszy.
 - **Wojny religijne:** nie redukuj ich do wiary; podkreśl także władzę, majątek i niezależność państw.
+- **Edykt nantejski:** podkreśl, że katolicyzm zachował uprzywilejowaną pozycję, a swoboda kultu hugenotów była ograniczona do określonych miejsc.
+- **Biblia Lutra:** nie nazywaj jej pierwszym niemieckim przekładem. Była pierwszym tak wpływowym przekładem z języków oryginalnych, szeroko rozpowszechnionym dzięki drukowi.
+- **Mapa współczesna:** kolor oznacza najliczniejszą wspólnotę w kraju, nie jednolitość religijną jego mieszkańców; wspomnij też osoby bezwyznaniowe.
 
 ## Warianty
 - **Rdzeń:** przyczyny, 1517 r., źródło, poglądy Lutra, tabela trzech nurtów, skutki i bilet wyjścia.

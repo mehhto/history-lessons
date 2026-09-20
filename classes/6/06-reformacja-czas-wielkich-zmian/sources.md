@@ -14,6 +14,7 @@
 | [Geneza i początek reformacji](https://zpe.gov.pl/b/geneza-i-poczatek-reformacji/PLHc19zDW) | przyczyny reformacji i krytyka odpustów |
 | [Początek reformacji — wystąpienie Marcina Lutra](https://zpe.gov.pl/b/poczatek-reformacji-wystapienie-marcina-lutra/P3P0cKdbk) | rok 1517 i materiał źródłowy „95 tez” |
 | [Który Kościół wybrać? Renesansowa reformacja](https://zpe.gov.pl/b/ktory-kosciol-wybrac-renesansowa-reformacja/PjIWATs8y) | porównanie nurtów protestantyzmu |
+| [Który Kościół wybrać? Renesansowa reformacja](https://zpe.gov.pl/a/ktory-kosciol-wybrac-renesansowa-reformacja/DLyVxO829) | ilustracja otwierająca i kontekst reformacji |
 | [Przebieg reformacji w innych krajach europejskich](https://zpe.gov.pl/b/przebieg-reformacji-w-innych-krajach-europejskich/Pscpu4GWL) | mapa i rozprzestrzenienie reformacji |
 
 ## Źródła faktów i tekstów
@@ -21,6 +22,7 @@
 2. **Encyclopaedia Britannica**, [„Martin Luther”](https://www.britannica.com/biography/Martin-Luther), [„Reformation”](https://www.britannica.com/event/Reformation), [„John Calvin”](https://www.britannica.com/biography/John-Calvin), [„Anglicanism”](https://www.britannica.com/topic/Anglicanism) — daty, osoby, podstawowe pojęcia i zasięg ruchów.
 3. **Encyclopaedia Britannica**, [„Peace of Augsburg”](https://www.britannica.com/event/Peace-of-Augsburg) — 1555 r., zasada *cuius regio, eius religio* i ograniczenie do katolicyzmu oraz luteranizmu w Rzeszy.
 4. **The National Archives (UK)**, [„The Act of Supremacy 1534”](https://www.nationalarchives.gov.uk/education/resources/henry-viii/act-of-supremacy/) — kontekst zwierzchnictwa Henryka VIII nad Kościołem Anglii.
+5. **Encyclopaedia Britannica**, [„Edict of Nantes”](https://www.britannica.com/event/Edict-of-Nantes) — data, autor i najważniejsze postanowienia edyktu z 1598 r.
 
 ## Materiały lokalne i wizualne
 
@@ -31,6 +33,11 @@
 | `95-tez-faksymile.jpg` | Marcin Luter, 1517 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ninety-five_Theses_(Basel).jpg), domena publiczna; faksymile druku. |
 | `jan-kalwin-ok-1550.jpg` | autor anonimowy, ok. 1550 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Portrait_of_John_Calvin_(1509%E2%80%931564),_by_anonymous_-_Museum_Catharijneconvent.jpg), domena publiczna. |
 | `pokoj-augsburski-1555.jpg` | autor nieznany, XVI w. | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Peace-of-augsburg_1555.jpg), domena publiczna; dokument z epoki. |
+| `mapa-reformacji-zpe.jpg` | Zintegrowana Platforma Edukacyjna | [Reformacja w Europie](https://static.zpe.gov.pl/portal/f/res-minimized/RefsTNpzgQH5t/1662386924/jQ27z3L3FzECc1YyAzoPhLYzmoaiElIA.jpg), materiał edukacyjny ZPE. |
+| `reformacja-zpe-otwarcie.jpg` | ilustracja historyczna udostępniona w ZPE | [Który Kościół wybrać?](https://zpe.gov.pl/a/ktory-kosciol-wybrac-renesansowa-reformacja/DLyVxO829), użycie dydaktyczne z podaniem źródła. |
+| `luter-przybija-tezy.webp` | ilustracja użyta w artykule DoRzeczy | [Marcin Luter — reformator czy szkodnik?](https://historia.dorzeczy.pl/nowozytnosc/799356/marcin-luter-reformator-czy-szkodnik-95-tez-lutra.html), źródło wskazane przez nauczyciela. |
+| `noc-sw-bartlomieja.jpg` | François Dubois, ok. 1572–1584 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Francois_Dubois_001.jpg), domena publiczna. |
+| `religie-europy-wspolczesnie.svg` | Weisself i ImStevan; dane World Religion Database, IX 2020 | [Plurality Religious Denomination by Europe](https://commons.wikimedia.org/wiki/File:Plurality_Religious_Denomination_by_Europe.svg), CC BY-SA 4.0; mapa pokazuje najliczniejszą grupę, nie pełną strukturę społeczeństwa. |
 
 ## Status źródeł
 - Fakty i cytat mają wskazane źródła referencyjne, ale `source_reviewed` pozostaje **false**, dopóki nauczyciel nie potwierdzi: wydania programu *Wczoraj i dziś*, szczegółowego ujęcia odpustów oraz adresów ZPE przekazanych poza dostępnym zleceniem.

@@ -33,11 +33,11 @@ Dlaczego reformacja podzieliła zachodnie chrześcijaństwo i zmieniła Europę?
 | ID | Cel | Purpose / layout | Główny komunikat | Działanie ucznia | Czas |
 |---|---|---|---|---|---:|
 | otwarcie, mapa-europy | orientacja | opening / statement; explanation / matrix | miejsca mają różne role w reformacji | wskazuje znane miejsca | 4 min |
-| przyczyny, luter-1517 | geneza i chronologia | explanation / impact-flow; timeline-band | reformacja miała kilka przyczyn | porządkuje łańcuch | 8 min |
-| zrodlo-tezy, poglady-lutra | źródło i wyjaśnienie | evidence / evidence; explanation / comparison | Luter odrzucał pewność zbawienia przez odpust | odczytuje dwa zdania | 6 min |
+| przyczyny, luter-1517 | geneza i chronologia | explanation / mind-map; timeline-band | reformacja miała przyczyny religijne, polityczne, społeczne i kulturowe | tworzy skróconą mapę myśli | 8 min |
+| zrodlo-tezy, luter-przybija-tezy, poglady-lutra | źródło i wyjaśnienie | evidence; hero-source; comparison | Luter odrzucał pewność zbawienia przez odpust | czyta źródło z podręcznika, odróżnia fakt od tradycji | 6 min |
 | rozprzestrzenienie, kalwin, anglia | nurty i mechanizm | process; split; statement | reformacja rozchodziła się różnymi drogami | uzupełnia tabelę | 13 min |
-| wojny-religijne, augsburg, skutki | konsekwencje | impact-flow; statement; synthesis | konflikt miał też przyczyny polityczne | interpretuje zasadę z 1555 | 9 min |
-| protestanci, porownanie, notatka, bilet | synteza i ocena | statement; comparison; takeaways; activity-brief | protestanci nie są jedną wspólnotą | porównuje i odpowiada samodzielnie | 5 min |
+| wojny-religijne, augsburg, noc-bartlomieja, edykt-nantejski, skutki | konsekwencje | impact-flow; statement; hero-source; comparison; synthesis | konflikt miał też przyczyny polityczne, a pokój wymagał kompromisu | interpretuje zasadę z 1555 i przykłady z Francji | 9 min |
+| protestanci, porownanie, notatka, bilet, religie-dzis | synteza i ocena | statement; comparison; takeaways; activity-brief; map | protestanci nie są jedną wspólnotą, a dzisiejsza Europa jest zróżnicowana | porównuje, odpowiada samodzielnie i odczytuje współczesną mapę | 5 min |
 
 ## Pełne minimum wiedzy
 - Reformacja była ruchem odnowy religijnej XVI w. Jej przyczyny obejmowały krytykę nadużyć, spór o odpusty, humanistyczną lekturę tekstów, rozwój druku oraz poparcie części władców.
