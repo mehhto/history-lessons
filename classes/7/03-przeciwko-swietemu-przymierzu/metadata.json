@@ -1,0 +1,18 @@
+{
+  "id": "03-przeciwko-swietemu-przymierzu",
+  "title": "Przeciwko Świętemu Przymierzu",
+  "grade": 7,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa (podstawa 2017, tekst obowiązujący: Dz.U. 2024 poz. 996)",
+  "duration_minutes": 45,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "status": "OCZEKUJE NA WERYFIKACJĘ NAUCZYCIELA",
+  "curriculum_requirement": "Temat podręcznikowy rozwijający kontekst polityczny ziem polskich w latach 1815–1848 oraz Europy w XIX wieku; formalne wymagania aktywnej podstawy: XX.1–4 i XXII.1.",
+  "main_question": "Dlaczego narody i grupy społeczne występowały przeciw ładowi bronionemu przez Święte Przymierze i co po tych wystąpieniach pozostało?",
+  "source_reviewed": true,
+  "teacher_reviewed": false,
+  "offline_checked": false,
+  "pdf_exported": false,
+  "appearance": { "style": "atlas", "palette": "earth" }
+}

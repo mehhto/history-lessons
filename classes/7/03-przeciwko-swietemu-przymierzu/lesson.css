@@ -1,0 +1,437 @@
+/* Przeciwko Świętemu Przymierzu — płaski atlas buntu. */
+:root {
+  --revolt-navy: #17324d;
+  --revolt-blue: #2f6f9f;
+  --revolt-teal: #147d79;
+  --revolt-amber: #d89517;
+  --revolt-coral: #c45448;
+  --revolt-ink: #17212b;
+  --revolt-paper: #f3f6f7;
+  --revolt-line: #b9c6cc;
+}
+
+/* Bez gradientów i bez odziedziczonego kremowego tła. */
+.reveal .slides section[data-slide-canvas] {
+  background: var(--revolt-paper) !important;
+  background-image: none !important;
+}
+.reveal .slides section[data-slide-canvas] > .slide-content {
+  padding: 42px 56px;
+  background-image: none !important;
+}
+.reveal .slides section h2 {
+  margin: 0 0 24px;
+  color: var(--revolt-navy);
+  font-size: 1.43em;
+  line-height: 1.04;
+  letter-spacing: -.025em;
+}
+.reveal h2::after { border-color: var(--revolt-amber); }
+.reveal .source-figure { margin: 0; }
+.reveal .source-figure figcaption {
+  margin: 0;
+  padding: 7px 0 0 10px;
+  border-left: 3px solid var(--revolt-amber);
+  color: #4b5962;
+  background: transparent;
+  font-size: 15px;
+  line-height: 1.18;
+  text-align: left;
+}
+
+/* 1. Otwarcie: dwa płaskie pola, bez nakładania tekstu na obraz. */
+html .reveal .slides #otwarcie > .slide-content {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+  background: var(--revolt-navy) !important;
+}
+html .reveal .slides #otwarcie .hero-source-image {
+  position: absolute;
+  inset: 0 0 0 auto;
+  z-index: 0;
+  width: 52%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  object-fit: cover;
+  object-position: 58% center;
+  filter: none;
+}
+#otwarcie .hero-copy {
+  position: absolute;
+  inset: 0 auto 0 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 48%;
+  padding: 64px 58px;
+  color: #fff;
+  background: var(--revolt-navy);
+}
+#otwarcie h1 {
+  margin: 18px 0 20px;
+  color: #fff;
+  font-size: 2.05em;
+  line-height: .98;
+  letter-spacing: -.035em;
+}
+#otwarcie .hero-copy p { margin: 0; color: #eef5f6; font-size: .82em; line-height: 1.28; }
+#otwarcie .source-label {
+  width: fit-content;
+  margin: 0;
+  padding: 7px 10px;
+  border: 0;
+  color: var(--revolt-navy);
+  background: #ffca55;
+  font-size: 15px;
+  line-height: 1.15;
+}
+
+/* 2. Graficzna oś czasu — trzy warianty do porównania. */
+#os-czasu .slide-content { display: grid; grid-template-rows: auto 1fr auto; }
+.graphic-timeline { align-self: center; position: relative; width: 100%; }
+.graphic-timeline .timeline-event { position: relative; min-width: 0; }
+.graphic-timeline b,.graphic-timeline span { display: block; }
+
+/* A: klasyczna linia z naprzemiennymi opisami. */
+.timeline-a { display: grid; grid-template-columns: repeat(5,1fr); align-items: center; height: 330px; }
+.timeline-a::before { content: ""; position: absolute; left: 4%; right: 4%; top: 50%; height: 8px; background: var(--revolt-blue); }
+.timeline-a .timeline-event { display: grid; justify-items: center; height: 100%; text-align: center; }
+.timeline-a .timeline-event::before { content: ""; position: absolute; top: calc(50% - 13px); left: 50%; z-index: 2; width: 26px; height: 26px; transform: translateX(-50%); border: 6px solid var(--revolt-paper); border-radius: 50%; background: var(--revolt-amber); box-shadow: 0 0 0 3px var(--revolt-blue); }
+.timeline-a .timeline-event::after { content: ""; position: absolute; left: 50%; width: 3px; height: 65px; transform: translateX(-50%); background: var(--revolt-blue); }
+.timeline-a .timeline-event:nth-child(odd) { align-content: start; padding-top: 28px; }
+.timeline-a .timeline-event:nth-child(odd)::after { top: 100px; }
+.timeline-a .timeline-event:nth-child(even) { align-content: end; padding-bottom: 27px; }
+.timeline-a .timeline-event:nth-child(even)::after { bottom: 100px; }
+.timeline-a b { z-index: 3; padding: 0 8px; color: var(--revolt-navy); background: var(--revolt-paper); font-size: .69em; }
+.timeline-a span { max-width: 180px; margin-top: 8px; font-size: .51em; line-height: 1.18; }
+
+/* B: linia „metro” z trzema etapami narastania kryzysu. */
+.timeline-b { display: grid; grid-template-columns: repeat(5,1fr); height: 310px; padding: 62px 28px 0; background: var(--revolt-navy); }
+.timeline-b::before { content: ""; position: absolute; left: 7%; right: 7%; top: 112px; height: 12px; background: #ffca55; }
+.timeline-b::after { content: "lokalne bunty  →  fala rewolucji  →  kryzys współpracy mocarstw"; position: absolute; left: 4%; right: 4%; bottom: 23px; color: #9fc0d0; font: 700 15px/1.2 var(--font-body); letter-spacing: .04em; text-align: center; }
+.timeline-b .timeline-event { color: #fff; text-align: center; }
+.timeline-b .timeline-event::before { content: ""; display: block; width: 24px; height: 24px; margin: 40px auto 22px; border: 6px solid var(--revolt-navy); border-radius: 50%; background: #ffca55; box-shadow: 0 0 0 4px #ffca55; }
+.timeline-b b { color: #ffca55; font-size: .66em; }
+.timeline-b span { margin: 7px auto 0; max-width: 175px; color: #fff; font-size: .48em; line-height: 1.16; }
+
+/* C: pionowa oś redakcyjna. */
+.timeline-c { display: grid; grid-template-rows: repeat(5,1fr); height: 360px; padding: 8px 55px 8px 145px; }
+.timeline-c::before { content: ""; position: absolute; left: 104px; top: 8px; bottom: 8px; width: 8px; background: var(--revolt-coral); }
+.timeline-c .timeline-event { position: relative; display: grid; grid-template-columns: 170px 1fr; align-items: center; min-height: 0; padding: 0 18px; border-bottom: 1px solid #c3cdd1; transform: none; text-align: left; }
+.timeline-c .timeline-event:last-child { border-bottom: 0; }
+.timeline-c .timeline-event::before { content: ""; position: absolute; left: -53px; width: 24px; height: 24px; border-radius: 50%; background: var(--revolt-coral); box-shadow: 0 0 0 6px var(--revolt-paper); }
+.timeline-c .timeline-event:nth-child(1),
+.timeline-c .timeline-event:nth-child(2),
+.timeline-c .timeline-event:nth-child(3),
+.timeline-c .timeline-event:nth-child(4),
+.timeline-c .timeline-event:nth-child(5) { --rise: 0px; }
+.timeline-c b { color: var(--revolt-navy); font-size: .67em; }
+.timeline-c span { max-width: none; margin: 0; font-size: .53em; line-height: 1.16; }
+#os-czasu .memory-line {
+  margin: 20px 0 0;
+  padding: 14px 20px;
+  color: #fff;
+  background: var(--revolt-navy);
+  font-size: .68em;
+  text-align: center;
+}
+
+/* Materiały mapowe i obrazowe wypełniają środek slajdu. */
+#opór .slide-content,
+#francja-1830 .slide-content,
+#francja-1848 .slide-content,
+#francja-czerwiec .slide-content,
+#europa-1848 .slide-content,
+#krym .slide-content {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+}
+.reveal .source-split-grid,
+#opór .map-focus-grid {
+  align-self: center;
+  display: grid;
+  grid-template-columns: minmax(0, 1.72fr) minmax(290px, .82fr);
+  gap: 26px;
+  width: 100%;
+  min-height: 0;
+}
+.reveal .source-split-grid .source-figure,
+#opór .source-figure {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+  min-height: 0;
+}
+.reveal .source-split-grid .source-figure img,
+#opór .source-figure img {
+  width: 100%;
+  height: 430px;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  object-fit: cover;
+}
+#opór .source-figure img,
+#europa-1848 .source-figure img,
+#krym .source-figure img { object-fit: contain; background: #e7eef1; }
+.reveal .analysis-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+  padding: 24px;
+  border: 0;
+  border-top: 8px solid var(--revolt-blue);
+  background: #e6edf0;
+}
+.reveal .analysis-panel p {
+  margin: 0;
+  padding: 11px 0;
+  border-bottom: 1px solid #aebdc4;
+  font-size: .56em;
+  line-height: 1.23;
+}
+.reveal .analysis-panel p:last-child { border-bottom: 0; }
+#europa-1848 .source-split-grid { grid-template-columns: minmax(0, 1.48fr) minmax(320px, .92fr); }
+#europa-1848 .source-figure img { height: 360px; }
+#europa-1848 .analysis-panel p { padding: 7px 0; font-size: .51em; }
+#europa-1848 .student-task {
+  width: 100%;
+  min-height: 0;
+  margin: 12px 0 0;
+  padding: 12px 18px;
+  border: 0;
+  color: #fff;
+  background: var(--revolt-blue);
+}
+#europa-1848 .student-task p { margin: 0; font-size: .6em; text-align: center; }
+
+/* 4. Dekabryści: duży, centralny mechanizm. */
+#dekabrysci .slide-content { display: grid; grid-template-rows: auto 1fr auto; }
+#dekabrysci .concept-equation {
+  align-self: center;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  gap: 18px;
+  width: 100%;
+  margin: 0;
+}
+#dekabrysci .concept-equation > span:not(.operator) {
+  min-height: 210px;
+  padding: 34px 22px;
+  border: 0;
+  border-top: 9px solid var(--revolt-amber);
+  background: #fff;
+  box-shadow: 0 9px 0 #d8e1e5;
+}
+#dekabrysci .concept-equation > span.result { color: #fff; border-color: #8fd0cc; background: var(--revolt-teal); }
+#dekabrysci .concept-equation .result b,
+#dekabrysci .concept-equation .result small { color: #fff; }
+#dekabrysci .memory-line {
+  margin: 18px 0 0;
+  padding: 14px 20px;
+  color: var(--revolt-navy);
+  background: #dce9ec;
+  font-size: .68em;
+  text-align: left;
+}
+
+/* 6. Warstwy społeczne zamiast tabeli. */
+#burzuazja .slide-content { display: grid; grid-template-rows: auto 1fr auto; }
+.social-layers { align-self: center; display: grid; gap: 12px; }
+.social-row {
+  display: grid;
+  grid-template-columns: 205px 1fr 225px;
+  align-items: center;
+  min-height: 105px;
+  border-left: 12px solid #8196a1;
+  background: #fff;
+  box-shadow: 0 7px 0 #d9e2e6;
+}
+.social-row strong { padding: 0 24px; color: var(--revolt-navy); font-size: .63em; letter-spacing: .035em; }
+.social-row span { padding: 0 22px; border-left: 1px solid var(--revolt-line); font-size: .62em; line-height: 1.22; }
+.social-row b { align-self: stretch; display: grid; place-items: center; padding: 14px; color: #fff; background: #687d88; font-size: .48em; line-height: 1.18; text-align: center; }
+.social-row.winner { border-left-color: var(--revolt-amber); }
+.social-row.winner b { color: var(--revolt-navy); background: #ffca55; }
+.lesson-verdict {
+  margin: 18px 0 0;
+  padding: 13px 20px;
+  color: #fff;
+  background: var(--revolt-navy);
+  font-size: .65em;
+  text-align: center;
+}
+
+/* 7. Definicja jako kontrastowy manifest, nie kolejna jasna plansza. */
+.reveal .slides #wiosna-definicja { color: #fff; background: var(--revolt-navy) !important; }
+#wiosna-definicja .slide-content { display: grid; grid-template-rows: auto auto 1fr auto; align-content: center; }
+#wiosna-definicja h2 { color: #fff; }
+#wiosna-definicja h2::after { border-color: #ffca55; }
+#wiosna-definicja .statement-text {
+  max-width: 1040px;
+  margin: 12px 0 34px;
+  color: #eef5f6;
+  font-size: .94em;
+  line-height: 1.28;
+}
+#wiosna-definicja .statement-text strong { color: #ffca55; }
+.revolt-motives {
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 100%;
+}
+.revolt-motives span {
+  display: grid;
+  grid-template-columns: 54px 1fr;
+  align-items: center;
+  min-height: 120px;
+  padding: 20px;
+  border-top: 7px solid #ffca55;
+  color: #fff;
+  background: #24506f;
+  font-size: .65em;
+  line-height: 1.18;
+}
+.revolt-motives b { color: #ffca55; font-size: .82em; }
+.spring-note { margin: 28px 0 0; color: #bed4df; font-size: .62em; }
+
+/* 8. Cztery przyczyny jako pasy przyczyna → żądanie. */
+#przyczyny .slide-content { display: grid; grid-template-rows: auto 1fr; }
+.cause-lanes {
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  width: 100%;
+}
+.cause-lanes > div {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 355px;
+  padding: 25px 20px;
+  border-top: 10px solid var(--revolt-blue);
+  background: #fff;
+  box-shadow: 0 9px 0 #d8e1e5;
+}
+.cause-lanes > div:nth-child(2) { border-color: var(--revolt-amber); }
+.cause-lanes > div:nth-child(3) { border-color: var(--revolt-coral); }
+.cause-lanes > div:nth-child(4) { border-color: var(--revolt-teal); }
+.cause-lanes b { color: #5b6b74; font-size: .48em; letter-spacing: .08em; }
+.cause-lanes strong { margin-top: 18px; color: var(--revolt-navy); font-size: .72em; line-height: 1.08; }
+.cause-lanes span { align-self: center; color: var(--revolt-amber); font-size: 1.25em; text-align: center; }
+.cause-lanes p { margin: 0; padding-top: 16px; border-top: 2px solid var(--revolt-line); font-size: .59em; line-height: 1.2; }
+
+/* 9. Proces ma realną wysokość i jeden mocny finał. */
+#mechanizm .slide-content { display: grid; grid-template-rows: auto 1fr auto; }
+#mechanizm .concept-equation {
+  align-self: center;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  gap: 18px;
+  width: 100%;
+  margin: 0;
+}
+#mechanizm .concept-equation > span:not(.operator) { min-height: 225px; padding: 36px 24px; border: 0; border-top: 9px solid var(--revolt-blue); background: #fff; }
+#mechanizm .concept-equation > span.result { color: #fff; border-color: #8fd0cc; background: var(--revolt-teal); }
+#mechanizm .concept-equation .result b,
+#mechanizm .concept-equation .result small { color: #fff; }
+#mechanizm .memory-line { margin: 18px 0 0; padding: 14px; color: #fff; background: var(--revolt-navy); font-size: .66em; text-align: center; }
+
+/* 13. Bilans: dwie strony i środkowa teza zamiast tabeli. */
+#bilans .slide-content { display: grid; grid-template-rows: auto 1fr auto; }
+.balance-board {
+  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr 210px 1fr;
+  align-items: stretch;
+  width: 100%;
+  min-height: 350px;
+}
+.balance-board > .lost,
+.balance-board > .remained { padding: 30px; color: #fff; }
+.balance-board .lost { background: var(--revolt-coral); }
+.balance-board .remained { background: var(--revolt-teal); }
+.balance-board h3 { margin: 0 0 25px; color: #fff; font-size: .78em; letter-spacing: .05em; }
+.balance-board p { margin: 0; padding: 18px 0; border-top: 1px solid rgba(255,255,255,.55); font-size: .65em; line-height: 1.2; }
+.balance-axis { display: grid; place-content: center; gap: 20px; color: var(--revolt-navy); background: #ffca55; text-align: center; }
+.balance-axis b { font-size: .68em; }
+.balance-axis span { font-size: .57em; line-height: 1.25; }
+
+/* 15. Pełna notatka: jedna wyrównana kolumna dat i treści. */
+.reveal .slides #podsumowanie { color: #fff; background: var(--revolt-navy) !important; }
+#podsumowanie .slide-content { display: grid; grid-template-rows: auto 1fr; }
+#podsumowanie h2 { color: #fff; }
+#podsumowanie h2::after { border-color: #ffca55; }
+.summary-route {
+  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  width: 100%;
+}
+.summary-route div {
+  display: grid;
+  grid-template-columns: 175px 1fr;
+  align-items: center;
+  min-height: 58px;
+  border-bottom: 1px solid #54738a;
+  background: #21445f;
+}
+.summary-route b { align-self: stretch; display: grid; place-items: center; padding: 0 10px; color: var(--revolt-navy); background: #ffca55; font-size: .54em; text-align: center; }
+.summary-route span { padding: 9px 18px; color: #fff; font-size: .45em; line-height: 1.18; }
+
+/* 16. Bilet: prostokąt, trzy rzędy, bez pionowej kreski i zagnieżdżonych ramek. */
+.reveal .slides #bilet { color: #fff; background: var(--revolt-blue) !important; }
+#bilet .slide-content {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 100%;
+  height: 100%;
+  padding: 48px 105px 38px;
+  border: 0 !important;
+  background: transparent !important;
+}
+#bilet .slide-content::before,
+#bilet .slide-content::after { display: none !important; content: none !important; }
+#bilet h2 { color: #fff; }
+#bilet h2::after { display: none; }
+.exit-ticket-board {
+  align-self: center;
+  width: 100%;
+  color: var(--revolt-ink);
+  background: #fff;
+  box-shadow: 10px 10px 0 #1f5279;
+}
+.exit-lead { margin: 0; padding: 18px 24px; color: #fff; background: var(--revolt-navy); font-size: .61em; }
+.exit-ticket-board ol { margin: 0; padding: 0; list-style: none; counter-reset: exit; }
+.exit-ticket-board li {
+  counter-increment: exit;
+  display: grid;
+  grid-template-columns: 55px 145px 1fr;
+  align-items: center;
+  min-height: 94px;
+  padding: 0 22px 0 0;
+  border-bottom: 1px solid #c8d3d8;
+}
+.exit-ticket-board li:last-child { border-bottom: 0; }
+.exit-ticket-board li::before { content: counter(exit); color: var(--revolt-blue); font: 800 28px/1 var(--font-heading); text-align: center; }
+.exit-ticket-board li b { color: var(--revolt-navy); font-size: .58em; }
+.exit-ticket-board li span { font-size: .56em; line-height: 1.2; }
+.exit-meta { margin: 16px 0 0; color: #fff; font-size: .55em; font-weight: 700; text-align: center; }
+
+/* Źródła pozostają spokojnym slajdem referencyjnym. */
+#zrodla .slide-content { font-size: .68em; }
+#zrodla .model-note { font-size: .74em; }
+
+@media print {
+  #otwarcie .hero-copy,
+  .balance-board section,
+  #bilet,
+  #podsumowanie { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+}
