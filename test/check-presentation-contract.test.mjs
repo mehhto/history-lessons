@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { mkdir, mkdtemp, readFile, rm, symlink, writeFile } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
+import { presentationInputPaths } from '../scripts/presentation-inputs.mjs';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 
@@ -31,6 +32,10 @@ async function fixture({ fixtureMetadata = metadata, slidesMarkdown = '<!-- .sli
   const root = await mkdtemp(path.join(os.tmpdir(), 'presentation-contract-'));
   const lesson = path.join(root, 'classes/6/01-test');
   await mkdir(lesson, { recursive: true });
+  for (const [, source] of presentationInputPaths({ repoRoot: root, lessonDirectory: lesson, artifact: false })) {
+    await mkdir(path.dirname(source), { recursive: true });
+    await writeFile(source, 'source');
+  }
   await writeFile(path.join(lesson, 'metadata.json'), `${JSON.stringify(fixtureMetadata)}\n`);
   await writeFile(path.join(lesson, 'slides.md'), slidesMarkdown);
   return { root, lesson: 'classes/6/01-test' };

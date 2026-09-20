@@ -45,6 +45,34 @@ function isNonWaivable(rule) {
   return typeof rule === 'string' && (rule.startsWith('A11Y-') || rule === 'TYPE-SCALE-001');
 }
 
+function reviewRecordIssues(review) {
+  if (!review || typeof review !== 'object' || Array.isArray(review)) return ['contract-review.json musi być obiektem.'];
+  const issues = [];
+  for (const key of Object.keys(review)) {
+    if (!['contractVersion', 'presentationRevision', 'browser', 'human'].includes(key)) issues.push(`contract-review.json: nieobsługiwane pole „${key}”.`);
+  }
+  if (review.contractVersion !== PRESENTATION_CONTRACT_VERSION) issues.push(`contract-review.json: nieobsługiwana wersja „${review.contractVersion ?? 'brak'}”.`);
+  if (!nonEmptyText(review.presentationRevision)) issues.push('contract-review.json.presentationRevision jest wymagane.');
+  for (const [name, issueField] of [['browser', 'issues'], ['human', 'blockers']]) {
+    const gate = review[name];
+    if (!gate || typeof gate !== 'object' || Array.isArray(gate)) issues.push(`contract-review.json.${name} musi być obiektem.`);
+    else {
+      if (typeof gate.completed !== 'boolean') issues.push(`contract-review.json.${name}.completed musi być wartością logiczną.`);
+      if (!Array.isArray(gate[issueField])) issues.push(`contract-review.json.${name}.${issueField} musi być tablicą.`);
+      if (name === 'human' && !Array.isArray(gate.warnings)) issues.push('contract-review.json.human.warnings musi być tablicą.');
+    }
+  }
+  return issues;
+}
+
+function reviewGate(review, issueField, gateName, stale) {
+  if (stale) return { status: 'stale', issues: [`${gateName}: review dotyczy innej rewizji prezentacji.`] };
+  if (review?.completed !== true) return { status: 'pending', issues: [] };
+  if (!Array.isArray(review[issueField])) return { status: 'fail', issues: [`${gateName}.${issueField} musi być tablicą.`] };
+  const issues = review[issueField];
+  return { status: issues.length === 0 ? 'pass' : 'fail', issues };
+}
+
 function validateException(candidate, index, { version, slideIds, elementIds, elementTargets }) {
   const label = `Wyjątek ${index + 1}`;
   const issues = [];
@@ -87,22 +115,14 @@ function validateException(candidate, index, { version, slideIds, elementIds, el
   return { issues, valid: issues.length === 0 };
 }
 
-function reviewGate(review, issueField, gateName) {
-  if (review?.completed !== true) return { status: 'pending', issues: [] };
-  if (!Array.isArray(review[issueField])) {
-    return { status: 'fail', issues: [`${gateName}.${issueField} musi być tablicą.`] };
-  }
-  const issues = review[issueField];
-  return { status: issues.length === 0 ? 'pass' : 'fail', issues };
-}
-
-export function inspectPresentationContract({ metadata, slideIds, elementIds, elementTargets, staticIssues = [], browser, human } = {}) {
+export function inspectPresentationContract({ metadata, slideIds, elementIds, elementTargets, staticIssues = [], browser, human, review, presentationRevision } = {}) {
   const configured = metadata?.presentationContract;
   if (configured === undefined) {
     return {
       applicable: false,
       version: null,
       readyForTeacher: false,
+      presentationAccepted: false,
       static: { status: 'skipped', issues: [] },
       browser: { status: 'skipped', issues: [] },
       human: { status: 'skipped', issues: [], warnings: [] },
@@ -139,24 +159,32 @@ export function inspectPresentationContract({ metadata, slideIds, elementIds, el
     }
   }
 
+  const reviewIssues = review === undefined ? [] : reviewRecordIssues(review);
+  issues.push(...reviewIssues);
+  if (review !== undefined && !nonEmptyText(presentationRevision)) issues.push('Nie można sprawdzić rewizji prezentacji dla contract-review.json.');
+  const reviewStale = review !== undefined && reviewIssues.length === 0 && review.presentationRevision !== presentationRevision;
+  const browserReview = review === undefined ? browser : review.browser;
+  const humanReview = review === undefined ? human : review.human;
   const staticGate = { status: issues.length === 0 ? 'pass' : 'fail', issues };
-  const browserGate = reviewGate(browser, 'issues', 'browser');
-  const humanReviewGate = reviewGate(human, 'blockers', 'human');
+  const browserGate = reviewGate(browserReview, 'issues', 'browser', reviewStale);
+  const humanReviewGate = reviewGate(humanReview, 'blockers', 'human', reviewStale);
   const humanIssues = [...humanReviewGate.issues];
-  if (human?.completed === true && human.warnings !== undefined && !Array.isArray(human.warnings)) {
+  if (humanReview?.completed === true && humanReview.warnings !== undefined && !Array.isArray(humanReview.warnings)) {
     humanIssues.push('human.warnings musi być tablicą.');
   }
   const humanGate = {
-    status: humanIssues.length === 0 ? humanReviewGate.status : 'fail',
+    status: humanReviewGate.status === 'stale' ? 'stale' : humanIssues.length === 0 ? humanReviewGate.status : 'fail',
     issues: humanIssues,
-    warnings: Array.isArray(human?.warnings) ? human.warnings : [],
+    warnings: Array.isArray(humanReview?.warnings) ? humanReview.warnings : [],
   };
-  const readyForTeacher = [staticGate, browserGate, humanGate].every((gate) => gate.status === 'pass');
+  const readyForTeacher = [staticGate, browserGate].every((gate) => gate.status === 'pass');
+  const presentationAccepted = readyForTeacher && humanGate.status === 'pass';
 
   return {
     applicable: true,
     version: configured?.version ?? null,
     readyForTeacher,
+    presentationAccepted,
     static: staticGate,
     browser: browserGate,
     human: humanGate,

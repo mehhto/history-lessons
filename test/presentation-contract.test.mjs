@@ -193,17 +193,21 @@ test('keeps readiness pending until browser and human reviews are complete', () 
   assert.equal(report.readyForTeacher, false);
 });
 
-test('derives readyForTeacher only after all three gates pass', () => {
-  const report = inspectPresentationContract({
+test('separates readiness for teacher review from presentation acceptance', () => {
+  const reviewed = inspectPresentationContract({
+    metadata: { presentationContract: { version: '1.0' } },
+    browser: { completed: true, issues: [] },
+  });
+  const accepted = inspectPresentationContract({
     metadata: { presentationContract: { version: '1.0' } },
     browser: { completed: true, issues: [] },
     human: { completed: true, blockers: [], warnings: [] },
   });
 
-  assert.equal(report.static.status, 'pass');
-  assert.equal(report.browser.status, 'pass');
-  assert.equal(report.human.status, 'pass');
-  assert.equal(report.readyForTeacher, true);
+  assert.equal(reviewed.readyForTeacher, true);
+  assert.equal(reviewed.presentationAccepted, false);
+  assert.equal(accepted.readyForTeacher, true);
+  assert.equal(accepted.presentationAccepted, true);
 });
 
 test('keeps external gate failures and human warnings in one report', () => {
@@ -245,7 +249,8 @@ test('fails a completed human gate when its blockers are not an array', () => {
   });
 
   assert.equal(report.human.status, 'fail');
-  assert.equal(report.readyForTeacher, false);
+  assert.equal(report.readyForTeacher, true);
+  assert.equal(report.presentationAccepted, false);
   assert.match(report.human.issues.join('\n'), /human\.blockers musi być tablicą/i);
 });
 
@@ -257,6 +262,25 @@ test('fails a completed human gate when its warnings are not an array', () => {
   });
 
   assert.equal(report.human.status, 'fail');
-  assert.equal(report.readyForTeacher, false);
+  assert.equal(report.readyForTeacher, true);
+  assert.equal(report.presentationAccepted, false);
   assert.match(report.human.issues.join('\n'), /human\.warnings musi być tablicą/i);
+});
+
+test('marks a review record stale when its presentation revision no longer matches', () => {
+  const report = inspectPresentationContract({
+    metadata: { presentationContract: { version: '1.0' } },
+    presentationRevision: 'current',
+    review: {
+      contractVersion: '1.0',
+      presentationRevision: 'old',
+      browser: { completed: true, issues: [] },
+      human: { completed: true, blockers: [], warnings: [] },
+    },
+  });
+
+  assert.equal(report.browser.status, 'stale');
+  assert.equal(report.human.status, 'stale');
+  assert.equal(report.readyForTeacher, false);
+  assert.equal(report.presentationAccepted, false);
 });

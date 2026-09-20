@@ -1,11 +1,12 @@
 import { createReadStream } from 'node:fs';
-import { realpath, stat } from 'node:fs/promises';
+import { lstat, readFile, realpath, stat, writeFile } from 'node:fs/promises';
 import http from 'node:http';
 import path from 'node:path';
 import process from 'node:process';
 import { chromium } from 'playwright';
 import { decodeRequestPath, resolveWithin } from './safe-paths.mjs';
 import { findCanvasIssues, inspectPresentation } from './render-probe.mjs';
+import { presentationRevision } from './presentation-inputs.mjs';
 
 export function renderIssues({ consoleErrors, overflow, canvasIssues = [] }) {
   return [
@@ -66,9 +67,12 @@ export async function currentSlideName(page) {
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const lesson = argument('--lesson');
-  if (!lesson) throw new Error('Użycie: npm run check:render -- --lesson classes/6/temat');
+  const recordContractReview = process.argv.includes('--record-contract-review');
+  if (!lesson) throw new Error('Użycie: npm run check:render -- --lesson classes/6/temat [--record-contract-review]');
   const root = await realpath(process.cwd());
   const lessonDirectory = await realpath(resolveWithin(root, lesson));
+  const metadata = JSON.parse(await readFile(path.join(lessonDirectory, 'metadata.json'), 'utf8'));
+  if (recordContractReview && metadata.presentationContract?.version !== '1.0') throw new Error('Zapis review wymaga opt-in presentationContract.version 1.0.');
   const relative = path.relative(root, lessonDirectory).split(path.sep).map(encodeURIComponent).join('/');
   const server = await startServer(root);
   const errors = [];
@@ -83,6 +87,18 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     const report = await inspectPresentation(page);
     const canvasIssues = slides.flatMap((slide) => findCanvasIssues({ ...slide, viewport: report.viewport }));
     const issues = renderIssues({ consoleErrors: errors, overflow: [], canvasIssues });
+    if (recordContractReview) {
+      const reviewPath = path.join(lessonDirectory, 'contract-review.json');
+      try { if ((await lstat(reviewPath)).isSymbolicLink()) throw new Error('contract-review.json nie może być dowiązaniem symbolicznym.'); } catch (error) { if (error.code !== 'ENOENT') throw error; }
+      const review = {
+        contractVersion: metadata.presentationContract.version,
+        presentationRevision: await presentationRevision({ repoRoot: root, lessonDirectory }),
+        browser: { completed: true, issues },
+        human: { completed: false, blockers: [], warnings: [] },
+      };
+      await writeFile(reviewPath, `${JSON.stringify(review, null, 2)}\n`, 'utf8');
+      console.log(`Zapisano browser review: ${path.relative(root, reviewPath)}`);
+    }
     if (issues.length) { console.error(issues.map((issue) => `· ${issue}`).join('\n')); process.exitCode = 1; }
     else console.log(`Render OK: ${relative} (pełne płótno i treść; wymagana osobna ocena wizualna).`);
   } finally { await browser.close(); await new Promise((resolve) => server.close(resolve)); }

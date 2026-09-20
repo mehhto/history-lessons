@@ -6,6 +6,8 @@ import { assessLessonQuality, parseLessonMetadata } from './lesson-quality.mjs';
 import { isArtifactFresh } from './artifact-freshness.mjs';
 import { documentKindsForLesson, omittedDocumentKindsForLesson, documentPlan } from './print-pack.mjs';
 import { listTests, studentTestMarkdown } from './test-catalog.mjs';
+import { presentationInputs } from './presentation-inputs.mjs';
+import { inspectLessonContract } from './presentation-contract-check.mjs';
 
 async function lessonDirectories(root) {
   const found = [];
@@ -34,28 +36,7 @@ async function presentationFresh(lessonDirectory, repoRoot) {
   try { manifest = JSON.parse(await readFile(artifactPath, 'utf8')); } catch { return false; }
   const pdf = await readFile(pdfPath);
   if (!pdf.subarray(0, 5).equals(Buffer.from('%PDF-'))) return false;
-  const inputs = Object.fromEntries(await Promise.all([
-    ['slides.md', path.join(lessonDirectory, 'slides.md')],
-    ['metadata.json', path.join(lessonDirectory, 'metadata.json')],
-    ['lesson.css', path.join(lessonDirectory, 'lesson.css')],
-    ['index.html', path.join(lessonDirectory, 'index.html')],
-    ['template/theme.css', path.join(repoRoot, 'template/theme.css')],
-    ['template/presentation/base.css', path.join(repoRoot, 'template/presentation/base.css')],
-    ['template/presentation/fonts.css', path.join(repoRoot, 'template/presentation/fonts.css')],
-    ['template/presentation/patterns.css', path.join(repoRoot, 'template/presentation/patterns.css')],
-    ['template/presentation/canvas.css', path.join(repoRoot, 'template/presentation/canvas.css')],
-    ['template/presentation/boot.mjs', path.join(repoRoot, 'template/presentation/boot.mjs')],
-    ['template/presentation/appearance.mjs', path.join(repoRoot, 'template/presentation/appearance.mjs')],
-    ['template/presentation/catalog.mjs', path.join(repoRoot, 'template/presentation/catalog.mjs')],
-    ['template/presentation/geometry.mjs', path.join(repoRoot, 'template/presentation/geometry.mjs')],
-    ...Object.values((await import('../template/presentation/catalog.mjs')).catalog.styles).map((style) => [`template/presentation/styles/${style.stylesheet}`, path.join(repoRoot, 'template/presentation/styles', style.stylesheet)]),
-    ['template/components/lesson-components.css', path.join(repoRoot, 'template/components/lesson-components.css')],
-    ['template/components/lesson-components.js', path.join(repoRoot, 'template/components/lesson-components.js')],
-    ['template/components/lesson-components-core.mjs', path.join(repoRoot, 'template/components/lesson-components-core.mjs')],
-    ['scripts/slide-contract.mjs', path.join(repoRoot, 'scripts/slide-contract.mjs')],
-    ['scripts/export-pdf.mjs', path.join(repoRoot, 'scripts/export-pdf.mjs')],
-    ['package.json', path.join(repoRoot, 'package.json')],
-  ].map(async ([name, source]) => [name, await readFile(source, 'utf8')])));
+  const inputs = await presentationInputs({ repoRoot, lessonDirectory });
   return isArtifactFresh(manifest, inputs);
 }
 
@@ -148,12 +129,17 @@ if (lessons.length === 0) {
           printPack: await printPackFresh(lesson.directory, process.cwd(), metadata),
         },
       });
+      const contract = metadata.presentationContract === undefined ? null : await inspectLessonContract({ repoRoot: process.cwd(), lessonDirectory: lesson.directory });
       const status = report.ready ? 'GOTOWA' : 'WYMAGA DALSZEGO PRZEGLĄDU';
-      if (report.slideContract.errors.length) errors += 1;
-      if (!report.ready) pending += 1;
+      if (report.slideContract.errors.length || contract?.static.status === 'fail' || ['browser', 'human'].some((gate) => contract?.[gate].status === 'fail')) errors += 1;
+      if (!report.ready || (contract && !contract.presentationAccepted)) pending += 1;
       console.log(`${status}  ${label}`);
       for (const issue of [...report.technical.issues, ...report.teacherApproval.issues, ...report.slideContract.errors]) console.log(`  · ${issue}`);
       for (const warning of [...report.teachingWarnings.issues, ...report.slideContract.warnings]) console.log(`  ⚠ ${warning}`);
+      if (contract) {
+        for (const issue of [...contract.static.issues, ...contract.browser.issues, ...contract.human.issues]) console.log(`  · Kontrakt prezentacji: ${issue}`);
+        for (const warning of contract.static.warnings ?? []) console.log(`  ⚠ Kontrakt prezentacji: ${warning}`);
+      }
     } catch (error) {
       errors += 1;
       console.error(`BŁĄD  ${label}: ${error.message}`);
