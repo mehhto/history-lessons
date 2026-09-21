@@ -122,12 +122,18 @@ export async function createUiServer({ repoRoot = process.cwd(), port = 8182, ho
       if (req.method === 'POST' && pathname === '/api/feedback') {
         if (!feedbackEnabled) return send(res, 403, { error: 'Zbieranie feedbacku jest wyłączone.' });
         const body = await readJson(req);
-        const text = typeof body.text === 'string' ? body.text.trim() : '';
-        if (!text || text.length > 4000) return send(res, 400, { error: 'Feedback musi mieć od 1 do 4000 znaków.' });
+        const fields = ['understood', 'unclear', 'timing', 'nextChange'];
+        if (!fields.every((field) => typeof body[field] === 'string')) {
+          return send(res, 400, { error: 'Refleksja musi zawierać cztery pola tekstowe.' });
+        }
+        const reflection = Object.fromEntries(fields.map((field) => [field, body[field].trim()]));
+        if (!Object.values(reflection).some(Boolean) || Object.values(reflection).some((value) => value.length > 1000)) {
+          return send(res, 400, { error: 'Wypełnij przynajmniej jedno pole refleksji; każde ma najwyżej 1000 znaków.' });
+        }
         const catalog = await listLessons({ repoRoot: root });
         if (!catalog.lessons.some((item) => item.directory === body.lesson)) return send(res, 404, { error: 'Nie znaleziono lekcji.' });
         const lessonDirectory = await canonicalLessonDirectory(root, body.lesson);
-        const entry = { lesson: body.lesson, text, createdAt: new Date().toISOString() };
+        const entry = { lesson: body.lesson, ...reflection, createdAt: new Date().toISOString() };
         await appendFeedback(lessonDirectory, entry);
         return send(res, 201, { createdAt: entry.createdAt });
       }

@@ -19,7 +19,7 @@ Klasa __GRADE__ · lekcja ćwiczeniowa
 
 ---
 
-<!-- .slide: id="zadanie" data-purpose="practice" data-layout="activity-brief" -->
+<!-- .slide: id="zadanie" data-purpose="practice" data-layout="activity-brief" data-goals="G1" -->
 # Zadanie
 
 <div class="student-task">[DO UZUPEŁNIENIA: jedno bezpośrednie polecenie, które nazywa działanie i oczekiwany rezultat. Kryterium, cel lub czas dopisz tylko wtedy, gdy pomaga uczniom wykonać albo sprawdzić zadanie.]</div>
@@ -33,7 +33,7 @@ Klasa __GRADE__ · lekcja ćwiczeniowa
 
 ---
 
-<!-- .slide: id="bilet" data-purpose="exit-ticket" data-layout="plain" -->
+<!-- .slide: id="bilet" data-purpose="exit-ticket" data-layout="plain" data-goals="G1" -->
 # Bilet wyjścia
 
 [DO UZUPEŁNIENIA: krótka samodzielna odpowiedź]

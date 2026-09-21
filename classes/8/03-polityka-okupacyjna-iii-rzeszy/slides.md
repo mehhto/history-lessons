@@ -18,14 +18,14 @@
 
 ---
 
-<!-- .slide: id="lebensraum" data-purpose="explanation" data-layout="impact-flow" -->
+<!-- .slide: id="lebensraum" data-purpose="explanation" data-layout="impact-flow" data-goals="G1" -->
 ## „Lebensraum” — ideologia podboju
 <div class="term-definition"><strong>„Przestrzeń życiowa”</strong><p>Nazistowska nazwa rzekomego prawa Niemców do zdobywania ziem, zwłaszcza na Wschodzie.</p></div>
 <div class="flow"><div>podbić terytorium</div><div>wysiedlać i podporządkować ludność</div><div>germanizować, eksploatować, kolonizować</div></div>
 
 ---
 
-<!-- .slide: id="dwa-modele" data-purpose="explanation" data-layout="comparison" -->
+<!-- .slide: id="dwa-modele" data-purpose="explanation" data-layout="comparison" data-goals="G2" -->
 ## Dwa modele niemieckiej okupacji
 <table class="occupation-table"><thead><tr><th></th><th>Europa Zachodnia</th><th>Europa Środkowa i Wschodnia</th></tr></thead><tbody><tr><th>Rasowa ideologia nazistów</th><td>część ludności uznawano za rasowo bliższą Niemcom; nazizm nie traktował jej jednak jako równorzędnej</td><td>Słowian, Żydów i Romów uznawano za „podludzi”; planowano ich wyniszczenie, niewolniczą pracę lub usunięcie</td></tr><tr><th>Codzienne rządy</th><td>w wielu miejscach życie codzienne toczyło się względnie podobnie; w części państw działały rządy kolaborujące z Niemcami</td><td>bezpośrednia dominacja, germanizacja, grabież i kolonizacja; szczególnie brutalne podporządkowanie ludności</td></tr><tr><th>Przemoc</th><td>kontrola, represje, deportacje i terror — różne w zależności od kraju</td><td>terror, odpowiedzialność zbiorowa, obozy koncentracyjne, masowe egzekucje i praca przymusowa</td></tr></tbody></table>
 
@@ -67,7 +67,7 @@
 
 ---
 
-<!-- .slide: id="eskalacja" data-purpose="explanation" data-layout="statement" -->
+<!-- .slide: id="eskalacja" data-purpose="explanation" data-layout="statement" data-goals="G3" -->
 ## Od gett do masowej Zagłady
 <div class="einsatz-layout"><div class="escalation-flow"><ol><li><strong>1941</strong><span>masowe rozstrzeliwania</span></li><li><strong>20 I 1942</strong><span>Wannsee: koordynacja „ostatecznego rozwiązania”</span></li><li><strong>1942–1945</strong><span>deportacje do ośrodków zagłady</span></li></ol></div><article class="einsatz-definition"><div><h3>Einsatzgruppen</h3></div><p>Specjalne oddziały SS i policji, które mordowały Żydów i komunistów oraz inne grupy uznane przez nazistów za wrogów. <small>Konferencja w Wannsee koordynowała zbrodnię; nie była początkiem antysemityzmu ani pierwszych mordów.</small></p></article></div>
 
@@ -93,7 +93,7 @@
 
 ---
 
-<!-- .slide: id="postawy" data-purpose="practice" data-layout="activity-brief" -->
+<!-- .slide: id="postawy" data-purpose="practice" data-layout="activity-brief" data-goals="G4" -->
 ## Pomoc, szantaż, odpowiedzialność
 <div class="attitudes-evidence">
   <div><strong>Pomoc</strong><p>Rada Pomocy Żydom „Żegota” organizowała fałszywe dokumenty, wsparcie finansowe i kryjówki.</p></div>
@@ -119,13 +119,13 @@
 
 ---
 
-<!-- .slide: id="notatka" data-purpose="synthesis" data-layout="takeaways" -->
+<!-- .slide: id="notatka" data-purpose="synthesis" data-layout="takeaways" data-goals="G1 G2 G3 G4" -->
 ## Notatka do zeszytu
 <div class="notebook-note"><p><strong>1. Okupacja niemiecka</strong> na ziemiach polskich oznaczała terror, wysiedlenia, grabież, germanizację i pracę przymusową. Polska została podzielona na ziemie wcielone do III Rzeszy i Generalne Gubernatorstwo.</p><p><strong>2. Ludność żydowska</strong> była izolowana przez oznakowanie, getta, ograniczenia ruchu i głód. Od 1941 r. nasiliły się masowe mordy, a od 1942 r. deportacje do ośrodków zagłady.</p><p><strong>3. Holocaust / Zagłada</strong> to planowe ludobójstwo Żydów europejskich dokonane przez nazistowskie Niemcy i ich współpracowników. Zamordowano około 6 mln Żydów.</p><p><strong>4. Postawy ludzi</strong> były różne: Żegota organizowała pomoc i kryjówki, a szmalcownicy szantażowali Żydów oraz osoby, które im pomagały.</p></div>
 
 ---
 
-<!-- .slide: id="synteza-bilet" data-purpose="exit-ticket" data-layout="activity-brief" -->
+<!-- .slide: id="synteza-bilet" data-purpose="exit-ticket" data-layout="activity-brief" data-goals="G1 G2 G3 G4" -->
 ## Bilet wyjścia
 <div class="task-board student-task" data-task-role="prompt"><div class="exit-list student-task" data-task-role="prompt"><ol><li>Wyjaśnij jednym zdaniem, jak Lebensraum wpłynął na okupację na Wschodzie.</li><li>Dlaczego Wannsee nie oznacza początku Zagłady?</li><li>Podaj różnicę między obozem koncentracyjnym a ośrodkiem zagłady oraz nazwij jedną postawę pomocy.</li></ol></div></div>
 <p class="time-badge">3 minuty · odpowiedz samodzielnie</p>

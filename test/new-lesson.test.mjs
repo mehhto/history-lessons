@@ -23,6 +23,9 @@ test('new lesson replaces title and grade placeholders in every learner and teac
     const metadata = JSON.parse(await readFile(path.join(lesson, 'metadata.json'), 'utf8'));
     assert.equal(metadata.school_year, '[DECYZJA NAUCZYCIELA]');
     assert.equal(metadata.curriculum_version, '[DECYZJA NAUCZYCIELA]');
+    assert.deepEqual(metadata.goalContract, { version: '1.0' });
+    assert.match(await readFile(path.join(lesson, 'lesson.md'), 'utf8'), /\*\*G1\*\*/);
+    assert.match(await readFile(path.join(lesson, 'assessment.md'), 'utf8'), /Sprawdzane cele:\s*G1/);
   } finally {
     await rm(directory, { recursive: true, force: true });
   }

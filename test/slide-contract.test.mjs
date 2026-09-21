@@ -15,14 +15,19 @@ test('parses every Reveal slide block and retains its optional semantic directiv
 <!-- .slide: id="proces" data-purpose="explanation" data-layout="process" -->
 # Proces`);
   assert.deepEqual(slides, [
-    { id: '', purpose: '', layout: '', index: 0, hasDirective: false },
-    { id: 'pytanie', purpose: 'question', layout: 'statement', index: 1, hasDirective: true },
-    { id: 'proces', purpose: 'explanation', layout: 'process', index: 2, hasDirective: true },
+    { id: '', purpose: '', layout: '', goals: [], index: 0, hasDirective: false },
+    { id: 'pytanie', purpose: 'question', layout: 'statement', goals: [], index: 1, hasDirective: true },
+    { id: 'proces', purpose: 'explanation', layout: 'process', goals: [], index: 2, hasDirective: true },
   ]);
   const report = auditSlideContract(slides, { lessonType: 'new-knowledge' });
   assert.match(report.errors.join('\n'), /Slajd 1.*id/i);
   assert.match(report.errors.join('\n'), /Slajd 1.*purpose/i);
   assert.match(report.errors.join('\n'), /Slajd 1.*layout/i);
+});
+
+test('parses optional goal references from a slide directive', () => {
+  const [slide] = parseSlideDirectives('<!-- .slide: id="zadanie" data-purpose="practice" data-layout="task-board" data-goals="G1 G2" -->\n# Zadanie');
+  assert.deepEqual(slide.goals, ['G1', 'G2']);
 });
 
 test('accepts a complete new-knowledge arc', () => {

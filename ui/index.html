@@ -32,14 +32,20 @@
   </main>
   <dialog id="feedback-modal" aria-labelledby="feedback-title">
     <form id="feedback-form">
-      <h2 id="feedback-title">Feedback do lekcji</h2>
+      <h2 id="feedback-title">Refleksja po lekcji</h2>
       <p id="feedback-lesson"></p>
-      <label for="feedback-text">Co zadziałało dobrze? Co wymaga poprawy?</label>
-      <textarea id="feedback-text" name="feedback" maxlength="4000" required placeholder="Np. zadanie z mapą było angażujące, ale instrukcja wymagała doprecyzowania."></textarea>
+      <label for="reflection-understood">Co uczniowie zrozumieli?</label>
+      <textarea id="reflection-understood" maxlength="1000" placeholder="Najważniejsze obserwacje."></textarea>
+      <label for="reflection-unclear">Co było niejasne?</label>
+      <textarea id="reflection-unclear" maxlength="1000" placeholder="Pojęcia, instrukcje lub trudności."></textarea>
+      <label for="reflection-timing">Jak wyglądał czas lekcji?</label>
+      <textarea id="reflection-timing" maxlength="1000" placeholder="Co wymagało skrócenia lub więcej czasu."></textarea>
+      <label for="reflection-next-change">Co zmienić przed kolejnym użyciem?</label>
+      <textarea id="reflection-next-change" maxlength="1000" placeholder="Jedna konkretna poprawka."></textarea>
       <p id="feedback-error" role="alert"></p>
       <div class="dialog-actions">
         <button id="feedback-cancel" type="button">Anuluj</button>
-        <button type="submit">Zapisz feedback</button>
+        <button type="submit">Zapisz refleksję</button>
       </div>
     </form>
   </dialog>

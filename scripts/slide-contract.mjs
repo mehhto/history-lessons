@@ -25,6 +25,7 @@ export function parseSlideDirectives(markdown) {
         id: attribute(directive, 'id'),
         purpose: attribute(directive, 'data-purpose'),
         layout: attribute(directive, 'data-layout'),
+        goals: attribute(directive, 'data-goals').split(/\s+/).filter(Boolean),
         index,
         hasDirective: Boolean(directive),
       };

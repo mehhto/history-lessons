@@ -1,5 +1,8 @@
 # Klucz i ocena kształtująca: Polityka okupacyjna III Rzeszy i Zagłada Żydów
 
+## Powiązanie z celami
+- Sprawdzane cele: G1, G2, G3, G4
+
 ## Zadanie 1
 Dopuszczalne są różne poprawne przykłady odczytane z mapy. Zdanie powinno wskazywać duży zasięg niemieckiej kontroli lub dominacji w Europie w 1942 r., bez utożsamiania wszystkich obszarów z formalnym terytorium III Rzeszy.
 

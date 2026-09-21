@@ -12,14 +12,14 @@ Klasa __GRADE__ · lekcja nowej wiedzy
 
 ---
 
-<!-- .slide: id="wyjasnienie" data-purpose="explanation" data-layout="process" -->
+<!-- .slide: id="wyjasnienie" data-purpose="explanation" data-layout="process" data-goals="G1" -->
 # Jak działał ten proces?
 
 [DO UZUPEŁNIENIA: pełne, uczniowskie wyjaśnienie mechanizmu i koniecznych pojęć]
 
 ---
 
-<!-- .slide: id="checkpoint" data-purpose="practice" data-layout="activity-brief" -->
+<!-- .slide: id="checkpoint" data-purpose="practice" data-layout="activity-brief" data-goals="G1" -->
 # Krótki checkpoint
 
 <div class="student-task">[DO UZUPEŁNIENIA: jedno bezpośrednie polecenie, które nazywa działanie i oczekiwany rezultat. Cel lub czas dopisz tylko wtedy, gdy pomaga uczniom wykonać zadanie.]</div>
@@ -33,7 +33,7 @@ Klasa __GRADE__ · lekcja nowej wiedzy
 
 ---
 
-<!-- .slide: id="bilet" data-purpose="exit-ticket" data-layout="plain" -->
+<!-- .slide: id="bilet" data-purpose="exit-ticket" data-layout="plain" data-goals="G1" -->
 # Bilet wyjścia
 
 [DO UZUPEŁNIENIA: samodzielny dowód zrozumienia głównego celu]

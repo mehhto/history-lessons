@@ -93,6 +93,7 @@ Wynik `*-portable.html` jest artefaktem lokalnym, nie źródłem i nie trafia do
 - Dla każdego materiału utwórz wpis w `sources.md`.
 - W nowych pakietach zachowaj szablonowe lokalne nadpisanie podpisu do `20px` (wspólny styl dawnych lekcji pozostaje przy 18 px) i potwierdź czytelność na projektorze. Nie zmieniaj z tego powodu już przeprowadzonych lekcji; dalszą korektę zapisuj w `lesson.css` nowego pakietu.
 - Nie używaj danych osobowych, ocen, wizerunku ani niezanonimizowanych prac uczniów.
+- Formularz refleksji zapisuje surowe obserwacje append-only w `feedback.jsonl`; `reflection.md` zawiera tylko skonsolidowaną decyzję do następnej wersji. Nie interpretuj ani nie wdrażaj wpisów automatycznie.
 
 ## Status jakości
 

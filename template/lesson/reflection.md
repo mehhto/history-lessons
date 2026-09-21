@@ -1,22 +1,15 @@
 # Refleksja po lekcji: __TITLE__
 
-## Hipotezy przed lekcją
-- [Co może wymagać skrócenia, doprecyzowania lub dodatkowego wsparcia?]
+Wpisy z panelu są surowymi obserwacjami append-only. Poniżej zapisz tylko decyzję do następnej wersji, bez danych osobowych uczniów.
 
-## Co zrozumieli uczniowie?
+## Co uczniowie zrozumieli?
 -
 
 ## Co było niejasne?
 -
 
-## Gdzie zabrakło czasu?
+## Jak wyglądał czas lekcji?
 -
 
-## Który materiał zadziałał?
--
-
-## Co usunąć lub skrócić?
--
-
-## Jaka poprawka w szablonie pomoże następnym lekcjom?
+## Co zmienić przed kolejnym użyciem?
 -

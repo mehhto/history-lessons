@@ -6,7 +6,7 @@
 - [ ] Wymaganie programu jest zacytowane dokładnie albo wskazane jako wymagające zatwierdzenia.
 - [ ] Wymagania edukacyjne służą do poziomowania i oceniania, ale nie nadpisują aktywnej podstawy.
 - [ ] Ewentualny konflikt między podstawą, programem, wymaganiami i podręcznikiem jest jawnie zapisany, a nie rozstrzygnięty domysłem.
-- [ ] Jest mapa: wymaganie → wiedza konieczna → zadanie → dowód zrozumienia.
+- [ ] Jest mapa: cel G… → wiedza konieczna → zadanie → dowód zrozumienia.
 - [ ] Ręcznie zweryfikowano każdą datę, cytat, autora, mapę i podpis.
 - [ ] Jest jasne, czy materiał jest źródłem z epoki, opracowaniem, rekonstrukcją czy grafiką AI.
 - [ ] Nie ma fałszywych cytatów ani treści wygenerowanych bez sprawdzenia.
@@ -16,7 +16,7 @@
 - [ ] `metadata.json` wskazuje `new-knowledge` albo `practice`.
 - [ ] Lekcja nowej wiedzy zawiera pełne wyjaśnienie: pojęcia, chronologię, mechanizm, przykład i rozróżnienia potrzebne uczniowi.
 - [ ] Lekcja ćwiczeniowa / źródłowa zawiera przypomnienie koniecznej wiedzy, materiał, pytania, jednoznacznie oczekiwane działanie lub rezultat oraz model odpowiedzi lub kryteria.
-- [ ] Wykonano ograniczony rekonesans publicznego ZPE i zapisano kandydatów oraz decyzje w `sources.md` — także wtedy, gdy niczego nie wybrano.
+- [ ] Po zaprojektowaniu celu, działania i dowodu wykonano ograniczony rekonesans publicznego ZPE oraz zapisano kandydatów i decyzje w `sources.md` — także wtedy, gdy niczego nie wybrano.
 - [ ] Jeśli wykorzystano materiał ZPE, wzmacnia on cel, pasuje do wieku, ma sprawdzone fakty oraz jasną licencję/status prawny.
 - [ ] Źródło, mapa lub wizualizacja pojawiają się dlatego, że wzmacniają cel — nie jako obowiązkowy ozdobnik.
 - [ ] Uczeń wykonuje działanie, które wykorzystuje wyjaśnioną wiedzę; nie tylko ogląda slajdy.

@@ -15,18 +15,18 @@
 **Dlaczego niemiecka okupacja przybierała różne formy, a polityka wobec Żydów doprowadziła do Zagłady?**
 
 ## Cele w języku ucznia
-1. Wyjaśnię pojęcie *Lebensraum* i wskażę na mapach zasięg niemieckiej okupacji.
-2. Porównam politykę okupanta na Zachodzie oraz w Europie Środkowej i Wschodniej.
-3. Uporządkuję kolejne etapy nazistowskich prześladowań Żydów aż do Zagłady.
-4. Podam przykłady oporu, współpracy z okupantem i pomocy prześladowanym.
+1. **G1** — Wyjaśnię pojęcie *Lebensraum* i wskażę na mapach zasięg niemieckiej okupacji.
+2. **G2** — Porównam politykę okupanta na Zachodzie oraz w Europie Środkowej i Wschodniej.
+3. **G3** — Uporządkuję kolejne etapy nazistowskich prześladowań Żydów aż do Zagłady.
+4. **G4** — Podam przykłady oporu, współpracy z okupantem i pomocy prześladowanym.
 
 ## Cele → zadanie → dowód
-| Cel ucznia | Wiedza / treść konieczna | Zadanie podczas lekcji | Dowód osiągnięcia celu |
-|---|---|---|---|
-| Czytam mapę okupacji | zasięg III Rzeszy i jej stref wpływów w 1942 r.; ziemie polskie w 1941 r. | wskazanie dwóch obszarów i ich statusu | poprawne zdanie z mapą jako dowodem |
-| Porównuję okupację | cele rasowe i kolonialne; różnice Zachód–Środkowy/Wschód | tabela porównawcza w parach | dwa trafne kontrasty oraz wspólny element terroru |
-| Rozumiem Zagładę | antysemityzm, getto, oznakowanie, masowe rozstrzeliwania, Wannsee, obozy zagłady | porządkowanie etapów i wyjaśnienie terminu Holocaust | poprawna sekwencja i związek decyzji z działaniem |
-| Rozpoznaję postawy | opór, kolaboracja, ratowanie; Żegota i szmalcownicy | kwalifikacja przykładów postaw | uzasadnienie bez zbiorowej odpowiedzialności |
+| ID | Cel ucznia | Wiedza / treść konieczna | Zadanie podczas lekcji | Dowód osiągnięcia celu |
+|---|---|---|---|---|
+| G1 | Czytam mapę okupacji | zasięg III Rzeszy i jej stref wpływów w 1942 r.; ziemie polskie w 1941 r. | wskazanie dwóch obszarów i ich statusu | poprawne zdanie z mapą jako dowodem |
+| G2 | Porównuję okupację | cele rasowe i kolonialne; różnice Zachód–Środkowy/Wschód | tabela porównawcza w parach | dwa trafne kontrasty oraz wspólny element terroru |
+| G3 | Rozumiem Zagładę | antysemityzm, getto, oznakowanie, masowe rozstrzeliwania, Wannsee, obozy zagłady | porządkowanie etapów i wyjaśnienie terminu Holocaust | poprawna sekwencja i związek decyzji z działaniem |
+| G4 | Rozpoznaję postawy | opór, kolaboracja, ratowanie; Żegota i szmalcownicy | kwalifikacja przykładów postaw | uzasadnienie bez zbiorowej odpowiedzialności |
 
 ## Storyboard prezentacji
 | Kolejność / ID | Cel | Purpose / layout | Główny komunikat | Działanie / oczekiwany rezultat | Czas |

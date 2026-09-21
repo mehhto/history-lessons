@@ -63,13 +63,45 @@ test('feedback endpoint writes a bounded entry inside the selected lesson direct
   try {
     const response = await fetch(`http://127.0.0.1:${port}/api/feedback`, {
       method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ lesson: 'classes/4/01-feedback', text: 'Dobrze zadziałała mapa, ale brakuje czasu na podsumowanie.' }),
+      body: JSON.stringify({
+        lesson: 'classes/4/01-feedback',
+        understood: 'Mapa pomogła rozpoznać zasięg okupacji.',
+        unclear: 'Trzeba doprecyzować pojęcie getta.',
+        timing: 'Brakło dwóch minut na syntezę.',
+        nextChange: 'Skrócić wprowadzenie.',
+      }),
     });
     assert.equal(response.status, 201);
     const entry = JSON.parse((await readFile(path.join(lesson, 'feedback.jsonl'), 'utf8')).trim());
     assert.equal(entry.lesson, 'classes/4/01-feedback');
-    assert.equal(entry.text, 'Dobrze zadziałała mapa, ale brakuje czasu na podsumowanie.');
+    assert.equal(entry.understood, 'Mapa pomogła rozpoznać zasięg okupacji.');
+    assert.equal(entry.unclear, 'Trzeba doprecyzować pojęcie getta.');
+    assert.equal(entry.timing, 'Brakło dwóch minut na syntezę.');
+    assert.equal(entry.nextChange, 'Skrócić wprowadzenie.');
     assert.match(entry.createdAt, /^\d{4}-\d{2}-\d{2}T/);
+  } finally {
+    await stop(server);
+    await rm(parent, { recursive: true, force: true });
+  }
+});
+
+test('feedback endpoint rejects an empty or oversized reflection', async () => {
+  const parent = await mkdtemp(path.join(os.tmpdir(), 'history-ui-feedback-validation-'));
+  const root = path.join(parent, 'repo');
+  const lesson = path.join(root, 'classes', '4', '01-feedback');
+  await mkdir(lesson, { recursive: true });
+  await writeFile(path.join(lesson, 'metadata.json'), JSON.stringify({ id: '01-feedback', title: 'Feedback', grade: 4 }));
+  const { server, port } = await createUiServer({ repoRoot: root, port: 0, host: '127.0.0.1', readOnly: true, feedbackEnabled: true });
+  try {
+    for (const body of [
+      { lesson: 'classes/4/01-feedback', understood: '', unclear: '', timing: '', nextChange: '' },
+      { lesson: 'classes/4/01-feedback', understood: 'x'.repeat(1001), unclear: '', timing: '', nextChange: '' },
+    ]) {
+      const response = await fetch(`http://127.0.0.1:${port}/api/feedback`, {
+        method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body),
+      });
+      assert.equal(response.status, 400);
+    }
   } finally {
     await stop(server);
     await rm(parent, { recursive: true, force: true });
@@ -85,7 +117,7 @@ test('feedback endpoint rejects a technical directory not listed as a lesson', a
   try {
     const response = await fetch(`http://127.0.0.1:${port}/api/feedback`, {
       method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ lesson: 'classes/4/scratch', text: 'Nie powinno się zapisać.' }),
+      body: JSON.stringify({ lesson: 'classes/4/scratch', understood: 'Nie powinno się zapisać.', unclear: '', timing: '', nextChange: '' }),
     });
     assert.equal(response.status, 404);
     await assert.rejects(readFile(path.join(scratch, 'feedback.jsonl'), 'utf8'));
@@ -108,7 +140,7 @@ test('feedback endpoint does not follow a feedback log symlink or disclose its p
   try {
     const response = await fetch(`http://127.0.0.1:${port}/api/feedback`, {
       method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ lesson: 'classes/4/01-feedback', text: 'Nie podążaj za symlinkiem.' }),
+      body: JSON.stringify({ lesson: 'classes/4/01-feedback', understood: 'Nie podążaj za symlinkiem.', unclear: '', timing: '', nextChange: '' }),
     });
     assert.equal(response.status, 500);
     assert.deepEqual(await response.json(), { error: 'Nie można bezpiecznie zapisać feedbacku.' });
@@ -232,7 +264,7 @@ test('read-only browser UI opens a full-slide lightbox inside the presentation i
   }
 });
 
-test('feedback UI sends the current lesson and text through its modal', async () => {
+test('reflection UI sends structured observations through its modal', async () => {
   const { server, port } = await createUiServer({ repoRoot, port: 0, host: '127.0.0.1', readOnly: true, feedbackEnabled: true });
   const browser = await chromium.launch({ executablePath: browserExecutable });
   try {
@@ -245,12 +277,19 @@ test('feedback UI sends the current lesson and text through its modal', async ()
     await page.goto(`http://127.0.0.1:${port}/admin/`);
     await page.locator('#catalog .lesson').first().click();
     const title = await page.locator('#workspace h2').textContent();
-    await page.getByRole('button', { name: 'Dodaj feedback' }).click();
-    await page.locator('#feedback-text').fill('Dobrze zadziałał materiał źródłowy.');
-    await page.getByRole('button', { name: 'Zapisz feedback' }).click();
+    await page.getByRole('button', { name: 'Dodaj refleksję' }).click();
+    await page.locator('#reflection-understood').fill('Uczniowie rozpoznali zasięg okupacji na mapie.');
+    await page.locator('#reflection-next-change').fill('Skrócić wyjaśnienie przed zadaniem.');
+    await page.getByRole('button', { name: 'Zapisz refleksję' }).click();
     await page.waitForFunction(() => !document.querySelector('#feedback-modal')?.open);
-    assert.deepEqual(request, { lesson: `classes/4/01-poznajemy-przeszlosc`, text: 'Dobrze zadziałał materiał źródłowy.' });
-    assert.match(await page.locator('#status').textContent(), /Zapisano feedback do lekcji/);
+    assert.deepEqual(request, {
+      lesson: 'classes/4/01-poznajemy-przeszlosc',
+      understood: 'Uczniowie rozpoznali zasięg okupacji na mapie.',
+      unclear: '',
+      timing: '',
+      nextChange: 'Skrócić wyjaśnienie przed zadaniem.',
+    });
+    assert.match(await page.locator('#status').textContent(), /Zapisano refleksję do lekcji/);
     assert.equal(await page.locator('#feedback-lesson').textContent(), title);
   } finally {
     await browser.close();

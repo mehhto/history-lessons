@@ -530,6 +530,6 @@ input {
 #feedback-form { display: grid; gap: 14px; padding: 24px }
 #feedback-form h2, #feedback-form p { margin: 0 }
 #feedback-lesson { color: var(--palette-olive); font-weight: 700 }
-#feedback-text { min-height: 150px; resize: vertical; padding: 12px; font: inherit; line-height: 1.45 }
+#feedback-form textarea { min-height: 72px; resize: vertical; padding: 12px; font: inherit; line-height: 1.45 }
 #feedback-error { min-height: 1.2em; color: #a62525 }
 .dialog-actions { display: flex; justify-content: flex-end; gap: 10px }

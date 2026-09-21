@@ -131,11 +131,13 @@ if (lessons.length === 0) {
       });
       const contract = metadata.presentationContract === undefined ? null : await inspectLessonContract({ repoRoot: process.cwd(), lessonDirectory: lesson.directory });
       const status = report.ready ? 'GOTOWA' : 'WYMAGA DALSZEGO PRZEGLĄDU';
-      if (report.slideContract.errors.length || contract?.static.status === 'fail' || ['browser', 'human'].some((gate) => contract?.[gate].status === 'fail')) errors += 1;
+      if (report.slideContract.errors.length || report.goalContract?.errors.length || contract?.static.status === 'fail' || ['browser', 'human'].some((gate) => contract?.[gate].status === 'fail')) errors += 1;
       if (!report.ready || (contract && !contract.presentationAccepted)) pending += 1;
       console.log(`${status}  ${label}`);
       for (const issue of [...report.technical.issues, ...report.teacherApproval.issues, ...report.slideContract.errors]) console.log(`  · ${issue}`);
+      for (const issue of report.goalContract?.errors || []) console.log(`  · Kontrakt celów: ${issue}`);
       for (const warning of [...report.teachingWarnings.issues, ...report.slideContract.warnings]) console.log(`  ⚠ ${warning}`);
+      for (const warning of report.goalContract?.warnings || []) console.log(`  ⚠ Kontrakt celów: ${warning}`);
       if (contract) {
         for (const issue of [...contract.static.issues, ...contract.browser.issues, ...contract.human.issues]) console.log(`  · Kontrakt prezentacji: ${issue}`);
         for (const warning of contract.static.warnings ?? []) console.log(`  ⚠ Kontrakt prezentacji: ${warning}`);

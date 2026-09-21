@@ -1,5 +1,8 @@
 # Ocenianie: __TITLE__
 
+## Powiązanie z celami
+- Sprawdzane cele: G1
+
 ## Kryteria sukcesu
 Uczeń:
 - [kryterium 1]

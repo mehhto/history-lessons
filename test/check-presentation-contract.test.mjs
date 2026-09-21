@@ -15,6 +15,8 @@ const metadata = {
   id: '01-test',
   title: 'Test',
   grade: 6,
+  school_year: '2026/2027',
+  curriculum_version: 'stara-przejsciowa',
   duration_minutes: 45,
   kind: 'lesson',
   lesson_type: 'new-knowledge',

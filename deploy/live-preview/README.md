@@ -19,15 +19,15 @@ wspólny katalog history-lessons
 
 Panel co 2 sekundy sprawdza rewizje źródeł. Zmiany w prezentacjach są widoczne bez commita, pushowania i fetchowania.
 
-## Feedback do konkretnej lekcji
+## Refleksja po konkretnej lekcji
 
-Po wybraniu lekcji panel pokazuje przycisk **Dodaj feedback**. Modal pyta, co zadziałało dobrze i co warto poprawić. Każdy zapis jest jednym wierszem JSON w:
+Po wybraniu lekcji panel pokazuje przycisk **Dodaj refleksję**. Modal zapisuje cztery krótkie pola: co uczniowie zrozumieli, co było niejasne, jak wyglądał czas oraz co zmienić przed kolejnym użyciem. Każdy zapis jest jednym wierszem JSON w:
 
 ```text
 classes/<klasa>/<katalog-lekcji>/feedback.jsonl
 ```
 
-Wpis zawiera identyfikator lekcji, treść i czas UTC. Plik nie jest serwowany jako zasób statyczny panelu ani śledzony przez Git (`**/feedback.jsonl` w `.gitignore`), więc nie trafi przypadkowo do commita ani push. Jeżeli feedback ma zostać zachowany poza VM, należy skopiować go świadomie do prywatnego archiwum. Eksporty nadal pozostają zablokowane przez `UI_READ_ONLY=1`.
+Wpis zawiera identyfikator lekcji, cztery odpowiedzi i czas UTC. Plik nie jest serwowany jako zasób statyczny panelu ani śledzony przez Git (`**/feedback.jsonl` w `.gitignore`), więc nie trafi przypadkowo do commita ani push. Jeżeli refleksje mają zostać zachowane poza VM, należy skopiować je świadomie do prywatnego archiwum. Eksporty nadal pozostają zablokowane przez `UI_READ_ONLY=1`.
 
 ## 1. Potwierdź ścieżkę repozytorium na VM
 

@@ -17,15 +17,16 @@
 [Jedno pytanie, na które uczeń odpowie po lekcji.]
 
 ## Cele w języku ucznia
-1. [Cel mierzalny 1]
-2. [Cel mierzalny 2]
-3. [Cel mierzalny 3]
+1. **G1** — [Cel mierzalny 1]
+2. **G2** — [Cel mierzalny 2]
+3. **G3** — [Cel mierzalny 3]
 
 ## Cele → zadanie → dowód
-| Cel ucznia | Wiedza / treść konieczna | Zadanie podczas lekcji | Dowód osiągnięcia celu |
-|---|---|---|---|
-| [Cel 1] | [Co uczeń musi zrozumieć] | [Co robi uczeń] | [Co zapisze / powie / wykona] |
-| [Cel 2] | [Co uczeń musi zrozumieć] | [Co robi uczeń] | [Co zapisze / powie / wykona] |
+| ID | Cel ucznia | Wiedza / treść konieczna | Zadanie podczas lekcji | Dowód osiągnięcia celu |
+|---|---|---|---|---|
+| G1 | [Cel 1] | [Co uczeń musi zrozumieć] | [Co robi uczeń] | [Co zapisze / powie / wykona] |
+| G2 | [Cel 2] | [Co uczeń musi zrozumieć] | [Co robi uczeń] | [Co zapisze / powie / wykona] |
+| G3 | [Cel 3] | [Co uczeń musi zrozumieć] | [Co robi uczeń] | [Co zapisze / powie / wykona] |
 
 ## Storyboard prezentacji
 | Kolejność / ID | Cel | Purpose / layout | Główny komunikat | Wymagania wstępne | Materiał: rola / ograniczenie | Działanie / oczekiwany rezultat | Ryzyko błędnego przekonania | Czas |
