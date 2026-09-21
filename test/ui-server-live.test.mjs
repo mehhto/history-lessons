@@ -224,11 +224,21 @@ test('read-only browser UI keeps previews and omits export controls', async () =
     await page.goto(`http://127.0.0.1:${port}/admin/`);
     const lessonTab = page.getByRole('tab', { name: 'Lekcje' });
     const testTab = page.getByRole('tab', { name: 'Kartkówki' });
-    assert.equal(await testTab.locator('img').evaluate((image) => image.complete && image.naturalWidth > 0), true);
+    const glyphs = await Promise.all([lessonTab, testTab].map((tab) => tab.evaluate((element) => {
+      const glyph = element.querySelector('svg');
+      return { exists: Boolean(glyph), stroke: glyph && getComputedStyle(glyph).stroke, color: getComputedStyle(element).color };
+    })));
+    assert.deepEqual(glyphs, [
+      { exists: true, stroke: 'rgb(0, 126, 255)', color: 'rgb(0, 126, 255)' },
+      { exists: true, stroke: 'rgb(104, 113, 122)', color: 'rgb(104, 113, 122)' },
+    ]);
     assert.equal(await lessonTab.getAttribute('aria-selected'), 'true');
     assert.equal(await testTab.getAttribute('tabindex'), '-1');
     await testTab.click();
     assert.equal(await testTab.getAttribute('aria-selected'), 'true');
+    await page.waitForTimeout(200);
+    const activeGlyphs = await Promise.all([lessonTab, testTab].map((tab) => tab.evaluate((element) => getComputedStyle(element.querySelector('svg')).stroke)));
+    assert.deepEqual(activeGlyphs, ['rgb(104, 113, 122)', 'rgb(0, 126, 255)']);
     assert.equal(await page.locator('#catalog').getAttribute('aria-labelledby'), 'show-tests');
     await testTab.press('ArrowLeft');
     assert.equal(await lessonTab.getAttribute('aria-selected'), 'true');

@@ -10,9 +10,9 @@ Nie jesteś źródłem faktów historycznych ani arbitrem zgodności z programem
 
 1. Ustal rok szkolny i klasę. Odczytaj `curriculum/rollout-2026.md`, wybierz `nowa-2026` albo `stara-przejsciowa`, a potem przeczytaj właściwy plik klasy, `template/quality-checklist.md` oraz `template/lesson/lesson.md`.
 2. Ustal: klasę, czas, temat, dosłowne wymaganie z aktywnej podstawy, pytanie główne i **typ lekcji**: `new-knowledge` albo `practice`. Wymagań edukacyjnych używaj do poziomowania; nie mogą nadpisywać podstawy.
-3. Zbuduj mapę: **wymaganie → wiedza konieczna → działanie ucznia → dowód zrozumienia**.
-4. Wykonaj ograniczony rekonesans publicznego ZPE: wyszukaj temat, klasę i pojęcia z celu, oceń kilka najtrafniejszych materiałów i zapisz decyzję w `sources.md`. ZPE trzeba sprawdzić, ale materiału nie trzeba użyć.
-5. Materiał ZPE wykorzystaj tylko wtedy, gdy wnosi konkretną wartość dla celu, jest odpowiedni dla wieku, ma zweryfikowane fakty i stronę z jasną licencją/status...[truncated]
+3. Zbuduj mapę: **cel G… → wiedza konieczna → działanie ucznia → dowód zrozumienia**.
+4. Zaprojektuj przebieg i tylko potrzebne materiały.
+5. Dobierz i zweryfikuj źródła wspierające zaakceptowany plan. Wykonaj ograniczony rekonesans publicznego ZPE, zapisz decyzję w `sources.md`, ale użyj materiału tylko wtedy, gdy wnosi konkretną wartość dla celu, jest odpowiedni dla wieku, ma zweryfikowane fakty i jasną licencję/status prawny. Gdy lekcja jest zbudowana wokół materiału dostarczonego przez nauczyciela, jego przydatność oceń wcześniej.
 
 ## Dwa typy lekcji
 
@@ -53,7 +53,8 @@ Każdy slajd musi mieć jasną funkcję oraz być czytelny z końca klasy:
 - rozdziel wyjaśnienie od ćwiczenia;
 - sprawdź rzeczywiste płótno Reveal 1280×720, przepełnienia i czas całej lekcji; sam zrzut okna 16:9 nie wystarcza;
 - nie ukrywaj nadmiaru przez `overflow`, przewijanie, ellipsis ani mikrotekst — popraw kompozycję lub podziel slajd, zachowując wyjaśnienie;
-- nie skracaj prawidłowego wyjaśnienia tylko po to, aby spełnić liczbowy limit.
+- nie skracaj prawidłowego wyjaśnienia tylko po to, aby spełnić liczbowy limit;
+- gdy cytat źródłowy zostawia wyraźnie zbyt dużo pustego pola pod tekstem, najpierw zwiększ jego krój w bezpiecznym zakresie 22–28 px albo popraw powierzchnię czytania; nie skracaj cytatu wyłącznie dla wypełnienia slajdu i potwierdź wynik na świeżym renderze.
 
 ## `slides.md` i notatki nauczyciela
 
@@ -61,9 +62,11 @@ Każdy slajd musi mieć jasną funkcję oraz być czytelny z końca klasy:
 - W poleceniu od razu nazwij działanie lub rezultat (`zapisz dwa argumenty`, `ułóż wydarzenia`, `wskaż fragment i uzasadnij`). Nie dodawaj osobnej etykiety „produkt”. Cel zadania i czas wykonania pokazuj uczniom tylko wtedy, gdy ułatwiają rozpoczęcie pracy, organizację lub samokontrolę.
 - Dodawaj notatki po `notes:` (małymi literami); nie są wyświetlane uczniom.
 - Szczegółowe notatki są wymagane tylko przy trudnym wyjaśnieniu, nowym pojęciu, źródle, materiale kontrowersyjnym, pytaniu wymagającym moderacji albo zadaniu z typowymi błędami.
+- `Notatka do zeszytu` jest merytoryczną syntezą, nie symbolicznym podsumowaniem: obejmuje zasadniczą chronologię, pojęcia, mechanizmy, rozróżnienia oraz przykłady potrzebne po lekcji. Liczbę punktów dobieraj do treści, zachowując czytelność i potwierdzając ją na renderze.
 - Każdy pakiet ma `lesson.css`, ładowany po motywie i komponentach. Ręczne poprawki konkretnej lekcji zapisuj wyłącznie tam.
 - Dla niestandardowego slajdu użyj trwałego `id` w dyrektywie `.slide`; selektory w `lesson.css` odnoszą się do tego identyfikatora.
 - Zachowuj wspólny bootstrap prezentacji, ścieżki do bibliotek i ścieżki do lokalnych zasobów. Wygląd wybieraj przez `metadata.json.appearance`: `museum`, `editorial` lub `atlas` i zatwierdzoną dla niego paletę; nie dodawaj dowolnego CSS ani zdalnych fontów.
+- Dla każdej nowej lekcji wybierz czytelną parę z `template/presentation/fonts/collection/README.md`: najwyżej jeden krój sans do tekstu i jeden serif do tytułów lub źródeł (albo sam sans). Używaj lokalnych plików kolekcji i potwierdź polskie znaki na renderze; nie wprowadzaj osobnego kroju bez potrzeby.
 - Stosuj klasy zależnie od funkcji, np. `question-slide`, `explanation-slide`, `context-slide`, `source-slide`, `map-slide`, `practice-slide`, `compare-slide`, `exit-ticket-slide`.
 
 Dostępne komponenty lokalne: `lesson-timeline` / `lesson-event`, `lesson-gallery`, `lesson-map`, `lesson-disclosure`, `lesson-stats` / `lesson-stat` / `lesson-counter`, `lesson-stepper` / `lesson-step`, `lesson-table`, `lesson-quote`, `lesson-icon-list`, `lesson-video` i `lesson-compare`. Pełne przykłady są w `classes/6/katalog-komponentow-prezentacji/`. `lesson-timeline reveal-axis` jest opcjonalne: używaj go wyłącznie, gdy rozwinięcie osi ujawnia kolejność; ruch ma statyczny fallback dla druku i `prefers-reduced-motion`.
@@ -72,7 +75,7 @@ Przed wybraniem kolorów wybierz jedną pozycję z `design/presentation-palettes
 
 Każdy katalog rzeczywistej lekcji (`kind: lesson`) nazywaj `NN-krotki-slug`, gdzie `NN` oznacza dwucyfrową kolejność lekcji w obrębie klasy. Nazwa ma być krótka, ale jednoznaczna; pełny tytuł pozostaje w `metadata.json`. Generator dopisuje kolejny numer automatycznie, a krótszą nazwę przyjmuje przez `--slug`. Katalogi demonstracyjne (`kind: demo`) są poza numeracją lekcji.
 
-Mapy Google i YouTube są opcjonalne: iframe uzyskuje `src` wyłącznie po kliknięciu, a slajd ma lokalną alternatywę. Galeria wymaga opisowych `alt` i podpisów; hover jest dodatkiem — musi działać także przez `Tab`, strzałki, `Home`, `End`, `Escape` i dotknięcie. Lightbox nie kopiuje automatycznie `figcaption`, kredytu, licencji ani adresu źródłowego. Opcjonalny krótki podpis lightboxa podawaj jawnie przez `data-lightbox-caption`; nie umieszczaj w nim źródła. Mapy pełnoekranowe pozostają w lightboxie bez podpisu.
+Mapy Google i YouTube są opcjonalne: iframe uzyskuje `src` wyłącznie po kliknięciu, a slajd ma lokalną alternatywę. Mapa otrzymuje legendę, gdy symbole, kolory, linie lub oznaczenia są istotne do jej odczytania; legendę umieszczaj w bocznej strefie albo w samym materiale mapowym, nigdy pod mapą kosztem jej wysokości. Galeria wymaga opisowych `alt` i podpisów; hover jest dodatkiem — musi działać także przez `Tab`, strzałki, `Home`, `End`, `Escape` i dotknięcie. Lightbox nie kopiuje automatycznie `figcaption`, kredytu, licencji ani adresu źródłowego. Opcjonalny krótki podpis lightboxa podawaj jawnie przez `data-lightbox-caption`; nie umieszczaj w nim źródła. Mapy pełnoekranowe pozostają w lightboxie bez podpisu.
 
 ## Przenośna prezentacja bez konfiguracji sali
 
