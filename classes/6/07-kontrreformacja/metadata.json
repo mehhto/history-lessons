@@ -1,0 +1,20 @@
+{
+  "id": "07-kontrreformacja",
+  "title": "Kontrreformacja",
+  "grade": 6,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa",
+  "duration_minutes": 45,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "goalContract": { "version": "1.0" },
+  "presentationContract": { "version": "1.0" },
+  "status": "DO WERYFIKACJI NAUCZYCIELA",
+  "curriculum_requirement": "„Złoty wiek” w Polsce na tle europejskim: renesans, reformacja i reforma Kościoła katolickiego, Prusy Książęce, gospodarka XVI w., polski renesans, unia lubelska.” (dotychczasowa podstawa obowiązująca przejściowo w klasie VI w roku 2026/2027; europejski kontekst reformy katolickiej poszerzony o wojnę trzydziestoletnią i pokój westfalski zgodnie z programem szkoły).",
+  "main_question": "Jak Kościół katolicki odpowiedział na reformację i jak spory wyznaniowe zmieniły Europę?",
+  "source_reviewed": false,
+  "teacher_reviewed": false,
+  "offline_checked": true,
+  "pdf_exported": false,
+  "appearance": { "style": "atlas", "palette": "earth" }
+}
