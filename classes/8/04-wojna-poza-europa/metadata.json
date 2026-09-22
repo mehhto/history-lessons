@@ -1,0 +1,20 @@
+{
+  "id": "04-wojna-poza-europa",
+  "title": "Wojna poza Europą",
+  "grade": 8,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa",
+  "duration_minutes": 45,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "status": "DO WERYFIKACJI NAUCZYCIELA",
+  "curriculum_requirement": "Przedstawia oraz umiejscawia w czasie i przestrzeni przełomowe wydarzenia II wojny światowej (polityczne i militarne).",
+  "main_question": "Jak od pustyni po ocean alianci odebrali państwom Osi inicjatywę?",
+  "source_reviewed": true,
+  "teacher_reviewed": false,
+  "offline_checked": true,
+  "pdf_exported": false,
+  "presentationContract": { "version": "1.0" },
+  "goalContract": { "version": "1.0" },
+  "appearance": { "style": "atlas", "palette": "earth" }
+}
