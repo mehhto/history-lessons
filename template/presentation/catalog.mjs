@@ -7,7 +7,7 @@ export const catalog = Object.freeze({
     }),
     editorial: Object.freeze({
       defaultPalette: 'ink',
-      palettes: Object.freeze(['ink', 'burgundy', 'documentary-1939']),
+      palettes: Object.freeze(['ink', 'burgundy', 'documentary-1939', 'conflict-map']),
       stylesheet: 'editorial.css',
     }),
     atlas: Object.freeze({
@@ -17,6 +17,7 @@ export const catalog = Object.freeze({
     }),
   }),
   palettes: Object.freeze({
+    'conflict-map': Object.freeze({ canvas: '#F7F7F7', surface: '#FFFFFF', text: '#1F2933', muted: '#404040', heading: '#1F2933', accent: '#CA0020', evidence: '#0571B0', signal: '#F4A582', border: '#404040' }),
     sand: Object.freeze({ canvas: '#f7f2e8', surface: '#fffdf8', text: '#1f2933', muted: '#596575', heading: '#253e5a', accent: '#a85d2b', border: '#d7c5aa' }),
     stone: Object.freeze({ canvas: '#f0f0ed', surface: '#fafaf8', text: '#252525', muted: '#60636a', heading: '#323b4b', accent: '#6f5641', border: '#c9c8c2' }),
     ink: Object.freeze({ canvas: '#f4f5f7', surface: '#ffffff', text: '#19212b', muted: '#586574', heading: '#111827', accent: '#0f5f73', border: '#cbd5e1' }),

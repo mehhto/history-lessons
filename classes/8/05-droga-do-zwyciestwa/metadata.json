@@ -1,0 +1,20 @@
+{
+  "id": "05-droga-do-zwyciestwa",
+  "title": "Droga do zwycięstwa",
+  "grade": 8,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa",
+  "duration_minutes": 35,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "status": "DO WERYFIKACJI NAUCZYCIELA",
+  "curriculum_requirement": "Przedstawia oraz umiejscawia w czasie i przestrzeni przełomowe wydarzenia II wojny światowej (polityczne i militarne).",
+  "main_question": "Jak współpraca aliantów i walki na wielu frontach doprowadziły do końca II wojny światowej?",
+  "source_reviewed": false,
+  "teacher_reviewed": false,
+  "offline_checked": true,
+  "pdf_exported": false,
+  "presentationContract": { "version": "1.0" },
+  "goalContract": { "version": "1.0" },
+  "appearance": { "style": "editorial", "palette": "conflict-map" }
+}
