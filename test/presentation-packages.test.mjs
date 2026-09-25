@@ -17,15 +17,20 @@ async function lessonDirectories() {
   return directories;
 }
 
-test('every active lesson uses the shared bootstrap and declares an appearance', async () => {
+test('every active lesson follows its declared presentation mode and appearance', async () => {
   const lessons = await lessonDirectories();
   for (const lesson of lessons) {
-    const [html, metadataText, slidesText] = await Promise.all([readFile(path.join(lesson, 'index.html'), 'utf8'), readFile(path.join(lesson, 'metadata.json'), 'utf8'), readFile(path.join(lesson, 'slides.md'), 'utf8')]);
-    assert.match(html, /presentation\/boot\.mjs/, lesson);
-    assert.doesNotMatch(html, /Reveal\.initialize\s*\(/, lesson);
-    const metadata = JSON.parse(metadataText);
+    const metadata = JSON.parse(await readFile(path.join(lesson, 'metadata.json'), 'utf8'));
     assert.equal(typeof metadata.appearance?.style, 'string', lesson);
     assert.equal(typeof metadata.appearance?.palette, 'string', lesson);
+    const files = await readdir(lesson);
+    if (metadata.presentation_mode === 'none') {
+      for (const name of ['slides.md', 'index.html', 'lesson.css']) assert.equal(files.includes(name), false, `${lesson}: unexpected ${name}`);
+      continue;
+    }
+    const [html, slidesText] = await Promise.all([readFile(path.join(lesson, 'index.html'), 'utf8'), readFile(path.join(lesson, 'slides.md'), 'utf8')]);
+    assert.match(html, /presentation\/boot\.mjs/, lesson);
+    assert.doesNotMatch(html, /Reveal\.initialize\s*\(/, lesson);
     const contract = auditSlideContract(parseSlideDirectives(slidesText), { lessonType: metadata.lesson_type, kind: metadata.kind });
     assert.deepEqual(contract.errors, [], `${lesson}\n${contract.errors.join('\n')}`);
   }

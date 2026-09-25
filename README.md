@@ -2,17 +2,19 @@
 
 Lokalny, *offline-first* system tworzenia lekcji historii dla klas IV–VIII szkoły podstawowej w Polsce.
 
-**Zasada:** `Markdown` jest źródłem treści, `HTML + Reveal.js` jest prezentacją prowadzoną na lekcji, a `PDF` jest kopią awaryjną.
+**Zasada:** `Markdown` jest źródłem treści; prezentacja `HTML + Reveal.js` powstaje tylko w trybie `slides`. Lekcja w trybie `none` zachowuje pełny scenariusz i materiały uczniowskie bez `slides.md`, `index.html` i PDF prezentacji.
 
 ## Szybki start
 
 ```bash
 npm install
 npm run sync:reveal
-npm run new -- --class 6 --title "Wielkie odkrycia geograficzne"
+npm run new -- --class 6 --title "Wielkie odkrycia geograficzne" --type new-knowledge --presentation slides
 npm run check
 npm run serve
 ```
+
+Lekcja ćwiczeniowa bez prezentacji: `npm run new -- --class 6 --title "Ćwiczenia ze źródłami" --type practice --presentation none`.
 
 Otwórz `http://127.0.0.1:8080/classes/6/02-odkrycia-wyprawy/`.
 
@@ -68,25 +70,25 @@ npm run export:portable -- --lesson classes/4/01-poznajemy-przeszlosc --output h
 ## Model lekcji i workflow
 
 1. Ustal rok szkolny i klasę. W `curriculum/rollout-2026.md` wybierz `nowa-2026` albo `stara-przejsciowa`, następnie przeczytaj właściwy plik klasy. Nie wybieraj podstawy tylko po numerze klasy.
-2. Zapisz rok szkolny i wariant podstawy w `metadata.json`. Wybierz typ: `new-knowledge` (nowa wiedza) albo `practice` (ćwiczeniowa / źródłowa).
+2. Zapisz rok szkolny i wariant podstawy w `metadata.json`. Wybierz dwa niezależne ustawienia: `lesson_type` — `new-knowledge` (nowa wiedza) albo `practice` (ćwiczeniowa / źródłowa) — oraz `presentation_mode` — `slides` albo `none` (bez prezentacji; domyślnie `slides`).
 3. Uzupełnij `lesson.md`: dokładne wymaganie z aktywnej podstawy, pytanie główne oraz mapę **wymaganie → wiedza konieczna → zadanie → dowód zrozumienia**. Wymagań edukacyjnych używaj do poziomowania, nie do nadpisywania podstawy.
 4. Wykonaj krótki rekonesans publicznego ZPE: wyszukaj temat, klasę i pojęcia z celu, oceń kilka najtrafniejszych materiałów i zapisz wynik w sekcji „Rekonesans ZPE” w `sources.md`. Sprawdzenie jest obowiązkowe, użycie materiału — nie.
 5. Materiał ZPE wykorzystaj tylko wtedy, gdy wzmacnia cel, pasuje do wieku, ma sprawdzalne fakty oraz jasną licencję/status prawny. Pobierz do `assets/` tylko to, na co pozwalają prawa; w innym przypadku użyj materiału jako inspiracji lub odrzuć. Nie udostępniaj konta ani hasła i nie uzależniaj lekcji od dostępu do ZPE.
 6. W lekcji nowej wiedzy przygotuj pełne wyjaśnienie dla ucznia: pojęcia, chronologię, mechanizm, przykład i konieczne rozróżnienia. W ćwiczeniowej podaj tylko przypomnienie konieczne do samodzielnej pracy.
 7. Wybierz i ręcznie zweryfikuj pozostałe lokalne materiały wyłącznie wtedy, gdy wzmacniają cel; zapisz ich pochodzenie i licencję w `sources.md`.
-8. Poproś AI o pierwszy szkic `slides.md` zgodnie z `SKILL.md`; nie zlecaj mu wymyślania źródeł ani faktów. Nie ma globalnego limitu słów ani slajdów — obowiązują funkcja, czytelność i realny czas lekcji.
+8. Gdy `presentation_mode` ma wartość `slides`, poproś AI o szkic `slides.md`; przy `none` opracuj pełny scenariusz i materiały bez slajdów. Nie zlecaj wymyślania źródeł ani faktów. Nie ma globalnego limitu słów ani slajdów — obowiązują funkcja, czytelność i realny czas lekcji.
 9. Dodaj szczegółowe notatki nauczyciela tylko do trudnych wyjaśnień, źródeł i zadań wymagających moderacji; umieść je w `teacher-guide.md` lub po `notes:`.
 10. Wybierz tylko potrzebny wzorzec z [`template/patterns/README.md`](template/patterns/README.md), skopiuj go do `lesson.md`, `worksheet.md` albo `slides.md` i uzupełnij zweryfikowanym materiałem — nie kopiuj całego katalogu do każdej lekcji.
 11. Dodaj pliki do `assets/`, uruchom `npm run check`, a następnie obejrzyj lekcję lokalnie.
 12. Po lekcji nowej wiedzy przygotuj `student-summary.md`; po ćwiczeniowej użyj go tylko, gdy porządkuje nową całość.
 13. Po lekcji uzupełnij `reflection.md`; jeśli problem powtarza się, popraw szablon lub regułę, nie tylko jedną lekcję.
-14. Po render check i ręcznym podglądzie poproś nauczyciela o jawną akceptację. **Dopiero po niej** wygeneruj uzgodnione artefakty: przenośny HTML do pracy w salach poleceniem `npm run export:portable -- --lesson <ścieżka-lekcji>`, a PDF tylko na jawne polecenie nauczyciela.
+14. Po ręcznym przeglądzie poproś nauczyciela o jawną akceptację. W trybie `slides` po niej wygeneruj uzgodnione artefakty: przenośny HTML (`npm run export:portable -- --lesson <ścieżka-lekcji>`) i PDF tylko na jawne polecenie. W trybie `none` sprawdź scenariusz i materiały do druku; nie uruchamiaj kontroli ani eksportów prezentacji.
 
-**Zasada:** prezentacja dostarcza kompletnego, zwięzłego wyjaśnienia. Podręcznik jest uzupełnieniem, a nie miejscem, do którego odsyłamy po brakujący kontekst.
+**Zasada:** w trybie `slides` prezentacja dostarcza kompletnego, zwięzłego wyjaśnienia. W trybie `none` tę rolę pełnią scenariusz i materiały do pracy. Podręcznik jest uzupełnieniem, a nie miejscem, do którego odsyłamy po brakujący kontekst.
 
 ## Komponenty i trwałe poprawki wyglądu
 
-`slides.md` pozostaje źródłem treści. Każdy pakiet lekcji ma też `lesson.css`, ładowany **po** wspólnym motywie i bibliotece komponentów. Ręczne zmiany wyglądu zapisuj tam, aby przetrwały generowanie, eksport PDF i pracę na innym komputerze.
+`slides.md` pozostaje źródłem treści prezentacji. W trybie `slides` pakiet ma `lesson.css`, ładowany **po** wspólnym motywie i bibliotece komponentów; w trybie `none` ten plik i cały zestaw prezentacyjny są pomijane.
 
 Nadaj niestandardowemu slajdowi trwałe `id`:
 
@@ -145,7 +147,7 @@ W `metadata.json` wybierz zatwierdzony styl i paletę:
 | `editorial` | `ink`, `burgundy`, `documentary-1939` |
 | `atlas` | `marine`, `earth`, `encounter-atlas` |
 
-Nowy pakiet można utworzyć ze stylem i krótkim slugiem: `npm run new -- --class 6 --title "Temat" --slug krotki-temat --style atlas --palette marine`. Generator automatycznie dopisuje kolejny numer, np. `06-krotki-temat`.
+Nowy pakiet można utworzyć z osobno wskazanymi typem/formą, stylem i krótkim slugiem: `npm run new -- --class 6 --title "Temat" --slug krotki-temat --type new-knowledge --presentation slides --style atlas --palette marine`. Dla lekcji bez prezentacji użyj `--presentation none`. Generator automatycznie dopisuje kolejny numer, np. `06-krotki-temat`.
 
 Opcjonalne tło jest lokalnym, dekoracyjnym plikiem lekcji; nie może zastępować materiału analizowanego przez ucznia:
 
@@ -155,7 +157,7 @@ Opcjonalne tło jest lokalnym, dekoracyjnym plikiem lekcji; nie może zastępowa
 
 Dozwolone zakresy: `opening`, `opening-and-sections`, `subtle-all`. Tło pod tekstem dostaje jasną powierzchnię zapewniającą kontrast; na slajdzie mapy, tabeli lub analizy źródła ustaw `data-backdrop="off"`. Zasób musi być lokalny, opisany w `sources.md` i mieć sprawdzone prawa. Nie wpisuj URL, dowolnego CSS ani motywu dla pojedynczego slajdu.
 
-Kontrola renderu odwiedza każdy slajd i sprawdza rzeczywiste płótno oraz treść; nie zastępuje oględzin przez nauczyciela:
+Kontrola renderu każdego slajdu dotyczy wyłącznie pakietów `presentation_mode: slides`; sprawdza rzeczywiste płótno i treść, ale nie zastępuje oględzin przez nauczyciela:
 
 ```bash
 npm run check:render -- --lesson classes/6/temat

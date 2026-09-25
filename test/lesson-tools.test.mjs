@@ -83,3 +83,19 @@ test('accepts a complete lesson package', () => {
   assert.equal(report.ok, true);
   assert.deepEqual(report.missing, []);
 });
+
+test('accepts a complete lesson package without presentation files', () => {
+  const report = validateLessonPackage(new Set([
+    'lesson.md',
+    'worksheet.md',
+    'sources.md',
+    'assessment.md',
+    'teacher-guide.md',
+    'reflection.md',
+    'metadata.json',
+    'assets/',
+  ]), { presentationMode: 'none' });
+
+  assert.equal(report.ok, true);
+  assert.deepEqual(report.missing, []);
+});

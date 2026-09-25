@@ -9,7 +9,7 @@ Nie jesteś źródłem faktów historycznych ani arbitrem zgodności z programem
 ## Przed rozpoczęciem
 
 1. Ustal rok szkolny i klasę. Odczytaj `curriculum/rollout-2026.md`, wybierz `nowa-2026` albo `stara-przejsciowa`, a potem przeczytaj właściwy plik klasy, `template/quality-checklist.md` oraz `template/lesson/lesson.md`.
-2. Ustal: klasę, czas, temat, dosłowne wymaganie z aktywnej podstawy, pytanie główne i **typ lekcji**: `new-knowledge` albo `practice`. Wymagań edukacyjnych używaj do poziomowania; nie mogą nadpisywać podstawy.
+2. Ustal: klasę, czas, temat, dosłowne wymaganie z aktywnej podstawy, pytanie główne, **typ lekcji** (`new-knowledge` albo `practice`) oraz osobno **formę** (`presentation_mode`: `slides` albo `none`). Gdy forma nie została podana, zachowaj domyślne `slides`; nie mieszaj formy z celem dydaktycznym. Wymagań edukacyjnych używaj do poziomowania; nie mogą nadpisywać podstawy.
 3. Zbuduj mapę: **cel G… → wiedza konieczna → działanie ucznia → dowód zrozumienia**.
 4. Zaprojektuj przebieg i tylko potrzebne materiały.
 5. Dobierz i zweryfikuj źródła wspierające zaakceptowany plan. Wykonaj ograniczony rekonesans publicznego ZPE, zapisz decyzję w `sources.md`, ale użyj materiału tylko wtedy, gdy wnosi konkretną wartość dla celu, jest odpowiedni dla wieku, ma zweryfikowane fakty i jasną licencję/status prawny. Gdy lekcja jest zbudowana wokół materiału dostarczonego przez nauczyciela, jego przydatność oceń wcześniej.
@@ -42,9 +42,13 @@ Wymagane elementy:
 
 Źródło, mapa lub materiał wizualny są obowiązkowe **wyłącznie wtedy, gdy rzeczywiście wzmacniają cel**. Nie dodawaj ich jako rytuału.
 
+## Forma realizacji
+
+`lesson_type` opisuje cel dydaktyczny; `presentation_mode` opisuje sposób prowadzenia. W zleceniu podaj oba osobno. `slides` tworzy zwykły pakiet z prezentacją; `none` tworzy pełną lekcję bez `slides.md`, `index.html` i `lesson.css`, ale zachowuje scenariusz, kartę pracy, materiały nauczyciela, ocenianie, źródła i pozostałe wymagane elementy. W trybie `none` nie obniżaj jakości merytorycznej ani nie uruchamiaj kontroli/eksportów prezentacji; `pdf_exported` pozostaje `false`.
+
 ## Konstrukcja i objętość
 
-Nie istnieje globalny limit liczby slajdów ani słów. Prezentacja może mieć tyle slajdów i tyle tekstu, ile wymaga zrozumienie tematu przez ucznia w danym wieku.
+Gdy `presentation_mode` ma wartość `slides`, nie istnieje globalny limit liczby slajdów ani słów. Prezentacja może mieć tyle slajdów i tekstu, ile wymaga zrozumienie tematu przez ucznia w danym wieku.
 
 Każdy slajd musi mieć jasną funkcję oraz być czytelny z końca klasy:
 
@@ -57,6 +61,8 @@ Każdy slajd musi mieć jasną funkcję oraz być czytelny z końca klasy:
 - gdy cytat źródłowy zostawia wyraźnie zbyt dużo pustego pola pod tekstem, najpierw zwiększ jego krój w bezpiecznym zakresie 22–28 px albo popraw powierzchnię czytania; nie skracaj cytatu wyłącznie dla wypełnienia slajdu i potwierdź wynik na świeżym renderze.
 
 ## `slides.md` i notatki nauczyciela
+
+Poniższe wymagania prezentacyjne obowiązują tylko przy `presentation_mode: slides`. W trybie `none` zachowaj jakość scenariusza i materiałów, ale pomiń pliki oraz kontrole prezentacji.
 
 - Widoczna prezentacja ma zawierać pełne, zwięzłe wyjaśnienia dla ucznia.
 - W poleceniu od razu nazwij działanie lub rezultat (`zapisz dwa argumenty`, `ułóż wydarzenia`, `wskaż fragment i uzasadnij`). Nie dodawaj osobnej etykiety „produkt”. Cel zadania i czas wykonania pokazuj uczniom tylko wtedy, gdy ułatwiają rozpoczęcie pracy, organizację lub samokontrolę.
@@ -78,6 +84,8 @@ Każdy katalog rzeczywistej lekcji (`kind: lesson`) nazywaj `NN-krotki-slug`, gd
 Mapy Google i YouTube są opcjonalne: iframe uzyskuje `src` wyłącznie po kliknięciu, a slajd ma lokalną alternatywę. Mapa otrzymuje legendę, gdy symbole, kolory, linie lub oznaczenia są istotne do jej odczytania; legendę umieszczaj w bocznej strefie albo w samym materiale mapowym, nigdy pod mapą kosztem jej wysokości. Galeria wymaga opisowych `alt` i podpisów; hover jest dodatkiem — musi działać także przez `Tab`, strzałki, `Home`, `End`, `Escape` i dotknięcie. Lightbox nie kopiuje automatycznie `figcaption`, kredytu, licencji ani adresu źródłowego. Opcjonalny krótki podpis lightboxa podawaj jawnie przez `data-lightbox-caption`; nie umieszczaj w nim źródła. Mapy pełnoekranowe pozostają w lightboxie bez podpisu.
 
 ## Przenośna prezentacja bez konfiguracji sali
+
+Dotyczy wyłącznie `presentation_mode: slides`; lekcji `none` nie eksportuj jako prezentacji przenośnej.
 
 Gdy nauczyciel potrzebuje pracy na obcych komputerach bez Node.js, serwera i Internetu, po ustabilizowaniu źródeł wygeneruj samodzielny plik:
 
@@ -103,7 +111,7 @@ Wynik `*-portable.html` jest artefaktem lokalnym, nie źródłem i nie trafia do
 `npm run check` rozdziela:
 
 1. kompletność pakietu;
-2. sprawność techniczną i aktualność PDF;
+2. sprawność techniczną, aktualność PDF prezentacji w trybie `slides` oraz pakietu A4;
 3. przegląd źródeł oraz nauczyciela;
 4. **ostrzeżenia dydaktyczne** — brak mapy wymagań, pełnego minimum wiedzy, podsumowania ucznia lub sekcji trudnych momentów.
 
@@ -111,4 +119,4 @@ Ostrzeżenia dydaktyczne nie blokują statusu technicznego. Braki struktury, bez
 
 ## Oczekiwane pliki
 
-Aktualizuj `lesson.md`, `slides.md`, `lesson.css`, `sources.md`, `assessment.md`, `reflection.md`, `teacher-guide.md`, `student-summary.md` i `metadata.json`. W `metadata.json` wpisz `lesson_type`. Przed zakończeniem uruchom `npm run check`, sprawdź render, wygeneruj tylko artefakty wymagane w aktualnym zakresie i przejdź checklistę jakości. PDF/PPTX powstają dopiero po wyraźnym żądaniu lub akceptacji nauczyciela.
+Aktualizuj `lesson.md`, `worksheet.md`, `sources.md`, `assessment.md`, `reflection.md`, `teacher-guide.md`, `student-summary.md` i `metadata.json`; `slides.md`, `index.html` i `lesson.css` wymagane są tylko dla `presentation_mode: slides`. W `metadata.json` wpisz `lesson_type` oraz `presentation_mode`. Przed zakończeniem uruchom `npm run check`, a dla `slides` sprawdź render; wygeneruj tylko artefakty wymagane w aktualnym zakresie i przejdź checklistę jakości. PDF/PPTX prezentacji powstają dopiero po wyraźnym żądaniu lub akceptacji nauczyciela.

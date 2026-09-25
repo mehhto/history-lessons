@@ -1,4 +1,4 @@
-import { readdir } from 'node:fs/promises';
+import { readFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
 import { spawn } from 'node:child_process';
@@ -9,7 +9,14 @@ export async function activeLessonDirectories(root) {
   const lessons = [];
   for (const grade of grades.filter((entry) => entry.isDirectory()).sort((a, b) => a.name.localeCompare(b.name))) {
     const entries = await readdir(path.join(classes, grade.name), { withFileTypes: true });
-    for (const entry of entries.filter((item) => item.isDirectory()).sort((a, b) => a.name.localeCompare(b.name))) lessons.push(path.join('classes', grade.name, entry.name));
+    for (const entry of entries.filter((item) => item.isDirectory()).sort((a, b) => a.name.localeCompare(b.name))) {
+      const directory = path.join(classes, grade.name, entry.name);
+      try {
+        const metadata = JSON.parse(await readFile(path.join(directory, 'metadata.json'), 'utf8'));
+        if (metadata.presentation_mode === 'none') continue;
+      } catch {}
+      lessons.push(path.join('classes', grade.name, entry.name));
+    }
   }
   return lessons;
 }

@@ -41,7 +41,8 @@ export async function listLessons({ repoRoot }) {
         const metadata = JSON.parse(await readFile(metadataPath, 'utf8'));
         const packageEntries = new Set((await readdir(directory, { withFileTypes: true })).map((item) => item.isDirectory() ? `${item.name}/` : item.name));
         const identityIssues = validateLessonIdentity({ directoryName: entry.name, metadata });
-        const packageStatus = validateLessonPackage(packageEntries);
+        const presentationMode = metadata.presentation_mode ?? 'slides';
+        const packageStatus = validateLessonPackage(packageEntries, { presentationMode });
         const numbered = /^(\d{2})-/.exec(entry.name);
         if (!numbered) { diagnostics.push({ directory, issues: ['Katalog pomocniczy lub bez numeru lekcji.'] }); continue; }
         const revision = (await fingerprint(directory)).join('|');
@@ -51,6 +52,7 @@ export async function listLessons({ repoRoot }) {
           revision, valid: identityIssues.length === 0 && packageStatus.ok,
           issues: [...identityIssues, ...packageStatus.missing.map((missing) => `Brakuje ${missing}`)],
           capabilities: {
+            presentation: presentationMode === 'slides' && packageEntries.has('slides.md') && packageEntries.has('index.html'),
             worksheet: await exists(path.join(directory, 'worksheet.md')),
             teacher: await exists(path.join(directory, 'teacher-guide.md')),
             summary: await exists(path.join(directory, 'student-summary.md')) && Boolean((await readFile(path.join(directory, 'student-summary.md'), 'utf8')).trim()),

@@ -319,6 +319,7 @@ export async function buildPortablePresentation({ repoRoot, lessonDirectory }) {
   const root = await realpath(repoRoot);
   const lesson = assertInside(root, await realpath(path.resolve(lessonDirectory)));
   const metadata = JSON.parse(await readFile(path.join(lesson, 'metadata.json'), 'utf8'));
+  if (metadata.presentation_mode === 'none') throw new Error('Lekcja bez prezentacji nie ma eksportu HTML.');
   const appearance = resolveAppearance(metadata.appearance, catalog);
   const style = catalog.styles[appearance.style];
   const cssFiles = [

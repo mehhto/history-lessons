@@ -12,7 +12,7 @@ function argument(name) {
 
 function usage(message) {
   if (message) console.error(`Błąd: ${message}\n`);
-  console.error('Użycie: npm run new -- --class 6 --title "Wielkie odkrycia geograficzne" [--slug odkrycia-geograficzne] [--type new-knowledge|practice] [--style museum|editorial|atlas] [--palette nazwa]');
+  console.error('Użycie: npm run new -- --class 6 --title "Wielkie odkrycia geograficzne" [--slug odkrycia-geograficzne] [--type new-knowledge|practice] [--presentation slides|none] [--style museum|editorial|atlas] [--palette nazwa]');
   process.exitCode = 1;
 }
 
@@ -20,12 +20,15 @@ const grade = argument('--class');
 const title = argument('--title');
 const requestedSlug = argument('--slug');
 const lessonType = argument('--type') || 'new-knowledge';
+const presentationMode = argument('--presentation') || 'slides';
 const style = argument('--style');
 const palette = argument('--palette');
 if (!grade || !title) {
   usage('Wymagane są parametry --class oraz --title.');
 } else if (!['new-knowledge', 'practice'].includes(lessonType)) {
   usage('Parametr --type musi mieć wartość new-knowledge albo practice.');
+} else if (!['slides', 'none'].includes(presentationMode)) {
+  usage('Parametr --presentation musi mieć wartość slides albo none.');
 } else {
   try {
     const requestedAppearance = {
@@ -57,15 +60,19 @@ if (!grade || !title) {
     const metadataPath = path.join(target, 'metadata.json');
     const lessonPath = path.join(target, 'lesson.md');
     const slidesPath = path.join(target, 'slides.md');
-    const deckTemplate = path.resolve(process.cwd(), 'template', 'presentation', 'decks', `${lessonType}.md`);
-    await copyFile(deckTemplate, slidesPath);
+    if (presentationMode === 'slides') {
+      const deckTemplate = path.resolve(process.cwd(), 'template', 'presentation', 'decks', `${lessonType}.md`);
+      await copyFile(deckTemplate, slidesPath);
+    } else {
+      await Promise.all(['slides.md', 'index.html', 'lesson.css'].map((name) => rm(path.join(target, name), { force: true })));
+    }
     const teacherGuidePath = path.join(target, 'teacher-guide.md');
     const studentSummaryPath = path.join(target, 'student-summary.md');
     const worksheetPath = path.join(target, 'worksheet.md');
     if (lessonType === 'practice') await rm(studentSummaryPath);
     const replacements = [
       [lessonPath, [['__TITLE__', title], ['__GRADE__', String(grade)]]],
-      [slidesPath, [['__TITLE__', title], ['__GRADE__', String(grade)]]],
+      ...(presentationMode === 'slides' ? [[slidesPath, [['__TITLE__', title], ['__GRADE__', String(grade)]]]] : []),
       [teacherGuidePath, [['__TITLE__', title], ['__GRADE__', String(grade)]]],
       ...(lessonType === 'new-knowledge' ? [[studentSummaryPath, [['__TITLE__', title], ['__GRADE__', String(grade)]]]] : []),
       [worksheetPath, [['__TITLE__', title], ['__GRADE__', String(grade)]]],
@@ -82,11 +89,15 @@ if (!grade || !title) {
     metadata.title = title;
     metadata.grade = Number(grade);
     metadata.lesson_type = lessonType;
+    metadata.presentation_mode = presentationMode;
     metadata.appearance = appearance.background ? appearance : { style: appearance.style, palette: appearance.palette };
     await writeFile(metadataPath, `${JSON.stringify(metadata, null, 2)}\n`, 'utf8');
 
     console.log(`Utworzono: ${relativeTarget}`);
-    console.log('Następnie: ustal rok i wariant podstawy z curriculum/rollout-2026.md, wybierz zatwierdzoną paletę oraz lokalny krój z template/presentation/fonts/collection/README.md, uzupełnij lesson.md i sources.md, dodaj lokalne pliki do assets/, potem npm run check.');
+    const designGuidance = presentationMode === 'slides'
+      ? 'wybierz zatwierdzoną paletę oraz lokalny krój z template/presentation/fonts/collection/README.md; '
+      : '';
+    console.log(`Następnie: ustal rok i wariant podstawy z curriculum/rollout-2026.md, ${designGuidance}uzupełnij lesson.md i sources.md, dodaj lokalne pliki do assets/, potem npm run check.`);
   } catch (error) {
     usage(error.message);
   }

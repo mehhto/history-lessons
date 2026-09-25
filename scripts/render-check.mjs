@@ -72,6 +72,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const root = await realpath(process.cwd());
   const lessonDirectory = await realpath(resolveWithin(root, lesson));
   const metadata = JSON.parse(await readFile(path.join(lessonDirectory, 'metadata.json'), 'utf8'));
+  if (metadata.presentation_mode === 'none') throw new Error('Lekcja bez prezentacji nie wymaga kontroli renderowania.');
   if (recordContractReview && metadata.presentationContract?.version !== '1.0') throw new Error('Zapis review wymaga opt-in presentationContract.version 1.0.');
   const relative = path.relative(root, lessonDirectory).split(path.sep).map(encodeURIComponent).join('/');
   const server = await startServer(root);

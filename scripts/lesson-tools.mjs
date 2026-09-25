@@ -14,6 +14,8 @@ export const REQUIRED_LESSON_ENTRIES = [
   'assets/',
 ];
 
+const PRESENTATION_ENTRIES = new Set(['slides.md', 'index.html', 'lesson.css']);
+
 export function normalizeLessonSlug(title) {
   const normalized = title
     .normalize('NFD')
@@ -72,7 +74,13 @@ export function validateLessonIdentity({ directoryName, metadata }) {
   return issues;
 }
 
-export function validateLessonPackage(entries) {
-  const missing = REQUIRED_LESSON_ENTRIES.filter((entry) => !entries.has(entry));
+export function validateLessonPackage(entries, { presentationMode = 'slides' } = {}) {
+  if (!['slides', 'none'].includes(presentationMode)) {
+    throw new Error('Nieznany tryb prezentacji. Użyj slides albo none.');
+  }
+  const required = presentationMode === 'none'
+    ? REQUIRED_LESSON_ENTRIES.filter((entry) => !PRESENTATION_ENTRIES.has(entry))
+    : REQUIRED_LESSON_ENTRIES;
+  const missing = required.filter((entry) => !entries.has(entry));
   return { ok: missing.length === 0, missing };
 }

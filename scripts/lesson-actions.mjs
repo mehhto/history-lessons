@@ -1,6 +1,6 @@
 import path from 'node:path';
 import process from 'node:process';
-import { realpath, stat } from 'node:fs/promises';
+import { readFile, realpath, stat } from 'node:fs/promises';
 import { resolveWithin } from './safe-paths.mjs';
 
 async function fileExists(file) { try { return (await stat(file)).isFile(); } catch { return false; } }
@@ -32,7 +32,12 @@ export async function resolveLessonAction({ repoRoot, lesson, action }) {
   const config = ACTIONS[action];
   if (!config) throw new Error('Nieznana operacja.');
   const lessonDirectory = await lessonPath(repoRoot, lesson);
-  if (!await fileExists(path.join(lessonDirectory, 'metadata.json'))) throw new Error('Nie znaleziono lekcji.');
+  const metadataPath = path.join(lessonDirectory, 'metadata.json');
+  if (!await fileExists(metadataPath)) throw new Error('Nie znaleziono lekcji.');
+  const metadata = JSON.parse(await readFile(metadataPath, 'utf8'));
+  if (metadata.presentation_mode === 'none' && ['portable', 'presentationPdf', 'renderCheck'].includes(action)) {
+    throw new Error('Ta lekcja nie ma prezentacji.');
+  }
   if (action === 'summary' && !await fileExists(path.join(lessonDirectory, 'student-summary.md'))) throw new Error('Ta lekcja nie ma notatki ucznia do druku.');
   const id = path.basename(lessonDirectory);
   const target = config.browser ? 'scripts/with-local-playwright.mjs' : config.script;

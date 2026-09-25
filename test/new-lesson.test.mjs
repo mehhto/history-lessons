@@ -45,6 +45,23 @@ test('new practice lesson omits the optional student summary', async () => {
   }
 });
 
+test('new lesson can be commissioned without a presentation', async () => {
+  const directory = await mkdtemp(path.join(os.tmpdir(), 'history-lesson-'));
+  try {
+    await cp(path.join(root, 'template'), path.join(directory, 'template'), { recursive: true });
+    await run(process.execPath, [path.join(root, 'scripts/new-lesson.mjs'), '--class', '6', '--title', 'Lekcja stacyjna', '--type', 'practice', '--presentation', 'none'], { cwd: directory });
+    const lesson = path.join(directory, 'classes/6/01-lekcja-stacyjna');
+    const metadata = JSON.parse(await readFile(path.join(lesson, 'metadata.json'), 'utf8'));
+    assert.equal(metadata.lesson_type, 'practice');
+    assert.equal(metadata.presentation_mode, 'none');
+    for (const name of ['slides.md', 'index.html', 'lesson.css']) {
+      await assert.rejects(readFile(path.join(lesson, name), 'utf8'), { code: 'ENOENT' });
+    }
+  } finally {
+    await rm(directory, { recursive: true, force: true });
+  }
+});
+
 test('new lesson records a validated presentation style and palette', async () => {
   const directory = await mkdtemp(path.join(os.tmpdir(), 'history-lesson-'));
   try {

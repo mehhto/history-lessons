@@ -23,6 +23,8 @@ if (!lesson) {
 const root = await realpath(process.cwd());
 const lessonDirectory = await realpath(resolveWithin(root, lesson));
 resolveWithin(root, lessonDirectory);
+const metadata = JSON.parse(await readFile(path.join(lessonDirectory, 'metadata.json'), 'utf8'));
+if (metadata.presentation_mode === 'none') throw new Error('Lekcja bez prezentacji nie ma eksportu PDF prezentacji.');
 const presentationInputs = await loadPresentationInputs({ repoRoot: root, lessonDirectory });
 
 const outputName = output || 'presentation-backup.pdf';

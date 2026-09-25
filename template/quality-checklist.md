@@ -13,7 +13,8 @@
 - [ ] Trudne treści są opisane językiem odpowiednim dla wieku.
 
 ## Typ i przebieg lekcji
-- [ ] `metadata.json` wskazuje `new-knowledge` albo `practice`.
+- [ ] `metadata.json.lesson_type` wskazuje `new-knowledge` albo `practice`.
+- [ ] `metadata.json.presentation_mode` wskazuje osobno `slides` albo `none`; przy `none` pomija się tylko wymagania prezentacyjne, a `pdf_exported` pozostaje `false`.
 - [ ] Lekcja nowej wiedzy zawiera pełne wyjaśnienie: pojęcia, chronologię, mechanizm, przykład i rozróżnienia potrzebne uczniowi.
 - [ ] Lekcja ćwiczeniowa / źródłowa zawiera przypomnienie koniecznej wiedzy, materiał, pytania, jednoznacznie oczekiwane działanie lub rezultat oraz model odpowiedzi lub kryteria.
 - [ ] Po zaprojektowaniu celu, działania i dowodu wykonano ograniczony rekonesans publicznego ZPE oraz zapisano kandydatów i decyzje w `sources.md` — także wtedy, gdy niczego nie wybrano.
@@ -26,13 +27,15 @@
 - [ ] Po lekcji nowej wiedzy istnieje kompletne `student-summary.md`; po ćwiczeniowej tylko, gdy organizuje nową całość.
 - [ ] `teacher-guide.md` zawiera notatki tylko do trudnych momentów, źródeł, nowych pojęć lub zadań z typowymi błędami — albo jawnie stwierdza ich brak.
 
-## Slajdy, technika i dostępność
+## Slajdy, technika i dostępność — tylko `presentation_mode: slides`
 - [ ] Liczba slajdów i objętość tekstu wynikają z celu oraz czasu, nie z globalnego limitu.
 - [ ] Każdy slajd ma jasną funkcję i jest czytelny z końca klasy: bloki tekstu, wyróżnienia, tabela, oś czasu lub ilustracja wspierają rozumienie.
 - [ ] Polecenia nie używają osobnej etykiety „produkt”; wynikają z czasownika i treści zadania. Cel zadania i czas wykonania są widoczne tylko wtedy, gdy realnie pomagają uczniom.
 - [ ] Podpisy źródeł w nowym pakiecie korzystają z lokalnego szablonowego nadpisania do `20px` i pozostają czytelne na projektorze; nie zmieniono przez to starych pakietów.
-- [ ] Każdy materiał ma wpis w `sources.md`, w tym prawa/licencję i ograniczenia.
-- [ ] Wszystkie obrazy i biblioteki są lokalne; prezentacja nie wymaga Internetu.
+- [ ] Wszystkie obrazy i biblioteki prezentacji są lokalne; prezentacja nie wymaga Internetu.
 - [ ] Przetestowano obrazy, klawiaturę, pełny ekran, notatki (`S`) i czarny ekran (`B`).
 - [ ] Utworzono oraz otwarto aktualne `presentation-backup.pdf`.
+
+## Wspólne dla obu form
+- [ ] Każdy materiał ma wpis w `sources.md`, w tym prawa/licencję i ograniczenia.
 - [ ] Karta pracy jest czytelna po wydruku czarno-białym.

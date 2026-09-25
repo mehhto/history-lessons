@@ -55,6 +55,13 @@ test('reports malformed metadata instead of accepting it as ready', () => {
   assert.throws(() => parseLessonMetadata(JSON.stringify({ ...metadata, lesson_type: 'other' })), /lesson_type/);
 });
 
+test('defaults legacy metadata to slides and rejects unknown presentation modes', () => {
+  assert.equal(parseLessonMetadata(JSON.stringify(metadata)).presentation_mode, 'slides');
+  assert.equal(parseLessonMetadata(JSON.stringify({ ...metadata, presentation_mode: 'none' })).presentation_mode, 'none');
+  assert.throws(() => parseLessonMetadata(JSON.stringify({ ...metadata, presentation_mode: 'none', pdf_exported: true })), /pdf_exported/);
+  assert.throws(() => parseLessonMetadata(JSON.stringify({ ...metadata, presentation_mode: 'video' })), /presentation_mode/);
+});
+
 test('rejects malformed presentation appearance in metadata', () => {
   const broken = { ...metadata, appearance: { style: 'atlas', palette: 'sand' } };
   assert.throws(() => parseLessonMetadata(JSON.stringify(broken)), /nie obsługuje palety/);
@@ -79,6 +86,19 @@ test('separates package completeness, technical checks, and teacher approval', (
   assert.equal(report.technical.ok, false);
   assert.equal(report.teacherApproval.ok, false);
   assert.equal(report.ready, false);
+});
+
+test('no-presentation lessons do not require a presentation PDF', () => {
+  const report = assessLessonQuality({
+    metadata: { ...metadata, presentation_mode: 'none', offline_checked: true, pdf_exported: false },
+    requiredFilesPresent: true,
+    requiredContent: { 'lesson.md': 'Gotowe' },
+    artifacts: { presentationPdf: false, printPack: true },
+  });
+
+  assert.equal(report.technical.ok, true);
+  assert.deepEqual(report.slideContract.errors, []);
+  assert.deepEqual(report.slideContract.warnings, []);
 });
 
 test('reports pedagogical gaps as warnings without changing technical readiness', () => {

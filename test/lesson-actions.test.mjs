@@ -21,6 +21,24 @@ test('returns the teacher PDF that the print exporter actually creates', async (
   }
 });
 
+test('rejects presentation exports for a lesson without presentation files', async () => {
+  const root = await mkdtemp(path.join(os.tmpdir(), 'lesson-actions-'));
+  try {
+    const lesson = 'classes/6/01-no-presentation';
+    await mkdir(path.join(root, lesson), { recursive: true });
+    await writeFile(path.join(root, lesson, 'metadata.json'), '{"presentation_mode":"none"}\n');
+
+    for (const action of ['portable', 'presentationPdf']) {
+      await assert.rejects(
+        resolveLessonAction({ repoRoot: root, lesson, action }),
+        /nie ma prezentacji/,
+      );
+    }
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
 test('rejects a normalized path that is not a lesson package under classes', async () => {
   const root = await mkdtemp(path.join(os.tmpdir(), 'lesson-actions-'));
   try {

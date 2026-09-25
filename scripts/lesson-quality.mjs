@@ -60,10 +60,18 @@ export function parseLessonMetadata(text) {
   if (metadata.lesson_type !== undefined && !['new-knowledge', 'practice'].includes(metadata.lesson_type)) {
     throw new Error('Pole lesson_type w metadata.json musi mieć wartość new-knowledge albo practice.');
   }
+  const presentationMode = metadata.presentation_mode === undefined ? 'slides' : metadata.presentation_mode;
+  if (!['slides', 'none'].includes(presentationMode)) {
+    throw new Error('Pole presentation_mode w metadata.json musi mieć wartość slides albo none.');
+  }
+  metadata.presentation_mode = presentationMode;
   for (const field of ['source_reviewed', 'teacher_reviewed', 'offline_checked', 'pdf_exported']) {
     if (typeof metadata[field] !== 'boolean') {
       throw new Error(`Pole ${field} w metadata.json musi być true albo false.`);
     }
+  }
+  if (presentationMode === 'none' && metadata.pdf_exported) {
+    throw new Error('Pole pdf_exported musi mieć wartość false, gdy presentation_mode ma wartość none.');
   }
   resolveAppearance(metadata.appearance, catalog);
   return metadata;
@@ -162,7 +170,8 @@ export function assessLessonQuality({ metadata, requiredFilesPresent, requiredCo
   };
   const technicalIssues = [];
   if (!metadata.offline_checked) technicalIssues.push('Nie potwierdzono działania offline.');
-  if (!metadata.pdf_exported || !artifacts?.presentationPdf) technicalIssues.push('Brakuje aktualnego PDF prezentacji.');
+  const presentationRequired = (metadata.presentation_mode ?? 'slides') === 'slides';
+  if (presentationRequired && (!metadata.pdf_exported || !artifacts?.presentationPdf)) technicalIssues.push('Brakuje aktualnego PDF prezentacji.');
   if (!artifacts?.printPack) technicalIssues.push('Brakuje pełnego, aktualnego pakietu A4.');
   const technical = { ok: technicalIssues.length === 0, issues: technicalIssues };
   const approvalRequired = metadata.kind === 'lesson';
@@ -191,11 +200,10 @@ export function assessLessonQuality({ metadata, requiredFilesPresent, requiredCo
     }
   }
   const teachingWarnings = { ok: teachingIssues.length === 0, issues: teachingIssues };
-  const slides = parseSlideDirectives(requiredContent?.['slides.md'] || '');
-  const slideContract = auditSlideContract(slides, {
-    lessonType: metadata.lesson_type,
-    kind: metadata.kind,
-  });
+  const slides = presentationRequired ? parseSlideDirectives(requiredContent?.['slides.md'] || '') : [];
+  const slideContract = presentationRequired
+    ? auditSlideContract(slides, { lessonType: metadata.lesson_type, kind: metadata.kind })
+    : { errors: [], warnings: [] };
   const goalContract = inspectGoalContract({
     metadata,
     lessonMarkdown: lessonContent,

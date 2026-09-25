@@ -104,15 +104,17 @@ if (lessons.length === 0) {
   console.log('Brak lekcji do sprawdzenia. Utwórz pierwszą: npm run new -- --class 6 --title "Temat"');
 } else {
   for (const lesson of lessons) {
-    const structure = validateLessonPackage(lesson.names);
     const label = path.relative(process.cwd(), lesson.directory);
-    if (!structure.ok) {
-      errors += 1;
-      console.error(`BRAK  ${label}: ${structure.missing.join(', ')}`);
-      continue;
-    }
     try {
-      const metadata = parseLessonMetadata(await readFile(path.join(lesson.directory, 'metadata.json'), 'utf8'));
+      const metadata = lesson.names.has('metadata.json')
+        ? parseLessonMetadata(await readFile(path.join(lesson.directory, 'metadata.json'), 'utf8'))
+        : undefined;
+      const structure = validateLessonPackage(lesson.names, { presentationMode: metadata?.presentation_mode });
+      if (!structure.ok) {
+        errors += 1;
+        console.error(`BRAK  ${label}: ${structure.missing.join(', ')}`);
+        continue;
+      }
       if (metadata.kind !== 'demo') {
         const identityIssues = validateLessonIdentity({ directoryName: path.basename(lesson.directory), metadata });
         if (identityIssues.length > 0) throw new Error(identityIssues.join(' '));
@@ -125,11 +127,13 @@ if (lessons.length === 0) {
         requiredFilesPresent: structure.ok,
         requiredContent,
         artifacts: {
-          presentationPdf: metadata.pdf_exported && await presentationFresh(lesson.directory, process.cwd()),
+          presentationPdf: metadata.presentation_mode === 'none' ? false : metadata.pdf_exported && await presentationFresh(lesson.directory, process.cwd()),
           printPack: await printPackFresh(lesson.directory, process.cwd(), metadata),
         },
       });
-      const contract = metadata.presentationContract === undefined ? null : await inspectLessonContract({ repoRoot: process.cwd(), lessonDirectory: lesson.directory });
+      const contract = metadata.presentation_mode === 'none' || metadata.presentationContract === undefined
+        ? null
+        : await inspectLessonContract({ repoRoot: process.cwd(), lessonDirectory: lesson.directory });
       const status = report.ready ? 'GOTOWA' : 'WYMAGA DALSZEGO PRZEGLĄDU';
       if (report.slideContract.errors.length || report.goalContract?.errors.length || contract?.static.status === 'fail' || ['browser', 'human'].some((gate) => contract?.[gate].status === 'fail')) errors += 1;
       if (!report.ready || (contract && !contract.presentationAccepted)) pending += 1;
