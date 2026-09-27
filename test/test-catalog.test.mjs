@@ -40,6 +40,7 @@ test('requires one explicit teacher-key marker and never leaks the teacher part 
   const student = studentTestMarkdown(sourceWithKey);
   assert.match(student, /## 1\. Zadanie/);
   assert.doesNotMatch(student, /Klucz odpowiedzi|Poprawna odpowiedź/);
+  assert.equal(studentTestMarkdown(sourceWithKey.replaceAll(String.fromCharCode(10), String.fromCharCode(13, 10))), student);
   assert.throws(() => studentTestMarkdown('# Kartkówka\n\n## Klucz odpowiedzi — dla nauczyciela\n\nOdpowiedź'), /teacher-key/);
   assert.throws(() => studentTestMarkdown(`${sourceWithKey}\n<!-- teacher-key -->\nDrugi klucz`), /teacher-key/);
 });

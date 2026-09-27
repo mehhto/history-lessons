@@ -21,12 +21,12 @@ test('timeline motion staggers events in a bounded, predictable sequence', () =>
 test('online embeds are deferred until the learner chooses to load them', async () => {
   const [components, showcase] = await Promise.all([
     readFile(new URL('../template/components/lesson-components.js', import.meta.url), 'utf8'),
-    readFile(new URL('../classes/6/katalog-komponentow-prezentacji/slides.md', import.meta.url), 'utf8'),
+    readFile(new URL('../classes/8/04-wojna-poza-europa/slides.md', import.meta.url), 'utf8'),
   ]);
-  assert.match(components, /iframe\[data-map-src\]/);
-  assert.match(showcase, /data-map-open/);
-  assert.match(showcase, /data-map-src="https:\/\/www\.google\.com/);
-  assert.doesNotMatch(showcase, /<iframe[^>]*\ssrc="https:\/\/www\.google\.com/);
+  assert.match(components, /iframe\[data-video-src\]/);
+  assert.match(showcase, /data-video-play/);
+  assert.match(showcase, /data-video-src="https:\/\/www\.youtube-nocookie\.com/);
+  assert.doesNotMatch(showcase, /<iframe[^>]*\ssrc="https:\/\//);
 });
 
 test('disclosures isolate Reveal navigation and map panels remain readable in print', async () => {

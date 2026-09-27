@@ -47,5 +47,5 @@ test('restricted preview serves the selected lesson and blocks repository intern
   assert.equal(font.status, 200);
   assert.equal(font.headers.get('content-type'), 'font/ttf');
   assert.equal((await fetch(`${url}/.git/HEAD`)).status, 403);
-  assert.equal((await fetch(`${url}/classes/6/00-pilot-szablonu/index.html`)).status, 403);
+  assert.equal((await fetch(`${url}/classes/8/05-droga-do-zwyciestwa/index.html`)).status, 403);
 });

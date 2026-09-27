@@ -212,15 +212,22 @@ test('sidecar healthcheck requires the server to remain read-only', async () => 
   assert.match(compose, /history-lessons[^}]*}\/classes:\/workspace\/classes:rw/);
 });
 
-test('read-only browser UI explains its mode and why a lesson needs review', async () => {
+test('read-only browser UI explains its mode and why an invalid lesson needs review', async () => {
   const { server, port } = await createUiServer({ repoRoot, port: 0, host: '127.0.0.1', readOnly: true });
   const browser = await chromium.launch({ executablePath: browserExecutable });
   try {
     const page = await browser.newPage();
+    await page.route('**/api/lessons', async (route) => {
+      const response = await route.fetch();
+      const catalog = await response.json();
+      const first = catalog.lessons[0];
+      catalog.lessons[0] = { ...first, valid: false, issues: ['Katalog lekcji musi mieć nazwę NN-krotki-slug.'] };
+      await route.fulfill({ response, body: JSON.stringify(catalog) });
+    });
     await page.goto(`http://127.0.0.1:${port}/admin/`);
     await page.getByText('Tylko podgląd', { exact: true }).waitFor();
-    const flagged = page.locator('#catalog .lesson').filter({ hasText: 'Pilot szablonu — test techniczny' });
-    await flagged.waitFor();
+    await page.waitForFunction(() => [...document.querySelectorAll('#catalog .lesson small')].some((label) => label.textContent.includes('Wymaga kontroli')));
+    const flagged = page.locator('#catalog .lesson').filter({ hasText: 'Wymaga kontroli' });
     assert.match(await flagged.locator('small').textContent(), /Wymaga kontroli:.*NN-krotki-slug/);
   } finally {
     await browser.close();
@@ -423,7 +430,7 @@ test('reflection UI sends structured observations through its modal', async () =
   }
 });
 
-test('CSP permits supported presentation fonts and opt-in embeds without allowing inline scripts', async () => {
+test('CSP permits supported presentation fonts and opt-in video without allowing inline scripts', async () => {
   const { server, port } = await createUiServer({ repoRoot, port: 0, host: '127.0.0.1', readOnly: true });
   const browser = await chromium.launch({ executablePath: browserExecutable });
   try {
@@ -432,13 +439,10 @@ test('CSP permits supported presentation fonts and opt-in embeds without allowin
     page.on('console', (message) => {
       if (/content security policy|violates.*frame-src|refused to load/i.test(message.text())) cspErrors.push(message.text());
     });
-    await page.goto(`http://127.0.0.1:${port}/classes/6/katalog-komponentow-prezentacji/`);
+    await page.goto(`http://127.0.0.1:${port}/classes/8/04-wojna-poza-europa/`);
     await page.waitForFunction(() => document.documentElement.dataset.presentationReady === 'true');
-    await page.locator('[data-map-open]').evaluate((button) => button.click());
-    await page.locator('[data-video-play]').evaluate((button) => button.click());
-    await page.waitForTimeout(200);
-    assert.match(await page.locator('iframe[data-map-src]').getAttribute('src'), /^https:\/\/www\.google\.com\/maps/);
-    assert.match(await page.locator('iframe[data-video-src]').getAttribute('src'), /^https:\/\/www\.youtube-nocookie\.com\/embed/);
+    await page.locator('[data-video-play]').first().evaluate((button) => button.click());
+    await page.waitForFunction(() => document.querySelector('iframe[data-video-src]')?.getAttribute('src')?.startsWith('https://www.youtube-nocookie.com/embed/'));
     assert.deepEqual(cspErrors, []);
   } finally {
     await browser.close();

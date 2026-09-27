@@ -11,7 +11,7 @@ function titleFromMarkdown(markdown, fallback) {
 }
 
 export function studentTestMarkdown(markdown) {
-  const source = String(markdown);
+  const source = String(markdown).replace(/\r\n?/gu, '\n');
   const markerIndex = source.indexOf(TEACHER_KEY_MARKER);
   if (markerIndex <= 0 || source.indexOf(TEACHER_KEY_MARKER, markerIndex + TEACHER_KEY_MARKER.length) !== -1) {
     throw new Error('Kartkówka musi mieć dokładnie jeden marker <!-- teacher-key --> oddzielający klucz nauczyciela.');
