@@ -44,7 +44,8 @@ test('component styles normalize card alignment and establish a structured table
   const css = await readFile(new URL('../template/components/lesson-components.css', import.meta.url), 'utf8');
   assert.match(css, /\.reveal lesson-event \{[^}]*font-size: \.48em/);
   assert.match(css, /\.reveal lesson-step h3 \{[^}]*font-size: \.58em/);
-  assert.match(css, /lesson-table \{[^}]*border-radius: \.45rem/);
+  assert.match(css, /lesson-table \{[^}]*border-radius: var\(--corner-radius\)/);
+  assert.match(css, /lesson-table \{[^}]*background: var\(--color-surface\)/);
   assert.match(css, /lesson-table td:first-child \{[^}]*font-weight: 800/);
 });
 

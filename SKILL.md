@@ -71,7 +71,7 @@ Poniższe wymagania prezentacyjne obowiązują tylko przy `presentation_mode: sl
 - `Notatka do zeszytu` jest merytoryczną syntezą, nie symbolicznym podsumowaniem: obejmuje zasadniczą chronologię, pojęcia, mechanizmy, rozróżnienia oraz przykłady potrzebne po lekcji. Liczbę punktów dobieraj do treści, zachowując czytelność i potwierdzając ją na renderze.
 - Każdy pakiet ma `lesson.css`, ładowany po motywie i komponentach. Ręczne poprawki konkretnej lekcji zapisuj wyłącznie tam.
 - Dla niestandardowego slajdu użyj trwałego `id` w dyrektywie `.slide`; selektory w `lesson.css` odnoszą się do tego identyfikatora.
-- Zachowuj wspólny bootstrap prezentacji, ścieżki do bibliotek i ścieżki do lokalnych zasobów. Wygląd wybieraj przez `metadata.json.appearance`: `museum`, `editorial` lub `atlas` i zatwierdzoną dla niego paletę; nie dodawaj dowolnego CSS ani zdalnych fontów.
+- Zachowuj wspólny bootstrap prezentacji, ścieżki do bibliotek i ścieżki do lokalnych zasobów. Styl wybieraj przez `metadata.json.appearance.style`: `museum`, `editorial`, `atlas`, `chronicle`, `source-lab` lub `reportage`; paleta jest niezależnym, zatwierdzonym wyborem. Ich gramatyki opisuje `design/presentation-styles-v2.md`; nie dodawaj dowolnego CSS ani zdalnych fontów.
 - Dla każdej nowej lekcji wybierz czytelną parę z `template/presentation/fonts/collection/README.md`: najwyżej jeden krój sans do tekstu i jeden serif do tytułów lub źródeł (albo sam sans). Używaj lokalnych plików kolekcji i potwierdź polskie znaki na renderze; nie wprowadzaj osobnego kroju bez potrzeby.
 - Stosuj klasy zależnie od funkcji, np. `question-slide`, `explanation-slide`, `context-slide`, `source-slide`, `map-slide`, `practice-slide`, `compare-slide`, `exit-ticket-slide`.
 

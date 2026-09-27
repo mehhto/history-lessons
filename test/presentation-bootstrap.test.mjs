@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
+import { catalog } from '../template/presentation/catalog.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 
@@ -13,15 +14,26 @@ test('template starts presentations through the shared fixed-canvas bootstrap', 
   assert.doesNotMatch(html, /Reveal\.initialize\s*\(/);
 });
 
-test('shared styles preserve Polish lowercase characters instead of forcing small caps', async () => {
-  const sharedStyles = await Promise.all([
-    'template/theme.css',
-    'template/components/lesson-components.css',
-    'template/presentation/styles/museum.css',
-    'template/presentation/styles/editorial.css',
-    'template/presentation/styles/atlas.css',
-  ].map((file) => readFile(path.join(root, file), 'utf8')));
-  for (const stylesheet of sharedStyles) assert.doesNotMatch(stylesheet, /font-variant:\s*small-caps|text-transform:\s*uppercase/i);
+test('registered presentation styles are local, scoped, and free of gradients or forced capitals', async () => {
+  const entries = Object.entries(catalog.styles);
+  const styleSheets = await Promise.all(entries.map(async ([name, style]) => ({
+    name,
+    css: await readFile(path.join(root, 'template/presentation/styles', style.stylesheet), 'utf8'),
+  })));
+  const [theme, components, patterns] = await Promise.all([
+    readFile(path.join(root, 'template/theme.css'), 'utf8'),
+    readFile(path.join(root, 'template/components/lesson-components.css'), 'utf8'),
+    readFile(path.join(root, 'template/presentation/patterns.css'), 'utf8'),
+  ]);
+  for (const { name, css } of styleSheets) {
+    assert.ok(css.includes(`html[data-style="${name}"]`) || css.includes(`html[data-style='${name}']`), name);
+    assert.equal(css.includes('gradient('), false, name);
+  }
+  for (const css of [...styleSheets.map(({ css }) => css), theme, components, patterns]) {
+    assert.equal(css.includes('font-variant: small-caps'), false);
+    assert.equal(css.includes('text-transform: uppercase'), false);
+    assert.equal(css.includes('gradient('), false);
+  }
 });
 
 test('shared bootstrap disables Reveal and CSS motion when the user prefers reduced motion', async () => {

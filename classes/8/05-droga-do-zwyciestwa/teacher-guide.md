@@ -8,12 +8,12 @@
 
 ## Przebieg — około 35 minut
 - **0–1 min, slajd 1:** tytuł i fotografia. Zapytaj: „Jak państwa o różnych celach zdołały działać razem?”.
-- **1–9 min, slajdy 2–6:** izolacjonizm → Lend-Lease → **osobny slajd Karty atlantyckiej** → układ brytyjsko-sowiecki i wejście USA do wojny → Wielka Koalicja. Podkreśl, że na slajdzie 5 wracamy do wcześniejszego czerwca 1941 r., aby uporządkować cały rok.
+- **1–9 min, slajdy 2–6:** izolacjonizm → Lend-Lease → **osobny slajd Karty atlantyckiej** → układ brytyjsko-sowiecki i wejście USA do wojny → Wielka Koalicja. Zapytaj krótko, czym różniły się dostawy, deklaracja i wejście do wojny. Na slajdzie 5 wracamy do wcześniejszego czerwca 1941 r., aby uporządkować cały rok.
 - **9–12 min, slajdy 7–8:** Sycylia/Włochy i Kursk w 1943 r.; Teheran jako decyzja o współdziałaniu w 1944 r.
-- **12–18 min, slajdy 9–12:** Normandia, duża mapa ze s. 41, Bagration, zdobycze do przełomu 1944/45. Uczniowie wskazują Sycylię, Normandię, Białoruś i Berlin.
-- **18–23 min, slajdy 13–15:** porównanie Teheranu i Jałty, pełny fragment o Niemczech oraz mapa pokazująca Teheran w Iranie i Jałtę na Krymie. Na mapie współczesne granice służą tylko orientacji.
+- **12–18 min, slajdy 9–12:** Normandia, duża mapa ze s. 41, Bagration, zdobycze do przełomu 1944/45. Uczniowie wskazują Sycylię, Włochy, Normandię, Białoruś i Berlin.
+- **18–23 min, slajdy 13–15:** poproś o porównanie Teheranu i Jałty, wskazanie w tekście planów wobec Niemiec oraz obu miejsc na mapie. Na mapie współczesne granice służą tylko orientacji.
 - **23–26 min, slajd 16:** zdobycie Berlina i data kapitulacji Niemiec; wyjaśnij różnicę 8/9 maja.
-- **26–31 min, slajdy 17–19:** mapa Pacyfiku, „żabie skoki”, kamikadze, bomby atomowe i kapitulacja Japonii. Zaznacz los cywilów.
+- **26–31 min, slajdy 17–19:** na mapie uczeń wskazuje Japonię; zapytaj, dlaczego kapitulacja Niemiec nie zakończyła wojny. Wyjaśnij „żabie skoki”, kamikadze, bomby atomowe i kapitulację Japonii; zaznacz los cywilów. Pytanie o dwa zakończenia nie sprawdza opisu taktyki ani skutków bomb.
 - **31–35 min, slajdy 20–22:** **równoległa oś czasu** (1 minuta), podsumowanie i 90 sekund rozmowy w parach: Normandia i Bagration w 1944 r. Slajd 23 ze źródłami pomiń w czasie lekcji.
 
 **Jeśli zostanie tylko 30 minut:** skróć komentarz o izolacjonizmie i Kursku, pokaż mapę bez pełnego odczytu legendy. Zachowaj rozróżnienie Teheranu i Jałty, Bagration, dwie kapitulacje i podsumowanie. Jeśli zostanie pełne 45 minut: dodaj rozmowę w parach „dlaczego front w Normandii nazywano drugim, skoro walczono już we Włoszech?”.

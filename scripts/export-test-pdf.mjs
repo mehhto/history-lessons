@@ -45,6 +45,10 @@ try {
   const prefix = await readFile(output, { encoding: 'utf8', length: 8 }).catch(() => '');
   if (!prefix.startsWith('%PDF-')) throw new Error('Eksport kartkówki nie utworzył prawidłowego PDF.');
   const manifest = createArtifactManifest({ [path.basename(source)]: markdown, 'student-print-view': studentMarkdown, 'template/print/print.css': css, 'scripts/print-pack.mjs': renderer, 'scripts/export-test-pdf.mjs': exporter, 'package.json': packageSpec });
-  await writeFile(manifestPath, `${JSON.stringify({ version: 1, documents: { [path.basename(output)]: manifest } }, null, 2)}\n`, 'utf8');
+  let previous = { version: 1, documents: {} };
+  try { previous = JSON.parse(await readFile(manifestPath, 'utf8')); }
+  catch (error) { if (error.code !== 'ENOENT') throw error; }
+  if (previous.version !== 1 || !previous.documents || typeof previous.documents !== 'object' || Array.isArray(previous.documents)) throw new Error('Nieprawidłowy manifest sprawdzianów.');
+  await writeFile(manifestPath, `${JSON.stringify({ version: 1, documents: { ...previous.documents, [path.basename(output)]: manifest } }, null, 2)}\n`, 'utf8');
   console.log(`Zapisano PDF: ${path.relative(root, output)}`);
 } finally { await browser.close(); }

@@ -1,0 +1,26 @@
+html[data-style="reportage"] .reveal {
+  --font-heading: "History Serif", "DejaVu Serif", Georgia, "Times New Roman", serif;
+  --corner-radius: 0;
+  --shadow-card: none;
+  --rule-width: 2px;
+}
+html[data-style="reportage"] .reveal .slides section[data-slide-canvas] { background: var(--color-canvas); }
+html[data-style="reportage"] .reveal [data-purpose="opening"] .slide-content { border-top: .12em solid var(--color-accent); }
+html[data-style="reportage"] .reveal [data-purpose="evidence"] .slide-content { border-inline-start: .1em solid var(--color-evidence); }
+html[data-style="reportage"] .reveal .source-label { color: var(--color-text-on-accent); background: var(--color-heading); letter-spacing: .04em; }
+html[data-style="reportage"] .reveal .source-figure figcaption { padding: .18em .35em; background: var(--color-heading); color: var(--color-text-on-accent); }
+html[data-style="reportage"] .reveal lesson-quote { border-inline-start: .18em solid var(--color-accent); border-radius: 0; box-shadow: none; }
+html[data-style="reportage"] .reveal lesson-quote blockquote { font-family: var(--font-heading); }
+html[data-style="reportage"] .reveal lesson-gallery.photo-pair { --gallery-focus: var(--color-accent); }
+
+html[data-style="reportage"] .reveal [data-layout="photo-pair"] figure { overflow: hidden; background: var(--color-heading); }
+html[data-style="reportage"] .reveal [data-layout="photo-pair"] figcaption { padding: .35em .5em; color: var(--color-text-on-accent); background: var(--color-heading); }
+html[data-style="reportage"] .reveal lesson-quote { grid-template-columns: minmax(8rem, .7fr) 1.6fr; gap: 1.1em; padding: .9em; border-inline-start: .22em solid var(--color-accent); background: var(--color-surface); }
+html[data-style="reportage"] .reveal lesson-quote img { aspect-ratio: 4 / 5; border-radius: 0; object-fit: cover; }
+html[data-style="reportage"] .reveal lesson-quote blockquote { font-size: .85em; line-height: 1.3; }
+html[data-style="reportage"] .reveal lesson-stats { gap: 0; border-block: 1px solid var(--color-border); }
+html[data-style="reportage"] .reveal lesson-stat { padding-inline: .7em; border: 0; border-inline-start: .1em solid var(--color-evidence); background: transparent; }
+html[data-style="reportage"] .reveal lesson-stat:first-child { border-inline-start: 0; }
+html[data-style="reportage"] .reveal lesson-stat:nth-child(2n),
+html[data-style="reportage"] .reveal lesson-stat:nth-child(3n) { border-top: 0; }
+html[data-style="reportage"] .reveal lesson-stat p { border-top: 1px solid var(--color-border); padding-top: .35em; }

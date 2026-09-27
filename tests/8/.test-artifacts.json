@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "documents": {
+    "01-ii-wojna-swiatowa.pdf": {
+      "version": 1,
+      "input_hash": "b1778164c578ebc93ef361d82c04ff8c2ab7ace8c41ebac812e8be3f7ac43a9f",
+      "inputs": [
+        "01-ii-wojna-swiatowa.md",
+        "package.json",
+        "scripts/export-test-pdf.mjs",
+        "scripts/print-pack.mjs",
+        "student-print-view",
+        "template/print/print.css"
+      ]
+    }
+  }
+}

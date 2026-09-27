@@ -123,7 +123,7 @@ Note:
 
 ---
 
-<!-- .slide: id="porownanie-konferencji" data-purpose="explanation" data-layout="comparison" data-goals="G1 G3" -->
+<!-- .slide: id="porownanie-konferencji" data-purpose="explanation" data-layout="comparison" data-goals="G1" -->
 ## Teheran a Jałta
 
 <div class="conference-compare"><div><span>TEHERAN · 1943</span><p>Wojna trwa. Jak wspólnie uderzyć na Niemcy?</p><b>Desant we Francji + natarcie ZSRR</b></div><div><span>JAŁTA · II 1945</span><p>Klęska Niemiec jest blisko. Co po wojnie?</p><b>Los Niemiec, Polski i powstanie ONZ</b></div></div>
@@ -134,7 +134,7 @@ Note:
 
 ---
 
-<!-- .slide: id="tekst-jalta" data-purpose="evidence" data-layout="evidence" data-goals="G3" -->
+<!-- .slide: id="tekst-jalta" data-purpose="evidence" data-layout="evidence" data-goals="G1" -->
 ## Postanowienia jałtańskie wobec Niemiec
 
 <figure class="document-surface"><blockquote>„Jesteśmy zdecydowani rozbroić i rozwiązać wszystkie niemieckie siły zbrojne; raz na zawsze zniszczyć niemiecki sztab generalny, który wielokrotnie doprowadzał do wskrzeszenia militaryzmu niemieckiego; usunąć lub zniszczyć wszelkie niemieckie urządzenia wojskowe; znieść lub poddać kontroli wszelkiego rodzaju przemysł niemiecki, który mógłby być użyty do produkcji wojennej; ukarać sprawiedliwie i szybko wszystkich zbrodniarzy wojennych oraz wyegzekwować odszkodowania w naturze za zniszczenia dokonane przez Niemców; unicestwić narodowosocjalistyczną partię, narodowosocjalistyczne ustawy, organizacje i instytucje; usunąć wszelkie wpływy narodowosocjalistyczne i militarystyczne z urzędów publicznych i z życia kulturalnego i gospodarczego narodu niemieckiego […]”.</blockquote><figcaption>Fragment sprawozdania z konferencji jałtańskiej; przekład: <i>Wiek XX w źródłach</i>, oprac. M. Sobańska-Bondaruk i S. B. Lenard, 2002, s. 308–309; podręcznik ucznia, s. 39.</figcaption></figure>

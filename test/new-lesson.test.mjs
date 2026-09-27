@@ -62,13 +62,27 @@ test('new lesson can be commissioned without a presentation', async () => {
   }
 });
 
-test('new lesson records a validated presentation style and palette', async () => {
+test('new lesson records a validated presentation style and curated palette', async () => {
   const directory = await mkdtemp(path.join(os.tmpdir(), 'history-lesson-'));
   try {
     await cp(path.join(root, 'template'), path.join(directory, 'template'), { recursive: true });
-    await run(process.execPath, [path.join(root, 'scripts/new-lesson.mjs'), '--class', '6', '--title', 'Motyw jakości', '--style', 'editorial', '--palette', 'burgundy'], { cwd: directory });
+    await run(process.execPath, [path.join(root, 'scripts/new-lesson.mjs'), '--class', '6', '--title', 'Motyw jakości', '--style', 'chronicle', '--palette', 'conflict-map'], { cwd: directory });
     const metadata = JSON.parse(await readFile(path.join(directory, 'classes/6/01-motyw-jakosci/metadata.json'), 'utf8'));
-    assert.deepEqual(metadata.appearance, { style: 'editorial', palette: 'burgundy' });
+    assert.deepEqual(metadata.appearance, { style: 'chronicle', palette: 'conflict-map' });
+  } finally {
+    await rm(directory, { recursive: true, force: true });
+  }
+});
+
+test('new lesson rejects a legacy palette that remains valid for existing metadata', async () => {
+  const directory = await mkdtemp(path.join(os.tmpdir(), 'history-lesson-'));
+  try {
+    await cp(path.join(root, 'template'), path.join(directory, 'template'), { recursive: true });
+    await assert.rejects(
+      run(process.execPath, [path.join(root, 'scripts/new-lesson.mjs'), '--class', '6', '--title', 'Paleta legacy', '--style', 'museum', '--palette', 'sand'], { cwd: directory }),
+      (error) => error.code === 1 && error.stderr.includes('wyłącznie palet z biblioteki'),
+    );
+    await assert.rejects(readFile(path.join(directory, 'classes/6/01-paleta-legacy/metadata.json'), 'utf8'), { code: 'ENOENT' });
   } finally {
     await rm(directory, { recursive: true, force: true });
   }

@@ -16,6 +16,21 @@ test('shared palette library contains only composed multi-hue schemes with reada
   }
 });
 
+test('runtime palette tokens match their curated source definitions', () => {
+  for (const id of ['civic-paired', 'civic-debate', 'evidence-grey', 'land-sea', 'vivid-dark2']) {
+    const source = library.palettes.find(({ id: paletteId }) => paletteId === id);
+    const runtime = catalog.palettes[id];
+    assert.deepEqual({
+      canvas: runtime.canvas,
+      surface: runtime.surface,
+      ink: runtime.text,
+      accent: runtime.accent,
+      evidence: runtime.evidence,
+      signal: runtime.signal,
+    }, source.roles, id);
+  }
+});
+
 test('Droga do zwycięstwa uses the catalogued ColorBrewer conflict-map roles', async () => {
   const source = library.palettes.find(({ id }) => id === 'conflict-map').roles;
   const runtime = catalog.palettes['conflict-map'];

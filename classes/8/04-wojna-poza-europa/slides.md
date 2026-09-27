@@ -46,12 +46,12 @@ Note:
 </div>
 
 Note:
-> Oś porządkuje wydarzenia, ale trzy teatry omawiamy osobno. Podkreśl, że Atlantyk trwa niemal przez całą wojnę, a Japonia prowadziła pełnoskalową wojnę z Chinami już od 1937 r.; w grudniu 1941 r. rozszerzyła konflikt na USA i zachodnich aliantów.
+> Poproś uczniów, aby bez odczytywania osi podali kolejność: włoska ofensywa w Egipcie, Pearl Harbor, Midway. Sprawdź: IX 1940 → XII 1941 → VI 1942. Oś porządkuje wydarzenia, ale trzy teatry omawiamy osobno. Podkreśl, że Atlantyk trwa niemal przez całą wojnę, a Japonia prowadziła pełnoskalową wojnę z Chinami już od 1937 r.; w grudniu 1941 r. rozszerzyła konflikt na USA i zachodnich aliantów.
 
 ---
 
 <!-- .slide: id="afryka-mapa" data-purpose="evidence" data-layout="map-focus" data-goals="G1 G2" -->
-<a class="map-link" href="assets/mapa-afryka-rommel-1941.jpg" aria-label="Otwórz mapę Afryki Północnej w pełnym rozmiarze">
+<a class="map-link" data-lightbox-src="assets/mapa-afryka-rommel-1941.jpg" data-lightbox-uncaptioned="true" aria-label="Otwórz mapę Afryki Północnej w pełnym rozmiarze">
   <img class="evidence-marker" src="assets/mapa-afryka-rommel-1941.jpg" alt="" aria-hidden="true" />
   <div class="map-canvas africa-map" role="img" aria-label="Mapa ofensywy wojsk Osi w Afryce Północnej w 1941 roku"></div>
 </a>
@@ -128,12 +128,12 @@ Note:
 </div>
 
 Note:
-> Rozdziel postacie: Montgomery — brytyjska 8 Armia i El Alamein; Eisenhower — naczelne dowództwo „Torch”. Nie mów, że Rommel kapitulował: opuścił Afrykę w marcu 1943 r. Wyjaśnij mechanizm „kleszczy”: od wschodu natarcie 8 Armii, od zachodu wojska lądujące w ramach „Torch”.
+> Zapytaj: kto dowodził brytyjską 8 Armią pod El Alamein, a kto dowodził operacją „Torch”? Sprawdź osobno obie odpowiedzi: Montgomery — brytyjska 8 Armia i El Alamein; Eisenhower — naczelne dowództwo „Torch”. Nie mów, że Rommel kapitulował: opuścił Afrykę w marcu 1943 r. Wyjaśnij mechanizm „kleszczy”: od wschodu natarcie 8 Armii, od zachodu wojska lądujące w ramach „Torch”.
 
 ---
 
 <!-- .slide: id="atlantyk-mapa" data-purpose="evidence" data-layout="map-focus" data-goals="G1 G3" -->
-<a class="map-link" href="assets/mapa-konwoje-atlantyk-1941.jpg" aria-label="Otwórz mapę konwojów atlantyckich w pełnym rozmiarze">
+<a class="map-link" data-lightbox-src="assets/mapa-konwoje-atlantyk-1941.jpg" data-lightbox-uncaptioned="true" aria-label="Otwórz mapę konwojów atlantyckich w pełnym rozmiarze">
   <img class="evidence-marker" src="assets/mapa-konwoje-atlantyk-1941.jpg" alt="" aria-hidden="true" />
   <div class="map-canvas atlantic-map" role="img" aria-label="Mapa szlaków konwojów atlantyckich w 1941 roku"></div>
 </a>
@@ -240,7 +240,7 @@ Note:
 ---
 
 <!-- .slide: id="pacyfik-mapa" data-purpose="evidence" data-layout="map-focus" data-goals="G1 G2" -->
-<a class="map-link" href="assets/mapa-daleki-wschod-zpe.jpg" aria-label="Otwórz mapę wojny na Dalekim Wschodzie w pełnym rozmiarze">
+<a class="map-link" data-lightbox-src="assets/mapa-daleki-wschod-zpe.jpg" data-lightbox-uncaptioned="true" aria-label="Otwórz mapę wojny na Dalekim Wschodzie w pełnym rozmiarze">
   <img class="evidence-marker" src="assets/mapa-daleki-wschod-zpe.jpg" alt="" aria-hidden="true" />
   <div class="map-canvas pacific-map" role="img" aria-label="Mapa wojny na Dalekim Wschodzie w latach 1941–1945"></div>
 </a>
@@ -295,9 +295,9 @@ Note:
 ## Trzy teatry — trzy punkty zwrotne
 
 <div class="turning-grid">
-  <div><span>AFRYKA</span><strong>El Alamein + „Torch”</strong><p>Wojska Osi cofają się i zostają ujęte w kleszcze.</p></div>
-  <div><span>ATLANTYK</span><strong>przełom 1943</strong><p>Warstwowa ochrona konwojów ogranicza skuteczność U-Bootów.</p></div>
-  <div><span>PACYFIK</span><strong>Midway + Guadalcanal</strong><p>Japonia traci swobodę ofensywy, a alianci przechodzą do natarcia.</p></div>
+  <div><span>AFRYKA</span><strong>El Alamein + „Torch”</strong></div>
+  <div><span>ATLANTYK</span><strong>przełom 1943</strong></div>
+  <div><span>PACYFIK</span><strong>Midway + Guadalcanal</strong></div>
 </div>
 
 <div class="student-task"><b>W parach:</b> wybierzcie jeden teatr i ułóżcie zdanie „Alianci przejęli inicjatywę, ponieważ…”. Użyjcie dwóch konkretnych dowodów.</div>
@@ -323,7 +323,7 @@ Note:
 
 ---
 
-<!-- .slide: id="bilet" data-purpose="exit-ticket" data-layout="plain" data-goals="G1 G2 G3" -->
+<!-- .slide: id="bilet" data-purpose="exit-ticket" data-layout="plain" data-goals="G3" -->
 ## Bilet wyjścia · 3 minuty
 
 <div class="exit-sheet">

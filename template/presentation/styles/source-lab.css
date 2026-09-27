@@ -1,0 +1,23 @@
+html[data-style="source-lab"] .reveal {
+  --font-heading: "History Sans", "DejaVu Sans", "Segoe UI", Arial, sans-serif;
+  --corner-radius: 0;
+  --shadow-card: none;
+  --rule-width: 2px;
+}
+html[data-style="source-lab"] .reveal .slides section[data-slide-canvas] { background: var(--color-canvas); }
+html[data-style="source-lab"] .reveal [data-purpose="evidence"] .slide-content { border-top: .1em solid var(--color-border); }
+html[data-style="source-lab"] .reveal .source-label { color: var(--color-heading); background: var(--color-surface); border: 1px solid var(--color-border); font-weight: 800; letter-spacing: .02em; }
+html[data-style="source-lab"] .reveal [data-layout="source-split"] .analysis-panel,
+html[data-style="source-lab"] .reveal [data-layout="evidence"] .analysis-panel { border-inline-start: .22em solid var(--color-evidence); background: var(--color-surface); }
+html[data-style="source-lab"] .reveal .student-task { border-inline-start: .22em solid var(--color-accent); border-radius: 0; box-shadow: none; }
+html[data-style="source-lab"] .reveal blockquote { border-inline-start-color: var(--color-evidence); box-shadow: none; }
+html[data-style="source-lab"] .reveal lesson-table { border-radius: 0; box-shadow: none; }
+
+html[data-style="source-lab"] .reveal [data-layout="source-split"] figure,
+html[data-style="source-lab"] .reveal [data-layout="evidence"] figure { padding: .35em; border: 1px solid var(--color-border); background: var(--color-surface); }
+html[data-style="source-lab"] .reveal lesson-stats { gap: .3em; }
+html[data-style="source-lab"] .reveal lesson-stat { grid-template-rows: auto minmax(2.35em, auto) 1fr; border-top: 0; border-inline-start: .12em solid var(--color-evidence); background: var(--color-surface); }
+html[data-style="source-lab"] .reveal lesson-stat small { padding-block-end: .2em; border-bottom: 1px solid var(--color-border); }
+html[data-style="source-lab"] .reveal lesson-table th { color: var(--color-heading); background: var(--color-surface); border-bottom: .16em solid var(--color-evidence); }
+html[data-style="source-lab"] .reveal lesson-table td { border-bottom: 1px solid var(--color-border); }
+html[data-style="source-lab"] .reveal lesson-quote { grid-template-columns: minmax(6rem, .45fr) 1.8fr; border-inline-start: .12em solid var(--color-evidence); }

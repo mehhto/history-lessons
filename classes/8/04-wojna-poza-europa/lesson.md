@@ -17,19 +17,19 @@
 ## Cele w języku ucznia
 1. **G1** — Wskażę na mapach Afrykę Północną, szlaki atlantyckie oraz obszar ekspansji Japonii.
 2. **G2** — Uporządkuję główne wydarzenia lat 1939–1943 i rozróżnię ich dowódców.
-3. **G3** — Wyjaśnię zmianę inicjatywy, łącząc zaopatrzenie, informację i przewagę materialną z El Alamein i „Torch”, przełomem na Atlantyku oraz Midway i Guadalcanalem.
+3. **G3** — Wyjaśnię zmianę inicjatywy na przykładzie wybranego teatru, łącząc mechanizm z konkretnymi dowodami.
 
 ## Cele → zadanie → dowód
 | ID | Cel ucznia | Wiedza konieczna | Zadanie | Dowód |
 |---|---|---|---|---|
-| G1 | Lokalizuję teatry | Afryka Północna, Atlantyk, Pacyfik | odczyt trzech map | poprawne miejsca i kierunki |
-| G2 | Porządkuję wydarzenia | Tobruk, El Alamein, „Torch”, Pearl Harbor, Midway, Guadalcanal | oś i mikro-zadania filmowe | poprawna kolejność i postacie |
-| G3 | Wyjaśniam zmianę inicjatywy | logistyka, konwoje, wywiad, lotniskowce | zdanie w parach i bilet | mechanizm poparty dwoma dowodami |
+| G1 | Lokalizuję teatry | Afryka Północna, Atlantyk, Pacyfik | wskazanie trzech teatrów na mapie świata oraz miejsc i kierunków na mapach regionalnych (slajdy 2, 4, 8, 14) | poprawne położenie teatrów, Libii → Egiptu, szlaków do Wielkiej Brytanii i obszaru ekspansji Japonii; klucz mapy poniżej |
+| G2 | Porządkuję wydarzenia i dowódców | daty osi 1939–1943, El Alamein i „Torch”, Montgomery i Eisenhower | ustne uporządkowanie na osi (slajd 3) i przypisanie dowódców do uderzeń (slajd 7) | poprawna kolejność i dwie różne role; klucz chronologii i dowódców poniżej |
+| G3 | Wyjaśniam zmianę inicjatywy w wybranym teatrze | logistyka, konwoje, wywiad, lotniskowce | zdanie w parach (slajd 17) i indywidualny bilet (slajd 19) | mechanizm i konkretny dowód w bilecie; dwa dowody w pracy par; klucz biletu poniżej |
 
 ## Storyboard i czas
 | Slajdy | Funkcja | Działanie uczniów | Czas |
 |---|---|---|---:|
-| 1–3 | otwarcie, mapa świata, chronologia | hipoteza i orientacja | 4 min |
+| 1–3 | otwarcie, mapa świata, chronologia | hipoteza, wskazanie teatrów i ustna kolejność | 4 min |
 | 4–7 | Afryka Północna | odczyt mapy, wniosek o logistyce, rozróżnienie Montgomery–Eisenhower | 8 min |
 | 8–10 | Atlantyk i Enigma | trasa konwojów, film, łańcuch skutków | 8 min |
 | 11–13 | pakt trzech, Pearl Harbor, Roosevelt | film i analiza języka źródła | 8 min |
@@ -55,7 +55,7 @@
 
 ## Przebieg
 1. **Wejście:** obraz Pearl Harbor, pytanie o to, co łączy pustynię, ocean i lotniskowce.
-2. **Orientacja:** uczniowie odnajdują trzy teatry na mapie świata i ustawiają wydarzenia na osi.
+2. **Orientacja:** uczniowie odnajdują trzy teatry na mapie świata i podają kolejność trzech wydarzeń z osi.
 3. **Afryka:** mapa, zależność od portów i dostaw, polski wątek Tobruku, dwa alianckie uderzenia w 1942 r.
 4. **Atlantyk:** szlaki konwojów, system U-Bootów, film o Enigmie i łańcuch „meldunek → zmiana trasy”.
 5. **Azja i Pacyfik:** przyczyny rozszerzenia wojny, film o Pearl Harbor, krótkie źródło Roosevelta, mapa ofensywy Japonii, film o Midway, mechanizm Guadalcanalu.

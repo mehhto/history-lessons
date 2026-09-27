@@ -12,7 +12,10 @@ async function lessonDirectories() {
   const directories = [];
   for (const grade of grades.filter((entry) => entry.isDirectory())) {
     const lessons = await readdir(path.join(classes, grade.name), { withFileTypes: true });
-    for (const lesson of lessons.filter((entry) => entry.isDirectory())) directories.push(path.join(classes, grade.name, lesson.name));
+    for (const lesson of lessons.filter((entry) => entry.isDirectory())) {
+      const directory = path.join(classes, grade.name, lesson.name);
+      if ((await readdir(directory)).includes('lesson.md')) directories.push(directory);
+    }
   }
   return directories;
 }

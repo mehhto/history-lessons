@@ -3,8 +3,12 @@
 ## Powiązanie z celami
 - Sprawdzane cele: G1, G2, G3
 
-## Bilet wyjścia — przykładowe odpowiedzi
-Każda odpowiedź powinna zawierać: teatr, punkt zwrotny, mechanizm i konkretny dowód.
+## Dowody G1 i G2 przed biletem
+- **G1 (mapy, slajdy 2, 4, 8, 14):** uczeń wskazuje trzy teatry; na mapie Afryki kierunek Libia → Egipt i Tobruk, na Atlantyku trasy z Ameryki Północnej do Wielkiej Brytanii, na Pacyfiku obszar zdobyczy Japonii i rozproszone wyspy. Samo podanie nazwy teatru w bilecie nie sprawdza orientacji przestrzennej.
+- **G2 (oś i Afryka, slajdy 3, 7):** włoska ofensywa w Egipcie (IX 1940) → Pearl Harbor (XII 1941) → Midway (VI 1942); Montgomery — 8 Armia pod El Alamein, Eisenhower — naczelny dowódca „Torch”. Odpowiedź wymaga kolejności i obu ról, nie tylko dowolnej daty z biletu.
+
+## Bilet wyjścia — przykładowe odpowiedzi (G3)
+Każda odpowiedź dotyczy **jednego wybranego teatru** i powinna zawierać: teatr, punkt zwrotny, mechanizm i konkretny dowód. Dwa trafne dowody są kryterium wcześniejszego zdania w parach (slajd 17), nie tego biletu.
 
 - **Afryka:** El Alamein i „Torch” pozwoliły uderzyć na wojska Osi od wschodu i zachodu; kampania zakończyła się 13 V 1943 r.
 - **Atlantyk:** wiosną 1943 r. konwoje, eskorty, lotnictwo, wykrywanie i wywiad ograniczyły skuteczność U-Bootów; walki trwały jednak do V 1945 r.

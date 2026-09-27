@@ -1,0 +1,27 @@
+html[data-style="chronicle"] .reveal {
+  --font-heading: "History Serif", "DejaVu Serif", Georgia, "Times New Roman", serif;
+  --corner-radius: 0;
+  --shadow-card: none;
+  --rule-width: 2px;
+}
+html[data-style="chronicle"] .reveal .slides section[data-slide-canvas] { background: var(--color-canvas); }
+html[data-style="chronicle"] .reveal [data-purpose="opening"] .slide-content { border-bottom: .12em solid var(--color-accent); }
+html[data-style="chronicle"] .reveal [data-purpose="explanation"] .slide-content { border-inline-start: .1em solid var(--color-evidence); }
+html[data-style="chronicle"] .reveal .source-label { color: var(--color-accent); background: transparent; border-bottom: 1px solid var(--color-border); font-weight: 800; }
+html[data-style="chronicle"] .reveal lesson-timeline { --timeline-accent: var(--color-evidence); }
+html[data-style="chronicle"] .reveal lesson-event,
+html[data-style="chronicle"] .reveal .timeline-band > * { border-radius: 0; box-shadow: none; border-top-color: var(--color-evidence); background: var(--color-surface); }
+html[data-style="chronicle"] .reveal lesson-event::before,
+html[data-style="chronicle"] .reveal .timeline-band strong { color: var(--color-accent); font-family: var(--font-heading); }
+
+html[data-style="chronicle"] .reveal lesson-timeline:not([orientation="vertical"]) { position: relative; padding-block-start: .55em; }
+html[data-style="chronicle"] .reveal lesson-timeline:not([orientation="vertical"])::before { content: ""; position: absolute; top: 1.15em; inset-inline: .4em; border-top: .12em solid var(--color-evidence); }
+html[data-style="chronicle"] .reveal lesson-event { position: relative; z-index: 1; border-top: 0; border-inline-start: 1px solid var(--color-border); padding-inline-start: .8em; background: transparent; }
+html[data-style="chronicle"] .reveal lesson-event::before { display: inline-block; padding: .08em .24em; background: var(--color-canvas); }
+html[data-style="chronicle"] .reveal lesson-stats { position: relative; gap: 0; padding-block-start: 1.8em; }
+html[data-style="chronicle"] .reveal lesson-stats::before { content: ""; position: absolute; inset-inline: .55em; top: 1.05em; border-top: .12em solid var(--color-evidence); }
+html[data-style="chronicle"] .reveal lesson-stat { position: relative; padding: .45em .65em; border: 0; border-inline-start: 1px solid var(--color-border); background: transparent; }
+html[data-style="chronicle"] .reveal lesson-stat::before { content: ""; position: absolute; top: -.94em; left: .58em; width: .5em; height: .5em; border: .08em solid var(--color-accent); border-radius: 50%; background: var(--color-canvas); }
+html[data-style="chronicle"] .reveal lesson-stat:nth-child(2n),
+html[data-style="chronicle"] .reveal lesson-stat:nth-child(3n) { border-top: 0; }
+html[data-style="chronicle"] .reveal .timeline-band > * { border-top: 0; border-inline-start: .1em solid var(--color-evidence); background: transparent; }

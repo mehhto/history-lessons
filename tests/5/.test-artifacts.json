@@ -12,6 +12,18 @@
         "student-print-view",
         "template/print/print.css"
       ]
+    },
+    "02-od-pradziejow-do-izraela.pdf": {
+      "version": 1,
+      "input_hash": "d0dcbfb9f4a361a9bf292733e896f5e72cb1c3ed0fd6a143683c04f63bf27e7b",
+      "inputs": [
+        "02-od-pradziejow-do-izraela.md",
+        "package.json",
+        "scripts/export-test-pdf.mjs",
+        "scripts/print-pack.mjs",
+        "student-print-view",
+        "template/print/print.css"
+      ]
     }
   }
 }

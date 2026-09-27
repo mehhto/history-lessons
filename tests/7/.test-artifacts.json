@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "documents": {
+    "01-europa-po-kongresie-i-rewolucja-przemyslowa.pdf": {
+      "version": 1,
+      "input_hash": "5415d2af5c7dc8a2987b1554fe85816304993fac57c5b3f0b9d6c031c7eb566c",
+      "inputs": [
+        "01-europa-po-kongresie-i-rewolucja-przemyslowa.md",
+        "package.json",
+        "scripts/export-test-pdf.mjs",
+        "scripts/print-pack.mjs",
+        "student-print-view",
+        "template/print/print.css"
+      ]
+    }
+  }
+}

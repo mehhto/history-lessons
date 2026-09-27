@@ -55,7 +55,8 @@
 
 /* Documentary atlas: reusable narrative geometry.  Images are evidence, not cards. */
 .reveal [data-slide-canvas][data-layout="hero-source"] { overflow: hidden; background: var(--color-heading); color: var(--text-on-accent); }
-.reveal [data-slide-canvas][data-layout="hero-source"] .slide-content { display: grid; align-content: end; min-height: 100%; color: var(--text-on-accent); background: linear-gradient(90deg, color-mix(in srgb, var(--color-heading) 86%, transparent), transparent 72%); }
+.reveal [data-slide-canvas][data-layout="hero-source"] .slide-content { display: grid; align-content: end; min-height: 100%; color: var(--text-on-accent); background: transparent; }
+.reveal [data-slide-canvas][data-layout="hero-source"] .slide-content > :is(h1, h2, p, .eyebrow) { display: table; width: fit-content; max-width: 70%; padding: .12em .22em; color: var(--text-on-accent); background: var(--color-heading); }
 .reveal [data-slide-canvas][data-layout="hero-source"] h1, .reveal [data-slide-canvas][data-layout="hero-source"] h2 { color: var(--text-on-accent); max-width: 12em; }
 .reveal [data-slide-canvas][data-layout="hero-source"] .hero-source-image { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; max-width: none; max-height: none; margin: 0; object-fit: cover; object-position: var(--image-position, center); }
 .reveal [data-slide-canvas][data-layout="statement-centered"] .slide-content { display: grid; min-height: 100%; max-width: 22em; margin: auto; place-content: center; text-align: center; }

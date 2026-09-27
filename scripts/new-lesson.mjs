@@ -5,6 +5,9 @@ import { lessonDirectory, nextLessonSequence, numberedLessonSlug } from './lesso
 import { catalog } from '../template/presentation/catalog.mjs';
 import { resolveAppearance } from '../template/presentation/appearance.mjs';
 
+const paletteLibrary = JSON.parse(await readFile(new URL('../design/presentation-palettes-v1.json', import.meta.url), 'utf8'));
+const curatedPaletteIds = new Set(paletteLibrary.palettes.map(({ id }) => id));
+
 function argument(name) {
   const index = process.argv.indexOf(name);
   return index === -1 ? undefined : process.argv[index + 1];
@@ -12,7 +15,7 @@ function argument(name) {
 
 function usage(message) {
   if (message) console.error(`Błąd: ${message}\n`);
-  console.error('Użycie: npm run new -- --class 6 --title "Wielkie odkrycia geograficzne" [--slug odkrycia-geograficzne] [--type new-knowledge|practice] [--presentation slides|none] [--style museum|editorial|atlas] [--palette nazwa]');
+  console.error(`Użycie: npm run new -- --class 6 --title "Wielkie odkrycia geograficzne" [--slug odkrycia-geograficzne] [--type new-knowledge|practice] [--presentation slides|none] [--style ${Object.keys(catalog.styles).join('|')}] [--palette nazwa]`);
   process.exitCode = 1;
 }
 
@@ -36,6 +39,9 @@ if (!grade || !title) {
       ...(palette === undefined ? {} : { palette }),
     };
     const appearance = resolveAppearance(requestedAppearance, catalog);
+    if (presentationMode === 'slides' && !curatedPaletteIds.has(appearance.palette)) {
+      throw new Error('Nowy pakiet może używać wyłącznie palet z biblioteki.');
+    }
     const gradeDirectory = path.resolve(process.cwd(), 'classes', String(Number(grade)));
     const entries = await readdir(gradeDirectory).catch((error) => {
       if (error.code === 'ENOENT') return [];

@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "documents": {
+    "01-odkrycia-renesans-reformacja.pdf": {
+      "version": 1,
+      "input_hash": "0a741a048815f4563b12ab2d5fe995d2bf2206f1dfede5525d2fd2eaa44fded8",
+      "inputs": [
+        "01-odkrycia-renesans-reformacja.md",
+        "package.json",
+        "scripts/export-test-pdf.mjs",
+        "scripts/print-pack.mjs",
+        "student-print-view",
+        "template/print/print.css"
+      ]
+    }
+  }
+}

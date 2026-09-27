@@ -6,13 +6,19 @@
 ## Pytanie główne
 Jak współpraca aliantów i walki na wielu frontach doprowadziły do końca II wojny światowej?
 
-## Cele ucznia
-- **G1:** Wyjaśniam różnicę między pomocą aliantom, Kartą atlantycką i przystąpieniem USA do wojny; porównuję Teheran i Jałtę oraz wskazuję oba miasta na mapie.
-- **G2:** Pokazuję na mapie Sycylię, Włochy, Normandię, Białoruś i Berlin oraz odczytuję równoległe wydarzenia na trzech torach osi czasu.
-- **G3:** Odróżniam koniec wojny w Europie od kapitulacji Japonii i opisuję „żabie skoki”, kamikadze oraz użycie bomb atomowych.
+## Cele w języku ucznia
+- **G1** — Rozróżniam pomoc Lend-Lease, deklarację Karty atlantyckiej i wejście USA do wojny; porównuję Teheran z Jałtą i wskazuję oba miasta na mapie.
+- **G2** — Pokazuję na mapie Sycylię, Włochy, Normandię, Białoruś i Berlin oraz wyjaśniam równoległy nacisk na Niemcy na podstawie osi czasu.
+- **G3** — Odróżniam kapitulację Niemiec od kapitulacji Japonii i wskazuję Japonię na mapie Pacyfiku.
 
-## Dowód uczenia się
-Ustna odpowiedź przy mapie (G1–G2), odpowiedź na pytanie do tekstu (G1) i para na końcu: „Normandia / Bagration / równoległe fronty” (G2). Odpowiedzi nauczyciela w `teacher-guide.md`.
+## Cele → zadanie → dowód
+| ID | Cel ucznia | Wiedza konieczna | Zadanie | Dowód |
+| --- | --- | --- | --- | --- |
+| G1 | Pomoc, deklaracja, wejście do wojny; Teheran i Jałta | Slajdy 2–6, 8, 13–15 | Ustnie rozróżnij trzy kroki USA, porównaj konferencje, wskaż miejsca i odczytaj fragment o Niemczech | USA pomagały przed XII 1941, Karta deklarowała zasady; Teheran planował działania, Jałta porządek powojenny; oba miejsca na mapie i rozbrojenie Niemiec w tekście |
+| G2 | Mapa i równoległe fronty | Slajdy 7, 9–12 i 20 | Wskaż miejsca na mapie; w parze zestaw Normandię z Bagration na osi | Sycylia/Włochy, Normandia, Białoruś, Berlin wskazane; dwa odrębne natarcia w 1944 r. zmuszały Niemcy do podziału sił |
+| G3 | Dwa zakończenia wojny i Japonia | Slajdy 16–20 | Wskaż Japonię na mapie i odpowiedz, dlaczego maj 1945 r. nie zakończył całej wojny | Niemcy skapitulowały w maju; Japonia nadal walczyła i podpisała kapitulację 2 IX 1945 r. |
+
+„Żabie skoki”, kamikadze i bomby atomowe pozostają treścią wyjaśnienia, nie deklarowanym dowodem z pytania o daty. Kryteria odpowiedzi: `assessment.md`.
 
 ## Przebieg
 - 0–1 min: otwarcie (slajd 1).

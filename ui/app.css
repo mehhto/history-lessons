@@ -1,12 +1,12 @@
 :root {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     --palette-amber: #ffbf00;
     --palette-olive: #807040;
     --palette-blue: #007eff;
     --palette-indigo: #2400ff;
     color: #16222e;
-    background: #f4f6f8
+    background: #f3f5f7
 }
 
 ::selection {
@@ -21,12 +21,12 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 62px;
+    gap: 10px;
+    height: 56px;
     box-sizing: border-box;
-    padding: 14px 22px;
-    background: var(--palette-blue);
+    padding: 0 22px;
+    background: #006bc7;
     color: white
 }
 
@@ -40,6 +40,15 @@ header button:hover {
     background: #f2f1ff
 }
 
+#mode {
+    margin-left: auto;
+    padding: 5px 9px;
+    border: 1px solid rgba(255, 255, 255, .75);
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 650
+}
+
 h1 {
     margin: 0;
     font-size: 24px
@@ -48,7 +57,7 @@ h1 {
 button {
     cursor: pointer;
     border: 0;
-    border-radius: 10px;
+    border-radius: 16px;
     padding: 8px 11px;
     font: inherit;
     background: var(--palette-amber);
@@ -58,7 +67,7 @@ button {
 main {
     display: grid;
     grid-template-columns:330px 1fr;
-    height: calc(100vh - 62px);
+    height: calc(100vh - 56px);
     overflow: hidden
 }
 
@@ -78,13 +87,29 @@ input {
     margin: 6px 0 14px
 }
 
+#filter {
+    border: 1px solid #b9c6d1;
+    border-radius: 999px;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(22, 34, 46, .06);
+    padding: 4px 12px;
+    font: inherit;
+    font-size: 14px
+}
+
+#filter:focus-visible {
+    border-color: var(--palette-blue);
+    outline: 2px solid var(--palette-blue);
+    outline-offset: 2px
+}
+
 
 
 
 .catalog-switch {
-    display: flex;
-    align-items: flex-end;
-    gap: 22px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 4px;
     margin: -2px 0 16px;
     border-bottom: 1px solid #dce1e5
 }
@@ -92,15 +117,18 @@ input {
 .catalog-switch button {
     position: relative;
     display: inline-flex;
+    flex-direction: column;
     align-items: center;
-    gap: 8px;
-    min-height: 42px;
-    padding: 7px 2px 12px;
+    justify-content: center;
+    gap: 4px;
+    min-width: 0;
+    min-height: 52px;
+    padding: 6px 0 8px;
     border: 0;
     border-radius: 0;
     background: transparent;
     color: #68717a;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 650;
     line-height: 1;
     transition: color .16s ease-out
@@ -225,14 +253,31 @@ input {
 }
 
 .lesson small {
-    display: block;
-    opacity: .8
+    min-height: 20px;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 7px;
+    border-radius: 999px;
+    background: #fff1c2;
+    color: #634a00;
+    font-size: 11px;
+    font-weight: 650;
+    line-height: 1.25;
+    white-space: normal
+}
+
+.lesson.selected small {
+    background: #fff;
+    color: #16222e
 }
 
 #workspace {
     min-width: 0;
     overflow: hidden;
-    padding: 20px
+    padding: 24px;
+    background: #f3f5f7
 }
 
 .preview-head {
@@ -251,8 +296,64 @@ input {
     color: white
 }
 
-.open-preview {
-    background: var(--palette-blue) !important
+.preview-head :is(button, .download-pdf) {
+    position: relative;
+    display: inline-grid;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    place-items: center;
+    padding: 0;
+    border-radius: 14px;
+    background: white;
+    color: var(--palette-blue);
+    border: 1px solid #c9d4dd;
+    text-decoration: none
+}
+
+.preview-head :is(button, .download-pdf):hover {
+    background: #edf5fc
+}
+
+.preview-head :is(button, .download-pdf) svg {
+    width: 19px;
+    height: 19px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round
+}
+
+.preview-head :is(button, .download-pdf)::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: calc(100% + 9px);
+    right: 0;
+    z-index: 10;
+    width: max-content;
+    max-width: 220px;
+    padding: 6px 9px;
+    border-radius: 8px;
+    background: #16222e;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-3px);
+    transition: opacity .15s ease, transform .15s ease
+}
+
+.preview-head :is(button, .download-pdf):hover::after,
+.preview-head :is(button, .download-pdf):focus-visible::after {
+    opacity: 1;
+    transform: translateY(0)
+}
+
+.preview-head :is(button, .download-pdf):focus-visible {
+    outline: 2px solid var(--palette-blue);
+    outline-offset: 2px
 }
 
 .tabs {
@@ -263,7 +364,7 @@ input {
 }
 
 .tabs button {
-    border-radius: 6px 6px 0 0;
+    border-radius: 16px 16px 0 0;
     background: #dfe8ef;
     color: var(--palette-blue)
 }
@@ -277,10 +378,12 @@ input {
     width: 80%;
     max-width: 1120px;
     aspect-ratio: 16/9;
-    border: 1px solid #afbdca;
+    border: 1px solid #c9d4dd;
+    border-radius: 10px;
     background: white;
     display: block;
-    margin: 0 auto
+    margin: 0 auto;
+    box-shadow: 0 8px 24px rgba(22, 34, 46, .07)
 }
 
 .document-preview {
@@ -441,6 +544,26 @@ input {
     min-height: 260px
 }
 
+#workspace.assessment-preview {
+    display: flex;
+    flex-direction: column;
+    min-height: 0
+}
+
+.assessment-preview #preview-content {
+    flex: 1;
+    min-height: 0
+}
+
+.assessment-preview .document-preview-shell,
+.assessment-preview .document-preview {
+    height: 100%
+}
+
+.assessment-preview .document-preview {
+    min-height: 0
+}
+
 .document-zoom {
     position: absolute;
     top: 10px;
@@ -483,11 +606,37 @@ input {
 
 @media (max-width: 850px) {
     body {
-        overflow: auto
+        overflow-x: hidden;
+        overflow-y: auto
+    }
+
+    header {
+        gap: 8px;
+        padding: 0 12px
+    }
+
+    header h1 {
+        min-width: 0;
+        flex: 1 1 auto;
+        font-size: 19px
+    }
+
+    #mode {
+        flex: 0 1 auto;
+        margin-left: 0;
+        white-space: nowrap;
+        padding: 4px 7px;
+        font-size: 11px
+    }
+
+    header button {
+        flex: 0 0 auto;
+        padding: 7px 9px;
+        font-size: 12px
     }
 
     main {
-        grid-template-columns:1fr;
+        grid-template-columns:minmax(0,1fr);
         height: auto;
         overflow: visible
     }
@@ -503,17 +652,55 @@ input {
         overflow: visible
     }
 
+    .preview-head {
+        align-items: flex-start
+    }
+
     .preview-head h2 {
-        width: 100%
+        width: 100%;
+        overflow-wrap: anywhere
+    }
+
+    .tabs {
+        flex-wrap: wrap
+    }
+
+    .tabs button {
+        max-width: 100%;
+        white-space: normal
+    }
+
+    .preview-head :is(button, .download-pdf) {
+        flex: 0 0 40px
     }
 
     .preview {
-        width: 100%
+        width: 100%;
+        max-width: none;
+        margin: 0 auto
+    }
+
+    .grade-filter, .clear-filters {
+        flex: 0 1 auto;
+        min-width: 0
     }
 
     .document-preview {
         height: auto;
         min-height: 400px
+    }
+
+    #workspace.assessment-preview {
+        display: block
+    }
+
+    .assessment-preview .document-preview-shell {
+        height: auto
+    }
+
+    .assessment-preview .document-preview {
+        height: min(65vh, 650px);
+        min-height: 260px
     }
 }
 
@@ -530,6 +717,6 @@ input {
 #feedback-form { display: grid; gap: 14px; padding: 24px }
 #feedback-form h2, #feedback-form p { margin: 0 }
 #feedback-lesson { color: var(--palette-olive); font-weight: 700 }
-#feedback-form textarea { min-height: 72px; resize: vertical; padding: 12px; font: inherit; line-height: 1.45 }
+#feedback-modal textarea { min-height: 72px; border-radius: 12px; resize: vertical; padding: 12px; font: inherit; line-height: 1.45 }
 #feedback-error { min-height: 1.2em; color: #a62525 }
 .dialog-actions { display: flex; justify-content: flex-end; gap: 10px }

@@ -212,6 +212,22 @@ test('sidecar healthcheck requires the server to remain read-only', async () => 
   assert.match(compose, /history-lessons[^}]*}\/classes:\/workspace\/classes:rw/);
 });
 
+test('read-only browser UI explains its mode and why a lesson needs review', async () => {
+  const { server, port } = await createUiServer({ repoRoot, port: 0, host: '127.0.0.1', readOnly: true });
+  const browser = await chromium.launch({ executablePath: browserExecutable });
+  try {
+    const page = await browser.newPage();
+    await page.goto(`http://127.0.0.1:${port}/admin/`);
+    await page.getByText('Tylko podgląd', { exact: true }).waitFor();
+    const flagged = page.locator('#catalog .lesson').filter({ hasText: 'Pilot szablonu — test techniczny' });
+    await flagged.waitFor();
+    assert.match(await flagged.locator('small').textContent(), /Wymaga kontroli:.*NN-krotki-slug/);
+  } finally {
+    await browser.close();
+    await stop(server);
+  }
+});
+
 test('read-only browser UI keeps previews and omits export controls', async () => {
   const { server, port } = await createUiServer({ repoRoot, port: 0, host: '127.0.0.1', readOnly: true });
   const browser = await chromium.launch({ executablePath: browserExecutable });
@@ -222,6 +238,24 @@ test('read-only browser UI keeps previews and omits export controls', async () =
       if (/content security policy|violates.*style-src|refused to load/i.test(message.text())) cspErrors.push(message.text());
     });
     await page.goto(`http://127.0.0.1:${port}/admin/`);
+    const search = page.getByRole('searchbox', { name: 'Szukaj' });
+    assert.equal(await search.getAttribute('placeholder'), 'Szukaj....');
+    assert.equal(await search.evaluate((input) => getComputedStyle(input).borderRadius), '999px');
+    assert.equal(await page.locator('aside > label').count(), 0);
+    for (const width of [1280, 390, 320]) {
+      await page.setViewportSize({ width, height: 844 });
+      assert.equal(await page.locator('.catalog-switch').evaluate((tabs) => {
+        const buttons = [...tabs.querySelectorAll('button')];
+        const rowTop = buttons[0].getBoundingClientRect().top;
+        return buttons.every((tab) => {
+          const box = tab.getBoundingClientRect();
+          const label = tab.querySelector('span').getBoundingClientRect();
+          return box.top === rowTop && label.left >= box.left && label.right <= box.right
+            && tab.querySelector('svg').getBoundingClientRect().bottom <= label.top;
+        });
+      }), true, `one row, icon above visible label at ${width}px`);
+    }
+    await page.setViewportSize({ width: 1280, height: 720 });
     const lessonTab = page.getByRole('tab', { name: 'Lekcje' });
     const testTab = page.getByRole('tab', { name: 'Kartkówki' });
     const glyphs = await Promise.all([lessonTab, testTab].map((tab) => tab.evaluate((element) => {
@@ -243,7 +277,21 @@ test('read-only browser UI keeps previews and omits export controls', async () =
     await testTab.press('ArrowLeft');
     assert.equal(await lessonTab.getAttribute('aria-selected'), 'true');
     assert.equal(await lessonTab.evaluate((tab) => document.activeElement === tab), true);
-    await page.locator('#catalog .lesson').first().click();
+    await page.locator('#catalog .lesson').filter({ hasText: 'Polityka okupacyjna III Rzeszy' }).click();
+    assert.deepEqual(await page.locator('.tabs button').first().evaluate((tab) => {
+      const style = getComputedStyle(tab);
+      return [style.borderTopLeftRadius, style.borderBottomLeftRadius, style.borderBottomRightRadius];
+    }), ['16px', '0px', '0px']);
+    const previewButtons = page.locator('.preview-head button');
+    assert.deepEqual(await previewButtons.evaluateAll((buttons) => buttons.map((button) => ({
+      label: button.getAttribute('aria-label'), tooltip: button.dataset.tooltip, icon: Boolean(button.querySelector('svg')),
+      radius: getComputedStyle(button).borderRadius,
+    }))), [
+      { label: 'Odśwież podgląd', tooltip: 'Odśwież podgląd', icon: true, radius: '14px' },
+      { label: 'Otwórz w nowej karcie', tooltip: 'Otwórz w nowej karcie', icon: true, radius: '14px' },
+    ]);
+    await previewButtons.first().hover();
+    await page.waitForFunction(() => getComputedStyle(document.querySelector('.preview-head button'), '::after').opacity === '1');
     const preview = page.locator('iframe.preview');
     await preview.waitFor();
     await page.waitForFunction(() => document.querySelector('iframe.preview')?.contentDocument?.documentElement?.dataset.presentationReady === 'true');
@@ -253,6 +301,66 @@ test('read-only browser UI keeps previews and omits export controls', async () =
     await browser.close();
     await stop(server);
   }
+});
+
+test('exam collection is separate, printable preview hides key and tabs work on mobile', async () => {
+  const { server, port } = await createUiServer({ repoRoot, port: 0, host: '127.0.0.1', readOnly: true });
+  const browser = await chromium.launch({ executablePath: browserExecutable });
+  try {
+    const page = await browser.newPage({ viewport: { width: 390, height: 844 } });
+    const errors = [];
+    page.on('pageerror', error => errors.push(error.message));
+    await page.goto(`http://127.0.0.1:${port}/admin/`);
+    for (const name of ['Lekcje', 'Kartkówki', 'Sprawdziany']) {
+      await page.getByRole('tab', { name }).click();
+      assert.deepEqual(await page.locator('#catalog .lesson').first().evaluate((item) => {
+        const style = getComputedStyle(item);
+        return [style.borderRadius, style.borderRightWidth];
+      }), ['0px', '8px']);
+    }
+    const examTab = page.getByRole('tab', { name: 'Sprawdziany' });
+    await examTab.click();
+    assert.equal(await examTab.getAttribute('aria-selected'), 'true');
+    assert.equal(await page.locator('#catalog').getAttribute('aria-labelledby'), 'show-exams');
+    assert.equal(await page.locator('#catalog .lesson').filter({ hasText: 'Kartkówka' }).count(), 0);
+    await page.locator('#catalog .lesson').filter({ hasText: 'Europa po kongresie wiedeńskim' }).click();
+    await page.locator('#preview-content .document-preview h1').waitFor();
+    const preview = await page.locator('#preview-content').textContent();
+    assert.match(preview, /Wiosna Ludów/);
+    assert.doesNotMatch(preview, /Klucz odpowiedzi|dla nauczyciela/);
+    const pdfLink = page.getByRole('link', { name: 'Pobierz PDF' });
+    assert.equal(await pdfLink.getAttribute('href'), '/tests/7/01-europa-po-kongresie-i-rewolucja-przemyslowa.pdf');
+    assert.equal(await pdfLink.locator('svg').count(), 1);
+    assert.equal(await pdfLink.evaluate((link) => getComputedStyle(link).borderRadius), '14px');
+    assert.equal(await page.locator('.preview-head .download-pdf').count(), 1);
+    assert.equal(await page.locator('.actions').count(), 0);
+    const pdfResponse = await page.request.get(`http://127.0.0.1:${port}${await pdfLink.getAttribute('href')}`);
+    assert.equal(pdfResponse.status(), 200);
+    assert.equal((await pdfResponse.body()).subarray(0, 5).toString(), '%PDF-');
+    const download = page.waitForEvent('download');
+    await pdfLink.click();
+    assert.match((await download).suggestedFilename(), /\.pdf$/u);
+    for (const height of [800, 600]) {
+      await page.setViewportSize({ width: 1280, height });
+      assert.equal(await page.evaluate(() => {
+        const preview = document.querySelector('.assessment-preview .document-preview');
+        return document.documentElement.scrollHeight <= innerHeight
+          && preview.getBoundingClientRect().bottom <= innerHeight - 20
+          && preview.getBoundingClientRect().height >= innerHeight - 200;
+      }), true, `exam preview fits ${height}px viewport`);
+    }
+    await page.setViewportSize({ width: 390, height: 844 });
+    assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
+    await examTab.press('ArrowLeft');
+    assert.equal(await page.getByRole('tab', { name: 'Kartkówki' }).getAttribute('aria-selected'), 'true');
+    assert.equal(await page.locator('#catalog .lesson').filter({ hasText: 'Europa po kongresie wiedeńskim' }).count(), 0);
+    await page.locator('#catalog .lesson').first().click();
+    await page.locator('.document-preview').waitFor();
+    await page.setViewportSize({ width: 1280, height: 800 });
+    assert.equal(await page.evaluate(() => document.documentElement.scrollHeight <= innerHeight
+      && document.querySelector('.document-preview').getBoundingClientRect().bottom <= innerHeight - 20), true);
+    assert.deepEqual(errors, []);
+  } finally { await browser.close(); await stop(server); }
 });
 
 test('read-only browser UI opens a full-slide lightbox inside the presentation iframe', async () => {
@@ -287,6 +395,14 @@ test('reflection UI sends structured observations through its modal', async () =
     await page.goto(`http://127.0.0.1:${port}/admin/`);
     await page.locator('#catalog .lesson').first().click();
     const title = await page.locator('#workspace h2').textContent();
+    assert.deepEqual(await page.locator('.preview-head button').evaluateAll((buttons) => buttons.map((button) => ({
+      label: button.getAttribute('aria-label'), icon: Boolean(button.querySelector('svg')),
+      radius: getComputedStyle(button).borderRadius,
+    }))), [
+      { label: 'Dodaj refleksję', icon: true, radius: '14px' },
+      { label: 'Odśwież podgląd', icon: true, radius: '14px' },
+      { label: 'Otwórz w nowej karcie', icon: true, radius: '14px' },
+    ]);
     await page.getByRole('button', { name: 'Dodaj refleksję' }).click();
     await page.locator('#reflection-understood').fill('Uczniowie rozpoznali zasięg okupacji na mapie.');
     await page.locator('#reflection-next-change').fill('Skrócić wyjaśnienie przed zadaniem.');

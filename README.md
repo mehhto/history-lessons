@@ -18,6 +18,10 @@ Lekcja ćwiczeniowa bez prezentacji: `npm run new -- --class 6 --title "Ćwiczen
 
 Otwórz `http://127.0.0.1:8080/classes/6/02-odkrycia-wyprawy/`.
 
+## Kartkówki i sprawdziany
+
+W panelu są osobne zakładki **Lekcje**, **Kartkówki** i **Sprawdziany**. Arkusze mają źródło w `tests/<klasa>/NN-temat.md`; nagłówek `# Sprawdzian…` przypisuje arkusz do zakładki Sprawdziany, a pozostałe nagłówki do Kartkówek. Klucz po `<!-- teacher-key -->` jest dostępny tylko w źródle; podgląd i uczniowski PDF go nie zawierają. W panelu do edycji użyj „Drukuj / zapisz PDF”, a w prywatnym podglądzie tylko do odczytu — „Pobierz przygotowany PDF”. Lokalny eksport: `npm run export:test -- --test tests/7/01-europa-po-kongresie-i-rewolucja-przemyslowa.md`. Ten sam mechanizm obsługuje oba rodzaje arkuszy.
+
 ## Podgląd przez SSH przed pushem
 
 Do przeglądu pojedynczej lekcji bez publikowania zmian w Git uruchom ograniczony serwer podglądu:
@@ -138,16 +142,21 @@ Każda aktywna prezentacja działa na jednym płótnie **1280×720 (16:9)**. Rev
 W `metadata.json` wybierz zatwierdzony styl i paletę:
 
 ```json
-"appearance": { "style": "atlas", "palette": "marine" }
+"appearance": { "style": "atlas", "palette": "land-sea" }
 ```
 
-| Styl | Palety |
-|---|---|
-| `museum` | `sand`, `stone` |
-| `editorial` | `ink`, `burgundy`, `documentary-1939` |
-| `atlas` | `marine`, `earth`, `encounter-atlas` |
+| Styl | Gramatyka | Domyślna paleta | Inne palety |
+|---|---|---|---|
+| `museum` | obiekt i neutralna ekspozycja | `evidence-grey` | `civic-paired`, starsze: `sand`, `stone` |
+| `editorial` | narracja typograficzna | `conflict-map` | `civic-debate`, `civic-paired`, starsze: `ink`, `burgundy`, `documentary-1939` |
+| `atlas` | przestrzeń, mapa i trasa | `land-sea` | `conflict-map`, `civic-paired`, starsze: `marine`, `earth`, `encounter-atlas` |
+| `chronicle` | czas, proces i punkty zwrotne | `conflict-map` | `land-sea`, `civic-paired` |
+| `source-lab` | badanie i ocena dowodów | `evidence-grey` | `conflict-map`, `civic-paired` |
+| `reportage` | ludzie, miejsce i perspektywy | `vivid-dark2` | `civic-paired`, `land-sea` |
 
-Nowy pakiet można utworzyć z osobno wskazanymi typem/formą, stylem i krótkim slugiem: `npm run new -- --class 6 --title "Temat" --slug krotki-temat --type new-knowledge --presentation slides --style atlas --palette marine`. Dla lekcji bez prezentacji użyj `--presentation none`. Generator automatycznie dopisuje kolejny numer, np. `06-krotki-temat`.
+Style i ich kontrakt wizualny opisuje [`design/presentation-styles-v2.md`](design/presentation-styles-v2.md). Style są niezależne od `lesson_type`; paleta nie zmienia gramatyki stylu. Generator nowych lekcji przyjmuje wyłącznie palety z `design/presentation-palettes-v1.json`. Starsze nazwy palet pozostają obsługiwane w istniejących metadanych — nie zmieniaj ich bez osobnej decyzji.
+
+Nowy pakiet można utworzyć z osobno wskazanymi typem/formą, stylem i krótkim slugiem: `npm run new -- --class 6 --title "Temat" --slug krotki-temat --type new-knowledge --presentation slides --style chronicle --palette conflict-map`. Dla lekcji bez prezentacji użyj `--presentation none`. Generator automatycznie dopisuje kolejny numer, np. `06-krotki-temat`.
 
 Opcjonalne tło jest lokalnym, dekoracyjnym plikiem lekcji; nie może zastępować materiału analizowanego przez ucznia:
 
