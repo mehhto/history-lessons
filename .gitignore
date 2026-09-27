@@ -11,3 +11,5 @@ test-results/
 curriculum/official/*.pdf
 # Oryginalne DOCX od nauczyciela pozostają lokalne: zawierają metadane autora.
 curriculum/sources/*/original/*.docx
+# Wygenerowane kopie edytowalne kartkówek i sprawdzianów.
+tests/**/*.docx

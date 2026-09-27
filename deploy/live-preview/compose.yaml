@@ -2,24 +2,28 @@ name: history-lessons-preview
 
 services:
   history-ui:
-    image: node:22-bookworm-slim
+    image: mcr.microsoft.com/playwright:v1.62.1-noble
     user: "10000:10000"
     working_dir: /workspace
     command: ["node", "scripts/ui-server.mjs"]
     environment:
       HOST: "0.0.0.0"
       PORT: "8182"
-      UI_READ_ONLY: "1"
+      PLAYWRIGHT_BROWSERS_PATH: "/ms-playwright"
+      HOME: "/home/chromium"
+      UI_READ_ONLY: "0"
       UI_FEEDBACK_ENABLED: "1"
     volumes:
       - "${HISTORY_LESSONS_PATH:-/home/hermes/hermes/data/history-lessons}:/workspace:ro"
       - "${HISTORY_LESSONS_PATH:-/home/hermes/hermes/data/history-lessons}/classes:/workspace/classes:rw"
+      - "${HISTORY_LESSONS_PATH:-/home/hermes/hermes/data/history-lessons}/tests:/workspace/tests:rw"
     ports:
       - "127.0.0.1:${HISTORY_UI_PORT:-8182}:8182"
     restart: unless-stopped
     read_only: true
     tmpfs:
       - /tmp:size=32m,mode=1777
+      - /home/chromium:size=64m,mode=1777
     cap_drop:
       - ALL
     security_opt:
@@ -29,7 +33,7 @@ services:
         - CMD
         - node
         - -e
-        - "fetch('http://127.0.0.1:8182/healthz').then(async r=>{const body=await r.json();if(!(r.ok && body.status === 'ok' && body.readOnly === true))process.exit(1)}).catch(()=>process.exit(1))"
+        - "fetch('http://127.0.0.1:8182/healthz').then(async r=>{const body=await r.json();if(!(r.ok && body.status === 'ok' && body.readOnly === false))process.exit(1)}).catch(()=>process.exit(1))"
       interval: 15s
       timeout: 3s
       retries: 3

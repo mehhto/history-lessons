@@ -2,7 +2,7 @@ import { readdir, readFile, stat } from 'node:fs/promises';
 import path from 'node:path';
 import { validateLessonIdentity, validateLessonPackage } from './lesson-tools.mjs';
 
-const SOURCE_NAMES = new Set(['metadata.json', 'slides.md', 'lesson.css', 'index.html', 'lesson.md', 'worksheet.md', 'teacher-guide.md', 'assessment.md', 'student-summary.md']);
+const SOURCE_NAMES = new Set(['metadata.json', 'slides.md', 'lesson.css', 'index.html', 'lesson.md', 'worksheet.md', 'teacher-guide.md', 'assessment.md', 'student-summary.md', 'workshop-45.md', 'workshop-group-packet.md']);
 const IGNORED_NAMES = new Set(['.hermes', 'node_modules']);
 
 async function exists(file) { try { return (await stat(file)).isFile(); } catch { return false; } }
@@ -56,6 +56,8 @@ export async function listLessons({ repoRoot }) {
             worksheet: await exists(path.join(directory, 'worksheet.md')),
             teacher: await exists(path.join(directory, 'teacher-guide.md')),
             summary: await exists(path.join(directory, 'student-summary.md')) && Boolean((await readFile(path.join(directory, 'student-summary.md'), 'utf8')).trim()),
+            workshop: await exists(path.join(directory, 'workshop-45.md')),
+            workshopPacket: await exists(path.join(directory, 'workshop-group-packet.md')),
           },
         });
       } catch (error) { diagnostics.push({ directory, issues: [error.message] }); }

@@ -9,7 +9,7 @@ if (!targetArgument) {
 }
 
 const repositoryRoot = path.resolve(import.meta.dirname, '..');
-process.env.PLAYWRIGHT_BROWSERS_PATH = path.join(repositoryRoot, '.playwright-browsers');
+process.env.PLAYWRIGHT_BROWSERS_PATH ||= path.join(repositoryRoot, '.playwright-browsers');
 
 const target = path.isAbsolute(targetArgument)
   ? targetArgument

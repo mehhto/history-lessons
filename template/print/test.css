@@ -1,0 +1,38 @@
+/* Student exam sheets only: fit long assessments without shrinking answer lines. */
+@page { margin: 9mm; }
+:root { font-size: 10.5pt; line-height: 1.16; }
+.student[data-exam="02-od-pradziejow-do-izraela-spe"] { font-size: 10pt; }
+main { max-width: none; }
+h1, .student h1 { font-size: 16pt; margin-bottom: 2mm; padding-bottom: 1mm; }
+h2 { font-size: 11pt; margin: 2mm 0 .8mm; break-after: avoid; }
+p { margin-bottom: .8mm; }
+ul { margin: 0 0 .8mm; padding-left: 4.5mm; }
+li + li { margin-top: 0; }
+table { font-size: 9.5pt; margin: 1mm 0 1.5mm; }
+.student th, .student td { padding: .8mm 1.5mm; }
+.student p > img { max-height: 68mm; max-width: 100%; object-fit: contain; }
+/* Keep the next task together instead of stranding its opening on page one. */
+.student[data-exam="02-od-pradziejow-do-izraela"] h2:nth-of-type(5),
+.student[data-exam="01-odkrycia-renesans-reformacja"] h2:nth-of-type(6),
+.student[data-exam="01-odkrycia-renesans-reformacja-spe"] h2:nth-of-type(5),
+.student[data-exam="01-ii-wojna-swiatowa"] h2:nth-of-type(4) { break-before: page; }
+@media screen {
+  html, body { width: max-content; margin: 0; background: #e7ecf1; }
+  body { padding: 9mm; }
+  main {
+    box-sizing: border-box;
+    width: 402mm;
+    height: 279mm;
+    margin: 0;
+    column-count: 2;
+    column-width: 192mm;
+    column-gap: 18mm;
+    column-fill: auto;
+    column-rule: 18mm solid #e7ecf1;
+    background: white;
+  }
+  .student[data-exam="02-od-pradziejow-do-izraela"] h2:nth-of-type(5),
+  .student[data-exam="01-odkrycia-renesans-reformacja"] h2:nth-of-type(6),
+  .student[data-exam="01-odkrycia-renesans-reformacja-spe"] h2:nth-of-type(5),
+  .student[data-exam="01-ii-wojna-swiatowa"] h2:nth-of-type(4) { break-before: column; }
+}

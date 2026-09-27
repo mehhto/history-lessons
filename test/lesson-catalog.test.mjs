@@ -19,12 +19,16 @@ test('catalogues a complete lesson without presentation files', async () => {
     for (const name of ['lesson.md', 'worksheet.md', 'sources.md', 'assessment.md', 'teacher-guide.md', 'reflection.md']) {
       await writeFile(path.join(directory, name), '# materiał\n');
     }
+    await writeFile(path.join(directory, 'workshop-45.md'), '# Warsztat\n');
+    await writeFile(path.join(directory, 'workshop-group-packet.md'), '# Pakiet\n');
 
     const catalog = await listLessons({ repoRoot: root });
 
     assert.equal(catalog.lessons.length, 1);
     assert.equal(catalog.lessons[0].valid, true);
     assert.equal(catalog.lessons[0].capabilities.presentation, false);
+    assert.equal(catalog.lessons[0].capabilities.workshop, true);
+    assert.equal(catalog.lessons[0].capabilities.workshopPacket, true);
   } finally {
     await rm(root, { recursive: true, force: true });
   }

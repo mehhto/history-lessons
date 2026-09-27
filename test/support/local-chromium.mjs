@@ -8,20 +8,23 @@ const executableByPlatform = {
 };
 
 export async function localChromiumExecutable(repositoryRoot) {
-  const browserRoot = path.join(repositoryRoot, '.playwright-browsers');
+  const browserRoots = [...new Set([process.env.PLAYWRIGHT_BROWSERS_PATH, path.join(repositoryRoot, '.playwright-browsers')].filter(Boolean))];
   const segments = executableByPlatform[process.platform];
   if (!segments) throw new Error(`Brak konfiguracji lokalnego Chromium dla ${process.platform}.`);
-  const entries = await readdir(browserRoot, { withFileTypes: true });
-  const candidates = entries
-    .filter((entry) => entry.isDirectory() && /^chromium-\d+$/.test(entry.name))
-    .map((entry) => entry.name)
-    .sort((left, right) => right.localeCompare(left));
-  for (const candidate of candidates) {
-    const executable = path.join(browserRoot, candidate, ...segments);
-    try {
-      await access(executable);
-      return executable;
-    } catch { /* Try the next locally provisioned Chromium. */ }
+  for (const browserRoot of browserRoots) {
+    let entries;
+    try { entries = await readdir(browserRoot, { withFileTypes: true }); } catch { continue; }
+    const candidates = entries
+      .filter((entry) => entry.isDirectory() && /^chromium-\d+$/.test(entry.name))
+      .map((entry) => entry.name)
+      .sort((left, right) => right.localeCompare(left));
+    for (const candidate of candidates) {
+      const executable = path.join(browserRoot, candidate, ...segments);
+      try {
+        await access(executable);
+        return executable;
+      } catch { /* Try the next locally provisioned Chromium. */ }
+    }
   }
-  throw new Error(`Nie znaleziono lokalnego Chromium w ${browserRoot}. Uruchom npm run install:browser.`);
+  throw new Error(`Nie znaleziono lokalnego Chromium w ${browserRoots.join(' ani ')}. Uruchom npm run install:browser.`);
 }

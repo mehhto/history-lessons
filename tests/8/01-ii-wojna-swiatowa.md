@@ -6,11 +6,20 @@
 
 ## 1. Chronologia. Wpisz litery od najwcześniejszego wydarzenia do najpóźniejszego. *(4 pkt)*
 
-A. Desant aliantów w Normandii (6 VI 1944).  B. Atak Japonii na Pearl Harbor (7 XII 1941).  C. Niemiecka agresja na Polskę (1 IX 1939).  D. Podpisanie kapitulacji Japonii (2 IX 1945).
+- A. Desant aliantów w Normandii (6 VI 1944).
+- B. Atak Japonii na Pearl Harbor (7 XII 1941).
+- C. Niemiecka agresja na Polskę (1 IX 1939).
+- D. Podpisanie kapitulacji Japonii (2 IX 1945).
 
 **Kolejność: ........ → ........ → ........ → ........**
 
 ## 2. Polska w 1939 roku. *(6 pkt)*
+
+Przyjrzyj się fragmentowi mapy kampanii polskiej. **Szary — Niemcy, czerwony — ZSRR; pomarańczowy i jasny obszar między nimi należały przed wojną do Polski. Strzałki wskazują kierunki natarcia. Mapa łączy wydarzenia z różnych dni — oba państwa nie zaatakowały Polski jednocześnie.** Skorzystaj z mapy przy odpowiedzi na podpunkt c).
+
+![Fragment mapy kampanii polskiej 1939 roku z kierunkami natarcia](assets/mapa-kampanii-1939-fragment.png)
+
+*Fragment mapy: Listowy / Wikimedia Commons, CC BY-SA 3.0.*
 
 a) Podaj datę ataku ZSRR na Polskę: ................................................
 
@@ -20,7 +29,7 @@ b) Podaj **jeden przykład działania żołnierzy** i **jeden przykład działan
 
 Cywile (miejsce i działanie): .........................................................................................
 
-c) Podaj **dwie różne przyczyny klęski Polski** i krótko wyjaśnij wpływ każdej z nich:
+c) Podaj **dwie różne przyczyny klęski Polski** i krótko wyjaśnij wpływ każdej z nich. Przy jednej odpowiedzi wykorzystaj położenie Polski i kierunki natarcia widoczne na mapie:
 
 1. ......................................................................................................................................................................
 
@@ -32,7 +41,9 @@ d) Co wydarzyło się 3 IX 1939 r. i dlaczego nie oznaczało to skutecznego odci
 
 ## 3. Front wschodni. Połącz wydarzenie ze znaczeniem, wpisując A–C. Każdej litery użyj raz. Następnie odpowiedz na pytanie. *(4 pkt)*
 
-**A. Moskwa, 1941 · B. Stalingrad, 1942–1943 · C. Łuk Kurski, 1943**
+- A. Moskwa, 1941
+- B. Stalingrad, 1942–1943
+- C. Łuk Kurski, 1943
 
 ........ Niepowodzenie niemieckiej ofensywy potwierdziło utrzymanie inicjatywy przez ZSRR.
 
@@ -76,7 +87,9 @@ c) Podaj **dwa różne sposoby** ochrony konwojów na Atlantyku:
 
 ## 6. Droga USA do wojny. Dopasuj A–C do opisów; każdej litery użyj raz. *(3 pkt)*
 
-**A. Lend-Lease · B. Karta atlantycka · C. USA w wojnie po Pearl Harbor**
+- A. Lend-Lease
+- B. Karta atlantycka
+- C. USA w wojnie po Pearl Harbor
 
 ........ Deklaracja zasad przyszłego pokoju Roosevelta i Churchilla.
 
@@ -110,13 +123,13 @@ Kiedy Japonia podpisała kapitulację (dzień, miesiąc i rok)? ................
 
 **1. (4 pkt)** C → B → A → D; po 1 pkt za każdą literę na właściwej pozycji, bez punktów ujemnych. Chronologia porządkuje zdarzenia na różnych frontach, a nie sugeruje, że walki w pozostałych miejscach ustały między wskazanymi datami.
 
-**2. (6 pkt)** a) **17 IX 1939** — 1 pkt (dzień, miesiąc i rok; równoważny zapis cyframi). b) po 1 pkt za miejsce **i** trafne działanie: np. Westerplatte — żołnierze bronili składnicy; Bzura — polskie oddziały przeprowadziły natarcie; Warszawa — mieszkańcy budowali barykady lub umocnienia. Nie przyjmuj samego „walczyli dzielnie”. c) po 1 pkt za każdą **inną** przyczynę wraz z jej związkiem z klęską: np. przewaga sprzętu i mobilności Niemiec ułatwiała przełamania; położenie i rozciągnięte granice utrudniały obronę; brak skutecznej ofensywy zachodnich aliantów nie odciążył frontu; agresja ZSRR od wschodu w trwającej kampanii ograniczyła możliwość obrony. Dwie parafrazy tej samej przewagi to 1 pkt. Samo „ZSRR zaatakował 17 IX” bez skutku daje punkt w a), nie ponownie w c). d) 1 pkt za oba elementy: Francja i Wielka Brytania wypowiedziały Niemcom wojnę 3 IX, lecz nie przeprowadziły skutecznej ofensywy odciążającej polski front. Nie uznawaj 17 IX za koniec kampanii ani za przyczynę porażek z początku września.
+**2. (6 pkt)** a) **17 IX 1939** — 1 pkt (dzień, miesiąc i rok; równoważny zapis cyframi). b) po 1 pkt za miejsce **i** trafne działanie: np. Westerplatte — żołnierze bronili składnicy; Bzura — polskie oddziały przeprowadziły natarcie; Warszawa — mieszkańcy budowali barykady lub umocnienia. Nie przyjmuj samego „walczyli dzielnie”. c) po 1 pkt za każdą **inną** przyczynę wraz z jej związkiem z klęską; co najmniej jedna wynika z odczytania mapy: natarcie Niemiec z zachodu/północy i późniejszy atak ZSRR ze wschodu ograniczały możliwości obrony lub położenie i rozciągnięte granice utrudniały obronę. Druga może dotyczyć np. przewagi sprzętu i mobilności Niemiec albo braku skutecznej ofensywy zachodnich aliantów. Mapa pokazuje kierunki, nie daty dzienne. Dwie parafrazy tej samej przewagi to 1 pkt. Samo „ZSRR zaatakował 17 IX” bez skutku daje punkt w a), nie ponownie w c). d) 1 pkt **łącznie za oba elementy (0 albo 1 pkt)**: Francja i Wielka Brytania wypowiedziały Niemcom wojnę 3 IX, lecz nie przeprowadziły skutecznej ofensywy odciążającej polski front. Nie uznawaj 17 IX za koniec kampanii ani za przyczynę porażek z początku września.
 
 **3. (4 pkt)** C, B, A — po 1 pkt za właściwą literę. Ostatnie pytanie — 1 pkt za inny konkretny czynnik: opór i mobilizacja ZSRR, ewakuacja przemysłu, długie linie zaopatrzenia, ogromne odległości, straty lub błędy niemieckiego planowania. Samo „pogoda” lub powtórzenie „zima” nie wystarcza.
 
 **4. (7 pkt)** a) po 1 pkt: getto — narzucona dzielnica izolacji i kontroli Żydów; ośrodek zagłady — miejsce przeznaczone przede wszystkim do masowego mordowania. Nie utożsamiaj wszystkich obozów z ośrodkami zagłady. b) 1 pkt: masowe rozstrzeliwania Żydów na Wschodzie zaczęły się wcześniej, po agresji Niemiec na ZSRR w 1941 r.; Wannsee koordynowało już trwającą politykę Zagłady. c) **Żegota** (Rada Pomocy Żydom); **szmalcownik** — po 1 pkt. d) po 1 pkt za poprawny, odrębny przykład: na Wschodzie np. plany kolonizacji i wysiedleń, germanizacja, szczególnie masowe egzekucje; również na Zachodzie np. represje, cenzura, grabież lub terror. Nie sugeruj, że na Zachodzie nie było przemocy; oceniamy tendencję, nie absolutny podział.
 
-**5. (6 pkt)** a) Afryka Północna, Atlantyk, Pacyfik — po 1 pkt. b) Samodzielna Brygada Strzelców Karpackich / Brygada Strzelców Karpackich — 1 pkt; przyjmij jednoznaczny opis polskiej brygady walczącej w Tobruku. c) po 1 pkt za dwa **różne** środki, np. konwojowanie, eskorty okrętów, lotnictwo dalekiego zasięgu, radar, sonar, radionamierzanie, wywiad/dekryptaż Enigmy, budowa nowych statków. Nie przyznawaj dwóch punktów za synonimy jednego środka (np. „eskorta” i „okręty eskorty”). Samo złamanie Enigmy nie wyjaśnia całego zwycięstwa.
+**5. (6 pkt)** a) Afryka Północna, Atlantyk, Pacyfik — po 1 pkt. b) Samodzielna Brygada Strzelców Karpackich / Brygada Strzelców Karpackich — 1 pkt; przyjmij jednoznaczny opis polskiej brygady walczącej w Tobruku. c) po 1 pkt za dwa **różne** środki, np. eskorta konwojów przez okręty, lotnictwo dalekiego zasięgu, radar, sonar, radionamierzanie, wywiad/dekryptaż Enigmy. Nie przyznawaj dwóch punktów za synonimy jednego środka (np. „eskorta” i „okręty eskorty”); budowa nowych statków uzupełniała straty, lecz nie chroniła konwoju. Samo złamanie Enigmy nie wyjaśnia całego zwycięstwa.
 
 **6. (3 pkt)** B, A, C — po 1 pkt. Lend-Lease i Karta atlantycka nie oznaczały przystąpienia USA do działań wojennych.
 
@@ -124,4 +137,6 @@ Kiedy Japonia podpisała kapitulację (dzień, miesiąc i rok)? ................
 
 **8. (4 pkt)** Teheran — 1 pkt za plan współdziałania wojennego, m.in. desantu w północnej Francji; Jałta — 1 pkt za rozmowy o powojennym porządku, np. przyszłości Niemiec lub Polski (także sprawie ONZ). Odpowiedź „spotkanie przywódców” bez sprawy nie wystarcza. Niemcy: **maj 1945** — 1 pkt (8/9 V jest poprawnym uściśleniem). Japonia: **2 IX 1945** — 1 pkt. Kapitulacja Niemiec nie zakończyła wojny na Pacyfiku; nie przypisuj kapitulacji Japonii jednej wyłącznej przyczynie.
 
-**Razem: 37 pkt** (4 + 6 + 4 + 7 + 6 + 3 + 3 + 4). Zachowaj punkty częściowe wskazane przy każdym elemencie; równoważne, historycznie poprawne odpowiedzi akceptuj. Progi ocen ustala nauczyciel zgodnie z zasadami szkoły. Arkusz ma stanowić około 40–45 minut pracy; układ dwóch stron A4 należy ocenić dopiero w podglądzie eksportera (PDF nie został zamówiony).
+**Razem: 37 pkt** (4 + 6 + 4 + 7 + 6 + 3 + 3 + 4). Zachowaj punkty częściowe wskazane przy każdym elemencie; równoważne, historycznie poprawne odpowiedzi akceptuj. Progi ocen ustala nauczyciel zgodnie z zasadami szkoły. Arkusz ma stanowić około 40–45 minut pracy; układ stron A4 należy ocenić w podglądzie eksportera.
+
+Fragment mapy kampanii: Listowy, *Invasion of Poland-1939*, CC BY-SA 3.0; wykadrowana kopia z `classes/8/01-wojna-obronna-1939/assets/mapa-kampanii-polskiej-1939.png`. Pełna atrybucja i ograniczenia: `classes/8/01-wojna-obronna-1939/sources.md`.

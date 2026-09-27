@@ -3,6 +3,7 @@ import { open, realpath, readFile, stat } from 'node:fs/promises';
 import http from 'node:http';
 import path from 'node:path';
 import process from 'node:process';
+import { createHash } from 'node:crypto';
 import { spawn } from 'node:child_process';
 import { pipeline } from 'node:stream/promises';
 import { fileURLToPath } from 'node:url';
@@ -11,8 +12,9 @@ import { resolveLessonAction } from './lesson-actions.mjs';
 import { listTests, studentTestMarkdown, testRevisions } from './test-catalog.mjs';
 import { resolveTestAction } from './test-actions.mjs';
 import { createJobQueue } from './local-job-queue.mjs';
-import { markdownToHtml } from './print-pack.mjs';
+import { embedLocalImagesInHtml, markdownToHtml } from './print-pack.mjs';
 import { decodeRequestPath, resolveWithin } from './safe-paths.mjs';
+import { docxForTest } from './export-test-docx.mjs';
 
 const MIME = { '.css':'text/css; charset=utf-8','.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.mjs':'text/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.webp':'image/webp','.pdf':'application/pdf','.woff':'font/woff','.woff2':'font/woff2','.ttf':'font/ttf','.md':'text/markdown; charset=utf-8' };
 const SECURITY_HEADERS = {
@@ -28,7 +30,7 @@ function safePublicPath(root, requestPath) {
   const relative = path.relative(root, file).split(path.sep);
   const allowedLesson = relative[0] === 'classes' && !relative.includes('.git') && !relative.includes('feedback.jsonl');
   const allowedTestPdf = relative[0] === 'tests' && relative.length === 3 && relative[2].endsWith('.pdf');
-  const allowedTemplate = relative[0] === 'template' && ['reveal','components','presentation','fonts','theme.css'].includes(relative[1]);
+  const allowedTemplate = relative[0] === 'template' && (['reveal','components','presentation','fonts','theme.css'].includes(relative[1]) || (relative[1] === 'print' && relative.length === 3 && ['print.css','test.css'].includes(relative[2])));
   const allowedCatalogGlyph = relative[0] === 'template' && relative[1] === 'assets' && relative[2] === 'presentation-glyphs' && relative.length === 4 && relative[3].endsWith('.svg');
   if (!allowedLesson && !allowedTestPdf && !allowedTemplate && !allowedCatalogGlyph) throw notFound();
   const base = allowedLesson ? path.join(root, 'classes') : allowedTestPdf ? path.join(root, 'tests') : path.join(root, 'template');
@@ -92,13 +94,24 @@ export async function createUiServer({ repoRoot = process.cwd(), port = 8182, ho
       if (req.method === 'GET' && pathname === '/api/config') return send(res,200,{readOnly,feedbackEnabled});
       if (req.method === 'GET' && pathname === '/api/lessons') return send(res,200,await listLessons({repoRoot:root}));
       if (req.method === 'GET' && pathname === '/api/tests') return send(res,200,await listTests({repoRoot:root}));
+      if (req.method === 'GET' && pathname === '/api/test-docx') {
+        const test = new URL(req.url, 'http://127.0.0.1').searchParams.get('test');
+        if (typeof test !== 'string' || !/^tests\/[4-8]\/\d{2}-[^/\\]+\.md$/u.test(test)) throw new Error('Nieprawidłowy sprawdzian lub kartkówka.');
+        const markdown = await readFile(resolveWithin(root, test), 'utf8');
+        const etag = `"${createHash('sha256').update(markdown).digest('hex')}"`;
+        if (!req.headers['if-none-match'] || req.headers['if-none-match'] !== etag) {
+          const buffer = await docxForTest({ repoRoot: root, test });
+          res.writeHead(200, { ...SECURITY_HEADERS, 'Content-Type': 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'Content-Disposition': `attachment; filename="${path.basename(test, '.md')}.docx"; filename*=UTF-8''${encodeURIComponent(path.basename(test, '.md'))}.docx`, 'Content-Length': buffer.length, ETag: etag, 'Cache-Control': 'no-cache' }).end(buffer);
+        } else res.writeHead(304, { ...SECURITY_HEADERS, ETag: etag }).end();
+        return;
+      }
       if (req.method === 'GET' && pathname === '/api/revisions') {
         const [lessonChanges, testChanges] = await Promise.all([revisions({repoRoot:root}), testRevisions({repoRoot:root})]);
         return send(res,200,{...lessonChanges, testCatalogRevision:testChanges.catalogRevision, testDocumentRevisions:testChanges.documentRevisions});
       }
       if (req.method === 'GET' && pathname === '/api/document') {
         const query = new URL(req.url, 'http://127.0.0.1').searchParams;
-        const sources = { worksheet: 'worksheet.md', teacher: 'teacher-guide.md', summary: 'student-summary.md' };
+        const sources = { worksheet: 'worksheet.md', teacher: 'teacher-guide.md', summary: 'student-summary.md', workshop: 'workshop-45.md', workshopPacket: 'workshop-group-packet.md' };
         const kind = query.get('kind'); const lesson = query.get('lesson'); const source = sources[kind];
         if (!source || typeof lesson !== 'string' || !lesson.startsWith('classes/')) throw new Error('Nieprawidłowy materiał.');
         const lessonDirectory = resolveWithin(root, lesson);
@@ -117,7 +130,7 @@ export async function createUiServer({ repoRoot = process.cwd(), port = 8182, ho
           file: resolveWithin(root, test),
         });
         const markdown = studentTestMarkdown(await readFile(testFile, 'utf8'));
-        return send(res, 200, { html: markdownToHtml(markdown) });
+        return send(res, 200, { html: await embedLocalImagesInHtml(markdownToHtml(markdown), path.dirname(testFile)) });
       }
       if (req.method === 'POST' && pathname === '/api/feedback') {
         if (!feedbackEnabled) return send(res, 403, { error: 'Zbieranie feedbacku jest wyłączone.' });

@@ -203,13 +203,43 @@ test('document API rejects a lesson source symlink that escapes classes', async 
   }
 });
 
-test('sidecar healthcheck requires the server to remain read-only', async () => {
+test('sidecar healthcheck enables closed-list exports while only artifact directories are writable', async () => {
   const compose = await readFile(path.join(repoRoot, 'deploy/live-preview/compose.yaml'), 'utf8');
-  assert.match(compose, /body\.status === 'ok' && body\.readOnly === true/);
-  assert.doesNotMatch(compose, /:\/opt\/data:ro/);
+  assert.match(compose, /image: mcr\.microsoft\.com\/playwright:v1\.62\.1-noble/);
+  assert.match(compose, /PLAYWRIGHT_BROWSERS_PATH: "\/ms-playwright"/);
+  assert.match(compose, /HOME: "\/home\/chromium"/);
+  assert.match(compose, /\/home\/chromium:size=64m,mode=1777/);
+  assert.match(compose, /body\.status === 'ok' && body\.readOnly === false/);
+  assert.match(compose, /UI_READ_ONLY: "0"/);
+  assert.doesNotMatch(compose, /:\/opt\/data:rw/);
   assert.match(compose, /history-lessons[^}]*}:\/workspace:ro/);
-  assert.match(compose, /UI_FEEDBACK_ENABLED: "1"/);
   assert.match(compose, /history-lessons[^}]*}\/classes:\/workspace\/classes:rw/);
+  assert.match(compose, /history-lessons[^}]*}\/tests:\/workspace\/tests:rw/);
+  assert.match(compose, /UI_FEEDBACK_ENABLED: "1"/);
+});
+
+test('writable export UI restores portable and PDF actions for lessons and assessments', async () => {
+  const { server, port } = await createUiServer({ repoRoot, port: 0, host: '127.0.0.1', readOnly: false });
+  const browser = await chromium.launch({ executablePath: browserExecutable });
+  try {
+    const page = await browser.newPage();
+    const pageErrors = [];
+    page.on('pageerror', (error) => pageErrors.push(error.message));
+    await page.goto(`http://127.0.0.1:${port}/admin/`);
+    const lesson = await page.evaluate(async () => (await (await fetch('/api/lessons')).json()).lessons.find((item) => item.capabilities.presentation));
+    await page.locator('#catalog .lesson').filter({ hasText: lesson.title }).click();
+    await page.getByRole('button', { name: 'Portable HTML' }).waitFor();
+    assert.ok(await page.getByRole('button', { name: 'PDF prezentacji' }).count());
+    assert.ok(await page.getByRole('button', { name: 'Karta pracy PDF' }).count());
+    await page.getByRole('tab', { name: 'Kartkówki' }).click();
+    await page.locator('#catalog .lesson').first().click();
+    assert.equal(await page.getByRole('link', { name: 'Pobierz DOCX' }).count(), 1);
+    assert.equal(await page.getByRole('button', { name: 'Drukuj / zapisz PDF' }).count(), 1);
+    assert.deepEqual(pageErrors, []);
+  } finally {
+    await browser.close();
+    await stop(server);
+  }
 });
 
 test('read-only browser UI explains its mode and why an invalid lesson needs review', async () => {
@@ -310,6 +340,47 @@ test('read-only browser UI keeps previews and omits export controls', async () =
   }
 });
 
+test('SPE exam preview renders checkboxes and keeps maps within the scrollable pane', async () => {
+  const { server, port } = await createUiServer({ repoRoot, port: 0, host: '127.0.0.1', readOnly: true });
+  const browser = await chromium.launch({ executablePath: browserExecutable });
+  try {
+    const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
+    await page.goto(`http://127.0.0.1:${port}/admin/`);
+    await page.getByRole('tab', { name: 'Sprawdziany' }).click();
+    await page.locator('#catalog .lesson').filter({ hasText: 'pradzieje, pierwsze cywilizacje i starożytny Izrael (wersja dostosowana)' }).click();
+    const frame = page.frameLocator('.exam-pages');
+    await frame.locator('img').waitFor();
+    assert.equal(await frame.locator('li').filter({ hasText: '[ ]' }).count(), 0);
+    assert.ok(await frame.locator('li.check-item').count() > 0);
+    const sizes = await frame.locator('body').evaluate((body) => ({
+      image: body.querySelector('img').getBoundingClientRect().height,
+      loaded: body.querySelector('img').naturalWidth > 0,
+      columns: getComputedStyle(body.querySelector('main')).columnCount,
+      width: document.documentElement.scrollWidth,
+      lastX: body.querySelector('section').lastElementChild.getBoundingClientRect().x,
+    }));
+    assert.equal(sizes.loaded, true);
+    assert.equal(sizes.columns, '2');
+    assert.ok(sizes.image < 300 && sizes.lastX > 750 && sizes.width < 1650, JSON.stringify(sizes));
+    const examButtons = page.locator('#catalog .lesson');
+    assert.equal(await examButtons.count(), 6);
+    for (let index = 0; index < 6; index += 1) {
+      await examButtons.nth(index).click();
+      const sheet = page.frameLocator('.exam-pages');
+      await sheet.locator('h1').waitFor();
+      const bounds = await sheet.locator('body').evaluate((body) => ({
+        width: document.documentElement.scrollWidth,
+        end: body.querySelector('section').lastElementChild.getBoundingClientRect().toJSON(),
+        main: body.querySelector('main').getBoundingClientRect().toJSON(),
+      }));
+      assert.ok(bounds.width < 1650 && bounds.end.left > bounds.main.left + 700 && bounds.end.right <= bounds.main.right + 1, JSON.stringify(bounds));
+    }
+  } finally {
+    await browser.close();
+    await stop(server);
+  }
+});
+
 test('exam collection is separate, printable preview hides key and tabs work on mobile', async () => {
   const { server, port } = await createUiServer({ repoRoot, port: 0, host: '127.0.0.1', readOnly: true });
   const browser = await chromium.launch({ executablePath: browserExecutable });
@@ -330,27 +401,19 @@ test('exam collection is separate, printable preview hides key and tabs work on 
     assert.equal(await examTab.getAttribute('aria-selected'), 'true');
     assert.equal(await page.locator('#catalog').getAttribute('aria-labelledby'), 'show-exams');
     assert.equal(await page.locator('#catalog .lesson').filter({ hasText: 'Kartkówka' }).count(), 0);
+    assert.equal(await page.getByRole('link', { name: 'Pobierz DOCX' }).count(), 0);
     await page.locator('#catalog .lesson').filter({ hasText: 'Europa po kongresie wiedeńskim' }).click();
-    await page.locator('#preview-content .document-preview h1').waitFor();
-    const preview = await page.locator('#preview-content').textContent();
+    await page.frameLocator('.exam-pages').locator('h1').waitFor();
+    const preview = await page.frameLocator('.exam-pages').locator('body').textContent();
     assert.match(preview, /Wiosna Ludów/);
     assert.doesNotMatch(preview, /Klucz odpowiedzi|dla nauczyciela/);
-    const pdfLink = page.getByRole('link', { name: 'Pobierz PDF' });
-    assert.equal(await pdfLink.getAttribute('href'), '/tests/7/01-europa-po-kongresie-i-rewolucja-przemyslowa.pdf');
-    assert.equal(await pdfLink.locator('svg').count(), 1);
-    assert.equal(await pdfLink.evaluate((link) => getComputedStyle(link).borderRadius), '14px');
-    assert.equal(await page.locator('.preview-head .download-pdf').count(), 1);
+    const examPdf = await page.request.get(`http://127.0.0.1:${port}/tests/7/01-europa-po-kongresie-i-rewolucja-przemyslowa.pdf`);
+    assert.equal(await page.getByRole('link', { name: 'Pobierz PDF' }).count(), examPdf.ok() ? 1 : 0);
     assert.equal(await page.locator('.actions').count(), 0);
-    const pdfResponse = await page.request.get(`http://127.0.0.1:${port}${await pdfLink.getAttribute('href')}`);
-    assert.equal(pdfResponse.status(), 200);
-    assert.equal((await pdfResponse.body()).subarray(0, 5).toString(), '%PDF-');
-    const download = page.waitForEvent('download');
-    await pdfLink.click();
-    assert.match((await download).suggestedFilename(), /\.pdf$/u);
     for (const height of [800, 600]) {
       await page.setViewportSize({ width: 1280, height });
       assert.equal(await page.evaluate(() => {
-        const preview = document.querySelector('.assessment-preview .document-preview');
+        const preview = document.querySelector('.assessment-preview .exam-pages');
         return document.documentElement.scrollHeight <= innerHeight
           && preview.getBoundingClientRect().bottom <= innerHeight - 20
           && preview.getBoundingClientRect().height >= innerHeight - 200;
@@ -362,10 +425,25 @@ test('exam collection is separate, printable preview hides key and tabs work on 
     assert.equal(await page.getByRole('tab', { name: 'Kartkówki' }).getAttribute('aria-selected'), 'true');
     assert.equal(await page.locator('#catalog .lesson').filter({ hasText: 'Europa po kongresie wiedeńskim' }).count(), 0);
     await page.locator('#catalog .lesson').first().click();
-    await page.locator('.document-preview').waitFor();
+    await page.locator('.exam-pages').waitFor();
+    const docxLink = page.getByRole('link', { name: 'Pobierz DOCX' });
+    assert.equal(await docxLink.count(), 1);
+    const docxDownload = page.waitForEvent('download');
+    await docxLink.click();
+    assert.match((await docxDownload).suggestedFilename(), /\.docx$/u);
+    const pdfLink = page.getByRole('link', { name: 'Pobierz PDF' });
+    assert.equal(await pdfLink.getAttribute('href'), '/tests/5/01-pierwsi-ludzie-i-pierwsze-cywilizacje.pdf');
+    assert.equal(await pdfLink.locator('svg').count(), 1);
+    assert.equal(await pdfLink.evaluate((link) => getComputedStyle(link).borderRadius), '14px');
+    const pdfResponse = await page.request.get(`http://127.0.0.1:${port}${await pdfLink.getAttribute('href')}`);
+    assert.equal(pdfResponse.status(), 200);
+    assert.equal((await pdfResponse.body()).subarray(0, 5).toString(), '%PDF-');
+    const download = page.waitForEvent('download');
+    await pdfLink.click();
+    assert.match((await download).suggestedFilename(), /\.pdf$/u);
     await page.setViewportSize({ width: 1280, height: 800 });
     assert.equal(await page.evaluate(() => document.documentElement.scrollHeight <= innerHeight
-      && document.querySelector('.document-preview').getBoundingClientRect().bottom <= innerHeight - 20), true);
+      && document.querySelector('.exam-pages').getBoundingClientRect().bottom <= innerHeight - 20), true);
     assert.deepEqual(errors, []);
   } finally { await browser.close(); await stop(server); }
 });

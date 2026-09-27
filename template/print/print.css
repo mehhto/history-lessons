@@ -11,8 +11,10 @@ p, li { orphans: 3; widows: 3; }
 p { margin: 0 0 2.5mm; }
 ul { margin: 0 0 3mm; padding-left: 5mm; }
 li + li { margin-top: 1.2mm; }
+.check-item { list-style: none; }
 table { width: 100%; border-collapse: collapse; margin: 3mm 0 4mm; font-size: 10.5pt; break-inside: avoid; }
 img { display: block; max-width: 100%; height: auto; margin: 0 auto; }
+.student p > img { max-height: 95mm; object-fit: contain; }
 .student h1 { margin-bottom: 4mm; font-size: 21pt; }
 .student th, .student td { padding: 1.5mm 2mm; }
 .student td img { max-height: 28mm; object-fit: contain; }

@@ -152,7 +152,10 @@ export function markdownToHtml(markdown) {
       output.push(`<h${level}>${inline(heading[2])}</h${level}>`);
     } else if (item) {
       if (!list) { output.push('<ul>'); list = true; }
-      output.push(`<li>${inline(item[1])}</li>`);
+      const checkbox = /^\[ \] (.+)$/u.exec(item[1]);
+      output.push(checkbox
+        ? `<li class="check-item"><span aria-hidden="true">☐</span> ${inline(checkbox[1])}</li>`
+        : `<li>${inline(item[1])}</li>`);
     } else if (line.trim()) {
       closeList();
       output.push(`<p>${inline(line)}</p>`);

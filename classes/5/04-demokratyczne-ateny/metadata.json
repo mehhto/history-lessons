@@ -1,0 +1,20 @@
+{
+  "id": "04-demokratyczne-ateny",
+  "title": "Demokratyczne Ateny",
+  "grade": 5,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa",
+  "duration_minutes": 45,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "presentation_mode": "slides",
+  "goalContract": { "version": "1.0" },
+  "status": "DO WERYFIKACJI NAUCZYCIELA",
+  "curriculum_requirement": "Umiejscawia w czasie i przestrzeni cywilizację starożytnej Grecji oraz umiejscawia w czasie i zna system sprawowania władzy i organizację społeczeństwa w Atenach peryklejskich.",
+  "main_question": "Na czym polegała demokracja ateńska — i dlaczego obejmowała tylko część mieszkańców?",
+  "source_reviewed": true,
+  "teacher_reviewed": false,
+  "offline_checked": true,
+  "pdf_exported": false,
+  "appearance": { "style": "editorial", "palette": "civic-debate" }
+}

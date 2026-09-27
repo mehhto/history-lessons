@@ -81,15 +81,18 @@ async function testPdfFresh(testFile, repoRoot) {
   const pdf = await readFile(output);
   if (!pdf.subarray(0, 5).equals(Buffer.from('%PDF-'))) return false;
   try {
-    const [manifest, markdown, css, renderer, exporter, packageSpec] = await Promise.all([
+    const [manifest, markdown, css, testCss, renderer, exporter, packageSpec] = await Promise.all([
       readFile(manifestPath, 'utf8').then(JSON.parse),
       readFile(testFile, 'utf8'),
       readFile(path.join(repoRoot, 'template/print/print.css'), 'utf8'),
+      readFile(path.join(repoRoot, 'template/print/test.css'), 'utf8'),
       readFile(path.join(repoRoot, 'scripts/print-pack.mjs'), 'utf8'),
       readFile(path.join(repoRoot, 'scripts/export-test-pdf.mjs'), 'utf8'),
       readFile(path.join(repoRoot, 'package.json'), 'utf8'),
     ]);
-    const inputs = { [path.basename(testFile)]: markdown, 'student-print-view': studentTestMarkdown(markdown), 'template/print/print.css': css, 'scripts/print-pack.mjs': renderer, 'scripts/export-test-pdf.mjs': exporter, 'package.json': packageSpec };
+    const student = studentTestMarkdown(markdown);
+    const images = Object.fromEntries(await Promise.all([...student.matchAll(/!\[[^\]]*\]\((assets\/[A-Za-z0-9._/-]+\.(?:png|jpe?g|webp))\)/gi)].map(async (match) => [match[1], (await readFile(path.join(path.dirname(testFile), match[1]))).toString('base64')])));
+    const inputs = { [path.basename(testFile)]: markdown, 'student-print-view': student, ...images, 'template/print/print.css': css, 'template/print/test.css': testCss, 'scripts/print-pack.mjs': renderer, 'scripts/export-test-pdf.mjs': exporter, 'package.json': packageSpec };
     return isArtifactFresh(manifest.documents?.[path.basename(output)], inputs);
   } catch { return false; }
 }

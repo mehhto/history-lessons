@@ -36,7 +36,7 @@ export async function listTests({ repoRoot }) {
         const numbered = /^(\d{2})-/.exec(entry.name);
         const details = await stat(file);
         const directory = path.relative(repoRoot, file).split(path.sep).join('/');
-        tests.push({ grade, sequence: Number(numbered[1]), title: titleFromMarkdown(markdown, path.basename(entry.name, '.md')), directory, revision: `${details.size}:${Math.floor(details.mtimeMs)}` });
+        tests.push({ grade, sequence: Number(numbered[1]), title: titleFromMarkdown(markdown, path.basename(entry.name, '.md')), directory, revision: `${details.size}:${Math.floor(details.mtimeMs)}`, pdfAvailable: await exists(file.replace(/\.md$/iu, '.pdf')), docxAvailable: await exists(file.replace(/\.md$/iu, '.docx')) });
       } catch (error) { diagnostics.push({ directory: file, issues: [error.message] }); }
     }
   }
