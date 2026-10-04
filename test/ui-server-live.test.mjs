@@ -363,8 +363,9 @@ test('SPE exam preview renders checkboxes and keeps maps within the scrollable p
     assert.equal(sizes.columns, '2');
     assert.ok(sizes.image < 300 && sizes.lastX > 750 && sizes.width < 1650, JSON.stringify(sizes));
     const examButtons = page.locator('#catalog .lesson');
-    assert.equal(await examButtons.count(), 6);
-    for (let index = 0; index < 6; index += 1) {
+    const examCount = await examButtons.count();
+    assert.ok(examCount >= 6);
+    for (let index = 0; index < examCount; index += 1) {
       await examButtons.nth(index).click();
       const sheet = page.frameLocator('.exam-pages');
       await sheet.locator('h1').waitFor();

@@ -1,0 +1,186 @@
+{
+  "checked_at_utc": "2026-10-03T17:12:48.185286+00:00",
+  "verified_recommended_count": 2,
+  "method": "Downloaded actual MP4 streams; ffprobe checked local duration; ffmpeg extracted 12 exact requested seek positions per recommended video including beginning and end; assistant visually inspected both contact sheets. Metadata language is pl; no audio listening or full transcript factual audit was performed. Frame sampling cannot establish absence of presenter at every instant.",
+  "recommended_candidates": [
+    {
+      "id": "H4-iwm07haw",
+      "title": "Klasa 8 - Polski rząd na emigracji i układ Sikorski-Majski",
+      "channel": "Edukajka",
+      "channel_id": "UC2izpHiJ0JSw0rRtJqDUIlA",
+      "duration": 242,
+      "language": "pl",
+      "webpage_url": "https://www.youtube.com/watch?v=H4-iwm07haw",
+      "verdict": "Recommended for Grade 8, with teacher framing",
+      "visuals": "Animated collage of maps, historical photographs, labels and comic speech bubbles; no live on-camera presenter in the 12 reviewed samples.",
+      "caveats": [
+        "Comic dialogue is an authored dramatization, not a verified historical quotation.",
+        "Some labels are small; final sample uses a postwar map, so distinguish wartime exile from postwar outcomes."
+      ],
+      "classroom_question": "Dlaczego rząd Sikorskiego zdecydował się na porozumienie z ZSRS w 1941 r., mimo sowieckiej agresji na Polskę w 1939 r.?",
+      "metadata_file": "H4-iwm07haw.info.json",
+      "sampling": {
+        "metadata_duration_seconds": 242,
+        "local_duration_seconds": 241.580408,
+        "frames": [
+          {
+            "time_seconds": 2.0,
+            "file": "H4-iwm07haw-frames/00.jpg"
+          },
+          {
+            "time_seconds": 23.598,
+            "file": "H4-iwm07haw-frames/01.jpg"
+          },
+          {
+            "time_seconds": 45.196,
+            "file": "H4-iwm07haw-frames/02.jpg"
+          },
+          {
+            "time_seconds": 66.795,
+            "file": "H4-iwm07haw-frames/03.jpg"
+          },
+          {
+            "time_seconds": 88.393,
+            "file": "H4-iwm07haw-frames/04.jpg"
+          },
+          {
+            "time_seconds": 109.991,
+            "file": "H4-iwm07haw-frames/05.jpg"
+          },
+          {
+            "time_seconds": 131.589,
+            "file": "H4-iwm07haw-frames/06.jpg"
+          },
+          {
+            "time_seconds": 153.188,
+            "file": "H4-iwm07haw-frames/07.jpg"
+          },
+          {
+            "time_seconds": 174.786,
+            "file": "H4-iwm07haw-frames/08.jpg"
+          },
+          {
+            "time_seconds": 196.384,
+            "file": "H4-iwm07haw-frames/09.jpg"
+          },
+          {
+            "time_seconds": 217.982,
+            "file": "H4-iwm07haw-frames/10.jpg"
+          },
+          {
+            "time_seconds": 239.58,
+            "file": "H4-iwm07haw-frames/11.jpg"
+          }
+        ],
+        "sheet": "H4-iwm07haw-exact-samples.jpg"
+      },
+      "local_video_sha256": "9717161396c69f87b9df60c7ac454d578e053ecac9aaf4a3f4a87e74cc620c65",
+      "duration_display": "4:02",
+      "chosen_clip_seconds": [
+        0,
+        242
+      ]
+    },
+    {
+      "id": "oSnjGvARlk0",
+      "title": "Film edukacyjny \"Niedźwiedź  Wojtek\"",
+      "channel": "przystanek historia",
+      "channel_id": "UCZ-Zo-6jy_8yAPVufe6hmuA",
+      "duration": 606,
+      "language": "pl",
+      "webpage_url": "https://www.youtube.com/watch?v=oSnjGvARlk0",
+      "verdict": "Recommended as accessible Anders/deportation context; conditional on teacher accepting a younger-looking animated narrator",
+      "visuals": "Animated bear narrator, maps, dates and historical photographs; no live on-camera presenter in the 12 reviewed samples.",
+      "caveats": [
+        "Cartoon bear aesthetic is designed for younger children; use as historical-case evidence rather than the only Grade 8 explanation.",
+        "The wider subject is Wojtek and the Polish II Corps, not a complete account of the government in exile."
+      ],
+      "classroom_question": "Jak powstanie armii Andersa zmieniło los deportowanych Polaków — żołnierzy i ludności cywilnej?",
+      "metadata_file": "oSnjGvARlk0.info.json",
+      "sampling": {
+        "metadata_duration_seconds": 606,
+        "local_duration_seconds": 606.203356,
+        "frames": [
+          {
+            "time_seconds": 2.0,
+            "file": "oSnjGvARlk0-frames/00.jpg"
+          },
+          {
+            "time_seconds": 56.746,
+            "file": "oSnjGvARlk0-frames/01.jpg"
+          },
+          {
+            "time_seconds": 111.492,
+            "file": "oSnjGvARlk0-frames/02.jpg"
+          },
+          {
+            "time_seconds": 166.237,
+            "file": "oSnjGvARlk0-frames/03.jpg"
+          },
+          {
+            "time_seconds": 220.983,
+            "file": "oSnjGvARlk0-frames/04.jpg"
+          },
+          {
+            "time_seconds": 275.729,
+            "file": "oSnjGvARlk0-frames/05.jpg"
+          },
+          {
+            "time_seconds": 330.475,
+            "file": "oSnjGvARlk0-frames/06.jpg"
+          },
+          {
+            "time_seconds": 385.22,
+            "file": "oSnjGvARlk0-frames/07.jpg"
+          },
+          {
+            "time_seconds": 439.966,
+            "file": "oSnjGvARlk0-frames/08.jpg"
+          },
+          {
+            "time_seconds": 494.712,
+            "file": "oSnjGvARlk0-frames/09.jpg"
+          },
+          {
+            "time_seconds": 549.458,
+            "file": "oSnjGvARlk0-frames/10.jpg"
+          },
+          {
+            "time_seconds": 604.203,
+            "file": "oSnjGvARlk0-frames/11.jpg"
+          }
+        ],
+        "sheet": "oSnjGvARlk0-exact-samples.jpg"
+      },
+      "local_video_sha256": "1d7bfdc48ca01a683cca4b1c935a8dae25c394a8476a8dd07af3746ce443d300",
+      "duration_display": "10:06",
+      "chosen_clip_seconds": [
+        0,
+        606
+      ]
+    }
+  ],
+  "rejected_candidates": [
+    {
+      "url": "https://zpe.gov.pl/a/film-edukacyjny/D10fVWAZU",
+      "resource_id": "R10cRuKEmi5Vf",
+      "duration_seconds": 456.68,
+      "reason": "On-camera seated talking-head lecturer in 8 of 12 sampled frames; rejected.",
+      "evidence": "zpe-video-samples.jpg"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=hgSHycSl7zM",
+      "title": "Pentape - Władysław Anders",
+      "channel": "Horizon of Ideas",
+      "duration_seconds": 104,
+      "reason": "Two near-static portraits dominate all sampled frames; visually dull, not a useful explanatory clip.",
+      "evidence": "hgSHycSl7zM-samples.jpg"
+    }
+  ],
+  "issues": [
+    "Configured web gateway unavailable; some fallback searches failed 403. Direct HTTPS and yt-dlp retrieval succeeded.",
+    "Browser tool returned no CDP endpoint.",
+    "Default yt-dlp extraction failed; lightweight uvx yt-dlp with installed node runtime and web,android clients succeeded.",
+    "Initial fps contact-sheet timestamps were approximate; accepted candidates were re-extracted using explicit seek times recorded in frame-sampling.json."
+  ]
+}

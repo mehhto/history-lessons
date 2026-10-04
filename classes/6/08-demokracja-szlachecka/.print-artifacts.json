@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "documents": {
+    "worksheet.pdf": {
+      "version": 1,
+      "input_hash": "8d6c189835ff6b5b6f5c10d1542c6e852bbb8faefea7265efa7f2f00afe96223",
+      "inputs": [
+        "metadata.json",
+        "package.json",
+        "scripts/export-print-pack.mjs",
+        "scripts/print-pack.mjs",
+        "template/print/print.css",
+        "worksheet.md"
+      ]
+    }
+  }
+}

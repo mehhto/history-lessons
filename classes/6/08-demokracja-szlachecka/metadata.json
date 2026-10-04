@@ -1,0 +1,28 @@
+{
+  "id": "08-demokracja-szlachecka",
+  "title": "Demokracja szlachecka",
+  "grade": 6,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa",
+  "duration_minutes": 45,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "presentation_mode": "slides",
+  "goalContract": {
+    "version": "1.0"
+  },
+  "presentationContract": {
+    "version": "1.0"
+  },
+  "status": "SZKIC",
+  "curriculum_requirement": "charakteryzuje rozwój monarchii stanowej i uprawnień stanu szlacheckiego (do konstytucji nihil novi). (Dz.U. 2024 poz. 996, historia VII.5)",
+  "main_question": "Kto w państwie podejmował decyzje, a kto pozostawał bez wpływu?",
+  "source_reviewed": false,
+  "teacher_reviewed": false,
+  "offline_checked": true,
+  "pdf_exported": false,
+  "appearance": {
+    "style": "editorial",
+    "palette": "civic-debate"
+  }
+}

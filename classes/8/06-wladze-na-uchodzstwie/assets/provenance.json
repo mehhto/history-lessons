@@ -1,0 +1,315 @@
+{
+  "assets": [
+    {
+      "filename": "moscicki.jpg",
+      "source_title": "Prezydent Ignacy Mościcki (1926–1939)",
+      "author": "Unknown / not individually credited by ZPE",
+      "licence": "Public domain (domena publiczna), explicitly stated on this individual ZPE figure",
+      "licence_url": null,
+      "source_url": "https://zpe.gov.pl/a/prezydent-wszystkich-polakow/DmYyb04JI",
+      "direct_url": "https://static.zpe.gov.pl/portal/f/res-minimized/R3WwltGxWBO4H/1674044427/2GAtkLeFAXgPs2pCBq4cjE6zWYEVRjyB.jpg",
+      "roles": [
+        "september1939-president"
+      ],
+      "resource_id": "R3WwltGxWBO4H",
+      "source_caption_verbatim": "Prezydent Ignacy Mościcki (1926‑1939)     Źródło:  a. nn., domena publiczna.",
+      "author_note": "Repository or book attribution is not treated as the photographer name. Unknown author remains explicitly unknown.",
+      "width": 600,
+      "height": 805,
+      "bytes": 62236,
+      "sha256": "10380b5a71cf78911fa0c119b5ec425ac6295158e3a0dcbc5329b6a5f068dbfd",
+      "verification": {
+        "image_decoded": true,
+        "visual_inspected": true,
+        "graphic_corpses": false,
+        "inspection_note": "Actual image inspected: subject and composition consistent with source description; no graphic corpses. Portrait identity relies on source attribution, not face recognition alone."
+      },
+      "accessed_utc": "2026-10-03T17:20:26.571712+00:00",
+      "original_filename": "moscicki.jpg",
+      "original_sha256": "10380b5a71cf78911fa0c119b5ec425ac6295158e3a0dcbc5329b6a5f068dbfd"
+    },
+    {
+      "filename": "raczkiewicz.jpg",
+      "source_title": "Prezydent Władysław Raczkiewicz (1939–1947)",
+      "author": "Unknown / not individually credited by ZPE",
+      "licence": "Public domain (domena publiczna), explicitly stated on this individual ZPE figure",
+      "licence_url": null,
+      "source_url": "https://zpe.gov.pl/a/prezydent-wszystkich-polakow/DmYyb04JI",
+      "direct_url": "https://static.zpe.gov.pl/portal/f/res-minimized/RjLC60t9vzbxr/1674044427/Jn9x59DzWSh1XYjPRWLmbaiwzbrIU8RU.jpg",
+      "roles": [
+        "exile-president"
+      ],
+      "resource_id": "RjLC60t9vzbxr",
+      "source_caption_verbatim": "Prezydent Władysław Raczkiewicz (1939‑1947)     Źródło:  a. nn., domena publiczna.",
+      "author_note": "Repository or book attribution is not treated as the photographer name. Unknown author remains explicitly unknown.",
+      "width": 569,
+      "height": 712,
+      "bytes": 43402,
+      "sha256": "9f294d2ea9669b17294de77047aba895c266d2939170ca09c7c4fd87ce1fbe8e",
+      "verification": {
+        "image_decoded": true,
+        "visual_inspected": true,
+        "graphic_corpses": false,
+        "inspection_note": "Actual image inspected: subject and composition consistent with source description; no graphic corpses. Portrait identity relies on source attribution, not face recognition alone."
+      },
+      "accessed_utc": "2026-10-03T17:20:26.571732+00:00",
+      "original_filename": "raczkiewicz.jpg",
+      "original_sha256": "9f294d2ea9669b17294de77047aba895c266d2939170ca09c7c4fd87ce1fbe8e"
+    },
+    {
+      "filename": "sikorski.jpg",
+      "source_title": "Władysław Sikorski",
+      "author": "Unknown / not individually credited by ZPE",
+      "licence": "Public domain (domena publiczna), explicitly stated on this individual ZPE figure",
+      "licence_url": null,
+      "source_url": "https://zpe.gov.pl/a/rzad-polski-na-uchodzstwie/DE3PKFQD1",
+      "direct_url": "https://static.zpe.gov.pl/portal/f/res-minimized/R1Xr9EmbCCpQz/1645688311/ro0v45CG5T8Sl3RzIskXZBArW4k0biVl.jpg",
+      "roles": [
+        "exile-premier",
+        "commander-in-chief"
+      ],
+      "resource_id": "R1Xr9EmbCCpQz",
+      "source_caption_verbatim": "Władysław Sikorski (1881‑1943), polski wojskowy i polityk, generał broni Wojska Polskiego; w latach 1922–1923 premier RP, w latach 1923–1924 minister spraw wojskowych, po zamachu majowym pozostawał w opozycji; podczas II wojny światowej Naczelny Wódz Polskich Sił Zbrojnych i premier rządu RP na uchodźstwie.     Źródło:  Roman Wapiński \"Władysław Sikorski\", Warszawa 1981,  Wikimedia Commons , domena publiczna.",
+      "author_note": "Repository or book attribution is not treated as the photographer name. Unknown author remains explicitly unknown.",
+      "width": 800,
+      "height": 1033,
+      "bytes": 185019,
+      "sha256": "279a1a4cf30296c5c1e0895f50d69dbf10ee4d46be2e9e27591fd9af7c2e2cff",
+      "verification": {
+        "image_decoded": true,
+        "visual_inspected": true,
+        "graphic_corpses": false,
+        "inspection_note": "Actual image inspected: subject and composition consistent with source description; no graphic corpses. Portrait identity relies on source attribution, not face recognition alone."
+      },
+      "accessed_utc": "2026-10-03T17:20:26.571737+00:00",
+      "original_filename": "sikorski.jpg",
+      "original_sha256": "279a1a4cf30296c5c1e0895f50d69dbf10ee4d46be2e9e27591fd9af7c2e2cff"
+    },
+    {
+      "filename": "anders.jpg",
+      "source_title": "Władysław Anders",
+      "author": "Unknown / not individually credited by ZPE",
+      "licence": "Public domain (domena publiczna), explicitly stated on this individual ZPE figure",
+      "licence_url": null,
+      "source_url": "https://zpe.gov.pl/a/rzad-polski-na-uchodzstwie/DE3PKFQD1",
+      "direct_url": "https://static.zpe.gov.pl/portal/f/res-minimized/R2e8nNRZvoXqL/1788465055/2kVKZNlp8fAiA6x1S11yMChp8NcFQ3aG.jpg",
+      "roles": [
+        "polish-army-ussr-1941"
+      ],
+      "resource_id": "R2e8nNRZvoXqL",
+      "source_caption_verbatim": "Władysław Anders (1892–1970), polski wojskowy i polityk, generał broni Wojska Polskiego; w czasie zamachu majowego szef sztabu wojsk rządowych; we wrześniu 1939 r. znalazł się w niewoli sowieckiej, zwolniony na mocy układu Sikorski–Majski, stanął na czele tworzonej armii polskiej; w latach 1944–1945 Naczelny Wódz Polskich Sił Zbrojnych.     Źródło:  Narodowe Archiwum Cyfrowe, domena publiczna.",
+      "author_note": "Repository or book attribution is not treated as the photographer name. Unknown author remains explicitly unknown.",
+      "width": 619,
+      "height": 1024,
+      "bytes": 93612,
+      "sha256": "8b4e532b40064171f3ac26b53952956120987a0365864a04e69ed784ed01703c",
+      "verification": {
+        "image_decoded": true,
+        "visual_inspected": true,
+        "graphic_corpses": false,
+        "inspection_note": "Actual image inspected: subject and composition consistent with source description; no graphic corpses. Portrait identity relies on source attribution, not face recognition alone."
+      },
+      "accessed_utc": "2026-10-03T17:20:26.571740+00:00",
+      "original_filename": "anders.jpg",
+      "original_sha256": "8b4e532b40064171f3ac26b53952956120987a0365864a04e69ed784ed01703c"
+    },
+    {
+      "filename": "armia-francja.jpg",
+      "source_title": "Władysław Sikorski wizytuje polskich żołnierzy, Francja 1940 r.",
+      "author": "Unknown / not individually credited by ZPE",
+      "licence": "Public domain (domena publiczna), explicitly stated on this individual ZPE figure",
+      "licence_url": null,
+      "source_url": "https://zpe.gov.pl/watek/LPcnHORwas/1/a/polskie-formacje-wojskowe-na-frontach-ii-wojny-swiatowej/D15p84ld6",
+      "direct_url": "https://static.zpe.gov.pl/portal/f/res-minimized/R19WoALfiyKbC/1642760585/ahCHn3sQ5D7oHvoz2rs842pBBItaCK6S.jpg",
+      "roles": [
+        "polish-army-france-1939-1940"
+      ],
+      "resource_id": "R19WoALfiyKbC",
+      "source_caption_verbatim": "Władysław Sikorski wizytuje polskich żołnierzy, Francja 1940 r.     Źródło:  a. nn., domena publiczna.",
+      "author_note": "Repository or book attribution is not treated as the photographer name. Unknown author remains explicitly unknown.",
+      "width": 1003,
+      "height": 703,
+      "bytes": 108217,
+      "sha256": "f76c6a1fb5ca23d2756b3be2915ba9bb06af2c3bde50a155fc7d7472cc479041",
+      "verification": {
+        "image_decoded": true,
+        "visual_inspected": true,
+        "graphic_corpses": false,
+        "inspection_note": "Actual image inspected: subject and composition consistent with source description; no graphic corpses. Portrait identity relies on source attribution, not face recognition alone."
+      },
+      "accessed_utc": "2026-10-03T17:20:26.571743+00:00",
+      "original_filename": "armia-francja-1940.jpg",
+      "original_sha256": "f76c6a1fb5ca23d2756b3be2915ba9bb06af2c3bde50a155fc7d7472cc479041"
+    },
+    {
+      "filename": "uklad.jpg",
+      "source_title": "Podpisanie układu Sikorski–Majski",
+      "author": "Unknown / not individually credited by ZPE",
+      "licence": "Public domain (domena publiczna), explicitly stated on this individual ZPE figure",
+      "licence_url": null,
+      "source_url": "https://zpe.gov.pl/a/rzad-polski-na-uchodzstwie/DE3PKFQD1",
+      "direct_url": "https://static.zpe.gov.pl/portal/f/res-minimized/RMHa9krxM9RTj/1630405175/1LR53p4UHbPRe7eYLTYKatkl91iXGxIS.jpg",
+      "roles": [
+        "opening-source",
+        "agreement-30-july-1941"
+      ],
+      "resource_id": "RMHa9krxM9RTj",
+      "source_caption_verbatim": "Podpisanie układu Sikorski‑Majski. Wskaż postać Władysława Sikorskiego.     Źródło:   Wikimedia Commons , domena publiczna.",
+      "author_note": "Repository or book attribution is not treated as the photographer name. Unknown author remains explicitly unknown.",
+      "width": 988,
+      "height": 661,
+      "bytes": 145886,
+      "sha256": "c6d80865f13c47d51ff9ab8910cefa8b538dfb22e5f72bd00288ee59cfc83f15",
+      "verification": {
+        "image_decoded": true,
+        "visual_inspected": true,
+        "graphic_corpses": false,
+        "inspection_note": "Actual image inspected: subject and composition consistent with source description; no graphic corpses. Portrait identity relies on source attribution, not face recognition alone."
+      },
+      "accessed_utc": "2026-10-03T17:20:26.571746+00:00",
+      "original_filename": "sikorski-majski-1941.jpg",
+      "original_sha256": "c6d80865f13c47d51ff9ab8910cefa8b538dfb22e5f72bd00288ee59cfc83f15"
+    },
+    {
+      "filename": "berling.jpg",
+      "source_title": "Zygmunt Berling (1896–1980) na zdjęciu z 1943 roku",
+      "author": "Unknown / not individually credited by ZPE",
+      "licence": "Public domain (domena publiczna), explicitly stated on this individual ZPE figure",
+      "licence_url": null,
+      "source_url": "https://zpe.gov.pl/a/przeczytaj/DeuKkrhRN",
+      "direct_url": "https://static.zpe.gov.pl/portal/f/res-minimized/RASEECBo8xhsk/1652786169/rXDWVzZdNF1Yq5JkmNwHFjqLmJL3Tepy.jpg",
+      "roles": [
+        "soviet-backed-army-1943"
+      ],
+      "resource_id": "RASEECBo8xhsk",
+      "source_caption_verbatim": "Zygmunt Berling (1896–1980) na zdjęciu z 1943 roku. W II RP Berling był podpułkownikiem piechoty, w lipcu 1939 r. został przeniesiony w stan spoczynku. W czasie kampanii wrześniowej nie otrzymał przydziału. Wyjechał do Brześcia, a następnie do Wilna. Po agresji ZSRS na Polskę został aresztowany i trafił do obozu w Starobielsku. Przebywając tam, zdecydował się na współpracę z NKWD. Dzięki temu uniknął egzekucji w czasie zbrodni katyńskiej.    Źródło:   Wikimedia Commons , domena publiczna.",
+      "author_note": "Repository or book attribution is not treated as the photographer name. Unknown author remains explicitly unknown.",
+      "width": 342,
+      "height": 432,
+      "bytes": 38275,
+      "sha256": "dc7553c85e19a64df83b8557ec70d70acc456cb89e19b344ce6bbb8f1614329a",
+      "verification": {
+        "image_decoded": true,
+        "visual_inspected": true,
+        "graphic_corpses": false,
+        "inspection_note": "Actual image inspected: subject and composition consistent with source description; no graphic corpses. Portrait identity relies on source attribution, not face recognition alone."
+      },
+      "accessed_utc": "2026-10-03T17:20:26.571748+00:00",
+      "original_filename": "berling-1943.jpg",
+      "original_sha256": "dc7553c85e19a64df83b8557ec70d70acc456cb89e19b344ce6bbb8f1614329a"
+    },
+    {
+      "filename": "katyn.jpg",
+      "source_title": "Dolinka Katyńska w Warszawie, Cmentarz Wojskowy na Powązkach",
+      "author": "Roman Eugeniusz",
+      "licence": "CC BY-SA 3.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_url": "https://zpe.gov.pl/a/rzad-polski-na-uchodzstwie/DE3PKFQD1",
+      "direct_url": "https://static.zpe.gov.pl/portal/f/res-minimized/R19ALBb9tfnxR/1624909922/2jDCKQLZfRyKeT4c7YYdpHz976FgMenV.jpg",
+      "roles": [
+        "katyn-april1943-modern-commemoration"
+      ],
+      "resource_id": "R19ALBb9tfnxR",
+      "source_caption_verbatim": "Dolinka Katyńska w Warszawie, na Cmentarzu Wojskowym na Powązkach, tzw. pomnik społeczny (postawiony w 1981 r., później zdemontowany i wzniesiony ponownie w 1995) oraz tzw. pomnik rządowy (1995), widok współczesny.     Źródło:  Roman Eugeniusz,  Wikimedia Commons , licencja: CC BY-SA 3.0.",
+      "author_note": "Repository or book attribution is not treated as the photographer name. Unknown author remains explicitly unknown.",
+      "width": 1280,
+      "height": 853,
+      "bytes": 491036,
+      "sha256": "610c2f1a2f952d448235b76dc99bf877543622565d73fac49057952c89aadeb0",
+      "verification": {
+        "image_decoded": true,
+        "visual_inspected": true,
+        "graphic_corpses": false,
+        "inspection_note": "Actual image inspected: subject and composition consistent with source description; no graphic corpses. Portrait identity relies on source attribution, not face recognition alone."
+      },
+      "accessed_utc": "2026-10-03T17:20:26.571750+00:00",
+      "original_filename": "katyn-pomnik-warszawa.jpg",
+      "original_sha256": "610c2f1a2f952d448235b76dc99bf877543622565d73fac49057952c89aadeb0"
+    },
+    {
+      "filename": "skladkowski.jpg",
+      "source_title": "Premier przemawia do urzędników Prezydium Rady Ministrów, 1936 rok",
+      "author": "Unknown / not individually credited by ZPE",
+      "licence": "Public domain (domena publiczna), explicitly stated on this individual ZPE figure",
+      "source_url": "https://zpe.gov.pl/a/byc-premierem/DZZwv2PbC",
+      "direct_url": "https://static.zpe.gov.pl/portal/f/res-minimized/RHiRZxdtmTrSD/2/oWrKJjMr5JnIiu4oQbn0DiOnUoFjYTtH.jpg",
+      "roles": [
+        "september1939-prime-minister"
+      ],
+      "resource_id": "RHiRZxdtmTrSD",
+      "source_caption_verbatim": "Premier przemawia do urzędników Prezydium Rady Ministrów, 1936 rok  domena publiczna",
+      "width": 1464,
+      "height": 818,
+      "bytes": 379262,
+      "sha256": "5f1f356b9b525134cfd0cd861e2755e3421d5f4c08971e8d9b5491144bf94b84",
+      "verification": {
+        "image_decoded": true,
+        "visual_inspected": true,
+        "graphic_corpses": false,
+        "inspection_note": "Actual image inspected: subject and composition consistent with source description; no graphic corpses. Portrait identity relies on source attribution, not face recognition alone."
+      },
+      "accessed_utc": "2026-10-03T17:20:26.571753+00:00",
+      "licence_url": null,
+      "transformation": "Detail crop of left-hand speaker, 1936: (146, 0, 439, 818)",
+      "original_filename": "skladkowski-1936.jpg",
+      "original_sha256": "e34c821858e9eefea3b3e688c87b9ce28ea04ff471b2239f89e21cddd8ee3994"
+    },
+    {
+      "filename": "rydz.jpg",
+      "source_title": "The photo shows Edward Śmigły-Rydz, who was appointed commander-in-chief by President Ignacy Mościcki",
+      "author": "Unknown individually; entire timeline credits Czesław Datka - Narodowe Archiwum Cyfrowe, Harris & Ewing, photographer.",
+      "licence": "Public domain (domena publiczna), ZPE timeline asset declaration",
+      "source_url": "https://zpe.gov.pl/a/polish-government-in-exile/D9T5rLIev",
+      "direct_url": "https://static.zpe.gov.pl/portal/f/res/R1PC9Dvv6iNPD/1/1RhX3hZzHJQsjArj0ds4KhkA8CNW1kKJ/resources/respispn9xcjtxw9dpaxnx7g1jnxrfim.jpg",
+      "roles": [
+        "september1939-commander-in-chief"
+      ],
+      "resource_id": "R1PC9Dvv6iNPD / IMG_OPT_0",
+      "source_caption_verbatim": "Source:  Czesław Datka - Narodowe Archiwum Cyfrowe, Harris & Ewing, photographer., domena publiczna.",
+      "width": 800,
+      "height": 1135,
+      "bytes": 175808,
+      "sha256": "6939b3dcadce2d6987a576b03e0d0c4f7d3a99f213187779020d02b63904b038",
+      "verification": {
+        "image_decoded": true,
+        "visual_inspected": true,
+        "graphic_corpses": false,
+        "inspection_note": "Actual image inspected: subject and composition consistent with source description; no graphic corpses. Portrait identity relies on source attribution, not face recognition alone."
+      },
+      "accessed_utc": "2026-10-03T17:20:26.571758+00:00",
+      "licence_url": null,
+      "original_filename": "rydz-smigly.jpg",
+      "original_sha256": "6939b3dcadce2d6987a576b03e0d0c4f7d3a99f213187779020d02b63904b038"
+    },
+    {
+      "filename": "wasilewska.jpg",
+      "source_title": "File:Wanda Wasilewska 2.JPG",
+      "author": "Unknown author",
+      "licence": "Public domain; PD-Russia, as stated in transcluded Commons description",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wanda_Wasilewska_2.JPG",
+      "metadata_verified_url": "https://cy.wikipedia.org/wiki/Delwedd:Wanda_Wasilewska_2.JPG",
+      "direct_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Wanda_Wasilewska_2.JPG?utm_source=cy.wikipedia.org&utm_campaign=index&utm_content=original",
+      "roles": [
+        "zpp-1943-leader",
+        "soviet-backed-political-centre"
+      ],
+      "date_as_source": "1940’s",
+      "original_publication_as_source": "Литературная газета, 1946, № 5 (2268), 27 января",
+      "immediate_source_as_source": "Warsaw uprising museum",
+      "width": 360,
+      "height": 450,
+      "bytes": 42357,
+      "sha256": "8ef076e8f0359680ee29c4441c5f26045f40c63f56ca84c40a23b2a8fccf2860",
+      "verification": {
+        "image_decoded": true,
+        "visual_inspected": true,
+        "graphic_corpses": false,
+        "inspection_note": "Actual image inspected: subject and composition consistent with source description; no graphic corpses. Portrait identity relies on source attribution, not face recognition alone."
+      },
+      "accessed_utc": "2026-10-03T17:20:26.571760+00:00",
+      "licence_url": null,
+      "original_filename": "wasilewska.jpg",
+      "original_sha256": "8ef076e8f0359680ee29c4441c5f26045f40c63f56ca84c40a23b2a8fccf2860"
+    }
+  ]
+}

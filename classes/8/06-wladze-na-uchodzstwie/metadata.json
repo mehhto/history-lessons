@@ -1,0 +1,21 @@
+{
+  "id": "06-wladze-na-uchodzstwie",
+  "title": "Władze polskie na uchodźstwie",
+  "grade": 8,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa",
+  "duration_minutes": 30,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "presentation_mode": "slides",
+  "goalContract": {"version": "1.0"},
+  "presentationContract": {"version": "1.0"},
+  "status": "DO PRZEGLĄDU — treść i podgląd offline sprawdzone; oczekuje akceptacji nauczyciela",
+  "curriculum_requirement": "przedstawia okoliczności powstania i omawia działalność rządu Rzeczypospolitej Polskiej na wychodźstwie;",
+  "main_question": "Jak rząd na uchodźstwie podtrzymywał ciągłość państwa i dlaczego zdecydował się na porozumienie z ZSRS?",
+  "source_reviewed": false,
+  "teacher_reviewed": false,
+  "offline_checked": true,
+  "pdf_exported": false,
+  "appearance": {"style": "editorial", "palette": "conflict-map"}
+}

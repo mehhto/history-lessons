@@ -1,0 +1,73 @@
+[
+  {
+    "file": "mapa-ewakuacja.svg",
+    "sha256": "ab95153656e20b614bff4ce2b9a03aae066ba6f29dc35532961e7490775b00c4",
+    "dataset": "Natural Earth Admin0 1:110m (public domain)",
+    "data_url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_0_countries.geojson",
+    "places": {
+      "Warszawa": {
+        "lat": 52.2333742,
+        "lon": 21.0711489,
+        "query_url": "https://nominatim.openstreetmap.org/search?q=Warsaw+Poland&format=json&limit=1",
+        "display_name": "Warszawa, województwo mazowieckie, Polska"
+      },
+      "Bukareszt": {
+        "lat": 44.4361414,
+        "lon": 26.102684,
+        "query_url": "https://nominatim.openstreetmap.org/search?q=Bucharest+Romania&format=json&limit=1",
+        "display_name": "București, România"
+      },
+      "Paryż": {
+        "lat": 48.8588897,
+        "lon": 2.320041,
+        "query_url": "https://nominatim.openstreetmap.org/search?q=Paris+France&format=json&limit=1",
+        "display_name": "Paris, Île-de-France, France métropolitaine, France"
+      },
+      "Angers": {
+        "lat": 47.4739884,
+        "lon": -0.5515588,
+        "query_url": "https://nominatim.openstreetmap.org/search?q=Angers+France&format=json&limit=1",
+        "display_name": "Angers, Maine-et-Loire, Pays de la Loire, France métropolitaine, France"
+      },
+      "Londyn": {
+        "lat": 51.5074456,
+        "lon": -0.1277653,
+        "query_url": "https://nominatim.openstreetmap.org/search?q=London+United+Kingdom&format=json&limit=1",
+        "display_name": "Greater London, England, United Kingdom"
+      },
+      "Gibraltar": {
+        "lat": 36.1285933,
+        "lon": -5.3474761,
+        "query_url": "https://nominatim.openstreetmap.org/search?q=Gibraltar&format=json&limit=1",
+        "display_name": "Gibraltar"
+      }
+    }
+  },
+  {
+    "file": "mapa-anders.svg",
+    "sha256": "1cdfe4bd91603ae030d195211bae47a30d078a64005b7a92b3d8fe4130d3a17a",
+    "dataset": "Natural Earth Admin0 1:110m (public domain)",
+    "data_url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_0_countries.geojson",
+    "places": {
+      "Buzułuk": {
+        "lat": 52.7586837,
+        "lon": 52.2883167,
+        "query_url": "https://nominatim.openstreetmap.org/search?q=Buzuluk+Russia&format=json&limit=1",
+        "display_name": "Бузулук, Оренбургская область, Приволжский федеральный округ, Россия"
+      },
+      "Krasnowodsk": {
+        "lat": 40.0055388,
+        "lon": 52.9932834,
+        "query_url": "https://nominatim.openstreetmap.org/search?q=Turkmenbashi+Turkmenistan&format=json&limit=1",
+        "display_name": "Türkmenbaşy şäheri, Balkan welaýaty, Türkmenistan"
+      },
+      "Pahlawi": {
+        "lat": 37.4716356,
+        "lon": 49.4685904,
+        "query_url": "https://nominatim.openstreetmap.org/search?q=Bandar+Anzali+Iran&format=json&limit=1",
+        "display_name": "شهر بندر انزلی, بخش مرکزی بندر انزلی, شهرستان بندر انزلی, استان گیلان, ایران"
+      }
+    },
+    "revision": "High-contrast land/water, larger labels, approximate crossing direction Krasnowodsk–Pahlawi; not an exact ship track."
+  }
+]

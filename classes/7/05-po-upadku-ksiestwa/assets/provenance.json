@@ -1,0 +1,62 @@
+{
+  "krolestwo-mapa.png": {
+    "source": "https://commons.wikimedia.org/wiki/File:Congress_Poland_in_1815.PNG",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/7/72/Congress_Poland_in_1815.PNG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "width": 2295,
+    "height": 2275,
+    "license": "CC BY 3.0",
+    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Mathiasrex\" title=\"User:Mathiasrex\">User:mathiasrex</a> Maciej Szczepańczyk, based on layers of <a href=\"//commons.wikimedia.org/wiki/User:Kgberger\" class=\"mw-redirect\" title=\"User:Kgberger\">User:kgberger</a>",
+    "sha256": "f8cc8c16dad0168bb7eca3cc123ce1f1e5c9163602c552a6ac774f208e2bb746"
+  },
+  "poznanskie-mapa.jpg": {
+    "source": "https://commons.wikimedia.org/wiki/File:Mapa_Wielkiego_Ksi%C4%99stwa_Pozna%C5%84skiego_1820.jpg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Mapa_Wielkiego_Ksi%C4%99stwa_Pozna%C5%84skiego_1820.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "width": 1299,
+    "height": 1690,
+    "license": "CC0",
+    "artist": "<bdi><a href=\"https://www.wikidata.org/wiki/Q4233718\" class=\"extiw\" title=\"d:Q4233718\"><span title='unknown creator of a work (do not use as value of P50; use \"unknown value\" instead)'>anonymous</span></a></bdi>",
+    "sha256": "69730564eeeeabfab2a1c09f498f2e34a9e9f741cdc58a0a3903fe069b8d2689"
+  },
+  "krakow-mapa.jpg": {
+    "source": "https://commons.wikimedia.org/wiki/File:Wmkrakow.jpg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/9/93/Wmkrakow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "width": 600,
+    "height": 246,
+    "license": "CC BY 3.0",
+    "artist": "Mariusz Paździora",
+    "sha256": "55637defd46d6918d75612d05fe6129730f0a9d80f5c6c4b57799e0fe2a5be80"
+  },
+  "poznanskie-herb.svg": {
+    "source": "https://commons.wikimedia.org/wiki/File:POL_Wielkie_Ksi%C4%99stwo_Pozna%C5%84skie_COA.svg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/8/80/POL_Wielkie_Ksi%C4%99stwo_Pozna%C5%84skie_COA.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "width": 740,
+    "height": 871,
+    "license": "Public domain",
+    "artist": "vector version <a href=\"//commons.wikimedia.org/wiki/User:Bastianow\" title=\"User:Bastianow\">Bastianow</a>",
+    "sha256": "3972e68c6b97085283bd3b12388278badde19e766fc1e84045f2fba052fc3beb"
+  },
+  "aleksander-portret.jpg": {
+    "source": "https://commons.wikimedia.org/wiki/File:Alexander_I_by_Lawrence_(1814-18,_Royal_collection).jpg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/1/15/Alexander_I_by_Lawrence_%281814-18%2C_Royal_collection%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "width": 983,
+    "height": 1500,
+    "license": "Public domain",
+    "artist": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Thomas_Lawrence\" class=\"extiw\" title=\"w:en:Thomas Lawrence\"><span title=\"English portrait painter (1769–1830)\">Thomas Lawrence</span></a></bdi>",
+    "sha256": "70d324ef8b7d7b9e3c228593313ab6ffd245f70ed2cafa2d11a0fc08b0249f75"
+  },
+  "lodz-plan-1823.jpg": {
+    "source": "https://commons.wikimedia.org/wiki/File:Lodz_1823_Plan_Osady_Sukienniczej_Nowe_Miasto.jpg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/7/75/Lodz_1823_Plan_Osady_Sukienniczej_Nowe_Miasto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "width": 2017,
+    "height": 1350,
+    "license": "Public domain",
+    "artist": "",
+    "sha256": "31784c9290254f06dd350fc6e1e362e757f59454563c91550889026b2293f9e1"
+  },
+  "piesn-karta-1818.jpg": {
+    "source": "https://commons.wikimedia.org/wiki/File:Boze_cos_Polske.jpg",
+    "license": "Public domain",
+    "artist": "Wincenty Gorączkiewicz (druk, Kraków 1818)",
+    "sha256": "fd5d3b3aa867ed9029b935c5fe1f1f940f276301bf16620e6452195d5c731298"
+  }
+}

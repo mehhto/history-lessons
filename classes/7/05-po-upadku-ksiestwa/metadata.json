@@ -1,0 +1,21 @@
+{
+  "id": "05-po-upadku-ksiestwa",
+  "title": "Po upadku Księstwa Warszawskiego",
+  "grade": 7,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa",
+  "duration_minutes": 45,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "presentation_mode": "slides",
+  "goalContract": { "version": "1.0" },
+  "presentationContract": { "version": "1.0" },
+  "status": "SZKIC",
+  "curriculum_requirement": "XIX.1 — omawia decyzje kongresu wiedeńskiego w odniesieniu do Europy, w tym do ziem polskich; XX.1 — charakteryzuje okres konstytucyjny Królestwa Polskiego; XX.3 — omawia położenie Polaków w zaborach pruskim i austriackim, na obszarze ziem zabranych oraz w Rzeczypospolitej Krakowskiej (Dz.U. 2024 poz. 996)",
+  "main_question": "Co zmienił podział Księstwa Warszawskiego — i na ile nowe ziemie mogły decydować o sobie?",
+  "source_reviewed": true,
+  "teacher_reviewed": false,
+  "offline_checked": true,
+  "pdf_exported": false,
+  "appearance": { "style": "atlas", "palette": "civic-paired" }
+}

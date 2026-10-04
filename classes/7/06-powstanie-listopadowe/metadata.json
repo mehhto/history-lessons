@@ -1,0 +1,25 @@
+{
+  "id": "06-powstanie-listopadowe",
+  "title": "Powstanie listopadowe — Śledztwo 1830–1831",
+  "grade": 7,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa",
+  "duration_minutes": 45,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "presentation_mode": "none",
+  "goalContract": {
+    "version": "1.0"
+  },
+  "status": "DO PRZEGLĄDU",
+  "curriculum_requirement": "przedstawia przyczyny wybuchu powstania listopadowego, charakter zmagań i następstwa powstania",
+  "main_question": "Jak powstanie, które opanowało Warszawę, zakończyło się klęską?",
+  "source_reviewed": true,
+  "teacher_reviewed": false,
+  "offline_checked": true,
+  "pdf_exported": false,
+  "appearance": {
+    "style": "museum",
+    "palette": "evidence-grey"
+  }
+}
