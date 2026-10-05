@@ -10,7 +10,7 @@ Kto musiał wyrazić zgodę? ______________________________________________
 Zaznacz i uzasadnij: Czy chłopi i mieszczanie zasiadali z tego tytułu w izbie poselskiej? **TAK / NIE**, ponieważ ________________________________________________________
 
 ## 2. Notatka graficzna
-Uzupełnij brakujące słowa w dołączonej kartce A4 poziomo: `assets/notatka-graficzna-do-uzupelnienia.svg`. Bank słów (niektóre powtórz): **rycerstwo, szlachta, 6–10%, dobra, ziemia, zagroda, ziemi, szczególne prawa, posłów, pospolite ruszenie, sejmu, senatu**. Nie przepisuj całego obrazu; wpisz tylko luki i prześledź dolny ciąg od sejmiku do sejmu.
+Na podstawie ilustracji i wyjaśnienia nauczyciela zapisz w zeszycie trzy krótkie zdania: skąd wywodziła się szlachta; czym różniły się jej cztery warstwy; czyjej zgody wymagało stanowienie nowych praw po *Nihil novi*. Nie przepisuj całego obrazu.
 
 ## 3. Cztery wywiady — role grup
 Każda grupa przygotowuje odpowiedzi na te same pytania: „Czy mam własną ziemię?”, „Jak mieszkam?”, „Czy mogę wziąć udział w sejmiku?”, „Czy łatwo mi wpływać na decyzje?”. Nie wymyślaj nazwisk ani dokładnych liczb majątków.

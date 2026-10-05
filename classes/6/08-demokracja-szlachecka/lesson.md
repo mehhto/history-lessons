@@ -14,7 +14,7 @@
 ## Cele → zadanie → dowód
 | ID | Cel ucznia | Wiedza konieczna | Zadanie | Dowód osiągnięcia celu |
 |---|---|---|---|---|
-| G1 | wyjaśnię pochodzenie szlachty i działanie przywilejów | rycerstwo, stan, herb, przywilej, pospolite ruszenie | uzupełnię lewą stronę notatki | poprawnie połączę przywilej z wpływem na władzę |
+| G1 | wyjaśnię pochodzenie szlachty i działanie przywilejów | rycerstwo, stan, herb, przywilej, pospolite ruszenie | zapiszę pochodzenie szlachty i sens przywilejów | poprawnie połączę przywilej z wpływem na władzę |
 | G2 | pokażę drogę decyzji i znaczenie *Nihil novi* | sejmik, poseł, izba poselska, senat, król; 1493 i 1505 | prześledzę strzałki i odpowiem na pytanie do parafrazy źródła | wskażę, czyja zgoda była potrzebna na nowe prawo |
 | G3 | porównam cztery warstwy i granice tej demokracji | majątek a możliwość działania; magnateria, średnia, zagrodowa, gołota | przeprowadzę wywiad i porównam odpowiedzi | nazwę dwie różnice i wskażę grupy wykluczone |
 
@@ -31,7 +31,7 @@ Sejmiki ziemskie to zebrania szlachty danej ziemi. Wybierały posłów i dawały
 | Otwarcie | 3 min | Pyta: „Król chce zmienić prawo. Czy może sam?” | stawiają hipotezy |
 | Opowieść z prezentacją | 12 min | Prowadzi przez rycerstwo, przywileje, sejmik, sejm, *Nihil novi* i warstwy | nazywają ogniwa i odróżniają sejmik od sejmu |
 | Źródło | 5 min | Daje krótką **parafrazę** postanowienia z 1505 r., nie rzekomy cytat | wskazują, czyja zgoda była potrzebna |
-| Notatka graficzna | 5 min | Pokazuje własny schemat inspirowany przesłanym obrazem | uzupełniają `assets/notatka-graficzna-do-uzupelnienia.svg` |
+| Notatka graficzna | 5 min | Pokazuje dostarczoną grafikę i dopowiada uproszczenia | zapisują trzy zdania w zeszycie |
 | Drama | 16 min | Dzieli na cztery grupy do pięciu osób; pilnuje 5 min przygotowania, 4 × ok. 2 min wywiadu, 3 min porównania | odgrywają wywiady i porównują ziemię oraz wpływ |
 | Zakończenie | 4 min | Zbiera odpowiedź na pytanie i bilet wyjścia | zapisują 3 krótkie odpowiedzi |
 
@@ -52,6 +52,6 @@ Wiele rodzin używało wspólnego herbu. Marszałek poselski używał laski mars
 Różnica między stanem a warstwą, prawem a realnym wpływem, późniejszym obrazem a wydarzeniem oraz przybliżeniem demograficznym jest opisana w `teacher-guide.md` i w notatkach do odpowiednich slajdów.
 
 ## Wsparcie i ryzyka
-- Rdzeń: szlachta, przywilej, sejmik, sejm, 1505, wywiad, wniosek o ograniczonym uczestnictwie. Pomoc: bank słów i karta roli. Rozszerzenie: argument za i przeciw nazwie „demokracja”. Skrócenie: ogranicz przykłady herbów i 1493, zachowaj porównanie i bilet.
+- Rdzeń: szlachta, przywilej, sejmik, sejm, 1505, wywiad, wniosek o ograniczonym uczestnictwie. Pomoc: trzy punkty do notatki i karta roli. Rozszerzenie: argument za i przeciw nazwie „demokracja”. Skrócenie: ogranicz przykłady herbów i 1493, zachowaj porównanie i bilet.
 - **Nie myl:** czterech warstw szlachty z trzema stanami sejmującymi; uprawnienia z realną równością wpływów; *Nihil novi* z odebraniem królowi wszelkiej władzy; orientacyjnego 6–10% z dokładnym wynikiem dla wszystkich lat. Przykładowy portret czy dom nie dowodzi typowego wyglądu całej warstwy.
 - Film nie jest częścią podstawowych 45 minut. Dwa opcjonalne klipy (4:29 i 7:09) miały próbki obrazu bez prezentera przed kamerą; szczegóły i ograniczenie tej kontroli w `sources.md`. Nie używaj filmów ZPE z widocznym prowadzącym.

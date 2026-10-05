@@ -99,10 +99,9 @@ To parafraza, nie cytat. Odpowiedź: król, senat, izba poselska; posłowie repr
 ---
 
 <!-- .slide: id="notatka" data-purpose="practice" data-layout="evidence" data-goals="G1 G2 G3" -->
-## Uzupełnij notatkę graficzną
-<figure class="note-figure"><img src="assets/notatka-graficzna-do-uzupelnienia.svg" alt="Schemat z lukami: rycerstwo, cztery warstwy szlachty, przywileje, Nihil novi i droga sejmik – poseł – sejm"><figcaption>Na swojej kartce wpisz brakujące hasła. Potem pokaż drogę sejmik → poseł → izba poselska → sejm.</figcaption></figure>
+<figure class="note-figure"><img src="assets/demokracja-szlachecka-notatka-nauczyciela.jpg" data-lightbox-uncaptioned="true" alt="Demokracja szlachecka: pochodzenie i zróżnicowanie szlachty, przywileje, pospolite ruszenie oraz Nihil novi z 1505 roku"></figure>
 notes:
-Uczniowie pracują przez 5 minut na wersji z lukami `assets/notatka-graficzna-do-uzupelnienia.svg`. Przesłany przez nauczycielkę obraz M. Nowackiej był inspiracją; oryginału nie skopiowano z uwagi na brak potwierdzonej licencji. Schemat odróżnia majątek od praw oraz *Nihil novi* od całkowitego zakazu działania króla.
+Wyświetl w całości grafikę przesłaną przez nauczycielkę. Kliknięcie powiększa ją w tej samej prezentacji. W ciągu 5 minut omów i poproś o trzy zdania w zeszycie zgodnie z zadaniem 2 karty pracy. Dopowiedz dwa uproszczenia: nie wszyscy szlachcice posiadali ziemię — gołota była bezrolna; Nihil novi dotyczyło stanowienia nowych praw za zgodą senatu i izby poselskiej, nie każdej decyzji króla. Nie zmieniaj treści dostarczonego obrazu ani nie przedstawiaj go jako źródła z epoki.
 
 ---
 

@@ -1,15 +1,15 @@
 # Ściąga nauczyciela: Demokracja szlachecka
 
 ## Przed lekcją
-- Przygotuj prezentację i wydrukuj dla uczniów notatkę `assets/notatka-graficzna-do-uzupelnienia.svg` **A4 poziomo** oraz kartę `worksheet.md` z opisami czterech ról.
-- Nie trzeba Internetu ani filmu. `assets/notatka-graficzna.svg` jest kluczem schematu; nie pokazuj jej podczas samodzielnego uzupełniania.
+- Przygotuj prezentację z dostarczoną grafiką oraz kartę `worksheet.md` z opisami czterech ról. Nie potrzeba osobnego arkusza z lukami.
+- Nie trzeba Internetu ani filmu. Grafikę można powiększyć kliknięciem. Dopowiedz, że gołota nie posiadała ziemi, a Nihil novi ograniczało stanowienie nowych praw bez senatu i posłów, nie każdą decyzję króla.
 - Cztery grupy do pięciu osób: magnateria, średnia, zagrodowa, gołota. Jedna osoba w roli, dwoje pyta, pozostali pomagają.
 
 ## Przebieg operacyjny
 1. **3 min:** pytanie „Czy król może sam ustanowić nowe prawo?”.
 2. **12 min:** opowieść rycerstwo i herby → prawa i przywileje → sejmik → sejm (1493) → *Nihil novi* (1505) → granice tej demokracji. Nie czytaj slajdów.
 3. **5 min:** zadanie 1 z parafrazą dokumentu, kto współdecydował i kto nie był reprezentowany.
-4. **5 min:** uzupełnianie notatki obrazkowej.
+4. **5 min:** omówienie dostarczonej grafiki i trzyzdaniowa notatka w zeszycie.
 5. **16 min:** 5 min przygotowania + 4 wywiady po ok. 2 min + 3 min porównania. Te same pytania w każdej grupie, różne odpowiedzi wynikające z roli.
 6. **4 min:** synteza i bilet wyjścia. W razie opóźnienia skróć rozmowy, nie porównanie i bilet.
 
@@ -22,7 +22,7 @@
 
 ## Warianty
 - Rdzeń: sejmik, poseł, sejm, 1505, różnica praw i realnego wpływu.
-- Pomoc: bank słów w karcie i odczytywanie odpowiedzi z roli.
+- Pomoc: trzy punkty do notatki w karcie i odczytywanie odpowiedzi z roli.
 - Rozszerzenie: podaj argument, dlaczego system był krokiem do współdecydowania i dlaczego wykluczał większość.
 - Skrócenie: ogranicz przykłady herbów i 1493; zachowaj wywiad i bilet.
 - Bez prezentacji: ten sam przebieg w `lesson.md`; obraz zastąp kartkami „SEJMIK — POSEŁ — SEJM” i drukowaną notatką.
