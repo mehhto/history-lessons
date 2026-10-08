@@ -1,0 +1,25 @@
+{
+  "id": "09-folwark-szlachecki",
+  "title": "W folwarku szlacheckim",
+  "grade": 6,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa",
+  "duration_minutes": 15,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "presentation_mode": "slides",
+  "goalContract": {
+    "version": "1.0"
+  },
+  "status": "DO PRZEGLĄDU",
+  "curriculum_requirement": "IX.5: opisuje model polskiego życia gospodarczego w XVI w.",
+  "main_question": "Jak folwark, Wisła i Gdańsk umożliwiały handel zbożem?",
+  "source_reviewed": false,
+  "teacher_reviewed": false,
+  "offline_checked": true,
+  "pdf_exported": false,
+  "appearance": {
+    "style": "atlas",
+    "palette": "land-sea"
+  }
+}

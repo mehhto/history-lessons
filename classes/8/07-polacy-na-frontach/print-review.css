@@ -1,0 +1,52 @@
+@page { size: A4 portrait; margin: 10mm; }
+* { box-sizing: border-box; }
+html, body { margin: 0; color: #111; background: #ddd; }
+body { font: 11pt/1.28 Arial, 'DejaVu Sans', sans-serif; }
+.page { width: 190mm; height: 277mm; margin: 8mm auto; padding: 2mm 3mm 7mm; background: white; position: relative; break-after: page; }
+.page:last-child { break-after: auto; }
+h1 { font-size: 18pt; line-height: 1.12; margin: 0 0 3mm; padding-bottom: 2mm; border-bottom: .8mm solid #111; }
+h2 { font-size: 12pt; line-height: 1.15; margin: 3mm 0 1.6mm; }
+p { margin: 0 0 2mm; }
+ul, ol { padding-left: 5mm; margin: 1.6mm 0 2.5mm; }
+li { margin-bottom: 1.3mm; }
+img { display: block; max-width: 100%; width: auto; height: 57mm; margin: 1mm auto 1.8mm; filter: grayscale(1); object-fit: contain; }
+.caption, .source-note { font-size: 8.5pt; line-height: 1.22; margin-bottom: 2mm; }
+.intro { font-size: 9.5pt; line-height: 1.25; }
+.history-text { margin-bottom: 2mm; }
+.instruction { border-top: .3mm solid #444; padding-top: 2mm; margin-top: 3mm; font-size: 10pt; }
+footer { position: absolute; bottom: 1mm; left: 3mm; right: 3mm; border-top: .25mm solid #777; padding-top: 1mm; font-size: 8pt; }
+table { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 10pt; margin: 2mm 0 3mm; }
+th, td { border: .25mm solid #555; padding: 1.8mm; text-align: left; vertical-align: top; overflow-wrap: break-word; }
+th { background: #eee; }
+.teacher { font-size: 10.5pt; line-height: 1.3; }
+.teacher h1 { font-size: 17pt; }
+.teacher h2 { margin-top: 3mm; }
+.worksheet-intro, .map-instruction { font-size: 9pt; margin-bottom: 2mm; }
+.karta-pracy-v2 h1 { font-size: 16pt; margin-bottom: 2mm; }
+.karta-pracy-v2 h2 { font-size: 11pt; margin-top: 2mm; }
+.answer-field { margin-top: 1.2mm; font-size: 10pt; break-inside: avoid; }
+.writing-line { height: 6.8mm; border-bottom: .2mm solid #777; }
+.karta-pracy-v2 img { width: 100%; height: 126mm; margin: 1mm 0; }
+.exit { font-size: 9pt; margin-top: 1.2mm; }
+.podsumowanie-v2 { font-size: 10.5pt; }
+.podsumowanie-v2 th:first-child { width: 33%; }
+.podsumowanie-v2 th:nth-child(2) { width: 26%; }
+body.map { page: large-map; }
+@page large-map { size: A3 landscape; margin: 10mm; }
+.map .page { width: 400mm; height: 277mm; }
+.map img { width: 100%; height: 247mm; margin: 0; }
+.map h1 { font-size: 16pt; margin-bottom: 1mm; padding-bottom: 1mm; }
+.map p { font-size: 10pt; margin-bottom: 1mm; }
+.fullscreen .page { width: min(98vw,140vh); height: auto; padding: 0; margin: 0 auto; }
+.fullscreen .content { width: 100%; }
+.fullscreen h1 { padding: 5px; margin: 0; font-size: 22px; }
+.fullscreen img { width: 100%; height: auto; max-height: 90vh; margin: 0; }
+.fullscreen footer { display: none; }
+@media print {
+ html, body { background: white; }
+ .page { margin: 0; }
+ .fullscreen .page { width: 400mm; height: 277mm; padding: 2mm 3mm 7mm; }
+ .fullscreen img { height: 247mm; max-height: none; }
+ .fullscreen h1 { font-size: 16pt; }
+ .fullscreen footer { display: block; }
+}

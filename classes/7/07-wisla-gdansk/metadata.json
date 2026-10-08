@@ -1,0 +1,27 @@
+{
+  "id": "07-wisla-gdansk",
+  "title": "Wisłą do Gdańska — handel zbożem",
+  "grade": 7,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa",
+  "duration_minutes": 45,
+  "usable_minutes": 30,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "presentation_mode": "slides",
+  "goalContract": {
+    "version": "1.0"
+  },
+  "status": "DO PRZEGLĄDU",
+  "curriculum_requirement": "opisuje model polskiego życia gospodarczego w XVI w.",
+  "curriculum_mapping_note": "IX.5: tradycyjnie klasa VI; odbiorcy VII na wyraźny wybór nauczyciela, zakres częściowy.",
+  "main_question": "Jak Wisła i Gdańsk pomagały zarabiać na zbożu i czy wszyscy mieli równe korzyści i prawa?",
+  "source_reviewed": true,
+  "teacher_reviewed": false,
+  "offline_checked": true,
+  "pdf_exported": false,
+  "appearance": {
+    "style": "atlas",
+    "palette": "land-sea"
+  }
+}

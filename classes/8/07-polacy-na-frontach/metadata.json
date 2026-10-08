@@ -1,0 +1,25 @@
+{
+  "id": "07-polacy-na-frontach",
+  "title": "Polacy na frontach II wojny światowej — osiem teczek",
+  "grade": 8,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa",
+  "duration_minutes": 35,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "presentation_mode": "none",
+  "goalContract": {
+    "version": "1.0"
+  },
+  "status": "DO AKCEPTACJI — HTML A4 / A3 · wersja 2",
+  "curriculum_requirement": "XXXIV.2: umiejscawia w czasie i przestrzeni działania polskich formacji na różnych frontach i obszarach toczącej się wojny;",
+  "main_question": "Jak polskie formacje walczyły poza okupowanym krajem — i czy odwaga zawsze oznaczała zwycięstwo?",
+  "source_reviewed": false,
+  "teacher_reviewed": false,
+  "offline_checked": true,
+  "pdf_exported": false,
+  "appearance": {
+    "style": "museum",
+    "palette": "evidence-grey"
+  }
+}

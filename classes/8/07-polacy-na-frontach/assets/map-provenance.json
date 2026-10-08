@@ -1,0 +1,88 @@
+{
+  "dataset": "natural-earth-countries.geojson",
+  "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_0_countries.geojson",
+  "licence": "Public domain",
+  "terms": "https://www.naturalearthdata.com/about/terms-of-use/",
+  "projection": "Mercator; uniform scale within each panel; inset independently scaled",
+  "bounds": [
+    -12,
+    37,
+    30,
+    71
+  ],
+  "points": [
+    {
+      "name": "Londyn",
+      "lon": -0.1257,
+      "lat": 51.5085,
+      "unit": 1,
+      "source": "https://voyrilo.com/coordinates/london"
+    },
+    {
+      "name": "Falaise",
+      "lon": -0.2,
+      "lat": 48.89,
+      "unit": 2,
+      "source": "https://www.meteo-villes.com/previsions-meteo-falaise-14700"
+    },
+    {
+      "name": "Breda",
+      "lon": 4.77,
+      "lat": 51.58,
+      "unit": 2,
+      "source": "https://www.gaisma.com/en/location/breda.html"
+    },
+    {
+      "name": "Monte Cassino",
+      "lon": 13.813889,
+      "lat": 41.49,
+      "unit": 3,
+      "source": "https://www.findlatitudeandlongitude.com/l/monte+cassino/3534/"
+    },
+    {
+      "name": "Cowes",
+      "lon": -1.3,
+      "lat": 50.76,
+      "unit": 4,
+      "source": "https://busmaps.com/en/uk/city/Cowes-2652204"
+    },
+    {
+      "name": "Lenino",
+      "lon": 31.122778,
+      "lat": 54.411389,
+      "unit": 5,
+      "source": "https://pl.wikipedia.org/wiki/Lenino_(rejon_horecki)"
+    },
+    {
+      "name": "Driel / Arnhem",
+      "lon": 5.811111,
+      "lat": 51.958333,
+      "unit": 6,
+      "source": "https://pl.wikipedia.org/wiki/Driel"
+    },
+    {
+      "name": "Tobruk",
+      "lon": 23.966667,
+      "lat": 32.083333,
+      "unit": 7,
+      "source": "https://pl.wikipedia.org/wiki/Tobruk"
+    },
+    {
+      "name": "Narwik",
+      "lon": 17.4272,
+      "lat": 68.4384,
+      "unit": 8,
+      "source": "https://geoplace.org/en/norway/narvik-09-no"
+    }
+  ],
+  "files": [
+    {
+      "file": "mapa-do-oznaczania.svg",
+      "sha256": "72798ac106e9534fd32e107943e0a85fe3c6f0ff5369f8b559a27c1ec65d1ea5"
+    },
+    {
+      "file": "mapa-klucz.svg",
+      "sha256": "cfccaa3060d4dae305e183a770335c30d04e6cee7d5f0d9a18667ac5e4305390"
+    }
+  ]
+}
