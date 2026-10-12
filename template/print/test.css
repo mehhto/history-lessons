@@ -11,6 +11,18 @@ li + li { margin-top: 0; }
 table { font-size: 9.5pt; margin: 1mm 0 1.5mm; }
 .student th, .student td { padding: .8mm 1.5mm; }
 .student p > img { max-height: 68mm; max-width: 100%; object-fit: contain; }
+/* This short quiz uses one A4 and black ink; other assessments keep their layout. */
+.student[data-exam="03-kongres-powstanie-emigracja"] thead { display: none; }
+.student[data-exam="03-kongres-powstanie-emigracja"] { color: #000; font-size: 11pt; line-height: 1.2; }
+.student[data-exam="03-kongres-powstanie-emigracja"] h1,
+.student[data-exam="03-kongres-powstanie-emigracja"] h2,
+.student[data-exam="03-kongres-powstanie-emigracja"] th { color: #000; border-color: #000; }
+.student[data-exam="03-kongres-powstanie-emigracja"] th,
+.student[data-exam="03-kongres-powstanie-emigracja"] td { border-color: #000; background: #fff; padding: 1.8mm 2mm; font-size: 11pt; }
+.student[data-exam="03-kongres-powstanie-emigracja"] p { margin-bottom: 2mm; }
+.student[data-exam="03-kongres-powstanie-emigracja"] p > img { max-height: 118mm; max-width: 100%; }
+.student[data-exam="03-kongres-powstanie-emigracja"] main > section > p:first-of-type { font-size: 9.5pt; }
+.student[data-exam="03-kongres-powstanie-emigracja"] main > section > p:last-child { font-size: 7pt; margin: 0; }
 /* Keep the next task together instead of stranding its opening on page one. */
 .student[data-exam="02-od-pradziejow-do-izraela"] h2:nth-of-type(5),
 .student[data-exam="01-odkrycia-renesans-reformacja"] h2:nth-of-type(6),

@@ -1,0 +1,102 @@
+<!doctype html><html lang="pl"><head><meta charset="utf-8"><title>Klucz — kartkówka VII</title><link rel="stylesheet" href="/template/print/print.css"><style>@page { size: A4; margin: 14mm; }
+:root { color: #172033; font-family: Aptos, "Segoe UI", Arial, sans-serif; font-size: 11pt; line-height: 1.42; }
+body { margin: 0; background: #fff; }
+main { max-width: 182mm; margin: 0 auto; }
+section { break-inside: avoid; }
+section + section { break-before: page; }
+h1 { margin: 0 0 5mm; color: #17365d; font-family: Georgia, "Times New Roman", serif; font-size: 21pt; line-height: 1.12; }
+h2 { margin: 6mm 0 2mm; color: #17365d; font-size: 13pt; }
+h3 { margin: 4mm 0 1.5mm; color: #216a72; font-size: 11.5pt; }
+p, li { orphans: 3; widows: 3; }
+p { margin: 0 0 2.5mm; }
+ul { margin: 0 0 3mm; padding-left: 5mm; }
+li + li { margin-top: 1.2mm; }
+.check-item { list-style: none; }
+table { width: 100%; border-collapse: collapse; margin: 3mm 0 4mm; font-size: 10.5pt; break-inside: avoid; }
+img { display: block; max-width: 100%; height: auto; margin: 0 auto; }
+.student p > img { max-height: 95mm; object-fit: contain; }
+.student h1 { margin-bottom: 4mm; font-size: 21pt; }
+.student th, .student td { padding: 1.5mm 2mm; }
+.student td img { max-height: 28mm; object-fit: contain; }
+th, td { border: .6pt solid #adc0d2; padding: 2.2mm 2.5mm; text-align: left; vertical-align: middle; }
+th { background: #e8f0f5; color: #17365d; font-weight: 700; }
+th.align-left, td.align-left { text-align: left; }
+th.align-center, td.align-center { text-align: center; }
+th.align-right, td.align-right { text-align: right; }
+tbody tr:nth-child(even) { background: #f7fafc; }
+code { padding: .2mm 1mm; background: #e8f0f5; font-family: ui-monospace, monospace; }
+.student h1 { border-bottom: 1.2pt solid #c78a29; padding-bottom: 2mm; }
+.student h2 { color: #17365d; }
+.teacher section + section { break-before: auto; border-top: 1pt solid #adc0d2; margin-top: 7mm; padding-top: 5mm; }
+.teacher h1 { color: #9a3b2e; }
+@media print { body { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+
+/* Student exam sheets only: fit long assessments without shrinking answer lines. */
+@page { margin: 9mm; }
+:root { font-size: 10.5pt; line-height: 1.16; }
+.student[data-exam="02-od-pradziejow-do-izraela-spe"] { font-size: 10pt; }
+main { max-width: none; }
+h1, .student h1 { font-size: 16pt; margin-bottom: 2mm; padding-bottom: 1mm; }
+h2 { font-size: 11pt; margin: 2mm 0 .8mm; break-after: avoid; }
+p { margin-bottom: .8mm; }
+ul { margin: 0 0 .8mm; padding-left: 4.5mm; }
+li + li { margin-top: 0; }
+table { font-size: 9.5pt; margin: 1mm 0 1.5mm; }
+.student th, .student td { padding: .8mm 1.5mm; }
+.student p > img { max-height: 68mm; max-width: 100%; object-fit: contain; }
+/* This short quiz uses one A4 and black ink; other assessments keep their layout. */
+.student[data-exam="03-kongres-powstanie-emigracja"] thead { display: none; }
+.student[data-exam="03-kongres-powstanie-emigracja"] { color: #000; font-size: 11pt; line-height: 1.2; }
+.student[data-exam="03-kongres-powstanie-emigracja"] h1,
+.student[data-exam="03-kongres-powstanie-emigracja"] h2,
+.student[data-exam="03-kongres-powstanie-emigracja"] th { color: #000; border-color: #000; }
+.student[data-exam="03-kongres-powstanie-emigracja"] th,
+.student[data-exam="03-kongres-powstanie-emigracja"] td { border-color: #000; background: #fff; padding: 1.8mm 2mm; font-size: 11pt; }
+.student[data-exam="03-kongres-powstanie-emigracja"] p { margin-bottom: 2mm; }
+.student[data-exam="03-kongres-powstanie-emigracja"] p > img { max-height: 118mm; max-width: 100%; }
+.student[data-exam="03-kongres-powstanie-emigracja"] main > section > p:first-of-type { font-size: 9.5pt; }
+.student[data-exam="03-kongres-powstanie-emigracja"] main > section > p:last-child { font-size: 7pt; margin: 0; }
+/* Keep the next task together instead of stranding its opening on page one. */
+.student[data-exam="02-od-pradziejow-do-izraela"] h2:nth-of-type(5),
+.student[data-exam="01-odkrycia-renesans-reformacja"] h2:nth-of-type(6),
+.student[data-exam="01-odkrycia-renesans-reformacja-spe"] h2:nth-of-type(5),
+.student[data-exam="01-ii-wojna-swiatowa"] h2:nth-of-type(4) { break-before: page; }
+@media screen {
+  html, body { width: max-content; margin: 0; background: #e7ecf1; }
+  body { padding: 9mm; }
+  main {
+    box-sizing: border-box;
+    width: 402mm;
+    height: 279mm;
+    margin: 0;
+    column-count: 2;
+    column-width: 192mm;
+    column-gap: 18mm;
+    column-fill: auto;
+    column-rule: 18mm solid #e7ecf1;
+    background: white;
+  }
+  .student[data-exam="02-od-pradziejow-do-izraela"] h2:nth-of-type(5),
+  .student[data-exam="01-odkrycia-renesans-reformacja"] h2:nth-of-type(6),
+  .student[data-exam="01-odkrycia-renesans-reformacja-spe"] h2:nth-of-type(5),
+  .student[data-exam="01-ii-wojna-swiatowa"] h2:nth-of-type(4) { break-before: column; }
+}
+</style></head><body class="teacher"><main><section><h2>Klucz odpowiedzi — tylko dla nauczyciela</h2>
+<p><strong>Czas: około 15 minut. Maksymalnie 14 pkt. Kartkówka, nie sprawdzian.</strong></p>
+<h3>1. Pojęcia — 4 pkt</h3>
+<ul>
+<li><strong>Unia personalna — 2 pkt:</strong> dwa państwa mają wspólnego władcę (1 pkt), zachowując odrębność państwową / własne instytucje (1 pkt). Uznaj jedno krótkie zdanie zawierające oba elementy, np. „Związek odrębnych państw połączonych osobą tego samego władcy”. Nie wymagaj przykładu ani daty.</li>
+<li><strong>Wielka Emigracja — 2 pkt:</strong> emigracja Polaków z przyczyn politycznych / w obawie przed represjami (1 pkt), po klęsce powstania listopadowego (1 pkt). Nie wymagaj liczby emigrantów, nazwisk ani państw docelowych. Uznaj „wyjazd wielu Polaków za granicę po upadku powstania listopadowego, by uniknąć prześladowań”.</li>
+</ul>
+<h3>2. Prawda–fałsz — 3 pkt</h3>
+<p>Kolejno <strong>F, P, P</strong>. Po 1 pkt za jeden poprawny wybór. Dwa zaznaczenia w jednym wierszu: 0 pkt. Nie wymagaj poprawiania fałszywego zdania, bo polecenie tego nie przewiduje.</p>
+<h3>3. Chronologia — 4 pkt</h3>
+<p>Kolejno w wierszach <strong>4, 1, 2, 3</strong>. Po 1 pkt za każdą poprawnie przypisaną pozycję. Daty nie są wymagane. Dla nauczyciela: noc listopadowa 29/30 XI 1830; detronizacja 25 I 1831; Ostrołęka 26 V 1831; obrona i upadek Warszawy we IX 1831.</p>
+<h3>4. Mapa — 3 pkt</h3>
+<p>Po 1 pkt za numer w odpowiednim obszarze:</p>
+<ul>
+<li><strong>1:</strong> duży wschodni obszar, z wydłużeniem na północny wschód — Królestwo Polskie.</li>
+<li><strong>2:</strong> obszar na zachód od Królestwa Polskiego — Wielkie Księstwo Poznańskie.</li>
+<li><strong>3:</strong> mały obszar na południowej granicy Królestwa — Rzeczpospolita Krakowska. Uznaj numer wpisany w jego powiększeniu <strong>lub</strong> na mapie głównej; nie wymagaj obu wpisów.</li>
+</ul>
+<p>Wskaż uczniom, że prostokąt w lewym dolnym rogu jest powiększeniem tego samego obszaru, a nie dodatkowym terytorium. Nie oceniaj estetyki wpisów; numer musi pozwalać rozpoznać obszar. Uznaj linię wskazującą obszar przy numerze zapisanym tuż obok.</p></section></main></body></html>
