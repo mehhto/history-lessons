@@ -1,0 +1,25 @@
+{
+  "id": "05-sparta-i-wojny-z-persami",
+  "title": "Sparta i wojny z Persami",
+  "grade": 5,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa",
+  "duration_minutes": 45,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "presentation_mode": "slides",
+  "goalContract": {
+    "version": "1.0"
+  },
+  "status": "KOREKTA V2 PO PRZEGLĄDZIE — OCZEKUJE AKCEPTACJI",
+  "curriculum_requirement": "umiejscawia w czasie i przestrzeni cywilizacje Starożytnego Wschodu oraz cywilizacje starożytnej Grecji i starożytnego Rzymu;",
+  "main_question": "Jak niewielkie greckie polis zdołały obronić się przed potężnym imperium perskim?",
+  "source_reviewed": true,
+  "teacher_reviewed": true,
+  "offline_checked": true,
+  "pdf_exported": false,
+  "appearance": {
+    "style": "atlas",
+    "palette": "conflict-map"
+  }
+}
