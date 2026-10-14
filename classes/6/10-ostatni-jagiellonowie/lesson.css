@@ -1,0 +1,112 @@
+/* Local grammar: land-sea library palette; solid teal/ochre fields, large unframed evidence,
+   native chronology, genealogy separate from succession. No shared template changes. */
+@font-face{font-family:'Jagiellon Sans';src:url('../../../template/presentation/fonts/collection/source-sans-3-400.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:'Jagiellon Sans';src:url('../../../template/presentation/fonts/collection/source-sans-3-700.ttf') format('truetype');font-weight:700;font-display:swap}
+@font-face{font-family:'Jagiellon Serif';src:url('../../../template/presentation/fonts/collection/alegreya-700.ttf') format('truetype');font-weight:700;font-display:swap}
+html[data-style='chronicle'] .reveal{--font-body:'Jagiellon Sans',sans-serif;--font-heading:'Jagiellon Serif',serif;font-size:30px;line-height:1.26}
+html[data-style='chronicle'] .reveal .slides section[data-slide-canvas]>.slide-content{display:block;align-content:normal;max-width:none;margin:0;padding:42px 58px;border:0;text-align:left}
+.reveal h1,.reveal h2,.reveal h3{font-variant:normal;text-transform:none;letter-spacing:0;line-height:1.1}
+.reveal h2{font-size:48px;margin:0 0 28px}
+.reveal h3{font-size:32px;margin:0 0 14px}
+.reveal p{margin:0 0 18px}
+.reveal li{margin:0 0 20px}
+.reveal ul,.reveal ol{margin:0 0 0 1em;display:block}
+.reveal strong{font-weight:700}
+.reveal .source-figure{margin:0;min-width:0;display:flex;flex-direction:column;gap:10px}
+.reveal .source-figure img{display:block;margin:0;max-width:100%;width:100%;height:440px;object-fit:contain;border:0;box-shadow:none;background:none}
+.reveal .source-figure figcaption{font-family:var(--font-body);font-size:20px;line-height:1.18;color:inherit;margin:0}
+.reveal .lesson-split{display:grid;grid-template-columns:1.2fr 1fr;gap:38px;align-items:center;height:520px}
+.reveal .lesson-split>*{min-width:0}
+.reveal .date-lead{font-size:34px;font-weight:700;margin-bottom:22px;color:var(--color-accent)}
+.reveal .definition{font-size:29px;line-height:1.3;margin-top:45px;padding:22px 28px;border-left:6px solid var(--color-evidence);background:var(--color-surface)}
+/* Opening: actual painting, solid reading panel; no gradient. */
+html[data-style='chronicle'] .reveal #otwarcie>.slide-content{padding:0;border:0}
+.reveal .opening-composition{display:grid;grid-template-columns:52% 48%;height:720px;background:var(--color-evidence);color:var(--color-surface)}
+.reveal .opening-composition .source-figure img{height:720px;width:100%;object-fit:cover;object-position:46% center}
+.reveal .opening-text{padding:78px 48px;display:flex;flex-direction:column;justify-content:center}
+.reveal .opening-text h1{color:var(--color-surface);font-size:68px;line-height:1.05;margin:0 0 36px}
+.reveal .opening-text p{font-size:31px;line-height:1.28}
+.reveal .opening-text .eyebrow{font-size:23px;margin-bottom:25px}
+/* Teacher-supplied genealogy uses the same full-size media frame. */
+/* Native timelines: ordered dates along a continuous rail. */
+.reveal lesson-timeline{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:24px;margin:70px 0 0;font-size:27px}
+html[data-style='chronicle'] .reveal lesson-event{padding:0 18px;border-left:2px solid var(--color-evidence);box-shadow:none;background:none}
+html[data-style='chronicle'] .reveal lesson-event:before{content:attr(year);font-size:30px;font-weight:700;padding:5px 0 25px;color:var(--color-accent);background:var(--color-canvas);display:block;white-space:normal}
+.reveal lesson-event h3{font-size:33px;line-height:1.13;margin:0 0 20px}
+.reveal lesson-event p{font-size:27px;line-height:1.3}
+.reveal .portrait-pair{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.reveal .portrait-pair img{height:350px}
+.reveal .royal-pair .lesson-split{grid-template-columns:1.2fr 1fr}
+.reveal .royal-pair .royal-context{font-size:28px;line-height:1.25;margin-bottom:25px}
+.reveal .royal-pair h3{font-size:32px;margin-bottom:18px}
+.reveal .royal-pair ul{font-size:28px;line-height:1.25}
+.reveal .royal-pair li{margin-bottom:18px}
+/* Full source maps: use the full height, no title/caption stealing area. */
+html[data-style='chronicle'] .reveal .slides section.full-map>.slide-content{padding:12px;background:var(--color-surface)}
+.reveal .full-map h2{display:none}
+.reveal .full-map .source-figure{height:696px;display:flex;align-items:center}
+html[data-style='chronicle'] .reveal .full-map .source-figure img{width:auto;max-width:1256px;height:696px;object-fit:contain}
+.reveal .full-map .source-figure figcaption{display:none}
+/* Transforming office: compare powers, not a fake period reconstruction. */
+.reveal .change-flow{display:grid;grid-template-columns:1fr 200px 1fr;gap:25px;align-items:center}
+.reveal .change-flow>div{padding:24px;background:var(--color-surface)}
+.reveal .change-flow .change-center{padding:15px 0;background:transparent;text-align:center;font-size:26px}
+.reveal .big-arrow{font-size:66px;margin:0;color:var(--color-evidence)}
+.reveal .bottom-evidence{display:grid;grid-template-columns:190px 1fr;gap:32px;align-items:center;margin-top:28px}
+.reveal .bottom-evidence img{height:220px}
+.reveal .bottom-evidence p{font-size:29px}
+html[data-style='chronicle'] .reveal #uklad-i-hold>.slide-content{background:var(--color-evidence);color:var(--color-surface)}
+.reveal #uklad-i-hold h2,.reveal #uklad-i-hold h3,.reveal #uklad-i-hold strong{color:inherit}
+.reveal #uklad-i-hold lesson-event{border-color:var(--color-surface)}
+html[data-style='chronicle'] .reveal #uklad-i-hold lesson-event:before{background:var(--color-evidence);color:var(--color-surface)}
+.reveal #uklad-i-hold .definition{background:var(--color-surface);color:var(--color-text);margin-top:42px}
+.reveal #uklad-i-hold .definition strong{color:var(--color-accent)}
+/* Whole Matejko composition, projector scale; observation before interpretation. */
+html[data-style='chronicle'] .reveal #matejko>.slide-content{padding:20px 34px;background:var(--color-text);color:var(--color-surface)}
+.reveal #matejko h2{color:var(--color-surface);margin-bottom:12px;font-size:40px}
+/* Beat the shared source-split frame: painted evidence, not a thumbnail. */
+.reveal #matejko .painting-study .source-figure img{width:1212px;height:496px;object-fit:contain}
+.reveal .observation-questions{display:grid;grid-template-columns:1fr 1fr 1.2fr;gap:26px;margin-top:12px;border-top:2px solid var(--color-accent);padding-top:10px}
+.reveal .observation-questions p{font-size:25px;line-height:1.2;margin:0}
+html[data-style='chronicle'] .reveal #pytania-do-zrodla>.slide-content{background:var(--color-accent);color:var(--color-surface)}
+.reveal #pytania-do-zrodla h2,.reveal #pytania-do-zrodla strong{color:inherit}
+.reveal #pytania-do-zrodla .lesson-split{grid-template-columns:1.4fr .8fr}
+.reveal .source-questions{font-size:31px;line-height:1.35}
+.reveal #pytania-do-zrodla .student-task,.reveal #bilet-wyjscia .student-task{display:block;padding:0;background:transparent;border:0;box-shadow:none;font-size:inherit}
+.reveal .reading-cue{font-size:25px;margin-top:22px;line-height:1.3}
+/* The source stays complete on one slide. */
+.reveal #dokument-1525 h2{font-size:43px;margin-bottom:22px}
+.reveal .source-intro{font-size:25px;line-height:1.3;margin-bottom:18px}
+.reveal .document-body{display:grid;grid-template-columns:1fr 150px;gap:30px;align-items:center}
+.reveal #dokument-1525 blockquote{font-family:var(--font-body);font-size:28px;font-style:normal;line-height:1.35;display:block;width:100%;margin:0;padding:24px 28px;box-sizing:border-box;background:var(--color-surface);box-shadow:none;border-left:5px solid var(--color-evidence);color:var(--color-text)}
+.reveal .document-body img{height:240px}
+.reveal .source-credit{font-size:20px;line-height:1.3;margin-top:18px}
+.reveal .family-intro,.reveal .change-intro,.reveal .region-intro{font-size:27px;line-height:1.25;margin-bottom:15px}
+.reveal .bottom-evidence p{margin-bottom:12px}
+.reveal #moskwa-1514 lesson-timeline{margin-top:26px}
+.reveal #moskwa-1514 .definition{margin-top:26px}
+.reveal .baltic-war .lesson-split{grid-template-columns:1.35fr 1fr}
+.reveal .baltic-war img{height:390px}
+.reveal .baltic-outcome{display:grid;grid-template-columns:1.1fr 1fr;gap:35px;align-items:center}
+.reveal .baltic-outcome img{height:465px}
+.reveal .baltic-outcome dt{font-weight:700;color:var(--color-evidence);font-size:31px;margin:15px 0 5px}
+.reveal .baltic-outcome dd{font-size:28px;margin:0}
+.reveal .baltic-outcome p{font-size:27px}
+/* Distinct comparison synthesis, not a repeated card grid. */
+html[data-style='chronicle'] .reveal #podsumowanie>.slide-content{background:var(--color-evidence);color:var(--color-surface)}
+.reveal #podsumowanie h2,.reveal #podsumowanie h3{color:inherit}
+.reveal .synthesis-wrap{display:grid;grid-template-columns:1.1fr .8fr;gap:45px;align-items:center}
+.reveal .synthesis-table>div{display:grid;grid-template-columns:110px 1fr;gap:24px;border-top:1px solid var(--color-surface);padding:22px 0}
+.reveal .synthesis-table h3{font-size:30px}
+.reveal .synthesis-table p{font-size:28px;margin:0}
+.reveal .synthesis-wrap img{height:335px}
+.reveal .credits-list p{font-size:26px;line-height:1.3;margin-bottom:20px}
+.reveal .credits-list code{font-size:24px}
+.reveal .exit .lesson-split{grid-template-columns:1.5fr .65fr}
+.reveal .exit ol{font-size:30px;line-height:1.3}
+.reveal .exit img{height:340px}
+.reveal .notebook{display:grid;grid-template-columns:1fr 110px;gap:30px;align-items:center}
+.reveal .notebook ol{font-size:29px;line-height:1.28}
+.reveal .notebook li{margin-bottom:20px}
+.reveal .notebook img{height:160px}
+@media print{.reveal .full-map h2{display:none}.reveal .source-figure img{object-fit:contain}}

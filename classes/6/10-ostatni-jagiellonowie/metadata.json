@@ -1,0 +1,26 @@
+{
+  "id": "10-ostatni-jagiellonowie",
+  "title": "W czasach ostatnich Jagiellonów",
+  "grade": 6,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa",
+  "duration_minutes": 45,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "presentation_mode": "slides",
+  "goalContract": {
+    "version": "1.0"
+  },
+  "status": "DO PRZEGLĄDU NAUCZYCIELA",
+  "curriculum_requirement": "IX. „Złoty wiek” w Polsce na tle europejskim. Uczeń: 4) wyjaśnia okoliczności powstania Prus Książęcych;",
+  "main_question": "Jak dawny przeciwnik stał się lennikiem polskiego króla?",
+  "source_reviewed": false,
+  "teacher_reviewed": true,
+  "offline_checked": true,
+  "presentationContract": { "version": "1.0" },
+  "pdf_exported": false,
+  "appearance": {
+    "style": "chronicle",
+    "palette": "land-sea"
+  }
+}

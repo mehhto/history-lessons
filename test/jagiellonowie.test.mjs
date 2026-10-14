@@ -1,0 +1,47 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { readFile, access } from 'node:fs/promises';
+import { inspectGoalContract } from '../scripts/lesson-quality.mjs';
+import { parseSlideDirectives, auditSlideContract } from '../scripts/slide-contract.mjs';
+const dir = new URL('../classes/6/10-ostatni-jagiellonowie/', import.meta.url);
+test('Ostatni Jagiellonowie: pełne źródło, relacje rodzinne, mapy przed narracją i notatki', async () => {
+  const slides = await readFile(new URL('slides.md', dir), 'utf8');
+  const blocks = slides.split(/\r?\n---\r?\n/);
+  assert.equal(blocks.length, 21);
+  assert.equal(blocks.length, blocks.filter(b => /^notes:/m.test(b)).length);
+  assert.equal(auditSlideContract(parseSlideDirectives(slides)).errors.length, 0);
+  const genealogy = blocks.find(b => b.includes('id="rodzina"'));
+  assert.match(genealogy, /assets\/drzewo-jagiellonow-zpe\.svg/);
+  assert.match(genealogy, /RkJWYbOAeEHmA/);
+  assert.doesNotMatch(slides, /id="kolejnosc-krolow"|class="family-tree"/);
+  assert.match(blocks.find(b => b.includes('id="prusy-1466"')), /assets\/prusy-pokoj-1466-legenda\.svg/);
+  for (const [map, explanation] of [['mapa-prus','prusy-1466'],['mapa-wschodu','moskwa-1514'],['mapa-inflant','inflanty-wojna']]) {
+    assert.ok(slides.indexOf(`id="${map}"`) < slides.indexOf(`id="${explanation}"`));
+  }
+  const source = blocks.filter(b => b.includes('id="dokument-1525"'));
+  assert.equal(source.length, 1);
+  assert.match(source[0], /wtedy \[książę\] Albrecht/);
+  assert.match(source[0], /Nawzajem zaś My i Nasi Następcy/);
+  assert.match(source[0], /w podobnym wypadku to samo uczynić\./);
+  assert.ok(slides.indexOf('id="pytania-do-zrodla"') < slides.indexOf('id="dokument-1525"'));
+  assert.match(slides, /Smoleńska nie odzyskano/);
+  assert.match(slides, /1563–1570/);
+  assert.match(slides, /Iwan IV Groźny/);
+  assert.match(slides, /Moskwa zachowała część zdobyczy, m.in. Narwę/);
+  assert.match(slides, /Moskwa zdobyła Połock/);
+  assert.doesNotMatch(slides, /Moskwa nie osiągnęła celu|człowiek stojący/);
+  assert.match(blocks.find(b => b.includes('id="stary-i-bona"')), /włoszczyzna[\s\S]*Wykształcenie[\s\S]*mosty, młyny i tartaki/);
+  assert.match(slides, /8 kwietnia 1525/);
+  assert.match(slides, /10 kwietnia 1525/);
+  for (const block of blocks) assert.ok(/<img\b|<lesson-timeline\b/.test(block), 'każdy slajd ma lokalny obraz lub native chronologię');
+  for (const [,asset] of slides.matchAll(/<img[^>]+src="([^"]+)"/g)) await access(new URL(asset, dir));
+  const metadata = JSON.parse(await readFile(new URL('metadata.json',dir),'utf8'));
+  assert.equal(metadata.id, '10-ostatni-jagiellonowie');
+  assert.equal(metadata.teacher_reviewed, true);
+  assert.equal(metadata.pdf_exported, false);
+  const goals = inspectGoalContract({metadata, lessonMarkdown:await readFile(new URL('lesson.md',dir),'utf8'), assessmentMarkdown:await readFile(new URL('assessment.md',dir),'utf8'), slides:parseSlideDirectives(slides)});
+  assert.deepEqual(goals.errors, []); assert.deepEqual(goals.warnings, []);
+  assert.match(await readFile(new URL('teacher-guide.md',dir),'utf8'), /## Trudne momenty i notatki nauczyciela/);
+  const worksheet = await readFile(new URL('worksheet.md',dir),'utf8');
+  assert.doesNotMatch(worksheet, /teacher-key|Klucz odpowiedzi|Poprawne odpowiedzi/);
+});

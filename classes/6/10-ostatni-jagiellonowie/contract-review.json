@@ -1,0 +1,15 @@
+{
+  "contractVersion": "1.0",
+  "presentationRevision": "3e7d409f1a48de3443c0144e6f8150223f854db62177f3b3fc24e963fa3784e8",
+  "browser": {
+    "completed": true,
+    "issues": []
+  },
+  "human": {
+    "completed": false,
+    "blockers": [],
+    "warnings": [
+      "Oczekuje akceptacji nauczyciela oraz przeglądu praw do przekładu źródła; prywatny podgląd, bez eksportów."
+    ]
+  }
+}
