@@ -1,0 +1,22 @@
+{
+  "id": "09-kultura-polska-pod-zaborami",
+  "title": "Kultura polska pod zaborami",
+  "grade": 7,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa",
+  "duration_minutes": 45,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "presentation_mode": "slides",
+  "status": "DO PRZEGLĄDU",
+  "curriculum_requirement": "XX.1) charakteryzuje okres konstytucyjny Królestwa Polskiego – ustrój, osiągnięcia w gospodarce, kulturze i edukacji; XX.4) charakteryzuje znaczenie Wielkiej Emigracji.",
+  "main_question": "Jak zachować wspólnotę bez własnego państwa?",
+  "source_reviewed": false,
+  "teacher_reviewed": false,
+  "offline_checked": true,
+  "pdf_exported": false,
+  "appearance": {
+    "style": "editorial",
+    "palette": "civic-debate"
+  }
+}

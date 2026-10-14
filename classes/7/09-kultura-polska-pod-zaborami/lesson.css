@@ -1,0 +1,83 @@
+@font-face{font-family:"Kultura Sans";src:url('../../../template/presentation/fonts/collection/source-sans-3-400.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:"Kultura Sans";src:url('../../../template/presentation/fonts/collection/source-sans-3-700.ttf') format('truetype');font-weight:700;font-display:swap}
+@font-face{font-family:"Kultura Serif";src:url('../../../template/presentation/fonts/collection/source-serif-4-700.ttf') format('truetype');font-weight:700;font-display:swap}
+/* Local grammar: civic-debate; purple questions, green evidence, neutral text.
+   Source Sans + Source Serif, unfenced artworks; no shared-theme changes. */
+html[data-style="editorial"] .reveal{--font-body:"Kultura Sans",sans-serif;--font-heading:"Kultura Serif",serif;font-size:31px}
+.reveal .slides section[data-slide-canvas]>.slide-content{display:block;align-content:normal;background:var(--color-canvas)}
+.reveal h1{font-size:58px;line-height:1.1;letter-spacing:-.025em;font-weight:700}
+.reveal h2{font-size:46px;line-height:1.08;letter-spacing:-.02em;margin:0 0 28px}
+.reveal h3{font-family:var(--font-body);font-size:31px;line-height:1.16;margin:0 0 16px;font-weight:700}
+.reveal p{line-height:1.26;margin:0 0 20px}
+.reveal strong,.reveal b{color:inherit}
+.reveal ul,.reveal ol{display:block;line-height:1.25;margin-left:27px}
+.reveal li{margin-bottom:20px}
+.reveal .lead{font-size:37px;line-height:1.22}
+.reveal .eyebrow,.reveal .small{font-size:24px;line-height:1.25}
+.reveal .two,.reveal .three{display:grid;gap:38px;grid-template-columns:1fr 1fr;margin-top:32px}
+.reveal .three{grid-template-columns:repeat(3,1fr);gap:32px}
+.reveal .two>div,.reveal .three>div{border-top:6px solid var(--color-accent);padding-top:22px}
+.reveal .three>div:nth-child(2),.reveal .two>div:nth-child(2){border-color:var(--color-evidence)}
+.reveal .bar{font-size:28px;border-top:2px solid var(--color-accent);margin-top:28px;padding-top:18px}
+.reveal .art{margin:0;display:grid;grid-template-rows:minmax(0,1fr) auto;gap:12px;min-width:0}
+.reveal .slides .art img{display:block;width:100%;height:100%;max-width:100%;object-fit:contain;margin:0;border:0;box-shadow:none}
+.reveal .art figcaption{font-family:var(--font-body);font-size:20px;line-height:1.2;color:var(--color-text);background:none;margin:0;padding:0;border:0;text-align:left}
+.reveal .cover{display:grid;grid-template-columns:1fr 1.12fr;gap:40px;height:600px;align-items:center}
+.reveal #otwarcie .slide-content{background:var(--color-accent);color:var(--color-surface)}
+.reveal #otwarcie h1,.reveal #otwarcie figcaption{color:var(--color-surface)}
+.reveal #otwarcie .art{height:430px}
+.reveal #otwarcie .lead{font-size:31px;margin-top:32px;border-top:3px solid var(--color-signal);padding-top:22px}
+.reveal .split{display:grid;grid-template-columns:.9fr 1.25fr;gap:48px;height:520px;align-items:center}
+.reveal .split .art{height:510px}
+.reveal .split .reading{font-size:30px}
+.reveal .split .reading li{margin-bottom:19px}
+.reveal .role{font-size:33px;border-left:6px solid var(--color-evidence);padding-left:20px}
+.reveal #mickiewicz .split{grid-template-columns:1.25fr 1fr;gap:38px}
+.reveal #paryz .split{grid-template-columns:1.08fr 1fr}
+.reveal #paryz .art{height:470px}
+.reveal .centres{width:100%;font-size:30px;table-layout:fixed;border-collapse:collapse;margin:0}
+.reveal .centres th,.reveal .centres td{padding:19px 22px;text-align:left;vertical-align:middle;border-bottom:2px solid var(--color-signal);line-height:1.2}
+.reveal .centres th{width:31%;background:var(--color-signal)}
+.reveal .axis{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin:70px 0 45px;padding:0;list-style:none;border-top:5px solid var(--color-accent)}
+.reveal .axis.four{grid-template-columns:repeat(4,1fr);gap:28px;margin-top:100px}
+.reveal .axis li{position:relative;padding-top:26px;font-size:30px}
+.reveal .axis li:before{content:"";position:absolute;top:-11px;width:17px;height:17px;border-radius:50%;background:var(--color-accent)}
+.reveal .axis b{display:block;font-size:44px;margin-bottom:22px}
+.reveal .axis span{display:block}
+.reveal .bigdate{font-size:65px;font-family:var(--font-heading);border-left:10px solid var(--color-evidence);padding-left:28px;margin:40px 0}
+.reveal #tpn .slide-content{background:var(--color-signal)}
+.reveal #ossolineum .three{margin-top:45px}
+.reveal #romantyzm .two{font-size:29px}
+.reveal .idea{background:var(--color-accent);color:var(--color-surface);padding:25px 30px;margin:30px 0;font-size:35px}
+.reveal .idea p{margin:0}
+.reveal .wideart{display:grid;grid-template-columns:1.8fr 1fr;gap:35px;height:535px;align-items:center}
+.reveal .wideart .art{height:520px}
+.reveal .wideart p{font-size:29px}
+.reveal #grottger .slide-content{background:var(--color-surface)}
+.reveal #zadanie .slide-content{background:var(--color-accent);color:var(--color-surface)}
+.reveal #zadanie h2{color:var(--color-surface)}
+.reveal #zadanie .student-task{display:block;background:transparent;color:inherit;border:0;border-left:8px solid var(--color-signal);font-size:33px;padding:15px 35px;margin-top:35px}
+.reveal #zadanie .student-task :is(p,li){color:inherit}
+.reveal #zadanie .student-task li{margin-bottom:35px}
+.reveal .answer{font-family:var(--font-heading);font-size:44px;line-height:1.18;border-left:10px solid var(--color-evidence);padding-left:26px}
+.reveal #synteza .two{margin-top:45px}
+.reveal #synteza .two p{font-size:30px}
+.reveal .exit{font-size:36px;line-height:1.28;margin-top:45px}
+.reveal .exit li{margin-bottom:37px}
+.reveal .notebook{font-size:29px;line-height:1.23;margin-top:30px}
+.reveal .notebook li{margin-bottom:20px}
+.reveal #notatka-instytucje .slide-content,.reveal #notatka-tworcy .slide-content{background:var(--color-surface)}
+.reveal #bilet .slide-content,.reveal #notatka-instytucje .slide-content,.reveal #notatka-tworcy .slide-content{display:block;align-content:normal;max-width:none;margin:0;padding:48px 64px}
+.reveal #romantycznosc .slide-content{display:block;align-content:normal;background:var(--color-surface)}
+.reveal .poem-question{font-size:31px;border-left:7px solid var(--color-evidence);padding-left:22px;margin-bottom:30px}
+.reveal blockquote.poem{font-family:var(--font-heading);font-size:31px;line-height:1.3;width:auto;margin:0 0 22px;padding:20px 30px;background:var(--color-canvas);font-style:normal;box-shadow:none;border:0}
+.reveal .poem-source{margin:0}
+.reveal .poem-credit{font-size:20px;color:var(--color-text);text-align:left;line-height:1.2}
+.reveal #szkoly .bar{font-size:25px;line-height:1.2}
+.reveal .speaker-notes{font-size:20px}
+/* Full textbook excerpt on one reading surface; no silent cuts. */
+.reveal #romantycznosc .slide-content{padding:28px 48px;max-width:none}
+.reveal #romantycznosc h2{font-size:34px;margin-bottom:8px}
+.reveal #romantycznosc .poem-question{font-size:23px;line-height:1.1;margin-bottom:8px;padding-left:12px}
+.reveal #romantycznosc blockquote.poem{font-family:var(--font-body);font-size:22px;font-weight:400;line-height:1.02;padding:4px 20px;margin:0 0 6px}
+.reveal #romantycznosc .poem-credit{font-size:18px;line-height:1.15}
