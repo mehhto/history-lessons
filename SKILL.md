@@ -6,6 +6,10 @@ Tworzysz **pełne, pierwsze wersje pakietów lekcji** dla nauczyciela historii w
 
 Nie jesteś źródłem faktów historycznych ani arbitrem zgodności z programem. Kolejność priorytetów: **wymaganie programowe → poprawność faktograficzna → zrozumienie ucznia → wartość dydaktyczna → estetyka**.
 
+## Domyślna ścieżka pracy
+
+Przed projektowaniem lub rewizją przeczytaj [`design/lesson-production-workflow.md`](design/lesson-production-workflow.md). Stosuj jedną ścieżkę: sprawdzone rozwiązanie → kontrola treści i działania ucznia → spójny pakiet → celowane QA i końcowy przegląd → jedno przekazanie nauczycielowi. To porządek pracy, nie dodatkowe formularze ani nakaz przebudowy starych lekcji. Szczegółowe zasady poniżej stosuj do właściwego zakresu; nie otwieraj ponownie rozstrzygniętych wyborów.
+
 ## Przed rozpoczęciem
 
 1. Ustal rok szkolny i klasę. Odczytaj `curriculum/rollout-2026.md`, wybierz `nowa-2026` albo `stara-przejsciowa`, a potem przeczytaj właściwy plik klasy, `template/quality-checklist.md` oraz `template/lesson/lesson.md`.
@@ -87,13 +91,13 @@ Mapy Google i YouTube są opcjonalne: iframe uzyskuje `src` wyłącznie po klikn
 
 Dotyczy wyłącznie `presentation_mode: slides`; lekcji `none` nie eksportuj jako prezentacji przenośnej.
 
-Gdy nauczyciel potrzebuje pracy na obcych komputerach bez Node.js, serwera i Internetu, po ustabilizowaniu źródeł wygeneruj samodzielny plik:
+Gdy nauczyciel potrzebuje pracy na obcych komputerach bez Node.js, serwera i Internetu, wygeneruj samodzielny plik w zakresie dopuszczonym przez etap 5 procedury pracy:
 
 ```bash
 npm run export:portable -- --lesson classes/4/01-temat
 ```
 
-Wynik `*-portable.html` jest artefaktem lokalnym, nie źródłem i nie trafia do Git. Można go przenieść niezależnie od repozytorium i otworzyć dwuklikiem. Po każdej zmianie slajdów, CSS, metadanych, komponentów albo obrazów wygeneruj go ponownie. Przed przekazaniem otwórz wynik przez `file://` bez serwera, potwierdź brak żądań sieciowych dla podstawowej treści, pełne wczytanie obrazów, geometrię wszystkich slajdów oraz działanie klawiatury, notatek i komponentów interaktywnych.
+Wynik `*-portable.html` jest artefaktem lokalnym, nie źródłem i nie trafia do Git. Można go przenieść niezależnie od repozytorium i otworzyć dwuklikiem. Jeżeli jest bieżącym materiałem do przekazania, odśwież go po zmianie jego wejść, nie po każdej iteracji pracy nad lekcją. Przed przekazaniem otwórz wynik przez `file://` bez serwera, potwierdź brak żądań sieciowych dla podstawowej treści, pełne wczytanie obrazów, geometrię wszystkich slajdów oraz działanie klawiatury, notatek i komponentów interaktywnych.
 
 ## Źródła, fakty i prywatność
 
@@ -119,4 +123,4 @@ Ostrzeżenia dydaktyczne nie blokują statusu technicznego. Braki struktury, bez
 
 ## Oczekiwane pliki
 
-Aktualizuj `lesson.md`, `worksheet.md`, `sources.md`, `assessment.md`, `reflection.md`, `teacher-guide.md`, `student-summary.md` i `metadata.json`; `slides.md`, `index.html` i `lesson.css` wymagane są tylko dla `presentation_mode: slides`. W `metadata.json` wpisz `lesson_type` oraz `presentation_mode`. Przed zakończeniem uruchom `npm run check`, a dla `slides` sprawdź render; wygeneruj tylko artefakty wymagane w aktualnym zakresie i przejdź checklistę jakości. PDF/PPTX prezentacji powstają dopiero po wyraźnym żądaniu lub akceptacji nauczyciela.
+Aktualizuj `lesson.md`, `worksheet.md`, `sources.md`, `assessment.md`, `reflection.md`, `teacher-guide.md`, `student-summary.md` i `metadata.json`; `slides.md`, `index.html` i `lesson.css` wymagane są tylko dla `presentation_mode: slides`. W `metadata.json` wpisz `lesson_type` oraz `presentation_mode`. Zakres i kolejność QA oraz warunki podglądu, eksportu i publikacji bierz z etapów 4–5 [`design/lesson-production-workflow.md`](design/lesson-production-workflow.md), zamiast uruchamiać kontrolę całego repozytorium po każdej korekcie.

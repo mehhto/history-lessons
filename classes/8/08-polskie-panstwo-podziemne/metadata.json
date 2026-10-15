@@ -1,0 +1,24 @@
+{
+  "id": "08-polskie-panstwo-podziemne",
+  "title": "Polskie Państwo Podziemne",
+  "grade": 8,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa",
+  "duration_minutes": 45,
+  "usable_minutes": 30,
+  "maximum_students": 20,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "presentation_mode": "slides",
+  "status": "DO PRZEGLĄDU",
+  "curriculum_requirement": "XXXIII.4) charakteryzuje polityczną i militarną działalność polskiego państwa podziemnego, w tym formy oporu wobec okupantów;",
+  "main_question": "Co pozwalało polskiemu państwu działać w warunkach okupacji?",
+  "source_reviewed": false,
+  "teacher_reviewed": false,
+  "offline_checked": true,
+  "pdf_exported": false,
+  "appearance": {
+    "style": "reportage",
+    "palette": "land-sea"
+  }
+}
