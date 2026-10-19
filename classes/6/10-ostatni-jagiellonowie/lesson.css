@@ -109,4 +109,9 @@ html[data-style='chronicle'] .reveal #podsumowanie>.slide-content{background:var
 .reveal .notebook ol{font-size:29px;line-height:1.28}
 .reveal .notebook li{margin-bottom:20px}
 .reveal .notebook img{height:160px}
+.reveal #ocalenie-obrazu h2{font-size:46px;margin-bottom:24px}
+.reveal #ocalenie-obrazu .rescue-story{display:grid;grid-template-columns:1.12fr 1fr;gap:34px;align-items:center}
+.reveal #ocalenie-obrazu .source-figure img{height:452px;width:100%;object-fit:contain}
+.reveal #ocalenie-obrazu ul{font-size:28px;line-height:1.28}
+.reveal #ocalenie-obrazu li{margin-bottom:22px}
 @media print{.reveal .full-map h2{display:none}.reveal .source-figure img{object-fit:contain}}

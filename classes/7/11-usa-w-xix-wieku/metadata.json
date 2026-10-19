@@ -1,0 +1,25 @@
+{
+  "id": "11-usa-w-xix-wieku",
+  "title": "Stany Zjednoczone w XIX wieku",
+  "grade": 7,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa",
+  "duration_minutes": 35,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "presentation_mode": "slides",
+  "goalContract": {
+    "version": "1.0"
+  },
+  "status": "DO PRZEGLĄDU",
+  "curriculum_requirement": "XXII. Europa i świat w II połowie XIX i na początku XX w. Uczeń: 2) prezentuje przyczyny i skutki wojny secesyjnej w Stanach Zjednoczonych;",
+  "main_question": "Dlaczego kraj wolności stoczył wojnę o niewolnictwo?",
+  "source_reviewed": false,
+  "teacher_reviewed": false,
+  "offline_checked": true,
+  "pdf_exported": false,
+  "appearance": {
+    "style": "reportage",
+    "palette": "vivid-dark2"
+  }
+}

@@ -43,17 +43,17 @@ Pełny zapis każdego slajdu, ilustracji, treści i notatek: storyboard.md. Każ
 |---|---:|---|---|---|
 | Otwarcie i dynastia (1–3) | 4,5 min | Gest na obrazie, drzewo, następstwo, Stary i Bona | Krótka hipoteza; wskazują braci i syna | Nie mylą rodziny z kolejnością królów |
 | Prusy: mapa → przemiana (4–8) | 7 min | Porządkuje 1466–1525 i wyjaśnia pojęcia | Wskazują miejsca; odróżniają dwa rodzaje Prus | Przyczyna → wojna → porozumienie |
-| Obraz i umowa (9–11) | 5 min | Pary, pytania przed pełnym cytatem | Obserwują gesty i odszukują zdania | Wskazanie w obrazie i tekście, bez długiej prezentacji |
-| Moskwa (12–13) | 2,5 min | Mapa przed osią 1514–1522 | Rozróżniają bitwę i wynik terytorialny | Nieodzyskany Smoleńsk |
-| August i Inflanty (14–17) | 4,5 min | Portret, mapa, przyczyna i skutek wojny | Lokalizują Rygę; nazywają podział | Trzech beneficjentów, brak trwałej jednej koalicji |
-| Synteza, źródła, bilet (18–20) | 2 min | Krótko łączy trzy kierunki, źródła bez wykładu | Samodzielne krótkie odpowiedzi | Bilet sprawdza G1/G3; G2 sprawdzony podczas źródła |
-| Notatka i zamknięcie (21) | 4 min | Chroni czas kopiowania | Pięć krótkich punktów lub blankiet | Czytelna notatka w zeszycie |
+| Obraz, ocalenie dzieła i umowa (9–12) | 5 min | Pary, 45–60 s ciekawostki o ocaleniu zamiast rozwijania innych ciekawostek, pytania przed pełnym cytatem | Obserwują gesty i odszukują zdania | Wskazanie w obrazie i tekście, bez długiej prezentacji |
+| Moskwa (13–14) | 2,5 min | Mapa przed osią 1514–1522 | Rozróżniają bitwę i wynik terytorialny | Nieodzyskany Smoleńsk |
+| August i Inflanty (15–18) | 4,5 min | Portret, mapa, przyczyna i skutek wojny | Lokalizują Rygę; nazywają podział | Trzech beneficjentów, brak trwałej jednej koalicji |
+| Synteza, źródła, bilet (19–21) | 2 min | Krótko łączy trzy kierunki, źródła bez wykładu | Samodzielne krótkie odpowiedzi | Bilet sprawdza G1/G3; G2 sprawdzony podczas źródła |
+| Notatka i zamknięcie (22) | 4 min | Chroni czas kopiowania | Pięć krótkich punktów lub blankiet | Czytelna notatka w zeszycie |
 | Bufor przejść | 0,5 min | Przewijanie i rozdanie opcjonalnej karty | Przygotowanie zeszytu | — |
 
 Łącznie 30 min. Uczeń nie przepisuje innych slajdów. Nominalne pozostałe 15 min nie jest zaplanowaną nową pracą.
 
 ## Warianty prowadzenia
-- **Rdzeń:** slajdy 1–21; jedna krótka praca par: obraz + umowa, trzy szybkie orientacje mapowe, indywidualny bilet, 4 min notatki.
+- **Rdzeń:** slajdy 1–22; jedna krótka praca par: obraz + umowa, trzy szybkie orientacje mapowe, indywidualny bilet, 4 min notatki.
 - **Pomoc:** odczytaj źródło, wskaż początek „gdybyśmy…”, podpowiedz znaczenie następców. Wolno piszącym daj worksheet.md. Utrzymaj cele, zmniejsz zapis.
 - **Rozszerzenie:** poza core: dodatkowy mecenat Bony, ruch egzekucyjny, współczesny zakon, wcześniejsza koronacja Augusta. Opis w teacher-guide.md, bez dodatkowych slajdów/filmu.
 - **Punkt skrócenia:** nie odczytuj wszystkich dat w drzewie, ogranicz zebranie wypowiedzi do dwóch par i ustne pytania biletu 2–3; nie pomijaj objaśnienia sekularyzacji, cytatu ani końcowej notatki.

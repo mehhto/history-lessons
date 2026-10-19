@@ -128,7 +128,21 @@ Oddziel traktat od ceremonii. Skutek: nie ma już państwa zakonnego w Prusach, 
 
 Praca siedmiu par: 40 s obserwacji, potem po jednym wskazaniu, bez długich wystąpień. Model: Albrecht klęczy przed siedzącym Zygmuntem Starym; sztandar i przysięga wyrażają zależność lenną. Powiększ przez klik/Enter. Ciekawostka 3: obraz powstał w 1882, ponad 350 lat po hołdzie. Bona znajduje się na scenie w kompozycji Matejki; podręcznik s.54 mówi, że obserwowała uroczystość z okna kamienicy. Nie uznawaj jej usytuowania na obrazie za potwierdzony fakt ceremonii.
 
-## 10. pytania-do-zrodla — Przeczytaj umowę i znajdź odpowiedzi
+## 10. ocalenie-obrazu — Jak ocalono „Hołd pruski”?
+
+- Funkcja/układ: explanation / source-split; cele: G2.
+- Ilustracje: assets/hold-pruski-strazacy.jpg — ćwiczenia strażackie przy obrazie, nie ewakuacja 1939.
+
+### Treść dokładna
+
+<h2>Jak ocalono „Hołd pruski”?</h2>
+<div class="rescue-story"><figure class="source-figure"><img src="assets/hold-pruski-strazacy.jpg" alt="Strażacy z drabinami i wężami podczas ćwiczeń w sali z obrazem Hołd pruski."><figcaption>Ćwiczenia strażackie przy obrazie w Sukiennicach, 1930 r.</figcaption></figure><div><ul><li><strong>1939:</strong> w obawie przed zniszczeniem obraz zwinięto i ukryto w kościele w Zamościu.</li><li><strong>Powrót w tajemnicy:</strong> przewieziono go do Krakowa pod osłoną transportu handlowego.</li><li><strong>Podstęp:</strong> transport eskortowali niemieccy żołnierze, nie wiedząc, co chronią.</li><li><strong>Ocalony:</strong> obraz przetrwał okupację w ukryciu w Muzeum Czapskich w Krakowie.</li></ul></div></div>
+
+### Notes
+
+Krótka ciekawostka po analizie gestów na obrazie; 45–60 s zamiast rozwijania innych ciekawostek, nie dodatkowe zadanie ani treść do przepisywania. Powiedz: „Obraz opowiada o 1525 roku, ale sam też ma swoją historię. W 1939 ludzie ryzykowali, by go ocalić”. Zdjęcie dostarczyła nauczycielka z opisem NAC/Sukiennice/1930: pokazuje ćwiczenia, NIE wywożenie obrazu we wrześniu 1939. Datowanie i instytucja według dostarczonego opisu; nie odnaleziono indywidualnej karty NAC. Podstawa narracji: Magda Misztal, Książnica Zamojska, „76 dni w podziemiach” (2024), artykuł przeczytany w pełnym istotnym zakresie. Zabezpieczenie: płótno na drewnianym bębnie, w cynkowej rurze i drewnianej skrzyni. We wrześniu ukryte w kościele św. Katarzyny; podczas zajęcia miasta przez wojska sowieckie odkryte i uszkodzone. W listopadzie wywiezione w ramach transportu handlowego, z niemiecką eskortą nieświadomą zawartości; po krótkim pobycie w Muzeum Przemysłowym ukryte w Muzeum Czapskich, gdzie przetrwało okupację. Relacje różnią się szczegółami: nie przedstawiaj dokładnych godzin, masy ani wszystkich etapów jako bezspornych. Źródło mówi o obawie przed celowym zniszczeniem, nie dowodzi rozkazu Hitlera dotyczącego tego obrazu. Nie powtarzamy anachronizmu z dostarczonego tekstu: Rzeczpospolita Obojga Narodów powstała dopiero w 1569, a hołd był w 1525; likwidacja państwa zakonnego w Prusach nie oznaczała końca całego zakonu. Powiększenie fotografii: klik/Enter; Escape zamyka.
+
+## 11. pytania-do-zrodla — Przeczytaj umowę i znajdź odpowiedzi
 
 - Funkcja/układ: practice / task-board; cele: G2.
 - Ilustracje: assets/hold-pruski-detal.jpg — Kadr obrazu: Albrecht składa przysięgę, obok polski król.
@@ -142,7 +156,7 @@ Praca siedmiu par: 40 s obserwacji, potem po jednym wskazaniu, bez długich wyst
 
 Dwa pełne pytania z podręcznika s.55 pokazujemy PRZED cytatem. Poproś, aby każda para odnalazła fragment tekstu, a nie zgadywała z obrazu. Zapowiedz objaśnienie słowa „powinności” – obowiązki.
 
-## 11. dokument-1525 — Powstanie księstwa pruskiego w 1525 roku
+## 12. dokument-1525 — Powstanie księstwa pruskiego w 1525 roku
 
 - Funkcja/układ: evidence / evidence; cele: G2.
 - Ilustracje: assets/albrecht.jpg — Albrecht Hohenzollern, książę wymieniony w umowie.
@@ -156,7 +170,7 @@ Dwa pełne pytania z podręcznika s.55 pokazujemy PRZED cytatem. Poproś, aby ka
 
 Pełny widoczny cytat z s.55, bez skracania i podziału, z zachowanym [książę]. 40 s cichego czytania, potem 60 s odpowiedzi w parze i 30 s sprawdzenia. Model: pomoc w razie ataku z powodu ugody lub nadania lenna; sformułowania „następcy i dziedzice”, „Nasi Następcy” wskazują trwanie. Zwróć uwagę na wzajemność pomocy („Nawzajem”). Cytat to przekład/wybór w podręczniku, nie oryginał łaciński ani cały traktat. Tekst tylko do prywatnego podglądu edukacyjnego; nie publikować bez ustalenia praw do przekładu.
 
-## 12. mapa-wschodu — Polska, Litwa i wschodni sąsiad
+## 13. mapa-wschodu — Polska, Litwa i wschodni sąsiad
 
 - Funkcja/układ: evidence / map-focus; cele: G3.
 - Ilustracje: assets/polska-litwa-1569.png — Źródłowa mapa Rzeczypospolitej po unii lubelskiej w 1569 r. Podpisane są Moskwa, Smoleńsk, Orsza i Ryga.
@@ -170,7 +184,7 @@ Pełny widoczny cytat z s.55, bez skracania i podziału, z zachowanym [książę
 
 Mapa orientacyjna pokazuje STAN Z 1569 r. – data jest w jej legendzie; nie służy do odtwarzania granic w 1514. Wskaż Moskwę na wschodzie, Wilno, Smoleńsk i Orszę. Zanim opowiesz wcześniejszą wojnę, powiedz: „Teraz cofamy się do 1514 roku”. Moskwa to nazwa miasta i państwa moskiewskiego, z którego rozwijała się Rosja. Źródło: Learnetic SA, ZPE R10NoDGrwRfAd, CC BY 4.0.
 
-## 13. moskwa-1514 — Zwycięstwo nie zawsze zwraca ziemie
+## 14. moskwa-1514 — Zwycięstwo nie zawsze zwraca ziemie
 
 - Funkcja/układ: explanation / timeline-band; cele: G3.
 - Ilustracje: Natywna oś dat; nie dodatkowa historyczna ilustracja.
@@ -185,7 +199,7 @@ Mapa orientacyjna pokazuje STAN Z 1569 r. – data jest w jej legendzie; nie sł
 
 Uczniowie wskazali miasta na poprzedniej mapie. Moskwa zagrażała zwłaszcza wschodnim ziemiom Litwy. Nie mów, że wygrana pod Orszą odzyskała Smoleńsk. Zadaj krótkie „Czy zwycięstwo w jednej bitwie oznacza odzyskanie miasta?” – odpowiedź „nie” musi odwołać się do Smoleńska.
 
-## 14. august — Zygmunt II August przejmuje rządy
+## 15. august — Zygmunt II August przejmuje rządy
 
 - Funkcja/układ: explanation / split; cele: G1 G3.
 - Ilustracje: assets/zygmunt-august.jpg — Zygmunt II August na miniaturze Cranacha Młodszego z 1553 r.
@@ -199,7 +213,7 @@ Uczniowie wskazali miasta na poprzedniej mapie. Moskwa zagrażała zwłaszcza ws
 
 Wróć do drzewa rodzinnego. Opcjonalna ciekawostka: August był koronowany już w 1530 r., za życia ojca, lecz samodzielne rządy rozpoczął w 1548. Anna Jagiellonka żyła dalej – koniec królów tej dynastii nie oznacza, że wszyscy członkowie rodziny zmarli.
 
-## 15. mapa-inflant — Inflanty nad Bałtykiem
+## 16. mapa-inflant — Inflanty nad Bałtykiem
 
 - Funkcja/układ: evidence / map-focus; cele: G3.
 - Ilustracje: assets/inflanty-druga-polowa-xvi.png — Źródłowa mapa Inflant w II połowie XVI wieku: Ryga, Estonia, Ozylia i Dago, z legendą polityczną.
@@ -213,7 +227,7 @@ Wróć do drzewa rodzinnego. Opcjonalna ciekawostka: August był koronowany już
 
 Najpierw wskaż Bałtyk, Rygę, Rewel (Tallin) i państwo moskiewskie. Inflanty to dawny region dzisiejszej Łotwy i Estonii. Mapa źródłowa przedstawia II połowę XVI w.; pokazuje polityczne obszary, nie przebieg każdego frontu w jednym dniu 1570. Legenda: większość z Rygą wspólnie Polska i Litwa, Estonia i Dago Szwecja, Ozylia Dania; jaśniejsze szrafy – lenna. Źródło: Contentplus.sp. z o.o., ZPE DVkavsFuX, mapa R1XSpXWq2DiMx na podstawie atlasu Nowej Ery 2019, CC BY-SA 3.0. Statycznie złożono oryginalne warstwy mapy i dodano legendę na osobnym marginesie, bez zmiany granic.
 
-## 16. inflanty-wojna — Dlaczego walczono o Inflanty?
+## 17. inflanty-wojna — Dlaczego walczono o Inflanty?
 
 - Funkcja/układ: explanation / split; cele: G3.
 - Ilustracje: assets/europa-jagiellonow.png — Mapa państw europejskich obejmująca Szwecję, Danię, państwo moskiewskie i ziemie Jagiellonów.
@@ -227,7 +241,7 @@ Najpierw wskaż Bałtyk, Rygę, Rewel (Tallin) i państwo moskiewskie. Inflanty 
 
 Wskaż czterech uczestników, nie opowiadaj o jednej stałej stronie „trzy państwa przeciw Polsce”. Polska-Litwa sprzymierzyła się z Danią, Szwecja walczyła też z Danią; stosunki Szwecji z Moskwą zmieniały się. Mapa ma legendę wieloletniego rozwoju dynastii do 1526; używamy jej do położenia państw, NIE granic wojny 1563–1570. Car to tytuł władcy Rosji. Atak Iwana IV w 1558 poprzedzał omawiany etap 1563–1570. W 1568 Polska i Litwa sprzymierzyły się ze Szwecją.
 
-## 17. inflanty-podzial — Podział Inflant po wojnie
+## 18. inflanty-podzial — Podział Inflant po wojnie
 
 - Funkcja/układ: explanation / comparison; cele: G3.
 - Ilustracje: assets/inflanty-mapa-zrodlowa.png — Mapa źródłowa Inflant w II połowie XVI wieku: pas północnej Estonii, Ryga i wyspa Ozylia.
@@ -241,7 +255,7 @@ Wskaż czterech uczestników, nie opowiadaj o jednej stałej stronie „trzy pa�
 
 Wskaż Rygę, północną Estonię i Ozylię; nie mów, że wszystkie wyspy przypadły Danii – mapa pokazuje także Dago przy Szwecji. Wynik podziału zgodny z s.56 w podręcznikowym skrócie i ZPE DVkavsFuX. Estonia oznacza szwedzką północną część, nie całość dzisiejszego państwa. Mapa II połowy XVI wieku nie rekonstruuje wszystkich linii frontów jednego roku. Wojna miała kilka frontów i porozumień, nie jedną stałą koalicję. W 1570 zawarto rozejm państwa polsko-litewskiego z Moskwą oraz pokój Szwecji z Danią w Szczecinie: nie był to jeden traktat wszystkich czterech państw. Moskwa zachowała Narwę i część Inflant. Nie rozszerzaj core o kampanie Batorego.
 
-## 18. podsumowanie — Trzy kierunki, różne skutki
+## 19. podsumowanie — Trzy kierunki, różne skutki
 
 - Funkcja/układ: synthesis / comparison; cele: G1 G3.
 - Ilustracje: assets/arras-1560.jpg — Arras z 1560 roku z herbami Polski i Litwy po obu stronach Cerery.
@@ -255,7 +269,7 @@ Wskaż Rygę, północną Estonię i Ozylię; nie mów, że wszystkie wyspy przy
 
 Poproś o jedno zdanie odpowiadające pytaniu głównemu: dawny wróg stał się lennikiem dzięki sekularyzacji, układowi i hołdowi. Herby na arrasie łączą polsko-litewski zasięg działań. To synteza porównawcza, nie nowe szczegóły.
 
-## 19. zrodla — Źródła lekcji
+## 20. zrodla — Źródła lekcji
 
 - Funkcja/układ: reference / split; cele: G1.
 - Ilustracje: assets/dlugosz-synowie-1912.jpg — Obraz Długosza z książką nauczającego synów królewskich.
@@ -269,7 +283,7 @@ Poproś o jedno zdanie odpowiadające pytaniu głównemu: dawny wróg stał się
 
 Slajd informacyjny, bez wykładu i bez dodatkowego czasu core. Pełne URL-e, skróty hash, prawa każdego pliku i ograniczenie przekładu są w sources.md. Nie publikować skanów podręcznika. Ilustracja dotyczy uczenia królewskiej rodziny, nie jest źródłem z XV wieku.
 
-## 20. bilet-wyjscia — Sprawdź, czy rozumiesz
+## 21. bilet-wyjscia — Sprawdź, czy rozumiesz
 
 - Funkcja/układ: exit-ticket / activity-brief; cele: G1 G3.
 - Ilustracje: assets/zygmunt-stary.png — Zygmunt Stary, król uznający w 1525 r. powstanie lenna pruskiego.
@@ -283,7 +297,7 @@ Slajd informacyjny, bez wykładu i bez dodatkowego czasu core. Pełne URL-e, skr
 
 90 s: każdy pisze jedną krótką odpowiedź na każde pytanie; nie żądaj przepisywania poleceń. Odczytaj po jednej odpowiedzi. Jeśli czasu brakuje, wszyscy piszą pytanie 1, a 2 i 3 sprawdź ustnie. Model i kryteria w assessment.md. Portret wskazuje króla z pytania głównego; powtórne użycie ma funkcję zamknięcia.
 
-## 21. notatka — Notatka do zeszytu
+## 22. notatka — Notatka do zeszytu
 
 - Funkcja/układ: synthesis / takeaways; cele: G1 G3.
 - Ilustracje: assets/herb-jagiellonow.png — Herb rodziny Jagiellonów.

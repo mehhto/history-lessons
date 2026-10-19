@@ -7,11 +7,11 @@ Klasa VI, rok 2026/2027, stara podstawa; 14 osób = 7 par. Maksymalnie 20 osób 
 |---|---|---|
 | 0:00–4:30 | 1–3: wejście, źródłowe drzewo, Stary i ciekawostki o Bonie | Rodzina i następstwo to dwie różne rzeczy |
 | 4:30–11:30 | 4–8: duża mapa Prus, 1466, wojna, sekularyzacja, układ i hołd | Pełny mechanizm powstania lenna |
-| 11:30–16:30 | 9–11: obraz i umowa, 7 par | Obserwacja gestu i wskazanie zdań w źródle |
-| 16:30–19:00 | 12–13: mapa wschodu i oś wojny | Orsza ≠ odzyskanie Smoleńska |
-| 19:00–23:30 | 14–17: August, mapa Inflant, przyczyna, podział | Cztery państwa i różne wyniki |
-| 23:30–25:30 | 18–20: synteza, źródła bez wykładu, bilet | Krótkie indywidualne sprawdzenie |
-| 25:30–29:30 | 21: pięć punktów notatki | Pełne cztery minuty na zapis |
+| 11:30–16:30 | 9–12: obraz, 45–60 s historii ocalenia i umowa, 7 par; bez rozwijania innych ciekawostek | Obserwacja gestu i wskazanie zdań w źródle |
+| 16:30–19:00 | 13–14: mapa wschodu i oś wojny | Orsza ≠ odzyskanie Smoleńska |
+| 19:00–23:30 | 15–18: August, mapa Inflant, przyczyna, podział | Cztery państwa i różne wyniki |
+| 23:30–25:30 | 19–21: synteza, źródła bez wykładu, bilet | Krótkie indywidualne sprawdzenie |
+| 25:30–29:30 | 22: pięć punktów notatki | Pełne cztery minuty na zapis |
 | 29:30–30:00 | Zamknięcie / bufor przejść | Powrót do pytania głównego |
 
 ## Otwarcie i zamknięcie
@@ -28,6 +28,9 @@ Klasa VI, rok 2026/2027, stara podstawa; 14 osób = 7 par. Maksymalnie 20 osób 
 - **Źródło s.55:** Albrecht miał pomóc, gdy król zostałby zaatakowany z powodu ugody lub nadania lenna. „Następcy i dziedzice”, „Nasi Następcy” świadczą o trwałości. Ostatnie zdanie nakłada podobny obowiązek na króla: wzajemność. Nie dopowiadaj obowiązków nieobecnych w tym cytacie jako treści cytatu.
 - **Mapy:** mapa Prus rzeczywiście z 1525. Pełna mapa Polski/Litwy pokazuje 1569 i służy do położenia wschodnich miejsc, nie do granic 1514. Osobna źródłowa mapa Inflant (II połowa XVI w., ZPE DVkavsFuX) ma pełną lokalną legendę polityczną; Ozylia przy Danii, Estonia i Dago przy Szwecji. Powiedz datę przed czytaniem. Mapa Europy przedstawia rozwój ziem Jagiellonów do 1526, tylko orientuje uczestników wojny.
 - **Inflanty:** 1561 znaczna część podporządkowana Augustowi; Kurlandia jako lenno. W 1563–1570 nie istniał jeden stały blok czterech państw. Polska-Litwa z Danią, walcząca także ze Szwecją; relacje Szwecji i Moskwy zmienne. Wynik przybliżony podręcznikowo: większość z Rygą – Polska/Litwa; północna Estonia – Szwecja; Ozylia – Dania. Atak Iwana IV rozpoczął się w 1558. W 1570 państwo polsko-litewskie zawarło rozejm z Moskwą, a Szwecja pokój z Danią w Szczecinie: nie jeden traktat wszystkich czterech państw. Moskwa zachowała m.in. Narwę. Bez szczegółów Batorego w core.
+
+## Ciekawostka przy obrazie — slajd 10
+Po analizie gestów pokaż dostarczoną fotografię. Powiedz: „Tu strażacy ćwiczą przy obrazie jeszcze przed wojną. W 1939 roku samo dzieło trzeba było ukryć. Trafiło do kościoła w Zamościu, a potem wróciło potajemnie do Krakowa. Niemiecka eskorta nie wiedziała, że pomaga je ocalić. Resztę okupacji przetrwało w Muzeum Czapskich”. Wystarczy 45–60 sekund w istniejącym okienku obrazu i umowy, zamiast rozwijania innych ciekawostek. Nie każ przepisywać. Zdjęcie nie pokazuje transportu w 1939. Dokładniejsze losy i granice relacji są w notes i sources.md. Nie podawaj jako pewnika nieudokumentowanego rozkazu zniszczenia ani nie mów, że obraz pozostał nieuszkodzony.
 
 ## Pięć pytań, które nauczyciel może zadać
 1. **Czy Jan Olbracht był ojcem Aleksandra?** Nie, byli braćmi, synami Kazimierza IV.

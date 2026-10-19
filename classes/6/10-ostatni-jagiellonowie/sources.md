@@ -1,4 +1,12 @@
-# Źródła i prawa — stan prywatnego podglądu, 12 października 2026
+# Źródła i prawa — stan prywatnego podglądu
+
+## Ciekawostka o ocaleniu obrazu — 18 października 2026
+- Tekst i fotografia przekazane przez nauczycielkę w rozmowie. Narrację skrócono i sprawdzono; nie kopiowano publicystycznych ocen ani anachronizmu o Rzeczypospolitej Obojga Narodów w 1525 r.
+- Magda Misztal, **„76 dni w podziemiach”**, Książnica Zamojska, 8.01.2024: https://biblioteka.zamosc.pl/76-dni-w-podziemiach/ . Pełny istotny tekst odczytano z HTTP 200; zapis roboczy poza repo w `/opt/data/cache/scratch/hold-pruski/zamosc.html`. Wspiera obawę przed zniszczeniem, zwinięcie i zabezpieczenie płótna, ukrycie w kościele św. Katarzyny w Zamościu w 1939, powrót w listopadzie pod osłoną handlową z nieświadomą eskortą niemiecką oraz ukrycie w Muzeum Czapskich do końca okupacji. To opracowanie porównujące różne relacje, nie bezpośredni rozkaz niemieckich władz o zniszczeniu obrazu. Nie powielamy rozbieżnych szczegółów godzin, masy czy dnia przewozu.
+- Korekta dostarczonej narracji: Muzeum Przemysłowe było etapem po powrocie, **Muzeum Czapskich** — kryjówką przez resztę okupacji. Nie sugerujemy, że obraz wyszedł z wojny bez uszkodzeń.
+- `assets/hold-pruski-strazacy.jpg`: identyczna kopia fotografii użytkowniczki `/opt/data/cache/images/img_f48945d60e47.jpg`, 1280 × 911. Widać strażaków z drabinami i wężami przy obrazie. Opis **Sukiennice, ćwiczenia strażackie, 1930, NAC** pochodzi od użytkowniczki; indywidualnej karty archiwalnej ani autora fotografii nie ustalono. Nie przypisano otwartej licencji ani domeny publicznej na podstawie samego wieku lub nazwy NAC. Włączona jedynie do prywatnego podglądu zamówionej lekcji, bez zgody na publiczną redystrybucję. Nie jest fotografią ratowania obrazu w 1939 r.
+- Slajd 10 jest krótką opowieścią, nie dodatkowym zadaniem ani punktem notatki; dotychczasowa analiza obrazu pozostaje na slajdzie 9.
+
 
 ## Korekta nauczycielki — źródło wskazane bezpośrednio
 

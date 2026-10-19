@@ -88,6 +88,16 @@ Praca siedmiu par: 40 s obserwacji, potem po jednym wskazaniu, bez długich wyst
 
 ---
 
+<!-- .slide: id="ocalenie-obrazu" class="painting-rescue" data-purpose="explanation" data-layout="source-split" data-goals="G2" -->
+
+<h2>Jak ocalono „Hołd pruski”?</h2>
+<div class="rescue-story"><figure class="source-figure"><img src="assets/hold-pruski-strazacy.jpg" alt="Strażacy z drabinami i wężami podczas ćwiczeń w sali z obrazem Hołd pruski."><figcaption>Ćwiczenia strażackie przy obrazie w Sukiennicach, 1930 r.</figcaption></figure><div><ul><li><strong>1939:</strong> w obawie przed zniszczeniem obraz zwinięto i ukryto w kościele w Zamościu.</li><li><strong>Powrót w tajemnicy:</strong> przewieziono go do Krakowa pod osłoną transportu handlowego.</li><li><strong>Podstęp:</strong> transport eskortowali niemieccy żołnierze, nie wiedząc, co chronią.</li><li><strong>Ocalony:</strong> obraz przetrwał okupację w ukryciu w Muzeum Czapskich w Krakowie.</li></ul></div></div>
+
+notes:
+Krótka ciekawostka po analizie gestów na obrazie; 45–60 s zamiast rozwijania innych ciekawostek, nie dodatkowe zadanie ani treść do przepisywania. Powiedz: „Obraz opowiada o 1525 roku, ale sam też ma swoją historię. W 1939 ludzie ryzykowali, by go ocalić”. Zdjęcie dostarczyła nauczycielka z opisem NAC/Sukiennice/1930: pokazuje ćwiczenia, NIE wywożenie obrazu we wrześniu 1939. Datowanie i instytucja według dostarczonego opisu; nie odnaleziono indywidualnej karty NAC. Podstawa narracji: Magda Misztal, Książnica Zamojska, „76 dni w podziemiach” (2024), artykuł przeczytany w pełnym istotnym zakresie. Zabezpieczenie: płótno na drewnianym bębnie, w cynkowej rurze i drewnianej skrzyni. We wrześniu ukryte w kościele św. Katarzyny; podczas zajęcia miasta przez wojska sowieckie odkryte i uszkodzone. W listopadzie wywiezione w ramach transportu handlowego, z niemiecką eskortą nieświadomą zawartości; po krótkim pobycie w Muzeum Przemysłowym ukryte w Muzeum Czapskich, gdzie przetrwało okupację. Relacje różnią się szczegółami: nie przedstawiaj dokładnych godzin, masy ani wszystkich etapów jako bezspornych. Źródło mówi o obawie przed celowym zniszczeniem, nie dowodzi rozkazu Hitlera dotyczącego tego obrazu. Nie powtarzamy anachronizmu z dostarczonego tekstu: Rzeczpospolita Obojga Narodów powstała dopiero w 1569, a hołd był w 1525; likwidacja państwa zakonnego w Prusach nie oznaczała końca całego zakonu. Powiększenie fotografii: klik/Enter; Escape zamyka.
+
+---
+
 <!-- .slide: id="pytania-do-zrodla" class="source-task" data-purpose="practice" data-layout="task-board" data-goals="G2" -->
 
 <h2>Przeczytaj umowę i znajdź odpowiedzi</h2>

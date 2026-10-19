@@ -1,0 +1,25 @@
+{
+  "id": "11-rzeczpospolita-obojga-narodow",
+  "title": "Rzeczpospolita Obojga Narodów",
+  "grade": 6,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa",
+  "duration_minutes": 38,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "presentation_mode": "slides",
+  "goalContract": {
+    "version": "1.0"
+  },
+  "status": "DO PRZEGLĄDU NAUCZYCIELA",
+  "curriculum_requirement": "IX. „Złoty wiek” w Polsce na tle europejskim. Uczeń: 7) przedstawia okoliczności zawarcia unii realnej między Polską a Litwą (1569 r.) i jej główne postanowienia.",
+  "main_question": "Jak połączyć dwa państwa, nie znosząc wszystkich różnic?",
+  "source_reviewed": false,
+  "teacher_reviewed": true,
+  "offline_checked": true,
+  "pdf_exported": false,
+  "appearance": {
+    "style": "editorial",
+    "palette": "civic-debate"
+  }
+}

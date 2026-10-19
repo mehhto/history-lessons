@@ -1,0 +1,60 @@
+{
+  "id": "03-mala-ojczyzna-lobzow",
+  "title": "Moja mała ojczyzna • Historia mojej okolicy — Łobzów i gmina Wolbrom",
+  "grade": 4,
+  "school_year": "2026/2027",
+  "curriculum_version": "nowa-2026",
+  "duration_minutes": 90,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "presentation_mode": "none",
+  "goalContract": {
+    "version": "1.0"
+  },
+  "status": "DO PRZEGLĄDU NAUCZYCIELKI",
+  "curriculum_requirement": "Dz. U. 2026 poz. 378, Historia IV–VI: 2.2–4; metoda 1.3–6; 2.5 tylko przygotowanie na przykładzie Białegostoku, bez deklaracji realizacji lokalnej legendy.",
+  "main_question": "Co warto opowiedzieć gościowi o Łobzowie i okolicy, aby mówić ciekawie, ale zgodnie ze źródłami?",
+  "source_reviewed": false,
+  "teacher_reviewed": false,
+  "offline_checked": true,
+  "pdf_exported": false,
+  "sessions": [
+    {
+      "title": "Moja mała ojczyzna",
+      "duration_minutes": 45,
+      "lesson_type": "new-knowledge"
+    },
+    {
+      "title": "Historia mojej okolicy",
+      "duration_minutes": 45,
+      "lesson_type": "practice"
+    }
+  ],
+  "print_plan": {
+    "entry": "packet.html",
+    "master_pages": 11,
+    "stations": {
+      "pages": "1–5",
+      "copies": 1
+    },
+    "worksheet": {
+      "page": 6,
+      "copies": 18
+    },
+    "projects": {
+      "pages": "7–11",
+      "copies": 1
+    },
+    "student_sheets": 28,
+    "teacher_guide": {
+      "entry": "teacher-guide.html",
+      "pages": 5
+    },
+    "key": {
+      "entry": "key.html",
+      "pages": 2
+    },
+    "total_sheets": 35
+  },
+  "review_notes": "Weryfikacja autorska źródeł w sources.md; formalny przegląd nauczycielki oczekuje. PDF celowo niewygenerowane."
+}

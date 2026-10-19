@@ -1,0 +1,124 @@
+<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data:; style-src 'unsafe-inline'; base-uri 'none'"><title>Łobzów — scenariusz krok po kroku</title><style>
+@page { size: A4 portrait; margin: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; color: #000; background: #ddd; font-family: Arial, sans-serif; }
+.page { width:210mm; height:297mm; padding:10mm 12mm; background:white; margin:8mm auto; break-after:page; font-size:12pt; line-height:1.35; }
+.page:last-child { break-after:auto; }
+h1 { font-size:21pt; line-height:1.12; margin:0 0 5mm; }
+h2 { font-size:13pt; line-height:1.18; margin:4mm 0 2mm; }
+p { margin:0 0 3.2mm; }
+ul { padding-left:6mm; margin:2mm 0 4mm; }
+li { margin-bottom:2mm; }
+img { display:block; max-width:100%; object-fit:contain; margin:2mm auto; }
+.credit { font-size:8.5pt; line-height:1.18; margin:1mm 0 3mm; }
+.station-1 { font-size:11pt; line-height:1.25; }
+.station-1 h1 { font-size:20pt; margin-bottom:3mm; }
+.station-1 img[alt^="Mapa regionów"] { height:103mm; }
+.station-1 img[alt^="Współczesna mapa"] { width:100%; height:auto; }
+.station-1 p { margin-bottom:2.3mm; }
+.station-3 { font-size:11.5pt; }
+.station-3 img { height:116mm; }
+.station-3 p { margin-bottom:2.6mm; }
+.station-4 p:nth-of-type(3) { border-left:1mm solid #000; padding:2mm 4mm; font-size:13pt; line-height:1.5; }
+.worksheet { font-size:11pt; line-height:1.25; }
+.worksheet h1 { font-size:17pt; margin-bottom:3mm; }
+.worksheet h2 { font-size:12pt; margin:4mm 0 2mm; }
+.worksheet p { margin:0 0 3mm; }
+.worksheet .writing-line { min-height:8mm; font-size:0; border-bottom:.25mm dotted #000; margin-bottom:1mm; width:100%; }
+.worksheet .recap { font-size:9pt; line-height:1.25; border-top:.3mm solid #000; padding-top:2mm; margin-top:3mm; }
+.project { display:flex; flex-direction:column; font-size:11pt; line-height:1.3; }
+.project h1 { font-size:20pt; }
+.project .workspace { flex:1; min-height:140mm; border-top:.3mm solid #000; margin-top:2mm; }
+.teacher { font-size:10.4pt; line-height:1.3; }
+.teacher h1 { font-size:19pt; }
+.teacher h2 { font-size:12.2pt; margin:3mm 0 2mm; }
+.teacher p { margin-bottom:2.5mm; }
+.teacher li { margin-bottom:1.3mm; }
+.key { font-size:11pt; line-height:1.3; }
+.key h1 { font-size:20pt; }
+.key h2 { margin:3mm 0 1.8mm; }
+.key p { margin-bottom:2.6mm; }
+.print-help { max-width:210mm; margin:6mm auto; padding:4mm; background:white; font-size:12pt; }
+a { color:#000; }
+@media print { body { background:white; } .page { margin:0; } .print-help { display:none; } }
+</style></head><body><aside class="print-help">Tylko dla prowadzącej. 5 stron. Druk jednostronny A4, 100%, bez nagłówków i stopek. <a href="packet.html">Materiały uczniowskie</a> • <a href="key.html">Osobny klucz — 2 strony</a>.</aside><main><section class="page teacher" data-page="1"><div class="content"><h1>Przygotowanie • zanim wejdą uczniowie</h1>
+<p><strong>Dwie oddzielne lekcje IV po 45 minut; 18 osób.</strong> Pierwsza: „Moja mała ojczyzna”. Druga: „Historia mojej okolicy”. Pomiędzy nimi jest inna godzina. Wszystko potrzebne do obu spotkań zostaje w szkole.</p>
+<h2>Co wydrukować</h2>
+<ul>
+<li>Z pliku <strong>packet.html strony 1–5 i 7–11: po 1 egzemplarzu</strong>. To 5 arkuszy stacji i 5 arkuszy projektu.</li>
+<li><strong>Stronę 6: 18 egzemplarzy</strong> (albo worksheet.html, również 18). Nie drukuj obu wersji karty.</li>
+<li>Ten przewodnik: <strong>5 stron</strong>; oddzielny <strong>key.html: 2 strony</strong>. Klucza nie kładź na stolikach uczniowskich.</li>
+<li>Razem: 5 + 18 + 5 = <strong>28 stron dla uczniów</strong>, z przewodnikiem i kluczem <strong>35 stron</strong>. student-summary.md nie wymaga osobnego wydruku.</li>
+</ul>
+<p><strong>Ustawienia:</strong> A4, pionowo, jednostronnie, skala 100%, bez nagłówków i stopek przeglądarki. Czerń i biel. Żadnego dopasowywania do mniejszej kartki. HTML ma wbudowane obrazy; po pobraniu można go otworzyć bez Internetu.</p>
+<h2>Przygotuj salę</h2>
+<p>Ustaw pięć stolików lub pięć miejsc pracy i połóż po jednym arkuszu stacji. Numer jest na arkuszu, nie potrzeba dodatkowych oznaczeń. Zaplanuj grupy: 1 — cztery osoby, 2 — cztery, 3 — cztery, 4 — trzy, 5 — trzy. Przydziel je według miejsc lub ustalonego wcześniej porządku, nie przez losowanie karteczek. Numer grupy to numer stacji początkowej; nie zmienia się po przejściu.</p>
+<p>Wystarczą długopisy. Kredki są dodatkiem na drugiej lekcji, nigdy warunkiem. Odmierzaj czas zegarem w sali lub zwykłym zegarkiem. Nie trzeba telefonu, rzutnika, laptopa, podręczników, kopert, cięcia ani kleju. Jeśli jest tablica, zapisz: <strong>1 → 2 → 3 → 4 → 5 → 1; 4 min pracy + 1 min przejścia</strong>. Jeśli nie ma tablicy, odczytaj trasę i pokaż kolejne stoliki.</p>
+<h2>Zachowanie materiałów</h2>
+<p>Po pierwszej lekcji zbierz podpisane karty w <strong>pięć stosów według numeru grupy</strong>, bez kopert. Zachowaj także pięć arkuszy stacji. Na drugiej godzinie odtworzysz te same zespoły; rozłożysz te same źródła w sali i zwrócisz własne karty. Arkusze projektu mają też wydrukowane minimum wiadomości — żadna grupa nie będzie zdana na pamięć lub zabrany materiał.</p>
+<h2>Trudne momenty i notatki nauczyciela</h2>
+<p>Wskazówki są przy właściwych minutach: wzmianka nie dowodzi daty powstania; legenda nie musi zawierać magii; mural nie jest portretem z epoki; ochronę zgłasza się opiekunowi. Pełne modele i typowe błędy są w oddzielnym kluczu.</p>
+<p><strong>Przed wejściem sprawdź:</strong> 18 kart, pięć różnych stacji, pięć różnych stron projektu. Na razie rozdaj tylko karty; strony projektu zatrzymaj do drugiej lekcji.</p></div></section>
+<section class="page teacher" data-page="2"><div class="content"><h1>Lekcja 1 • od otwarcia do końca stacji</h1>
+<h2>0:00–5:00 • Co pokazać gościowi?</h2>
+<p><strong>0:00–1:00.</strong> Powiedz: „Wyobraźcie sobie, że przyjeżdża do nas ktoś, kto nigdy nie był w Łobzowie ani Wolbromiu. Co chcielibyście mu pokazać? Nie szukamy jednej poprawnej odpowiedzi”. Daj chwilę ciszy na własny pomysł.</p>
+<p><strong>1:00–3:00.</strong> Poproś o krótką rozmowę z osobą obok. Powiedz: „Każdy mówi jedno miejsce i dlaczego je wybrał”. Oczekiwane przykłady: szkoła, las, zalew, rynek, miejsce ważne dla rodziny. Nie oceniaj wartości rodzinnych wspomnień ani nie wymagaj osobistego zwierzenia.</p>
+<p><strong>3:00–5:00.</strong> Zbierz trzy propozycje. Powiedz: „Te bliskie miejsca i ludzie tworzą naszą małą ojczyznę. Dziś sprawdzimy, jak opowiedzieć o niej nie tylko ciekawie, ale także zgodnie ze źródłami”. Na tablicy, jeśli dostępna, zapisz tytuł „Moja mała ojczyzna” oraz „miejsce • ludzie • pamięć”.</p>
+<h2>5:00–10:00 • Wyjaśnienie, karty, start</h2>
+<p><strong>5:00–7:00.</strong> Powiedz: „Region jest większy niż miejscowość. Nasza okolica leży w historycznej Małopolsce. To nie to samo co obecne województwo. Regiony różnią się historią i krajobrazem, ale też mową, potrawami, strojami i zwyczajami. Podręcznik pokazuje np. stroje krakowski i łowicki oraz kolędowanie. Nie wszyscy mieszkańcy noszą strój ludowy czy mówią tak samo”. Zapytaj: „Czy w jednej Polsce mogą być różne zwyczaje?”. Spodziewane: „Tak”. Dodaj: „Ta różnorodność nie przeszkadza nam tworzyć wspólnego kraju”.</p>
+<p><strong>7:00–8:00.</strong> Skieruj wybrane osoby do pięciu grup (4, 4, 4, 3, 3). Rozdaj po jednej karcie. Powiedz: „Podpisz kartę i wpisz numer stolika, przy którym zaczynasz. To Twój numer grupy także na następnej lekcji”. Poczekaj na podpisy.</p>
+<p><strong>8:00–10:00.</strong> Powiedz i pokaż: „Na każdym stoliku najpierw czytamy informację, potem rozmawiamy, a każdy zapisuje własną krótką odpowiedź w odpowiednim numerze swojej karty. Można czytać na głos. Po czterech minutach mówię «kończymy», a przez minutę przechodzimy do kolejnego numeru. Z piątki idziemy do jedynki. Zabieramy kartę i długopis; arkusz źródeł zostaje. Nie piszemy po źródłach”. Sprawdź: „Dokąd idzie grupa stojąca przy piątce?”. Odpowiedź: „Do jedynki”.</p>
+<h2>10:00–35:00 • Pięć rund, bez ukrytych minut</h2>
+<ul>
+<li><strong>10:00–14:00 praca; 14:00–15:00 przejście.</strong> Powiedz: „Czytamy i robimy zadanie z naszego stolika”. Przy mapie sprawdź, czy uczniowie widzą obie miejscowości, nie rozwiązuj za nich wyboru.</li>
+<li><strong>15:00–19:00 praca; 19:00–20:00 przejście.</strong> Przypomnij: „Numer grupy zostaje; teraz wypełniasz pole nowej stacji”.</li>
+<li><strong>20:00–24:00 praca; 24:00–25:00 przejście.</strong> Sprawdź, czy każdy ma własny zapis; wolniej piszącym pozwól na hasła.</li>
+<li><strong>25:00–29:00 praca; 29:00–30:00 przejście.</strong> Przy legendzie nie każ szukać magii na siłę. Zapytaj: „Co mówi dokładnie ten fragment?”.</li>
+<li><strong>30:00–34:00 praca; 34:00–35:00 powrót do miejsc początkowych.</strong> Zapowiedz: „Ostatnia runda; za chwilę porównamy odkrycia”.</li>
+</ul>
+<p>Na każdym sygnale: „Dokończ wyraz. Źródła zostają. Przechodzimy o jeden numer dalej”. Nie dokładaj szóstej minuty na zbieranie. Ostatnia minuta jest już powrotem.</p></div></section>
+<section class="page teacher" data-page="3"><div class="content"><h1>Lekcja 1 • synteza i zamknięcie</h1>
+<h2>35:00–42:00 • Co już możemy powiedzieć gościowi?</h2>
+<p><strong>35:00–36:00.</strong> Powiedz: „Wracamy do pytania o gościa. Teraz obok pomysłu mamy dowody. W jakim regionie leży nasza okolica?”. Oczekiwane: Małopolska; poproś o dwa inne regiony z mapy, np. Mazowsze i Wielkopolska. Sprostuj utożsamienie regionów z województwami.</p>
+<p><strong>36:00–37:30.</strong> Zapytaj: „Czy zapis z 1323 roku mówi, że wieś właśnie wtedy powstała?”. Spodziewane: „Nie, mogła istnieć wcześniej”. Powiedz: „To data najstarszej wzmianki wskazanej w opracowaniu. Łobzów świętował w 2023, Wolbrom szykuje jubileusz w 2027”. Na tablicy zapisz tylko dwie pary: <strong>Łobzów: 1323 → 2023; Wolbrom: 1327 → 2027</strong>. Obok pierwszej dopisz „wzmianka”, przy drugiej „nadanie”. Nie podawaj 1323 jako pewnej daty założenia.</p>
+<p><strong>37:30–39:00.</strong> Zapytaj: „Kogo i w jaki sposób upamiętnia mural? Gdzie sprawdzicie więcej?”. Spodziewane: Łokietka; malowidło na ścianie; biblioteka/archiwum. Powiedz: „Król wsparł rozwój tej okolicy nadaniem. Zdjęcie pokazuje, jak dziś o nim pamiętamy. Dokumentów szuka się w archiwum, książek w bibliotece, zbiory objaśnia muzeum. Dom kultury pomaga poznawać tradycje. W Łobzowie działa zespół «Łobzowianie»”. Przyjmij również sensowne pytanie do opiekuna obiektu.</p>
+<p><strong>39:00–40:00.</strong> Zapytaj: „Czy w naszym fragmencie legendy trzeba było znaleźć magię?”. Oczekiwane: „Nie”. Powiedz: „Polowanie i budowa dworu mogły się zdarzyć, ale legenda sama ich nie potwierdza. Ten tekst dotyczy Białegostoku, nie naszej wsi”. Nie zamieniaj niepotwierdzonej rozmowy w niemożliwe zdarzenie.</p>
+<p><strong>40:00–41:00.</strong> Zapytaj: „Dlaczego nie przemalujemy tablicy sami?”. Oczekiwane: możemy ją zniszczyć; powiadomimy dorosłego lub opiekuna. Dodaj: „Kościół św. Katarzyny jest przykładem zabytku; nowa tablica jubileuszowa jest pamiątką, nie musi być zabytkiem”.</p>
+<p><strong>41:00–42:00.</strong> Krótkie połączenie z krajem: „11 listopada obchodzimy Narodowe Święto Niepodległości. Pamiętamy o odzyskaniu przez Polskę niepodległości w 1918 roku. Możemy uczestniczyć w uroczystości w naszej okolicy i jednocześnie pamiętać o całej Polsce. To inne wydarzenie niż jubileusz miejscowości”. Zapytaj: „Czy lokalny jubileusz i święto całego kraju oznaczają to samo?”. Spodziewane: „Nie”. Nie rozpoczynaj wykładu o zaborach.</p>
+<h2>42:00–45:00 • Każdy kończy sam, materiały zostają</h2>
+<p><strong>42:00–43:30.</strong> Powiedz: „Dokończ sam zdanie «Moja mała ojczyzna jest ważna, bo…». Użyj własnego przykładu. Nie trzeba pisać długo”. Przejdź między stolikami; nie dyktuj wspólnej odpowiedzi.</p>
+<p><strong>43:30–45:00.</strong> Powiedz: „Sprawdź podpis i numer grupy. Zostawcie karty na pięciu stosach według grup. Na następnej historii oddam każdemu tę samą kartę. Nie musicie niczego przygotowywać w domu ani na przerwie”. Zbierz pięć stosów i arkusze stacji. Nie zbieraj kart według ostatnio odwiedzonej stacji. Koniec pierwszej lekcji.</p>
+<p><strong>Pomoc bez nowego zadania:</strong> przy wolnym tempie kolega czyta źródło na głos, uczeń zapisuje hasło lub dyktuje nauczycielce. Przy opóźnieniu skróć liczbę wypowiedzi w syntezie, ale wypowiedz wszystkie kluczowe rozróżnienia i zachowaj wyjście. Nie wymagaj dokańczania podczas innej godziny.</p></div></section>
+<section class="page teacher" data-page="4"><div class="content"><h1>Lekcja 2 • odtworzenie pracy i tworzenie stron</h1>
+<h2>0:00–4:00 • Wracamy po innej godzinie</h2>
+<p><strong>0:00–1:30.</strong> Powiedz: „Wracamy do tych samych pięciu grup. Odszukajcie miejsca początkowe”. Zwróć uczniom podpisane karty z pięciu stosów. Rozłóż pięć arkuszy stacji na dostępnych stolikach; nie potrzeba ich powielać.</p>
+<p><strong>1:30–4:00.</strong> Powiedz: „Przeczytajcie swoje odpowiedzi i zapamiętajcie jeden fakt, który warto pokazać gościowi”. Daj pół minuty na ciche przypomnienie, potem poproś o dwie odpowiedzi. Pytania naprowadzające: „Co oznacza 1323?” — wzmiankę; „Co pokaże nam fotografia muralu?” — współczesne upamiętnienie. Jeśli jest tablica, zapisz „Historia mojej okolicy — miniprzewodnik”.</p>
+<h2>4:00–9:00 • Jedna strona na grupę, jasny podział</h2>
+<p><strong>4:00–5:00.</strong> Rozdaj po jednym arkuszu projektu zgodnie z numerem grupy: 1 Łobzów; 2 Wolbrom; 3 co pokazać; 4 jak poznajemy przeszłość; 5 jak dbamy. Powiedz: „Pięć różnych stron razem tworzy nasz miniprzewodnik. Tytuł i informacje są już na Waszej stronie. Nie trzeba niczego szukać w telefonie”.</p>
+<p><strong>5:00–7:00.</strong> Powiedz: „Na stronie mają znaleźć się: tytuł, dwa sprawdzone fakty, prosty rysunek i jedno zdanie, dlaczego to jest ważne. Najpierw ustalcie fakty, dopiero potem rysujcie. Użyjcie wiadomości wydrukowanych u góry. Arkusze stacji też są dostępne — pożyczony arkusz odkładamy, aby ktoś inny mógł z niego skorzystać”. Pokaż pustą część arkusza, nie rozdawaj dodatkowych kartek.</p>
+<p><strong>7:00–9:00.</strong> Powiedz: „Każdy ma wykonać własny fragment: ktoś zapisze pierwszy fakt, ktoś drugi, ktoś rysunek, ktoś znaczenie. W trójce jedna osoba może połączyć krótki zapis i zdanie o znaczeniu. Podzielcie pustą powierzchnię według własnego pomysłu. Ustalcie też, kto co powie w krótkim wystąpieniu. Nie trzeba ustanawiać ról ani wybierać jednej osoby, która zrobi wszystko”. Zapytaj jedną grupę: „Co robicie przed rysowaniem?”. Oczekiwane: wybieramy dwa fakty. Przypomnij: „Rysunek nie jest oceniany za talent”.</p>
+<h2>9:00–27:00 • 18 minut pracy</h2>
+<p><strong>9:00–13:00.</strong> Powiedz: „Wybierzcie dwa fakty. Sprawdźcie, czy nie pomyliliście miejsc, dat lub wzmianki z założeniem”. Podejdź do grup 1 i 2, poproś o wskazanie, skąd pochodzi ich zdanie. Zatrzymaj „Łobzów powstał dokładnie w 1323”.</p>
+<p><strong>13:00–18:00.</strong> Powiedz: „Teraz zapiszcie fakty tak, żeby gość je zrozumiał. Każdy zaczyna własny fragment”. Sprawdź wszystkie grupy, czy pisze nie tylko jedna osoba. W grupie 4 dopytaj: „Czy fotografia muralu jest dokumentem z 1327?”. Spodziewane: nie. W grupie 5: „Kto decyduje o naprawie?”. Spodziewane: opiekun/specjalista, nie dzieci.</p>
+<p><strong>18:00–23:00.</strong> Powiedz: „Dodajcie prosty rysunek i wyjaśnienie znaczenia. To może być symbol, nie wymyślamy dokładnego dawnego widoku”. Osobom szybko kończącym: „Sprawdźcie, czy oba fakty są na temat i czy każdy coś zrobił”.</p>
+<p><strong>23:00–25:00.</strong> Powiedz: „Na własnej karcie zapisz w kilku słowach swój wkład. Wspólnie ustalcie, jak opowiecie o stronie w najwyżej półtorej minuty”. Każdy może powiedzieć jedno zdanie; uczeń nieśmiały może wskazać swój fragment, gdy kolega odczytuje jego zdanie.</p>
+<p><strong>25:00–27:00.</strong> Powiedz: „Dwie minuty na sprawdzenie: tytuł, dwa fakty, rysunek, dlaczego ważne. Kończymy nawet prosty rysunek; nie dokładamy szczegółów”. Ustaw strony w kolejności grup. Nie przyklejaj i nie każ wycinać instrukcji — miniprzewodnik to pięć luźnych stron.</p></div></section>
+<section class="page teacher" data-page="5"><div class="content"><h1>Lekcja 2 • prezentacje, słuchanie i wyjście</h1>
+<h2>27:00–39:00 • Pięć stron dla gościa</h2>
+<p><strong>27:00–28:00.</strong> Powiedz: „Każda grupa pokazuje stronę i mówi do 90 sekund. Potem jedno krótkie pytanie. Słuchacze wybierają jedno nowe odkrycie z dowolnej innej grupy i zapisują je w swoim polu. Nie przepisujcie wszystkich wystąpień”. Grupy mogą pokazywać arkusz stojąc przy stoliku; nie wymagaj czytelności małego tekstu z końca sali — autorzy odczytują fakty.</p>
+<p><strong>28:00–30:00 — grupa 1; 30:00–32:00 — grupa 2; 32:00–34:00 — grupa 3; 34:00–36:00 — grupa 4; 36:00–38:00 — grupa 5.</strong> W każdym okienku: do 90 s opowieści, do 20 s na jedno pytanie i odpowiedź, ok. 10 s na zmianę. Po 90 sekundach powiedz: „Dziękuję, teraz jedno krótkie pytanie”. Jeżeli uczniowie nie pytają, wybierz jedno z poniższych:</p>
+<ul>
+<li>Grupa 1: „Czego nie dowodzi sama wzmianka?”. Oczekiwane: dokładnej daty powstania wsi.</li>
+<li>Grupa 2: „Dlaczego na stronie jest 2027?”. Oczekiwane: rok zapowiedzianego 700-lecia Wolbromia.</li>
+<li>Grupa 3: „Dlaczego wybrane miejsce warto pokazać?”. Przyjmij uzasadnienie związane z krajobrazem, tradycją lub zabytkiem, nie żądaj jednej formuły.</li>
+<li>Grupa 4: „Gdzie sprawdzimy dawny dokument?”. Oczekiwane: w archiwum; biblioteka pomaga znaleźć opracowania i drogę do dokumentu.</li>
+<li>Grupa 5: „Dlaczego nie wystarczy chcieć dobrze, by naprawiać zabytek?”. Oczekiwane: można go uszkodzić, potrzebny opiekun i fachowa pomoc.</li>
+</ul>
+<p>Przy błędzie zatrzymaj jedno zdanie, nie całe wystąpienie: „To poprawimy: 1323 to wzmianka, a nie dowód dokładnej daty powstania”. Poproś o poprawkę długopisem na stronie. Nie zabieraj wszystkim czasu na rozbudowany quiz.</p>
+<p><strong>38:00–39:00.</strong> Powiedz: „Jeżeli jeszcze nie zapisałeś nowego odkrycia od innej grupy, zrób to teraz. Wystarczy jeden fakt”. Sprawdź, czy są indywidualne zapisy także u osób, które nie przemawiały.</p>
+<h2>39:00–45:00 • Domknięcie, bez zadania na przerwę</h2>
+<p><strong>39:00–41:00.</strong> Pokaż pięć stron obok siebie. Powiedz: „Nasz gość dostał nie tylko listę atrakcji. Wie, gdzie jesteśmy, co wiemy o przeszłości i skąd to wiemy, co upamiętniamy oraz jak chronimy ślady”. Zapytaj: „Co łączy wszystkie strony?”. Oczekiwane: dotyczą naszej okolicy, ludzi i pamięci; opierają się na sprawdzonych informacjach. Dopowiedz, jeśli potrzeba: „Różne miejsca i zwyczaje tworzą małe ojczyzny, a one należą do wspólnej Polski”.</p>
+<p><strong>41:00–43:00.</strong> Powiedz: „Teraz sam dokończ ostatnie zdania na własnej karcie: jeden fakt o okolicy, gdzie można go sprawdzić i jeden sposób dbania. Możesz korzystać z tego, co dziś usłyszałeś, ale zapisz własną odpowiedź”. To bilet wyjścia, nie ocena rysunku grupy. Przyjmij 2–3 krótkie hasła, jeśli uczeń wolno pisze.</p>
+<p><strong>43:00–44:00.</strong> Odczytaj dwie anonimowe przykładowe odpowiedzi lub poproś o dwóch ochotników. Powiedz: „Dobra odpowiedź łączy fakt ze źródłem, a troskę o miejsce z bezpiecznym działaniem”. Nie dyktuj modelu przed zakończeniem zapisu.</p>
+<p><strong>44:00–45:00.</strong> Zbierz pięć stron projektu. Powiedz: „Karty osobiste zostają teraz z Wami jako notatka z obu lekcji. Niczego nie kończycie na przerwie i niczego nie trzeba przynosić”. Przed oddaniem karty szybko zobacz ostatnie pola; dokładniejsza ocena może być ustną informacją na kolejnej lekcji. Strony projektu zachowaj do pokazania w klasie bez konieczności klejenia.</p>
+<p><strong>Nieobecności / wolne tempo:</strong> zachowaj numery grup. Uczeń, który opuścił pierwszą lekcję, dostaje swoją niewykorzystaną kartę z puli 18 i pracuje z wydrukowanym minimum na stronie projektu. Przy trzech osobach połącz dwa krótkie zadania; przy opóźnieniu wybierz prostszy rysunek i krótsze pytania. Nie skracaj wyjścia i nie dopisuj zadania domowego.</p></div></section></main></body></html>

@@ -1,0 +1,99 @@
+@font-face { font-family: "RON Sans"; src: url("../../../template/presentation/fonts/collection/atkinson-hyperlegible-400.ttf"); font-weight:400; }
+@font-face { font-family: "RON Sans"; src: url("../../../template/presentation/fonts/collection/atkinson-hyperlegible-700.ttf"); font-weight:700; }
+@font-face { font-family: "RON Serif"; src: url("../../../template/presentation/fonts/collection/alegreya-700.ttf"); font-weight:700; }
+.reveal { --font-body:"RON Sans", sans-serif; --font-heading:"RON Serif", serif; font-family:var(--font-body); font-size:30px; }
+html[data-style="editorial"] .reveal { --font-heading:"RON Serif",serif; }
+.reveal h1,.reveal h2,.reveal h3 { font-family:var(--font-heading); text-transform:none; }
+.reveal h2 { font-size:46px; line-height:1.1; margin:0 0 22px; }
+.reveal p { margin:0 0 20px; line-height:1.2; }
+.reveal strong { color:inherit; font-weight:700; }
+.reveal .slides section .source-figure { margin:0; background:transparent; border:0; box-shadow:none; }
+.reveal .slides section img { margin:0; object-fit:contain; box-shadow:none; border:0; background:transparent; }
+.reveal .slides section figcaption { font:20px/1.15 var(--font-body); color:var(--color-text); margin:8px 0 0; background:var(--color-surface); padding:4px 0; }
+.reveal .slides section > .slide-content { display:block; align-content:normal; padding:36px 52px; }
+.reveal .eyebrow { font:700 22px var(--font-body); text-transform:uppercase; letter-spacing:.05em; }
+/* Reveal computes scale from the window, not the narrowed notes area. */
+.reveal.show-notes .slides { transform:translate(-50%,-50%) scale(min(calc(72vw / 1280px),calc(96vh / 720px))) !important; }
+.reveal .definition { padding:15px 20px; background:var(--color-surface); border-left:6px solid var(--color-accent); font-size:29px; }
+.reveal .date { font:700 35px var(--font-heading); border-bottom:4px solid var(--color-evidence); padding-bottom:8px; }
+.reveal #otwarcie { background:var(--color-ink,var(--color-text)); }
+.reveal #otwarcie > .slide-content { padding:0; border:0; }
+#otwarcie .hero-art { position:absolute; inset:0 0 190px; }
+.reveal #otwarcie .hero-art img { width:1280px; height:530px; object-fit:cover; object-position:center 35%; }
+#otwarcie .hero-title { position:absolute; left:0; bottom:0; width:100%; box-sizing:border-box; padding:22px 52px 24px; background:var(--color-accent); color:var(--color-surface); display:grid; grid-template-columns:1.15fr 1fr; gap:0 30px; align-items:end; }
+.reveal #otwarcie h1 { color:var(--color-surface); font-size:55px; line-height:.98; margin:0; grid-row:2/4; }
+#otwarcie .eyebrow { grid-column:1/-1; margin-bottom:12px; }
+#otwarcie .hero-title > p:not(.eyebrow) { font-size:30px; margin:0 0 10px; }
+#otwarcie .hero-title .art-label { font-size:20px!important; }
+.two-events { display:grid; grid-template-columns:1fr 1fr; gap:42px; }
+#krewo .definition { margin:12px 0; }
+.reveal #krewo .arras-band img { width:1050px; height:250px; }
+.reveal #krewo .arras-band figure { text-align:center; }
+#przyczyny .cause-layout { display:grid; grid-template-columns:1fr 300px; gap:32px; }
+#przyczyny .cause-row { display:grid; grid-template-columns:170px 1fr; gap:20px; padding:18px 0; border-top:2px solid var(--color-evidence); }
+#przyczyny .cause-row b { font-family:var(--font-heading); font-size:33px; }
+.reveal #przyczyny img { width:290px; height:470px; }
+.reveal #spor > .slide-content { display:grid; grid-template-columns:350px 1fr; grid-template-rows:auto 1fr; gap:0 42px; }
+#spor h2 { grid-column:1/-1; }
+.reveal #spor img { width:310px; height:450px; }
+#spor .debate-text { align-self:center; }
+#spor .debate-text p { border-left:5px solid var(--color-evidence); padding-left:20px; margin-bottom:28px; }
+#lublin .union-layout { display:grid; grid-template-columns:1fr 550px; gap:32px; align-items:center; }
+#lublin .large-line { font:700 41px/1.1 var(--font-heading); }
+.reveal #lublin img { width:550px; height:440px; }
+#wspolne .institutions { display:grid; grid-template-columns:1fr 520px; gap:35px; align-items:center; }
+.reveal dl { margin:0; }
+.reveal dt { font-weight:700; font-size:31px; margin:10px 0 2px; }
+.reveal dd { margin:0 0 12px; font-size:27px; line-height:1.15; }
+.reveal #wspolne img { width:520px; height:440px; }
+.reveal #odrebne { background:var(--color-signal); }
+#odrebne .separate-layout { display:grid; grid-template-columns:510px 1fr; gap:42px; align-items:center; }
+#odrebne .arms { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+.reveal #odrebne img { width:235px; height:350px; }
+.reveal #odrebne figcaption { background:transparent; }
+.reveal #diagram-praca > .slide-content { padding:26px 48px; }
+.reveal #diagram-praca h2 { margin-bottom:8px; }
+.reveal #diagram-praca .student-task,.reveal #pytania-zrodlo .student-task,.reveal #bilet .student-task { display:block; padding:0; border:0; background:transparent; box-shadow:none; }
+#diagram-praca .student-task > p { font-size:26px; margin-bottom:4px; }
+.reveal #diagram-praca img { width:1150px; height:495px; }
+#diagram-praca .reading-cue { font-size:26px; }
+.reveal #pytania-zrodlo { background:var(--color-accent); }
+.reveal #pytania-zrodlo h2 { color:var(--color-surface); }
+#pytania-zrodlo .source-task { background:var(--color-surface); padding:26px 32px; }
+.reveal #pytania-zrodlo ol { display:block; margin:0 0 25px 38px; font-size:36px; }
+#pytania-zrodlo li { padding-left:12px; margin:0 0 22px; }
+.reveal #pytania-zrodlo img { width:1050px; height:130px; }
+.reveal #pytania-zrodlo .source-task > p { font-size:27px; }
+.reveal #akt-zrodlo > .slide-content { display:block; padding:28px 48px; align-content:normal; background:var(--color-surface); }
+.reveal #akt-zrodlo h2 { font-size:41px; margin-bottom:14px; }
+#akt-zrodlo .source-intro { font-size:24px; line-height:1.18; margin-bottom:18px; }
+#akt-zrodlo .act-text p { font-size:28px; line-height:1.3; margin-bottom:20px; }
+#akt-zrodlo .act-footer { display:grid; grid-template-columns:1fr 180px; gap:20px; align-items:center; }
+#akt-zrodlo .source-credit { font-size:20px; line-height:1.12; margin:0; }
+.reveal #akt-zrodlo .act-footer img { width:180px; height:60px; }
+.reveal #mapa-1569 > .slide-content, .reveal #mapa-jezykow > .slide-content { padding:8px; }
+.reveal #mapa-1569 figure, .reveal #mapa-jezykow figure { height:704px; width:1264px; }
+.reveal #mapa-1569 img, .reveal #mapa-jezykow img { width:1264px; height:704px; object-fit:contain; }
+#mieszkancy .residents { display:grid; grid-template-columns:1fr 345px; gap:32px; }
+#mieszkancy .community-list { margin:0 0 18px 26px; font-size:26px; line-height:1.17; }
+#mieszkancy .community-list li { margin-bottom:10px; }
+#mieszkancy .people { font:700 29px/1.1 var(--font-heading); padding:0 0 8px; border-bottom:4px solid var(--color-evidence); }
+.reveal #mieszkancy img { width:345px; height:310px; }
+#mieszkancy .residents p:not(.people) { font-size:27px; }
+#mieszkancy .definition { margin-top:25px; }
+.reveal #diagram-model > .slide-content { padding:20px 45px; }
+.reveal #diagram-model h2 { font-size:39px; margin-bottom:8px; }
+#diagram-model .synthesis-line { font-size:28px; margin:0; }
+.reveal #diagram-model img { width:1180px; height:540px; }
+#diagram-model .model-caveat { font-size:23px; margin:0; }
+.reveal #bilet > .slide-content { display:block; padding:56px 64px; border-left:14px solid var(--color-evidence); max-width:none; background:var(--color-signal); }
+#bilet .exit-composition { display:grid; grid-template-columns:1fr 230px; gap:45px; align-items:center; }
+.reveal #bilet ol { margin:15px 0 40px 36px; }
+#bilet li { margin-bottom:30px; padding-left:10px; font-size:35px; }
+.reveal #bilet img { height:160px; width:150px; }
+#bilet .exit-arms { display:flex; gap:20px; flex-direction:column; align-items:center; }
+#bilet .closing { font:700 32px/1.2 var(--font-heading); }
+#zrodla .credits-grid { display:grid; grid-template-columns:1fr 1fr; gap:40px; }
+#zrodla .credits-grid p { font-size:25px; line-height:1.2; margin-bottom:22px; }
+.reveal #zrodla img { width:535px; height:185px; }
+#zrodla a { text-decoration:underline; }

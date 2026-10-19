@@ -24,13 +24,13 @@ test('every active lesson follows its declared presentation mode and appearance'
   const lessons = await lessonDirectories();
   for (const lesson of lessons) {
     const metadata = JSON.parse(await readFile(path.join(lesson, 'metadata.json'), 'utf8'));
-    assert.equal(typeof metadata.appearance?.style, 'string', lesson);
-    assert.equal(typeof metadata.appearance?.palette, 'string', lesson);
     const files = await readdir(lesson);
     if (metadata.presentation_mode === 'none') {
       for (const name of ['slides.md', 'index.html', 'lesson.css']) assert.equal(files.includes(name), false, `${lesson}: unexpected ${name}`);
       continue;
     }
+    assert.equal(typeof metadata.appearance?.style, 'string', lesson);
+    assert.equal(typeof metadata.appearance?.palette, 'string', lesson);
     const [html, slidesText] = await Promise.all([readFile(path.join(lesson, 'index.html'), 'utf8'), readFile(path.join(lesson, 'slides.md'), 'utf8')]);
     assert.match(html, /presentation\/boot\.mjs/, lesson);
     assert.doesNotMatch(html, /Reveal\.initialize\s*\(/, lesson);

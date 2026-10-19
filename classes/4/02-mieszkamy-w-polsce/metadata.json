@@ -1,0 +1,19 @@
+{
+  "id": "02-mieszkamy-w-polsce",
+  "title": "Mieszkamy w Polsce — warsztat bez rzutnika",
+  "grade": 4,
+  "school_year": "2026/2027",
+  "curriculum_version": "nowa-2026",
+  "duration_minutes": 45,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "presentation_mode": "none",
+  "goalContract": { "version": "1.0" },
+  "status": "DO WERYFIKACJI NAUCZYCIELA",
+  "curriculum_requirement": "Wspólnota państwowa, pkt 3.1, 3.2 i 3.4: symbole państwowe i ich znaczenie; znaczenie i przykłady świąt państwowych; symbole Unii Europejskiej i ich znaczenie dla mieszkańców Polski.",
+  "main_question": "Co nas łączy, chociaż nie wszyscy się znamy?",
+  "source_reviewed": true,
+  "teacher_reviewed": false,
+  "offline_checked": true,
+  "pdf_exported": false
+}

@@ -7,7 +7,7 @@ const dir = new URL('../classes/6/10-ostatni-jagiellonowie/', import.meta.url);
 test('Ostatni Jagiellonowie: pełne źródło, relacje rodzinne, mapy przed narracją i notatki', async () => {
   const slides = await readFile(new URL('slides.md', dir), 'utf8');
   const blocks = slides.split(/\r?\n---\r?\n/);
-  assert.equal(blocks.length, 21);
+  assert.equal(blocks.length, 22);
   assert.equal(blocks.length, blocks.filter(b => /^notes:/m.test(b)).length);
   assert.equal(auditSlideContract(parseSlideDirectives(slides)).errors.length, 0);
   const genealogy = blocks.find(b => b.includes('id="rodzina"'));
@@ -18,6 +18,12 @@ test('Ostatni Jagiellonowie: pełne źródło, relacje rodzinne, mapy przed narr
   for (const [map, explanation] of [['mapa-prus','prusy-1466'],['mapa-wschodu','moskwa-1514'],['mapa-inflant','inflanty-wojna']]) {
     assert.ok(slides.indexOf(`id="${map}"`) < slides.indexOf(`id="${explanation}"`));
   }
+  const rescue = blocks.find(b => b.includes('id="ocalenie-obrazu"'));
+  assert.match(rescue, /hold-pruski-strazacy.jpg/);
+  assert.match(rescue, /Ćwiczenia strażackie[\s\S]*1930/);
+  assert.match(rescue, /Muzeum Czapskich/);
+  assert.ok(slides.indexOf('id="matejko"') < slides.indexOf('id="ocalenie-obrazu"'));
+  assert.ok(slides.indexOf('id="ocalenie-obrazu"') < slides.indexOf('id="pytania-do-zrodla"'));
   const source = blocks.filter(b => b.includes('id="dokument-1525"'));
   assert.equal(source.length, 1);
   assert.match(source[0], /wtedy \[książę\] Albrecht/);

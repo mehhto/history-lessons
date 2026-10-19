@@ -1,0 +1,9 @@
+@page { size:A4 landscape; margin:10mm; }
+* { box-sizing:border-box; }
+html,body { margin:0; background:white; color:black; font-family:Arial,sans-serif; }
+main { width:277mm; height:190mm; margin:auto; }
+h1 { font-size:23px; margin:0 0 3mm; line-height:1.1; }
+p { font-size:17px; line-height:1.2; margin:2mm 0; }
+img { display:block; width:275mm; height:149mm; object-fit:contain; filter:grayscale(1); }
+small { display:block; font-size:12px; line-height:1.2; margin-top:1mm; }
+@media screen { body { padding:20px; background:#ddd; } main { background:white; padding:0; box-shadow:0 1px 8px #888; } }

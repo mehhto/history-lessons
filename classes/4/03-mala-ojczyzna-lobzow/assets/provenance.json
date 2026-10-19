@@ -1,0 +1,63 @@
+{
+  "access_date": "2026-10-18",
+  "region_map": {
+    "author": "Krystian Chariza i zespół",
+    "license": "CC BY 3.0",
+    "page": "https://zpe.gov.pl/a/moje-miejsce-na-ziemi/DQDLFg0Gq",
+    "url": "https://static.zpe.gov.pl/portal/f/res-minimized/R3g7OcGzHJ0kk/4/jaJesZ2WyEuMuqgUdonqcSb49nTRFXLk.jpg"
+  },
+  "mural": {
+    "author": "Kamil Czaiński",
+    "photo_date": "2024-06-22",
+    "license": "CC BY-SA 4.0",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Wolbrom%2C_mural_upami%C4%99tniaj%C4%85cy_nadanie_praw_miejskich_przez_W%C5%82adys%C5%82awa_%C5%81okietka_w_1327.jpg"
+  },
+  "osm": {
+    "attribution": "© OpenStreetMap contributors",
+    "license": "ODbL 1.0",
+    "center": [
+      50.397,
+      19.773
+    ],
+    "zoom": 14,
+    "tiles": [
+      "https://tile.openstreetmap.org/14/9089/5527.png",
+      "https://tile.openstreetmap.org/14/9090/5527.png",
+      "https://tile.openstreetmap.org/14/9091/5527.png",
+      "https://tile.openstreetmap.org/14/9092/5527.png",
+      "https://tile.openstreetmap.org/14/9093/5527.png",
+      "https://tile.openstreetmap.org/14/9089/5528.png",
+      "https://tile.openstreetmap.org/14/9090/5528.png",
+      "https://tile.openstreetmap.org/14/9091/5528.png",
+      "https://tile.openstreetmap.org/14/9092/5528.png",
+      "https://tile.openstreetmap.org/14/9093/5528.png",
+      "https://tile.openstreetmap.org/14/9089/5529.png",
+      "https://tile.openstreetmap.org/14/9090/5529.png",
+      "https://tile.openstreetmap.org/14/9091/5529.png",
+      "https://tile.openstreetmap.org/14/9092/5529.png",
+      "https://tile.openstreetmap.org/14/9093/5529.png"
+    ]
+  },
+  "files": {
+    "regiony-original.jpg": {
+      "bytes": 341441,
+      "sha256": "9f00dcc2b9c0a22834287224289aee05aad5991a106cabc192f608f00fd923a2"
+    },
+    "regiony-bw.png": {
+      "bytes": 1239625,
+      "sha256": "18c9970b2c37ac7d93443d5a50540697ee50c1ce4307bbb67e8d1088efdb47e1"
+    },
+    "mural-original.jpg": {
+      "bytes": 6681991,
+      "sha256": "42fab46c311fe11f10e3f8576e344898b0e73a040701a9c80ae3efea1419a676"
+    },
+    "mural-bw.png": {
+      "bytes": 2652286,
+      "sha256": "89b6fe1b38d6e1f9269c91554f2cd0f93806e7ed645c5862177fd55e8ca316d2"
+    },
+    "okolica-osm-bw.png": {
+      "bytes": 221525,
+      "sha256": "f1352d33de7d23bbd871565ae69c3447df652555099d08dc1dd3a9a885b4a2e6"
+    }
+  }
+}
