@@ -1,0 +1,84 @@
+{
+  "static": "PASS",
+  "viewports": [
+    {
+      "mode": "live",
+      "width": 1024,
+      "height": 768,
+      "slides": 22,
+      "notes": "PASS"
+    },
+    {
+      "mode": "live",
+      "width": 1280,
+      "height": 720,
+      "slides": 22,
+      "notes": "PASS"
+    },
+    {
+      "mode": "live",
+      "width": 1920,
+      "height": 1080,
+      "slides": 22,
+      "notes": "PASS"
+    },
+    {
+      "mode": "offline",
+      "width": 1024,
+      "height": 768,
+      "slides": 22,
+      "notes": "PASS"
+    },
+    {
+      "mode": "offline",
+      "width": 1280,
+      "height": 720,
+      "slides": 22,
+      "notes": "PASS"
+    },
+    {
+      "mode": "offline",
+      "width": 1920,
+      "height": 1080,
+      "slides": 22,
+      "notes": "PASS"
+    }
+  ],
+  "interactions": [
+    {
+      "mode": "live",
+      "arrows": true,
+      "lightbox": true,
+      "blackout": true,
+      "fullscreen": true,
+      "networkRequests": "local only"
+    },
+    {
+      "mode": "offline",
+      "arrows": true,
+      "lightbox": true,
+      "blackout": true,
+      "fullscreen": true,
+      "networkRequests": 0
+    }
+  ],
+  "print": [
+    {
+      "file": "teacher-guide.html",
+      "height": 16168.46875,
+      "A4": "multi-page"
+    },
+    {
+      "file": "student-summary.html",
+      "height": 815.390625,
+      "A4": "one-page-geometry"
+    },
+    {
+      "file": "worksheet.html",
+      "height": 607.4375,
+      "A4": "one-page-geometry"
+    }
+  ],
+  "errors": [],
+  "status": "PASS"
+}

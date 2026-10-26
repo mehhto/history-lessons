@@ -1,0 +1,99 @@
+/* Lokalna gramatyka: rzymski plakat / autentyczna fotografia, czerwień + błękit
+   biblioteki conflict-map; kolaż i mocne powierzchnie, bez gradientów. */
+@font-face{font-family:Rome Sans;src:url('../../../template/presentation/fonts/collection/source-sans-3-400.ttf')}@font-face{font-family:Rome Sans;src:url('../../../template/presentation/fonts/collection/source-sans-3-700.ttf');font-weight:700}@font-face{font-family:Rome Serif;src:url('../../../template/presentation/fonts/collection/bitter-700.ttf');font-weight:700}
+html[data-style="editorial"] .reveal{--font-heading:Rome Serif,serif;--font-body:Rome Sans,sans-serif;font-size:30px;--slide-padding-x:54px;--slide-padding-y:40px}
+.reveal .slides section[data-slide-canvas]>.slide-content{display:block;align-content:normal;max-width:none;margin:0;border:0;text-align:left}
+.reveal h1,.reveal h2,.reveal h3{font-family:var(--font-heading);text-transform:none;letter-spacing:-.025em;font-weight:700;line-height:1.12}
+.reveal h2{font-size:44px;margin:0 0 25px}.reveal h3{font-size:31px;margin:0 0 12px}.reveal p{line-height:1.25;margin:0 0 18px}.reveal ul,.reveal ol{margin:0 0 0 1em}.reveal li{margin-bottom:17px;line-height:1.28}.reveal b,.reveal strong{color:inherit}.reveal figure{margin:0}.reveal img{margin:0;border:0;box-shadow:none;max-width:100%;background:transparent}.reveal figcaption,.reveal .credit{font:20px/1.2 var(--font-body);color:var(--color-text);background:var(--color-surface);padding:8px 12px;margin:0}.reveal .eyebrow{font:700 20px/1.2 var(--font-body);text-transform:uppercase;letter-spacing:.12em;margin-bottom:16px}.reveal .quiet{font-size:24px}.reveal .bottom-line{font-size:27px;border-left:8px solid var(--color-accent);padding:12px 20px;background:var(--color-surface);margin-top:23px}
+/* Otwarcie: zdjęcie pozostaje znaczącym centrum kompozycji, nie tapetą. */
+#otwarcie>.slide-content{padding:0!important;border:0!important}.rome-cover{height:720px;position:relative;background:var(--color-accent)}.cover-photo{position:absolute;left:398px;top:0;width:882px;height:720px;object-fit:cover;object-position:53% center}.cover-copy{position:absolute;left:0;top:28px;width:570px;box-sizing:border-box;padding:26px 38px 32px;background:var(--color-surface);clip-path:polygon(0 0,96% 0,100% 91%,89% 100%,0 96%)}.reveal .cover-copy h1{font-size:55px;line-height:1.05;margin:12px 0 28px;color:var(--color-text)}.reveal .cover-question{font-size:36px;line-height:1.1;border-left:8px solid var(--color-accent);padding-left:19px}.reveal .cover-caption{position:absolute;bottom:26px;right:20px;max-width:620px;padding:10px 15px;background:var(--color-surface);font-size:20px;margin:0}
+/* Pełna mapa, bez ucinania etykiet. */
+#italia-rzym-tyber>.slide-content{display:grid;grid-template-columns:430px 1fr;gap:30px;padding-top:25px;padding-bottom:25px}.map-copy{padding-top:25px}.map-copy h2{font-size:47px}.map-copy p{font-size:29px}.map-copy .credit{font-size:20px;padding-left:0}.italia-map{height:670px;display:flex;justify-content:center;align-items:center}.italia-map img{height:670px;max-width:100%;object-fit:contain}.map-prompt{border-top:5px solid var(--color-accent);padding-top:20px;margin-top:30px!important}
+/* Mit: duża rzeźba i stempel chronologii. */
+.myth-layout{display:grid;grid-template-columns:1fr 1.1fr;gap:30px;align-items:center}.myth-layout figure img{height:310px;width:100%;object-fit:contain}.myth-layout figure{align-self:center}.date-stamp{display:grid;border-left:8px solid var(--color-accent);padding:12px 18px;margin:25px 0;background:var(--color-surface)}.date-stamp b{font-size:42px}.date-stamp span{font-size:24px}.reveal .regime-row{display:grid;grid-template-columns:1fr 70px 1fr;gap:20px;align-items:center;margin-top:38px}.regime-row>div:not(.regime-arrow){background:var(--color-surface);padding:30px}.regime-row span{display:block;font-size:22px}.regime-row .large-number{font:700 80px/1 var(--font-heading);margin-bottom:8px}.regime-row h3{margin-top:25px}.regime-arrow{font-size:70px}.reveal .word-band{background:var(--color-accent);color:var(--color-surface);font-size:34px;padding:18px 28px;margin-top:26px}
+/* Schemat: wyłącznie zweryfikowane relacje. */
+#mechanizm-republiki{background:var(--color-evidence)!important}#mechanizm-republiki>.slide-content{background:var(--color-canvas);margin:18px;width:1244px;height:684px;padding:24px 36px}.republic-flow{height:380px;position:relative}.flow-node{width:58%;padding:20px 25px;box-sizing:border-box;background:var(--color-surface);border-left:8px solid var(--color-accent)}.flow-node h3{font-size:29px}.flow-node p{font-size:27px;margin:0}.reveal .flow-link{width:58%;text-align:center;font-size:25px;font-weight:700;margin:7px 0}.senate-node{position:absolute;right:0;top:0;width:31%;padding:20px;box-sizing:border-box;border-top:8px solid var(--color-evidence);background:var(--color-surface)}.senate-node p,.senate-node b{font-size:25px}.reveal .senate-link{position:absolute;left:58%;top:212px;width:11%;font-size:21px;text-align:center}.reveal #mechanizm-republiki .bottom-line{font-size:25px;margin-top:0}
+/* Urzędy / nierówność / dwa różne mechanizmy. */
+.offices-layout{display:grid;grid-template-columns:1fr 1fr;gap:50px;margin-top:30px}.office-main{border-left:14px solid var(--color-accent);padding:20px 30px;background:var(--color-surface)}.office-numbers{font:700 76px/1 var(--font-heading);display:block;margin-bottom:25px}.other-offices>div{border-bottom:3px solid var(--color-text);padding:20px 0;margin-bottom:18px}.term-definition{font-size:26px;padding-top:12px}.rights-columns{display:grid;grid-template-columns:1fr 1fr;gap:34px;margin-top:22px}.rights-columns>div{padding:25px;background:var(--color-surface);border-top:10px solid var(--color-accent)}.rights-columns>div+div{border-color:var(--color-evidence)}.rights-columns p{font-size:28px}.reveal .rights-conclusion{font-size:30px;padding:20px 28px;background:var(--color-text);color:var(--color-surface);margin-top:25px}.two-roles{display:grid;grid-template-columns:1fr 1fr;gap:30px}.two-roles>div{padding:25px;background:var(--color-surface);border-top:9px solid var(--color-accent)}.two-roles>div+div{border-color:var(--color-evidence)}.two-roles p{font-size:28px}.reveal .role-label{font-size:21px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin-bottom:22px}
+/* Zadanie: decyzja, dowód indywidualny; bez klucza w widoku ucznia. */
+#trzy-sprawy{background:var(--color-accent)!important}#trzy-sprawy>.slide-content{padding-top:30px}#trzy-sprawy .eyebrow,#trzy-sprawy h2{color:var(--color-surface)}.reveal .student-task{padding:24px 32px;border:0;box-shadow:none;border-radius:0;background:var(--color-surface);color:var(--color-text)}.reveal .student-task>p{font-size:27px;margin-bottom:25px}.reveal .case-list{display:grid;gap:16px;list-style:decimal;margin-left:1.1em}.case-list li{font-size:28px;margin:0;padding-left:8px}
+/* Przyczyna -> skutek, potem dwa portrety o odmiennej kompozycji. */
+.crisis-layout{display:grid;grid-template-columns:1.18fr 1fr;gap:35px;align-items:start}.crisis-layout img{height:370px;width:100%;object-fit:contain;background:var(--color-surface)}.causal-chain{list-style:decimal}.causal-chain li{font-size:29px;border-bottom:4px solid var(--color-evidence);padding-bottom:20px}.bio-layout{display:grid;grid-template-columns:450px 1fr;gap:55px;height:630px;align-items:center}.bio-art{background:var(--color-surface);height:630px;display:flex;flex-direction:column;justify-content:flex-end}.bio-art img{height:565px;width:100%;object-fit:contain}.bio-copy h2{font-size:53px;margin-bottom:18px}.bio-dates{font-size:29px;border-bottom:5px solid var(--color-accent);padding-bottom:14px}.bio-copy li{font-size:28px;margin-bottom:22px}.august-layout{grid-template-columns:1fr 440px}.reveal #oktawian{background:var(--color-evidence)}#oktawian .bio-copy{background:var(--color-surface);padding:28px}.assassination{height:360px;width:100%;display:grid;grid-template-rows:310px 50px}.assassination img{height:310px;width:100%;object-fit:contain;background:var(--color-text)}#zamach .bottom-line{font-size:28px}.principate-layout{display:grid;grid-template-columns:1.25fr 1fr;gap:32px;align-items:center}.principate-layout img{width:100%;height:370px;object-fit:contain}.principate-layout p{font-size:29px}.principate-layout h3{margin-top:20px}.definition{padding:18px 20px;background:var(--color-surface);border-left:8px solid var(--color-accent)}
+/* Cicha synteza i cichy finał. */
+.reveal .notebook{list-style:decimal;margin:20px 0 0 1.1em}.notebook li{font-size:28px;margin-bottom:22px;padding-left:8px}.reveal .notebook li::marker{font-weight:700;color:var(--color-text)}#notatka{background:var(--color-surface)!important}#notatka h2{border-bottom:6px solid var(--color-accent);padding-bottom:20px}.reveal #bilet-wyjscia>.slide-content{padding:65px 80px;max-width:none;border-left:18px solid var(--color-evidence)}.exit-list{margin-top:40px!important}.exit-list li{font-size:32px;margin-bottom:35px}.reveal .exit-instruction{font-size:27px;border-top:3px solid var(--color-text);padding-top:24px;margin-top:25px}
+/* Dwie rozdzielające plansze: zmiana funkcji ma własny rytm barw. */
+#krolestwo-republika{background:var(--color-accent)!important}
+#krolestwo-republika>.slide-content>.eyebrow,#krolestwo-republika>.slide-content>h2,#krolestwo-republika .regime-arrow{color:var(--color-surface)}
+#krolestwo-republika .word-band{background:var(--color-surface);color:var(--color-text)}
+#urzednicy{background:var(--color-text)!important}
+#urzednicy>.slide-content>.eyebrow,#urzednicy>.slide-content>h2{color:var(--color-surface)}
+#urzednicy .offices-layout{color:var(--color-text)}
+#urzednicy .other-offices{background:var(--color-surface);padding:12px 26px}
+/* Nadpisania geometrii współdzielonych layoutów: nie wolno zmniejszać źródeł. */
+html[data-style="editorial"] .reveal .slides section[data-slide-canvas]>.slide-content{display:block;align-content:normal}
+#otwarcie .cover-copy,#otwarcie .cover-copy h1,#otwarcie .cover-copy p,#otwarcie .cover-caption{color:var(--color-text)}
+#italia-rzym-tyber>.slide-content{display:grid!important}
+#italia-rzym-tyber .italia-map img{height:670px;width:100%;object-fit:contain}
+#romulus-remus .myth-layout figure img{height:310px;width:100%}
+#cezar .bio-art img,#oktawian .bio-art img{height:565px;width:100%;object-fit:contain}
+#trzy-sprawy .student-task{display:block;align-content:normal;padding:24px 32px}
+#notatka .notebook{display:block;list-style:decimal;padding:0;gap:0}
+/* Reveal inline notes: skala względem faktycznej wolnej przestrzeni. */
+.reveal.show-notes .slides{--notes-scale:min(calc((75vw - 28px)/1280px),calc((100vh - 36px)/720px));transform:translate(-50%,-50%) scale(var(--notes-scale))!important}
+@media(max-aspect-ratio:4/3){.reveal.show-notes .slides{--notes-scale:min(calc((100vw - 28px)/1280px),calc((60vh - 36px)/720px))}}
+@media print{.reveal .slides section[data-slide-canvas]{break-after:page}}
+
+#karta-ilustrowana>.slide-content{padding:24px 38px!important}.note-full{height:610px;display:grid;grid-template-rows:550px 60px}.note-full img{height:550px;width:100%;object-fit:contain}.note-full figcaption{font-size:20px}
+
+/* Czytelne ciekawostki i jeden jawny łańcuch przyczynowy. */
+.reveal .bio-curiosity{font-size:23px;line-height:1.2;border-left:5px solid var(--color-evidence);padding:8px 14px;margin:8px 0 0;background:var(--color-surface)}
+#cezar .bio-copy li,#oktawian .bio-copy li{font-size:26px;margin-bottom:14px}
+#cezar .bio-copy h2,#oktawian .bio-copy h2{font-size:47px;margin-bottom:12px}
+#pryncypat .principate-layout img{height:300px}
+#pryncypat .principate-layout p{font-size:26px;margin-bottom:12px}
+#pryncypat .principate-layout h3{font-size:29px;margin-top:12px}
+.reveal .empire-chain{font-size:25px;padding:12px 18px;background:var(--color-accent);color:var(--color-surface);margin-top:18px}
+
+/* Siedmiu królów: lista i późniejsze antyczne wyobrażenie Numy. */
+#siedmiu-krolow .kings-layout{display:grid;grid-template-columns:470px 1fr;gap:32px;align-items:center}
+#siedmiu-krolow h2{font-size:40px;margin-bottom:20px}
+#siedmiu-krolow .kings-list{display:block;list-style:decimal;margin:0 0 16px 36px}
+#siedmiu-krolow .kings-list li{font-size:29px;line-height:1.15;margin-bottom:13px}
+#siedmiu-krolow .kings-caution{font-size:24px;line-height:1.25;border-left:6px solid var(--color-accent);padding:10px 14px;background:var(--color-surface)}
+#siedmiu-krolow .kings-layout figure img{width:100%;height:420px;object-fit:contain}
+#siedmiu-krolow figcaption{font-size:20px}
+
+/* Rozwinięta legenda pozostaje jednym czytelnym slajdem, bez nowego bloku czasu. */
+#romulus-remus h2{font-size:40px;margin-bottom:20px}
+#romulus-remus .myth-layout{grid-template-columns:1.16fr 1fr;gap:30px}
+#romulus-remus .legend-story{display:block;list-style:decimal;margin:0 0 0 30px;padding:0}
+#romulus-remus .legend-story li{font-size:26px;line-height:1.18;margin-bottom:14px;padding-left:3px}
+#romulus-remus .date-stamp{margin:15px 0 12px;padding:8px 15px}
+#romulus-remus .date-stamp b{font-size:32px}
+#romulus-remus .date-stamp span{font-size:21px}
+#romulus-remus .legend-status{font-size:23px;margin-bottom:14px}
+#romulus-remus .legend-film{font-size:24px;line-height:1.25;margin:0}
+#romulus-remus .legend-film a{text-decoration:underline;text-underline-offset:4px;color:var(--color-text);font-weight:700}
+#romulus-remus .legend-film span{display:block;font-size:20px;margin-top:6px}
+#siedmiu-krolow .kings-layout figure img{height:420px;width:100%;object-fit:contain}
+
+/* Mapa podbojów wykorzystuje maksymalne płótno bez podpisu i kadrowania. */
+#rozrost-rzymu>.slide-content{position:relative;padding:0!important;width:1280px;height:720px}
+#rozrost-rzymu img.expansion-full{margin:0!important;position:absolute;left:5px;top:5px;width:1270px;height:710px;max-width:none;max-height:none;object-fit:contain;cursor:zoom-in}
+#rozrost-rzymu .expansion-full:focus-visible{outline:4px solid var(--color-accent);outline-offset:-5px}
+
+:is(#cezar-ciekawostki,#august-ciekawostki)>.slide-content{padding:38px 65px!important}
+:is(#cezar-ciekawostki,#august-ciekawostki) h2{font-size:42px;margin-bottom:26px}
+:is(#cezar-ciekawostki,#august-ciekawostki) .caesar-facts{display:block;border-left:8px solid var(--color-accent);padding-left:28px}
+:is(#cezar-ciekawostki,#august-ciekawostki) .caesar-facts>div{padding:12px 0 18px;border-bottom:2px solid var(--color-evidence);margin-bottom:13px}
+:is(#cezar-ciekawostki,#august-ciekawostki) .caesar-facts>div:last-child{border-bottom:0}
+:is(#cezar-ciekawostki,#august-ciekawostki) h3{font-size:31px;margin:0 0 9px}
+:is(#cezar-ciekawostki,#august-ciekawostki) p{font-size:27px;line-height:1.25;margin:0}
+
+/* Legenda o gęsiach: obraz nie udaje relacji z nocnego szturmu. */
+#gesi-kapitolinskie h2{font-size:43px;margin-bottom:28px}
+#gesi-kapitolinskie .geese-layout{display:grid;grid-template-columns:1.15fr 1fr;gap:35px;align-items:center}
+#gesi-kapitolinskie figure img{width:100%;height:400px;object-fit:contain}
+#gesi-kapitolinskie .geese-story{display:block;margin-left:28px}
+#gesi-kapitolinskie .geese-story li{font-size:28px;line-height:1.24;margin-bottom:18px;padding-left:5px}
+#gesi-kapitolinskie .geese-status{font-size:23px;line-height:1.25;border-left:6px solid var(--color-accent);padding:10px 15px;margin:20px 0 0;background:var(--color-surface)}
