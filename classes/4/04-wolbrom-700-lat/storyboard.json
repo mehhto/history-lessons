@@ -1,0 +1,172 @@
+[
+  {
+    "id": "otwarcie",
+    "title": "Wolbrom.<br>W drodze do 700-lecia",
+    "note": "0:00–0:45. Pokaż najpierw fotografię. „Kto rozpoznaje to miejsce? Po czym je poznaliście?” Przyjmij dwie krótkie odpowiedzi. „Dziś zajrzymy do historii miasta, które znamy z przejazdów, zakupów i spotkań. W 2027 roku Wolbrom będzie obchodził 700-lecie. Przygotujemy dla niego życzenia, ale nie takie, które pasują do każdego miasta. Zanim je napiszemy, poszukamy czegoś wyjątkowego w jego przeszłości”. Nie mów, że właśnie trwa jubileusz, jeśli prowadzisz lekcję w 2026 roku. Fotografia: 22 czerwca 2024, Kamil Czaiński; otwarcie ma kadr kompozycyjny, pełne ujęcie dostępne po kliknięciu.",
+    "seconds": 45,
+    "purpose": "opening",
+    "layout": "hero-source",
+    "classes": "cover",
+    "goals": "G1 G2 G3"
+  },
+  {
+    "id": "mala-ojczyzna",
+    "title": "Mała ojczyzna to…",
+    "note": "0:45–1:45. „Ojczyzna może oznaczać cały kraj. Małą ojczyzną nazywamy bliską nam okolicę: miejsce, z którym łączą nas wspomnienia i ludzie. Nie trzeba urodzić się w samym Wolbromiu. Ktoś mieszka w Łobzowie lub innej miejscowości gminy, a do Wolbromia przyjeżdża. Te miejsca też mogą być dla niego ważne”. Zapytaj: „Jakie jedno miejsce z naszej okolicy pokazalibyście gościowi?”. Przyjmij dwie odpowiedzi, nie oceniaj więzi dzieci z miejscem. „Widzimy prawdziwą ulicę Krakowską. Zwykła ulica też może być częścią naszej małej ojczyzny, bo łączy miejsca i ludzkie wspomnienia”. Fotografia z 22 czerwca 2024; nie domysł o dawnym wyglądzie.",
+    "seconds": 60,
+    "purpose": "explanation",
+    "layout": "hero-source",
+    "classes": "local",
+    "goals": "G2"
+  },
+  {
+    "id": "urodziny",
+    "title": "Dlaczego właśnie 700?",
+    "note": "1:45–2:45. „Wiek człowieka liczymy od urodzenia. Miasto nie rodzi się tak jak człowiek. Jego rozwój trwa wiele lat, ale ważny dawny dokument może wyznaczać datę, do której nawiązujemy podczas rocznicy. Wolbrom odnosi swoje 700-lecie do roku 1327”. Poproś o wspólne odczytanie działania. „Który rok wpiszemy więc na urodzinowej pocztówce?” — 2027. Wyraźnie dodaj: „Nie oznacza to, że każdy dom, drzewo i kościół powstały w 1327 roku”. W 2026 roku powiedz, że miasto dopiero przygotowuje się do tej rocznicy. Zapis 1327–2027 dotyczy jubileuszu miasta, nie datowania pokazanego budynku.",
+    "seconds": 60,
+    "purpose": "explanation",
+    "layout": "timeline-band",
+    "classes": "anniversary-slide",
+    "goals": "G1"
+  },
+  {
+    "id": "poczatek",
+    "title": "Od nadania lasu do osadnictwa",
+    "note": "2:45–3:45. „Wyobraźcie sobie, ile trzeba przygotować, żeby mogła rozwinąć się osada: miejsce na domy, drogi i pracę. Według historii miasta w 1327 roku król Władysław Łokietek nadał Wolframowi i Hilaremu las na terenie dzisiejszego Wolbromia. Bracia mieli organizować osadnictwo, czyli sprowadzać i urządzać życie mieszkańców. Nazwę Wolbrom wiąże się z imieniem Wolframa”. Zapytaj: „Czy od samego nadania ziemi od razu stoją wszystkie domy?” — nie, to początek procesu. Nie pokazujemy wymyślonego dokumentu, portretu braci ani rekonstrukcji dawnej puszczy. Nie rozwijaj problematycznego opisu 1311 r. z miejskiego opracowania. Mural jest współczesną formą upamiętnienia, nie średniowiecznym obrazem ani wiernym portretem Łokietka. Pokaż datę na ścianie. To przykład, jak mieszkańcy przypominają o dawnych postaciach. Fotografia 22 VI 2024. Opis źródła nazywa to nadaniem praw, ale w narracji zachowujemy ostrożniejsze określenie: nadanie lasu i jubileuszowe początki miasta.",
+    "seconds": 60,
+    "purpose": "explanation",
+    "layout": "process",
+    "classes": "founding-slide",
+    "goals": "G1 G2"
+  },
+  {
+    "id": "handel",
+    "title": "Rynek: tu spotykali się ludzie",
+    "note": "3:45–5:00. „Przyjrzyjcie się temu dawnemu widokowi. Co pomaga rozpoznać targ?” Dzieci wskazują wozy, konie i ludzi. „Rolnicy przywozili to, co wyhodowali, rzemieślnicy oferowali wyroby, kupcy sprzedawali towary. Rynek był miejscem wymiany, ale też spotkań i wiadomości. Handel pomagał miastu się rozwijać”. Władysław Jagiełło nadał Wolbromiowi przywileje handlowe w 1400 r. — wystarczy w opowieści, bez dodatkowej daty do zapamiętania. Podkreśl: „Fotografia jest dużo późniejsza niż początki miasta. Miejska reprodukcja opisuje ją rokiem 1912; nie jest to niezależnie zbadane datowanie. Nie pokazuje targu w średniowieczu”. Nie odgaduj czwartku na podstawie samych wozów.",
+    "seconds": 75,
+    "purpose": "evidence",
+    "layout": "hero-source",
+    "classes": "market-photo",
+    "goals": "G2"
+  },
+  {
+    "id": "czwartek",
+    "title": "Stały dzień ułatwiał handel",
+    "note": "5:00–6:00. „Co by się stało, gdyby sprzedawca przyjechał we wtorek, a wszyscy kupujący w piątek?” Daj dzieciom chwilę na krótką odpowiedź. „Właśnie dlatego wspólny termin był ważny. W 1485 roku Wolbrom otrzymał uprawnienie do targów w czwartki. Ktoś mógł przygotować towar i zaplanować drogę, bo wiedział, kiedy spotka innych”. Przywilej objaśnij jako specjalne uprawnienie nadane miastu. Nie buduj dodatkowego ćwiczenia z dat. Nie twierdź, że przez wszystkie następne stulecia targ odbywał się bez żadnej przerwy, ani że dawne zdjęcie zostało na pewno zrobione w czwartek. Chodzi o zrozumienie, jak stały termin pomagał w handlu. Zdjęcie sklepów jest współczesne, z 2024 r.; pokazuje dzisiejsze funkcje centrum, nie sam przywilej ani targ w 1485 r.",
+    "seconds": 60,
+    "purpose": "explanation",
+    "layout": "statement",
+    "classes": "market-day-slide",
+    "goals": "G2"
+  },
+  {
+    "id": "zrodlo",
+    "title": "Co opowiada dawne zdjęcie?",
+    "note": "6:00–7:15. Daj 10 sekund cichego oglądania. „Dziś można zrobić zdjęcie telefonem. Dawne fotografie też zatrzymywały chwilę. Ta pochodzi z 1916 roku. Widzimy duże zgromadzenie na rynku, ale katalog nie mówi, jakie to były uroczystości”. Zapytaj o dwa szczegóły. Model obserwacji: tłum, stroje, zabudowa, ozdoby i pochód. Jeśli ktoś mówi „to urodziny miasta”, odpowiedz: „To pomysł, ale ze zdjęcia i opisu nie umiemy tego potwierdzić”. Nie wymagaj pełnej krytyki źródła. „Dzięki zdjęciu znamy wygląd tej chwili. Nie dowiadujemy się z niego wszystkiego o ludziach”. Kliknij powiększenie tylko jeśli potrzebne; zamknij Escape.",
+    "seconds": 75,
+    "purpose": "evidence",
+    "layout": "evidence",
+    "classes": "full-source",
+    "goals": "G2"
+  },
+  {
+    "id": "dawniej-dzis",
+    "title": "Ten sam rynek, inne czasy",
+    "note": "7:15–8:30. „To dwa widoki tego samego rynku Wolbromia. Na obu odszukajcie plac i kościół św. Katarzyny. Nie są zrobione z tego samego miejsca: dawniej oglądamy szerszą panoramę z góry”. Datowanie dawnej fotografii „lata 70. XX wieku” pochodzi z tytułu miejskiego załącznika, nie z daty dodania pliku do internetu. Data współczesnego ujęcia nie jest ustalona. Dzieci porównują skalę zieleni, transport i zagospodarowanie placu. Nie dopasowują na siłę wszystkich domów. To porównanie miejsca, a nie identycznych osi fotograficznych. Zdjęcia nie dowodzą wieku każdego budynku.",
+    "seconds": 75,
+    "purpose": "evidence",
+    "layout": "photo-pair",
+    "classes": "then-now",
+    "goals": "G2"
+  },
+  {
+    "id": "praca",
+    "title": "Miasto zmieniała też praca",
+    "note": "8:30–9:30. „Historia miasta to nie tylko królowie i bardzo dawne czasy. W Wolbromiu rozwijał się również przemysł, zwłaszcza związany z wyrobami gumowymi. Wielu mieszkańców pracowało w zakładach. Praca miała wpływ na życie rodzin i całej miejscowości”. Na fotografii wskaż hale, komin i tory. Nie przypisuj konkretnej daty zdjęciu i nie nazywaj pokazanej hali bez potwierdzenia. Zapytaj: „Jakie miejsca pracy znacie w naszej okolicy?”. Wystarczą dwa przykłady. Nie przekształcaj w wykład o technice ani nie powtarzaj promocyjnych ocen dotyczących środowiska. Przykład ma pokazać zmianę miasta i udział zwykłych mieszkańców w jego historii. Fotografie zakładów pokazują rozwój przemysłu w tym samym mieście; nie twierdzimy, że to ten sam budynek dawniej i dziś. Dworzec jest dodatkowym przykładem życia gospodarczego. O kolei powiedz jedno zdanie: przewoziła ludzi i towary; bez nowej daty do nauczenia.",
+    "seconds": 60,
+    "purpose": "explanation",
+    "layout": "hero-source",
+    "classes": "industry",
+    "goals": "G2"
+  },
+  {
+    "id": "katarzyna-dawniej-dzis",
+    "title": "Co warto chronić?",
+    "note": "9:30–10:15. Obejrzyjcie kościół św. Katarzyny w dwóch ujęciach, od strony rynku, ale pod różnymi kątami. Uczniowie wskazują bryłę i wieżyczkę; nie trzeba oceniać przebudów na podstawie zdjęć. Identyfikacja dawnego widoku opiera się na obiekcie Polony, kategoriach jego reprodukcji Commons i porównaniu architektury; nie mylimy go z drewnianym NMP. 1918–1939 to czas wydania pocztówki, nie pewna data wykonania ujęcia. Fotografia FFugi z 8 IX 2026 pokazuje obecny zespół kościoła od rynku. Zabytek jest rzeczywistym śladem przeszłości i wymaga ochrony.",
+    "seconds": 45,
+    "purpose": "evidence",
+    "layout": "photo-pair",
+    "classes": "church-compare",
+    "goals": "G2 G3"
+  },
+  {
+    "id": "drewniany-zabytek",
+    "title": "Dawny budynek potrzebuje troski",
+    "note": "10:15–11:00. „To inny zabytek: drewniany kościół Niepokalanego Poczęcia Najświętszej Maryi Panny. Czy 700-lecie miasta oznacza, że on też ma dokładnie 700 lat?” — nie. Nie uczymy dodatkowej daty budowy. „Dlaczego warto zachować sam budynek, a nie tylko jego zdjęcie?” Zabytek pozwala poznawać dawne materiały i umiejętności. Dzieci nie wykonują remontów, ale mogą nie niszczyć, poznawać historię i zgłaszać uszkodzenia dorosłym. Nie myl go z kaplicą cmentarną. Obiekt figuruje w miejskim wykazie zabytków. Fotografia Michała Bulsy z 1 maja 2025.",
+    "seconds": 45,
+    "purpose": "explanation",
+    "layout": "source-split",
+    "classes": "wooden",
+    "goals": "G2 G3"
+  },
+  {
+    "id": "pamiec",
+    "title": "Pocztówka też przechowuje pamięć",
+    "note": "10:45–12:00. Pokaż całą pocztówkę. „Wcześniej oglądaliśmy osobno jej dwa widoki. Teraz widzicie, że pochodziły z jednego druku. Ktoś chciał pokazać Wolbrom innym ludziom. Takie drobne przedmioty mogą przetrwać dłużej niż nasze wspomnienia”. Wyjaśnij różnicę: nie jest to rysunek wykonany przez dzisiejsze dziecko ani fotografia średniowiecza, lecz dawna drukowana pocztówka. „My też możemy stworzyć wiadomość o mieście. Nasza będzie urodzinowa. Dobierzemy do niej miejsce i życzenie, które wynikają z poznanej historii”. Nie trzeba omawiać znaczków, adresowania i działania poczty; to nie cel zadania.",
+    "seconds": 75,
+    "purpose": "evidence",
+    "layout": "source-split",
+    "classes": "postcard-slide",
+    "goals": "G2 G3"
+  },
+  {
+    "id": "przyszlosc",
+    "title": "Jaką przyszłość podarujemy miastu?",
+    "note": "12:00–13:30. „Znamy już kilka fragmentów historii: początek miasta, rynek i handel, pracę mieszkańców, zabytki. Nie musimy umieć opowiedzieć wszystkiego, żeby złożyć miastu sensowne życzenie. Wystarczy połączyć jeden fakt z troską o przyszłość”. Zapytaj: „Czego może potrzebować ważne dawne miejsce, żeby poznali je ludzie za wiele lat?”. Przyjmij różne pomysły: troski, ochrony, odwiedzających, wiedzy o historii. Nie pokazuj gotowego tekstu pocztówki. Poproś, żeby każde dziecko w myślach wybrało miejsce. Na kolejnym slajdzie pojawi się dokładna instrukcja, a podczas pracy możesz indywidualnie pomóc powiązać pomysł z faktem. Widzimy zachowaną fasadę Starej Poczty przy Krakowskiej. To przykład, że śladem przeszłości bywa również część dawnego budynku. Miejski wykaz wymienia część elewacji frontowej przy Krakowskiej 6. Nie nazywaj zdjęcia zachowanym całym budynkiem. W razie braku czasu wystarczy jedno zdanie, bez dodatkowego zadania.",
+    "seconds": 75,
+    "purpose": "explanation",
+    "layout": "process",
+    "classes": "future",
+    "goals": "G2 G3"
+  },
+  {
+    "id": "pocztowka-zadanie",
+    "title": "Pocztówka na 700-lecie",
+    "note": "15:00–17:00 instrukcja i rozdanie; 17:00–33:00 praca. Rozdaj 18 czystych kartek A4 i przybory, bez dodatkowej karty pracy. „Każdy robi własną pocztówkę. Złóżcie kartkę na pół. Na okładce narysujcie jedno miejsce z Wolbromia, podpiszcie je i dodajcie daty jubileuszu. W środku w dwóch lub trzech zdaniach przypomnijcie jeden fakt z lekcji, a potem złóżcie życzenie, które do niego pasuje”. Poproś jedną osobę o powtórzenie zadania własnymi słowami. Dopiero wtedy rozpocznij 16 minut pracy. Najpierw sens i tekst, potem dopracowanie koloru. Po 8 minutach przypomnij o życzeniu. Nie wymagaj idealnej architektury ani odwzorowania fotografii. Nie kopiują modelu, nie pracują grupowo, nic nie wycinają.",
+    "seconds": 120,
+    "purpose": "practice",
+    "layout": "task-board",
+    "classes": "task-slide",
+    "goals": "G1 G2 G3"
+  },
+  {
+    "id": "pomoc",
+    "title": "Sprawdź, czy to naprawdę o Wolbromiu",
+    "note": "Slajd pomocniczy podczas tych samych 16 minut, nie nowy etap. Uczeń potrzebujący wsparcia może połączyć fakt i życzenie w jednym pełnym zdaniu lub podyktować je dorosłemu. Dla szybszych: „Dopisz, co sam możesz zrobić dla wybranego miejsca”. Przykład tylko w notatkach, po własnej próbie dziecka: „Wolbromiu, Twój rynek od dawna służył handlowi i spotkaniom. Życzę Ci troski o to miejsce, żeby nadal łączyło mieszkańców”. Dopuszczalne są inne fakty i życzenia. Poprawiaj „kościół ma 700 lat”, wskazując różnicę między wiekiem miasta i budynku. Nie oceniaj zdolności plastycznych.",
+    "seconds": 0,
+    "purpose": "practice",
+    "layout": "task-board",
+    "classes": "support-slide",
+    "goals": "G1 G2 G3"
+  },
+  {
+    "id": "wyjscie",
+    "title": "Pamięć + dobre życzenie",
+    "note": "33:00–36:00: dzieci pokazują sobie prace bez zmiany miejsc, potem tylko dwie chętne osoby przedstawiają je klasie. Nie wywołuj po kolei wszystkich 18, bo zabraknie czasu. Synteza ustna: miasto ma długą historię, poznajemy ją ze śladów i źródeł, a rocznica zachęca do troski o przyszłość. 36:00–38:00: każdy zapisuje dwa krótkie uzupełnienia na odwrocie — rok 2027 i konkretne miejsce z sensownym powodem ochrony. Zbierz 18 prac do przejrzenia, a nie tylko dwie prezentowane. 38:00–40:00: bufor i porządkowanie. Służy przejściom i dokończeniu zapisu, nie dodatkowej aktywności.",
+    "seconds": 300,
+    "purpose": "exit",
+    "layout": "task-board",
+    "classes": "exit-slide",
+    "goals": "G1 G2 G3"
+  },
+  {
+    "id": "zrodla",
+    "title": "Zdjęcia mają swoją historię",
+    "note": "Zaplecze nauczyciela, poza narracją. Zdjęcia miejskie nie mają potwierdzonej wolnej licencji; omawiamy je jako cytaty dydaktyczne w prywatnej lekcji. Nie publikuj całego pliku w otwartym internecie bez wyjaśnienia praw. Autentyczne źródła, bez AI. Publiczna domena dwóch obiektów Polony potwierdzona w ich metadanych. Ograniczenia badania źródeł zapisano w sources.md.",
+    "seconds": 0,
+    "purpose": "synthesis",
+    "layout": "statement",
+    "classes": "source-list",
+    "goals": "G2"
+  }
+]

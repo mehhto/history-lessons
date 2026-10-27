@@ -1,0 +1,599 @@
+[
+  {
+    "file": "assets/biuletyn-1943.jpg",
+    "sha256": "b84b4ab58cacb1a3afb43d07ae5ae85d2a209a7b880e5d91b70c39d6ba24eeba",
+    "source": "https://zpe.gov.pl/a/przeczytaj/DOpi13yCi",
+    "asset_url": "https://static.zpe.gov.pl/portal/f/res-minimized/RZQ2egHpZ6NDJ/1727099617/1GjjpVbUcQpV16yAOOthvvuYsOlVyLZQ.jpg",
+    "type": "fotografia lub dokument z epoki",
+    "license": "domena publiczna według podpisu konkretnego zasobu ZPE",
+    "author": "nieustalony w wykorzystanej publikacji",
+    "visual_reviewed": true,
+    "modification": "none; full image without crop"
+  },
+  {
+    "file": "assets/sketch-01-oryginal.jpg",
+    "sha256": "b6df3c9a9db39c1e7ab2db4cc8d3efed5cdc71ccc3aa4643c8803780bb952135",
+    "source": "user",
+    "source_file": "img_da5fb258b70e.jpg",
+    "type": "współczesne opracowanie AI",
+    "license": "materiał użytkowniczki; użycie i korekty na jej zlecenie, bez fikcyjnej licencji muzealnej",
+    "visual_reviewed": true,
+    "modification": "none; exact user file"
+  },
+  {
+    "file": "assets/sketch-01-poprawiona.png",
+    "sha256": "0c638d70dc126c636f844184ca56dc44ffd6132505cf00e2000e2693e0320862",
+    "source": "user",
+    "source_file": "img_da5fb258b70e.jpg",
+    "type": "współczesne opracowanie AI",
+    "license": "materiał użytkowniczki; użycie i korekty na jej zlecenie, bez fikcyjnej licencji muzealnej",
+    "visual_reviewed": true,
+    "derived_from": "assets/sketch-01-oryginal.jpg",
+    "modification": "jawne nakładki tekstowe i nowe stopki informacyjne; bez generowania nowych ilustracji; oryginał zachowany",
+    "source_sha256": "b6df3c9a9db39c1e7ab2db4cc8d3efed5cdc71ccc3aa4643c8803780bb952135",
+    "corrections": [
+      {
+        "box": [
+          40,
+          638,
+          778,
+          738
+        ],
+        "text": "Ośrodki zagłady: Chełmno, Bełżec, Sobibór, Treblinka. Auschwitz-Birkenau: obóz koncentracyjny i ośrodek zagłady.",
+        "font_size": 22,
+        "lines": 2
+      },
+      {
+        "box": [
+          890,
+          657,
+          1268,
+          720
+        ],
+        "text": "Represje, praca przymusowa, terror i zabijanie więźniów.",
+        "font_size": 21,
+        "lines": 2
+      },
+      {
+        "box": [
+          174,
+          737,
+          781,
+          841
+        ],
+        "text": "Majdanek: obóz koncentracyjny i miejsce masowych mordów. W Chełmnie zabijano w samochodach gazowych; w innych ośrodkach — w komorach gazowych.",
+        "font_size": 20,
+        "lines": 3
+      },
+      {
+        "box": [
+          495,
+          224,
+          795,
+          301
+        ],
+        "text": "Getto warszawskie — powstanie: 19 IV–16 V 1943 r.",
+        "font_size": 19,
+        "lines": 2
+      },
+      {
+        "box": [
+          8,
+          842,
+          1272,
+          961
+        ],
+        "text": "Obozy nie były jednakowe: Auschwitz łączył dwie funkcje. Majdanek był obozem koncentracyjnym i miejscem masowych mordów. Zagłada obejmowała też masowe rozstrzeliwania.",
+        "font_size": 22,
+        "lines": 2
+      }
+    ],
+    "dimensions": [
+      1280,
+      1022
+    ]
+  },
+  {
+    "file": "assets/sketch-02-oryginal.jpg",
+    "sha256": "a12a9406e499e6c0e07ff42345c9187061c70d6d0bd06d599cbc0692164ccefb",
+    "source": "user",
+    "source_file": "img_5ac959bdc288.jpg",
+    "type": "współczesne opracowanie AI",
+    "license": "materiał użytkowniczki; użycie i korekty na jej zlecenie, bez fikcyjnej licencji muzealnej",
+    "visual_reviewed": true,
+    "modification": "none; exact user file"
+  },
+  {
+    "file": "assets/sketch-02-poprawiona.png",
+    "sha256": "69dd3efe86d3f3fe0b70241324e638833f0ca34114657d52c35cb3ae97a8edf6",
+    "source": "user",
+    "source_file": "img_5ac959bdc288.jpg",
+    "type": "współczesne opracowanie AI",
+    "license": "materiał użytkowniczki; użycie i korekty na jej zlecenie, bez fikcyjnej licencji muzealnej",
+    "visual_reviewed": true,
+    "derived_from": "assets/sketch-02-oryginal.jpg",
+    "modification": "jawne nakładki tekstowe i nowe stopki informacyjne; bez generowania nowych ilustracji; oryginał zachowany",
+    "source_sha256": "a12a9406e499e6c0e07ff42345c9187061c70d6d0bd06d599cbc0692164ccefb",
+    "corrections": [
+      {
+        "box": [
+          20,
+          191,
+          279,
+          278
+        ],
+        "text": "Od 1939 r.: masowe egzekucje obywateli polskich.",
+        "font_size": 20,
+        "lines": 3
+      },
+      {
+        "box": [
+          281,
+          112,
+          506,
+          233
+        ],
+        "text": "Intelligenzaktion\nAkcja AB (1940)\nSonderaktion Krakau (6 XI 1939)",
+        "font_size": 20,
+        "lines": 4
+      },
+      {
+        "box": [
+          212,
+          603,
+          510,
+          704
+        ],
+        "text": "Deportacje do obozów koncentracyjnych: terror i praca przymusowa.",
+        "font_size": 21,
+        "lines": 3
+      },
+      {
+        "box": [
+          817,
+          488,
+          1056,
+          565
+        ],
+        "text": "Cel: osadnictwo niemieckie.",
+        "font_size": 18,
+        "lines": 2
+      },
+      {
+        "box": [
+          865,
+          598,
+          1054,
+          666
+        ],
+        "text": "Przymusowe wysiedlenia.",
+        "font_size": 19,
+        "lines": 2
+      },
+      {
+        "box": [
+          14,
+          772,
+          456,
+          872
+        ],
+        "text": "Terror był narzędziem niemieckiej polityki okupacyjnej. Nie utożsamiamy różnych form represji ani ich ofiar.",
+        "font_size": 21,
+        "lines": 3
+      },
+      {
+        "box": [
+          1091,
+          737,
+          1266,
+          866
+        ],
+        "text": "Pomoc ukrywanym Żydom groziła karą śmierci.",
+        "font_size": 18,
+        "lines": 4
+      },
+      {
+        "box": [
+          8,
+          872,
+          1272,
+          991
+        ],
+        "text": "Nie wszystkie deportacje miały ten sam cel. Wysiedlenia na Zamojszczyźnie służyły osadnictwu niemieckiemu; opór był reakcją na te działania. Volkslista: różne sytuacje i silny przymus.",
+        "font_size": 22,
+        "lines": 2
+      }
+    ],
+    "dimensions": [
+      1280,
+      1052
+    ]
+  },
+  {
+    "file": "assets/sketch-03-oryginal.jpg",
+    "sha256": "2133d558af3d9e0ab3c08fc4cae085d2534c9b7cda1f03becb3586fbb98ff9fb",
+    "source": "user",
+    "source_file": "img_04f0ce8056df.jpg",
+    "type": "współczesne opracowanie AI",
+    "license": "materiał użytkowniczki; użycie i korekty na jej zlecenie, bez fikcyjnej licencji muzealnej",
+    "visual_reviewed": true,
+    "modification": "none; exact user file"
+  },
+  {
+    "file": "assets/sketch-03-poprawiona.png",
+    "sha256": "223f14d85a9a1c17bb2fa4c9cdde01db09ccdd45bdeccb4c96d31ee3f41727da",
+    "source": "user",
+    "source_file": "img_04f0ce8056df.jpg",
+    "type": "współczesne opracowanie AI",
+    "license": "materiał użytkowniczki; użycie i korekty na jej zlecenie, bez fikcyjnej licencji muzealnej",
+    "visual_reviewed": true,
+    "derived_from": "assets/sketch-03-oryginal.jpg",
+    "modification": "jawne nakładki tekstowe i nowe stopki informacyjne; bez generowania nowych ilustracji; oryginał zachowany",
+    "source_sha256": "2133d558af3d9e0ab3c08fc4cae085d2534c9b7cda1f03becb3586fbb98ff9fb",
+    "corrections": [
+      {
+        "box": [
+          139,
+          174,
+          362,
+          261
+        ],
+        "text": "W GG zamknięto polskie szkoły średnie i uczelnie.",
+        "font_size": 20,
+        "lines": 3
+      },
+      {
+        "box": [
+          834,
+          193,
+          1105,
+          304
+        ],
+        "text": "Na ziemiach wcielonych silna germanizacja. W GG język polski nadal był używany.",
+        "font_size": 21,
+        "lines": 4
+      },
+      {
+        "box": [
+          442,
+          278,
+          820,
+          529
+        ],
+        "text": "NISZCZENIE\nKULTURY\nPOLSKIEJ\npod okupacją niemiecką\n1939–1945",
+        "font_size": 28,
+        "lines": 6
+      },
+      {
+        "box": [
+          830,
+          663,
+          1021,
+          703
+        ],
+        "text": "Grabież sztuki",
+        "font_size": 18,
+        "lines": 1
+      },
+      {
+        "box": [
+          793,
+          675,
+          1237,
+          714
+        ],
+        "text": "Grabież dzieł sztuki",
+        "font_size": 20,
+        "lines": 1
+      },
+      {
+        "box": [
+          795,
+          710,
+          1025,
+          864
+        ],
+        "text": "Zrabowane:\nOłtarz Wita Stwosza\nDama z gronostajem\nOba dzieła odzyskano po wojnie.",
+        "font_size": 20,
+        "lines": 5
+      },
+      {
+        "box": [
+          8,
+          866,
+          1272,
+          985
+        ],
+        "text": "W GG pozostawiono ograniczone szkolnictwo podstawowe i zawodowe. Polacy organizowali tajne nauczanie. Polityka oświatowa i językowa różniła się zależnie od obszaru okupacji.",
+        "font_size": 22,
+        "lines": 2
+      }
+    ],
+    "dimensions": [
+      1280,
+      1046
+    ]
+  },
+  {
+    "file": "assets/sketch-04-oryginal.jpg",
+    "sha256": "1c19d6477802249978e5f4fc37c8ca18c7bb0b36f40df3e60d77d13906ece39b",
+    "source": "user",
+    "source_file": "img_4fb115a340b6.jpg",
+    "type": "współczesne opracowanie AI",
+    "license": "materiał użytkowniczki; użycie i korekty na jej zlecenie, bez fikcyjnej licencji muzealnej",
+    "visual_reviewed": true,
+    "modification": "none; exact user file"
+  },
+  {
+    "file": "assets/sketch-04-poprawiona.png",
+    "sha256": "f205db7a14867f7e9593e8591cea22e73c1a477255c2d53cc52236eef7a832d9",
+    "source": "user",
+    "source_file": "img_4fb115a340b6.jpg",
+    "type": "współczesne opracowanie AI",
+    "license": "materiał użytkowniczki; użycie i korekty na jej zlecenie, bez fikcyjnej licencji muzealnej",
+    "visual_reviewed": true,
+    "derived_from": "assets/sketch-04-oryginal.jpg",
+    "modification": "jawne nakładki tekstowe i nowe stopki informacyjne; bez generowania nowych ilustracji; oryginał zachowany",
+    "source_sha256": "1c19d6477802249978e5f4fc37c8ca18c7bb0b36f40df3e60d77d13906ece39b",
+    "corrections": [
+      {
+        "box": [
+          465,
+          205,
+          817,
+          480
+        ],
+        "text": "SPOŁECZEŃSTWO\nPOD OKUPACJĄ\n1939–1945\nPodsumowanie",
+        "font_size": 28,
+        "lines": 4
+      },
+      {
+        "box": [
+          493,
+          492,
+          820,
+          751
+        ],
+        "text": "ZBRODNIA OUN-B I UPA\nLudobójstwo Polaków na Wołyniu i w Galicji Wschodniej.\nKulminacja na Wołyniu: 11 VII 1943 r.\nSprawcy ≠ cały naród.\nCzęść Ukraińców ratowała Polaków.",
+        "font_size": 22,
+        "lines": 9
+      },
+      {
+        "box": [
+          112,
+          650,
+          440,
+          735
+        ],
+        "text": "Intelligenzaktion: 1939–1940. Akcja AB w GG: 1940 r. To różne akcje.",
+        "font_size": 19,
+        "lines": 3
+      },
+      {
+        "box": [
+          60,
+          230,
+          285,
+          307
+        ],
+        "text": "Tajne nauczanie: opór wobec okupanta.",
+        "font_size": 18,
+        "lines": 2
+      },
+      {
+        "box": [
+          959,
+          580,
+          1267,
+          665
+        ],
+        "text": "Auschwitz: obóz koncentracyjny i ośrodek zagłady.",
+        "font_size": 19,
+        "lines": 3
+      },
+      {
+        "box": [
+          8,
+          756,
+          1272,
+          875
+        ],
+        "text": "Współczesne podsumowanie różnych zjawisk: terror okupanta, Zagłada i odrębna zbrodnia OUN-UPA. Odpowiedzialność za ich organizację ponosiły OUN-B i UPA; nie cała ludność ukraińska.",
+        "font_size": 22,
+        "lines": 2
+      }
+    ],
+    "dimensions": [
+      1280,
+      936
+    ]
+  },
+  {
+    "file": "assets/sketch-05-oryginal.jpg",
+    "sha256": "3e699248e69617d866a1ea6cc9e405e742fbe8dfe61b2a8b93130d4d6d50fc06",
+    "source": "user",
+    "source_file": "img_273b119394b1.jpg",
+    "type": "współczesne opracowanie AI",
+    "license": "materiał użytkowniczki; użycie i korekty na jej zlecenie, bez fikcyjnej licencji muzealnej",
+    "visual_reviewed": true,
+    "modification": "none; exact user file"
+  },
+  {
+    "file": "assets/sketch-05-poprawiona.png",
+    "sha256": "99d52d4f6ad86226b9b031f06702bbc8195b84325b3c540b8135eb1af56f0760",
+    "source": "user",
+    "source_file": "img_273b119394b1.jpg",
+    "type": "współczesne opracowanie AI",
+    "license": "materiał użytkowniczki; użycie i korekty na jej zlecenie, bez fikcyjnej licencji muzealnej",
+    "visual_reviewed": true,
+    "derived_from": "assets/sketch-05-oryginal.jpg",
+    "modification": "jawne nakładki tekstowe i nowe stopki informacyjne; bez generowania nowych ilustracji; oryginał zachowany",
+    "source_sha256": "3e699248e69617d866a1ea6cc9e405e742fbe8dfe61b2a8b93130d4d6d50fc06",
+    "corrections": [
+      {
+        "box": [
+          776,
+          65,
+          1274,
+          356
+        ],
+        "text": "KONTYNGENTY\nObowiązkowe dostawy produktów rolnych narzucane rolnikom. Grabież innych zasobów była szerszym, odrębnym zjawiskiem.\nREGLAMENTACJA\nNiskie przydziały żywności i niedobory. Nie podajemy fikcyjnych norm z rysunku kartek: nie jest on dokumentem z epoki.",
+        "font_size": 23,
+        "lines": 9
+      },
+      {
+        "box": [
+          751,
+          644,
+          968,
+          844
+        ],
+        "text": "Generalne Gubernatorstwo: eksploatacja gospodarki i ludności na rzecz Niemiec; źródło taniej siły roboczej.",
+        "font_size": 21,
+        "lines": 7
+      },
+      {
+        "box": [
+          965,
+          665,
+          1257,
+          837
+        ],
+        "text": "Reglamentacja nie zapewniała dostatecznej ilości jedzenia. Żywność zdobywano też na czarnym rynku, mimo grożących kar.",
+        "font_size": 21,
+        "lines": 6
+      },
+      {
+        "box": [
+          8,
+          857,
+          1272,
+          976
+        ],
+        "text": "Kontyngenty to obowiązkowe dostawy produktów rolnych. Rekwizycja to przymusowe zabranie mienia — nie są to pojęcia tożsame. Rysunki kartek nie pokazują rzeczywistych, jednolitych norm przydziału.",
+        "font_size": 22,
+        "lines": 2
+      }
+    ],
+    "dimensions": [
+      1280,
+      1037
+    ]
+  },
+  {
+    "file": "assets/sketch-06-oryginal.jpg",
+    "sha256": "81b7ed68c69e06547601edcee64c68e27ca81f1500c0719cceca25122001967a",
+    "source": "user",
+    "source_file": "img_28c787a8aa61.jpg",
+    "type": "współczesne opracowanie AI",
+    "license": "materiał użytkowniczki; użycie i korekty na jej zlecenie, bez fikcyjnej licencji muzealnej",
+    "visual_reviewed": true,
+    "modification": "none; exact user file"
+  },
+  {
+    "file": "assets/sketch-06-poprawiona.png",
+    "sha256": "3df74be6c32bfe807eeb9e653232b1de822e620ec1568aadea2780d37e5dbe7e",
+    "source": "user",
+    "source_file": "img_28c787a8aa61.jpg",
+    "type": "współczesne opracowanie AI",
+    "license": "materiał użytkowniczki; użycie i korekty na jej zlecenie, bez fikcyjnej licencji muzealnej",
+    "visual_reviewed": true,
+    "derived_from": "assets/sketch-06-oryginal.jpg",
+    "modification": "jawne nakładki tekstowe i nowe stopki informacyjne; bez generowania nowych ilustracji; oryginał zachowany",
+    "source_sha256": "81b7ed68c69e06547601edcee64c68e27ca81f1500c0719cceca25122001967a",
+    "corrections": [
+      {
+        "box": [
+          800,
+          319,
+          1027,
+          557
+        ],
+        "text": "DWA REGIONY\nWołyń oraz Galicja Wschodnia — wschodnie ziemie II Rzeczypospolitej. Zbrodnie nie były dziełem wszystkich Ukraińców.",
+        "font_size": 21,
+        "lines": 8
+      },
+      {
+        "box": [
+          1031,
+          315,
+          1266,
+          483
+        ],
+        "text": "1944 ROK\nNasilenie zbrodni przeciw polskim cywilom w Galicji Wschodniej.",
+        "font_size": 20,
+        "lines": 5
+      },
+      {
+        "box": [
+          52,
+          568,
+          464,
+          650
+        ],
+        "text": "Szacunki: ok. 80–120 tys. polskich ofiar na Wołyniu i w Małopolsce Wschodniej (1943–1945). Liczba niepewna.",
+        "font_size": 20,
+        "lines": 3
+      },
+      {
+        "box": [
+          24,
+          655,
+          448,
+          757
+        ],
+        "text": "Polacy uciekali z zagrożonych miejscowości. Ofiary zbrodni i uchodźcy to różne grupy — nie dodajemy tych liczb.",
+        "font_size": 19,
+        "lines": 3
+      },
+      {
+        "box": [
+          898,
+          630,
+          1265,
+          800
+        ],
+        "text": "NASTĘPSTWA\nŚmierć, ucieczki ludności i zniszczenie wspólnot. Późniejsze przesiedlenia miały także inne przyczyny; nie są jednym skutkiem tej zbrodni.",
+        "font_size": 21,
+        "lines": 6
+      },
+      {
+        "box": [
+          8,
+          838,
+          1272,
+          957
+        ],
+        "text": "Liczby ofiar są szacunkami; nie łączymy danych o różnych latach i obszarach. Polskie akcje odwetowe także przynosiły śmierć ukraińskich cywilów. Byli Ukraińcy ratujący Polaków.",
+        "font_size": 22,
+        "lines": 2
+      }
+    ],
+    "dimensions": [
+      1280,
+      1018
+    ]
+  },
+  {
+    "file": "assets/ulmowie.jpg",
+    "sha256": "6ebb5ad4b7927a1d0ac385b63f35a1377d0499ecf1eee2b338aa05d778e9d379",
+    "source": "https://zpe.gov.pl/a/przeczytaj/DOpi13yCi",
+    "asset_url": "https://static.zpe.gov.pl/portal/f/res-minimized/RukWJJekWqgM2/1652786335/1uQnbpLBwcZNnwWfs5rOjMgMOHsv3eDx.jpg",
+    "type": "fotografia lub dokument z epoki",
+    "license": "domena publiczna według podpisu konkretnego zasobu ZPE",
+    "author": "nieustalony w wykorzystanej publikacji",
+    "visual_reviewed": true,
+    "modification": "none; full image without crop"
+  },
+  {
+    "file": "assets/warszawa-lapanka.jpg",
+    "sha256": "b6b10d1e9a647e759094a5e65c6656aa79afc91b7c988066fff60f9a99481a7f",
+    "source": "https://zpe.gov.pl/a/przeczytaj/D16V6W1CT",
+    "asset_url": "https://static.zpe.gov.pl/portal/f/res-minimized/R1E62ks35ZnoN/1647515872/1gFme0Iw6pCiAomTBQZqRr39Pi5ZjMi4.jpg",
+    "type": "fotografia lub dokument z epoki",
+    "license": "domena publiczna według podpisu konkretnego zasobu ZPE",
+    "author": "nieustalony w wykorzystanej publikacji",
+    "visual_reviewed": true,
+    "modification": "none; full image without crop"
+  }
+]

@@ -1,0 +1,166 @@
+@font-face{font-family:Wolbrom;src:url('../../../template/presentation/fonts/collection/nunito-sans-400.ttf');font-weight:400}
+@font-face{font-family:Wolbrom;src:url('../../../template/presentation/fonts/collection/nunito-sans-700.ttf');font-weight:700}
+html[data-style=reportage] .reveal{--font-body:Wolbrom,sans-serif;--font-heading:Wolbrom,sans-serif;font-family:var(--font-body);font-size:30px}
+.reveal h1,.reveal h2,.reveal h3{font-family:var(--font-heading);text-transform:none;color:var(--color-text)}
+.reveal h2{font-size:46px;line-height:1.1;margin:0 0 24px;font-weight:700}
+.reveal h3{font-size:34px;line-height:1.15;margin:0 0 18px}
+.reveal p{font-size:29px;line-height:1.28;margin:0 0 20px}
+.reveal strong{color:inherit}
+.reveal .large{font-size:43px;font-weight:700;line-height:1.18}
+.reveal .eyebrow{font-size:21px;font-weight:700;letter-spacing:.035em;text-transform:uppercase}
+.reveal .slides section[data-slide-canvas]>.slide-content{display:block;align-content:normal;padding:34px 46px;color:var(--color-text)}
+.reveal figure{margin:0;min-width:0;background:transparent;border:0;box-shadow:none}
+.reveal .slides section img{display:block;margin:0;box-shadow:none;border:0;object-fit:contain;background:transparent}
+.reveal .slides section[data-slide-canvas][data-layout="task-board"] .student-task{display:block;font:inherit;line-height:inherit;padding:0;border:0;border-radius:0;background:transparent}
+.reveal .slides section figcaption{font:20px/1.16 var(--font-body);padding:9px 12px;margin:0;background:var(--color-surface);color:var(--color-text)}
+.reveal.show-notes .slides{transform:translate(-50%,-50%) scale(min(calc(96vw / 1280px),calc(66vh / 720px)))!important}
+/* Full source frame by default; the opening uses a declared photographic crop. */
+.reveal #otwarcie>.slide-content{padding:0;border:0;background:var(--color-text)}
+.cover-photo{position:absolute;inset:0 0 254px}
+.reveal #otwarcie .cover-photo img{width:1280px;height:466px;object-fit:cover;object-position:center 48%}
+.reveal #otwarcie .cover-photo figcaption{position:absolute;right:0;top:0;font-size:20px;max-width:760px}
+.cover-copy{position:absolute;bottom:0;left:0;width:100%;box-sizing:border-box;background:var(--color-evidence);padding:20px 46px 24px;display:grid;grid-template-columns:1.3fr 1fr;gap:6px 38px;color:var(--color-surface)}
+.cover-copy .eyebrow{grid-column:1/-1;margin:0 0 5px}
+.reveal .cover-copy h1{grid-row:2/4;margin:0;font-size:57px;font-weight:700;line-height:1.04;color:var(--color-surface)}
+.reveal .cover-copy p{margin:0;font-size:28px}
+.reveal .cover-copy .cover-date{font-size:43px;font-weight:700;align-self:end}
+.reveal #mala-ojczyzna>.slide-content{padding:0;display:grid;grid-template-columns:760px 1fr;border:0}
+.local-photo{height:720px;background:var(--color-text)}
+.reveal #mala-ojczyzna .local-photo img{width:760px;height:625px;object-fit:contain}
+.local-copy{padding:58px 38px;background:var(--color-surface)}
+.reveal .local-copy h2{font-size:42px;margin-bottom:42px}
+.reveal #mala-ojczyzna h2,.reveal #praca h2{color:var(--color-text);max-width:none}
+.reveal .local-copy .large{font-size:44px;margin-bottom:35px}
+.reveal #urodziny>.slide-content{background:var(--color-surface);border-top:18px solid var(--color-signal);padding:36px 54px}
+.anniversary{display:grid;grid-template-columns:1fr 110px 1fr;align-items:center;gap:25px;margin-top:30px}
+.anniversary strong{font-size:142px;line-height:1.1;color:var(--color-text)}
+.anniversary span{font-size:80px;color:var(--color-signal)}
+.anniversary p{font-size:28px;margin:14px 0 30px}
+.reveal .calculation{font-size:49px;font-weight:700;border-top:4px solid var(--color-signal);padding-top:24px}
+.reveal .calculation b{color:var(--color-text)}
+.reveal .bottom-note{font-size:28px;margin-top:25px}
+.reveal #poczatek>.slide-content{background:var(--color-evidence);color:var(--color-surface);padding:42px 54px}
+.reveal #poczatek h2,.reveal #poczatek h3{color:var(--color-surface)}
+.founding-date{font-size:170px;font-weight:700;line-height:1;margin:25px 0}
+.founding{display:grid;grid-template-columns:1fr 1fr;gap:52px;border-top:3px solid var(--color-surface);padding-top:24px}
+.founding h3{font-size:35px}
+.reveal #poczatek .bottom-note{margin-top:20px}
+.reveal #handel>.slide-content{padding:0;background:var(--color-text);border:0}
+.reveal #handel>.slide-content>figure{position:absolute;left:20px;top:20px;width:875px}
+.reveal #handel img{width:875px;height:615px;object-fit:contain}
+#handel .photo-note{position:absolute;right:0;top:0;bottom:0;width:350px;box-sizing:border-box;background:var(--color-accent);padding:62px 32px}
+.reveal #handel h2{font-size:48px;line-height:1.1;color:var(--color-surface);margin-bottom:45px}
+.reveal #handel .photo-note p{font-size:38px;color:var(--color-surface);font-weight:700}
+.reveal #czwartek>.slide-content{background:var(--color-surface);border-left:20px solid var(--color-accent);padding:38px 54px}
+.market-day{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:30px;margin:35px 0 20px}
+.market-day strong{font-size:160px;line-height:1}
+.reveal .market-day p{font-size:45px;line-height:1.15}
+.trade-reason{border-top:4px solid var(--color-accent);padding-top:24px}
+.reveal .trade-reason p{font-size:32px}
+.reveal #zrodlo>.slide-content{padding:22px 34px;background:var(--color-text);color:var(--color-surface);border:0}
+.reveal #zrodlo h2{font-size:41px;color:var(--color-surface);margin-bottom:12px}
+.reveal #zrodlo img{width:1212px;height:500px;object-fit:contain}
+.reveal #zrodlo figcaption{padding:7px 12px}
+.reveal .photo-question{font-size:30px;font-weight:700;margin:18px 0 0}
+.reveal #dawniej-dzis>.slide-content{padding:28px 34px;border:0;background:var(--color-surface)}
+.comparison{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:30px}
+.reveal .comparison img{width:595px;height:390px;object-fit:contain;background:var(--color-text)}
+.reveal .comparison figcaption{min-height:46px;border-bottom:6px solid var(--color-evidence);padding:10px}
+#dawniej-dzis .photo-question{margin-top:27px}
+.reveal #praca>.slide-content{padding:0;display:grid;grid-template-columns:830px 1fr;background:var(--color-surface);border:0}
+.reveal #praca figure{padding:18px 0 0 18px;background:var(--color-text)}
+.reveal #praca img{width:812px;height:620px;object-fit:contain}
+.industry-copy{padding:70px 32px;background:var(--color-surface)}
+.reveal .industry-copy h2{font-size:47px;margin-bottom:36px}
+.reveal .industry-copy p{font-size:30px}
+.reveal #zabytek>.slide-content{padding:42px 54px;background:var(--color-evidence);color:var(--color-surface)}
+.reveal #zabytek h2{color:var(--color-surface);font-size:57px}
+.heritage-copy{border-left:6px solid var(--color-surface);padding-left:25px;margin:44px 0}
+.reveal .heritage-copy p{font-size:43px}
+.reveal .heritage-close{font-size:32px}
+.reveal #pamiec>.slide-content{display:grid;grid-template-columns:450px 1fr;gap:50px;padding:28px 46px;background:var(--color-surface);border:0}
+.reveal #pamiec img{width:450px;height:568px;object-fit:contain;background:var(--color-text)}
+.postcard-copy{padding-top:58px}
+.reveal .postcard-copy h2{font-size:52px;margin-bottom:42px}
+.reveal .postcard-copy p:not(.eyebrow){font-size:38px;line-height:1.4}
+.reveal #przyszlosc>.slide-content{background:var(--color-surface);border-top:18px solid var(--color-signal);padding:38px 54px}
+.wish-path{display:grid;grid-template-columns:1fr 70px 1fr;align-items:center;gap:30px;margin:55px 0 40px}
+.wish-path strong{font-size:52px;border-bottom:5px solid var(--color-signal);padding-bottom:8px;display:block;margin-bottom:18px}
+.wish-path span{font-size:66px}
+.wish-path p{font-size:32px}
+.reveal #przyszlosc .large{font-size:40px}
+.reveal #pocztowka-zadanie>.slide-content{background:var(--color-accent);padding:34px 46px;border:0;color:var(--color-surface)}
+.reveal #pocztowka-zadanie h2{font-size:52px;color:var(--color-surface)}
+.postcard-task{display:grid;grid-template-columns:1fr 1.2fr;margin-top:36px;border:7px solid var(--color-surface);background:var(--color-surface);color:var(--color-text)}
+.postcard-task>div{padding:26px 28px}
+.postcard-task>div+div{border-left:3px dashed var(--color-accent)}
+.reveal .postcard-task h3{font-size:34px}
+.reveal .postcard-task p{font-size:30px;line-height:1.28}
+.reveal .task-footer{margin-top:28px;font-size:29px}
+.reveal #pomoc>.slide-content{padding:44px 54px;background:var(--color-surface);border-left:18px solid var(--color-evidence)}
+.reveal #pomoc h2{font-size:46px}
+.reveal .checklist{display:block;margin:42px 0 34px 45px;padding:0;font-size:33px;line-height:1.25}
+.reveal .checklist li{margin:0 0 25px;padding-left:10px}
+.sentence-help{border-top:4px solid var(--color-evidence);padding-top:20px}
+.reveal .sentence-help p{font-size:30px}
+.reveal #wyjscie>.slide-content{padding:34px 54px;border-top:18px solid var(--color-signal);background:var(--color-surface)}
+.reveal #wyjscie h2{font-size:54px}
+.share{margin-top:30px}
+.share strong{font-size:36px}
+.share p{font-size:32px;margin-top:12px}
+.exit{border-top:4px solid var(--color-signal);padding:24px 0 0;margin-top:26px}
+.reveal .exit h3{font-size:29px}
+.reveal .exit p{font-size:29px}
+.reveal #zrodla>.slide-content{padding:42px 54px;background:var(--color-surface)}
+.reveal #zrodla h2{margin-bottom:40px}
+.reveal .credits p{font-size:28px;line-height:1.3;margin-bottom:28px}
+/* Photo-led final sequence: full-frame evidence and two confirmed place comparisons. */
+.reveal #urodziny>.slide-content{padding:26px 48px}
+#urodziny .anniversary{margin-top:8px}
+#urodziny .anniversary strong{font-size:112px}
+#urodziny .anniversary p{font-size:25px;margin:5px 0 12px}
+.reveal #urodziny .calculation{font-size:40px;padding-top:13px;margin:0 0 8px}
+.reveal #urodziny .bottom-note{font-size:25px;margin:6px 0 14px}
+.reveal #urodziny .date-panorama img{width:1184px;height:136px;object-fit:contain}
+.reveal #urodziny .date-panorama figcaption{font-size:20px;padding:6px 0}
+.reveal #poczatek>.slide-content{display:grid;grid-template-columns:780px 1fr;padding:0;border:0}
+.reveal #poczatek .mural-photo{background:var(--color-text);padding:16px}
+.reveal #poczatek .mural-photo img{width:748px;height:604px;object-fit:contain}
+.mural-copy{padding:45px 32px}
+.reveal #poczatek h2{font-size:43px;margin-bottom:22px}
+.reveal #poczatek .founding-date{font-size:112px;margin:20px 0}
+.reveal #poczatek .mural-copy p:not(.eyebrow):not(.founding-date){font-size:30px}
+.reveal #czwartek>.slide-content{display:grid;grid-template-columns:480px 1fr;gap:0;padding:0;border:0}
+.thursday-copy{padding:36px 30px;background:var(--color-surface);border-left:18px solid var(--color-accent)}
+.reveal #czwartek h2{font-size:43px;line-height:1.14;margin:18px 0}
+.reveal #czwartek .big-year{font-size:110px;font-weight:700;line-height:1.05;margin:22px 0}
+.reveal #czwartek p:not(.big-year):not(.eyebrow){font-size:29px}
+.thursday-photo{padding:16px;background:var(--color-text)}
+.reveal #czwartek img{width:768px;height:600px;object-fit:contain}
+.reveal #praca>.slide-content{display:block;padding:28px 36px;background:var(--color-surface);position:relative}
+.reveal #praca h2{font-size:45px;margin-bottom:24px;color:var(--color-text);background:transparent;padding:0}
+.reveal #praca .slide-content>.work-line{background:transparent;color:var(--color-text);padding:0;max-width:none}
+.reveal #praca .work-photos{display:grid;grid-template-columns:740px 430px;gap:28px}
+.reveal #praca .work-photos figure{padding:0;background:transparent}
+.reveal #praca .work-photos figure:first-child img{width:740px;height:470px;object-fit:contain;background:var(--color-text)}
+.reveal #praca .work-photos figure:nth-child(2) img{width:430px;height:208px;object-fit:contain;background:var(--color-text)}
+.reveal #praca .station{position:absolute;right:36px;top:403px;width:430px}
+.reveal #praca .station figure{padding:0}
+.reveal #praca .station img{width:430px;height:185px;object-fit:contain}
+.reveal #praca figcaption{font-size:20px;padding:8px}
+.reveal #praca .work-line{font-size:27px;margin-top:18px;font-weight:700}
+.reveal #katarzyna-dawniej-dzis>.slide-content{padding:28px 34px;border:0;background:var(--color-surface)}
+.reveal #katarzyna-dawniej-dzis h2{font-size:44px}
+.reveal #drewniany-zabytek>.slide-content{display:grid;grid-template-columns:540px 1fr;gap:0;padding:0;background:var(--color-evidence)}
+.wood-photo{padding:16px;background:var(--color-text)}
+.reveal #drewniany-zabytek img{width:508px;height:610px;object-fit:contain}
+.wood-copy{padding:58px 42px;color:var(--color-surface)}
+.reveal #drewniany-zabytek h2{color:var(--color-surface);font-size:51px;margin:30px 0}
+.reveal #drewniany-zabytek p:not(.eyebrow){font-size:33px;margin-bottom:35px}
+.reveal #przyszlosc>.slide-content{display:grid;grid-template-columns:720px 1fr;gap:0;padding:0;border:0;background:var(--color-surface)}
+.future-photo{background:var(--color-text);padding:16px}
+.reveal #przyszlosc img{width:688px;height:600px;object-fit:contain}
+.future-copy{padding:54px 32px}
+.reveal #przyszlosc h2{font-size:44px;margin-bottom:35px}
+.reveal #przyszlosc p{font-size:30px;margin-bottom:30px}
+@media print{.reveal.show-notes .slides{transform:none!important}}

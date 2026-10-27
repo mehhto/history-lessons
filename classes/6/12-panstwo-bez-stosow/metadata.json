@@ -1,0 +1,34 @@
+{
+  "id": "12-panstwo-bez-stosow",
+  "title": "Państwo bez stosów",
+  "grade": 6,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa",
+  "duration_minutes": 38,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "presentation_mode": "slides",
+  "status": "PO PRZEGLĄDZIE — POPRAWIONO SYMBOLE; DO AKCEPTACJI",
+  "curriculum_requirement": "X. Początki Rzeczypospolitej Obojga Narodów. Uczeń: 1) charakteryzuje stosunki wyznaniowe i narodowościowe w Rzeczypospolitej; wyjaśnia główne założenia konfederacji warszawskiej;",
+  "main_question": "Jak zachować pokój, gdy ludzie różnią się wiarą?",
+  "source_reviewed": false,
+  "teacher_reviewed": true,
+  "offline_checked": false,
+  "pdf_exported": false,
+  "appearance": {
+    "style": "editorial",
+    "palette": "civic-debate"
+  },
+  "presentationContract": {
+    "version": "1.0"
+  },
+  "classroom_route": "wariant-1-nauczyciel-mapa-pelny-tekst-rozmowa",
+  "class_size": {
+    "usual_maximum": 15,
+    "maximum": 20
+  },
+  "working_minutes": 38,
+  "printing_required": false,
+  "teacher_acceptance": "pending",
+  "review_feedback": "Dodano krucyfiks, krzyż prawosławny, menorę, Gwiazdę Dawida i półksiężyc; zachowano świątynie."
+}

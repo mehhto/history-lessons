@@ -1,0 +1,124 @@
+{
+  "static": "PASS",
+  "slideCount": 22,
+  "notes": 22,
+  "workingMinutes": 38,
+  "sourceAnalysisMinutes": 6,
+  "viewports": [
+    {
+      "width": 1024,
+      "height": 768,
+      "slides": 22,
+      "notesGeometry": "PASS"
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "slides": 22,
+      "notesGeometry": "PASS"
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "slides": 22,
+      "notesGeometry": "PASS"
+    }
+  ],
+  "images": [
+    {
+      "id": "otwarcie",
+      "pointer": true,
+      "keyboard": true,
+      "focusReturn": true,
+      "uncaptioned": true
+    },
+    {
+      "id": "mapa-wyznan",
+      "pointer": true,
+      "keyboard": true,
+      "focusReturn": true,
+      "uncaptioned": true
+    },
+    {
+      "id": "katolicyzm",
+      "pointer": true,
+      "keyboard": true,
+      "focusReturn": true,
+      "uncaptioned": true
+    },
+    {
+      "id": "katolicyzm",
+      "pointer": true,
+      "keyboard": true,
+      "focusReturn": true,
+      "uncaptioned": true
+    },
+    {
+      "id": "prawoslawie",
+      "pointer": true,
+      "keyboard": true,
+      "focusReturn": true,
+      "uncaptioned": true
+    },
+    {
+      "id": "prawoslawie",
+      "pointer": true,
+      "keyboard": true,
+      "focusReturn": true,
+      "uncaptioned": true
+    },
+    {
+      "id": "luteranizm",
+      "pointer": true,
+      "keyboard": true,
+      "focusReturn": true,
+      "uncaptioned": true
+    },
+    {
+      "id": "kalwinizm",
+      "pointer": true,
+      "keyboard": true,
+      "focusReturn": true,
+      "uncaptioned": true
+    },
+    {
+      "id": "judaizm",
+      "pointer": true,
+      "keyboard": true,
+      "focusReturn": true,
+      "uncaptioned": true
+    },
+    {
+      "id": "judaizm",
+      "pointer": true,
+      "keyboard": true,
+      "focusReturn": true,
+      "uncaptioned": true
+    },
+    {
+      "id": "judaizm",
+      "pointer": true,
+      "keyboard": true,
+      "focusReturn": true,
+      "uncaptioned": true
+    },
+    {
+      "id": "islam",
+      "pointer": true,
+      "keyboard": true,
+      "focusReturn": true,
+      "uncaptioned": true
+    },
+    {
+      "id": "islam",
+      "pointer": true,
+      "keyboard": true,
+      "focusReturn": true,
+      "uncaptioned": true
+    }
+  ],
+  "errors": [],
+  "internetRequests": [],
+  "summaryPrintHeight": 720.5625,
+  "status": "PASS"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "04-wolbrom-700-lat",
+  "title": "Wolbrom — moja mała ojczyzna. W drodze do 700-lecia",
+  "grade": 4,
+  "school_year": "2026/2027",
+  "curriculum_version": "nowa-2026",
+  "duration_minutes": 40,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "presentation_mode": "slides",
+  "status": "DO AKCEPTACJI NAUCZYCIELA",
+  "curriculum_requirement": "2.3 (częściowo), 2.4; pomocniczo 1.4–6 i 4.2",
+  "main_question": "Co z przeszłości Wolbromia chcemy zachować dla przyszłych mieszkańców?",
+  "source_reviewed": true,
+  "teacher_reviewed": false,
+  "offline_checked": true,
+  "pdf_exported": false,
+  "appearance": {
+    "style": "reportage",
+    "palette": "vivid-dark2"
+  }
+}

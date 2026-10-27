@@ -1,0 +1,13 @@
+{
+  "contractVersion": "1.0",
+  "presentationRevision": "3c8e956707fe05473e90723aca2001c347c1f0c8198543c5b79f99a57af6a8eb",
+  "browser": {
+    "completed": true,
+    "issues": []
+  },
+  "human": {
+    "completed": false,
+    "blockers": [],
+    "warnings": []
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "live_url": "https://ai-agent.tail53435f.ts.net/classes/4/04-wolbrom-700-lat/index.html",
+  "results": [
+    {
+      "mode": "live",
+      "width": 1024,
+      "height": 768,
+      "slides": 17,
+      "images": 17,
+      "lightboxes": 17,
+      "issues": [],
+      "errors": [],
+      "network": [],
+      "notes": {
+        "show": "inline",
+        "slide": {
+          "x": 61.44000244140625,
+          "y": 15.35687255859375,
+          "right": 962.5599975585938,
+          "bottom": 522.2368774414062
+        },
+        "panel": {
+          "x": 0,
+          "y": 537.59375,
+          "width": 1024,
+          "text": 588
+        }
+      }
+    },
+    {
+      "mode": "live",
+      "width": 1280,
+      "height": 720,
+      "slides": 17,
+      "images": 17,
+      "lightboxes": 17,
+      "issues": [],
+      "errors": [],
+      "network": [],
+      "notes": {
+        "show": "inline",
+        "slide": {
+          "x": 57.5999755859375,
+          "y": 122.39999389648438,
+          "right": 902.4000244140625,
+          "bottom": 597.5999755859375
+        },
+        "panel": {
+          "x": 960,
+          "y": 0,
+          "width": 319.984375,
+          "text": 588
+        }
+      }
+    },
+    {
+      "mode": "live",
+      "width": 1920,
+      "height": 1080,
+      "slides": 17,
+      "images": 17,
+      "lightboxes": 17,
+      "issues": [],
+      "errors": [],
+      "network": [],
+      "notes": {
+        "show": "inline",
+        "slide": {
+          "x": 86.4000244140625,
+          "y": 183.60000610351562,
+          "right": 1353.5999755859375,
+          "bottom": 896.4000549316406
+        },
+        "panel": {
+          "x": 1440,
+          "y": 0,
+          "width": 479.984375,
+          "text": 588
+        }
+      }
+    },
+    {
+      "mode": "offline",
+      "width": 1024,
+      "height": 768,
+      "slides": 17,
+      "images": 17,
+      "lightboxes": 17,
+      "issues": [],
+      "errors": [],
+      "network": [],
+      "notes": {
+        "show": "inline",
+        "slide": {
+          "x": 61.44000244140625,
+          "y": 15.35687255859375,
+          "right": 962.5599975585938,
+          "bottom": 522.2368774414062
+        },
+        "panel": {
+          "x": 0,
+          "y": 537.59375,
+          "width": 1024,
+          "text": 588
+        }
+      }
+    },
+    {
+      "mode": "offline",
+      "width": 1280,
+      "height": 720,
+      "slides": 17,
+      "images": 17,
+      "lightboxes": 17,
+      "issues": [],
+      "errors": [],
+      "network": [],
+      "notes": {
+        "show": "inline",
+        "slide": {
+          "x": 57.5999755859375,
+          "y": 122.39999389648438,
+          "right": 902.4000244140625,
+          "bottom": 597.5999755859375
+        },
+        "panel": {
+          "x": 960,
+          "y": 0,
+          "width": 319.984375,
+          "text": 588
+        }
+      }
+    },
+    {
+      "mode": "offline",
+      "width": 1920,
+      "height": 1080,
+      "slides": 17,
+      "images": 17,
+      "lightboxes": 17,
+      "issues": [],
+      "errors": [],
+      "network": [],
+      "notes": {
+        "show": "inline",
+        "slide": {
+          "x": 86.4000244140625,
+          "y": 183.60000610351562,
+          "right": 1353.5999755859375,
+          "bottom": 896.4000549316406
+        },
+        "panel": {
+          "x": 1440,
+          "y": 0,
+          "width": 479.984375,
+          "text": 588
+        }
+      }
+    }
+  ],
+  "teacher_guide_offline": true
+}

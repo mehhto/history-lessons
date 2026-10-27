@@ -1,0 +1,370 @@
+{
+  "basicFields": {
+    "title": {
+      "name": "title",
+      "values": [
+        "[Nieokreślone uroczystości na rynku w Wolbromiu]"
+      ],
+      "labels": {
+        "en": "Title",
+        "pl": "Tytuł"
+      },
+      "type": "TEXT"
+    },
+    "dateDescriptive": {
+      "name": "dateDescriptive",
+      "values": [
+        "[około 1916]"
+      ],
+      "labels": {
+        "en": "Creation date",
+        "pl": "Data powstania"
+      },
+      "type": "TEXT"
+    }
+  },
+  "expandedFields": {
+    "imprint": {
+      "name": "imprint",
+      "values": [
+        "[Miejsce nieznane : wydawca nieznany, około 1916] ([miejsce nieznane : drukarz nieznany])."
+      ],
+      "labels": {
+        "en": "Imprint",
+        "pl": "Adres wydawniczy"
+      },
+      "type": "TEXT"
+    },
+    "publishPlace": {
+      "name": "publishPlace",
+      "values": [
+        "Miejsce nieznane"
+      ],
+      "labels": {
+        "en": "Publish place",
+        "pl": "Miejsce wydania"
+      },
+      "type": "SEARCH"
+    },
+    "publisher": {
+      "name": "publisher",
+      "values": [
+        "wydawca nieznany"
+      ],
+      "labels": {
+        "en": "Publisher",
+        "pl": "Wydawca"
+      },
+      "type": "SEARCH"
+    },
+    "physicalDescription": {
+      "name": "physicalDescription",
+      "values": [
+        "[1] karta : ilustracja ; 9x14 cm"
+      ],
+      "labels": {
+        "en": "Physical description",
+        "pl": "Opis fizyczny"
+      },
+      "type": "TEXT"
+    },
+    "language": {
+      "name": "language",
+      "values": [
+        "nieokreślony"
+      ],
+      "labels": {
+        "en": "Language",
+        "pl": "Język"
+      },
+      "type": "SEARCH"
+    },
+    "keywords": {
+      "name": "keywords",
+      "values": [
+        "Wolbrom (woj. małopolskie, pow. olkuski, gm. Wolbrom)",
+        "Budownictwo miejskie",
+        "Place"
+      ],
+      "labels": {
+        "en": "Keywords",
+        "pl": "Słowa kluczowe"
+      },
+      "type": "SEARCH"
+    },
+    "subject": {
+      "name": "subject",
+      "values": [
+        "Wolbrom (woj. małopolskie, pow. olkuski, gm. Wolbrom)",
+        "Place",
+        "Budownictwo miejskie"
+      ],
+      "labels": {
+        "en": "Subject (DBN)",
+        "pl": "Temat (DBN)"
+      },
+      "type": "SEARCH"
+    },
+    "metatype": {
+      "name": "metatype",
+      "values": [
+        "pocztówka"
+      ],
+      "labels": {
+        "en": "Genre",
+        "pl": "Gatunek"
+      },
+      "type": "SEARCH"
+    },
+    "temporal": {
+      "name": "temporal",
+      "values": [
+        "1914-1918",
+        "1901-2000"
+      ],
+      "labels": {
+        "en": "Chronological term (DBN)",
+        "pl": "Zasięg czasowy (DBN)"
+      },
+      "type": "SEARCH"
+    },
+    "note": {
+      "name": "note",
+      "values": [
+        "Na rewersie oznaczenie papieru: Cellofix-Postkarte D.R.P. nr. 176323.",
+        "Rok wydania według adnotacji na rewersie.",
+        "Tytuł nadany przez katalogującego."
+      ],
+      "labels": {
+        "en": "Notes",
+        "pl": "Uwagi"
+      },
+      "type": "TEXT"
+    },
+    "callNumber": {
+      "name": "callNumber",
+      "values": [
+        "DŻS XII 8b/p.20/45"
+      ],
+      "labels": {
+        "en": "Call number",
+        "pl": "Sygnatura"
+      },
+      "type": "TEXT"
+    },
+    "rights": {
+      "name": "rights",
+      "values": [
+        "Domena Publiczna. Wolno zwielokrotniać, zmieniać i rozpowszechniać oraz wykonywać utwór, nawet w celach komercyjnych, bez konieczności pytania o zgodę. Wykorzystując utwór należy pamiętać o poszanowaniu autorskich praw osobistych Twórcy."
+      ],
+      "labels": {
+        "en": "Rights",
+        "pl": "Prawa autorskie"
+      },
+      "type": "SEARCH"
+    },
+    "sourceMeta": {
+      "name": "sourceMeta",
+      "values": [
+        "Biblioteka Narodowa"
+      ],
+      "labels": {
+        "en": "Source",
+        "pl": "Źródło"
+      },
+      "type": "TEXT"
+    },
+    "project": {
+      "name": "project",
+      "values": [
+        "Patrimonium"
+      ],
+      "labels": {
+        "en": "Project",
+        "pl": "Projekt"
+      },
+      "type": "SEARCH"
+    },
+    "recordNo": {
+      "name": "recordNo",
+      "values": [
+        "b0000005713447"
+      ],
+      "labels": {
+        "en": "Bibliographic record ID",
+        "pl": "Identyfikator rekordu bibliograficznego"
+      },
+      "type": "TEXT"
+    },
+    "almaMMSIDLocal": {
+      "name": "almaMMSIDLocal",
+      "values": [
+        "991015221149705066"
+      ],
+      "labels": {
+        "en": "ALMA catalogue ID",
+        "pl": "Identyfikator ALMA"
+      },
+      "type": "TEXT"
+    }
+  },
+  "hiddenFields": {
+    "date": {
+      "name": "date",
+      "values": [
+        "1916-01-01"
+      ],
+      "labels": {
+        "en": "Date",
+        "pl": "Data"
+      },
+      "type": "TEXT"
+    }
+  },
+  "attributes": {
+    "thumbnail": {
+      "name": "thumbnail",
+      "stringArrValues": null,
+      "stringValue": "/download/digital-content/ef7a58a4-8614-4f02-a952-4e8eec97e8e9",
+      "longValue": null,
+      "dateValue": null,
+      "boolValue": null,
+      "labels": {
+        "en": "Thumbnail address",
+        "pl": "Adres miniatury"
+      },
+      "type": "TEXT",
+      "valueType": "STRING"
+    },
+    "instanceId": {
+      "name": "instanceId",
+      "stringArrValues": null,
+      "stringValue": null,
+      "longValue": 10715,
+      "dateValue": null,
+      "boolValue": null,
+      "labels": {
+        "en": "PdB institution ID",
+        "pl": "ID instytucji PdB"
+      },
+      "type": "TEXT",
+      "valueType": "LONG"
+    },
+    "idInOldSystem": {
+      "name": "idInOldSystem",
+      "stringArrValues": null,
+      "stringValue": "73717567",
+      "longValue": null,
+      "dateValue": null,
+      "boolValue": null,
+      "labels": {
+        "en": "Academica ID",
+        "pl": "Academica ID"
+      },
+      "type": "TEXT",
+      "valueType": "STRING"
+    },
+    "instanceName": {
+      "name": "instanceName",
+      "stringArrValues": null,
+      "stringValue": "Biblioteka Narodowa",
+      "longValue": null,
+      "dateValue": null,
+      "boolValue": null,
+      "labels": {
+        "en": "PdB institution name",
+        "pl": "Nazwa instytucji PdB"
+      },
+      "type": "TEXT",
+      "valueType": "STRING"
+    },
+    "instanceAvatarUrl": {
+      "name": "instanceAvatarUrl",
+      "stringArrValues": null,
+      "stringValue": "/download/avatar/0cb910ad-e8de-4a81-90fd-ee1786f3818a",
+      "longValue": null,
+      "dateValue": null,
+      "boolValue": null,
+      "labels": {
+        "en": "Instance thumbnail address",
+        "pl": "Adres miniatury instancji"
+      },
+      "type": "TEXT",
+      "valueType": "STRING"
+    },
+    "hasOcrAlto": {
+      "name": "hasOcrAlto",
+      "stringArrValues": null,
+      "stringValue": null,
+      "longValue": null,
+      "dateValue": null,
+      "boolValue": false,
+      "labels": {
+        "en": "Text recognition",
+        "pl": "Warstwa tekstowa"
+      },
+      "type": "TEXT",
+      "valueType": "BOOL"
+    },
+    "documentTypes": {
+      "name": "documentTypes",
+      "stringArrValues": [
+        "Pocztówki"
+      ],
+      "stringValue": null,
+      "longValue": null,
+      "dateValue": null,
+      "boolValue": null,
+      "labels": {
+        "en": "Category",
+        "pl": "Kategoria"
+      },
+      "type": "TEXT",
+      "valueType": "STRING_ARR"
+    },
+    "copyrightProtected": {
+      "name": "copyrightProtected",
+      "stringArrValues": null,
+      "stringValue": null,
+      "longValue": null,
+      "dateValue": null,
+      "boolValue": false,
+      "labels": {
+        "en": "Copyright protected",
+        "pl": "Chroniony prawem autorskim"
+      },
+      "type": "TEXT",
+      "valueType": "BOOL"
+    },
+    "licenseName": {
+      "name": "licenseName",
+      "stringArrValues": null,
+      "stringValue": "Domena Publiczna",
+      "longValue": null,
+      "dateValue": null,
+      "boolValue": null,
+      "labels": {
+        "en": "License",
+        "pl": "Licencja"
+      },
+      "type": "TEXT",
+      "valueType": "STRING"
+    },
+    "objectType": {
+      "name": "objectType",
+      "stringArrValues": null,
+      "stringValue": "DIGITAL_OBJECT",
+      "longValue": null,
+      "dateValue": null,
+      "boolValue": null,
+      "labels": {
+        "en": "Object type",
+        "pl": "Typ obiektu"
+      },
+      "type": "TEXT",
+      "valueType": "STRING"
+    }
+  },
+  "score": null,
+  "objectId": "3f415e2e-4a47-4ef8-b62c-47b06710d8c2"
+}

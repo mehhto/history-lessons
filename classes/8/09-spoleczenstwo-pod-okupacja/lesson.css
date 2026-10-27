@@ -1,0 +1,125 @@
+@font-face{font-family:"Occupation Sans";src:url("../../../template/presentation/fonts/collection/source-sans-3-400.ttf");font-weight:400}
+@font-face{font-family:"Occupation Sans";src:url("../../../template/presentation/fonts/collection/source-sans-3-700.ttf");font-weight:700}
+@font-face{font-family:"Occupation Serif";src:url("../../../template/presentation/fonts/collection/bitter-700.ttf");font-weight:700}
+.reveal{--font-body:"Occupation Sans",sans-serif;--font-heading:"Occupation Serif",serif;font-family:var(--font-body);font-size:30px}
+html[data-style="reportage"] .reveal{--font-heading:"Occupation Serif",serif}
+.reveal h1,.reveal h2,.reveal h3{font-family:var(--font-heading);text-transform:none;color:var(--color-text)}
+.reveal h2{font-size:43px;line-height:1.12;margin:0 0 26px}
+.reveal h3{font-size:30px;margin:0 0 20px}
+.reveal p{margin:0 0 22px;line-height:1.22}
+.reveal strong{color:inherit}
+.reveal .slides section[id] .student-task{display:contents}
+.reveal #relacja .witness-document{margin:0;background:transparent;border:0;box-shadow:none}
+html[data-style="reportage"] .reveal .slides section[id]>.slide-content{display:block;align-content:normal;max-width:none;margin:0;padding:42px 56px;background:transparent;border:0}
+.reveal .slides section .source-figure{margin:0;border:0;box-shadow:none;background:transparent}
+.reveal .slides section img{margin:0;border:0;box-shadow:none;background:transparent;object-fit:contain}
+.reveal .slides section figcaption{font:20px/1.15 var(--font-body);color:var(--color-text);background:var(--color-surface);padding:8px 10px;margin:0}
+.reveal .eyebrow{font:700 21px/1.2 var(--font-body);letter-spacing:.06em;text-transform:uppercase}
+.reveal .definition{font-size:29px;padding:20px 24px;background:var(--color-surface);border-left:6px solid var(--color-accent)}
+.reveal .distinction{font-size:27px;padding:20px 24px;background:var(--color-surface);border-top:4px solid var(--color-evidence)}
+/* Reveal's inline-notes mode narrows its area without recalculating the scale. */
+.reveal.show-notes .slides{transform:translate(-50%,-50%) scale(min(calc(72vw / 1280px),calc(96vh / 720px)))!important}
+.reveal #otwarcie{background:var(--color-evidence);color:var(--color-text)}
+.reveal #otwarcie h1,.reveal #otwarcie p{color:var(--color-text)}
+.reveal #otwarcie>.slide-content{display:grid;grid-template-columns:1fr 440px;gap:45px;padding:38px 50px}
+#otwarcie .opening-copy{align-self:center}
+.reveal #otwarcie h1{font-size:57px;line-height:1.08;margin:20px 0 30px}
+#otwarcie .main-question{font-size:32px;background:var(--color-surface);padding:20px;margin:0 0 25px}
+#otwarcie .opening-cue{font-size:24px}
+.reveal #otwarcie img{width:440px;height:548px}
+#otwarcie .opening-document{align-self:center}
+.reveal #pytania-foto{background:var(--color-signal)}
+#pytania-foto .photo-instructions{background:var(--color-surface);padding:30px 38px;border-left:12px solid var(--color-text)}
+.reveal #pytania-foto ol{font-size:37px;display:block;margin:22px 0 28px 42px}
+#pytania-foto li{padding-left:12px;margin-bottom:26px;line-height:1.2}
+#pytania-foto .step-number{font-size:29px;font-weight:700}
+.reveal #warszawa>.slide-content{padding:14px 26px}
+.reveal #warszawa .photo-evidence{height:692px;text-align:center}
+.reveal #warszawa img{width:1228px;height:605px}
+.reveal #warszawa figcaption{text-align:left;margin-top:8px}
+.terror-flow{display:grid;grid-template-columns:1fr 245px 1fr;gap:28px;align-items:center;min-height:460px}
+.terror-flow>div:not(.flow-link){border-top:8px solid var(--color-evidence);padding-top:26px}
+.terror-flow .flow-link{text-align:center;font-size:45px}
+.terror-flow .flow-link strong{display:block;font:700 27px/1.15 var(--font-body)}
+.reveal #terror{background:var(--color-surface)}
+.reveal #codziennosc{background:var(--color-evidence)}
+.everyday-columns{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.everyday-columns>div{background:var(--color-surface);padding:25px 28px}
+.everyday-columns p{font-size:28px;margin-bottom:20px}
+.everyday-columns .precision{font-size:25px;border-top:3px solid var(--color-evidence);padding-top:15px;margin-bottom:0}
+.reveal #zaglada>.slide-content{padding:32px 50px}
+#zaglada h2{margin-bottom:20px}
+#zaglada .definition{font-size:27px;margin-bottom:18px}
+.persecution-axis{display:grid;grid-template-columns:1fr 1fr 1fr;gap:25px;margin:25px 0}
+.persecution-axis>div{border-top:7px solid var(--color-evidence);padding-top:14px}
+.persecution-axis b{font:700 34px var(--font-heading)}
+.persecution-axis p{font-size:28px;margin-top:12px}
+#zaglada .scale{font-size:27px;margin:0}
+.reveal #powstanie-getto{background:var(--color-text)}
+.reveal #powstanie-getto h2,.reveal #powstanie-getto p{color:var(--color-surface)}
+.reveal #powstanie-getto .large-line{font:700 37px/1.2 var(--font-body);margin:38px 0}
+#powstanie-getto .uprising-facts{border-left:7px solid var(--color-evidence);padding-left:25px}
+.reveal #powstanie-getto .distinction{color:var(--color-text);margin-top:28px}
+.reveal #pytania-relacja{background:var(--color-evidence)}
+.witness-questions{background:var(--color-surface);padding:28px 36px}
+.reveal #pytania-relacja ol{font-size:35px;display:block;margin:22px 0 24px 38px}
+#pytania-relacja li{margin-bottom:22px;padding-left:10px;line-height:1.25}
+.reveal #relacja{background:var(--color-surface)}
+.reveal #relacja>.slide-content{padding:40px 65px}
+#relacja .source-context{font-size:27px;border-bottom:3px solid var(--color-evidence);padding-bottom:20px}
+.reveal #relacja blockquote{font:400 28px/1.5 var(--font-body);width:auto;margin:34px 0 26px;padding:26px 30px;border-left:8px solid var(--color-accent);box-shadow:none;background:var(--color-canvas);font-style:normal}
+#relacja .source-credit{font-size:20px;line-height:1.2}
+#relacja .reading-reminder{font-size:25px;margin-top:25px;font-weight:700}
+.help-layout{display:grid;grid-template-columns:1fr 520px;gap:35px;align-items:start}
+.help-layout p{font-size:28px}
+.reveal #pomoc img{width:520px;height:390px}
+.help-layout .risk{border-left:6px solid var(--color-accent);padding-left:20px;font-size:27px}
+.reveal #pomoc{background:var(--color-surface)}
+.reveal #informowanie{background:var(--color-evidence)}
+.information-rows{background:var(--color-surface);padding:6px 28px}
+.information-rows p{display:grid;grid-template-columns:245px 1fr;gap:30px;padding:22px 0;margin:0;border-bottom:2px solid var(--color-evidence);font-size:28px}
+.information-rows p:last-child{border-bottom:0}
+#informowanie .distinction{margin-top:28px}
+.reveal #wolyn>.slide-content{padding:36px 52px}
+#wolyn .definition{font-size:27px;margin-bottom:20px}
+.wolyn-process{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.wolyn-process>div{padding:15px 20px 5px;border-top:6px solid var(--color-evidence)}
+.wolyn-process b{font-family:var(--font-heading);font-size:30px}
+.wolyn-process p{font-size:28px;margin-top:15px;margin-bottom:14px}
+#wolyn .distinction{font-size:27px;margin-top:15px}
+.reveal #pary{background:var(--color-signal)}
+.reveal #pary>.slide-content{padding:30px 48px}
+#pary h2{font-size:42px;margin-bottom:12px}
+#pary .task-meta{font-size:24px;font-weight:700;margin-bottom:18px}
+.cases{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:22px}
+.cases>div{padding:20px 24px;background:var(--color-surface)}
+.cases h3{font-size:29px;margin-bottom:12px}
+.cases p{font-size:28px;margin:0}
+.reveal #pary .pair-steps{display:block;font-size:29px;margin:0 0 16px 36px}
+#pary .pair-steps li{padding-left:10px;margin-bottom:12px;line-height:1.2}
+#pary .extension{font-size:24px;margin:20px 0 0;border-top:3px solid var(--color-text);padding-top:14px}
+.reveal #synteza{background:var(--color-surface)}
+.reveal #synteza>.slide-content{padding:34px 55px}
+#synteza h2{font-size:41px;margin-bottom:22px}
+.reveal #synteza .notebook{display:block;font-size:29px;margin:0 0 24px 36px}
+#synteza .notebook li{list-style:decimal;margin-bottom:20px;padding-left:12px;line-height:1.22}
+#synteza .synthesis-instruction{padding:18px 23px;background:var(--color-evidence);font-size:26px}
+#zrodla .source-list{border-left:8px solid var(--color-evidence);padding-left:28px}
+#zrodla .source-list p{font-size:28px;margin-bottom:25px}
+.reveal #bilet{background:var(--color-text)}
+.reveal #bilet>.slide-content{padding:60px 70px}
+.reveal #bilet h2,.reveal #bilet p{color:var(--color-surface)}
+.reveal #bilet ol{display:block;color:var(--color-surface);font-size:37px;margin:40px 0 40px 40px}
+#bilet li{padding-left:14px;margin-bottom:35px;line-height:1.25}
+#bilet .exit-instruction{font-size:27px;border-top:4px solid var(--color-evidence);padding-top:25px}
+.reveal .sketch-summary{background:var(--color-surface)}
+.reveal :is(#sketch-1,#sketch-2,#sketch-3,#sketch-4,#sketch-5,#sketch-6)>.slide-content{padding:14px 22px}
+.sketch-layout{display:grid;grid-template-columns:865px 1fr;gap:24px;height:628px;align-items:center}
+.reveal :is(#sketch-1,#sketch-2,#sketch-3,#sketch-4,#sketch-5,#sketch-6) img{width:865px;height:625px;max-width:none;max-height:none;object-fit:contain}
+.sketch-aside{border-left:5px solid var(--color-evidence);padding-left:20px}
+.reveal .sketch-aside .eyebrow{font-size:19px}
+.reveal .sketch-aside h2{font-size:35px;margin-bottom:25px}
+.reveal .sketch-aside p{font-size:25px;line-height:1.2;margin-bottom:25px}
+.reveal .sketch-aside .correction{border-top:4px solid var(--color-accent);padding-top:16px}
+.reveal .sketch-summary .ai-label{font-size:20px;line-height:1.15;margin:16px 0 0;border-top:2px solid var(--color-evidence);padding-top:10px}
+@media print{.reveal.show-notes .slides{transform:none!important}}

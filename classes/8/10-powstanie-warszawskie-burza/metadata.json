@@ -1,0 +1,27 @@
+{
+  "id": "10-powstanie-warszawskie-burza",
+  "title": "Akcja „Burza” i powstanie warszawskie — pięć stacji zadaniowych",
+  "grade": 8,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa",
+  "duration_minutes": 45,
+  "maximum_students": 18,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "presentation_mode": "none",
+  "status": "DO_PRZEGLĄDU_NAUCZYCIELA",
+  "curriculum_requirement": "XXXIII.5: wyjaśnia przyczyny i opisuje skutki wybuchu powstania warszawskiego oraz ocenia postawę aliantów zachodnich i Związku Sowieckiego wobec powstania.",
+  "main_question": "Dlaczego powstanie warszawskie stało się częścią akcji „Burza” i co wydarzenia w Warszawie mówią o jego cenie?",
+  "source_reviewed": false,
+  "teacher_reviewed": false,
+  "offline_checked": false,
+  "pdf_exported": false,
+  "print_plan": {
+    "entry": "packet.html",
+    "master_pages": 5,
+    "station_cards": {"pages": "1–5", "copies": 1},
+    "worksheet": {"entry": "worksheet.html", "pages": 1, "copies": 18},
+    "student_sheets": 23
+  },
+  "notes": "Wersja bez prezentacji: pięć samodzielnych A4 na stolikach i jedna indywidualna karta odpowiedzi. PDF celowo niewygenerowany przed akceptacją."
+}

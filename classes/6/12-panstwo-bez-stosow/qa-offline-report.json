@@ -1,0 +1,24 @@
+{
+  "liveReadback": "byte-identical",
+  "offline": [
+    {
+      "width": 1024,
+      "height": 768,
+      "slides": 22
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "slides": 22
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "slides": 22
+    }
+  ],
+  "images": 13,
+  "errors": [],
+  "requests": [],
+  "status": "PASS"
+}
