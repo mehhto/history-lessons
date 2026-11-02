@@ -29,7 +29,39 @@ test('creates editable assessment DOCX with student text, lists, tables and no t
     assert.match(document, /Wybierz poprawną odpowiedź/);
     assert.match(document, /ListBullet/);
     assert.match(document, /w:tbl/);
+    assert.match(document, /<w:tblGrid><w:gridCol w:w="4500"\/><w:gridCol w:w="4500"\/><\/w:tblGrid>/);
+    assert.doesNotMatch(document, /<w:rPr>[^<]*<w:b\/>[^<]*<\/w:rPr><w:rPr>/);
     assert.doesNotMatch(document, /Klucz odpowiedzi|TAJNE ROZWIĄZANIE/);
+  } finally { await rm(directory, { recursive: true, force: true }); }
+});
+
+test('preserves editable numbering, checkboxes, line breaks and empty-header tables', async () => {
+  const markdown = '# Sprawdzian\n\n3. trzeci\n4. czwarty\n\n- [ ] pierwsza\n- [x] druga\n\nlinia  \nnowa\n\n| | |\n| --- | --- |\n| Treść | P / F |\n\n<!-- teacher-key -->\n\nKLUCZ';
+  const entries = zipEntries(await buildAssessmentDocx({ markdown, sourceDirectory: '.' }));
+  const xml = entries.get('word/document.xml').toString();
+  assert.match(xml, /<w:numPr>/);
+  assert.match(entries.get('word/numbering.xml')?.toString() || '', /<w:start w:val="3"\/>/);
+  assert.match(xml, /☐/);
+  assert.match(xml, /☒/);
+  assert.match(xml, /<w:br\/>/);
+  assert.equal((xml.match(/<w:tr>/g) || []).length, 1);
+  assert.doesNotMatch(xml, /KLUCZ/);
+});
+
+test('keeps image proportions and embeds images separately from editable text', async () => {
+  const directory = await mkdtemp(path.join(os.tmpdir(), 'assessment-docx-image-'));
+  try {
+    await mkdir(path.join(directory, 'assets'));
+    const png = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIHWP4z8DwHwAFgAI/ScLttAAAAABJRU5ErkJggg==', 'base64');
+    await writeFile(path.join(directory, 'assets/mapa.png'), png);
+    const entries = zipEntries(await buildAssessmentDocx({ markdown: '# Sprawdzian\n\n![Mapa](assets/mapa.png)\n\nPolecenie\n\n<!-- teacher-key -->\n\nKLUCZ', sourceDirectory: directory }));
+    const xml = entries.get('word/document.xml').toString();
+    const [, width, height] = /<wp:extent cx="(\d+)" cy="(\d+)"\/>/.exec(xml);
+    assert.equal(width, height);
+    assert.match(xml, /Polecenie/);
+    assert.deepEqual(entries.get('word/media/image1.png'), png);
+    await writeFile(path.join(directory, 'assets/mapa.png'), 'not an image');
+    await assert.rejects(buildAssessmentDocx({ markdown: '# Test\n\n![Mapa](assets/mapa.png)\n\n<!-- teacher-key -->\n\nKlucz', sourceDirectory: directory }), /obraz/i);
   } finally { await rm(directory, { recursive: true, force: true }); }
 });
 
@@ -44,6 +76,9 @@ test('serves generated DOCX directly and blocks traversal in read-only mode', as
     assert.match(response.headers.get('content-type'), /wordprocessingml\.document/);
     assert.match(response.headers.get('content-disposition'), /attachment/);
     assert.equal(Buffer.from(await response.arrayBuffer()).subarray(0, 2).toString(), 'PK');
+    const conditional = await fetch(`http://127.0.0.1:${port}/api/test-docx?test=${encodeURIComponent('tests/5/01-test.md')}`, { headers: { 'If-None-Match': response.headers.get('etag') || 'old-copy' } });
+    assert.equal(conditional.status, 200);
+    assert.equal(conditional.headers.get('cache-control'), 'no-store');
     const invalid = await fetch(`http://127.0.0.1:${port}/api/test-docx?test=..%2FREADME.md`);
     assert.equal(invalid.status, 400);
   } finally {

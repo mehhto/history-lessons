@@ -234,6 +234,7 @@ test('writable export UI restores portable and PDF actions for lessons and asses
     await page.getByRole('tab', { name: 'Kartkówki' }).click();
     await page.locator('#catalog .lesson').first().click();
     assert.equal(await page.getByRole('link', { name: 'Pobierz DOCX' }).count(), 1);
+    assert.match(await page.getByRole('link', { name: 'Pobierz DOCX' }).textContent(), /Edytuj w Wordzie/);
     assert.equal(await page.getByRole('button', { name: 'Drukuj / zapisz PDF' }).count(), 1);
     assert.deepEqual(pageErrors, []);
   } finally {

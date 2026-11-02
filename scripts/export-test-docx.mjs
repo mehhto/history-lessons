@@ -25,12 +25,43 @@ export async function makeDocxBuffer(entries) {
   return Buffer.concat([...local, directory, end]);
 }
 
+// ponytail: read dimensions only; image decoding remains the document reader's job.
+function imageExtent(bytes, ext) {
+  let width, height;
+  if (ext === '.png' && bytes.length >= 24 && bytes.subarray(0, 8).equals(Buffer.from('89504e470d0a1a0a', 'hex'))) {
+    width = bytes.readUInt32BE(16); height = bytes.readUInt32BE(20);
+  } else if (ext === '.jpg' && bytes.length >= 4 && bytes.readUInt16BE(0) === 0xffd8) {
+    for (let offset = 2; offset + 4 <= bytes.length;) {
+      if (bytes[offset++] !== 0xff) break;
+      while (bytes[offset] === 0xff) offset++;
+      const marker = bytes[offset++];
+      if ([0xd9, 0xda].includes(marker)) break;
+      const length = bytes.readUInt16BE(offset);
+      if (length < 2 || offset + length > bytes.length) break;
+      if ([0xc0,0xc1,0xc2,0xc3,0xc5,0xc6,0xc7,0xc9,0xca,0xcb,0xcd,0xce,0xcf].includes(marker) && length >= 7) {
+        height = bytes.readUInt16BE(offset + 3); width = bytes.readUInt16BE(offset + 5); break;
+      }
+      offset += length;
+    }
+  } else if (ext === '.webp' && bytes.length >= 30 && bytes.toString('ascii', 0, 4) === 'RIFF' && bytes.toString('ascii', 8, 12) === 'WEBP') {
+    const kind = bytes.toString('ascii', 12, 16);
+    if (kind === 'VP8X') { width = bytes.readUIntLE(24, 3) + 1; height = bytes.readUIntLE(27, 3) + 1; }
+    else if (kind === 'VP8L' && bytes[20] === 0x2f) { const bits = bytes.readUInt32LE(21); width = (bits & 0x3fff) + 1; height = ((bits >>> 14) & 0x3fff) + 1; }
+    else if (kind === 'VP8 ' && bytes.toString('hex', 23, 26) === '9d012a') { width = bytes.readUInt16LE(26) & 0x3fff; height = bytes.readUInt16LE(28) & 0x3fff; }
+  }
+  if (!width || !height) throw new Error('Nieprawidłowy lub nieobsługiwany obraz DOCX.');
+  const scale = Math.min(5486400 / width, 3657600 / height);
+  return { cx: Math.round(width * scale), cy: Math.round(height * scale) };
+}
+
 export async function buildAssessmentDocx({ markdown, sourceDirectory }) {
-  const tokens = [], paragraphs = [];
+  const tokens = [], paragraphs = [], numbering = [];
   const tokensFrom = async (nodes, format = {}) => {
     let out = '';
     for (const node of nodes || []) {
-      if (node.type === 'text') out += run(node.text, `${format.bold ? '<w:b/>' : ''}${format.italic ? '<w:i/>' : ''}`);
+      if (node.type === 'text' && !node.tokens) out += run(node.text, `${format.bold ? '<w:b/>' : ''}${format.italic ? '<w:i/>' : ''}`);
+      else if (node.type === 'br') out += '<w:r><w:br/></w:r>';
+      else if (node.type === 'checkbox') out += run(node.checked ? '☒ ' : '☐ ');
       else if (node.type === 'codespan') out += run(node.text, '<w:rStyle w:val="VerbatimChar"/>');
       else if (node.type === 'image') {
         const src = node.href || '';
@@ -40,32 +71,33 @@ export async function buildAssessmentDocx({ markdown, sourceDirectory }) {
         if (!imagePath.startsWith(`${folder}${path.sep}`)) throw new Error(`Obraz DOCX poza tests/<klasa>/assets/: ${src}`);
         const bytes = await readFile(imagePath), ext = path.extname(src).toLowerCase() === '.jpeg' ? '.jpg' : path.extname(src).toLowerCase();
         const type = ext === '.jpg' ? 'image/jpeg' : `image/${ext.slice(1)}`;
+        const { cx, cy } = imageExtent(bytes, ext);
         const index = tokens.length + 1; tokens.push({ name: `word/media/image${index}${ext}`, bytes, type });
-        out += `<w:r><w:drawing><wp:inline><wp:extent cx="5486400" cy="3657600"/><wp:docPr id="${index}" name="image${index}"/><a:graphic><a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture"><pic:pic><pic:nvPicPr><pic:cNvPr id="${index}" name="image${index}"/><pic:cNvPicPr/></pic:nvPicPr><pic:blipFill><a:blip r:embed="rId${index + 1}"/><a:stretch><a:fillRect/></a:stretch></pic:blipFill><pic:spPr><a:xfrm><a:off x="0" y="0"/><a:ext cx="5486400" cy="3657600"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom></pic:spPr></pic:pic></a:graphicData></a:graphic></wp:inline></w:drawing></w:r>`;
+        out += `<w:r><w:drawing><wp:inline><wp:extent cx="${cx}" cy="${cy}"/><wp:docPr id="${index}" name="image${index}"/><a:graphic><a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture"><pic:pic><pic:nvPicPr><pic:cNvPr id="${index}" name="image${index}"/><pic:cNvPicPr/></pic:nvPicPr><pic:blipFill><a:blip r:embed="rId${index + 1}"/><a:stretch><a:fillRect/></a:stretch></pic:blipFill><pic:spPr><a:xfrm><a:off x="0" y="0"/><a:ext cx="${cx}" cy="${cy}"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom></pic:spPr></pic:pic></a:graphicData></a:graphic></wp:inline></w:drawing></w:r>`;
       } else if (node.type === 'strong' || node.type === 'em') out += await tokensFrom(node.tokens, { bold: format.bold || node.type === 'strong', italic: format.italic || node.type === 'em' });
       else if (node.tokens) out += await tokensFrom(node.tokens, format);
     }
     return out;
   };
   async function render(nodes) {
-    let list;
-    const flush = () => { if (list) { paragraphs.push(...list.items.map((text) => `<w:p><w:pPr><w:pStyle w:val="${list.style}"/></w:pPr>${text || run(' ')}</w:p>`)); list = undefined; } };
     for (const node of nodes) {
-      if (node.type === 'heading') { flush(); paragraphs.push(`<w:p><w:pPr><w:pStyle w:val="Heading${Math.min(3, node.depth)}"/></w:pPr>${await tokensFrom(node.tokens)}</w:p>`); }
-      else if (node.type === 'paragraph') { flush(); paragraphs.push(`<w:p>${await tokensFrom(node.tokens)}</w:p>`); }
-      else if (node.type === 'list') { flush(); list = { style: node.ordered ? 'ListNumber' : 'ListBullet', items: [] }; for (const item of node.items || []) list.items.push(await tokensFrom(item.tokens)); flush(); }
-      else if (node.type === 'blockquote') { flush(); await render(node.tokens); }
-      else if (node.type === 'table') {
-        flush(); const rows = [node.header, ...(node.rows || [])], width = 9000 / Math.max(1, ...rows.map((r) => r.length));
-        const body = [];
-        for (const row of rows) { const cells = []; for (const cell of row) { let text = await tokensFrom(cell.tokens); if (cell.header) text = text.replaceAll('<w:r>', '<w:r><w:rPr><w:b/></w:rPr>'); cells.push(`<w:tc><w:tcPr><w:tcW w:w="${width}" w:type="dxa"/></w:tcPr><w:p>${text}</w:p></w:tc>`); } body.push(`<w:tr>${cells.join('')}</w:tr>`); }
-        paragraphs.push(`<w:tbl><w:tblPr><w:tblBorders><w:top w:val="single" w:sz="4"/><w:left w:val="single" w:sz="4"/><w:bottom w:val="single" w:sz="4"/><w:right w:val="single" w:sz="4"/><w:insideH w:val="single" w:sz="4"/><w:insideV w:val="single" w:sz="4"/></w:tblBorders></w:tblPr>${body.join('')}</w:tbl>`);
+      if (node.type === 'heading') paragraphs.push(`<w:p><w:pPr><w:pStyle w:val="Heading${Math.min(3, node.depth)}"/></w:pPr>${await tokensFrom(node.tokens)}</w:p>`);
+      else if (node.type === 'paragraph') paragraphs.push(`<w:p>${await tokensFrom(node.tokens)}</w:p>`);
+      else if (node.type === 'list') {
+        const id = numbering.length + 1;
+        numbering.push({ abstract: `<w:abstractNum w:abstractNumId="${id}"><w:lvl w:ilvl="0"><w:start w:val="${node.ordered ? node.start : 1}"/><w:numFmt w:val="${node.ordered ? 'decimal' : 'bullet'}"/><w:lvlText w:val="${node.ordered ? '%1.' : '•'}"/><w:pPr><w:ind w:left="360" w:hanging="360"/></w:pPr></w:lvl></w:abstractNum>`, instance: `<w:num w:numId="${id}"><w:abstractNumId w:val="${id}"/></w:num>` });
+        for (const item of node.items || []) paragraphs.push(`<w:p><w:pPr><w:pStyle w:val="${node.ordered ? 'ListNumber' : 'ListBullet'}"/>${item.task ? '' : `<w:numPr><w:ilvl w:val="0"/><w:numId w:val="${id}"/></w:numPr>`}</w:pPr>${await tokensFrom(item.tokens)}</w:p>`);
       }
-      else if (node.type === 'space') flush();
-      else if (node.type === 'code') { flush(); paragraphs.push(`<w:p>${run(node.text)}</w:p>`); }
-      else if (node.type === 'hr') { flush(); paragraphs.push('<w:p><w:pPr><w:pBdr><w:bottom w:val="single" w:sz="4"/></w:pBdr></w:pPr><w:r><w:t> </w:t></w:r></w:p>'); }
+      else if (node.type === 'blockquote') await render(node.tokens);
+      else if (node.type === 'table') {
+        const rows = [...(node.header.some((cell) => cell.text.trim()) ? [node.header] : []), ...(node.rows || [])], width = Math.floor(9000 / Math.max(1, node.header.length));
+        const body = [];
+        for (const row of rows) { const cells = []; for (const cell of row) { const text = await tokensFrom(cell.tokens, { bold: Boolean(cell.header) }); cells.push(`<w:tc><w:tcPr><w:tcW w:w="${width}" w:type="dxa"/></w:tcPr><w:p>${text}</w:p></w:tc>`); } body.push(`<w:tr>${cells.join('')}</w:tr>`); }
+        paragraphs.push(`<w:tbl><w:tblPr><w:tblBorders><w:top w:val="single" w:sz="4"/><w:left w:val="single" w:sz="4"/><w:bottom w:val="single" w:sz="4"/><w:right w:val="single" w:sz="4"/><w:insideH w:val="single" w:sz="4"/><w:insideV w:val="single" w:sz="4"/></w:tblBorders></w:tblPr><w:tblGrid>${node.header.map(() => `<w:gridCol w:w="${width}"/>`).join('')}</w:tblGrid>${body.join('')}</w:tbl>`);
+      }
+      else if (node.type === 'code') paragraphs.push(`<w:p>${run(node.text)}</w:p>`);
+      else if (node.type === 'hr') paragraphs.push('<w:p><w:pPr><w:pBdr><w:bottom w:val="single" w:sz="4"/></w:pBdr></w:pPr><w:r><w:t> </w:t></w:r></w:p>');
     }
-    flush();
   }
   const studentMarkdown = studentTestMarkdown(markdown);
   await render(marked.lexer(studentMarkdown));
@@ -73,11 +105,12 @@ export async function buildAssessmentDocx({ markdown, sourceDirectory }) {
   const documentXml = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture"><w:body>${paragraphs.join('')}<w:sectPr><w:pgSz w:w="11906" w:h="16838"/><w:pgMar w:top="1134" w:right="1134" w:bottom="1134" w:left="1134"/></w:sectPr></w:body></w:document>`;
   const types = [...new Set(tokens.map((i) => `<Default Extension="${path.extname(i.name).slice(1)}" ContentType="${i.type}"/>`))].join('');
   const entries = {
-    '[Content_Types].xml': `<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/>${types}<Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/><Override PartName="/word/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml"/></Types>`,
+    '[Content_Types].xml': `<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/>${types}<Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/><Override PartName="/word/numbering.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.numbering+xml"/><Override PartName="/word/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml"/></Types>`,
     '_rels/.rels': '<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/></Relationships>',
     'word/document.xml': documentXml,
     'word/styles.xml': '<?xml version="1.0" encoding="UTF-8"?><w:styles xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:style w:type="paragraph" w:default="1" w:styleId="Normal"><w:name w:val="Normal"/><w:rPr><w:sz w:val="22"/></w:rPr></w:style><w:style w:type="paragraph" w:styleId="Heading1"><w:name w:val="heading 1"/><w:pPr><w:outlineLvl w:val="0"/></w:pPr><w:rPr><w:b/><w:sz w:val="32"/></w:rPr></w:style><w:style w:type="paragraph" w:styleId="Heading2"><w:name w:val="heading 2"/><w:pPr><w:outlineLvl w:val="1"/></w:pPr><w:rPr><w:b/><w:sz w:val="28"/></w:rPr></w:style><w:style w:type="paragraph" w:styleId="Heading3"><w:name w:val="heading 3"/><w:rPr><w:b/></w:rPr></w:style><w:style w:type="paragraph" w:styleId="ListBullet"><w:name w:val="List Bullet"/></w:style><w:style w:type="paragraph" w:styleId="ListNumber"><w:name w:val="List Number"/></w:style></w:styles>',
-    'word/_rels/document.xml.rels': `<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/>${relationships}</Relationships>`,
+    'word/numbering.xml': `<?xml version="1.0" encoding="UTF-8"?><w:numbering xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">${numbering.map((item) => item.abstract).join('')}${numbering.map((item) => item.instance).join('')}</w:numbering>`,
+    'word/_rels/document.xml.rels': `<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rIdNumbering" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/numbering" Target="numbering.xml"/><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/>${relationships}</Relationships>`,
     ...Object.fromEntries(tokens.map(({ name, bytes }) => [name, bytes])),
   };
   return makeDocxBuffer(entries);

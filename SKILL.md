@@ -8,7 +8,7 @@ Nie jesteś źródłem faktów historycznych ani arbitrem zgodności z programem
 
 ## Domyślna ścieżka pracy
 
-Przed projektowaniem lub rewizją przeczytaj [`design/lesson-production-workflow.md`](design/lesson-production-workflow.md). Stosuj jedną ścieżkę: sprawdzone rozwiązanie → kontrola treści i działania ucznia → spójny pakiet → celowane QA i końcowy przegląd → jedno przekazanie nauczycielowi. To porządek pracy, nie dodatkowe formularze ani nakaz przebudowy starych lekcji. Szczegółowe zasady poniżej stosuj do właściwego zakresu; nie otwieraj ponownie rozstrzygniętych wyborów.
+Przed projektowaniem lub rewizją przeczytaj [`design/lesson-production-workflow.md`](design/lesson-production-workflow.md). Dla samodzielnych sprawdzianów i kartkówek stosuj [edycję i review w DOCX](deploy/live-preview/ASSESSMENT-DOCX.md): edytowalny arkusz od pierwszego przeglądu, poprawki nauczyciela scalane z Markdownem, kluczem i punktacją, PDF po akceptacji. Stosuj jedną ścieżkę: sprawdzone rozwiązanie → kontrola treści i działania ucznia → spójny pakiet → celowane QA i końcowy przegląd → jedno przekazanie nauczycielowi. To porządek pracy, nie dodatkowe formularze ani nakaz przebudowy starych lekcji. Szczegółowe zasady poniżej stosuj do właściwego zakresu; nie otwieraj ponownie rozstrzygniętych wyborów.
 
 ## Przed rozpoczęciem
 

@@ -547,6 +547,16 @@ input {
     min-height: 260px
 }
 
+.preview-head .edit-assessment {
+    display: inline-flex;
+    width: auto;
+    flex: 0 0 auto;
+    gap: 7px;
+    padding: 0 12px;
+    font-size: 14px;
+    white-space: nowrap
+}
+
 #workspace.assessment-preview {
     display: flex;
     flex-direction: column;
@@ -554,8 +564,14 @@ input {
 }
 
 .assessment-preview #preview-content {
+    display: flex;
+    flex-direction: column;
     flex: 1;
     min-height: 0
+}
+
+@media (min-width: 851px) {
+    .assessment-preview .exam-pages { flex: 1; min-height: 0; height: 0 }
 }
 
 .assessment-preview .document-preview-shell,

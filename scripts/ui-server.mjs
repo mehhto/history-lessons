@@ -3,7 +3,6 @@ import { open, realpath, readFile, stat } from 'node:fs/promises';
 import http from 'node:http';
 import path from 'node:path';
 import process from 'node:process';
-import { createHash } from 'node:crypto';
 import { spawn } from 'node:child_process';
 import { pipeline } from 'node:stream/promises';
 import { fileURLToPath } from 'node:url';
@@ -97,12 +96,8 @@ export async function createUiServer({ repoRoot = process.cwd(), port = 8182, ho
       if (req.method === 'GET' && pathname === '/api/test-docx') {
         const test = new URL(req.url, 'http://127.0.0.1').searchParams.get('test');
         if (typeof test !== 'string' || !/^tests\/[4-8]\/\d{2}-[^/\\]+\.md$/u.test(test)) throw new Error('Nieprawidłowy sprawdzian lub kartkówka.');
-        const markdown = await readFile(resolveWithin(root, test), 'utf8');
-        const etag = `"${createHash('sha256').update(markdown).digest('hex')}"`;
-        if (!req.headers['if-none-match'] || req.headers['if-none-match'] !== etag) {
-          const buffer = await docxForTest({ repoRoot: root, test });
-          res.writeHead(200, { ...SECURITY_HEADERS, 'Content-Type': 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'Content-Disposition': `attachment; filename="${path.basename(test, '.md')}.docx"; filename*=UTF-8''${encodeURIComponent(path.basename(test, '.md'))}.docx`, 'Content-Length': buffer.length, ETag: etag, 'Cache-Control': 'no-cache' }).end(buffer);
-        } else res.writeHead(304, { ...SECURITY_HEADERS, ETag: etag }).end();
+        const buffer = await docxForTest({ repoRoot: root, test });
+        res.writeHead(200, { ...SECURITY_HEADERS, 'Content-Type': 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'Content-Disposition': `attachment; filename="${path.basename(test, '.md')}.docx"; filename*=UTF-8''${encodeURIComponent(path.basename(test, '.md'))}.docx`, 'Content-Length': buffer.length, 'Cache-Control': 'no-store' }).end(buffer);
         return;
       }
       if (req.method === 'GET' && pathname === '/api/revisions') {
