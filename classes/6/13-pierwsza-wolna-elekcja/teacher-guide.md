@@ -1,0 +1,341 @@
+# Pierwsza wolna elekcja — przewodnik prowadzącego
+
+## Przed wejściem klasy
+- Wydrukuj `worksheet.html`: po jednej jednostronnej czarno-białej A4 dla każdego ucznia, maksymalnie 15, ewentualnie 20. Rozdaj na początku. Nie drukuj klucza uczniom.
+- Otwórz `index.html` w prywatnym podglądzie. Strzałki zmieniają slajdy, `S` pokazuje notatki, `F` pełny ekran, `B` czarny ekran. Ilustrację można powiększyć, `Escape` zamyka.
+- Uczniowie siedzą w parach. Przy nieparzystej liczbie jedna trójka. Nie przenoszą ławek, nie wycinają kart.
+- Plan:36 min pracy +2 min buforu. Galeria późniejszych władców jest orientacyjna; nie uczymy wszystkich dat na pamięć podczas tej lekcji.
+
+## Otwarcie — gotowe do powiedzenia
+„Wyobraźcie sobie państwo, którego król właśnie umarł. Nie ma dziecka, które mogłoby przejąć tron. Czy korona powinna trafić do jego krewnego, najsilniejszego sąsiada czy osoby wybranej? A kto właściwie powinien wybierać? Dziś sprawdzimy, dlaczego samo zdobycie korony jeszcze nie oznaczało pełnej swobody rządzenia”.
+
+## Prowadzenie krok po kroku
+1. Wyjaśnij śmierć Augusta, bezkrólewie i interrexa. Najpierw pojęcia, dopiero potem zadania. Pokaż, że uprawniona była szlachta, a nie wszyscy mieszkańcy.
+2. Na mapie wskaż Warszawę, Kraków i Wilno. Powiedz, że pole pierwszej elekcji było na prawym brzegu Wisły. „Kamień/Kamion, nie Wola”. W pierwszym zatrzymaniu uczniowie uzupełniają część 1 karty, nie przepisują slajdów.
+3. Pokaż czterech kandydatów. Zapytaj: „Która informacja mogła zachęcać do poparcia? Co jeszcze trzeba sprawdzić?”. Daj 40 s rozmowy, przyjmij dwie odpowiedzi. Nie organizuj dodatkowego głosowania.
+4. Wyjaśnij wybór Henryka i warunki. Najpierw porównanie dokumentów, potem artykuły i ich znaczenie. Zapowiedz pytania do źródła, dopiero potem pokaż cytat. Poproś o odnalezienie słów uzasadniających odpowiedź.
+5. Przed zadaniem powiedz:„Pracujecie w parach, ale każdy zapisuje odpowiedzi na własnej karcie. Rozstrzygnijcie, czy zdanie oznacza stałą regułę, czy osobistą obietnicę Henryka. Na końcu wyjaśnijcie, dlaczego obietnica nauki we Francji nie obowiązywała automatycznie każdego następnego króla”. Praca 2 min, omówienie 1 min, uzasadnienie 30 s. Pełne nazwy zamiast kodów literowych.
+6. Daj 1 min na uzupełnienie części 3. Nie pokazuj całego klucza przed samodzielną pracą. Przejdź do wyjazdu Henryka, podwójnej elekcji 1575 i skutków. Nie tłumacz rozbiorów samą wolną elekcją.
+7. Pokaż galerię; zaznacz: Anny Jagiellonki nie pomijamy, choć szkolne listy często pokazują tylko mężczyzn. Daty rywalizujących władców mogą się nakładać. Ostatni krótki wpis w części 4 trwa 30 s.
+8. Podsumuj. Ostatnie 2 min: każdy sam uzupełnia trzy krótkie odpowiedzi na dole karty. Jeśli kartę wkleja się od razu, przejdź między ławkami i obejrzyj zapisy. Jeśli chcesz zebrać dowody, najpierw odbierz karty, oddaj do wklejenia na następnej lekcji. Nie wymagaj drugiej notatki.
+
+## Trzy ciekawostki wplecione w opowieść
+- Pierwsza elekcja odbyła się na prawym brzegu Wisły, nie na Woli, kojarzonej z późniejszymi elekcjami.
+- Henryk opuścił Polskę po śmierci brata, aby objąć koronę Francji. Wybór 1573, koronacja i wyjazd 1574 oraz decyzja o nowej elekcji w 1575 to różne momenty.
+- Koniec męskiej linii Jagiellonów nie oznaczał, że nikt z rodziny już nie żył: Anna Jagiellonka została wybrana i później koronowana wspólnie z Batorym.
+
+## Zakończenie — gotowe do powiedzenia
+„Na początku pytaliśmy, kto ma dostać koronę. Teraz wiemy, że równie ważne było drugie pytanie: czego królowi wolno, a czego nie. Szlachta nie chciała tylko wybrać osoby — chciała też zachować wpływ na jej rządy. Zapamiętajcie różnicę: stałe zasady w artykułach, osobiste zobowiązania w pacta conventa”.
+
+## Wariant bez prezentacji — ta sama karta,38 minut
+To samodzielna droga zastępcza, nie nowa paczka zadań do dołożenia do lekcji z projektorem.
+- **5 min:**opowiedz sytuację po śmierci Augusta, zapisz na tablicy 1572→bezkrólewie→1573. Uczniowie odpowiadają, kto powinien decydować.
+- **8 min:**wyjaśnij interrexa, viritim i miejsce. Przeczytaj cztery krótkie informacje o kandydatach z załącznika poniżej. Pary wskazują jeden atut i jedno pytanie. Uzupełnijcie część 1.
+- **8 min:**wyjaśnij wybór Henryka i dwa dokumenty. Przeczytaj krótkie źródło dwa razy, po zapowiedzeniu pytania o zgodę na podatki.
+- **7 min:**główne zadanie w parach, omówienie i uzupełnienie części 3.
+- **5 min:**wyjazd Henryka, spory, skutki; odczytaj krótko galerię władców z listy poniżej i uzupełnijcie część 4. To orientacja, nie dyktando.
+- **3 min:**podsumowanie i porównanie dokumentów jednym zdaniem.
+- **2 min:**indywidualny zapis końcowy.
+
+### Materiał do odczytania lub jednego wydruku na parę
+Zygmunt II August zmarł bez potomstwa 7 lipca 1572. Podczas bezkrólewia funkcję interrexa pełnił prymas Jakub Uchański. Szlachta osobiście uczestniczyła w wyborze monarchy na sejmie elekcyjnym 1573 pod Warszawą. Nie było to prawo wszystkich mieszkańców.
+
+Kandydaci: Henryk Walezy—Francja, brat króla Karola IX; Ernest Habsburg—Austria, syn cesarza; Iwan IV Groźny—państwo moskiewskie, car; Jan III Waza—Szwecja, mąż Katarzyny Jagiellonki. Wybrano Henryka.
+
+Artykuły henrykowskie: stałe zasady ustroju—wolna elekcja, sejm co najmniej co dwa lata, zgoda sejmu na nowe podatki i ważne decyzje wojenne, prawa szlachty i pokój religijny. Pacta conventa: osobiste zobowiązania Henryka—m.in. francuskie wsparcie wojskowe, wsparcie Akademii Krakowskiej i nauki młodzieży we Francji.
+
+**Fragment źródła:** Podatków […] postanawiać nie mamy, bez dozwolenia wszech stanów na sejmie walnym.
+
+Pytanie przed odczytem: czy król mógł sam nałożyć nowy podatek? Wskaż słowa uzasadniające odpowiedź. „Dozwolenie” oznacza zgodę.
+
+## Filmy opcjonalne — nie dodawaj obu do rdzenia
+- [Historia pod ostrym kątem:„Pierwsza wolna elekcja”](https://www.youtube.com/watch?v=Ic3EHYAqPZY),4:33. Kanał i wyświetlana długość sprawdzone; obejrzano próbki kadrów. Nie odnotowano pełnego odsłuchu, dlatego materiał jest kandydatem do obejrzenia przez prowadzącego, nie zweryfikowanym źródłem treści lekcji.
+- [Krótkie Lekcje:„Historia 6 — Pierwsza wolna elekcja”](https://www.youtube.com/watch?v=-ew6BtIlItg),6:16. Ten sam status sprawdzenia. Zawiera także porównanie z prezydentem; należy pilnować różnicy między dzisiejszym głosowaniem powszechnym a elekcją szlachty.
+
+Oba poniżej 15 min. Przy 38 min całej lekcji film zastępuje część wyjaśnienia, nie dochodzi ponad scenariusz. Najbezpieczniej użyć go do późniejszej powtórki. Brak Internetu nie blokuje żadnego zadania.
+
+## Klucz i 5 pytań nauczyciela
+
+
+## Kryteria sukcesu
+Uczeń wskazuje szlachtę jako wyborców; wyjaśnia stała zasada / osobiste zobowiązanie; podaje konkretny problem, nie samo „było źle”.
+
+## Karta ucznia
+1. Zygmunta II Augusta; między panowaniem dwóch monarchów; Jakub Uchański; Warszawą (Kamień/Kamion).
+2. Zdania 1 i 3: artykuły henrykowskie. Zdania 2 i 4: pacta conventa. Uzasadnienie: drugie dotyczy konkretnej obietnicy Henryka związanej z Francją, nie reguły dla każdego monarchy.
+3. Zasady ustroju / ograniczenia władzy; np. sejm co dwa lata. Zobowiązania króla; np. wsparcie nauki młodzieży we Francji.
+4. Henryka Walezego; Francji; sporów/konfliktów.
+
+## Bilet wyjścia
+1. Szlachta — nie wszyscy mieszkańcy.
+2. Pacta conventa, bo to osobista obietnica konkretnego monarchy.
+3. Np. spór stronnictw, podwójna elekcja, naciski państw obcych.
+
+Trzy elementy obserwacji, nie zapowiedziana kartkówka. Przy myleniu dokumentów wróć do jednego przykładu, nie powtarzaj całej prezentacji.
+
+## 5 możliwych pytań nauczyciela
+1. Dlaczego w 1572 rozpoczęło się bezkrólewie? — Zygmunt August zmarł bez potomstwa; trzeba było ustalić nowego monarchę.
+2. Kto był interrexem? — Prymas Jakub Uchański, arcybiskup gnieźnieński.
+3. Czy wolna elekcja oznaczała głos wszystkich? — Nie; prawo osobistego udziału miała szlachta.
+4. Czym różnią się artykuły henrykowskie i pacta conventa? — Pierwsze zawierały stałe zasady ustroju, drugie osobiste zobowiązania wybranego króla.
+5. Dlaczego Henryk opuścił Polskę? — Po śmierci brata chciał objąć tron Francji; wyjechał 1574, a tron w Rzeczypospolitej uznano za opróżniony 1575.
+
+
+## Każdy slajd: dokładny tekst, ilustracja i notatki
+Poniższa treść odpowiada `slides.md`; nie jest drugim, zmienionym scenariuszem. Ilustracje są dołączone lokalnie. Źródła i licencje w `sources.md`, nie na ekranie ucznia.
+
+
+### Lista władców do wariantu bez projektora
+- Henryk Walezy — 1573–1575.
+- Anna Jagiellonka — wybór1575;koronacja1576;para monarsza do 1586.
+- Stefan Batory — 1576–1586;wybór1575.
+- Zygmunt III Waza — 1587–1632.
+- Władysław IV Waza — 1632–1648.
+- Jan II Kazimierz Waza — 1648–1668.
+- Michał Korybut Wiśniowiecki — 1669–1673.
+- Jan III Sobieski — 1674–1696.
+- August II Mocny — 1697–1706;1709–1733.
+- Stanisław Leszczyński — 1704–1709;1733–1736.
+- August III Sas — 1733–1763.
+- Stanisław August Poniatowski — 1764–1795.
+
+
+## Slajd 1. Pierwsza wolna elekcja · 2 min
+
+**Dokładny tekst i kompozycja:**
+
+<div class="royal-cover"><figure><img src="assets/arras-1560.jpg" alt="Renesansowy arras z herbami Polski i Litwy."></figure><div class="cover-text"><p class="eyebrow">1572–1575 · Korona za warunki</p><h1>Pierwsza<br>wolna elekcja</h1><p>Król umarł. Kto teraz decyduje?</p></div></div>
+
+**Ilustracja:** arras-1560.jpg
+
+**Co powiedzieć / zrobić:** Rozpocznij: „Wyobraźcie sobie państwo, którego król właśnie umarł. Nie ma dziecka, które mogłoby przejąć tron. Czy korona powinna trafić do jego krewnego, najsilniejszego sąsiada czy osoby wybranej przez mieszkańców? Których mieszkańców?”. Zbierz dwie krótkie odpowiedzi; nie rozstrzygaj jeszcze. Dzisiejsze pytanie: dlaczego wybrany król musiał przyjąć warunki? Arras z 1560 r., autentyczne dzieło z epoki, nie obraz elekcji.
+
+## Slajd 2. 1572 · Rzeczpospolita bez króla · 1.5 min
+
+**Dokładny tekst i kompozycja:**
+
+<div class="royal-split"><div><p class="big-date">7 lipca 1572</p><ul><li><strong>Zygmunt II August</strong> umiera bez potomstwa.</li><li>Kończy się panowanie królów z męskiej linii Jagiellonów.</li><li>Rozpoczyna się <strong>bezkrólewie</strong> — czas między panowaniem dwóch monarchów.</li></ul></div><figure><img src="assets/zygmunt-august.jpg" alt="Zygmunt II August na historycznym portrecie."><figcaption>Zygmunt II August</figcaption></figure></div>
+
+**Ilustracja:** zygmunt-august.jpg
+
+**Co powiedzieć / zrobić:** Powiedz: „Brak potomstwa oznacza, że król nie pozostawił dzieci. Żyła jednak jego siostra Anna Jagiellonka — nie wymarła cała rodzina”. Nie nazywaj tego pierwszym bezkrólewiem w całych dziejach Polski: to pierwsze bezkrólewie po wygaśnięciu męskiej linii Jagiellonów. Prawo wybierania królów miało wcześniejsze tradycje; nowością był utrwalony model elekcji viritim.
+
+## Slajd 3. Kto kieruje państwem podczas bezkrólewia? · 1.5 min
+
+**Dokładny tekst i kompozycja:**
+
+<div class="royal-split reverse"><div><p class="eyebrow">Interrex — „między królami”</p><h3>Jakub Uchański</h3><ul><li><strong>Prymas Polski</strong> — arcybiskup gnieźnieński.</li><li>Jako interrex zastępuje monarchę w najważniejszych sprawach i uczestniczy w organizacji wyboru.</li><li>Nie zostaje królem i nie wybiera go sam.</li></ul></div><figure><img src="assets/uchanski.jpg" alt="Portret Jakuba Uchańskiego."><figcaption>Jakub Uchański, prymas Polski</figcaption></figure></div>
+
+**Ilustracja:** uchanski.jpg
+
+**Co powiedzieć / zrobić:** Wyjaśnij „prymas”: najwyższy godnością biskup w Polsce. Po śmierci Augusta istniał spór o kierowanie bezkrólewiem; pozycja prymasa jako interrexa dopiero się utrwalała. Państwo nie przestało istnieć: działały senat, sejmiki i lokalne związki szlachty zapewniające porządek. Nie utożsamiaj interrexa z jedynym zarządcą wszystkich spraw.
+
+## Slajd 4. Wolna elekcja: kto miał głos? · 1.5 min
+
+**Dokładny tekst i kompozycja:**
+
+<div class="definition-band"><p><strong>Wolna elekcja</strong> — wybór monarchy przez szlachtę, a nie automatyczne dziedziczenie tronu.</p></div><div class="participation"><div><h3>Viritim = osobiście</h3><p>Prawo osobistego udziału miał każdy szlachcic. Nie każdy mógł i chciał przyjechać.</p></div><div><h3>Nie wszyscy mieszkańcy</h3><p>Chłopi i mieszczanie nie mieli takiego prawa wyboru. Szlachcianki także nie brały udziału na tych zasadach.</p></div></div><p class="takeaway">„Wolna” nie znaczy „powszechna jak dzisiejsze wybory”.</p>
+
+**Ilustracja:** Autorski układ treści: dokument / oś / pole zadania; bez osobnej ilustracji dekoracyjnej.
+
+**Co powiedzieć / zrobić:** Wyjaśnij bez przeciwstawiania „wszyscy Polacy” i „szlachta”: Rzeczpospolita obejmowała wiele narodowości, a uprawnienie wynikało ze stanu szlacheckiego. Wybierano wspólnego monarchę Polski i Litwy. Nie przedstawiaj głosowania jako nowoczesnych tajnych wyborów większościowych. Poproś o jedno wskazanie, kto nie decydował.
+
+## Slajd 5. Rzeczpospolita po unii lubelskiej · 1 min
+
+**Dokładny tekst i kompozycja:**
+
+<figure><img src="assets/polska-litwa-1569.png" alt="Mapa Rzeczypospolitej po unii lubelskiej 1569 roku, z Warszawą, Krakowem, Wilnem i Moskwą."></figure>
+
+**Ilustracja:** polska-litwa-1569.png
+
+**Co powiedzieć / zrobić:** Wskaż Warszawę, Kraków i Wilno; uczeń wskazuje Warszawę jako okolicę elekcji. Mapa przedstawia granice po unii 1569, służy orientacji, nie lokalizacji konkretnego pola. Pierwsza elekcja odbyła się w 1573 pod Warszawą, na prawym brzegu Wisły: Kamień/Kamion, okolice dzisiejszego Kamionka. Nie Wola: tam odbywały się późniejsze elekcje. Nie rysujemy zmyślonego dokładnego położenia pola.
+
+## Slajd 6. 1573 · Sejm elekcyjny pod Warszawą · 1.5 min
+
+**Dokładny tekst i kompozycja:**
+
+<div class="field-view"><figure><img src="assets/election-1573.jpg" alt="Matejkowska wizja elekcji1573, obraz z1889 roku."><figcaption>Elekcja 1573 — późniejsza wizja malarska, 1889</figcaption></figure><div><h3>Zjazd szlachty</h3><p>Obrady według województw.</p><h3>Posłowie kandydatów</h3><p>Przedstawiają obietnice i argumenty.</p><h3>Ogłoszenie wyboru</h3><p>Interrex ogłasza wybranego władcę.</p></div></div><p class="takeaway">Sejm elekcyjny w Kamieniu/Kamionie — nie lokalny sejmik.</p>
+
+**Ilustracja:** election-1573.jpg
+
+**Co powiedzieć / zrobić:** Obraz Matejki 1889, wizja elekcji 1573, nie relacja naocznego świadka ani plan pola. Nie odczytuj układu postaci jako dokumentacji procedury. Szlachta obradowała według województw, posłowie reprezentowali kandydatów, interrex ogłaszał wybór. Nie nowoczesne tajne głosowanie z urnami; dążono do zgody, bywały spory. Ciekawostka: pierwsza elekcja na prawym brzegu Wisły, późniejsze głównie na Woli.
+
+## Slajd 7. Zatrzymajmy najważniejsze informacje · 1 min
+
+**Dokładny tekst i kompozycja:**
+
+<p class="eyebrow">Karta ucznia · część 1 · 1 minuta</p><div class="notebook"><p>1572: bezpotomna śmierć ____________________.</p><p>Bezkrólewie = czas ____________________.</p><p>Interrex: prymas ____________________.</p><p>1573: szlachta wybiera króla pod ____________________.</p></div>
+
+**Ilustracja:** Autorski układ treści: dokument / oś / pole zadania; bez osobnej ilustracji dekoracyjnej.
+
+**Co powiedzieć / zrobić:** Rozdaj wcześniej po jednej karcie na ucznia, także w niepełnej parze. Teraz uczeń sam uzupełnia pierwsze cztery krótkie miejsca, bez przepisywania całego slajdu. Klucz tylko w przewodniku. Wsparcie: pozwól zajrzeć do poprzednich slajdów. Nie pokazuj klucza przed samodzielnym zapisem.
+
+## Slajd 8. Kto mógł otrzymać koronę? · 2.5 min
+
+**Dokładny tekst i kompozycja:**
+
+<div class="candidate-grid"><div><figure><img src="assets/henryk.jpg" alt="Henryk Walezy"></figure><h3>Henryk Walezy</h3><p class="origin">Francja</p><p>Brat króla Francji; jego poselstwo składało obietnice wsparcia.</p></div><div><figure><img src="assets/ernest-rota.jpg" alt="Ernest Habsburg"></figure><h3>Ernest Habsburg</h3><p class="origin">Austria · Habsburgowie</p><p>Syn cesarza; kandydatura potężnej dynastii.</p></div><div><figure><img src="assets/ivan.jpg" alt="Iwan IV Groźny"></figure><h3>Iwan IV Groźny</h3><p class="origin">Państwo moskiewskie</p><p>Car i przeciwnik Rzeczypospolitej w wojnach o ziemie i wpływy.</p></div><div><figure><img src="assets/jan-waza.jpg" alt="Jan III Waza"></figure><h3>Jan III Waza</h3><p class="origin">Szwecja</p><p>Król Szwecji; mąż Katarzyny Jagiellonki, siostry Zygmunta Augusta.</p></div></div>
+
+**Ilustracja:** henryk.jpg; ernest-rota.jpg; ivan.jpg; jan-waza.jpg
+
+**Co powiedzieć / zrobić:** Przedstaw cztery ważne rozważane kandydatury, nie zamkniętą urzędową listę jedynych dopuszczonych osób. W dyskusjach pojawiali się też inni, w tym rodzimy „Piast” bez jednej powszechnie uzgodnionej osoby. Nie dodawaj Stefana Batorego jako głównego kandydata tej elekcji — jego wybór nastąpi później. Moskwa: rozważano też syna Iwana, Fiodora. Jan III to nie Zygmunt III. Portrety nie są fotografiami.
+
+## Slajd 9. Co sprawdzić, zanim oddasz komuś władzę? · 1.5 min
+
+**Dokładny tekst i kompozycja:**
+
+<div class="task-surface"><p>Porozmawiajcie w parze:</p><ol><li>Która informacja o kandydacie mogła zachęcać do jego poparcia?</li><li>Co trzeba byłoby jeszcze sprawdzić?</li></ol><p>Wybierzcie jeden argument i jedną wątpliwość.</p></div>
+
+**Ilustracja:** Autorski układ treści: dokument / oś / pole zadania; bez osobnej ilustracji dekoracyjnej.
+
+**Co powiedzieć / zrobić:** Daj 40 s rozmowy; zbierz dwie odpowiedzi po 15 s, potem zwięzłe domknięcie. Nie urządzamy kolejnej pełnej symulacji wyborów. Model: związek rodzinny Jana z Jagiellonami mógł ułatwiać akceptację, ale nie gwarantował dobrych rządów; obietnice poselstwa wymagały oceny realności; potęga dynastii mogła dawać wsparcie, lecz budzić obawę o samodzielność. Nie ma jednej poprawnej kandydatury uczniowskiej.
+
+## Slajd 10. 1573 · Wybrano Henryka Walezego · 1 min
+
+**Dokładny tekst i kompozycja:**
+
+<div class="royal-split"><div><p class="big-date">Henryk Walezy</p><ul><li>Pierwszy władca wybrany w wolnej elekcji <strong>viritim</strong>.</li><li>Francuz, brat króla Karola IX.</li><li>Przed objęciem rządów musiał przyjąć warunki stawiane nowemu monarsze.</li></ul></div><figure><img src="assets/henryk.jpg" alt="Portret Henryka Walezego."><figcaption>Henryk Walezy</figcaption></figure></div>
+
+**Ilustracja:** henryk.jpg
+
+**Co powiedzieć / zrobić:** Wybór maj 1573, koronacja w Krakowie w lutym 1574. Daty nie są tym samym wydarzeniem. Nie nazywaj go pierwszym w historii królem Polski, którego kiedykolwiek wybierano. Wiadomość o wyniku poprzedzała jego przyjazd do Polski o wiele miesięcy. Szczegółową datę wyboru podaj tylko zgodnie z research: różne etapy wskazywane są jako 11 i 16 maja.
+
+## Slajd 11. Dwie różne odpowiedzi na pytanie o władzę · 1.5 min
+
+**Dokładny tekst i kompozycja:**
+
+<div class="two-documents"><div><p class="eyebrow">Dla kolejnych monarchów</p><h3>Artykuły<br>henrykowskie</h3><p>Stałe zasady ustroju i ograniczenia władzy królewskiej.</p></div><div><p class="eyebrow">Dla konkretnego monarchy</p><h3>Pacta<br>conventa</h3><p>Osobiste zobowiązania uzgodnione z wybranym władcą.</p></div></div><p class="takeaway">Król miał je zaakceptować — nie wymyślał ich sam.</p>
+
+**Ilustracja:** Autorski układ treści: dokument / oś / pole zadania; bez osobnej ilustracji dekoracyjnej.
+
+**Co powiedzieć / zrobić:** „Ustrój” oznacza sposób organizacji władzy w państwie. Łacińskie pacta conventa to uzgodnione warunki. Wyjaśnij analogię tylko ustnie: stałe zasady obowiązujące wszystkich i indywidualna umowa. Artykuły nazwano od Henryka, nie dlatego, że sam je napisał. Oba teksty powstały w pracach politycznych podczas elekcji; istniały różnice między akceptacją, przysięgą i późniejszym zatwierdzeniem. Nie przeciążaj VI procedurami. Paryskie przyjęcie zobowiązań nie jest tym samym co ponowne zatwierdzenie na sejmie koronacyjnym 1574: Henryk odmówił tego ostatniego; artykuły zatwierdził Stefan Batory 1576.
+
+## Slajd 12. Artykuły: król nie rządzi sam · 2 min
+
+**Dokładny tekst i kompozycja:**
+
+<div class="rules-grid"><div><h3>Wybór następcy</h3><p>Tron nie staje się dziedziczny. Kolejnego króla wybiera szlachta.</p></div><div><h3>Sejm</h3><p>Co najmniej co dwa lata; zwykłe obrady do sześciu tygodni.</p></div><div><h3>Wojna i podatki</h3><p>Król potrzebuje zgody sejmu na nowe podatki i ważne decyzje wojenne.</p></div><div><h3>Prawa i wyznanie</h3><p>Ma szanować prawa szlachty i pokój religijny.</p></div></div><p class="takeaway">Łamanie przyjętych praw mogło zwolnić poddanych z posłuszeństwa.</p>
+
+**Ilustracja:** Autorski układ treści: dokument / oś / pole zadania; bez osobnej ilustracji dekoracyjnej.
+
+**Co powiedzieć / zrobić:** Uzupełnij ważne założenia: senatorowie rezydenci mieli kontrolować i doradzać królowi; monarcha nie mógł samowolnie zarządzać pospolitym ruszeniem. Sejm zwyczajny co dwa lata nie wykluczał zwołania go wcześniej. Nie mów, że artykuły wprowadzały liberum veto, ani że każdy mógł od razu dowolnie nie słuchać króla. Zachowanie pokoju religijnego wiązało się z konfederacją warszawską. Zapytaj krótko, który zapis najmocniej ogranicza samowolę.
+
+## Slajd 13. Sprawdź w dokumencie · 0.5 min
+
+**Dokładny tekst i kompozycja:**
+
+<div class="task-surface"><p>Przeczytaj fragment na następnym slajdzie.</p><h3>Czy król mógł sam nałożyć nowy podatek?</h3><p>Wskaż słowa, które uzasadniają odpowiedź.</p></div>
+
+**Ilustracja:** Autorski układ treści: dokument / oś / pole zadania; bez osobnej ilustracji dekoracyjnej.
+
+**Co powiedzieć / zrobić:** Pytanie PRZED tekstem źródłowym. Poproś, aby para odnalazła odpowiedź w cytacie, nie tylko przypomniała ją z wykładu. Wyjaśnienie archaizmów będzie obok fragmentu.
+
+## Slajd 14. Artykuły henrykowskie · fragment · 1.5 min
+
+**Dokładny tekst i kompozycja:**
+
+<div class="document-reading"><p class="eyebrow">Dokument z 1573 roku · fragment</p><blockquote>Podatków […] postanawiać nie mamy, bez dozwolenia wszech stanów na sejmie walnym.</blockquote><p class="gloss">„Dozwolenie” — zgoda; „sejm walny” — ogólnopaństwowy sejm.</p></div>
+
+**Ilustracja:** Autorski układ treści: dokument / oś / pole zadania; bez osobnej ilustracji dekoracyjnej.
+
+**Co powiedzieć / zrobić:** Czytanie 30 s, rozmowa w parze 20 s, jedna odpowiedź z uzasadnieniem. Nie: potrzebował zgody sejmu. Słowa „bez dozwolenia” wskazują ograniczenie. „Stany” nie oznaczają wszystkich mieszkańców. Dosłowny wyimek z Artykułów henrykowskich zamieszczony przez ZPE w wymaganej lekcji „Pierwsze wolne elekcje”; wielokropek już w edycji. ZPE przywołuje Volumina legum II, Warszawa 1733, s.897–901. Nie jest to cały dokument ani nasze uwspółcześnienie.
+
+## Slajd 15. Pacta conventa: co obiecywał Henryk? · 1.5 min
+
+**Dokładny tekst i kompozycja:**
+
+<div class="royal-split"><div><ul><li><strong>Wojsko i flota:</strong> francuskie wsparcie wojskowe oraz pomoc na Bałtyku.</li><li><strong>Pieniądze:</strong> spłata długów Zygmunta Augusta i świadczenia z własnych dochodów.</li><li><strong>Nauka:</strong> wsparcie Akademii Krakowskiej i nauki polskiej młodzieży we Francji.</li></ul></div><figure><img src="assets/pacta-1573.jpg" alt="Pergamin: potwierdzenie pacta conventa przez Karola IX w imieniu swoim i Henryka, 10 września 1573."><figcaption>Potwierdzenie pacta conventa, 1573</figcaption></figure></div>
+
+**Ilustracja:** pacta-1573.jpg
+
+**Co powiedzieć / zrobić:** To obietnice, nie dowód ich wykonania. Akademia Krakowska to dzisiejszy Uniwersytet Jagielloński. MHP potwierdza finansowanie nauki stu szlachciców w Paryżu. Ilustracja to potwierdzenie pacta conventa przez Karola IX w imieniu swoim i Henryka z 10 września 1573, nie artykuły henrykowskie. Nie twierdź, że wszystkie punkty da się odczytać z miniatury. Nie dopisuj małżeństwa z Anną jako pewnego punktu końcowego tekstu pactów Henryka.
+
+## Slajd 16. Stała zasada czy osobista obietnica? · 3.5 min
+
+**Dokładny tekst i kompozycja:**
+
+<p class="eyebrow">Karta ucznia · część 2 · praca w parach</p><div class="task-surface"><p>Przy każdym zdaniu zapiszcie pełną nazwę dokumentu.</p><ol><li>Następnego króla wybierze szlachta.</li><li>Henryk wesprze polską młodzież uczącą się we Francji.</li><li>Król będzie regularnie zwoływał sejm.</li><li>Henryk zapewni francuską pomoc wojskową.</li></ol><p>Wyjaśnijcie: dlaczego drugie zdanie nie jest zasadą dla każdego króla?</p></div>
+
+**Ilustracja:** Autorski układ treści: dokument / oś / pole zadania; bez osobnej ilustracji dekoracyjnej.
+
+**Co powiedzieć / zrobić:** Główne zadanie: każdy zapisuje na własnej karcie, para uzgadnia. 2 minpracy,1 minomówienia,30 suzasadnienia. Klucz 1 i 3 artykuły henrykowskie;2 i 4 pacta conventa. Uzasadnienie: chodzi o Henryka, jego związek z Francją i osobistą obietnicę, nie stały sposób organizowania władzy. Wsparcie: pytaj „Czy dotyczy każdego przyszłego monarchy?”. Przy 15 osobach ostatnia grupa 3 osobowa; przy 20 dziesięćpar.
+
+## Slajd 17. Dwa dokumenty — zapisz różnicę · 1 min
+
+**Dokładny tekst i kompozycja:**
+
+<p class="eyebrow">Karta ucznia · część 3 · 1 minuta</p><div class="notebook"><p><strong>Artykuły henrykowskie:</strong> stałe ____________________.</p><p>Przykład: ____________________.</p><p><strong>Pacta conventa:</strong> osobiste ____________________.</p><p>Przykład Henryka: ____________________.</p></div>
+
+**Ilustracja:** Autorski układ treści: dokument / oś / pole zadania; bez osobnej ilustracji dekoracyjnej.
+
+**Co powiedzieć / zrobić:** Uczeń sam domyka notatkę. Model: zasady ustroju; zwoływanie sejmu co dwa lata; zobowiązania króla; np.wsparcie młodzieży we Francji. Sprawdź dwie odpowiedzi ustnie, bez osobnego przepisywania klucza. Pełne odpowiedzi są w przewodniku.
+
+## Slajd 18. Dwie korony Henryka · 1.5 min
+
+**Dokładny tekst i kompozycja:**
+
+<div class="royal-timeline"><div><b>1573</b><h3>Wybór w Rzeczypospolitej</h3><p>Szlachta wybiera Henryka Walezego.</p></div><div><b>1574</b><h3>Koronacja i wyjazd</h3><p>Po śmierci brata Henryk opuszcza Polskę, by objąć tron Francji.</p></div><div><b>1575</b><h3>Koniec oczekiwania</h3><p>Henryk nie wraca. Szlachta decyduje o wyborze następcy.</p></div></div>
+
+**Ilustracja:** Autorski układ treści: dokument / oś / pole zadania; bez osobnej ilustracji dekoracyjnej.
+
+**Co powiedzieć / zrobić:** Koronacja 21 lutego 1574, wyjazd w nocy 18/19 czerwca 1574. Nie nazywaj 12 maja 1575 bezsporną datą formalnej detronizacji: był to wyznaczony termin powrotu. Dzieje.pl wyraźnie zaznaczają brak formalnej detronizacji. Bezpiecznie: w 1575 zdecydowano o kolejnym wyborze. Galeria używa umownego zakresu 1573–1575; wiele podręczników kończy na faktycznym wyjeździe 1574. Henryk nadal używał polskiej tytulatury.
+
+## Slajd 19. Wolny wybór nie usuwał sporów · 1.5 min
+
+**Dokładny tekst i kompozycja:**
+
+<div class="royal-split"><div><ul><li>Różne stronnictwa popierały różnych kandydatów.</li><li>Obawiano się ograniczenia praw i pokoju religijnego.</li><li>W <strong>1575 r.</strong> doszło do podwójnej elekcji: część poparła Maksymiliana II, inni Annę Jagiellonkę i Stefana Batorego.</li><li>Wybór monarchy mógł prowadzić do ostrego konfliktu.</li></ul></div><figure><img src="assets/anna.jpg" alt="Portret Anny Jagiellonki."><figcaption>Anna Jagiellonka</figcaption></figure></div>
+
+**Ilustracja:** anna.jpg
+
+**Co powiedzieć / zrobić:** Nie przedstawiaj 1575 jako podwójnego wyboru tego samego dnia na identycznych zasadach: najpierw ogłoszono Maksymiliana, potem opozycja wybrała Annę z warunkiem małżeństwa z Batorym. Anna została koronowana wspólnie z Batorym w 1576. Maksymilian II to nie Ernest, kandydat 1573. Ciekawostka 3: po wygaśnięciu męskiej linii dynastii Jagiellonka znów znalazła się na tronie.
+
+## Slajd 20. Władza pod warunkami — korzyść i ryzyko · 1.5 min
+
+**Dokładny tekst i kompozycja:**
+
+<div class="effects"><div><h3>Większy wpływ szlachty</h3><p>Decydowała o obsadzie tronu; król musiał przyjąć zasady ograniczające jego władzę.</p></div><div><h3>Więcej okazji do konfliktu</h3><p>Rywalizacja stronnictw i podwójne elekcje utrudniały zgodny wybór.</p></div><div><h3>Zainteresowanie sąsiadów</h3><p>Obce dynastie i państwa próbowały wpływać na wybór korzystnego dla siebie monarchy.</p></div></div><p class="takeaway">To nie był jedyny ani bezpośredni powód późniejszego upadku państwa.</p>
+
+**Ilustracja:** Autorski układ treści: dokument / oś / pole zadania; bez osobnej ilustracji dekoracyjnej.
+
+**Co powiedzieć / zrobić:** Odwołaj się do konkretnych przykładów: warunkiHenryka, spór 1575, zagraniczni kandydaci. Nie przeskakuj automatycznie od elekcji 1573 do rozbiorów. Magnaci i zależności międzynarodowe nasilały trudności w późniejszych stuleciach; to proces, nie gotowy skutek następnego dnia. Zapytaj: „Dlaczego wybór króla mógł jednocześnie wzmacniać szlachtę i wywoływać spór?”.
+
+## Slajd 21. Władcy epoki wolnej elekcji · 1.5 min
+
+**Dokładny tekst i kompozycja:**
+
+<div class="king-grid"><div><figure><img src="assets/henryk.jpg" alt="Henryk Walezy"></figure><h3>Henryk Walezy</h3><p>1573–1575</p></div><div><figure><img src="assets/anna.jpg" alt="Anna Jagiellonka"></figure><h3>Anna Jagiellonka</h3><p>wybrana 1575<br>koronowana 1576</p></div><div><figure><img src="assets/stefan.jpg" alt="Stefan Batory"></figure><h3>Stefan Batory</h3><p>1576–1586</p></div><div><figure><img src="assets/zygmunt-iii.jpg" alt="Zygmunt III Waza"></figure><h3>Zygmunt III Waza</h3><p>1587–1632</p></div><div><figure><img src="assets/wladyslaw-iv.jpg" alt="Władysław IV Waza"></figure><h3>Władysław IV Waza</h3><p>1632–1648</p></div><div><figure><img src="assets/jan-kazimierz.jpg" alt="Jan II Kazimierz Waza"></figure><h3>Jan II Kazimierz Waza</h3><p>1648–1668</p></div><div><figure><img src="assets/michal.jpg" alt="Michał Korybut Wiśniowiecki"></figure><h3>Michał Korybut Wiśniowiecki</h3><p>1669–1673</p></div><div><figure><img src="assets/jan-sobieski.jpg" alt="Jan III Sobieski"></figure><h3>Jan III Sobieski</h3><p>1674–1696</p></div><div><figure><img src="assets/august-ii.jpg" alt="August II Mocny"></figure><h3>August II Mocny</h3><p>1697–1706<br>1709–1733</p></div><div><figure><img src="assets/stanislaw-leszczynski.jpg" alt="Stanisław Leszczyński"></figure><h3>Stanisław Leszczyński</h3><p>1704–1709<br>1733–1736</p></div><div><figure><img src="assets/august-iii.jpg" alt="August III Sas"></figure><h3>August III Sas</h3><p>1733–1763</p></div><div><figure><img src="assets/stanislaw-august.jpg" alt="Stanisław August Poniatowski"></figure><h3>Stanisław August Poniatowski</h3><p>1764–1795</p></div></div><p class="gallery-note">Henryk wyjechał w 1574. Anna koronowana z Batorym; para monarsza do 1586.<br>Nakładające się daty oznaczają rywalizację o tron, nie błąd kolejności.</p>
+
+**Ilustracja:** henryk.jpg; anna.jpg; stefan.jpg; zygmunt-iii.jpg; wladyslaw-iv.jpg; jan-kazimierz.jpg; michal.jpg; jan-sobieski.jpg; august-ii.jpg; stanislaw-leszczynski.jpg; august-iii.jpg; stanislaw-august.jpg
+
+**Co powiedzieć / zrobić:** Orientacja, nie lista do wyuczenia dziś.12 osób, w tym Anna. Henryk 1573–1575 umownie do ponownego bezkrólewia; wyjazd 1574. Anna wybrana 1575, koronowana 1 maja 1576 razem z Batorym; po jego śmierci 1586 pozostaje królową wdową do 1596, a królem wybrano Zygmunta III. Batory wybrany 1575, konwencjonalne panowanie 1576–1586. August II i Leszczyński wracali na tron; daty konkurencyjnych panowań nakładają się. Poniatowski abdykował 1795, nie 1796 jak błędna tabela jednej lekcji ZPE.
+
+## Slajd 22. Jak zakończyła się pierwsza elekcja? · 0.5 min
+
+**Dokładny tekst i kompozycja:**
+
+<p class="eyebrow">Karta ucznia · ostatni zapis · 30 sekund</p><div class="notebook"><p>Wybrano ____________________.</p><p>W 1574 r. opuścił Polskę, by objąć tron ____________________.</p><p>Szlachta zyskała wpływ na władzę, ale wybory mogły prowadzić do ____________________.</p></div>
+
+**Ilustracja:** Autorski układ treści: dokument / oś / pole zadania; bez osobnej ilustracji dekoracyjnej.
+
+**Co powiedzieć / zrobić:** Klucz: Henryk Walezy; Francji; sporów/konfliktów. Tylko trzy krótkie uzupełnienia, bez nowej pełnej notatki.
+
+## Slajd 23. Korona nie oznaczała nieograniczonej władzy · 1 min
+
+**Dokładny tekst i kompozycja:**
+
+<div class="summary-line"><b>1572</b><span>Bezkrólewie po śmierci Zygmunta Augusta.</span><b>1573</b><span>Szlachta wybiera Henryka Walezego.</span><b>Warunki</b><span>Artykuły — stałe zasady.<br>Pacta conventa — osobiste zobowiązania.</span></div><p class="closing">Wybrany król musiał porozumieć się z tymi, którzy dali mu koronę.</p>
+
+**Ilustracja:** Autorski układ treści: dokument / oś / pole zadania; bez osobnej ilustracji dekoracyjnej.
+
+**Co powiedzieć / zrobić:** Zakończenie do powiedzenia: „Na początku pytaliśmy, kto ma dostać koronę. Teraz wiemy, że równie ważne było drugie pytanie: czego królowi wolno, a czego nie. Szlachta nie chciała tylko wybrać osoby — chciała też zachować wpływ na jej rządy”. Nie wprowadzaj nowej aktywności.
+
+## Slajd 24. Zanim zakończymy · 2 min
+
+**Dokładny tekst i kompozycja:**
+
+<div class="task-surface"><p>Odpowiedz samodzielnie:</p><ol><li>Kto wybierał króla w wolnej elekcji?</li><li>Król obiecuje opłacić naukę młodzieży za granicą. Który dokument zawiera taką obietnicę — i dlaczego?</li><li>Podaj jeden możliwy problem związany z wolną elekcją.</li></ol></div>
+
+**Ilustracja:** Autorski układ treści: dokument / oś / pole zadania; bez osobnej ilustracji dekoracyjnej.
+
+**Co powiedzieć / zrobić:** Odpowiedź indywidualna na własnej karcie:90 s na trzy krótkie wpisy,30 s na zebranie i wskazanie przykładowej odpowiedzi. Każdy pozostawia własny dowód zrozumienia, nie tylko ochotnicy. Klucz: szlachta; pacta conventa, osobiste zobowiązanie; spór stronnictw, podwójna elekcja lub naciski zagraniczne. Rdzeń kończy się po tej kontroli.

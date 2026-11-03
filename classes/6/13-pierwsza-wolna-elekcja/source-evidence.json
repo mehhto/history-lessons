@@ -1,0 +1,396 @@
+{
+  "retrieved_at_utc": "2026-11-03T05:17:52.370135+00:00",
+  "scope": "Research only; no repository edits. Institutional sources support main facts. Source17 secondary, date-convention comparison only.",
+  "required_exact_zpe_urls": {
+    "Df6xvyHWE": "Full live body consulted; HTTP200; source1",
+    "DkuB8iBjL": "Full live body consulted; HTTP200; source2"
+  },
+  "limitations": [
+    "web_extract failed because configured gateway unavailable, not target403; Python HTTPS succeeded.",
+    "Some search rescues failed/irrelevant; unused.",
+    "Source13TLS mismatch and source16JSshell not claimed as full consulted historical content.",
+    "Source editions quoted as reproduced by ZPE; no original1733print collation.",
+    "Public record retains citation metadata and original findings, not copied institutional article paragraphs; full research preserved privately."
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://zpe.gov.pl/a/wolna-elekcja/Df6xvyHWE",
+      "status": 200,
+      "final_url": "https://zpe.gov.pl/a/wolna-elekcja/Df6xvyHWE",
+      "bytes": 244847,
+      "consulted_full_text": true
+    },
+    {
+      "id": 2,
+      "url": "https://zpe.gov.pl/a/pierwsze-wolne-elekcje/DkuB8iBjL",
+      "status": 200,
+      "final_url": "https://zpe.gov.pl/a/pierwsze-wolne-elekcje/DkuB8iBjL",
+      "bytes": 156930,
+      "consulted_full_text": true
+    },
+    {
+      "id": 3,
+      "url": "https://zpe.gov.pl/a/przeczytaj/DFSqqw7qB",
+      "status": 200,
+      "final_url": "https://zpe.gov.pl/a/przeczytaj/DFSqqw7qB",
+      "bytes": 137295,
+      "consulted_full_text": true
+    },
+    {
+      "id": 4,
+      "url": "https://muzhp.pl/wiedza-on-line/henryk-walezy-na-polskim-tronie",
+      "status": 200,
+      "final_url": "https://muzhp.pl/wiedza-on-line/henryk-walezy-na-polskim-tronie",
+      "bytes": 91719,
+      "consulted_full_text": true
+    },
+    {
+      "id": 5,
+      "url": "https://wilanow-palac.pl/pasaz-wiedzy/artykuly-henrykowskie-i-pacta-conventa",
+      "status": 200,
+      "final_url": "https://wilanow-palac.pl/pasaz-wiedzy/artykuly-henrykowskie-i-pacta-conventa",
+      "bytes": 755695,
+      "consulted_full_text": true
+    },
+    {
+      "id": 6,
+      "url": "https://zpe.gov.pl/a/przeczytaj/DccPiskd5",
+      "status": 200,
+      "bytes": 90625,
+      "consulted_full_text": true
+    },
+    {
+      "id": 7,
+      "url": "https://dzieje.pl/postacie/henryk-walezy",
+      "status": 200,
+      "bytes": 224066,
+      "consulted_full_text": true
+    },
+    {
+      "id": 8,
+      "url": "https://kolekcja.zamek-krolewski.pl/obiekt-11567-august-ii",
+      "status": 200,
+      "bytes": 60685,
+      "consulted_full_text": true
+    },
+    {
+      "id": 9,
+      "url": "https://mnk.pl/wystawy/stanislaw-leszczynski-i-august-ii-wettin/",
+      "status": 200,
+      "bytes": 148419,
+      "consulted_full_text": true
+    },
+    {
+      "id": 10,
+      "url": "https://muzhp.pl/kalendarium/abdykacja-stanislawa-augusta-poniatowskiego",
+      "status": 200,
+      "bytes": 63802,
+      "consulted_full_text": true
+    },
+    {
+      "id": 11,
+      "url": "https://zpe.gov.pl/a/z-siedmiogrodu-do-rzeczypospolitej-panowanie-stefana-batorego/DFQH2XEOF",
+      "status": 200,
+      "bytes": 231030,
+      "consulted_full_text": true
+    },
+    {
+      "id": 12,
+      "url": "https://lucascranach.org/en/PL_MNP_Mo1127",
+      "status": 200,
+      "bytes": 28131,
+      "consulted_full_text": true
+    },
+    {
+      "id": 13,
+      "url": "https://przewodnik.wola.waw.pl/page/2069",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'przewodnik.wola.waw.pl'. (_ssl.c:1029)>",
+      "consulted_full_text": false,
+      "note": "Search-result description only. Live fetch failed TLS hostname validation; not cited in findings."
+    },
+    {
+      "id": 14,
+      "url": "https://wilanow-palac.pl/pasaz-wiedzy/krolowa-anna-jagiellonka",
+      "status": 200,
+      "bytes": 779353,
+      "consulted_full_text": true
+    },
+    {
+      "id": 15,
+      "url": "https://zamek-krolewski.pl/strona/historia/602-zamek-jagiellonow-i-pierwszych-krolow-elekcyjnych-1526-1586",
+      "status": 200,
+      "bytes": 267719,
+      "consulted_full_text": true
+    },
+    {
+      "id": 16,
+      "url": "https://repozytorium.asp.krakow.pl/entities/visual/67e46944-9cd5-4f46-82b8-2abd9bdf6a77",
+      "status": 200,
+      "bytes": 4197,
+      "consulted_full_text": false,
+      "note": "HTTP 200 JavaScript shell, no historical body. Not cited in findings."
+    },
+    {
+      "id": 17,
+      "url": "https://twojahistoria.pl/encyklopedia/anna-jagiellonka-krol-polski-1575-1596/",
+      "status": 200,
+      "bytes": 51162,
+      "source_type": "secondary encyclopedia; for date-convention comparison only",
+      "consulted_full_text": true
+    }
+  ],
+  "claims": [
+    {
+      "id": "death",
+      "finding": "Zygmunt August: 7 VII 1572, bezpotomnie; ostatni męski Jagiellon na polskim tronie, nie ostatnia żyjąca osoba rodu.",
+      "source_ids": [
+        2,
+        4,
+        14
+      ]
+    },
+    {
+      "id": "interrex",
+      "finding": "Prymas Jakub Uchański, arcybiskup gnieźnieński, interreksem.",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "id": "meeting",
+      "finding": "Sejm elekcyjny wybiera; konwokacyjny przygotowuje; sejmik powiatowy jest lokalny.",
+      "source_ids": [
+        3,
+        6
+      ]
+    },
+    {
+      "id": "place",
+      "finding": "1573 Kamień/Kamion, dziś Kamionek; później głównie Wola.",
+      "source_ids": [
+        3,
+        15
+      ]
+    },
+    {
+      "id": "candidates",
+      "finding": "Henryk Francja; Ernest austriacki arcyksiążę/syn cesarza; Iwan IV car moskiewski; Jan III Waza król Szwecji.",
+      "source_ids": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "documents",
+      "finding": "Artykuły: stałe zasady ustroju. Pacta: osobiste zobowiązania. Henryk nie autor artykułów; spór o ponowne zatwierdzenie 1574; Batory 1576.",
+      "source_ids": [
+        2,
+        3,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "pledges",
+      "finding": "Henryk: sojusz i pomoc wojskowa, flota, długi, Akademia/uczeni, studia stu szlachciców; obietnice nie wykonanie.",
+      "source_ids": [
+        4,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "marriage",
+      "finding": "Nie mylić obietnicy politycznej ślubu Henryka z zapisanym pactum; Wilanów wyklucza zapis. Batorego dotyczy inny warunek.",
+      "source_ids": [
+        1,
+        14
+      ]
+    },
+    {
+      "id": "henry_dates",
+      "finding": "Elekcja11V1573; koronacja21II1574; wyjazd18/19VI1574; ultimatum12V1575; drugie bezkrólewie1575. Nie twierdzić, że ultimatum jest bezspornym aktem formalnej detronizacji.",
+      "source_ids": [
+        4,
+        6,
+        7,
+        15
+      ]
+    },
+    {
+      "id": "conventions",
+      "finding": "Henryk1573–1574/1573–1575/1574–1575; Anna wybór1575, koronacja1V1576, para monarsza do1586, śmierć9IX1596, istnieje szersza konwencja1575–1596.",
+      "source_ids": [
+        1,
+        3,
+        7,
+        11,
+        14,
+        15,
+        17
+      ]
+    },
+    {
+      "id": "saxon_periods",
+      "finding": "AugustII1697–1706 i1709–1733; Leszczyński1704–1709 i1733–1736; nakładające się konkurencyjne okresy.",
+      "source_ids": [
+        3,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "end",
+      "finding": "Poniatowski1764–1795; abdykacja25XI1795.1796 w tabeli dodatkowego ZPE to błąd.",
+      "source_ids": [
+        3,
+        10
+      ]
+    },
+    {
+      "id": "interesting",
+      "finding": "Nieobecny kandydat/reprezentacja poselska;100stypendiów;Anna wybrana i koronowana z Batorym. Alternatywnie darmowa kuchnia deMonluca.",
+      "source_ids": [
+        2,
+        4,
+        6,
+        11
+      ]
+    }
+  ],
+  "classroom_literal_quotes": [
+    {
+      "text": "Podatków […] postanawiać nie mamy, bez dozwolenia wszech stanów na sejmie walnym.",
+      "source_id": 2,
+      "context": "Artykuły henrykowskie, pwe_002. ZPE cites Volumina legum II, Warszawa 1733, s. 897–901. Omission already in ZPE edition. Original print not collated.",
+      "literal_substring_verified": true,
+      "line": 127
+    },
+    {
+      "text": "a dłużej go dzierżyć nie mamy, najdalej do sześciu niedziel.",
+      "source_id": 3,
+      "context": "Article 9. ZPE cites Wiek XVI–XVIII w źródłach, oprac. M. Sobańska-Bondaruk, S. B. Lenard, Warszawa 1999, s.109–110. Verbatim excerpt, no artificial join.",
+      "literal_substring_verified": true,
+      "line": 67
+    }
+  ],
+  "rulers": [
+    {
+      "name": "Henryk Walezy",
+      "dates": "1573–1575",
+      "source_ids": [
+        7,
+        15
+      ]
+    },
+    {
+      "name": "Anna Jagiellonka",
+      "dates": "wybór1575;koronacja1576;para monarsza do1586",
+      "source_ids": [
+        11,
+        14
+      ]
+    },
+    {
+      "name": "Stefan Batory",
+      "dates": "1576–1586;wybór1575",
+      "source_ids": [
+        3,
+        11
+      ]
+    },
+    {
+      "name": "Zygmunt III Waza",
+      "dates": "1587–1632",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "name": "Władysław IV Waza",
+      "dates": "1632–1648",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "name": "Jan II Kazimierz Waza",
+      "dates": "1648–1668",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "name": "Michał Korybut Wiśniowiecki",
+      "dates": "1669–1673",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "name": "Jan III Sobieski",
+      "dates": "1674–1696",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "name": "August II Mocny",
+      "dates": "1697–1706;1709–1733",
+      "source_ids": [
+        8,
+        9
+      ]
+    },
+    {
+      "name": "Stanisław Leszczyński",
+      "dates": "1704–1709;1733–1736",
+      "source_ids": [
+        3,
+        9
+      ]
+    },
+    {
+      "name": "August III Sas",
+      "dates": "1733–1763",
+      "source_ids": [
+        3
+      ]
+    },
+    {
+      "name": "Stanisław August Poniatowski",
+      "dates": "1764–1795",
+      "source_ids": [
+        3,
+        10
+      ]
+    }
+  ],
+  "verified_unique_ruler_count": 12,
+  "source_corrections": [
+    {
+      "source_id": 3,
+      "issue": "Poniatowski1796 in table contradicts own prose1795 and MHP25XI1795; corrected1795."
+    },
+    {
+      "source_id": 3,
+      "issue": "AugustII table omits interruption; use Castle catalogue source8."
+    },
+    {
+      "source_ids": [
+        3,
+        7
+      ],
+      "issue": "Removal chronology simplified differently; dzieje explicitly denies formal detronization. Do not equate12V1575ultimatum with formal act."
+    },
+    {
+      "source_ids": [
+        1,
+        14
+      ],
+      "issue": "Henryk marriage political promise versus actual pacta; Wilanów says not included."
+    }
+  ]
+}

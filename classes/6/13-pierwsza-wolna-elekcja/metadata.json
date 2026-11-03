@@ -1,0 +1,25 @@
+{
+  "id": "13-pierwsza-wolna-elekcja",
+  "title": "Pierwsza wolna elekcja — korona za warunki",
+  "grade": 6,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa",
+  "duration_minutes": 38,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "presentation_mode": "slides",
+  "goalContract": {
+    "version": "1.0"
+  },
+  "status": "DO PRZEGLĄDU NAUCZYCIELA",
+  "curriculum_requirement": "X. Początki Rzeczypospolitej Obojga Narodów. Uczeń: 2) wyjaśnia okoliczności uchwalenia artykułów henrykowskich i przedstawia zasady wolnej elekcji.",
+  "main_question": "Dlaczego wybrany król musiał przyjąć warunki?",
+  "source_reviewed": true,
+  "teacher_reviewed": false,
+  "offline_checked": false,
+  "pdf_exported": false,
+  "appearance": {
+    "style": "editorial",
+    "palette": "civic-debate"
+  }
+}
