@@ -1,0 +1,42 @@
+{
+  "id": "07-imperium-rzymskie",
+  "title": "Imperium Rzymskie",
+  "grade": 5,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa",
+  "duration_minutes": 40,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "presentation_mode": "slides",
+  "goalContract": {
+    "version": "1.0"
+  },
+  "status": "ZAAKCEPTOWANA — PUBLIKACJA WERSJI Z PODGLĄDU NA WYRAŹNE POLECENIE",
+  "curriculum_requirement": "umiejscawia w czasie i przestrzeni cywilizacje Starożytnego Wschodu oraz cywilizacje starożytnej Grecji i starożytnego Rzymu;",
+  "main_question": "Dlaczego Rzym zbudował i utrzymał imperium, a później osłabła jego zachodnia część?",
+  "source_reviewed": true,
+  "teacher_reviewed": true,
+  "offline_checked": false,
+  "pdf_exported": false,
+  "appearance": {
+    "style": "atlas",
+    "palette": "land-sea"
+  },
+  "class_size": 18,
+  "class_size_max": 20,
+  "core_minutes": 37.25,
+  "buffer_minutes": 2,
+  "materials": {
+    "worksheet": false,
+    "reason": "Bez kart i par. Cztery krótkie odręczne zapisy po omówionych etapach; odpowiedzi ustne."
+  },
+  "package_exemptions": [],
+  "teacher_accepted": true,
+  "notebook_words": 92,
+  "notebook_minutes": 5.5,
+  "publication_blocked": false,
+  "publication_block_reason": null,
+  "slide_count": 35,
+  "publication_authorization": "Wyraźne polecenie: wyslij do remote tak jak jest na podglądzie; użytkownik poinformowany o publicznym repozytorium i niepotwierdzonych prawach do grafik Asteriksa.",
+  "rights_cleared": false
+}

@@ -1,0 +1,337 @@
+{
+  "source": "Parent and local inspected per-file records; sources.md is full attribution",
+  "images": [
+    {
+      "path": "/opt/data/cache/scratch/imperium-assets/02-rozrost-pl.jpg",
+      "file": "02-rozrost-pl.jpg",
+      "exact_file_source_url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Extent_of_the_Roman_Republic_and_the_Roman_Empire_between_218_BC_and_117_AD.png",
+      "inspected_rights_page": "https://en.wikipedia.org/wiki/File:Extent_of_the_Roman_Republic_and_the_Roman_Empire_between_218_BC_and_117_AD.png",
+      "rights_evidence_html": "/opt/data/cache/scratch/imperium-assets/Extent of the Roman Republic and the Roman Empire between 218 BC and 117 AD.png.html",
+      "rights_evidence_text": "/opt/data/cache/scratch/imperium-assets/Extent of the Roman Republic and the Roman Empire between 218 BC and 117 AD.png.clean.txt",
+      "creator": "Varana; Polish legend adaptation in existing history-lessons package (individual translator not recorded)",
+      "date": "Original 2006-11-24; local adaptation date not established",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "subject": "Rozrost państwa rzymskiego — polska legenda",
+      "scope_and_date_limitations": "Verified reuse: only English legend replaced by Polish dates/text; geography and territorial coloring unchanged. Labels 218/133/44 p.n.e.; 14 n.e.; po 14 n.e.; 115–117 n.e. This is a MODERN map, not a period object. Distinguish republican conquest from imperial rule. No place labels.",
+      "dimensions": [
+        2850,
+        1781
+      ],
+      "bytes": 1152405,
+      "sha256": "62f8967622b53f54f75a815be845f7f9c750322dce14462f5959920ca8f1f2e2",
+      "reused_from": "/opt/data/history-lessons/classes/5/06-ustroj-starozytnego-rzymu/assets/rozrost-rzymu-pl.jpg",
+      "modifications": "Polish legend only; reused existing derivative",
+      "local_file": "assets/rozrost-rzymu-pl.jpg"
+    },
+    {
+      "path": "/opt/data/cache/scratch/imperium-assets/04-podzial-395.png",
+      "file": "04-podzial-395.png",
+      "exact_file_source_url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Partition_of_the_Roman_Empire_in_395_AD.png",
+      "inspected_rights_page": "https://en.wikipedia.org/wiki/File:Partition_of_the_Roman_Empire_in_395_AD.png",
+      "rights_evidence_html": "/opt/data/cache/scratch/imperium-assets/Partition of the Roman Empire in 395 AD.png.html",
+      "rights_evidence_text": "/opt/data/cache/scratch/imperium-assets/Partition of the Roman Empire in 395 AD.png.clean.txt",
+      "creator": "Mandrak",
+      "date": "2009-03-10 (upload and current revision)",
+      "license": "Public domain (author dedication)",
+      "license_url": "https://en.wikipedia.org/wiki/File:Partition_of_the_Roman_Empire_in_395_AD.png",
+      "subject": "Podział cesarstwa po śmierci Teodozjusza, 395 n.e.",
+      "scope_and_date_limitations": "Recommended large teaching map. Red west = Pars occidentalis; purple east = Pars orientis. AD 395 printed in map. Thin lines are Roman provinces; yellow dioceses; orange proconsular provinces, NOT modern borders. Latin labels; add Polish west/east explanations in slide text. No city markers: does not itself locate Rome/Constantinople. Modern schematic of administration after Theodosius, not creation of two culturally unrelated countries or the 117 extent. Province-level accuracy not independently audited.",
+      "dimensions": [
+        2052,
+        1414
+      ],
+      "bytes": 141088,
+      "sha256": "b070bfad43a7dac5bfaf45238fa339b54139bbcef167fdc75aa48f0d1e566c50",
+      "reused_from": null,
+      "modifications": "No new pixel changes; exact download/reuse",
+      "local_file": "assets/podzial-395.png"
+    },
+    {
+      "path": "/opt/data/cache/scratch/imperium-assets/05-wedrowki-100-500.png",
+      "file": "05-wedrowki-100-500.png",
+      "exact_file_source_url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Invasions_of_the_Roman_Empire_1.png",
+      "inspected_rights_page": "https://en.wikipedia.org/wiki/File:Invasions_of_the_Roman_Empire_1.png",
+      "rights_evidence_html": "/opt/data/cache/scratch/imperium-assets/Invasions of the Roman Empire 1.png.html",
+      "rights_evidence_text": "/opt/data/cache/scratch/imperium-assets/Invasions of the Roman Empire 1.png.clean.txt",
+      "creator": "MapMaster; later revisions listed in inspected file history",
+      "date": "2006-10-01 original; current revision 2022-02-14",
+      "license": "CC BY-SA 2.5",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "subject": "Najazdy i wędrówki ludów, 100–500 n.e.",
+      "scope_and_date_limitations": "Modern schematic arrows over multiple centuries, NOT a single-year map and NOT evidence all movements were simultaneous. English names. Large labels include Western/Eastern Roman Empire, Rome, Constantinople, Carthage. Can support fall-of-West explanation but not precise migration routes/timing. Do not call everyone Germanic: Huns distinct. Inspected metadata cites Cornell/Matthews 1982 and Ermatinger 2004.",
+      "dimensions": [
+        1954,
+        1382
+      ],
+      "bytes": 275434,
+      "sha256": "183eded97865810a47b6048e7664538156625fc54ddf137e0f798a200a227f28",
+      "reused_from": null,
+      "modifications": "No new pixel changes; exact download/reuse",
+      "local_file": "assets/wedrowki.png"
+    },
+    {
+      "path": "/opt/data/cache/scratch/imperium-assets/06-hannibal-leutemann.jpg",
+      "file": "06-hannibal-leutemann.jpg",
+      "exact_file_source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Leutemann%2C_Heinrich_-_Hannibal%27s_crossing_of_the_Alps.jpg",
+      "inspected_rights_page": "https://en.wikipedia.org/wiki/File:Hannibal3.jpg",
+      "rights_evidence_html": "/opt/data/cache/scratch/imperium-assets/Hannibal3.jpg.html",
+      "rights_evidence_text": "/opt/data/cache/scratch/imperium-assets/Hannibal3.jpg.clean.txt",
+      "creator": "Heinrich Leutemann (1824–1905)",
+      "date": "19th century; exact work date not stated on inspected file page",
+      "license": "Public domain (PD-Art / author life+100)",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "subject": "Hannibal ze słoniami przechodzi przez Alpy — późniejsza ilustracja",
+      "scope_and_date_limitations": "Colored woodcut from Münchener Bilderbogen, Bilder aus dem Altertume no.13 / sheet 438. MUST label XIX-wieczne wyobrażenie wydarzeń z 218 r. p.n.e., not eyewitness image or ancient painting. Elephants and troops visible; theatrical action and geography are artistic interpretation. Original alias redirects to actual Leutemann filename.",
+      "dimensions": [
+        1300,
+        1500
+      ],
+      "bytes": 782855,
+      "sha256": "1636e5002177c302f8f30c3c2bc75f5bdb4b5969863fb6c119189923fb407f03",
+      "reused_from": null,
+      "modifications": "No new pixel changes; exact download/reuse",
+      "local_file": "assets/hannibal.jpg"
+    },
+    {
+      "path": "/opt/data/cache/scratch/imperium-assets/03-imperium-117.png",
+      "file": "03-imperium-117.png",
+      "exact_file_source_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Roman_Empire_Trajan_117AD.png",
+      "inspected_rights_page": "https://en.wikipedia.org/wiki/File:Roman_Empire_Trajan_117AD.png",
+      "rights_evidence_html": "/opt/data/cache/scratch/imperium-assets/Roman Empire Trajan 117AD.png.html",
+      "rights_evidence_text": "/opt/data/cache/scratch/imperium-assets/Roman Empire Trajan 117AD.png.clean.txt",
+      "creator": "Tataryn; subsequent file revisions listed in inspected file history",
+      "date": "2012-05-28 original; current file revision 2021-11-02",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "subject": "Imperium za Trajana, 117 n.e.",
+      "scope_and_date_limitations": "Modern historical reconstruction, NOT the 395 division. Red = Roman Empire; pink = client states, not provinces. Pink Caucasian/Bosporan clients must not be counted as Roman territory. Includes short-lived eastern conquests; not the stable extent under Hadrian. Many Latin/English place names; use large/fullscreen. Own-work map; all detailed borders have not been independently re-surveyed.",
+      "dimensions": [
+        2534,
+        1614
+      ],
+      "bytes": 390221,
+      "sha256": "76234b8ffb67f773540400c5b469bb2651e3ccb00b1e6e049b8228e8e14b4e37",
+      "reused_from": null,
+      "modifications": "No new pixel changes; exact download/reuse",
+      "local_file": "assets/imperium-117.png"
+    },
+    {
+      "title": "Wojny punickie (264–146 p.n.e.)",
+      "author": "Krystian Chariza i zespół",
+      "publisher": "Zintegrowana Platforma Edukacyjna (ZPE)",
+      "source_url": "https://zpe.gov.pl/a/DFW2DJliC",
+      "source_resource_id": "R18bg2zO5XFJP",
+      "original_url": "https://static.zpe.gov.pl/portal/f/res/R18bg2zO5XFJP/1648644798/xdHJWsLWr9QKOcb0vs5ZCSheSfmq46YJ.jpg",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "language": "pl",
+      "original_pixels": [
+        2846,
+        1972
+      ],
+      "file": "/opt/data/cache/scratch/punic-revision/zpe-wojny-punickie-original.jpg",
+      "sha256": "39d16d352ce6197082bd5a79e6562e8a797d9d6ad090d40ee2f18e2c8494d5a0",
+      "derivative": false,
+      "verification": "Downloaded ZPE original /res/ (not res-minimized); inspected original raster visually. RZYM, KARTAGINA, Sycylia all readable; complete legend and date range intact.",
+      "scope_warning": "This is a synoptic map of ALL THREE Punic Wars (264–146 BCE), NOT territorial status in 218 BCE. Do not label as map of 218 BCE or second war only.",
+      "hannibal_route": "Purple arrows: działania wojsk kartagińskich Hannibala (z datami), including Iberia–Pyrenees–Alps–Italy. Route dates visible include 219, 218 and 203 BCE; not exclusively 218.",
+      "territorial_legend": [
+        "Burgundy: państwo rzymskie w 264 r. p.n.e.",
+        "Purple: posiadłości Kartaginy w 264 r. p.n.e.",
+        "Burgundy hatching: zdobycze Rzymu po I wojnie punickiej (Korsyka i Sardynia w 238 r. p.n.e.)",
+        "Light purple: zdobycze Kartaginy przed II wojną punicką",
+        "Light salmon diagonal hatching: zdobycze Rzymu po II wojnie punickiej",
+        "Salmon fill: zdobycze państwa rzymskiego przed III wojną punicką",
+        "Salmon horizontal hatching: zdobycze Rzymu po III wojnie punickiej"
+      ],
+      "credit_line": "Krystian Chariza i zespół, „Wojny punickie”, ZPE, CC BY 3.0. Bez zmian.",
+      "local_file": "assets/wojny-punickie.jpg",
+      "modifications": "No pixel changes; full original map and legend"
+    },
+    {
+      "source_url": "https://en.wikipedia.org/wiki/File:Kleopatra-VII.-Altes-Museum-Berlin1.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Kleopatra-VII.-Altes-Museum-Berlin1.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
+      "local_file": "assets/kleopatra.jpg",
+      "creator": "Louis le Grand",
+      "license": "Public domain: photographer release",
+      "limitations": "Ancient marble portrait, ca40–30 BCE; photograph later."
+    },
+    {
+      "source_url": "https://en.wikipedia.org/wiki/File:Spas_vsederzhitel_sinay_(cropped1).jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Spas_vsederzhitel_sinay_%28cropped1%29.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
+      "local_file": "assets/jezus.jpg",
+      "creator": "Unknown sixth-century artist; photograph of PD art",
+      "license": "Public domain / PD-Art",
+      "limitations": "VI-century Sinai icon, not lifetime portrait. Downsampled to800px width."
+    },
+    {
+      "source_url": "https://en.wikipedia.org/wiki/File:Roman_Empire_125_political_map.png",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Roman_Empire_125_political_map.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
+      "creator": "Andrei N. (Andrein), assistance EraNavigator",
+      "date": "May2013",
+      "license": "CC BY-SA3.0",
+      "local_file": "assets/limes-mapa.png",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "modifications": "Crop original rectangle190,135,1610,1040; added Polish labels and leader lines for existing Hadrian wall, Rhine, Danube. No border redrawing.",
+      "limitations": "State ca125 CE, not Trajan117. Original legend outside crop: legend translated beside image. Do not teach anachronistic tribal placements."
+    },
+    {
+      "local_file": "assets/asterix.png",
+      "creator": "René Goscinny / Albert Uderzo; Les Éditions Albert René",
+      "source_url": "https://asterix.com/en/characters/asterix/",
+      "original_url": "https://asterix.com/wp-content/uploads/2024/11/asterix-img.png",
+      "license": "All rights reserved; public reuse NOT cleared",
+      "private_only": true,
+      "publication_blocked": true,
+      "limitations": "Small teacher-requested fictional cultural comparison, not historical evidence. Whole package withheld from public publication."
+    },
+    {
+      "local_file": "assets/asterix-mapa-nauczyciela.jpg",
+      "creator": "René Goscinny / Albert Uderzo; dokładne wydanie reprodukcji nieustalone",
+      "source": "Teacher-supplied /opt/data/cache/images/img_8cb8dae4e861.jpg",
+      "license": "Unresolved / private only",
+      "private_only": true,
+      "publication_blocked": true,
+      "modifications": "Exact local copy; no pixel edits",
+      "sha256": "8cc637e25a8f87c9e2551be4aac2da5bc04e8229d407d74aef3298935f3ea36a"
+    },
+    {
+      "source_url": "https://en.wikipedia.org/wiki/File:Section_of_Hadrian%27s_Wall_1.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Section_of_Hadrian%27s_Wall_1.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
+      "file": "/opt/data/cache/scratch/imperium-revision-2/wall.jpg",
+      "creator": "quisnovus",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "modifications": "Downsampled without crop; contemporary photograph, not ancient scene",
+      "local_file": "assets/wal-hadriana-dzis.jpg",
+      "date": "28 października 2010",
+      "private_parent_review": "Actual pixels and rights page inspected by parent; no synthetic imagery",
+      "sha256": "1d26fa52dbdcb4cc7dfb35124680082f6976d21196830da3f3ac0beaf0ee360c"
+    },
+    {
+      "source_url": "https://en.wikipedia.org/wiki/File:Istanbul_panorama_%2816293921746%29.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Istanbul_panorama_%2816293921746%29.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
+      "file": "/opt/data/cache/scratch/imperium-revision-2/istanbul.jpg",
+      "creator": "Juraj Patekar",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "modifications": "Downsampled without crop; contemporary photograph, not ancient scene",
+      "local_file": "assets/stambul-dzis.jpg",
+      "date": "2014",
+      "private_parent_review": "Actual pixels and rights page inspected by parent; no synthetic imagery",
+      "sha256": "ca54d8c46eedfec5098da41a17419010679b7921d3d40554e7645112db853236"
+    },
+    {
+      "source_url": "https://en.wikipedia.org/wiki/File:Hagia_Sophia_%28228968325%29.jpeg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Hagia_Sophia_%28228968325%29.jpeg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
+      "file": "/opt/data/cache/scratch/imperium-revision-2/hagia.jpg",
+      "creator": "Adli Wahid",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "modifications": "Downsampled without crop; contemporary photograph, not ancient scene",
+      "local_file": "assets/hagia-sophia-dzis.jpg",
+      "date": "2014",
+      "private_parent_review": "Actual pixels and rights page inspected by parent; no synthetic imagery",
+      "sha256": "bd749e2994fc2dd81aa32c841df5b54f61435f055b3a62ddf1b7c626a5643b08"
+    },
+    {
+      "local_file": "assets/legionista-podpisany.png",
+      "creator": "Contentplus.pl sp. z o.o. / Dariusz Bufnal; polskie podpisy i strzałki — opracowanie lekcji",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "source_url": "https://zpe.gov.pl/a/rzym---od-osady-do-imperium/Dxyv2Lcuu",
+      "original_url": "https://static.zpe.gov.pl/portal/f/res-minimized/RRipqvhaF7ClR/1662387568/rSuqMe0vGtdYNoUgP5CbnjXMr6qIct6P.png",
+      "modifications": "Original pixels preserved, centered on a wider white canvas with six Polish labels and leader arrows; miecz w pochwie points to sheath/hilt, not exposed blade",
+      "sha256": "a2bf061383d717b24534375ab7ff764d83d7b21dd1428bc729bbe98e22a5a436"
+    }
+  ],
+  "files": [
+    {
+      "file": "akwedukt.jpg",
+      "sha256": "aaa153298b22415f4bf619f1d9826fe2ca9e4495a387417546c5e3bfc4a7e4f4"
+    },
+    {
+      "file": "asterix.png",
+      "sha256": "52759b3eb32f89267b3efa0c54227b58d56f02c3b33b403c98042612cb6e0332"
+    },
+    {
+      "file": "august.jpg",
+      "sha256": "dbc15f4b145d054aeafa99d5143eef35b33251136d93d0e19caa57926a04c64d"
+    },
+    {
+      "file": "droga.png",
+      "sha256": "e58b187538e2bc215746b100a494399710436f625993ebf24c9476a9e7abf805"
+    },
+    {
+      "file": "forum.jpg",
+      "sha256": "db73e6bf538e04a5424185064a29f26b3d098c9c56cc5a1f6ab20e909c5993ce"
+    },
+    {
+      "file": "galia.jpg",
+      "sha256": "62ff3a24866b1cdf3533958be477eacabc5479d1ac788dbd628a1eadde88870f"
+    },
+    {
+      "file": "hannibal.jpg",
+      "sha256": "1636e5002177c302f8f30c3c2bc75f5bdb4b5969863fb6c119189923fb407f03"
+    },
+    {
+      "file": "imperium-117.png",
+      "sha256": "76234b8ffb67f773540400c5b469bb2651e3ccb00b1e6e049b8228e8e14b4e37"
+    },
+    {
+      "file": "italia.jpg",
+      "sha256": "abb6088fa1679dbeccc3e1661aed9cf534e307f91d1d0d3ac79c7369436b8496"
+    },
+    {
+      "file": "jezus.jpg",
+      "sha256": "8737d6b8a1a04a00c709e0896a3170db5270a7979fc72b3d6a5d8673156d6160"
+    },
+    {
+      "file": "kleopatra.jpg",
+      "sha256": "6df2c3d087af93c5a870246c00988d79fb06f47b4dacf43af1229965656182be"
+    },
+    {
+      "file": "konstantynopol.svg",
+      "sha256": "7038d5cf1dca9a32b7856dbf44a623df774700c94ee803b153e515df7775c468"
+    },
+    {
+      "file": "legionista.png",
+      "sha256": "97e312eec3c969b4900e1a9e9a4e75b480ce53efa19b937277175e59cc9b81f9"
+    },
+    {
+      "file": "limes-mapa.png",
+      "sha256": "ae0121d8d429f7858d2844f319c547ed7564550652ea0f492e4a50a2b00c85f1"
+    },
+    {
+      "file": "limes.jpg",
+      "sha256": "d73bb7476d230a895a10816ffa56b61bddb631fb195e15b2824ad7fe388d8dad"
+    },
+    {
+      "file": "mozaika.jpg",
+      "sha256": "a49e9b2cf65211aec86dd77b36e1299c3a6a48c01717bc0bcbd54a679918159b"
+    },
+    {
+      "file": "podzial-395.png",
+      "sha256": "b070bfad43a7dac5bfaf45238fa339b54139bbcef167fdc75aa48f0d1e566c50"
+    },
+    {
+      "file": "rozrost-rzymu-original.png",
+      "sha256": "179ec63b7aefbf9b8b34ce351b29fbc3087229ea6d0441732a89a894378bdf0b"
+    },
+    {
+      "file": "rozrost-rzymu-pl.jpg",
+      "sha256": "62f8967622b53f54f75a815be845f7f9c750322dce14462f5959920ca8f1f2e2"
+    },
+    {
+      "file": "wedrowki.png",
+      "sha256": "183eded97865810a47b6048e7664538156625fc54ddf137e0f798a200a227f28"
+    },
+    {
+      "file": "wojny-punickie.jpg",
+      "sha256": "39d16d352ce6197082bd5a79e6562e8a797d9d6ad090d40ee2f18e2c8494d5a0"
+    }
+  ],
+  "publication_blocked": false,
+  "publication_authorization": "User explicitly requested the exact preview version be published after notice of public visibility and unresolved Asterix rights. Per-asset rights flags remain evidence of unresolved licensing, not a claim of clearance."
+}
