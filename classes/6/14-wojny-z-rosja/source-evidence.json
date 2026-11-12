@@ -1,0 +1,31 @@
+{
+  "teacher_urls": [
+    "https://histmag.org/Kiedy-Rzeczpospolita-byla-najwieksza-MAPA-28950",
+    "https://ciekawostkihistoryczne.pl/2022/04/24/kiedy-polska-byla-najwieksza/",
+    "https://zpe.gov.pl/a/polskie-dynastie-wazowie/DQTNWVadb",
+    "https://zpe.gov.pl/a/rzeczpospolita-wojuje-xvi/xvii-w/D5K5GQMqQ",
+    "https://zpe.gov.pl/a/despoci---rosja-i-turcja/D1GMFQyaS"
+  ],
+  "teacher_source_fulltext_cache": "/opt/data/cache/scratch/wojny-rosja-propozycje",
+  "textbook_images_inspected": [
+    "/opt/data/cache/images/img_4721a89ab8a3.jpg",
+    "/opt/data/cache/images/img_17ed4979f641.jpg",
+    "/opt/data/cache/images/img_baf2cc50d22e.jpg"
+  ],
+  "claims": {
+    "Batory_elected_crowned": "1575 / 1576",
+    "wybraniecka": "1578; 1 per 20 łanów royal estates",
+    "Pskov": "1581–1582 not captured",
+    "first_dymitriad": "1604 private; Dmitri crowned1605",
+    "Kluszyn": "4 July1610",
+    "Moscow": "agreement, not storm",
+    "Wladyslaw": "conditional offer, no coronation, never ruled Russia",
+    "Shuisky": "Warsaw29Oct1611; no national vassalage",
+    "capitulation": "1612",
+    "Romanov": "1613",
+    "Deulino": "Dec1618 effective1619",
+    "Polanow": "1634 maingains, indemnity, renounced throneclaims"
+  },
+  "video_full_audio_reviewed": false,
+  "commercial_EXGEO_map_used": false
+}

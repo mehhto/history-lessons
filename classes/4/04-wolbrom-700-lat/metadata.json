@@ -8,15 +8,31 @@
   "kind": "lesson",
   "lesson_type": "new-knowledge",
   "presentation_mode": "slides",
-  "status": "DO AKCEPTACJI NAUCZYCIELA",
+  "status": "PO PRZEGLĄDZIE — ZDJĘCIA NAUCZYCIELA ZINTEGROWANE; DO AKCEPTACJI",
   "curriculum_requirement": "2.3 (częściowo), 2.4; pomocniczo 1.4–6 i 4.2",
   "main_question": "Co z przeszłości Wolbromia chcemy zachować dla przyszłych mieszkańców?",
   "source_reviewed": true,
-  "teacher_reviewed": false,
+  "teacher_reviewed": true,
   "offline_checked": true,
   "pdf_exported": false,
   "appearance": {
     "style": "reportage",
     "palette": "vivid-dark2"
-  }
+  },
+  "slide_count": 23,
+  "image_files": 26,
+  "image_occurrences": 27,
+  "original_images": 25,
+  "narration_minutes": 15,
+  "postcard_work_minutes": 16,
+  "publication_authorization": {
+    "destination": "https://github.com/mehhto/history-lessons",
+    "visibility": "public",
+    "authorized_at": "2026-11-12",
+    "scope": "Wszystkie aktualne materiały, także te z nieustalonymi prawami; wyraźne potwierdzenie nauczycielki w rozmowie.",
+    "unresolved_rights_acknowledged": true,
+    "teacher_acceptance_implied": false
+  },
+  "publication_status": "public-repository",
+  "published": true
 }

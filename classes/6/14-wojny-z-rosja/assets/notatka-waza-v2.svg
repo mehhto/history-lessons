@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 530" role="img" aria-labelledby="title desc">
+<title id="title">Wojny z Rosją: ziemie zdobyte, tron nieosiągnięty</title>
+<desc id="desc">Władysław nie rządził Rosją. Rzeczpospolita uzyskała ziemie smoleńską, czernihowską i siewierską. 1610: Kłuszyn i załoga w Moskwie. 1612: kapitulacja załogi. 1618: rozejm w Dywilinie, nabytki od 1619. 1634: pokój w Polanowie, potwierdzenie nabytków i koniec roszczeń Władysława do tronu.</desc>
+<rect width="1200" height="530" fill="#fff"/>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+<!-- Jedno pytanie, dwie odmienne odpowiedzi: cel dynastyczny i terytorialny. -->
+<path d="M472 47Q595 39 724 47" stroke="#F4A582" stroke-width="22"/>
+<path d="M510 68Q362 57 286 80m19-5-19 5 6-15 M683 68Q830 57 899 80m-18-5 18 5-5-15" stroke="#1F2933" stroke-width="3"/>
+<!-- Uproszczona korona: symbol niespełnionego celu, nie historyczne insygnium. -->
+<path d="M64 195l-10-53 32 20 23-34 23 34 31-20-9 53z M65 207h90" stroke="#1F2933" stroke-width="3.5"/>
+<path d="M69 190h81" stroke="#FDDBC7" stroke-width="12"/>
+<path d="M47 126l124 96 M171 126L47 222" stroke="#CA0020" stroke-width="3.5"/>
+<path d="M206 156l344-3" stroke="#FDDBC7" stroke-width="20"/>
+<!-- Nawias obejmuje nazwy ziem. Celowo nie udaje mapy ani parceli. -->
+<path d="M661 131h-18v116h18 M1156 131h18v116h-18" stroke="#0571B0" stroke-width="3.5"/>
+<path d="M682 160l195-3 M905 160l230-3 M805 205l203-3" stroke="#C4E1F1" stroke-width="19"/>
+<path d="M30 282Q597 277 1170 282" stroke="#D4DADF" stroke-width="2"/>
+<!-- Cztery daty na ciągłej osi, z miejscem na krótkie opisy. -->
+<path d="M87 365Q571 361 1127 365m-17-9 17 9-17 9" stroke="#1F2933" stroke-width="3.5"/>
+<path d="M97 326l104-2 M391 326l104-2 M682 326l104-2 M976 326l104-2" stroke="#C4E1F1" stroke-width="20"/>
+<path d="M150 346v19 M444 346v19 M735 346v19 M1028 346v19" stroke="#1F2933" stroke-width="3"/>
+<path d="M43 482q545-6 1111 0" stroke="#F4A582" stroke-width="2.5"/>
+</g>
+<g font-family="Arial, sans-serif" fill="#1F2933">
+<text x="598" y="54" font-size="34" font-weight="700" text-anchor="middle">BILANS WOJEN</text>
+<text x="212" y="110" font-size="25" font-weight="700" fill="#CA0020">TRON — NIE</text>
+<text x="830" y="110" font-size="25" font-weight="700" fill="#0571B0">ZIEMIE — TAK</text>
+<text x="207" y="162" font-size="34" font-weight="700">Władysław</text>
+<text x="207" y="205" font-size="30">nie rządził Rosją</text>
+<text x="207" y="247" font-size="27">plan niespełniony</text>
+<text x="685" y="165" font-size="29" font-weight="700">smoleńska</text>
+<text x="907" y="165" font-size="29" font-weight="700">czernihowska</text>
+<text x="807" y="210" font-size="29" font-weight="700">siewierska</text>
+<text x="908" y="256" font-size="26" text-anchor="middle">nabytki Rzeczypospolitej</text>
+<g text-anchor="middle">
+<text x="150" y="336" font-size="36" font-weight="700">1610</text>
+<text x="444" y="336" font-size="36" font-weight="700">1612</text>
+<text x="735" y="336" font-size="36" font-weight="700">1618</text>
+<text x="1028" y="336" font-size="36" font-weight="700">1634</text>
+<text x="150" y="405" font-size="29" font-weight="700">Kłuszyn</text>
+<text x="150" y="442" font-size="26">załoga w Moskwie</text>
+<text x="444" y="405" font-size="29" font-weight="700">kapitulacja</text>
+<text x="444" y="442" font-size="26">załogi</text>
+<text x="735" y="405" font-size="29" font-weight="700">Dywilino</text>
+<text x="735" y="442" font-size="26">nabytki od 1619</text>
+<text x="1028" y="405" font-size="29" font-weight="700">Polanowo</text>
+<text x="1028" y="442" font-size="26">koniec roszczeń</text>
+<text x="600" y="515" font-size="29" font-weight="700">Wygrana bitwa ≠ trwała władza w Moskwie.</text>
+</g>
+</g>
+</svg>

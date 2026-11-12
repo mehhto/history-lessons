@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "documents": {
+    "teacher-guide.pdf": {
+      "version": 1,
+      "input_hash": "79d7c78e59d6d834e5769c4ddfa2dcfe5a96bbbc6c4613730fbfe19c02e44895",
+      "inputs": [
+        "assessment.md",
+        "metadata.json",
+        "package.json",
+        "scripts/export-print-pack.mjs",
+        "scripts/print-pack.mjs",
+        "teacher-guide.md",
+        "template/print/print.css"
+      ]
+    }
+  }
+}

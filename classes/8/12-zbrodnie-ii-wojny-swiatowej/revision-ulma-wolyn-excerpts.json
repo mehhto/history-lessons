@@ -1,0 +1,92 @@
+{
+  "teacherSourceURLs": [
+    "https://zpe.gov.pl/a/postawy-wobec-holokaustu-na-przykladzie-antoniny-i-jana-zabinskich-oraz-rodziny-ulmow/DPFB4GaDL",
+    "https://muzhp.pl/wiedza-on-line/wolyn-1943-po-osiemdziesieciu-latach-ukrainski-plan-polski-odwet"
+  ],
+  "readScope": "Pełny tekst obu wskazanych stron HTML, w tym wszystkie akapity wywiadu MHP oraz cały pisany materiał ZPE, ćwiczenia i bibliografia. Nie wykonano transkrypcji ani oględzin filmów ZPE.",
+  "publicationDateNote": "Dokładnej daty publikacji obu stron nie podano w odczytanym tekście ani metadanych. MHP: widoczny nagłówek mówi o osiemdziesięciu latach, title/og:title o siedemdziesięciu; nie wnioskować roku publikacji z tytułu ani stopki.",
+  "ulmaPrimaryTestimonies": [],
+  "ulmaPrimaryTestimoniesNote": "W podanym ZPE nie ma cytowanej relacji świadka dotyczącej Ulmów. Relacja Marii Rajbenbach dotyczy innych ratowanych i pomagających w Warszawie; nie wolno przypisać jej Ulmom. Jest cytowane okupacyjne rozporządzenie (dokument pierwotny), lecz to nie świadectwo o rodzinie.",
+  "wolynPrimaryRescueTestimonies": [],
+  "wolynPrimaryRescueTestimoniesNote": "W pełnym wskazanym wywiadzie MHP nie znaleziono cytatu z pierwotnej relacji o ratunku, schronieniu ani ocaleniu. Wszystkie proponowane fragmenty Wołynia są wypowiedziami współczesnego historyka.",
+  "excerpts": [
+    {
+      "id": "wolyn-cel",
+      "title": "Wołyń 1943 po osiemdziesięciu latach: ukraiński plan, polski odwet",
+      "author": "Włodzimierz Mędrzecki (odpowiedź historyka); rozmowę prowadzi Tomasz Wiścicki",
+      "date": null,
+      "text": "Fundamentem tej akcji było założenie, że dopóki Polacy mieszkają na spornym terytorium Wołynia i Galicji Wschodniej, dopóty będą czynnikiem na tyle silnym, że uniemożliwią realizację ukraińskiego programu niepodległościowego. Dlatego od końca roku 1942 do ostatnich miesięcy 1944 realizowano plan wymuszenia na Polakach opuszczenia tych ziem nawet przy użyciu siły.",
+      "role": "modern-historian-explanation",
+      "sourceURL": "https://muzhp.pl/wiedza-on-line/wolyn-1943-po-osiemdziesieciu-latach-ukrainski-plan-polski-odwet",
+      "savedPageText": "mhp.txt",
+      "verbatimVerified": true,
+      "wordCount": 49,
+      "context": "Rekomendowany fragment przyczyny/celu; współczesna interpretacja historyka, nie zeznanie świadka. Bez szczegółów przemocy."
+    },
+    {
+      "id": "wolyn-samoobrona",
+      "title": "Wołyń 1943 po osiemdziesięciu latach: ukraiński plan, polski odwet",
+      "author": "Włodzimierz Mędrzecki (odpowiedź historyka); rozmowę prowadzi Tomasz Wiścicki",
+      "date": null,
+      "text": "Tymczasem stało się odwrotnie. Strona polska – zarówno struktury państwowe, jak i ludność w działaniach oddolnych – nasiliła opór. Powstają tak zwane samoobrony, czyli ogniska oporu militarnego. W niektórych przypadkach uzyskują trochę broni ze strony Niemców. W efekcie w maju-czerwcu UPA-OUN (B) stają przed dylematem: zrezygnować z tej akcji czy też ją zaostrzyć, aby opór Polaków przełamać.",
+      "role": "modern-historian-explanation",
+      "sourceURL": "https://muzhp.pl/wiedza-on-line/wolyn-1943-po-osiemdziesieciu-latach-ukrainski-plan-polski-odwet",
+      "savedPageText": "mhp.txt",
+      "verbatimVerified": true,
+      "wordCount": 57,
+      "context": "Rekomendowany fragment reakcji i eskalacji; samoobrona i decyzja OUN(B)/UPA. Nie świadectwo ocalonego."
+    },
+    {
+      "id": "wolyn-obrona-ocalenie",
+      "title": "Wołyń 1943 po osiemdziesięciu latach: ukraiński plan, polski odwet",
+      "author": "Włodzimierz Mędrzecki (odpowiedź historyka); rozmowę prowadzi Tomasz Wiścicki",
+      "date": null,
+      "text": "Polacy zachowują się w sposób typowy dla kogoś, kto został zaatakowany i komu czyni się wielką krzywdę. Przyjęli założenie, że naczelnym celem jest obrona. W tej sytuacji inaczej spojrzano na ograniczoną współpracę z Niemcami. Gdy to oni są głównym dysponentem broni na tamtym terenie, a broń jest niezbędna dla ratowania własnych dzieci, to się od nich w miarę możności tę broń wydobywa. Podjęto też ograniczoną współpracę z partyzantką radziecką, która także traktowała ukraiński nacjonalizm jako wroga.",
+      "role": "modern-historian-explanation",
+      "sourceURL": "https://muzhp.pl/wiedza-on-line/wolyn-1943-po-osiemdziesieciu-latach-ukrainski-plan-polski-odwet",
+      "savedPageText": "mhp.txt",
+      "verbatimVerified": true,
+      "wordCount": 76,
+      "context": "Opcjonalna analiza pozyskiwania broni i ochrony bliskich. Nie relacja pierwszoosobowa ocalonego; współpraca ograniczona, nie aprobowanie okupacji."
+    },
+    {
+      "id": "ulma-fotografia",
+      "title": "Postawy wobec Holokaustu na przykładzie Antoniny i Jana Żabińskich oraz rodziny Ulmów",
+      "author": "ZPE; brak nazwiska autora przy tekście",
+      "date": null,
+      "text": "Jego pasją była fotografia.",
+      "role": "modern-educational-narrative",
+      "sourceURL": "https://zpe.gov.pl/a/postawy-wobec-holokaustu-na-przykladzie-antoniny-i-jana-zabinskich-oraz-rodziny-ulmow/DPFB4GaDL",
+      "savedPageText": "zpe.txt",
+      "verbatimVerified": true,
+      "wordCount": 4,
+      "context": "Krótki opis Józefa; nie pierwotne świadectwo."
+    },
+    {
+      "id": "ulma-rozporzadzenie",
+      "title": "Rozporządzenie generalnego gubernatora z 15 października 1941 r. — fragment cytowany przez ZPE",
+      "author": "Hans Frank (podpisujący rozporządzenie)",
+      "date": "1941-10-15",
+      "text": "Żydzi, którzy bez upoważnienia opuszczają wyznaczoną im dzielnicę, podlegają karze śmierci. Tej samej karze podlegają osoby, które takim Żydom świadomie dają kryjówkę",
+      "role": "primary-legal-document-quoted-in-secondary-source",
+      "sourceURL": "https://zpe.gov.pl/a/postawy-wobec-holokaustu-na-przykladzie-antoniny-i-jana-zabinskich-oraz-rodziny-ulmow/DPFB4GaDL",
+      "savedPageText": "zpe.txt",
+      "verbatimVerified": true,
+      "wordCount": 22,
+      "context": "Dokument sprawcy okupacyjnego; pokazuje groźbę kary za kryjówkę, nie świadectwo Ulmów ani ogólnoeuropejskie prawo."
+    },
+    {
+      "id": "ulma-ukrywani",
+      "title": "Wiktoria i Józef Ulmowie — Samarytanie z Markowej",
+      "author": "IPN; brak podpisu indywidualnego",
+      "date": null,
+      "text": "Byli to znajomi Ulmów z Łańcuta: Saul Goldman z synami Baruchem, Mechelem, Joachimem i Mojżeszem oraz sąsiadki Ulmów z Markowej – Gołda Grünfeld i Lea Didner, córki Chaima Goldmana – krewnego wspomnianego wyżej Saula. Lea ukrywała się wraz z małą córeczką o imieniu Reszla.",
+      "role": "modern-historical-narrative",
+      "sourceURL": "https://rodzinaulmow.ipn.gov.pl/ulm/poznaj-rodzine-ulmow",
+      "savedPageText": "ipn-bio.txt",
+      "verbatimVerified": true,
+      "wordCount": 44,
+      "context": "Imienna identyfikacja ośmiorga ukrywanych; nie relacja świadka. Nie wyznacza kolejności braci na fotografii."
+    }
+  ]
+}

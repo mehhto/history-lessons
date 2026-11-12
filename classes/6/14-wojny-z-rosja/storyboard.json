@@ -1,0 +1,232 @@
+{
+  "title": "Wojny z Rosją — Od Bałtyku do Kremla",
+  "core_minutes": 36,
+  "buffer_minutes": 2,
+  "total_minutes": 38,
+  "slides": [
+    {
+      "number": 1,
+      "id": "otwarcie",
+      "title": "Wojny z Rosją",
+      "minutes": 0.5,
+      "purpose": "opening",
+      "layout": "hero-source"
+    },
+    {
+      "number": 2,
+      "id": "batory",
+      "title": "Nowy król: Stefan Batory",
+      "minutes": 1.0,
+      "purpose": "explanation",
+      "layout": "split"
+    },
+    {
+      "number": 3,
+      "id": "baltyk",
+      "title": "Dlaczego car chciał Inflant?",
+      "minutes": 1.5,
+      "purpose": "evidence",
+      "layout": "map-focus"
+    },
+    {
+      "number": 4,
+      "id": "piechota",
+      "title": "1578 · Piechota wybraniecka",
+      "minutes": 1.0,
+      "purpose": "explanation",
+      "layout": "plain"
+    },
+    {
+      "number": 5,
+      "id": "zamoyski",
+      "title": "Król i jego ważny współpracownik",
+      "minutes": 0.75,
+      "purpose": "explanation",
+      "layout": "split"
+    },
+    {
+      "number": 6,
+      "id": "wyprawy",
+      "title": "Trzy wyprawy Batorego",
+      "minutes": 1.5,
+      "purpose": "evidence",
+      "layout": "map-focus"
+    },
+    {
+      "number": 7,
+      "id": "jam",
+      "title": "Rozejm mimo niezdobytego Pskowa?",
+      "minutes": 1.5,
+      "purpose": "practice",
+      "layout": "task-board"
+    },
+    {
+      "number": 8,
+      "id": "notatka-1",
+      "title": "Do zeszytu: droga do odzyskania Inflant",
+      "minutes": 3.0,
+      "purpose": "synthesis",
+      "layout": "plain"
+    },
+    {
+      "number": 9,
+      "id": "waza",
+      "title": "1587 · Zygmunt III Waza",
+      "minutes": 1.0,
+      "purpose": "explanation",
+      "layout": "split"
+    },
+    {
+      "number": 10,
+      "id": "warszawa",
+      "title": "Warszawa: bliżej spraw całego państwa",
+      "minutes": 1.0,
+      "purpose": "explanation",
+      "layout": "plain"
+    },
+    {
+      "number": 11,
+      "id": "smuta",
+      "title": "Rosja bez pewnego następcy tronu",
+      "minutes": 1.0,
+      "purpose": "explanation",
+      "layout": "plain"
+    },
+    {
+      "number": 12,
+      "id": "dymitr",
+      "title": "Dymitr Samozwaniec: wyprawa i tron",
+      "minutes": 1.5,
+      "purpose": "explanation",
+      "layout": "timeline-band"
+    },
+    {
+      "number": 13,
+      "id": "upadek-dymitra",
+      "title": "Dlaczego Dymitr stracił władzę?",
+      "minutes": 0.75,
+      "purpose": "explanation",
+      "layout": "plain"
+    },
+    {
+      "number": 14,
+      "id": "wojna-1609",
+      "title": "1609 · Wojna królewska",
+      "minutes": 1.0,
+      "purpose": "evidence",
+      "layout": "map-focus"
+    },
+    {
+      "number": 15,
+      "id": "kluszyn",
+      "title": "4 lipca 1610 · Kłuszyn",
+      "minutes": 1.5,
+      "purpose": "explanation",
+      "layout": "source-split"
+    },
+    {
+      "number": 16,
+      "id": "moskwa",
+      "title": "1610 · Droga do Moskwy",
+      "minutes": 1.0,
+      "purpose": "explanation",
+      "layout": "plain"
+    },
+    {
+      "number": 17,
+      "id": "wladyslaw",
+      "title": "Piętnastolatek kandydatem na cara",
+      "minutes": 1.25,
+      "purpose": "explanation",
+      "layout": "split"
+    },
+    {
+      "number": 18,
+      "id": "szujscy",
+      "title": "29 października 1611 · Warszawa",
+      "minutes": 1.0,
+      "purpose": "evidence",
+      "layout": "evidence"
+    },
+    {
+      "number": 19,
+      "id": "trzy-zdania",
+      "title": "Napraw wiadomość z Moskwy",
+      "minutes": 1.0,
+      "purpose": "practice",
+      "layout": "task-board"
+    },
+    {
+      "number": 20,
+      "id": "kapitulacja",
+      "title": "Dlaczego załoga nie utrzymała Moskwy?",
+      "minutes": 1.5,
+      "purpose": "explanation",
+      "layout": "timeline-band"
+    },
+    {
+      "number": 21,
+      "id": "romanow",
+      "title": "1613 · Nowa dynastia w Rosji",
+      "minutes": 0.75,
+      "purpose": "explanation",
+      "layout": "plain"
+    },
+    {
+      "number": 22,
+      "id": "dywilino",
+      "title": "Dywilino: ziemie zamiast korony",
+      "minutes": 1.25,
+      "purpose": "evidence",
+      "layout": "map-focus"
+    },
+    {
+      "number": 23,
+      "id": "najwieksza",
+      "title": "Około miliona km²",
+      "minutes": 1.25,
+      "purpose": "evidence",
+      "layout": "map-focus"
+    },
+    {
+      "number": 24,
+      "id": "polanowo",
+      "title": "1634 · Pokój w Polanowie",
+      "minutes": 1.5,
+      "purpose": "explanation",
+      "layout": "plain"
+    },
+    {
+      "number": 25,
+      "id": "notatka-2",
+      "title": "Do zeszytu: korona czy ziemie?",
+      "minutes": 3.0,
+      "purpose": "synthesis",
+      "layout": "plain"
+    },
+    {
+      "number": 26,
+      "id": "bilans-zadanie",
+      "title": "Czy te wojny były sukcesem?",
+      "minutes": 1.5,
+      "purpose": "practice",
+      "layout": "task-board"
+    },
+    {
+      "number": 27,
+      "id": "synteza",
+      "title": "Od Bałtyku do Kremla — i do granicy",
+      "minutes": 1.0,
+      "purpose": "synthesis",
+      "layout": "plain"
+    },
+    {
+      "number": 28,
+      "id": "wyjscie",
+      "title": "Na koniec: dwa zdania w zeszycie",
+      "minutes": 1.5,
+      "purpose": "exit-ticket",
+      "layout": "plain"
+    }
+  ]
+}

@@ -1,0 +1,443 @@
+{
+  "reviewed_at_utc": "2026-11-08T20:57:19.712043+00:00",
+  "status": "teacher_feedback_visual_revision_ready_not_accepted",
+  "graphic_note_revision": {"report": "qa-notes-revision.json", "scope": ["notatka-1", "notatka-2"], "teacher_reviewed": true, "teacher_accepted": false, "prior_readback_hashes": "historical snapshot before graphic-note revision; current served files verified in qa-notes-revision.json"},
+  "lesson_directory": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja",
+  "preview_url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/",
+  "qa_report": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/qa-report.json",
+  "slides": 28,
+  "core_minutes": 36,
+  "buffer_minutes": 2,
+  "total_minutes": 38,
+  "graphic_notes": 2,
+  "graphic_note_minutes_each": 3,
+  "oral_activities": 3,
+  "all_slides_illustrated": true,
+  "all_slide_notes_synchronized": true,
+  "teacher_guide_source": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/teacher-guide.md",
+  "teacher_guide_html": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/teacher-guide.html",
+  "sources": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/sources.md",
+  "source_evidence": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/source-evidence.json",
+  "asset_manifest": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assets/manifest.json",
+  "asset_entries": 31,
+  "contact_sheet": "/opt/data/history-lessons/.hermes/reviews/6/14-wojny-z-rosja/contact-sheet.png",
+  "critical_screenshots": [
+    "/opt/data/history-lessons/.hermes/reviews/6/14-wojny-z-rosja/01-otwarcie.png",
+    "/opt/data/history-lessons/.hermes/reviews/6/14-wojny-z-rosja/03-baltyk.png",
+    "/opt/data/history-lessons/.hermes/reviews/6/14-wojny-z-rosja/06-wyprawy.png",
+    "/opt/data/history-lessons/.hermes/reviews/6/14-wojny-z-rosja/08-notatka-1.png",
+    "/opt/data/history-lessons/.hermes/reviews/6/14-wojny-z-rosja/12-dymitr.png",
+    "/opt/data/history-lessons/.hermes/reviews/6/14-wojny-z-rosja/14-wojna-1609.png",
+    "/opt/data/history-lessons/.hermes/reviews/6/14-wojny-z-rosja/15-kluszyn.png",
+    "/opt/data/history-lessons/.hermes/reviews/6/14-wojny-z-rosja/18-szujscy.png",
+    "/opt/data/history-lessons/.hermes/reviews/6/14-wojny-z-rosja/19-trzy-zdania.png",
+    "/opt/data/history-lessons/.hermes/reviews/6/14-wojny-z-rosja/22-dywilino.png",
+    "/opt/data/history-lessons/.hermes/reviews/6/14-wojny-z-rosja/23-najwieksza.png",
+    "/opt/data/history-lessons/.hermes/reviews/6/14-wojny-z-rosja/25-notatka-2.png",
+    "/opt/data/history-lessons/.hermes/reviews/6/14-wojny-z-rosja/26-bilans-zadanie.png",
+    "/opt/data/history-lessons/.hermes/reviews/6/14-wojny-z-rosja/27-synteza.png",
+    "/opt/data/history-lessons/.hermes/reviews/6/14-wojny-z-rosja/28-wyjscie.png",
+    "/opt/data/history-lessons/.hermes/reviews/6/14-wojny-z-rosja/notes-1024.png",
+    "/opt/data/history-lessons/.hermes/reviews/6/14-wojny-z-rosja/student-summary-print.png"
+  ],
+  "comparison_contact_sheet": "/opt/data/history-lessons/.hermes/reviews/6/13-pierwsza-wolna-elekcja/contact.jpg",
+  "visual_review": {
+    "opening": "Topic-bearing painting panorama and red title plate, not prior purple split opening.",
+    "rhythm": "Large maps with side legends; portrait, process, explanatory line drawings, colored campaign/sea/ink fields; not repeated card grids.",
+    "notebook_notes": "Revised after teacher feedback: coherent linework, emphasized dates, three linked fortresses and highlighted treaty result; forked throne-versus-lands balance and continuous timeline. Land names grouped by brackets, not map-like empty fields. Three minutes each; coloring optional.",
+    "maps": "Read side legends; source routes only; Polish map key 1–5 and modern dotted borders; fiefs distinguished; no invented Severia boundary.",
+    "correction_checked": "Dmitri portrait/caption no longer collides with lower conclusion.",
+    "credit_policy": "No slide credit strips or lightbox credit overlays; provenance in sources.md and asset manifest.",
+    "summary": "Print CSS tested within one A4 content height without creating a PDF."
+  },
+  "technical_summary": {
+    "slide_viewport_checks": 84,
+    "lightbox_open_close_checks": 87,
+    "viewports": [
+      {
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "width": 1024,
+        "height": 768
+      },
+      {
+        "width": 1920,
+        "height": 1080
+      }
+    ],
+    "errors": [],
+    "issues": [],
+    "overflows": [],
+    "fonts": [
+      {
+        "viewport": 1280,
+        "ready": "loaded",
+        "body": true,
+        "heading": true
+      },
+      {
+        "viewport": 1024,
+        "ready": "loaded",
+        "body": true,
+        "heading": true
+      },
+      {
+        "viewport": 1920,
+        "ready": "loaded",
+        "body": true,
+        "heading": true
+      }
+    ],
+    "automatic_external_requests": [],
+    "keyboard": "arrows/S/B/F/Enter/Escape and focus restoration passed",
+    "composition": "passed",
+    "presentation_contract": "SKIPPED: no presentationContract.version opt-in, not claimed as passed"
+  },
+  "readback": [
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assessment.md",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/assessment.md",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "088cb6d3affac26d32bddc55d53dacca3cf25992b7ad2d91c30778b4edf0d320"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assets/batory-pskow.webp",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/assets/batory-pskow.webp",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "39db0aea3b3cfcadcfab7a6908d0c4c97d4b0344f5f2201ab93af787fb404836"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assets/bilans.svg",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/assets/bilans.svg",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "cd8e3999664b52cada55ed17b19e3db1d52b5bf54681f90f1616e6d2698259a4"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assets/deulino-full.png",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/assets/deulino-full.png",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "259e46c36de791809a9fbea7cfb1525928b1c75a97cdbf867ca3691b2fee7d6e"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assets/dwa-slady.svg",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/assets/dwa-slady.svg",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "0539b5137d8f4f79b16f7222c87071768e5588aa5b10a53032fc12c79bf3b3b4"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assets/dymitr-upadek.svg",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/assets/dymitr-upadek.svg",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "72dbe381a44c98c67bf96e39cca81aea81597a6d8053c0a4b8214cd70202f71c"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assets/dymitr.webp",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/assets/dymitr.webp",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "98033babdd4db9098e80c3bceded47403822cf5e4cff98cbc888be57826422b0"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assets/dynastia.svg",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/assets/dynastia.svg",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "0611a3956dcc442dc278facc327b55cb848734f0c96bab11bff24e2414930e4b"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assets/ivan.jpg",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/assets/ivan.jpg",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "94bccf28c2bcb865689fb4558456be7141eef95dcc1d0704e3ab5971018ff371"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assets/kluszyn-plan.png",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/assets/kluszyn-plan.png",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "d1906458ffa2a0656d024e51b6fbece5406f0c10cd1b0d80e8a99c77ea31d5a6"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assets/kluszyn.webp",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/assets/kluszyn.webp",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "69b3db3dc7f26bb10a860c669b294a35b32762bc87326b06f769dbf0824d0d04"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assets/korona-warunek.svg",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/assets/korona-warunek.svg",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "c4388ee8e005fb92bfeea36fd21b17c64b2909bd071d4aa4f2c8018f7bb8c18b"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assets/manifest.json",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/assets/manifest.json",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "4df20f4901cc9c8d8560082304f80b7b5e5442df87fecaacf8a676229060aa91"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assets/mapa-baltyk.jpg",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/assets/mapa-baltyk.jpg",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "277ce0a03599de96893b0f7575e225e557ab98ed184556390dc5476859ff83f6"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assets/mapa-dywilino.png",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/assets/mapa-dywilino.png",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "529d09104b4b1a046e7c7b4b728583c497a3449c413ffafd0feb85bf2800e108"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assets/mapa-orientacja.png",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/assets/mapa-orientacja.png",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "2e10711218b1d2414574d3828144f3aa30dc7e9ec77f68ba02dfdbdc10015743"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assets/mapa-wyprawy.jpg",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/assets/mapa-wyprawy.jpg",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "4abf68b47502f54730a36c8a9993a10bf9ffdce936b14fa728b582694bcb846f"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assets/mapa-zasieg.png",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/assets/mapa-zasieg.png",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "02e2fd7095941ea3d5a8b3af0415af1922b4991493f2fb261dc76397a00253b9"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assets/moskwa-uklad.svg",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/assets/moskwa-uklad.svg",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "ae76e24283fdb4ffb8334f5779067c3fe273e8abb21916e36946882659c31c58"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assets/notatka-batory.svg",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/assets/notatka-batory.svg",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "e3269f6384167fd69336c07ea4f74644ff317e62665e1d19ae2e9eacb49b0930"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assets/notatka-waza.svg",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/assets/notatka-waza.svg",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "4e58b966cf857d03924937ef483a52790f020a36f61b947b15fb490a46203f16"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assets/obleganie.svg",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/assets/obleganie.svg",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "3791e1d1d453b237b85947f97e174bb2c4299841bf60b0ab3a076cd3980eb532"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assets/oblezenie-moskwa.svg",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/assets/oblezenie-moskwa.svg",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "040d84719ff6b4e3e98e98047cbb28548764260ddf982ad78ba55761d73987e8"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assets/polanowo.svg",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/assets/polanowo.svg",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "af84a850b6d07e7862687de6e951a393a416c9c6be9549773a6410c26c850c52"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assets/stefan.jpg",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/assets/stefan.jpg",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "11fa0a194bf3a1d494ef73611a67fe9f85b7dc3b203a3d295aeb0364483c91f8"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assets/synteza.svg",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/assets/synteza.svg",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "777d26e022e7e7512ac58c0fb1232ef7cabf663e423ba4b90c632b08afa89eef"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assets/szujscy.jpg",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/assets/szujscy.jpg",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "a1d473bcf408ad270063a5dc7dd95b5365057f328d14a493fc232e67f8dc9077"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assets/warszawa.svg",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/assets/warszawa.svg",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "7d6740bc9459a1a054d32e08bacdb3a554e87e788f2b5bf3cf57ae439958ec5a"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assets/wladyslaw-iv.jpg",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/assets/wladyslaw-iv.jpg",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "9a1ad05169dca79ee86a031ad7d9428cb1b5da4737b4e4332d7182084777ce68"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assets/wybraniecka.svg",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/assets/wybraniecka.svg",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "83cd05536b2dfa79a84198ca2dff5f2587e6de4ff0cdbd0ffa007325ea304a23"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assets/zamoyski.webp",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/assets/zamoyski.webp",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "1c82b59468de104c5c9167c8c2c831e6aeeddcb2858f89193e51ee3f92a6baa8"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assets/zolkiewski.webp",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/assets/zolkiewski.webp",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "d2c526f254789b1f4ceb4a2d78454f848e1d100340929579e03af6ef2c90a26b"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/assets/zygmunt-iii.jpg",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/assets/zygmunt-iii.jpg",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "8cf3c5bf5c444877d2bbe36e376e6cf542635700fb53e0557107ff4e6212526e"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/index.html",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/index.html",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "bf4567f88fd55e499aebc24bbdbe11b105592cc08716a12908439184e34f3a23"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/lesson.css",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/lesson.css",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "daa78aa6a9f3cef921b21c3b074bdec7c744ee6c673175e02ec22da9ed5685ae"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/lesson.md",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/lesson.md",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "ae24e28eae2350026628aada0f4a57c0f26fd46cc27a1d38767ccec5bc4a3eb0"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/metadata.json",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/metadata.json",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "cad1942aaf4d692ae07e22bffdab7176bb2fd954f526a93366635fad4ca58065"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/qa-report.json",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/qa-report.json",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "c707b23f9f9bef3922e18e2f7876f292e97e305bc5229d7fd8ec0233a706d619"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/reflection.md",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/reflection.md",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "005af0708943a2afdb28913a406fedd0b778a92f8aa4f138b5d1a4cc3d810de5"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/slides.md",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/slides.md",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "485bb3ceb94484b4d1200ae01d0e300f4493c919374c96eb6747b5204e5cb9b8"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/source-evidence.json",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/source-evidence.json",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "3ba38773be6442b6af245dbfc3b4f5c92e1bf234273922cc7394a0b723cefa2d"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/sources.md",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/sources.md",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "fa243fab292cfe58a8b365b14dc24d4b48675f0ec978e2cc64625a2cb2b2e2d9"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/storyboard.json",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/storyboard.json",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "24f19249f587e731fabb0a3103d14dcb82bfbd52b2e2113233d0299a15b41bb0"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/student-summary.html",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/student-summary.html",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "3262eab504d13a674b825ccde04904ed5558b351f5e07155c0922061575a2cc4"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/student-summary.md",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/student-summary.md",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "ca0a7dd9fb517a52f4483dcb4af9f6dffbb4c791a366bfbd7248945a8d4671c1"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/teacher-guide.html",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/teacher-guide.html",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "670377ea3140959382006ce2822574ca7dafbbbd542b80660170f31cdcb210a1"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/teacher-guide.md",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/teacher-guide.md",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "8be8cf717c6f528c1b505364023dd42d795b97b99fbdaf3e4cbd67a4e7b35e0a"
+    },
+    {
+      "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/worksheet.md",
+      "url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/worksheet.md",
+      "http_status": 200,
+      "byte_identical": true,
+      "sha256": "e0554133df2930e3ec3dd57c6eef05b787773215457e956a83f282d5b9d965c7"
+    }
+  ],
+  "limits": [
+    "Teacher acceptance pending; teacher_accepted=false, publication_status=pending, pdf_exported=false, pptx_exported=false, published=false.",
+    "No PDF/PPTX, portable export, publication, git operations, shared changes or server restart.",
+    "Film is optional teacher-only linkout; full audio unreviewed; no classroom-ready segment claimed.",
+    "Timing is the authored usable budget, not a measured classroom trial.",
+    "Core uses only local assets and local fonts; standalone file:// offline artifact was not requested or exported."
+  ]
+}

@@ -1,4 +1,7 @@
 # Wolbrom — moja mała ojczyzna. W drodze do 700-lecia
+
+> **Aktualna decyzja o publikacji (2026-11-12):** nauczycielka potwierdziła wysyłkę wszystkich aktualnych materiałów do publicznego repozytorium, także przy nieustalonych prawach. Ta decyzja zastępuje starsze wzmianki „bez publikacji” i „bez push”; nie potwierdza otwartej licencji ani końcowej akceptacji dydaktycznej.
+
 ## Metadane
 Klasa IV; 18 uczniów; 2026/2027; nowa-2026; new-knowledge; slides. Czas realny 40 min, dzwonek 45 min.
 ## Wymaganie programowe
@@ -13,16 +16,16 @@ Co z przeszłości Wolbromia chcemy zachować dla przyszłych mieszkańców?
 |G2 Rozpoznaję ślady przeszłości|rynek, handel, czwartkowe targi 1485, dwa zabytki|porównanie widoków i wybór miejsca|podpisane miejsce i ustne wyjaśnienie|
 |G3 Łączę pamięć z ochroną|zabytek i znaczenie ochrony|indywidualne życzenie|życzenie z uzasadnieniem, bilet wyjścia|
 ## Pełne minimum wiedzy
-Mała ojczyzna to bliska nam okolica, jej mieszkańcy i pamięć. Rok 1327 jest przyjętym początkiem dziejów Wolbromia dla jubileuszu: Łokietek nadał las Wolframowi i Hilaremu. To nie wiek każdego budynku. 700-lecie przypada w 2027. Handel łączył rolników, rzemieślników i kupców; przywileje pomagały miastu się rozwijać. W 1485 ustanowiono czwartkowe targi. Dawne fotografie i pocztówki pokazują późniejsze wyglądy miasta, nie średniowieczne wydarzenia. Rynek zmieniał się, rozwijał się przemysł. Zabytki, np. kościół św. Katarzyny i drewniany kościół NMP, wymagają ochrony dla kolejnych pokoleń. Jubileusz i pocztówka są formami pamięci.
+Mała ojczyzna to bliska nam okolica, jej mieszkańcy i pamięć. Rok 1327 jest przyjętym początkiem dziejów Wolbromia dla jubileuszu: Łokietek nadał las Wolframowi i Hilaremu. To nie wiek każdego budynku. 700-lecie przypada w 2027. Handel łączył rolników, rzemieślników i kupców; przywileje pomagały miastu się rozwijać. W 1485 ustanowiono czwartkowe targi. Dawne fotografie i pocztówki pokazują późniejsze wyglądy miasta, nie średniowieczne wydarzenia. Rynek zmieniał się, rozwijał się przemysł. Zabytki, np. kościół św. Katarzyny i drewniany kościół NMP, wymagają ochrony dla kolejnych pokoleń. Pomnik na cmentarzu żydowskim przypomina dawnych mieszkańców; cmentarzom należy się szacunek. Dom Kultury, zalew, park i basen pokazują współczesne życie wspólnoty, nie są automatycznie zabytkami. Jubileusz i pocztówka są formami pamięci.
 ## Przebieg
 |Etap|Minuty|Działanie i dowód|
 |---|---:|---|
-|Narracja fotograficzna 1–13|15|krótkie odpowiedzi, porównanie tego samego rynku i kościoła Katarzyny|
-|Instrukcja 14–15 i rozdanie A4|2|każdy wybiera miejsce|
+|Narracja fotograficzna 1–20|15|krótkie odpowiedzi, rynek, ulica Krakowska, codzienne dawne ulice, przemysł, kolej, zabytki, pamięć o mieszkańcach, Dom Kultury, zalew, park i basen|
+|Instrukcja 21–22 i rozdanie A4|2|każdy wybiera miejsce|
 |Pocztówka indywidualna|16|rysunek i 2–3 zdania, bez pracy grupowej|
 |Dzielenie się i synteza|3|każdy opowiada osobie obok, 2 prezentacje|
 |Bilet wyjścia|2|każdy: 2027 + miejsce i powód ochrony|
 |Bufor i porządkowanie|2|zebranie 18 prac|
 Razem 40 min. Pozostałe 5 min dzwonka nie jest dodatkowym zadaniem.
 ## Warianty i trudne momenty
-Rdzeń: rocznica, rynek i handel, zabytek, samodzielna pocztówka, bilet. Pomoc: jedno pełne zdanie zamiast trzech, dyktowanie dorosłemu, prosty podpis. Rozszerzenie: własne działanie ochronne. Punkt skrócenia: mniej wypowiedzi podczas narracji; nie skracaj pracy poniżej 12 min ani biletu. Brak oceny talentu plastycznego. Nie utożsamiaj roku publikacji z datą zdjęcia. Nie nazywaj uroczystości z 1916 r. świętem miasta.
+Rdzeń: rocznica, rynek i handel, zabytek, samodzielna pocztówka, bilet. Pomoc: jedno pełne zdanie zamiast trzech, dyktowanie dorosłemu, prosty podpis. Rozszerzenie: własne działanie ochronne. Punkt skrócenia: mniej wypowiedzi podczas narracji; zachowaj 16 minut samodzielnej pracy i bilet. Brak oceny talentu plastycznego. Nie utożsamiaj roku publikacji z datą zdjęcia. Nie nazywaj uroczystości z 1916 r. świętem miasta.

@@ -10,17 +10,19 @@ Prezentację otwórz przez prywatny panel: `index.html`. Na komputerze bez inter
 ## Zegar — 40 minut
 | Czas | Slajdy | Działanie |
 |---|---|---|
-| 0–15 min | 1–13 | Fotograficzna opowieść, chwile oglądania i pojedyncze krótkie odpowiedzi. Nie 13 oddzielnych ćwiczeń. |
-| 15–17 min | 14–15 | Rozdanie A4, złożenie na pół, wyjaśnienie pocztówki i kryteriów. |
-| 17–33 min | 14 lub 15 pozostaje widoczny | 16 minut samodzielnej pracy każdego dziecka. |
-| 33–36 min | 16 | Każdy opowiada osobie obok; tylko 2 chętnych pokazuje klasie. Wspólna synteza. |
-| 36–38 min | 16 | Indywidualny bilet na odwrocie pracy. |
+| 0–15 min | 1–20 | Fotograficzna opowieść, chwile oglądania i pojedyncze krótkie odpowiedzi. Bez oddzielnego ćwiczenia przy każdym zdjęciu. |
+| 15–17 min | 21–22 | Rozdanie A4, złożenie na pół, wyjaśnienie pocztówki i kryteriów. |
+| 17–33 min | 21 lub 22 pozostaje widoczny | 16 minut samodzielnej pracy każdego dziecka. |
+| 33–36 min | 23 | Każdy opowiada osobie obok; tylko 2 chętnych pokazuje klasie. Wspólna synteza. |
+| 36–38 min | 23 | Indywidualny bilet na odwrocie pracy. |
 | 38–40 min | — | Zebranie 18 prac i porządkowanie. |
 
-Slajd 17 ze źródłami jest zapleczem, poza narracją. Nie omawiaj listy licencji z dziećmi. Opowieść ma około 13,5 min planowanej wypowiedzi i 1,5 min na oglądanie / krótkie odpowiedzi; nie czytaj na głos metadanych i ostrzeżeń z notatek. Po wstawieniu dodatkowego porównania zabytku: slajd 10 — 9:30–10:15, 11 — 10:15–11:00, 12 — 11:00–12:00, 13 — 12:00–13:15; pozostały czas do 15 min to spokojne oglądanie i odpowiedzi.
+Źródła i licencje są wyłącznie w przewodniku i dokumentacji. Prezentacja ma **23 slajdy**. Narracja 1–20 trwa dokładnie 15 minut wraz z oglądaniem i krótkimi odpowiedziami; notatki mają ciągły zegar 0:00–15:00. Dodano pamięć o żydowskich mieszkańcach oraz trzy duże plansze współczesnego życia: Dom Kultury, zalew z parkiem i basen. Nie przybywa zadań; chronione 16 minut pocztówki pozostaje bez zmian.
+
+
 
 ## Oś opowieści, nie katalog wszystkich stuleci
-**1327 → rozwój miasta i handel → dawne i współczesne miejsca → ochrona → życzenia na 2027.** Mural pokazuje formę pamięci, nie średniowieczne źródło. Fotografie rynku, kościołów, dworca, zakładów i ulic dają dzieciom konkretne miejsca do wyboru, bez konieczności odtwarzania całej chronologii.
+**1327 → rozwój miasta i handel → dawne i współczesne miejsca → ochrona → życzenia na 2027.** Mural pokazuje formę pamięci, nie średniowieczne źródło. Fotografie rynku, kościołów, dworca, zakładów, ulic, pomnika, Domu Kultury i miejsc odpoczynku dają dzieciom konkretne miejsca do wyboru, bez konieczności odtwarzania całej chronologii.
 
 Pytanie główne: **Co z przeszłości Wolbromia chcemy zachować dla przyszłych mieszkańców?**
 
@@ -46,14 +48,23 @@ Każdy przedstawia pracę osobie obok; dwie prezentacje klasowe są tylko przyk�
 Przejrzyj wszystkie 18 prac. Informacja zwrotna: jeden trafny związek i jeden konkretny brak do poprawy. Nie sprawdzaj nazwisk fotografów ani wszystkich dat.
 
 ## Gdy czas ucieka
-Skróć liczbę zgłoszeń i opowieść o przemyśle; nie dokładaj pytań do każdego slajdu. Zostaw rdzeń: 1327–2027, rynek i handel, zabytek i ochrona, indywidualne życzenie. Nie skracaj pracy poniżej 12 minut ani nie pomijaj indywidualnego biletu. Pozostałe 5 minut do dzwonka nie jest nowym zadaniem.
+Skróć liczbę zgłoszeń i opowieść o przemyśle; nie dokładaj pytań do każdego slajdu. Zostaw rdzeń: 1327–2027, rynek i handel, zabytek i ochrona, indywidualne życzenie. Zachowaj 16 minut samodzielnej pracy i indywidualny bilet. Pozostałe 5 minut do dzwonka nie jest nowym zadaniem.
 
 ## Podstawa i zakres
 Nowa podstawa 2026, Dz.U. poz. 378, s.147–148: **2.3 częściowo** (historia okolicy, Wolfram, Hilary, Łokietek i współczesny mural / jubileusz jako pamięć), **2.4** (lokalne zabytki i ich ochrona); pomocniczo **1.4–6** (fotografie i pocztówka jako źródła) i **4.2** (upływ czasu). Nie deklarujemy realizacji całego działu lokalnego ani pełnego katalogu zasłużonych osób.
 
 ## Prawa, bezpieczeństwo i publikacja
-17 użytych plików obrazu to 16 oryginałów: 5 dawnych źródeł i 11 nowszych fotografii, w tym panorama o nieustalonej dacie wykonania, udostępniona w 2009. Wszystkie obejrzano. Bez AI, map projektu udających zdjęcia, przemocy graficznej i spornej daty odzyskania praw miejskich.
+26 użytych plików obrazu to 25 oryginałów: 9 dawnych źródeł i 16 nowszych fotografii, w tym panorama o nieustalonej dacie wykonania, udostępniona w 2009. Wszystkie obejrzano. Bez AI, map projektu udających zdjęcia, przemocy graficznej i spornej daty odzyskania praw miejskich.
 
-Commons: indywidualne licencje przy obrazach; Polona: domena publiczna. Część miejskich archiwaliów i współczesny rynek mają **prawa nieustalone**. W tej prywatnej lekcji służą omówieniu źródeł i zmian miejsca; nie oznacza to automatycznej zgody na otwartą publikację. Instytucja ocenia podstawę dozwolonego użytku. **Nie publikuj całego portable w otwartym internecie bez wyjaśnienia praw.** Pełne per-image wpisy: sources.md i assets/manifest.json; w portable także notatki ostatniego slajdu.
+Commons: indywidualne licencje w dokumentacji; Polona: domena publiczna. Część miejskich archiwaliów, współczesny rynek i przesłane zdjęcia nauczyciela mają **prawa nieustalone**. W tej prywatnej lekcji służą omówieniu źródeł i zmian miejsca; nie oznacza to automatycznej zgody na otwartą publikację. Instytucja ocenia podstawę dozwolonego użytku. **Nie publikuj całego portable w otwartym internecie bez wyjaśnienia praw.** Pełne per-image wpisy: sources.md i assets/manifest.json.
 
 Pakiet jest gotowy **do akceptacji nauczyciela**, nie oznaczony jako zaakceptowany.
+
+## Nowe fotografie i ograniczenia
+Krakowska: **ok. 1918 według nauczyciela**, bez niezależnego potwierdzenia; ten sam kadr co poprzednia miejska reprodukcja, nie dodatkowy dawny widok. Kleparz: data nieustalona; Mariacka: lata 80. XX w. według miejskiego podpisu. Dworzec: zdjęcie z napisem WOLBROM zastępuje zniszczenia 1914; **nowe zdjęcie nie ma ustalonej daty**. Nie twierdzimy, że współczesne ujęcie dowodzi przetrwania tego samego budynku. Dawna fabryka: wejście i portiernia zamiast drugiej panoramy zakładów; nie utożsamiamy budynków.
+
+Fotografie Domu Kultury, zalewu, parku, basenu, współczesnego dworca i pomnika na cmentarzu żydowskim **otrzymano i włączono**. Ich współczesność potwierdził nauczyciel, dokładne daty, autorzy i prawa są nieustalone. Zachowano całe przekazane pliki i znaki wodne; podpisów źródłowych nie dodano.
+
+Pomnik (slajd 15, `pamiec-mieszkancow`) przypomina dawnych żydowskich mieszkańców. Wystarczy krótkie zdanie o zamordowanych podczas wojny i szacunku do cmentarzy, bez wojennej dygresji. **1988 to napis na pomniku, nie data zdjęcia**; liczby z inskrypcji nie uczymy. Dom Kultury (16), zalew i park (17), basen (18) prowadzą do pocztówki i przyszłości (19–20). Dzisiejsze miejsca służą wspólnocie, ale nie wszystkie są zabytkami. Dopuszczalny fakt na pocztówce: Dom Kultury jest miejscem spotkań lub park służy odpoczynkowi; życzenie musi do niego pasować.
+
+Przesłane stare zdjęcie drewnianego kościoła nad wodą (`img_22b093232d89.jpg`) obejrzano, ale brak pewnego rekordu pozwalającego potwierdzić tożsamość konkretnej fotografii. **Nie włączono go**; nie zastąpiono pewnego współczesnego NMP niepewną identyfikacją. Pełne pochodzenie, prawa i ograniczenia wszystkich użytych obrazów poniżej.

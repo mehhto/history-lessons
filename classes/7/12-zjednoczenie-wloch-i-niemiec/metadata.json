@@ -1,0 +1,32 @@
+{
+  "id": "12-zjednoczenie-wloch-i-niemiec",
+  "title": "Zjednoczenie Włoch i Niemiec",
+  "grade": 7,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa",
+  "duration_minutes": 45,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "presentation_mode": "slides",
+  "status": "DO PRZEGLĄDU",
+  "curriculum_requirement": "XXII.1) opisuje procesy zjednoczeniowe Włoch i Niemiec;",
+  "main_question": "Jak z wielu państw powstały dwa mocarstwa?",
+  "source_reviewed": false,
+  "teacher_reviewed": true,
+  "offline_checked": true,
+  "pdf_exported": false,
+  "appearance": {
+    "style": "chronicle",
+    "palette": "land-sea"
+  },
+  "publication_authorization": {
+    "destination": "https://github.com/mehhto/history-lessons",
+    "visibility": "public",
+    "authorized_at": "2026-11-12",
+    "scope": "Wszystkie aktualne materiały, także te z nieustalonymi prawami; wyraźne potwierdzenie nauczycielki w rozmowie.",
+    "unresolved_rights_acknowledged": true,
+    "teacher_acceptance_implied": false
+  },
+  "publication_status": "public-repository",
+  "published": true
+}

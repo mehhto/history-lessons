@@ -1,0 +1,149 @@
+{
+  "published_route_map_found": false,
+  "published_map_review": [
+    {
+      "source_id": "s07",
+      "url": "https://przystanekhistoria.pl/pa2/tematy/wysiedlenia/104380,Pacyfikacja-Zamojszczyzny.html",
+      "file": "/opt/data/cache/scratch/zbrodnie-rev-zamosc-krakow/images/166-178527.jpg",
+      "outcome": "Opublikowana fotografia mapy z 1946 r.; ukazuje wsie i zasięg wysiedleń w czterech powiatach, NIE docelowe miejsca deportacji."
+    },
+    {
+      "source_id": "s35",
+      "url": "https://wystawy.ipn.gov.pl/download/342/855402/WystawaelementarnaDzieciZamojszczyznyHistoriaipamie.pdf",
+      "file": "/opt/data/cache/scratch/zbrodnie-rev-zamosc-krakow/sources/s35.pdf",
+      "outcome": "15 plansz IPN, przegląd wizualny całości. Mapy na planszach 2 i 4: orientacja / obszar wysiedleń; brak kompletnej mapy wieś → Zamość → miasta docelowe. PDF rastrowy bez tekstu."
+    },
+    {
+      "source_id": "s36",
+      "url": "https://muzeumdziecipolskich.pl/f/katalog-update-web.pdf",
+      "file": "/opt/data/cache/scratch/zbrodnie-rev-zamosc-krakow/sources/s36.pdf",
+      "outcome": "Katalog muzealny dostarcza tras i świadectw; plan niemiecki ze s. 6 dotyczy obszaru wysiedleń, nie kompletnej mapy docelowych transportów."
+    },
+    {
+      "source_id": "s24",
+      "url": "https://www.auschwitz.org/edukacja/e-learning/lekcje-internetowe",
+      "outcome": "Lekcja muzeum Auschwitz zidentyfikowana; rozdziały lekcja.auschwitz.org niedostępne przez błąd certyfikatu. Użyto dostępnej pełnej transkrypcji muzealnego podcastu s32."
+    }
+  ],
+  "nodes": [
+    {
+      "id": "skierbieszow",
+      "label": "Skierbieszów",
+      "lat": 50.851389,
+      "lon": 23.365278,
+      "crs": "EPSG:4326 / WGS84",
+      "role": "Wysiedlana wieś",
+      "coordinate_source_url": "https://pl.wikipedia.org/wiki/Skierbiesz%C3%B3w",
+      "coordinate_source_text": "/opt/data/cache/scratch/zbrodnie-rev-zamosc-krakow/sources/s19.txt",
+      "coordinate_literal": "Na mapach: 50°51′05″N 23°21′55″E/50,851389 23,365278"
+    },
+    {
+      "id": "zamosc_camp",
+      "label": "Zamość – obóz przejściowy przy ul. Lubelskiej",
+      "lat": 50.729167,
+      "lon": 23.250833,
+      "crs": "EPSG:4326 / WGS84",
+      "role": "Obóz przejściowy; współrzędne terenu obozu, nie Rynku Wielkiego",
+      "coordinate_source_url": "https://pl.wikipedia.org/wiki/Ob%C3%B3z_przesiedle%C5%84czy_w_Zamo%C5%9Bciu",
+      "coordinate_source_text": "/opt/data/cache/scratch/zbrodnie-rev-zamosc-krakow/sources/s37.txt",
+      "coordinate_literal": "Na mapach: 50°43′45″N 23°15′03″E/50,729167 23,250833"
+    },
+    {
+      "id": "siedlce",
+      "label": "Siedlce",
+      "lat": 52.163611,
+      "lon": 22.2875,
+      "crs": "EPSG:4326 / WGS84",
+      "role": "Miasto docelowe transportów dzieci i osób starszych; punkt miejski, nie ustalona rampa",
+      "coordinate_source_url": "https://pl.wikipedia.org/wiki/Siedlce",
+      "coordinate_source_text": "/opt/data/cache/scratch/zbrodnie-rev-zamosc-krakow/sources/s21.txt",
+      "coordinate_literal": "Na mapach: 52°09′49″N 22°17′15″E/52,163611 22,287500"
+    },
+    {
+      "id": "auschwitz",
+      "label": "KL Auschwitz-Birkenau",
+      "lat": 50.035833,
+      "lon": 19.178333,
+      "crs": "EPSG:4326 / WGS84",
+      "role": "Kompleks obozowy; punkt z artykułu o obozie, nie konkretna rampa przyjazdowa",
+      "coordinate_source_url": "https://pl.wikipedia.org/wiki/Auschwitz-Birkenau",
+      "coordinate_source_text": "/opt/data/cache/scratch/zbrodnie-rev-zamosc-krakow/sources/s22.txt",
+      "coordinate_literal": "Na mapach: 50°02′09″N 19°10′42″E/50,035833 19,178333"
+    }
+  ],
+  "edges": [
+    {
+      "from": "skierbieszow",
+      "to": "zamosc_camp",
+      "date": "XI 1942",
+      "label": "Z wysiedlonej wsi do obozu przejściowego",
+      "transport": "furmanki",
+      "evidence": [
+        {
+          "source_id": "s12",
+          "source_url": "https://bibliotekanauki.pl/chapters/63162270.pdf",
+          "source_text_path": "/opt/data/cache/scratch/zbrodnie-rev-zamosc-krakow/sources/s12.txt",
+          "literal": "Pierwsze wysiedlenia nastąpiły we \nwsi Skierbieszów, położonej w dolinie rzeki Wolica oraz Sadach9. Mieszkańcom dano \ngodzinę na spakowanie się i zabranie najważniejszych rzeczy, po czym spędzono 1500 \nosób na główny plac pod szkołą i otoczono szczelnym kordonem niemieckim. Do pró-\nbujących się ukryć mieszkańców Niemcy strzelali „jak do zajęcy”. Sprawdzanie listy \nobecności na szkolnym boisku zajęło kilka godzin, przy trzaskającym mrozie. Naoczny \nświadek zdarzeń Zygmunt Węcławik zapamiętał: „cicho płaczące, marznące i głodne \ndzieci. Dorośli stali spokojnie. Swoją tragedię znosili z godnością. Niektórzy ukradkiem \nwycierali łzy”. Następnie wyruszono na furmankach do pobliskiego Zamościa, gdzie \nprzy ul. Lubelskiej znajdował się „obóz przejściowy”. Podczas drogi w każdym zaprzęgu \nsiedział uzbrojony żandarm",
+          "display_text": "Pierwsze wysiedlenia nastąpiły we wsi Skierbieszów, położonej w dolinie rzeki Wolica oraz Sadach9. Mieszkańcom dano godzinę na spakowanie się i zabranie najważniejszych rzeczy, po czym spędzono 1500 osób na główny plac pod szkołą i otoczono szczelnym kordonem niemieckim. Do pró- bujących się ukryć mieszkańców Niemcy strzelali „jak do zajęcy”. Sprawdzanie listy obecności na szkolnym boisku zajęło kilka godzin, przy trzaskającym mrozie. Naoczny świadek zdarzeń Zygmunt Węcławik zapamiętał: „cicho płaczące, marznące i głodne dzieci. Dorośli stali spokojnie. Swoją tragedię znosili z godnością. Niektórzy ukradkiem wycierali łzy”. Następnie wyruszono na furmankach do pobliskiego Zamościa, gdzie przy ul. Lubelskiej znajdował się „obóz przejściowy”. Podczas drogi w każdym zaprzęgu siedział uzbrojony żandarm",
+          "page": 3,
+          "literal_verified": true
+        }
+      ],
+      "scope": "Opracowanie opisuje Skierbieszów i Sady. Skierbieszów jest przykładem, nie punktem skupiającym wszystkie 300 wsi."
+    },
+    {
+      "from": "zamosc_camp",
+      "to": "siedlce",
+      "date": "zima 1942/1943",
+      "label": "Dzieci i osoby starsze – m.in. do Siedlec",
+      "transport": "kolej",
+      "evidence": [
+        {
+          "source_id": "s36",
+          "source_url": "https://muzeumdziecipolskich.pl/f/katalog-update-web.pdf",
+          "source_text_path": "/opt/data/cache/scratch/zbrodnie-rev-zamosc-krakow/sources/s36.txt",
+          "literal": "Na stacji w Siedlcach byłyśmy kupką smrodu. Wyłuskano nas spod tych \nłachów. Bokami wagonów spływały fekalia, dzieci w zimowych, ciężkich ubraniach, pełnych \nrobactwa”.\nMroźną zimą na przełomie 1942/1943 r. Niemcy wywieźli wagonami bydlęcymi z obozu w Zamościu do dystryktu \nwarszawskiego dzieci do 14. roku życia. Znalazły one schronienie w polskich domach i ochronkach przygotowanych przez \nRadę Główną Opiekuńczą. Taki los spotkał 5321 dzieci i starców. Dla niektórych była to ostania podróż.",
+          "display_text": "Na stacji w Siedlcach byłyśmy kupką smrodu. Wyłuskano nas spod tych łachów. Bokami wagonów spływały fekalia, dzieci w zimowych, ciężkich ubraniach, pełnych robactwa”. Mroźną zimą na przełomie 1942/1943 r. Niemcy wywieźli wagonami bydlęcymi z obozu w Zamościu do dystryktu warszawskiego dzieci do 14. roku życia. Znalazły one schronienie w polskich domach i ochronkach przygotowanych przez Radę Główną Opiekuńczą. Taki los spotkał 5321 dzieci i starców. Dla niektórych była to ostania podróż.",
+          "page": 21,
+          "literal_verified": true
+        }
+      ],
+      "scope": "Katalog łączy wspomnienie Janiny Zielińskiej o przybyciu do Siedlec z objaśnieniem transportów z obozu w Zamościu. Nie ustalono z tego tekstu wszystkich stacji pośrednich ani daty konkretnego pociągu."
+    },
+    {
+      "from": "zamosc_camp",
+      "to": "auschwitz",
+      "date": "10 XII 1942 (wyjazd pierwszego transportu); przyjazd noc 12/13 XII 1942; kolejne przyjazdy noc 15/16 XII 1942 i 4/5 II 1943",
+      "label": "Część wysiedleńców – do KL Auschwitz-Birkenau",
+      "transport": "kolej",
+      "evidence": [
+        {
+          "source_id": "s32",
+          "source_url": "https://www.auschwitz.org/edukacja/e-learning/podcasty/deportacje-polakow-z-zamojszczyzny-do-kl-auschwitz/",
+          "source_text_path": "/opt/data/cache/scratch/zbrodnie-rev-zamosc-krakow/sources/s32.txt",
+          "literal": "pierwszy pociąg wysłany z Zamościa do Auschwitz 10 grudnia, na miejsce przybył dopiero 12 grudnia w nocy. Wysiedleńcy byli stłoczeni w wagonach, nie dostawali, czy dostawali na drogę bardzo niewielką ilość żywności, niektórzy wspominają, że nie dostawali zupełnie żadnego pożywienia na ten czas, do wagonów były wstawiane wiadra, które miały służyć jako toalety i przez cały ten czas, kiedy byli w drodze, wagony nie były otwierane. Pociąg zatrzymywał się na długie postoje na stacjach i po prostu w polu, więc ludzie głodowali. Kiedy przybywali do Auschwitz, byli po prostu przerażeni i nieludzko zmęczeni. Do Auschwitz trafiły trzy transporty z obozu przejściowego w Zamościu, w nocy z 12 na 13 grudnia, drugi w nocy z 15 na 16 grudnia i trzeci w nocy z 4 na 5 lutego 1943 roku.",
+          "display_text": "pierwszy pociąg wysłany z Zamościa do Auschwitz 10 grudnia, na miejsce przybył dopiero 12 grudnia w nocy. Wysiedleńcy byli stłoczeni w wagonach, nie dostawali, czy dostawali na drogę bardzo niewielką ilość żywności, niektórzy wspominają, że nie dostawali zupełnie żadnego pożywienia na ten czas, do wagonów były wstawiane wiadra, które miały służyć jako toalety i przez cały ten czas, kiedy byli w drodze, wagony nie były otwierane. Pociąg zatrzymywał się na długie postoje na stacjach i po prostu w polu, więc ludzie głodowali. Kiedy przybywali do Auschwitz, byli po prostu przerażeni i nieludzko zmęczeni. Do Auschwitz trafiły trzy transporty z obozu przejściowego w Zamościu, w nocy z 12 na 13 grudnia, drugi w nocy z 15 na 16 grudnia i trzeci w nocy z 4 na 5 lutego 1943 roku.",
+          "page": null,
+          "literal_verified": true
+        }
+      ],
+      "scope": "Nie mylić dat wyjazdu z datami przybycia. Ta krawędź nie oznacza, że cała ludność Skierbieszowa ani wszyscy wysiedleni trafili do Auschwitz."
+    }
+  ],
+  "map_instructions": [
+    "Można sporządzić własną mapę historyczno-geograficzną opartą na tych źródłach i rzeczywistych współrzędnych. Podpisać jako opracowanie na podstawie źródeł, a nie mapę z epoki.",
+    "Łączniki pokazują udokumentowane kierunki, NIE zrekonstruowany przebieg kolei lub dróg. Nie rysować nieudokumentowanych stacji pośrednich.",
+    "Dwa rozgałęzienia z Zamościa przedstawiają różne losy różnych grup. To nie jedna ciągła podróż jednego dziecka.",
+    "Punkt obozu w Zamościu pochodzi z osobnego artykułu o obozie. Siedlce oznaczają miasto, a Auschwitz – kompleks, nie dokładną rampę.",
+    "Nie kierować strzałki do Warszawy tylko dlatego, że źródło wymienia dystrykt warszawski. Dystrykt nie jest miastem.",
+    "Nie dodawać arbitralnego miasta niemieckiego jako celu germanizacji/pracy: w pozyskanych fragmentach szczegółowy cel na terenie Rzeszy nie jest nazwany."
+  ],
+  "other_documented_destinations_without_individual_itinerary": {
+    "note": "IPN i PAP poświadczają także Zwierzyniec, Majdanek, przymusową pracę w Rzeszy i germanizację. Nie dodano tras o nieustalonym konkretnym odcinku do prostej mapy trzech krawędzi.",
+    "source_urls": [
+      "https://przystanekhistoria.pl/pa2/tematy/wysiedlenia/104380,Pacyfikacja-Zamojszczyzny.html",
+      "https://ofiary.ipn.gov.pl/ofi/z-archiwum-ipn/zamojszczyzna/13605,Aktion-Zamosc-czyli-niemiecka-akcja-wysiedlenia-Polakow-z-Zamojszczyzny.html",
+      "https://dzieje.pl/aktualnosci/75-lat-temu-niemcy-rozpoczeli-akcje-wysiedlen-zamojszczyzny"
+    ]
+  }
+}

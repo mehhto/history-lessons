@@ -1,0 +1,40 @@
+{
+  "id": "11-sprawa-polska-pod-koniec-wojny",
+  "title": "Sprawa polska pod koniec wojny",
+  "grade": 8,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa",
+  "duration_minutes": 40,
+  "working_minutes": 35.5,
+  "maximum_students": 20,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "presentation_mode": "slides",
+  "status": "DO_PRZEGLĄDU_NAUCZYCIELA",
+  "curriculum_requirement": "XXXIV.3: przedstawia politykę mocarstw wobec sprawy polskiej w czasie II wojny światowej. XXXVI.1: przedstawia okoliczności przejęcia władzy w Polsce przez komunistów; XXXVI.2: charakteryzuje postawy Polaków wobec nowych władz, z uwzględnieniem różnych form oporu.",
+  "main_question": "Dlaczego koniec okupacji niemieckiej nie oznaczał pełnej suwerenności Polski?",
+  "source_reviewed": false,
+  "teacher_reviewed": false,
+  "offline_checked": false,
+  "pdf_exported": false,
+  "appearance": {
+    "style": "source-lab",
+    "palette": "evidence-grey"
+  },
+  "presentationContract": {
+    "version": "1.0"
+  },
+  "printing_required": false,
+  "teacher_acceptance": "pending",
+  "classroom_route": "wariant-1-opowiesc-zrodla-notatka-w-trakcie",
+  "publication_authorization": {
+    "destination": "https://github.com/mehhto/history-lessons",
+    "visibility": "public",
+    "authorized_at": "2026-11-12",
+    "scope": "Wszystkie aktualne materiały, także te z nieustalonymi prawami; wyraźne potwierdzenie nauczycielki w rozmowie.",
+    "unresolved_rights_acknowledged": true,
+    "teacher_acceptance_implied": false
+  },
+  "publication_status": "public-repository",
+  "published": true
+}

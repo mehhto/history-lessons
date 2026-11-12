@@ -1,0 +1,81 @@
+{
+  "live_url": "https://ai-agent.tail53435f.ts.net/classes/8/11-sprawa-polska-pod-koniec-wojny/",
+  "preview_bytes_verified": true,
+  "core_minutes": 35.5,
+  "buffer_minutes": 2,
+  "optional_film_minutes": 2.5,
+  "results": [
+    {
+      "width": 1024,
+      "height": 768,
+      "slides": 28,
+      "lightboxes": 16,
+      "issues": [],
+      "errors": [],
+      "notes": {
+        "show": "inline",
+        "text": 335,
+        "a": {
+          "x": 0,
+          "y": 0,
+          "right": 740,
+          "bottom": 416.25
+        },
+        "b": {
+          "x": 0,
+          "y": 537.59375,
+          "right": 1024,
+          "bottom": 767.984375
+        }
+      }
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "slides": 28,
+      "lightboxes": 16,
+      "issues": [],
+      "errors": [],
+      "notes": {
+        "show": "inline",
+        "text": 335,
+        "a": {
+          "x": 0,
+          "y": 0,
+          "right": 932,
+          "bottom": 524.25
+        },
+        "b": {
+          "x": 960,
+          "y": 0,
+          "right": 1279.984375,
+          "bottom": 720
+        }
+      }
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "slides": 28,
+      "lightboxes": 16,
+      "issues": [],
+      "errors": [],
+      "notes": {
+        "show": "inline",
+        "text": 335,
+        "a": {
+          "x": 0,
+          "y": 0,
+          "right": 1412,
+          "bottom": 794.25
+        },
+        "b": {
+          "x": 1440,
+          "y": 0,
+          "right": 1919.984375,
+          "bottom": 1080
+        }
+      }
+    }
+  ]
+}

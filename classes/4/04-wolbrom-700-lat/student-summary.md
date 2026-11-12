@@ -5,4 +5,6 @@
 - Rynek służył spotkaniom i handlowi. W 1485 ustanowiono czwartkowe targi.
 - Fotografia lub pocztówka pokazuje wygląd miejsca w pewnym czasie. Nie wszystko da się z niej ustalić.
 - Kościół św. Katarzyny i drewniany kościół NMP to przykłady lokalnych zabytków. Chronimy je, bo pomagają poznawać przeszłość.
+- Pomnik na cmentarzu żydowskim przypomina dawnych mieszkańców. Szanujemy cmentarze i miejsca pamięci.
+- Dom Kultury, zalew, park i basen to przykłady współczesnych wspólnych miejsc. Troszczymy się o nie dla kolejnych mieszkańców.
 - Dobre życzenie dla miasta może łączyć jego historię z troską o przyszłość.

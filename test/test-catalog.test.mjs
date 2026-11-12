@@ -58,7 +58,8 @@ test('exam maps render offline and lettered options stay on separate lines', asy
   for (const item of catalog.tests.filter((entry) => entry.title.startsWith('Sprawdzian'))) {
     const markdown = studentTestMarkdown(await readFile(path.join(root, item.directory), 'utf8'));
     const html = await embedLocalImagesInHtml(markdownToHtml(markdown), path.dirname(path.join(root, item.directory)));
-    assert.match(html, /<img src="data:image\/(?:jpeg|png);base64,[^"]+"/u, item.directory);
+    if (/!\[[^\]]*\]\(/u.test(markdown)) assert.match(html, /<img src="data:image\/(?:jpeg|png);base64,[^"]+"/u, item.directory);
+    assert.doesNotMatch(html, /<img[^>]+src="assets\//u, item.directory);
     assert.doesNotMatch(html, /Klucz odpowiedzi|Oczekiwana odpowiedź/u);
     assert.doesNotMatch(markdown, /^.*(?:[A-E]\. [^\n]+){2,}$/gmu, item.directory);
   }

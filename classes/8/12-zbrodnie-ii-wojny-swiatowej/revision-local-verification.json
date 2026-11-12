@@ -1,0 +1,11 @@
+{
+  "required_teacher_urls": 8,
+  "event_accounts": 7,
+  "literal_excerpts": 11,
+  "all_excerpt_word_counts_within_35_80": true,
+  "all_literal_excerpts_found_in_saved_text": true,
+  "selected_downloaded_assets": 5,
+  "all_selected_asset_hashes_verified": true,
+  "citation_verification": "info: stats: 176 prose sentence(s), 60 with declared provenance (34%) — 60 cited, 0 marked [unverified] (a sentence may be both); 14 distinct source(s) cited, 14 in ledger (14 with evidence quotes)\ncitations OK",
+  "scope": "Writes only in /opt/data/cache/scratch/zbrodnie-rev-local; existing research read/copied, repository untouched."
+}

@@ -1,0 +1,33 @@
+{
+  "live_url": "https://ai-agent.tail53435f.ts.net/classes/8/12-zbrodnie-ii-wojny-swiatowej/",
+  "preview_bytes_verified": true,
+  "core_minutes": 37.75,
+  "buffer_minutes": 2,
+  "unique_images": 28,
+  "results": [
+    {
+      "width": 1024,
+      "height": 768,
+      "slides": 44,
+      "lightboxes": 29,
+      "issues": [],
+      "errors": []
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "slides": 44,
+      "lightboxes": 29,
+      "issues": [],
+      "errors": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "slides": 44,
+      "lightboxes": 29,
+      "issues": [],
+      "errors": []
+    }
+  ]
+}

@@ -3,3 +3,5 @@ Kryteria: (1) podpisane miejsce rzeczywiście omawiane, (2) poprawna rocznica 13
 Klucz obserwacji: zmiana stroju/transportu/zieleni; fotografie nie dowodzą daty średniowiecznego przywileju. Przywilej targowy pomagał kupcom i mieszkańcom spotkać się w stałym dniu.
 Przykład odpowiedzi dopiero w notatkach nauczyciela: „Życzę Ci troski o rynek, bo od dawna spotykają się tu mieszkańcy”. Inne uzasadnione odpowiedzi równoważne.
 Bilet: 2027; konkretny zabytek/miejsce i sensowny powód ochrony. „Dużo szczęścia” bez związku z miejscem wymaga pytania pomocniczego. Przejrzyj wszystkie 18 prac, nie tylko 2 prezentowane.
+
+Dopuszczalne są także współczesne miejsca: Dom Kultury — spotkania i kultura; zalew i park — odpoczynek i troska o wodę / zieleń; basen — sport i odpoczynek. Pomnik na cmentarzu żydowskim — pamięć dawnych mieszkańców i szacunek do cmentarzy. Nie wymagaj daty pomnika ani liczby z inskrypcji. Nie nazywaj wszystkich tych miejsc zabytkami.

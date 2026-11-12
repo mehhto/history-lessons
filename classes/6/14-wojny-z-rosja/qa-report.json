@@ -1,0 +1,932 @@
+{
+  "summaryPaper": {
+    "width": 702.984375,
+    "height": 832,
+    "limit": 1031.8110236220473
+  },
+  "adapted_from": "classes/6/13-pierwsza-wolna-elekcja/qa.mjs",
+  "geometry_helper": "scripts/render-probe.mjs",
+  "mode": "final",
+  "live_url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/",
+  "slides": 28,
+  "core_minutes": 36,
+  "buffer_minutes": 2,
+  "total_minutes": 38,
+  "readback": [
+    "index.html",
+    "slides.md",
+    "lesson.css",
+    "metadata.json",
+    "lesson.md",
+    "worksheet.md",
+    "sources.md",
+    "assessment.md",
+    "reflection.md",
+    "storyboard.json",
+    "source-evidence.json",
+    "assets/manifest.json",
+    "teacher-guide.md",
+    "teacher-guide.html",
+    "student-summary.md",
+    "student-summary.html",
+    "assets/batory-pskow.webp",
+    "assets/stefan.jpg",
+    "assets/mapa-baltyk.jpg",
+    "assets/wybraniecka.svg",
+    "assets/zamoyski.webp",
+    "assets/mapa-wyprawy.jpg",
+    "assets/obleganie.svg",
+    "assets/notatka-batory.svg",
+    "assets/zygmunt-iii.jpg",
+    "assets/warszawa.svg",
+    "assets/ivan.jpg",
+    "assets/dymitr.webp",
+    "assets/dymitr-upadek.svg",
+    "assets/mapa-orientacja.png",
+    "assets/kluszyn.webp",
+    "assets/zolkiewski.webp",
+    "assets/moskwa-uklad.svg",
+    "assets/wladyslaw-iv.jpg",
+    "assets/szujscy.jpg",
+    "assets/korona-warunek.svg",
+    "assets/oblezenie-moskwa.svg",
+    "assets/dynastia.svg",
+    "assets/mapa-dywilino.png",
+    "assets/deulino-full.png",
+    "assets/mapa-zasieg.png",
+    "assets/polanowo.svg",
+    "assets/notatka-waza.svg",
+    "assets/bilans.svg",
+    "assets/synteza.svg",
+    "assets/dwa-slady.svg"
+  ],
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "checks": [
+    {
+      "viewport": 1280,
+      "id": "otwarcie"
+    },
+    {
+      "viewport": 1280,
+      "id": "batory"
+    },
+    {
+      "viewport": 1280,
+      "id": "baltyk"
+    },
+    {
+      "viewport": 1280,
+      "id": "piechota"
+    },
+    {
+      "viewport": 1280,
+      "id": "zamoyski"
+    },
+    {
+      "viewport": 1280,
+      "id": "wyprawy"
+    },
+    {
+      "viewport": 1280,
+      "id": "jam"
+    },
+    {
+      "viewport": 1280,
+      "id": "notatka-1"
+    },
+    {
+      "viewport": 1280,
+      "id": "waza"
+    },
+    {
+      "viewport": 1280,
+      "id": "warszawa"
+    },
+    {
+      "viewport": 1280,
+      "id": "smuta"
+    },
+    {
+      "viewport": 1280,
+      "id": "dymitr"
+    },
+    {
+      "viewport": 1280,
+      "id": "upadek-dymitra"
+    },
+    {
+      "viewport": 1280,
+      "id": "wojna-1609"
+    },
+    {
+      "viewport": 1280,
+      "id": "kluszyn"
+    },
+    {
+      "viewport": 1280,
+      "id": "moskwa"
+    },
+    {
+      "viewport": 1280,
+      "id": "wladyslaw"
+    },
+    {
+      "viewport": 1280,
+      "id": "szujscy"
+    },
+    {
+      "viewport": 1280,
+      "id": "trzy-zdania"
+    },
+    {
+      "viewport": 1280,
+      "id": "kapitulacja"
+    },
+    {
+      "viewport": 1280,
+      "id": "romanow"
+    },
+    {
+      "viewport": 1280,
+      "id": "dywilino"
+    },
+    {
+      "viewport": 1280,
+      "id": "najwieksza"
+    },
+    {
+      "viewport": 1280,
+      "id": "polanowo"
+    },
+    {
+      "viewport": 1280,
+      "id": "notatka-2"
+    },
+    {
+      "viewport": 1280,
+      "id": "bilans-zadanie"
+    },
+    {
+      "viewport": 1280,
+      "id": "synteza"
+    },
+    {
+      "viewport": 1280,
+      "id": "wyjscie"
+    },
+    {
+      "viewport": 1024,
+      "id": "otwarcie"
+    },
+    {
+      "viewport": 1024,
+      "id": "batory"
+    },
+    {
+      "viewport": 1024,
+      "id": "baltyk"
+    },
+    {
+      "viewport": 1024,
+      "id": "piechota"
+    },
+    {
+      "viewport": 1024,
+      "id": "zamoyski"
+    },
+    {
+      "viewport": 1024,
+      "id": "wyprawy"
+    },
+    {
+      "viewport": 1024,
+      "id": "jam"
+    },
+    {
+      "viewport": 1024,
+      "id": "notatka-1"
+    },
+    {
+      "viewport": 1024,
+      "id": "waza"
+    },
+    {
+      "viewport": 1024,
+      "id": "warszawa"
+    },
+    {
+      "viewport": 1024,
+      "id": "smuta"
+    },
+    {
+      "viewport": 1024,
+      "id": "dymitr"
+    },
+    {
+      "viewport": 1024,
+      "id": "upadek-dymitra"
+    },
+    {
+      "viewport": 1024,
+      "id": "wojna-1609"
+    },
+    {
+      "viewport": 1024,
+      "id": "kluszyn"
+    },
+    {
+      "viewport": 1024,
+      "id": "moskwa"
+    },
+    {
+      "viewport": 1024,
+      "id": "wladyslaw"
+    },
+    {
+      "viewport": 1024,
+      "id": "szujscy"
+    },
+    {
+      "viewport": 1024,
+      "id": "trzy-zdania"
+    },
+    {
+      "viewport": 1024,
+      "id": "kapitulacja"
+    },
+    {
+      "viewport": 1024,
+      "id": "romanow"
+    },
+    {
+      "viewport": 1024,
+      "id": "dywilino"
+    },
+    {
+      "viewport": 1024,
+      "id": "najwieksza"
+    },
+    {
+      "viewport": 1024,
+      "id": "polanowo"
+    },
+    {
+      "viewport": 1024,
+      "id": "notatka-2"
+    },
+    {
+      "viewport": 1024,
+      "id": "bilans-zadanie"
+    },
+    {
+      "viewport": 1024,
+      "id": "synteza"
+    },
+    {
+      "viewport": 1024,
+      "id": "wyjscie"
+    },
+    {
+      "viewport": 1920,
+      "id": "otwarcie"
+    },
+    {
+      "viewport": 1920,
+      "id": "batory"
+    },
+    {
+      "viewport": 1920,
+      "id": "baltyk"
+    },
+    {
+      "viewport": 1920,
+      "id": "piechota"
+    },
+    {
+      "viewport": 1920,
+      "id": "zamoyski"
+    },
+    {
+      "viewport": 1920,
+      "id": "wyprawy"
+    },
+    {
+      "viewport": 1920,
+      "id": "jam"
+    },
+    {
+      "viewport": 1920,
+      "id": "notatka-1"
+    },
+    {
+      "viewport": 1920,
+      "id": "waza"
+    },
+    {
+      "viewport": 1920,
+      "id": "warszawa"
+    },
+    {
+      "viewport": 1920,
+      "id": "smuta"
+    },
+    {
+      "viewport": 1920,
+      "id": "dymitr"
+    },
+    {
+      "viewport": 1920,
+      "id": "upadek-dymitra"
+    },
+    {
+      "viewport": 1920,
+      "id": "wojna-1609"
+    },
+    {
+      "viewport": 1920,
+      "id": "kluszyn"
+    },
+    {
+      "viewport": 1920,
+      "id": "moskwa"
+    },
+    {
+      "viewport": 1920,
+      "id": "wladyslaw"
+    },
+    {
+      "viewport": 1920,
+      "id": "szujscy"
+    },
+    {
+      "viewport": 1920,
+      "id": "trzy-zdania"
+    },
+    {
+      "viewport": 1920,
+      "id": "kapitulacja"
+    },
+    {
+      "viewport": 1920,
+      "id": "romanow"
+    },
+    {
+      "viewport": 1920,
+      "id": "dywilino"
+    },
+    {
+      "viewport": 1920,
+      "id": "najwieksza"
+    },
+    {
+      "viewport": 1920,
+      "id": "polanowo"
+    },
+    {
+      "viewport": 1920,
+      "id": "notatka-2"
+    },
+    {
+      "viewport": 1920,
+      "id": "bilans-zadanie"
+    },
+    {
+      "viewport": 1920,
+      "id": "synteza"
+    },
+    {
+      "viewport": 1920,
+      "id": "wyjscie"
+    }
+  ],
+  "illustrated_slides": 28,
+  "notes_slides": 28,
+  "oral_activities": 3,
+  "graphic_notes": 2,
+  "lightboxes": [
+    {
+      "viewport": 1280,
+      "id": "otwarcie",
+      "image": 0
+    },
+    {
+      "viewport": 1280,
+      "id": "batory",
+      "image": 0
+    },
+    {
+      "viewport": 1280,
+      "id": "baltyk",
+      "image": 0
+    },
+    {
+      "viewport": 1280,
+      "id": "piechota",
+      "image": 0
+    },
+    {
+      "viewport": 1280,
+      "id": "zamoyski",
+      "image": 0
+    },
+    {
+      "viewport": 1280,
+      "id": "wyprawy",
+      "image": 0
+    },
+    {
+      "viewport": 1280,
+      "id": "jam",
+      "image": 0
+    },
+    {
+      "viewport": 1280,
+      "id": "notatka-1",
+      "image": 0
+    },
+    {
+      "viewport": 1280,
+      "id": "waza",
+      "image": 0
+    },
+    {
+      "viewport": 1280,
+      "id": "warszawa",
+      "image": 0
+    },
+    {
+      "viewport": 1280,
+      "id": "smuta",
+      "image": 0
+    },
+    {
+      "viewport": 1280,
+      "id": "dymitr",
+      "image": 0
+    },
+    {
+      "viewport": 1280,
+      "id": "upadek-dymitra",
+      "image": 0
+    },
+    {
+      "viewport": 1280,
+      "id": "wojna-1609",
+      "image": 0
+    },
+    {
+      "viewport": 1280,
+      "id": "kluszyn",
+      "image": 0
+    },
+    {
+      "viewport": 1280,
+      "id": "kluszyn",
+      "image": 1
+    },
+    {
+      "viewport": 1280,
+      "id": "moskwa",
+      "image": 0
+    },
+    {
+      "viewport": 1280,
+      "id": "wladyslaw",
+      "image": 0
+    },
+    {
+      "viewport": 1280,
+      "id": "szujscy",
+      "image": 0
+    },
+    {
+      "viewport": 1280,
+      "id": "trzy-zdania",
+      "image": 0
+    },
+    {
+      "viewport": 1280,
+      "id": "kapitulacja",
+      "image": 0
+    },
+    {
+      "viewport": 1280,
+      "id": "romanow",
+      "image": 0
+    },
+    {
+      "viewport": 1280,
+      "id": "dywilino",
+      "image": 0
+    },
+    {
+      "viewport": 1280,
+      "id": "najwieksza",
+      "image": 0
+    },
+    {
+      "viewport": 1280,
+      "id": "polanowo",
+      "image": 0
+    },
+    {
+      "viewport": 1280,
+      "id": "notatka-2",
+      "image": 0
+    },
+    {
+      "viewport": 1280,
+      "id": "bilans-zadanie",
+      "image": 0
+    },
+    {
+      "viewport": 1280,
+      "id": "synteza",
+      "image": 0
+    },
+    {
+      "viewport": 1280,
+      "id": "wyjscie",
+      "image": 0
+    },
+    {
+      "viewport": 1024,
+      "id": "otwarcie",
+      "image": 0
+    },
+    {
+      "viewport": 1024,
+      "id": "batory",
+      "image": 0
+    },
+    {
+      "viewport": 1024,
+      "id": "baltyk",
+      "image": 0
+    },
+    {
+      "viewport": 1024,
+      "id": "piechota",
+      "image": 0
+    },
+    {
+      "viewport": 1024,
+      "id": "zamoyski",
+      "image": 0
+    },
+    {
+      "viewport": 1024,
+      "id": "wyprawy",
+      "image": 0
+    },
+    {
+      "viewport": 1024,
+      "id": "jam",
+      "image": 0
+    },
+    {
+      "viewport": 1024,
+      "id": "notatka-1",
+      "image": 0
+    },
+    {
+      "viewport": 1024,
+      "id": "waza",
+      "image": 0
+    },
+    {
+      "viewport": 1024,
+      "id": "warszawa",
+      "image": 0
+    },
+    {
+      "viewport": 1024,
+      "id": "smuta",
+      "image": 0
+    },
+    {
+      "viewport": 1024,
+      "id": "dymitr",
+      "image": 0
+    },
+    {
+      "viewport": 1024,
+      "id": "upadek-dymitra",
+      "image": 0
+    },
+    {
+      "viewport": 1024,
+      "id": "wojna-1609",
+      "image": 0
+    },
+    {
+      "viewport": 1024,
+      "id": "kluszyn",
+      "image": 0
+    },
+    {
+      "viewport": 1024,
+      "id": "kluszyn",
+      "image": 1
+    },
+    {
+      "viewport": 1024,
+      "id": "moskwa",
+      "image": 0
+    },
+    {
+      "viewport": 1024,
+      "id": "wladyslaw",
+      "image": 0
+    },
+    {
+      "viewport": 1024,
+      "id": "szujscy",
+      "image": 0
+    },
+    {
+      "viewport": 1024,
+      "id": "trzy-zdania",
+      "image": 0
+    },
+    {
+      "viewport": 1024,
+      "id": "kapitulacja",
+      "image": 0
+    },
+    {
+      "viewport": 1024,
+      "id": "romanow",
+      "image": 0
+    },
+    {
+      "viewport": 1024,
+      "id": "dywilino",
+      "image": 0
+    },
+    {
+      "viewport": 1024,
+      "id": "najwieksza",
+      "image": 0
+    },
+    {
+      "viewport": 1024,
+      "id": "polanowo",
+      "image": 0
+    },
+    {
+      "viewport": 1024,
+      "id": "notatka-2",
+      "image": 0
+    },
+    {
+      "viewport": 1024,
+      "id": "bilans-zadanie",
+      "image": 0
+    },
+    {
+      "viewport": 1024,
+      "id": "synteza",
+      "image": 0
+    },
+    {
+      "viewport": 1024,
+      "id": "wyjscie",
+      "image": 0
+    },
+    {
+      "viewport": 1920,
+      "id": "otwarcie",
+      "image": 0
+    },
+    {
+      "viewport": 1920,
+      "id": "batory",
+      "image": 0
+    },
+    {
+      "viewport": 1920,
+      "id": "baltyk",
+      "image": 0
+    },
+    {
+      "viewport": 1920,
+      "id": "piechota",
+      "image": 0
+    },
+    {
+      "viewport": 1920,
+      "id": "zamoyski",
+      "image": 0
+    },
+    {
+      "viewport": 1920,
+      "id": "wyprawy",
+      "image": 0
+    },
+    {
+      "viewport": 1920,
+      "id": "jam",
+      "image": 0
+    },
+    {
+      "viewport": 1920,
+      "id": "notatka-1",
+      "image": 0
+    },
+    {
+      "viewport": 1920,
+      "id": "waza",
+      "image": 0
+    },
+    {
+      "viewport": 1920,
+      "id": "warszawa",
+      "image": 0
+    },
+    {
+      "viewport": 1920,
+      "id": "smuta",
+      "image": 0
+    },
+    {
+      "viewport": 1920,
+      "id": "dymitr",
+      "image": 0
+    },
+    {
+      "viewport": 1920,
+      "id": "upadek-dymitra",
+      "image": 0
+    },
+    {
+      "viewport": 1920,
+      "id": "wojna-1609",
+      "image": 0
+    },
+    {
+      "viewport": 1920,
+      "id": "kluszyn",
+      "image": 0
+    },
+    {
+      "viewport": 1920,
+      "id": "kluszyn",
+      "image": 1
+    },
+    {
+      "viewport": 1920,
+      "id": "moskwa",
+      "image": 0
+    },
+    {
+      "viewport": 1920,
+      "id": "wladyslaw",
+      "image": 0
+    },
+    {
+      "viewport": 1920,
+      "id": "szujscy",
+      "image": 0
+    },
+    {
+      "viewport": 1920,
+      "id": "trzy-zdania",
+      "image": 0
+    },
+    {
+      "viewport": 1920,
+      "id": "kapitulacja",
+      "image": 0
+    },
+    {
+      "viewport": 1920,
+      "id": "romanow",
+      "image": 0
+    },
+    {
+      "viewport": 1920,
+      "id": "dywilino",
+      "image": 0
+    },
+    {
+      "viewport": 1920,
+      "id": "najwieksza",
+      "image": 0
+    },
+    {
+      "viewport": 1920,
+      "id": "polanowo",
+      "image": 0
+    },
+    {
+      "viewport": 1920,
+      "id": "notatka-2",
+      "image": 0
+    },
+    {
+      "viewport": 1920,
+      "id": "bilans-zadanie",
+      "image": 0
+    },
+    {
+      "viewport": 1920,
+      "id": "synteza",
+      "image": 0
+    },
+    {
+      "viewport": 1920,
+      "id": "wyjscie",
+      "image": 0
+    }
+  ],
+  "fonts": [
+    {
+      "viewport": 1280,
+      "ready": "loaded",
+      "body": true,
+      "heading": true
+    },
+    {
+      "viewport": 1024,
+      "ready": "loaded",
+      "body": true,
+      "heading": true
+    },
+    {
+      "viewport": 1920,
+      "ready": "loaded",
+      "body": true,
+      "heading": true
+    }
+  ],
+  "notes": [
+    {
+      "viewport": 1280,
+      "slide": {
+        "x": 14,
+        "y": 14,
+        "right": 946,
+        "bottom": 538.25
+      },
+      "notes": {
+        "x": 960,
+        "y": 0,
+        "right": 1279.984375,
+        "bottom": 720
+      },
+      "text": "1:00. Nawiąż do wolnej elekcji: po ucieczce Henryka Walezego doszło do podwójnego wyboru; szlachta popierająca Annę Jagiellonkę wskazała Batorego na jej męża. Dla ucznia kluczowe rozróżnienie: elekcja 1575, koronacja 1576, nie jedna data. Siedmiogród leży przede wszystkim na obszarze dzisiejszej Rumunii, był związany z kulturą i dziejami Węgier; nie sprowadzaj pochodzenia do dzisiejszej granicy. Batory był doświadczonym wodzem. Portret jest XIX-wieczną kopią według obrazu z 1583 r.; nie podpisujemy go jako oryginału Kobera."
+    },
+    {
+      "viewport": 1024,
+      "slide": {
+        "x": 14,
+        "y": 14,
+        "right": 783.4222412109375,
+        "bottom": 446.79998779296875
+      },
+      "notes": {
+        "x": 0,
+        "y": 537.59375,
+        "right": 1024,
+        "bottom": 767.984375
+      },
+      "text": "1:00. Nawiąż do wolnej elekcji: po ucieczce Henryka Walezego doszło do podwójnego wyboru; szlachta popierająca Annę Jagiellonkę wskazała Batorego na jej męża. Dla ucznia kluczowe rozróżnienie: elekcja 1575, koronacja 1576, nie jedna data. Siedmiogród leży przede wszystkim na obszarze dzisiejszej Rumunii, był związany z kulturą i dziejami Węgier; nie sprowadzaj pochodzenia do dzisiejszej granicy. Batory był doświadczonym wodzem. Portret jest XIX-wieczną kopią według obrazu z 1583 r.; nie podpisujemy go jako oryginału Kobera."
+    },
+    {
+      "viewport": 1920,
+      "slide": {
+        "x": 14,
+        "y": 14,
+        "right": 1426,
+        "bottom": 808.25
+      },
+      "notes": {
+        "x": 1440,
+        "y": 0,
+        "right": 1919.984375,
+        "bottom": 1080
+      },
+      "text": "1:00. Nawiąż do wolnej elekcji: po ucieczce Henryka Walezego doszło do podwójnego wyboru; szlachta popierająca Annę Jagiellonkę wskazała Batorego na jej męża. Dla ucznia kluczowe rozróżnienie: elekcja 1575, koronacja 1576, nie jedna data. Siedmiogród leży przede wszystkim na obszarze dzisiejszej Rumunii, był związany z kulturą i dziejami Węgier; nie sprowadzaj pochodzenia do dzisiejszej granicy. Batory był doświadczonym wodzem. Portret jest XIX-wieczną kopią według obrazu z 1583 r.; nie podpisujemy go jako oryginału Kobera."
+    }
+  ],
+  "keyboard": "arrows/S/B/F/Enter/Escape and focus restoration passed",
+  "automatic_external_requests": [],
+  "errors": [],
+  "issues": [],
+  "overflows": [],
+  "review_directory": "/opt/data/history-lessons/.hermes/reviews/6/14-wojny-z-rosja"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "assets_verified": 5,
+  "excerpts_verified": 6,
+  "quote_matching": "literal after whitespace-only normalization",
+  "dimensions": {
+    "katyn-jency-1939.jpg": "Pillow unavailable; JPEG signature checked",
+    "katyn-beria-strona1.jpg": "Pillow unavailable; JPEG signature checked",
+    "jedwabne-szkola-1933.jpg": "Pillow unavailable; JPEG signature checked",
+    "jedwabne-rodzina-gradowskich.jpg": "Pillow unavailable; JPEG signature checked",
+    "jedwabne-mlodziez-1932.jpg": "Pillow unavailable; JPEG signature checked"
+  },
+  "scope": "No lesson repository changes; all produced files in this scratch directory.",
+  "rights_gate": "POLIN/ŻIH public redistribution NOT cleared; see manifest."
+}

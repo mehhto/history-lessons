@@ -1,0 +1,154 @@
+{
+  "slide_excerpts": [
+    {
+      "id": "zamosc-weclawik",
+      "who": "Zygmunt Węcławik, świadek wysiedlenia ze Skierbieszowa",
+      "type": "Relacja świadka cytowana w opracowaniu; nie tekst autora współczesnego",
+      "event_date": "27/28 listopada 1942 – początek wysiedleń; relacja dotyczy zgromadzenia mieszkańców w Skierbieszowie",
+      "recording_date": null,
+      "publication": "Relacja Zygmunta Węcławika, w: Zamojszczyzna w okresie okupacji hitlerowskiej, oprac. Anna Glińska, Warszawa 1968, s. 77–86; cyt. za Piotrem Bilińskim, s. 127 (PDF s. 3).",
+      "caveat": "Zweryfikowano dosłowność w zapisanym artykule Bilińskiego. Nie porównano z pierwodrukiem relacji z 1968 r.; data zapisania wspomnienia nieustalona.",
+      "evidence": {
+        "source_id": "s12",
+        "source_url": "https://bibliotekanauki.pl/chapters/63162270.pdf",
+        "source_text_path": "/opt/data/cache/scratch/zbrodnie-rev-zamosc-krakow/sources/s12.txt",
+        "literal": "cicho płaczące, marznące i głodne \ndzieci. Dorośli stali spokojnie. Swoją tragedię znosili z godnością. Niektórzy ukradkiem \nwycierali łzy",
+        "display_text": "cicho płaczące, marznące i głodne dzieci. Dorośli stali spokojnie. Swoją tragedię znosili z godnością. Niektórzy ukradkiem wycierali łzy",
+        "page": 3,
+        "literal_verified": true
+      },
+      "pupil_prompt": "Co świadek zapamiętał o dzieciach i dorosłych? Co to mówi o sytuacji wysiedlanych rodzin?",
+      "words": 18
+    },
+    {
+      "id": "krakow-pankiewicz",
+      "who": "Tadeusz Pankiewicz, właściciel Apteki pod Orłem, świadek wydarzeń w getcie",
+      "type": "Fragment wspomnienia świadka przytoczony przez współczesną autorkę audiodeskrypcji",
+      "event_date": "Po likwidacji getta krakowskiego, marzec 1943",
+      "recording_date": null,
+      "publication": "Regina Mynarska, Fundacja Pełni Kultury, Plac Bohaterów Getta, wrzesień 2022; konsultacja merytoryczna Katarzyna Kocik. Cytat przypisany Tadeuszowi Pankiewiczowi.",
+      "caveat": "Zweryfikowano literalnie w tekście Fundacji. Strona nie wskazuje wydania ani strony Apteki w getcie krakowskim; nie twierdzić, że odczytano pierwodruk. Współczesne zdania Fundacji o pomniku NIE są świadectwem Pankiewicza.",
+      "evidence": {
+        "source_id": "s09",
+        "source_url": "https://pelnikultury.pl/nasze-teksty/plac-bohaterow-getta/",
+        "source_text_path": "/opt/data/cache/scratch/zbrodnie-rev-zamosc-krakow/sources/s09.txt",
+        "literal": "Na Placu Zgody niszczeje nieprzeliczona ilość szaf, stołów, kredensów i innych mebli",
+        "display_text": "Na Placu Zgody niszczeje nieprzeliczona ilość szaf, stołów, kredensów i innych mebli",
+        "page": null,
+        "literal_verified": true
+      },
+      "pupil_prompt": "Dlaczego twórcy pomnika mogli wybrać zwykłe krzesło jako znak nieobecności mieszkańców?",
+      "words": 12
+    }
+  ],
+  "statistics": [
+    {
+      "claim": "Od nocy 27/28 XI 1942 do VIII 1943: około 110 tys. wysiedlonych, w tym około 30 tys. dzieci. Cztery powiaty: zamojski, biłgorajski, hrubieszowski, tomaszowski.",
+      "scope": "Aktion Zamość w latach 1942–1943; nie wszystkie represje na Zamojszczyźnie podczas całej wojny; nie liczba zamordowanych. Dzieci są częścią liczby 110 tys., a nie dodatkiem.",
+      "evidence": [
+        {
+          "source_id": "s07",
+          "source_url": "https://przystanekhistoria.pl/pa2/tematy/wysiedlenia/104380,Pacyfikacja-Zamojszczyzny.html",
+          "source_text_path": "/opt/data/cache/scratch/zbrodnie-rev-zamosc-krakow/sources/s07.txt",
+          "literal": "Według szacunkowych danych od listopada 1942 r. do sierpnia 1943 r. deportacjami objęto ok. 300 wsi, które były zamieszkane przez ok. 110 000 osób. Wśród osób wysiedlonych były dzieci, które określane są jako „Dzieci Zamojszczyzny”.\nDeportowano ok. 30 000 z nich",
+          "display_text": "Według szacunkowych danych od listopada 1942 r. do sierpnia 1943 r. deportacjami objęto ok. 300 wsi, które były zamieszkane przez ok. 110 000 osób. Wśród osób wysiedlonych były dzieci, które określane są jako „Dzieci Zamojszczyzny”. Deportowano ok. 30 000 z nich",
+          "page": null,
+          "literal_verified": true
+        },
+        {
+          "source_id": "s36",
+          "source_url": "https://muzeumdziecipolskich.pl/f/katalog-update-web.pdf",
+          "source_text_path": "/opt/data/cache/scratch/zbrodnie-rev-zamosc-krakow/sources/s36.txt",
+          "literal": "Akcja Zamość była częścią Generalnego Planu Wschodniego. Od 27/28 listopada 1942 r. do sierpnia 1943 r. Niemcy wysiedlili \npolską ludność ze wsi i miast Zamojszczyzny. Tak powstał pierwszy teren osiedleńczy w Generalnym Gubernatorstwie, \ntzw. bastion niemczyzny. W miejsce polskich rodzin przybywali niemieccy osadnicy. Akcja swym zasięgiem objęła 43% wsi \nZamojszczyzny. Wysiedlono 1/3 Polaków (110 tys.).",
+          "display_text": "Akcja Zamość była częścią Generalnego Planu Wschodniego. Od 27/28 listopada 1942 r. do sierpnia 1943 r. Niemcy wysiedlili polską ludność ze wsi i miast Zamojszczyzny. Tak powstał pierwszy teren osiedleńczy w Generalnym Gubernatorstwie, tzw. bastion niemczyzny. W miejsce polskich rodzin przybywali niemieccy osadnicy. Akcja swym zasięgiem objęła 43% wsi Zamojszczyzny. Wysiedlono 1/3 Polaków (110 tys.).",
+          "page": 7,
+          "literal_verified": true
+        }
+      ]
+    },
+    {
+      "claim": "297 wsi – liczba występująca w naukowym opracowaniu Piotra Bilińskiego; nie jednolicie podawana we wszystkich źródłach.",
+      "recommended_slide_wording": "Około 300 wsi; około 110 tys. osób, w tym około 30 tys. dzieci (XI 1942 – VIII 1943).",
+      "conflict": "Biliński: 297; PAP/dzieje.pl: 294; IPN: ok. 300. Nie prezentować 297 jako bezspornej dokładnej inwentaryzacji i nie łączyć z 1941 lub 1944.",
+      "evidence": [
+        {
+          "source_id": "s12",
+          "source_url": "https://bibliotekanauki.pl/chapters/63162270.pdf",
+          "source_text_path": "/opt/data/cache/scratch/zbrodnie-rev-zamosc-krakow/sources/s12.txt",
+          "literal": "tacie od listopada 1942 roku do sierpnia 1943 roku Niemcy wysiedlili 297 wsi, tj. około \n110 tys. mieszkańców, co stanowiło około 30% liczby ludności polskiej zamieszkującej \nZamojszczyznę14.",
+          "display_text": "tacie od listopada 1942 roku do sierpnia 1943 roku Niemcy wysiedlili 297 wsi, tj. około 110 tys. mieszkańców, co stanowiło około 30% liczby ludności polskiej zamieszkującej Zamojszczyznę14.",
+          "page": 4,
+          "literal_verified": true
+        },
+        {
+          "source_id": "s17",
+          "source_url": "https://dzieje.pl/aktualnosci/75-lat-temu-niemcy-rozpoczeli-akcje-wysiedlen-zamojszczyzny",
+          "source_text_path": "/opt/data/cache/scratch/zbrodnie-rev-zamosc-krakow/sources/s17.txt",
+          "literal": "Do sierpnia 1943 r. z 294 wsi wysiedlono ok. 110 tys. Polaków.",
+          "display_text": "Do sierpnia 1943 r. z 294 wsi wysiedlono ok. 110 tys. Polaków.",
+          "page": null,
+          "literal_verified": true
+        }
+      ]
+    }
+  ],
+  "krakow_chairs": [
+    {
+      "claim": "70 krzeseł łącznie, nie 68 jako liczba bezsporna.",
+      "evidence": [
+        {
+          "source_id": "s15",
+          "source_url": "https://www.krakow.pl/instcbi/35881/inst/159626/1061/Plac-Bohaterow-Getta.html",
+          "source_text_path": "/opt/data/cache/scratch/zbrodnie-rev-zamosc-krakow/sources/s15.txt",
+          "literal": "Charakterystyczna instalacja z 70 żeliwnych krzeseł symbolizuje nagle przerwane życie oraz pozostawiony dobytek osób wywożonych z getta.",
+          "display_text": "Charakterystyczna instalacja z 70 żeliwnych krzeseł symbolizuje nagle przerwane życie oraz pozostawiony dobytek osób wywożonych z getta.",
+          "page": null,
+          "literal_verified": true
+        },
+        {
+          "source_id": "s09",
+          "source_url": "https://pelnikultury.pl/nasze-teksty/plac-bohaterow-getta/",
+          "source_text_path": "/opt/data/cache/scratch/zbrodnie-rev-zamosc-krakow/sources/s09.txt",
+          "literal": "Krzeseł ustawiono łącznie siedemdziesiąt.",
+          "display_text": "Krzeseł ustawiono łącznie siedemdziesiąt.",
+          "page": null,
+          "literal_verified": true
+        },
+        {
+          "source_id": "s23",
+          "source_url": "http://przewodnicypokrakowie.pl/plac_bohaterow_getta.php",
+          "source_text_path": "/opt/data/cache/scratch/zbrodnie-rev-zamosc-krakow/sources/s23.txt",
+          "literal": "Tworzą go krzesła w ilości 68 sztuk, rozsiane po przestrzeni, w której Żydzi oczekiwali na decyzję o życiu lub śmierci.",
+          "display_text": "Tworzą go krzesła w ilości 68 sztuk, rozsiane po przestrzeni, w której Żydzi oczekiwali na decyzję o życiu lub śmierci.",
+          "page": null,
+          "literal_verified": true
+        }
+      ],
+      "recommendation": "Najbezpieczniej na slajdzie: puste krzesła upamiętniają nieobecnych mieszkańców getta i pozostawiony przez nich dobytek. Jeśli liczba potrzebna: 70 według miejskiego serwisu i audiodeskrypcji 2022 (33 większe + 37 mniejszych). Rozbieżność 68 zachować w dokumentacji."
+    },
+    {
+      "claim": "Pomnik odwołuje się do pozostawionych mebli i pamięci o ofiarach; nie potwierdzono reguły jedno krzesło = 1000 ofiar.",
+      "evidence": [
+        {
+          "source_id": "s10",
+          "source_url": "https://krakow.travel/501-krakow-plac-bohaterow-getta",
+          "source_text_path": "/opt/data/cache/scratch/zbrodnie-rev-zamosc-krakow/sources/s10.txt",
+          "literal": "Artyści, którzy go zaprojektowali, oparli się na wspomnieniach T. Pankiewicza o rozrzuconych tu sprzętach (m.in. krzesłach), które pozostały po likwidacji getta.",
+          "display_text": "Artyści, którzy go zaprojektowali, oparli się na wspomnieniach T. Pankiewicza o rozrzuconych tu sprzętach (m.in. krzesłach), które pozostały po likwidacji getta.",
+          "page": null,
+          "literal_verified": true
+        }
+      ],
+      "recommendation": "Nie przeliczać krzeseł na tysiące ludzi. Pomnik to nie wykres liczby ofiar. Nie używać też identyfikacji materiału żeliwo/brąz, bo źródła różnią się."
+    }
+  ],
+  "verification_rule": "literal musi występować znak w znak w zapisanym source_text_path; display_text usuwa wyłącznie nadmiarowe białe znaki, nie zmienia słów ani interpunkcji.",
+  "teacher_urls_full": [
+    "https://zpe.gov.pl/a/postawy-wobec-holokaustu-na-przykladzie-antoniny-i-jana-zabinskich-oraz-rodziny-ulmow/DPFB4GaDL",
+    "https://muzhp.pl/wiedza-on-line/wolyn-1943-po-osiemdziesieciu-latach-ukrainski-plan-polski-odwet",
+    "https://przeglad.olkuski.pl/straceni-w-wolbromiu-77-lat-temu/",
+    "https://orlegniazda.pl/culturalheritage/1019534/pomniki-20-straconych-w-olkuszu",
+    "https://pl.wikipedia.org/wiki/Krwawa_%C5%9Broda_w_Olkuszu",
+    "https://krakow.ipn.gov.pl/pl4/1943-1944-niemiecki-odwet-na-p/204426,Niemieckie-zbrodnie-w-Porebie-Dzierznej-i-Trzyciazu.html"
+  ]
+}

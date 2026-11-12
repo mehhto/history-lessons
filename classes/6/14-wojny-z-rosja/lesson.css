@@ -1,0 +1,100 @@
+/* Local grammar: atlas / campaign / rival crowns. No shared rules changed. */
+@font-face{font-family:CampaignSans;src:url('../../../template/presentation/fonts/collection/manrope-400.ttf');font-weight:400}@font-face{font-family:CampaignSans;src:url('../../../template/presentation/fonts/collection/manrope-700.ttf');font-weight:700}@font-face{font-family:CampaignSerif;src:url('../../../template/presentation/fonts/collection/bitter-700.ttf');font-weight:700}
+html[data-style] .reveal{--font-body:CampaignSans,sans-serif;--font-heading:CampaignSerif,serif}
+html .reveal .slides section[data-slide-canvas]{font:28px/1.35 var(--font-body);background:var(--color-surface);color:var(--color-text)}
+html .reveal .slides section[data-slide-canvas][data-purpose]>.slide-content{display:block;grid-template-rows:none;align-content:normal;padding:38px 50px;max-width:none;border:0}
+html .reveal .slides section[data-slide-canvas] :is(div,figure,li,ol){box-sizing:border-box;min-width:0}
+html .reveal .slides section[data-slide-canvas] :is(h1,h2,h3,p,li){text-transform:none;font-variant:normal;letter-spacing:0;color:inherit}
+html .reveal .slides section[data-slide-canvas] h2{font:700 42px/1.16 var(--font-heading);margin:0 0 24px}
+html .reveal .slides section[data-slide-canvas] h2:after,html .reveal .slides section[data-slide-canvas] h1:after{display:none}
+html .reveal .slides section[data-slide-canvas] h3{font:700 30px/1.2 var(--font-heading);margin:0 0 19px}
+html .reveal .slides section[data-slide-canvas] p{font-size:28px;line-height:1.38;margin:0 0 22px}
+html .reveal .slides section[data-slide-canvas] strong{color:inherit}
+html .reveal .slides section[data-slide-canvas] figure{margin:0;display:flex;flex-direction:column;justify-content:center}
+html .reveal .slides section[data-slide-canvas] img{display:block;width:100%;height:470px;object-fit:contain;margin:0;max-width:100%;max-height:none;border:0;box-shadow:none;background:transparent}
+html .reveal .slides section[data-slide-canvas] figcaption{font:20px/1.3 var(--font-body);margin:12px 0 0;color:inherit;text-align:left}
+html .reveal .slides section[data-slide-canvas] .eyebrow{font:700 22px/1.3 var(--font-body);margin-bottom:18px}
+html .reveal .slides section[data-slide-canvas] .date{font:700 35px/1.2 var(--font-heading);margin:0 0 28px}
+html .reveal .slides section[data-slide-canvas] .takeaway{font:700 28px/1.4 var(--font-body);border-top:4px solid var(--color-accent);padding:18px 0 0;margin:15px 0 0}
+/* The cover is a broad historical painting with a low red title field, not a portrait column. */
+html .reveal .slides #otwarcie>.slide-content{padding:0}
+html .reveal .slides #otwarcie .opening{height:720px;position:relative}
+html .reveal .slides #otwarcie figure{position:absolute;inset:0;display:block}
+html .reveal .slides #otwarcie img{height:720px;object-fit:cover;object-position:center 45%}
+html .reveal .slides #otwarcie .title-panel{position:absolute;left:40px;bottom:44px;width:660px;background:var(--color-accent);color:var(--color-surface);padding:26px 34px;border-top:7px solid var(--color-signal)}
+html .reveal .slides #otwarcie h1{font:700 79px/1.12 var(--font-heading);margin:0 0 23px;color:inherit}
+html .reveal .slides #otwarcie .title-panel p:last-child{font-size:27px;margin:0}
+/* Portraits vary side and scale, never masquerade as contemporary photographs. */
+html .reveal .slides section[data-slide-canvas] .split{display:grid;grid-template-columns:55% 1fr;gap:50px;height:542px;align-items:center}
+html .reveal .slides section[data-slide-canvas].portrait img{height:490px}
+html .reveal .slides section[data-slide-canvas].reverse .split{grid-template-columns:1fr 53%}
+html .reveal .slides section[data-slide-canvas].reverse .split>figure{grid-column:1;grid-row:1}
+html .reveal .slides section[data-slide-canvas].reverse .split>div{grid-column:2;grid-row:1}
+html .reveal .slides #zamoyski{background:var(--color-signal)}
+html .reveal .slides #wladyslaw .split{grid-template-columns:34% 1fr;gap:52px}
+html .reveal .slides #wladyslaw img{height:460px}
+html .reveal .slides #wladyslaw p{font-size:27px;margin-bottom:18px}
+html .reveal .slides #wladyslaw .date{font-size:32px}
+/* Almost full-height map, useful side legend. No source band below the map. */
+html .reveal .slides section[data-slide-canvas].map-board>.slide-content{display:grid;grid-template-columns:minmax(0,1fr) 335px;gap:24px;padding:8px 22px 8px 8px;align-items:center;background:var(--color-surface);color:var(--color-text)}
+html .reveal .slides section[data-slide-canvas].map-board figure,html .reveal .slides section[data-slide-canvas].map-board img{height:704px}
+html .reveal .slides section[data-slide-canvas].map-board .map-key{padding-left:17px;border-left:5px solid var(--color-accent)}
+html .reveal .slides section[data-slide-canvas].map-board h2{font-size:36px;line-height:1.12;margin-bottom:24px}
+html .reveal .slides section[data-slide-canvas].map-board p{font-size:25px;margin-bottom:23px}
+html .reveal .slides section[data-slide-canvas].map-board .legend{font-size:22px;line-height:1.45}
+html .reveal .slides section[data-slide-canvas] .swatch{display:inline-block;width:27px;height:20px;border:1px solid var(--color-text);margin-right:9px;vertical-align:middle}
+.swatch.inflanty{background:#9fa58c}.swatch.gains{background:#ff7900}.swatch.commonwealth{background:#ffffc8}
+.pink-dots{color:#e98b91;font-size:34px;font-weight:700}.red-dots{color:#ca0020;font-size:34px;font-weight:700}.blue-line{color:#3c75bb;font-size:31px}.grey-line{color:#737373;font-size:31px}.purple-line{color:#673d6e;font-size:31px}
+/* Diagrams are deliberately explanatory: lines, proportion, siege and decision logic. */
+html .reveal .slides section[data-slide-canvas] .wide-diagram img{height:405px;background:var(--color-surface)}
+html .reveal .slides section[data-slide-canvas].sea{background:var(--color-evidence);color:var(--color-surface)}
+html .reveal .slides section[data-slide-canvas].campaign{background:var(--color-text);color:var(--color-surface)}
+html .reveal .slides section[data-slide-canvas].sea .takeaway,html .reveal .slides section[data-slide-canvas].campaign .takeaway{border-color:var(--color-signal)}
+html .reveal .slides section[data-slide-canvas] .rival{display:grid;grid-template-columns:32% 1fr;align-items:center;gap:50px;height:500px}
+html .reveal .slides section[data-slide-canvas] .rival img{height:445px}
+html .reveal .slides #dymitr .rival{height:440px;grid-template-columns:28% 1fr}
+html .reveal .slides #dymitr .rival img{height:365px}
+html .reveal .slides section[data-slide-canvas] .date-list{display:block;list-style:none;margin:0;padding:0;border-left:5px solid var(--color-evidence)}
+html .reveal .slides section[data-slide-canvas] .date-list li{display:grid;grid-template-columns:110px 1fr;gap:20px;padding:12px 0 20px 26px;margin:0 0 20px;font-size:28px;line-height:1.4}
+html .reveal .slides section[data-slide-canvas] .date-list strong{font:700 39px/1.2 var(--font-heading)}
+html .reveal .slides section[data-slide-canvas] .succession{display:grid;grid-template-columns:52% 1fr;gap:35px;align-items:center;height:440px}
+html .reveal .slides section[data-slide-canvas] .succession img{height:400px}
+html .reveal .slides section[data-slide-canvas] .treaty{display:grid;grid-template-columns:39% 1fr;gap:35px;align-items:center;height:395px}
+html .reveal .slides section[data-slide-canvas] .treaty img{height:380px}
+/* Two classroom-drawable, simple graphic notes, not image-rich worksheets. */
+html .reveal .slides section[data-slide-canvas].notebook{background:var(--color-surface);color:var(--color-text)}
+html .reveal .slides section[data-slide-canvas].notebook>.slide-content{border-top:12px solid var(--color-evidence);padding:30px 40px}
+html .reveal .slides section[data-slide-canvas].notebook h2{font-size:39px;margin-bottom:15px}
+html .reveal .slides section[data-slide-canvas].notebook figure,html .reveal .slides section[data-slide-canvas].notebook img{height:510px}
+/* Task boards expose the action, not the answer; disclosure is keyboard-native. */
+html .reveal .slides section[data-slide-canvas].oral{background:var(--color-signal);color:var(--color-text)}
+html .reveal .slides section[data-slide-canvas] .question-row{display:grid;grid-template-columns:33% 1fr;gap:42px;align-items:center;min-height:430px}
+html .reveal .slides section[data-slide-canvas] .question-row>img{height:360px}
+html .reveal .slides section[data-slide-canvas] .student-task{display:block;grid-template-columns:none;grid-template-rows:none;align-content:normal;background:transparent;color:inherit;border:0;padding:0;box-shadow:none;border-radius:0}
+html .reveal .slides section[data-slide-canvas] .question{font:700 34px/1.35 var(--font-heading)}
+html .reveal .slides section[data-slide-canvas] details{background:var(--color-surface);color:var(--color-text);padding:15px 24px;margin-top:12px;border-left:5px solid var(--color-evidence)}
+html .reveal .slides section[data-slide-canvas] details p{font-size:26px;margin:15px 0 0}
+html .reveal .slides section[data-slide-canvas] summary{font-size:26px;cursor:pointer}
+html .reveal .slides #jam .question-row{min-height:340px}
+html .reveal .slides #jam .question-row img{height:290px}
+html .reveal .slides #trzy-zdania .question{font-size:31px}
+html .reveal .slides #bilans-zadanie{background:var(--color-evidence);color:var(--color-surface)}
+html .reveal .slides #bilans-zadanie .question-row{min-height:510px;grid-template-columns:42% 1fr}
+html .reveal .slides #bilans-zadanie .question-row>img{height:410px}
+/* Documentary panorama with separate commander detail. */
+html .reveal .slides #kluszyn .battle-board{display:grid;grid-template-columns:64% 1fr;gap:30px;align-items:center;height:555px}
+html .reveal .slides #kluszyn .battle-board>figure img{height:470px}
+html .reveal .slides #kluszyn .small-portrait{float:right;width:115px;margin:0 0 12px 15px}
+html .reveal .slides #kluszyn .small-portrait img{height:150px;object-fit:cover;object-position:25% 20%}
+html .reveal .slides #kluszyn p{font-size:26px;line-height:1.35;margin-bottom:20px}
+html .reveal .slides #kluszyn h3{font-size:29px}
+html .reveal .slides #szujscy figure img{height:425px}
+html .reveal .slides #szujscy .takeaway{font-size:27px;margin-top:15px;padding-top:13px}
+html .reveal .slides #wyjscie{background:var(--color-canvas)}
+html .reveal .slides #wyjscie ol{display:block;margin:0 0 0 1.1em;padding:0;font-size:31px}
+html .reveal .slides #wyjscie li{padding-left:5px;margin-bottom:35px;line-height:1.4}
+html .reveal .slides #wyjscie .closing{font-size:26px;border-top:4px solid var(--color-accent);padding-top:22px}
+/* Proven notes-mode geometry, confined to this new lesson. */
+.reveal.show-notes .slides{top:14px!important;margin-top:0!important;left:14px!important;transform-origin:top left;transform:scale(min(calc((75vw - 28px) / 1280px),calc((100vh - 28px) / 720px))) !important}
+@media(max-width:1024px){.reveal.show-notes .slides{transform:scale(min(calc((100vw - 28px) / 1280px),calc((60vh - 28px) / 720px))) !important}}
+:focus-visible{outline:4px solid var(--color-evidence);outline-offset:5px}

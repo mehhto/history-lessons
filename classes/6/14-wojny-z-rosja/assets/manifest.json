@@ -1,0 +1,344 @@
+[
+  {
+    "id": "stefan",
+    "subject": "Stefan Batory",
+    "creator": "Autor nieznany, według Marcina Kobera",
+    "date": "2. połowa XIX w. (kopia obrazu z 1583)",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Anonymous_Stephen_B%C3%A1thory_%28detail%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "inspected_url": "https://commons.wikimedia.org/wiki/File%3AAnonymous_Stephen_B%C3%A1thory_%28detail%29_01.jpg",
+    "license": "Domena publiczna (PD-Art / public domain na stronie pliku Commons)",
+    "rights_note": "Muzeum Narodowe w Lublinie; detal kopii, nie oryginał Kobera z 1583. Reprodukcja zmniejszona / przekodowana do JPEG bez zmiany treści.",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Anonymous_Stephen_B%C3%A1thory_%28detail%29_01.jpg/500px-Anonymous_Stephen_B%C3%A1thory_%28detail%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20171002175418",
+    "sha256": "11fa0a194bf3a1d494ef73611a67fe9f85b7dc3b203a3d295aeb0364483c91f8",
+    "gallery": true,
+    "file": "assets/stefan.jpg",
+    "reused_from": "/opt/data/history-lessons/classes/6/13-pierwsza-wolna-elekcja/assets/stefan.jpg"
+  },
+  {
+    "id": "ivan",
+    "subject": "Iwan IV Groźny",
+    "creator": "Autor nieznany",
+    "date": "1672 (wizerunek); reprodukcja wydana 1903",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Ivan_grozny_frame.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "inspected_url": "https://commons.wikimedia.org/wiki/File%3AIvan_grozny_frame.jpg",
+    "license": "Domena publiczna (PD-Art / public domain na stronie pliku Commons)",
+    "rights_note": "Pośmiertny wizerunek z Carskiego tytularnika 1672, nie portret wykonany za życia. Nie fotografia / nie świadectwo wyglądu w 1573. Reprodukcja zmniejszona / przekodowana do JPEG bez zmiany treści.",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Ivan_grozny_frame.jpg/500px-Ivan_grozny_frame.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20250228232744",
+    "sha256": "94bccf28c2bcb865689fb4558456be7141eef95dcc1d0704e3ab5971018ff371",
+    "gallery": false,
+    "file": "assets/ivan.jpg",
+    "reused_from": "/opt/data/history-lessons/classes/6/13-pierwsza-wolna-elekcja/assets/ivan.jpg"
+  },
+  {
+    "id": "zygmunt-iii",
+    "subject": "Zygmunt III Waza",
+    "creator": "Pieter Soutman",
+    "date": "ok. 1624",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Soutman_Sigismund_III_Vasa_in_coronation_robes.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "inspected_url": "https://commons.wikimedia.org/wiki/File%3ASoutman_Sigismund_III_Vasa_in_coronation_robes.jpg",
+    "license": "Domena publiczna (PD-Art / public domain na stronie pliku Commons)",
+    "rights_note": "Staatsgalerie Neuburg, nr 984; portret w stroju koronacyjnym, nie dokument koronacji z 1587. Reprodukcja zmniejszona / przekodowana do JPEG bez zmiany treści.",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Soutman_Sigismund_III_Vasa_in_coronation_robes.jpg/500px-Soutman_Sigismund_III_Vasa_in_coronation_robes.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20170805115417",
+    "sha256": "8cf3c5bf5c444877d2bbe36e376e6cf542635700fb53e0557107ff4e6212526e",
+    "gallery": true,
+    "file": "assets/zygmunt-iii.jpg",
+    "reused_from": "/opt/data/history-lessons/classes/6/13-pierwsza-wolna-elekcja/assets/zygmunt-iii.jpg"
+  },
+  {
+    "id": "wladyslaw-iv",
+    "subject": "Władysław IV Waza",
+    "creator": "Peter Paul Rubens",
+    "date": "lata 1620.",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Rubens_Wladyslaw_Vasa.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "inspected_url": "https://commons.wikimedia.org/wiki/File%3ARubens_Wladyslaw_Vasa.jpg",
+    "license": "Domena publiczna (PD-Art / public domain na stronie pliku Commons)",
+    "rights_note": "Wizerunek królewicza przed objęciem tronu. Nie datować jako koronacja 1633. Reprodukcja zmniejszona / przekodowana do JPEG bez zmiany treści.",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Rubens_Wladyslaw_Vasa.jpg/500px-Rubens_Wladyslaw_Vasa.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20210719150211",
+    "sha256": "9a1ad05169dca79ee86a031ad7d9428cb1b5da4737b4e4332d7182084777ce68",
+    "gallery": true,
+    "file": "assets/wladyslaw-iv.jpg",
+    "reused_from": "/opt/data/history-lessons/classes/6/13-pierwsza-wolna-elekcja/assets/wladyslaw-iv.jpg"
+  },
+  {
+    "id": "zamoyski",
+    "file": "assets/zamoyski.webp",
+    "source_url": "https://static.zpe.gov.pl/portal/f/res-minimized/RIALjo72YWkDv/1662386872/1ffnKRUO7ggpNDLKjEwQr6dRYyENcP7d.png.webp",
+    "inspected_url": "https://zpe.gov.pl/a/rzeczpospolita-wojuje-xvi/xvii-w/D5K5GQMqQ",
+    "description": "Jan Zamoyski na wyidealizowanym portrecie Bacciarelliego , przedstawiony jako kanclerz, nie hetman, o czym ma świadczyć łagodny wyraz twarzy, zamyślenie i prezentacja księgi Źródło: Marceli Bacciarelli , olej na płótnie, Muzeum Narodowe w Warszawie, domena publiczna.",
+    "license": "Domena publiczna — potwierdzona karta ZPE",
+    "type": "malarstwo / opracowanie ikonograficzne",
+    "sha256": "1c82b59468de104c5c9167c8c2c831e6aeeddcb2858f89193e51ee3f92a6baa8"
+  },
+  {
+    "id": "batory-pskow",
+    "file": "assets/batory-pskow.webp",
+    "source_url": "https://static.zpe.gov.pl/portal/f/res-minimized/RUkqh0IdblBu5/1662386971/1hIIMJc6KcnhOelElr41ssjErzfSAbi8.jpg.webp",
+    "inspected_url": "https://zpe.gov.pl/a/rzeczpospolita-wojuje-xvi/xvii-w/D5K5GQMqQ",
+    "description": "Obraz Jana Matejki „Batory pod Pskowem” (1872). Obraz obecnie znajduje się na Zamku Królewskim w Warszawie Źródło: Jan Matejko, 1872, olej na płótnie, Zamek Królewski w Warszawie, domena publiczna.",
+    "license": "Domena publiczna — potwierdzona karta ZPE",
+    "type": "malarstwo / opracowanie ikonograficzne",
+    "sha256": "39db0aea3b3cfcadcfab7a6908d0c4c97d4b0344f5f2201ab93af787fb404836"
+  },
+  {
+    "id": "dymitr",
+    "file": "assets/dymitr.webp",
+    "source_url": "https://static.zpe.gov.pl/portal/f/res-minimized/RrSklSTVcbfvx/1662386974/2RiTApiYN7QSXJoLb4Aio2rj4KyskQYk.jpg.webp",
+    "inspected_url": "https://zpe.gov.pl/a/rzeczpospolita-wojuje-xvi/xvii-w/D5K5GQMqQ",
+    "description": "Portret Dymitra Samozwańca w stroju koronacyjnym; obraz namalowany przez Szymona Boguszewicza, przechowywany obecnie w Muzeum Państwowym w Moskwie Źródło: Szymon Boguszowicz, olej na płótnie, Muzeum Państwowe w Moskwie, domena publiczna.",
+    "license": "Domena publiczna — potwierdzona karta ZPE",
+    "type": "malarstwo / opracowanie ikonograficzne",
+    "sha256": "98033babdd4db9098e80c3bceded47403822cf5e4cff98cbc888be57826422b0"
+  },
+  {
+    "id": "zolkiewski",
+    "file": "assets/zolkiewski.webp",
+    "source_url": "https://static.zpe.gov.pl/portal/f/res-minimized/RHQYqG55zcGNx/1662386977/20aZYSxtJnSfjfKKaz1lIh7Orh9TMR5h.jpg.webp",
+    "inspected_url": "https://zpe.gov.pl/a/rzeczpospolita-wojuje-xvi/xvii-w/D5K5GQMqQ",
+    "description": "Podobizna hetmana Żółkiewskiego na obrazie J. Matejki pt. „Batory pod Pskowem” Źródło: Jan Matejko, domena publiczna.",
+    "license": "Domena publiczna — potwierdzona karta ZPE",
+    "type": "malarstwo / opracowanie ikonograficzne",
+    "sha256": "d2c526f254789b1f4ceb4a2d78454f848e1d100340929579e03af6ef2c90a26b"
+  },
+  {
+    "id": "kluszyn",
+    "file": "assets/kluszyn.webp",
+    "source_url": "https://static.zpe.gov.pl/portal/f/res-minimized/R19iIqL3HxdKZ/1662386977/dcyAzvF67aI1TRPY5xtpjeKdYiRivEm1.png.webp",
+    "inspected_url": "https://zpe.gov.pl/a/rzeczpospolita-wojuje-xvi/xvii-w/D5K5GQMqQ",
+    "description": "Obraz Boguszewicza „Bitwa pod Kłuszynem” (1610); obraz namalowany ok. 1620, obecnie przechowywany w Galerii Narodowej we Lwowie Źródło: Szymon Boguszowicz, olej na płótnie, Lwowska Narodowa Galeria Sztuki, domena publiczna.",
+    "license": "Domena publiczna — potwierdzona karta ZPE",
+    "type": "malarstwo / opracowanie ikonograficzne",
+    "sha256": "69b3db3dc7f26bb10a860c669b294a35b32762bc87326b06f769dbf0824d0d04"
+  },
+  {
+    "id": "szujscy",
+    "file": "assets/szujscy.jpg",
+    "source_url": "https://static.zpe.gov.pl/portal/f/res-minimized/R1KbqM5NYkj2n/1713169967/20N1VhCo2U9p7a4LNMppa655xKv3N2FK.jpg",
+    "inspected_url": "https://zpe.gov.pl/a/polskie-dynastie-wazowie/DQTNWVadb",
+    "description": "Carowie Szujscy przed Zygmuntem III Wazą na sejmie warszawskim 1611 roku Źródło: Jan Matejko, Carowie Szujscy przed Zygmuntem III na sejmie warszawskim 1611 roku , 1892, domena publiczna.",
+    "license": "Domena publiczna — potwierdzona karta ZPE",
+    "type": "malarstwo / opracowanie ikonograficzne",
+    "sha256": "a1d473bcf408ad270063a5dc7dd95b5365057f328d14a493fc232e67f8dc9077"
+  },
+  {
+    "id": "bilans",
+    "file": "assets/bilans.svg",
+    "creator": "Opracowanie dydaktyczne do tej lekcji",
+    "license": "CC BY-SA 4.0",
+    "type": "autorski schemat objaśniający; nie źródło z epoki, nie rekonstrukcja historyczna, nie mapa",
+    "source_url": null,
+    "sha256": "cd8e3999664b52cada55ed17b19e3db1d52b5bf54681f90f1616e6d2698259a4"
+  },
+  {
+    "id": "dwa-slady",
+    "file": "assets/dwa-slady.svg",
+    "creator": "Opracowanie dydaktyczne do tej lekcji",
+    "license": "CC BY-SA 4.0",
+    "type": "autorski schemat objaśniający; nie źródło z epoki, nie rekonstrukcja historyczna, nie mapa",
+    "source_url": null,
+    "sha256": "0539b5137d8f4f79b16f7222c87071768e5588aa5b10a53032fc12c79bf3b3b4"
+  },
+  {
+    "id": "dymitr-upadek",
+    "file": "assets/dymitr-upadek.svg",
+    "creator": "Opracowanie dydaktyczne do tej lekcji",
+    "license": "CC BY-SA 4.0",
+    "type": "autorski schemat objaśniający; nie źródło z epoki, nie rekonstrukcja historyczna, nie mapa",
+    "source_url": null,
+    "sha256": "72dbe381a44c98c67bf96e39cca81aea81597a6d8053c0a4b8214cd70202f71c"
+  },
+  {
+    "id": "dynastia",
+    "file": "assets/dynastia.svg",
+    "creator": "Opracowanie dydaktyczne do tej lekcji",
+    "license": "CC BY-SA 4.0",
+    "type": "autorski schemat objaśniający; nie źródło z epoki, nie rekonstrukcja historyczna, nie mapa",
+    "source_url": null,
+    "sha256": "0611a3956dcc442dc278facc327b55cb848734f0c96bab11bff24e2414930e4b"
+  },
+  {
+    "id": "korona-warunek",
+    "file": "assets/korona-warunek.svg",
+    "creator": "Opracowanie dydaktyczne do tej lekcji",
+    "license": "CC BY-SA 4.0",
+    "type": "autorski schemat objaśniający; nie źródło z epoki, nie rekonstrukcja historyczna, nie mapa",
+    "source_url": null,
+    "sha256": "c4388ee8e005fb92bfeea36fd21b17c64b2909bd071d4aa4f2c8018f7bb8c18b"
+  },
+  {
+    "id": "moskwa-uklad",
+    "file": "assets/moskwa-uklad.svg",
+    "creator": "Opracowanie dydaktyczne do tej lekcji",
+    "license": "CC BY-SA 4.0",
+    "type": "autorski schemat objaśniający; nie źródło z epoki, nie rekonstrukcja historyczna, nie mapa",
+    "source_url": null,
+    "sha256": "ae76e24283fdb4ffb8334f5779067c3fe273e8abb21916e36946882659c31c58"
+  },
+  {
+    "id": "notatka-batory",
+    "file": "assets/notatka-batory-v2.svg",
+    "creator": "Opracowanie dydaktyczne do tej lekcji",
+    "license": "CC BY-SA 4.0",
+    "type": "autorski schemat objaśniający; nie źródło z epoki, nie rekonstrukcja historyczna, nie mapa",
+    "source_url": null,
+    "sha256": "94001baa39dd97a2b0960e73c3e18b61a3ef4b9ab3c592b5fdcb1c229043a0be",
+    "changes": "Rewizja graficzna: spójna kreska, wyróżnienia dat, czytelna hierarchia; uproszczone symbole do przerysowania. Oryginał zachowany lokalnie."
+  },
+  {
+    "id": "notatka-waza",
+    "file": "assets/notatka-waza-v2.svg",
+    "creator": "Opracowanie dydaktyczne do tej lekcji",
+    "license": "CC BY-SA 4.0",
+    "type": "autorski schemat objaśniający; nie źródło z epoki, nie rekonstrukcja historyczna, nie mapa",
+    "source_url": null,
+    "sha256": "206153020e671370c41d368db60912a83aac9eba551beabbf074c0cb69afba32",
+    "changes": "Rewizja graficzna: spójna kreska, wyróżnienia dat, czytelna hierarchia; uproszczone symbole do przerysowania. Oryginał zachowany lokalnie."
+  },
+  {
+    "id": "obleganie",
+    "file": "assets/obleganie.svg",
+    "creator": "Opracowanie dydaktyczne do tej lekcji",
+    "license": "CC BY-SA 4.0",
+    "type": "autorski schemat objaśniający; nie źródło z epoki, nie rekonstrukcja historyczna, nie mapa",
+    "source_url": null,
+    "sha256": "3791e1d1d453b237b85947f97e174bb2c4299841bf60b0ab3a076cd3980eb532"
+  },
+  {
+    "id": "oblezenie-moskwa",
+    "file": "assets/oblezenie-moskwa.svg",
+    "creator": "Opracowanie dydaktyczne do tej lekcji",
+    "license": "CC BY-SA 4.0",
+    "type": "autorski schemat objaśniający; nie źródło z epoki, nie rekonstrukcja historyczna, nie mapa",
+    "source_url": null,
+    "sha256": "040d84719ff6b4e3e98e98047cbb28548764260ddf982ad78ba55761d73987e8"
+  },
+  {
+    "id": "polanowo",
+    "file": "assets/polanowo.svg",
+    "creator": "Opracowanie dydaktyczne do tej lekcji",
+    "license": "CC BY-SA 4.0",
+    "type": "autorski schemat objaśniający; nie źródło z epoki, nie rekonstrukcja historyczna, nie mapa",
+    "source_url": null,
+    "sha256": "af84a850b6d07e7862687de6e951a393a416c9c6be9549773a6410c26c850c52"
+  },
+  {
+    "id": "synteza",
+    "file": "assets/synteza.svg",
+    "creator": "Opracowanie dydaktyczne do tej lekcji",
+    "license": "CC BY-SA 4.0",
+    "type": "autorski schemat objaśniający; nie źródło z epoki, nie rekonstrukcja historyczna, nie mapa",
+    "source_url": null,
+    "sha256": "777d26e022e7e7512ac58c0fb1232ef7cabf663e423ba4b90c632b08afa89eef"
+  },
+  {
+    "id": "warszawa",
+    "file": "assets/warszawa.svg",
+    "creator": "Opracowanie dydaktyczne do tej lekcji",
+    "license": "CC BY-SA 4.0",
+    "type": "autorski schemat objaśniający; nie źródło z epoki, nie rekonstrukcja historyczna, nie mapa",
+    "source_url": null,
+    "sha256": "7d6740bc9459a1a054d32e08bacdb3a554e87e788f2b5bf3cf57ae439958ec5a"
+  },
+  {
+    "id": "wybraniecka",
+    "file": "assets/wybraniecka.svg",
+    "creator": "Opracowanie dydaktyczne do tej lekcji",
+    "license": "CC BY-SA 4.0",
+    "type": "autorski schemat objaśniający; nie źródło z epoki, nie rekonstrukcja historyczna, nie mapa",
+    "source_url": null,
+    "sha256": "83cd05536b2dfa79a84198ca2dff5f2587e6de4ff0cdbd0ffa007325ea304a23"
+  },
+  {
+    "source_url": "https://zpe.gov.pl/a/mapa-interaktywna/DddWhUmQ0",
+    "creator": "Contentplus.pl",
+    "license": "CC BY-SA 3.0",
+    "type": "modern cartographic study; derived composite",
+    "changes": "Kompozycja warstw bez siatki, bez wypraw 1579/1580 i bez granicy 1582; powiększone etykiety Rygi i Inflant.",
+    "evidence": [
+      "batory.html",
+      "batory-manifest.json",
+      "download-evidence.json"
+    ],
+    "limits": "original graticule/labels have slightly different raster rounding; visually inspected. Include readable legend for selected layers.",
+    "original_file": "batory-composite.jpg",
+    "file": "assets/mapa-baltyk.jpg",
+    "sha256": "277ce0a03599de96893b0f7575e225e557ab98ed184556390dc5476859ff83f6"
+  },
+  {
+    "source_url": "https://zpe.gov.pl/a/mapa-interaktywna/DddWhUmQ0",
+    "creator": "Contentplus.pl",
+    "license": "CC BY-SA 3.0",
+    "type": "modern cartographic study; derived composite",
+    "changes": "Kompozycja warstw bez siatki; kadr północno-wschodnich twierdz, powiększone nazwy Połock/Psków/Wielkie Łuki. Nie dodano szlaku 1581.",
+    "evidence": [
+      "batory.html",
+      "batory-manifest.json",
+      "download-evidence.json"
+    ],
+    "limits": "original graticule/labels have slightly different raster rounding; visually inspected. Include readable legend for selected layers.",
+    "original_file": "batory-composite.jpg",
+    "file": "assets/mapa-wyprawy.jpg",
+    "sha256": "4abf68b47502f54730a36c8a9993a10bf9ffdce936b14fa728b582694bcb846f"
+  },
+  {
+    "source_url": "https://commons.wikimedia.org/wiki/File:Truce_of_Deulino_1618-1619.PNG",
+    "inspected_page": "https://en.wikipedia.org/wiki/File:Truce_of_Deulino_1618-1619.PNG",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Truce_of_Deulino_1618-1619.PNG",
+    "creator": "Maciej Szczepańczyk (Mathiasrex), based on layers of Halibutt",
+    "license": "CC BY-SA 3.0",
+    "type": "modern study map of Deulino territorial acquisitions1618/1619",
+    "changes": "Bez zmian; pełna mapa tylko dla powiększenia.",
+    "limits": "English legend needs Polish explanation; no exact administrative boundary of Severia separately.",
+    "original_file": "deulino.png",
+    "file": "assets/deulino-full.png",
+    "sha256": "259e46c36de791809a9fbea7cfb1525928b1c75a97cdbf867ca3691b2fee7d6e"
+  },
+  {
+    "source_url": "https://commons.wikimedia.org/wiki/File:Truce_of_Deulino_1618-1619.PNG",
+    "inspected_page": "https://en.wikipedia.org/wiki/File:Truce_of_Deulino_1618-1619.PNG",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Truce_of_Deulino_1618-1619.PNG",
+    "creator": "Maciej Szczepańczyk (Mathiasrex), based on layers of Halibutt",
+    "license": "CC BY-SA 3.0",
+    "type": "modern study map of Deulino territorial acquisitions1618/1619",
+    "changes": "Kadr wschodnich nabytków; legenda angielska poza kadrem, polska legenda obok mapy. Pełna mapa dostępna w powiększeniu.",
+    "limits": "English legend needs Polish explanation; no exact administrative boundary of Severia separately.",
+    "original_file": "deulino.png",
+    "file": "assets/mapa-dywilino.png",
+    "sha256": "529d09104b4b1a046e7c7b4b728583c497a3449c413ffafd0feb85bf2800e108"
+  },
+  {
+    "source_url": "https://commons.wikimedia.org/wiki/File:Polish-Lithuanian_Commonwealth_(1619)_compared_with_today%27s_borders_PL.png",
+    "inspected_page": "https://en.wikipedia.org/wiki/File:Polish-Lithuanian_Commonwealth_(1619)_compared_with_today%27s_borders_PL.png",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Polish-Lithuanian_Commonwealth_%281619%29_compared_with_today%27s_borders_PL.png",
+    "creator": "Bogomolov.PL",
+    "license": "CC BY-SA 3.0",
+    "type": "modern historical overlay onto present state borders",
+    "changes": "Bez zmian; polska legenda 1–5 jawnie obok mapy.",
+    "limits": "Legend1Korona2PrusyKsiążęcelenno3WKL4Inflanty5Kurlandialenno; include this key outside map. Red dotted modern borders; grey solid historical. Historical extent includes fiefs, not identical measurement basis990000.",
+    "original_file": "modern-pl.png",
+    "file": "assets/mapa-zasieg.png",
+    "sha256": "02e2fd7095941ea3d5a8b3af0415af1922b4991493f2fb261dc76397a00253b9"
+  },
+  {
+    "source_url": "https://zpe.gov.pl/watek/LPAMVE4GV7/23/a/polacy-w-moskwie-walka-o-wplywy-w-rosji/DCH7KAU9R",
+    "creator": "Contentplus.sp. z o.o., based on Stanisław Grzybowski, Dzieje Polski i Litwy (1506–1648), 2000, p316",
+    "license": "CC BY-SA 3.0",
+    "type": "modern tactical plan of Kłuszyn1610",
+    "changes": "Bez zmian.",
+    "limits": "Actual image checked: tactical plan, NOT state map despite generic alt.",
+    "original_file": "R6C1XC6Q5F7ZN.png",
+    "file": "assets/kluszyn-plan.png",
+    "sha256": "d1906458ffa2a0656d024e51b6fbece5406f0c10cd1b0d80e8a99c77ea31d5a6"
+  },
+  {
+    "id": "mapa",
+    "file": "assets/mapa-orientacja.png",
+    "subject": "Rzeczpospolita Obojga Narodów po unii lubelskiej z 1569 roku     Źródło:  Learnetic SA, licencja: CC BY 4.0.",
+    "creator": "ZPE / Learnetic SA",
+    "date": "1569 — zakres mapy",
+    "license": "CC BY 4.0",
+    "source_url": "https://static.zpe.gov.pl/portal/f/res-minimized/R10NoDGrwRfAd/1713170002/1iARuhHTlaAgUeQohYBRMUSPKIgcZNHr.png",
+    "inspected_url": "https://zpe.gov.pl/a/D12LkQne7",
+    "rights_note": "Ponowne wykorzystanie dokładnego lokalnego zasobu; bez zmiany treści.",
+    "sha256": "2e10711218b1d2414574d3828144f3aa30dc7e9ec77f68ba02dfdbdc10015743"
+  }
+]

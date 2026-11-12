@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 530" role="img" aria-labelledby="title desc">
+<title id="title">Batory: od walki o porty do odzyskania Inflant</title>
+<desc id="desc">Car chce portów nad Bałtykiem. Batory: wybór 1575, koronacja 1576. Połock zdobyty w 1579, Wielkie Łuki zdobyte w 1580, Psków oblegany w 1581–1582, ale niezdobyty. Jam Zapolski 1582: odzyskane Inflanty i Połock.</desc>
+<rect width="1200" height="530" fill="#fff"/>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M29 65q12-14 24 0t24 0t24 0 M29 83q12-14 24 0t24 0t24 0 M29 101q12-14 24 0t24 0t24 0" stroke="#0571B0" stroke-width="4"/>
+<path d="M130 58L472 54" stroke="#C4E1F1" stroke-width="21"/>
+<path d="M515 63Q571 35 613 66m-15-16 15 16-20 4" stroke="#1F2933" stroke-width="3"/>
+<path d="M650 54l-7-34 23 14 15-23 17 23 22-14-6 34z M650 65h64" stroke="#1F2933" stroke-width="3.5"/>
+<path d="M657 50h50" stroke="#F4A582" stroke-width="7"/>
+<path d="M28 140Q580 135 1170 140" stroke="#D4DADF" stroke-width="2"/>
+<path d="M141 340Q556 337 1090 340m-17-9 17 9-17 9 M205 307v33 M600 307v33 M995 307v33" stroke="#1F2933" stroke-width="3.5"/>
+<g stroke="#1F2933" stroke-width="3.5">
+<path d="M169 305v-77h18v14h18v-14h18v14h18v63z M163 306h84 M194 304v-25q11-15 22 0v25 M183 256v10 M227 256v10"/>
+<path d="M564 305v-77h18v14h18v-14h18v14h18v63z M558 306h84 M589 304v-25q11-15 22 0v25 M578 256v10 M622 256v10"/>
+<path d="M959 305v-77h18v14h18v-14h18v14h18v63z M953 306h84 M984 304v-25q11-15 22 0v25 M973 256v10 M1017 256v10"/>
+</g>
+<path d="M254 261l9 10 18-24 M649 261l9 10 18-24" stroke="#0571B0" stroke-width="4"/>
+<path d="M1047 246q23 16 0 39m10-47q29 24 1 54" stroke="#CA0020" stroke-width="3"/>
+<path d="M144 184l123-3 M539 184l123-3" stroke="#C4E1F1" stroke-width="22"/>
+<path d="M901 184l190-3" stroke="#FDDBC7" stroke-width="22"/>
+<path d="M31 443Q587 438 1165 444" stroke="#1F2933" stroke-width="2"/>
+<path d="M311 495Q535 488 746 494" stroke="#F4A582" stroke-width="17"/>
+<path d="M38 466v43m0-43h20m-20 43h20" stroke="#CA0020" stroke-width="3"/>
+</g>
+<g font-family="Arial, sans-serif" fill="#1F2933">
+<text x="131" y="64" font-size="33" font-weight="700">BAŁTYK / INFLANTY</text>
+<text x="131" y="108" font-size="29">car chce portów</text>
+<text x="745" y="62" font-size="33" font-weight="700">STEFAN BATORY</text>
+<text x="647" y="108" font-size="29">wybór 1575 → koronacja 1576</text>
+<g text-anchor="middle">
+<text x="205" y="193" font-size="37" font-weight="700">1579</text>
+<text x="600" y="193" font-size="37" font-weight="700">1580</text>
+<text x="995" y="193" font-size="37" font-weight="700">1581–82</text>
+<text x="205" y="382" font-size="33" font-weight="700">Połock</text>
+<text x="600" y="382" font-size="33" font-weight="700">Wielkie Łuki</text>
+<text x="995" y="382" font-size="33" font-weight="700">Psków</text>
+<text x="205" y="419" font-size="28">zdobyty</text>
+<text x="600" y="419" font-size="28">zdobyte</text>
+<text x="995" y="419" font-size="28" fill="#CA0020" font-weight="700">niezdobyty</text>
+</g>
+<text x="76" y="476" font-size="28" font-weight="700">1582</text>
+<text x="76" y="511" font-size="28">Jam Zapolski</text>
+<text x="318" y="500" font-size="32" font-weight="700">odzyskane Inflanty i Połock</text>
+<text x="281" y="500" font-size="32">→</text>
+</g>
+</svg>

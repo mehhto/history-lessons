@@ -1,0 +1,7 @@
+# Prywatne wycinki dostarczonego podręcznika — bez zgody na redystrybucję.
+/assets/*-podrecznik.jpg
+/qa-report.json
+/contact-sheet.jpg
+
+# Oryginalne karty dostarczone prywatnie, bez ustalonej licencji.
+/assets/karta-*-pusta.jpg

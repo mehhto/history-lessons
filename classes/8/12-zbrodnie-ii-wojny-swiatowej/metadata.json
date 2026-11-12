@@ -1,0 +1,56 @@
+{
+  "id": "12-zbrodnie-ii-wojny-swiatowej",
+  "title": "Zbrodnie II wojny światowej — ludzie, miejsca, wydarzenia",
+  "grade": 8,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa",
+  "duration_minutes": 40,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "presentation_mode": "slides",
+  "goalContract": {
+    "version": "1.0"
+  },
+  "status": "PO PRZEGLĄDZIE — POPRAWIONA WERSJA DO OCENY",
+  "curriculum_requirement": "XXXII.2: charakteryzuje politykę Niemiec na terenach okupowanej Europy; przedstawia zagładę Żydów oraz Romów i eksterminację innych narodów; charakteryzuje postawy Polaków wobec Holokaustu. XXXIII.2: wymienia przykłady zbrodni niemieckich i sowieckich – zarówno tych o wymiarze ogólnokrajowym (np. zbrodnia katyńska, Auschwitz-Birkenau), jak i regionalnym (np. Palmiry, kaźń profesorów lwowskich, Zamojszczyzna). XXXIII.3: wyjaśnia przyczyny i znaczenie konfliktu polsko-ukraińskiego, w tym ludobójstwa ludności polskiej na Wołyniu i w Małopolsce Wschodniej.",
+  "main_question": "Jak rozpoznawać sprawców i mechanizmy zbrodni, zachowując pamięć o konkretnych ludziach?",
+  "source_reviewed": true,
+  "teacher_reviewed": true,
+  "offline_checked": false,
+  "pdf_exported": false,
+  "appearance": {
+    "style": "editorial",
+    "palette": "civic-debate"
+  },
+  "curriculum_scope": "Spotkanie poszerzające wiedzę, wybrane przypadki; Wolbrom, Olkusz, Poręba Dzierżna, Trzyciąż i Zarzecze. Bez obowiązkowej pracy pisemnej.",
+  "goals": [
+    {
+      "id": "G1",
+      "text": "Wskazuję miejsce, czas, sprawców i skutki wybranych zbrodni."
+    },
+    {
+      "id": "G2",
+      "text": "Wyjaśniam różnicę między odpowiedzialnością sprawców a winą zbiorową."
+    },
+    {
+      "id": "G3",
+      "text": "Łączę miejscowości regionu z konkretnymi wydarzeniami okupacji."
+    }
+  ],
+  "presentationContract": {
+    "version": "1.0"
+  },
+  "core_minutes": 37.75,
+  "buffer_minutes": 2,
+  "teacher_feedback": "Przegląd nauczycielki odbył się. Przebudowa: bez pisania i końcowej mapy; bogatsze opisy i zdjęcia, teksty do każdego przypadku, krzesła Kraków, statystyki/kierunki Zamojszczyzna, dwie różne zbrodnie Olkusz, Zarzecze. Oczekuje oceny poprawionej wersji.",
+  "publication_authorization": {
+    "destination": "https://github.com/mehhto/history-lessons",
+    "visibility": "public",
+    "authorized_at": "2026-11-12",
+    "scope": "Wszystkie aktualne materiały, także te z nieustalonymi prawami; wyraźne potwierdzenie nauczycielki w rozmowie.",
+    "unresolved_rights_acknowledged": true,
+    "teacher_acceptance_implied": false
+  },
+  "publication_status": "public-repository",
+  "published": true
+}
