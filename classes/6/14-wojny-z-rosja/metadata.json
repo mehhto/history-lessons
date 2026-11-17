@@ -4,8 +4,8 @@
   "grade": 6,
   "school_year": "2026/2027",
   "curriculum_version": "stara-przejsciowa",
-  "duration_minutes": 38,
-  "core_minutes": 36,
+  "duration_minutes": 41,
+  "core_minutes": 39,
   "buffer_minutes": 2,
   "kind": "lesson",
   "lesson_type": "new-knowledge",
@@ -13,15 +13,15 @@
   "goalContract": {
     "version": "1.0"
   },
-  "status": "DO PRZEGLĄDU NAUCZYCIELA",
-  "publication_status": "public-repository",
+  "status": "PUBLICZNA WERSJA — DO PRZEGLĄDU NAUCZYCIELA",
+  "publication_status": "public",
   "curriculum_requirement": "XI. Rzeczpospolita Obojga Narodów i jej sąsiedzi w XVII w. Uczeń: 1) wyjaśnia główne przyczyny wojen Rzeczypospolitej z Rosją, Szwecją i Turcją; 4) dokonuje oceny następstw politycznych, społecznych i gospodarczych wojen w XVII w.;",
   "curriculum_scope": "Rosja; przyczyny i następstwa polityczno-terytorialne. Szwecja, Turcja i pełna ocena skutków społeczno-gospodarczych w kolejnych lekcjach. Batory jako kontekst XVI wieku.",
   "main_question": "Czy wygrana bitwa wystarczy, żeby rządzić sąsiednim państwem?",
   "source_reviewed": true,
   "teacher_reviewed": true,
   "teacher_accepted": false,
-  "offline_checked": false,
+  "offline_checked": true,
   "pdf_exported": false,
   "pptx_exported": false,
   "published": true,
@@ -33,9 +33,19 @@
   "publication_authorization": {
     "destination": "https://github.com/mehhto/history-lessons",
     "visibility": "public",
-    "authorized_at": "2026-11-12",
-    "scope": "Wszystkie aktualne materiały, także te z nieustalonymi prawami; wyraźne potwierdzenie nauczycielki w rozmowie.",
+    "authorized_at": "2026-11-17",
+    "scope": "Wyłącznie obecna lekcja klasy VI Wojny z Rosją — Od Bałtyku do Kremla, wraz z aktualnym HTML offline; wyraźne potwierdzenie publicznej publikacji po ostrzeżeniu o nieustalonych prawach części ilustracji. Nie obejmuje innych lekcji.",
     "unresolved_rights_acknowledged": true,
     "teacher_acceptance_implied": false
+  },
+  "current_revision": {
+    "date": "2026-11-17",
+    "visibility": "public",
+    "delivered": true,
+    "accepted": false,
+    "teacher_feedback_addressed": "Zachowano poprzednie poprawki; rozszerzono wstęp o Batorego, źródłową mapę Siedmiogrodu i portret Zamoyskiego z definicjami kanclerza oraz hetmana.",
+    "timing_status": "Szybki przegląd: 39 min rdzenia + 2 min buforu; bez próby z klasą.",
+    "historical_publication_authorization": "Zgoda z 12 XI była historyczna. Bieżąca rewizja otrzymała odrębną zgodę na publiczne przesłanie 17 XI; zgoda nie potwierdza otwartych licencji ani akceptacji dydaktycznej.",
+    "slide_count": 30
   }
 }

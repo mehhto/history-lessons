@@ -6,9 +6,9 @@
 - G3: wskazuję nabytki Dywilina i sens pokoju w Polanowie; buduję wyważony bilans.
 
 ## Trzy krótkie aktywności ustne — bez par i kart
-1. Slajd 7, Jam: dlaczego car mógł zgodzić się na rozejm mimo obrony Pskowa? **Klucz:** straty innych twierdz, koszty wojny i dalszy nacisk wojskowy. Przed odpowiedziami wynik rozejmu jest zamknięty w disclosure.
-2. Slajd 19: popraw wiadomość o szturmie, rządach Władysława i lennie. **Klucz:** układ z bojarami; brak koronacji i faktycznych rządów; ceremonia jeńców nie podporządkowała całej Rosji.
-3. Slajd 26: jeden osiągnięty i jeden nieosiągnięty cel, każdy z dowodem. **Model:** odzyskano Inflanty po Jamie Zapolskim 1582 / uzyskano Smoleńszczyznę w Dywilinie; nie utrzymano władzy w Moskwie — kapitulacja 1612 / brak rządów Władysława / rezygnacja z roszczeń 1634. To główne zadanie zastosowania, nie tylko pamięciowe odpytywanie.
+1. Slajd 8 (`jam`): dlaczego car mógł zgodzić się na rozejm mimo obrony Pskowa? **Klucz:** straty innych twierdz, koszty wojny i dalszy nacisk wojskowy. Przed odpowiedziami wynik rozejmu jest zamknięty w disclosure.
+2. Slajd 23 (`trzy-zdania`): popraw wiadomość o szturmie, rządach Władysława i lennie. **Klucz:** układ z bojarami; brak koronacji i faktycznych rządów; ceremonia jeńców nie podporządkowała całej Rosji.
+3. Slajd 29 (`bilans-zadanie`): jeden osiągnięty i jeden nieosiągnięty cel, każdy z dowodem. **Model:** odzyskano Inflanty po Jamie Zapolskim 1582 / uzyskano Smoleńszczyznę w Dywilinie; nie utrzymano władzy w Moskwie — kapitulacja 1612 / brak rządów Władysława / rezygnacja z roszczeń 1634. To główne zadanie zastosowania, nie tylko pamięciowe odpytywanie.
 
 ## Indywidualny bilet wyjścia — dwa zdania w zeszycie
 1. Dlaczego Rosji zależało na Inflantach?
@@ -24,7 +24,13 @@
 5. Co potwierdzono w Polanowie? — Główne nabytki ziem smoleńskiej, czernihowskiej i siewierskiej; Władysław IV zrzekł się roszczeń do tronu Rosji.
 
 ## Typowe błędy i korekta
-1575/1576 = wybór/koronacja; 20 łanów ≠ 20 chłopów; Zamoyski współdziałał z królem, nie dowodził sam wszystkim; Psków nie skapitulował; 1604 wyprawa ≠ 1605 tron; 1610 układ ≠ szturm; 1611 hołd jeńców ≠ lenno państwa; 1611 powstanie / 1612 kapitulacja / 1613 Romanow; 1618 podpisanie / 1619 obowiązywanie; około miliona ≠ ścisły pomiar ani całe dzisiejsze państwa wschodnie.
+1575/1576 = wybór/koronacja; 20 łanów ≠ 20 chłopów; Zamoyski: kanclerz od 1578, także hetman od 1581, obie funkcje równocześnie; kanclerz = kancelaria/pieczęć/polityka zagraniczna, hetman = organizacja/dowodzenie wojskami Korony pod zwierzchnictwem króla; mapa współczesnej Rumunii ≠ granica księstwa z XVI w.; Psków nie skapitulował; 1604 wyprawa ≠ 1605 tron; 1610 układ ≠ szturm; 1611 hołd jeńców ≠ lenno państwa; 1611 powstanie / 1612 kapitulacja; 1618 podpisanie / 1619 obowiązywanie; około miliona ≠ ścisły pomiar ani całe dzisiejsze państwa wschodnie.
 
 ## Dostosowanie
-Pomoc: początek zdania „Udało się…, ale nie udało się…, o czym świadczy…”, powrót do dwóch notatek. Rozszerzenie: wyjaśnij, dlaczego miejscowe poparcie i uznanie warunków były potrzebne nawet zwycięskiej armii. Sprawdzamy sens, nie umiejętności rysunkowe.
+Pomoc: początek zdania „Udało się…, ale nie udało się…, o czym świadczy…”, powrót do dwóch notatek. Rozszerzenie: wyjaśnij, dlaczego miejscowe poparcie i uznanie warunków były potrzebne nawet zwycięskiej armii. Sprawdzamy sens, nie estetykę zapisu.
+
+## Zabezpieczenia po rewizji
+- Drzewo wyjaśnia pokrewieństwo: Katarzyna córką Zygmunta I; Jan III szwedzkim Wazą, Anna ciotką Zygmunta III i żoną Batorego. Zygmunt III został wybrany, nie odziedziczył Polski.
+- Wielkie Łuki zdobyto, ale zwrócono; Pskowa nie zdobyto. Trybunał jest sądem odwoławczym, nie szkołą.
+- Prawdziwy Dymitr zmarł w 1591. Drugi pretendent 1607, Tuszyn 1608; magnackie wyprawy odróżniamy od wojny króla 1609.
+- Zadania są trzy ustne; bilet jest odrębnym samodzielnym zapisem przez 1,5 minuty. Notatki `notatka-1` i `notatka-2` mają po 3 minuty. Nie dodajemy czwartego sprawdzianu z nowych szczegółów genealogii ani reform.

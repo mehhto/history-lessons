@@ -27,5 +27,611 @@
     "Polanow": "1634 maingains, indemnity, renounced throneclaims"
   },
   "video_full_audio_reviewed": false,
-  "commercial_EXGEO_map_used": false
+  "commercial_EXGEO_map_used": false,
+  "teacher_revision_2026_11_16": {
+    "research_sources": [
+      {
+        "name": "wazowie",
+        "url": "https://zpe.gov.pl/a/polskie-dynastie-wazowie/DQTNWVadb",
+        "final_url": "https://zpe.gov.pl/a/polskie-dynastie-wazowie/DQTNWVadb",
+        "http_status": 200,
+        "accessed_at": "2026-11-16T19:57:29.715875+00:00",
+        "text_file": "wazowie.txt"
+      },
+      {
+        "name": "wojny",
+        "url": "https://zpe.gov.pl/a/rzeczpospolita-wojuje-xvi/xvii-w/D5K5GQMqQ",
+        "final_url": "https://zpe.gov.pl/a/rzeczpospolita-wojuje-xvi/xvii-w/D5K5GQMqQ",
+        "http_status": 200,
+        "accessed_at": "2026-11-16T19:57:29.870824+00:00",
+        "text_file": "wojny.txt"
+      },
+      {
+        "name": "despoci",
+        "url": "https://zpe.gov.pl/a/despoci---rosja-i-turcja/D1GMFQyaS",
+        "final_url": "https://zpe.gov.pl/a/despoci---rosja-i-turcja/D1GMFQyaS",
+        "http_status": 200,
+        "accessed_at": "2026-11-16T19:57:29.721986+00:00",
+        "text_file": "despoci.txt"
+      },
+      {
+        "name": "warszawa",
+        "url": "https://www.zamek-krolewski.pl/strona/historia/603-zamek-wazow-i-krolow-rodakow-1587-1696",
+        "final_url": "https://www.zamek-krolewski.pl/strona/historia/603-zamek-wazow-i-krolow-rodakow-1587-1696",
+        "http_status": 200,
+        "accessed_at": "2026-11-16T19:57:33.972840+00:00",
+        "text_file": "warszawa.txt"
+      },
+      {
+        "name": "wybraniecka",
+        "url": "https://pl.wikipedia.org/wiki/Piechota_wybraniecka",
+        "final_url": "https://pl.wikipedia.org/wiki/Piechota_wybraniecka",
+        "http_status": 200,
+        "accessed_at": "2026-11-16T19:57:29.889949+00:00",
+        "text_file": "wybraniecka.txt"
+      },
+      {
+        "name": "batory",
+        "url": "https://historia.interia.pl/historia-polski-do-1795/news-panowanie-stefana-batorego-1576-1586-kalendarium-wydarzen-od,nId,2340674",
+        "final_url": "https://historia.interia.pl/historia-polski-do-1795/news-panowanie-stefana-batorego-1576-1586-kalendarium-wydarzen-od,nId,2340674",
+        "http_status": 200,
+        "accessed_at": "2026-11-16T19:57:29.509806+00:00",
+        "text_file": "batory.txt"
+      },
+      {
+        "name": "moskwa",
+        "url": "https://zpe.gov.pl/watek/LPAMVE4GV7/23/a/polacy-w-moskwie-walka-o-wplywy-w-rosji/DCH7KAU9R",
+        "final_url": "https://zpe.gov.pl/watek/LPAMVE4GV7/23/a/polacy-w-moskwie-walka-o-wplywy-w-rosji/DCH7KAU9R",
+        "http_status": 200,
+        "accessed_at": "2026-11-16T19:58:13.715924+00:00",
+        "text_file": "moskwa.txt"
+      },
+      {
+        "name": "dymitr2",
+        "url": "https://pl.wikipedia.org/wiki/Dymitr_Samozwaniec_II",
+        "final_url": "https://pl.wikipedia.org/wiki/Dymitr_Samozwaniec_II",
+        "http_status": 200,
+        "accessed_at": "2026-11-16T19:58:14.467930+00:00",
+        "text_file": "dymitr2.txt"
+      },
+      {
+        "name": "dymitr1",
+        "url": "https://pl.wikipedia.org/wiki/Dymitr_Samozwaniec_I",
+        "final_url": "https://pl.wikipedia.org/wiki/Dymitr_Samozwaniec_I",
+        "http_status": 200,
+        "accessed_at": "2026-11-16T19:59:06.500878+00:00",
+        "text_file": "dymitr1.txt"
+      },
+      {
+        "name": "szujski",
+        "url": "https://pl.wikipedia.org/wiki/Wasyl_IV_Szujski",
+        "final_url": "https://pl.wikipedia.org/wiki/Wasyl_IV_Szujski",
+        "http_status": 200,
+        "accessed_at": "2026-11-16T19:59:04.616260+00:00",
+        "text_file": "szujski.txt"
+      },
+      {
+        "name": "gloger",
+        "url": "https://pl.wikisource.org/wiki/Encyklopedia_staropolska/Wybra%C5%84cy",
+        "final_url": "https://pl.wikisource.org/wiki/Encyklopedia_staropolska/Wybra%C5%84cy",
+        "http_status": 200,
+        "accessed_at": "2026-11-16T19:59:05.076470+00:00",
+        "text_file": "gloger.txt"
+      },
+      {
+        "name": "warszawa-spor",
+        "url": "https://wielkahistoria.pl/przyczyny-przeniesienia-stolicy-do-warszawy-co-naprawde-popchnelo-krola-polski-do-takiej-decyzji/",
+        "final_url": "https://wielkahistoria.pl/przyczyny-przeniesienia-stolicy-do-warszawy-co-naprawde-popchnelo-krola-polski-do-takiej-decyzji/",
+        "http_status": 200,
+        "accessed_at": "2026-11-16T19:59:58.611922+00:00",
+        "text_file": "warszawa-spor.txt"
+      },
+      {
+        "name": "wawel-wazowie-excerpt",
+        "text_file": "wawel-wazowie-excerpt.txt",
+        "url": "https://wawel.krakow.pl/media/filesetsfiletranslation/filePath/wawel-dynastie-wazowie.pdf",
+        "http_status": 200,
+        "accessed_at": "2026-11-16T19:58:39.478546+00:00"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "W1",
+        "claim": "Utworzona w 1578 roku piechota obejmowała chłopów dóbr królewskich; jeden wybraniec przypadał na 20 łanów ziemi.",
+        "url": "https://pl.wikipedia.org/wiki/Piechota_wybraniecka",
+        "accessed_at": "2026-11-16T19:57:29.889949+00:00",
+        "source_file": "wybraniecka.txt",
+        "quote": "Początkowo król planował objąć zaciągami wybranieckimi wszystkich chłopów, co pozwoliłoby na stworzenie stałej, kilkunastotysięcznej piechoty narodowego autoramentu, jednakże Sejm ograniczył ją do chłopów z królewszczyzn, po jednym z 20 łanów (... ze wsi królewskich ma być jeden człowiek na pieszego obrany..., któryby się do tego sam dobrowolnie (domyślnie zgłosił) ... między inszemi śmielszy i dostateczniejszy i do potrzeby wojennej pochopniejszy...[4]). Wybraniec otrzymywał własne gospodarstwo, był zwolniony od wszelkich powinności (rozkładanych na gospodarzy z pozostałych 19 łanów), natomiast zobowiązany był do stawienia się na wezwanie w błękitnym mundurze określonego kroju i z uzbrojeniem, na który składały się rusznica, topór o długim stylisku i szabla.",
+        "interpretation_note": null,
+        "citation_id": 5
+      },
+      {
+        "id": "W2",
+        "claim": "Uzbrojenie obejmowało rusznicę, szablę, siekierę oraz proch i ołów; strój określał dowódca.",
+        "url": "https://pl.wikipedia.org/wiki/Piechota_wybraniecka",
+        "accessed_at": "2026-11-16T19:57:29.889949+00:00",
+        "source_file": "wybraniecka.txt",
+        "quote": "W czasach pokojowych miały odbywać się raz na kwartał ćwiczenia wybrańców (stawić się u rotmistrza czy porucznika do monstrowania z rusznicą swą dobrze narządzoną, z szablą, siekierą, w sukni swej barwy takiej, jaką mu rotmistrz albo porucznik naznaczy, z prochem, ołowiem do kul...[4]).",
+        "interpretation_note": null,
+        "citation_id": 5
+      },
+      {
+        "id": "W3",
+        "claim": "Dawne opracowanie potwierdza rodzaje broni, ale upraszcza rekrutację do liczby gospodarzy.",
+        "url": "https://pl.wikisource.org/wiki/Encyklopedia_staropolska/Wybra%C5%84cy",
+        "accessed_at": "2026-11-16T19:59:05.076470+00:00",
+        "source_file": "gloger.txt",
+        "quote": "Wybrańcy. Król Stefan Batory, celem utworzenia stałej piechoty, postanowił w r. 1578 (Vol. leg. II, f. 979), aby z miast, miasteczek i wsi królewskich, każdych 19 gospodarzy wybierało i wysyłało na wojnę 20-go pachołka dobrego i sposobnego. Każdy wybraniec taki miał się porządnie z rusznicą, szablą i siekierą a dziesiątnicy z dardami i dobrze odziano wyprawować.",
+        "interpretation_note": "Nie przenosić na slajd skrótu Glogera o 19 gospodarzach; miarą podstawową było 20 łanów.",
+        "citation_id": 12
+      },
+      {
+        "id": "W4",
+        "claim": "Piechota była potrzebna do obrony i zdobywania zamków.",
+        "url": "https://pl.wikipedia.org/wiki/Piechota_wybraniecka",
+        "accessed_at": "2026-11-16T19:57:29.889949+00:00",
+        "source_file": "wybraniecka.txt",
+        "quote": "Utworzenie piechoty wybranieckiej uzasadniał Batory następująco „Acz ta teraźniejsza potrzeba spólnej obrony, której inflancka ziemia i Wielkie Księtwo Litewskie potrzebuje (...) w tej Koronie za łaską miłego Pana Boga nic na rycerstwie jezdnym nie schodzi, z którym snadnie potrzeby wojenne opatrować się mogą, ale na ludziach pieszych iż nie pomału zeszło, których do tychże spraw wojennych, niemniej jedno jako i jezdnych potrzeba, a bez których trudno zamki pograniczne opatrzone a pod nieprzyjacielem zdobywane i wzięte być mogą: przetoż napomina król jmć, żeby przy stanowieniu obyczaju spólnej obrony na potomne czasy mogło się pokazać, zkądby i jakim sposobem mieli być piesi do spraw rycerskich sposobniejsi”. Cytat z Instrukcji posłowi króla jmci na sejmiki powiatowe przed sejmem koronnym warszawskim na dzień 14 stycznia 1578 złożonym[5]",
+        "interpretation_note": null,
+        "citation_id": 5
+      },
+      {
+        "id": "B1",
+        "claim": "Celem wojny było odzyskanie Inflant; zdobycie twierdz zagrażało rosyjskiemu zapleczu.",
+        "url": "https://zpe.gov.pl/a/rzeczpospolita-wojuje-xvi/xvii-w/D5K5GQMqQ",
+        "accessed_at": "2026-11-16T19:57:29.870824+00:00",
+        "source_file": "wojny.txt",
+        "quote": "Iwan Groźny, po śmierci Zygmunta Augusta, wykorzystując zamieszanie po wymarciu dynastii, opanował niemal całe Inflanty po Dźwinę (por. lekcja 92). Wszyscy kolejni wybierani władcy obiecywali odzyskanie tych ziem. Udało się to Stefanowi Batoremu, który po pacyfikacji Gdańska (1577) zdobył od miasta pieniądze na pierwszą z trzech wypraw przeciwko Rosji (1578‑1582). Po zdobyciu Połocka (1579) i Wielkich Łuków (1580) zagrożeni odcięciem swoich wojsk od zaplecza Rosjanie sami ewakuowali załogi z zamków inflanckich.",
+        "interpretation_note": "Źródło podaje ramy 1578–1582, ale trzy wyprawy królewskie rozpoczęły się w 1579 roku.",
+        "citation_id": 2
+      },
+      {
+        "id": "B2",
+        "claim": "W 1579 roku oblegano i zdobyto Połock.",
+        "url": "https://historia.interia.pl/historia-polski-do-1795/news-panowanie-stefana-batorego-1576-1586-kalendarium-wydarzen-od,nId,2340674",
+        "accessed_at": "2026-11-16T19:57:29.509806+00:00",
+        "source_file": "batory.txt",
+        "quote": "Od czerwca do września 1579 roku trwa wyprawa Stefana Batorego na Połock. Po przygotowaniach dyplomatycznych, zapewniających neutralność w konflikcie ze strony Turcji i Szwecji, król wysłał z końcem czerwca poselstwo do cara z wypowiedzeniem wojny. Działania operacyjne, rozpoczęte z końcem lipca przez 56-tysięczną armię polsko-litewską, zmierzały do opanowania ważnej twierdzy Połocka. Jego oblężenie zakończyło się 30 sierpnia kapitulacją załogi. W ręce polskie dostały się także okoliczne zamki,",
+        "interpretation_note": null,
+        "citation_id": 6
+      },
+      {
+        "id": "B3",
+        "claim": "Druga wyprawa w 1580 roku doprowadziła do kapitulacji Wielkich Łuk.",
+        "url": "https://historia.interia.pl/historia-polski-do-1795/news-panowanie-stefana-batorego-1576-1586-kalendarium-wydarzen-od,nId,2340674",
+        "accessed_at": "2026-11-16T19:57:29.509806+00:00",
+        "source_file": "batory.txt",
+        "quote": "Od lipca do września 1580 roku trwa druga wyprawa Batorego przeciwko Moskwie. Armia polska zdobyła kilka twierdz, dochodząc 27 sierpnia do Wielkich Łuków, których obrońcy skapitulowali 5 września.",
+        "interpretation_note": null,
+        "citation_id": 6
+      },
+      {
+        "id": "B4",
+        "claim": "Podczas trzeciej wyprawy 1581–1582 nie zdobyto Pskowa.",
+        "url": "https://historia.interia.pl/historia-polski-do-1795/news-panowanie-stefana-batorego-1576-1586-kalendarium-wydarzen-od,nId,2340674",
+        "accessed_at": "2026-11-16T19:57:29.509806+00:00",
+        "source_file": "batory.txt",
+        "quote": "Od lipca 1581 do stycznia 1582 roku trwa trzecia wyprawa Batorego przeciwko Moskwie. Armia polska pod koniec sierpnia doszła pod Psków. Z powodu niesnasek w wojsku oblężniczym, doskonałych fortyfikacji i determinacji obrońców twierdzy, a także nadejścia mrozów, nie udało się jej zdobyć. Od murów Pskowa odstąpiono dopiero po zawarciu rozejmu polsko-moskiewskiego w Jamie Zapolskim.",
+        "interpretation_note": null,
+        "citation_id": 6
+      },
+      {
+        "id": "B5",
+        "claim": "Rozejm w Jamie Zapolskim z 1582 roku: Inflanty i ziemia połocka; zwrot Wielkich Łuk.",
+        "url": "https://historia.interia.pl/historia-polski-do-1795/news-panowanie-stefana-batorego-1576-1586-kalendarium-wydarzen-od,nId,2340674",
+        "accessed_at": "2026-11-16T19:57:29.509806+00:00",
+        "source_file": "batory.txt",
+        "quote": "15 stycznia 1582 roku 10-letni rozejm z Moskwą w Jamie Zapolskim, na mocy którego Rzeczpospolita odzyskała całe Inflanty i ziemię połocką, a Wieliż i Uświat otrzymała w zamian za Wielkie Łuki.",
+        "interpretation_note": "Nie powtarzać bez ograniczenia terytorialnego określenia całe Inflanty: część regionu była w rękach Szwecji; uczeń ma otrzymać Inflanty zajęte przez Moskwę.",
+        "citation_id": 6
+      },
+      {
+        "id": "B6",
+        "claim": "Trybunał Koronny powstał w 1578 roku jako najwyższy sąd apelacyjny dla Korony.",
+        "url": "https://historia.interia.pl/historia-polski-do-1795/news-panowanie-stefana-batorego-1576-1586-kalendarium-wydarzen-od,nId,2340674",
+        "accessed_at": "2026-11-16T19:57:29.509806+00:00",
+        "source_file": "batory.txt",
+        "quote": "3 marca ustanowienie Trybunału Koronnego, najwyższego sądu apelacyjnego dla Korony.",
+        "interpretation_note": null,
+        "citation_id": 6
+      },
+      {
+        "id": "B7",
+        "claim": "Uczelnia wileńska powstała w 1579 roku.",
+        "url": "https://historia.interia.pl/historia-polski-do-1795/news-panowanie-stefana-batorego-1576-1586-kalendarium-wydarzen-od,nId,2340674",
+        "accessed_at": "2026-11-16T19:57:29.509806+00:00",
+        "source_file": "batory.txt",
+        "quote": "1 maja Akt fundacyjny Akademii Wileńskiej. Pierwszym rektorem zostaje jezuita Piotr Skarga, późniejszy kaznodzieja królewski.",
+        "interpretation_note": "Weryfikowano wyłącznie rok; nie używać dziennej daty z tej popularnej chronologii.",
+        "citation_id": 6
+      },
+      {
+        "id": "B8",
+        "claim": "W 1581 roku utworzono Trybunał Litewski.",
+        "url": "https://historia.interia.pl/historia-polski-do-1795/news-panowanie-stefana-batorego-1576-1586-kalendarium-wydarzen-od,nId,2340674",
+        "accessed_at": "2026-11-16T19:57:29.509806+00:00",
+        "source_file": "batory.txt",
+        "quote": "Utworzenie Trybunału Litewskiego.",
+        "interpretation_note": null,
+        "citation_id": 6
+      },
+      {
+        "id": "G1",
+        "claim": "Jan III Waza i Katarzyna Jagiellonka byli rodzicami Zygmunta III.",
+        "url": "https://zpe.gov.pl/a/polskie-dynastie-wazowie/DQTNWVadb",
+        "accessed_at": "2026-11-16T19:57:29.715875+00:00",
+        "source_file": "wazowie.txt",
+        "quote": "Zygmunt III Waza urodził się w 1566 roku na zamku Gripsholm około 60 km na zachód od Sztokholmu. Jego rodzice, książę Finlandii Jan Waza i Katarzyna Jagiellonka, byli tam przetrzymywani od 1563 roku za sprzeciw wobec polityki prowadzonej przez obłąkanego króla Eryka XIV (przyrodniego brata Jana Wazy). Na prośbę stryja Karola, najmłodszego z braci Wazów, para została uwolniona w 1567 roku. Niespełna dwa lata później bunt przeciwko królowi Erykowi XIV wyniósł na tron ojca Zygmunta - Jana III Wazę.",
+        "interpretation_note": null,
+        "citation_id": 1
+      },
+      {
+        "id": "G2",
+        "claim": "Anna Jagiellonka wspierała kandydaturę syna swojej siostry Katarzyny; była wdową po Batorym.",
+        "url": "https://zpe.gov.pl/a/polskie-dynastie-wazowie/DQTNWVadb",
+        "accessed_at": "2026-11-16T19:57:29.715875+00:00",
+        "source_file": "wazowie.txt",
+        "quote": "Ich prawa do polskiej korony wywodzono z linii Jagiellonów, gdyż o przeniesienie sukcesji na potomków swojej siostry Katarzyny Jagiellonki, żony króla Szwecji\nJana III Wazy, wnioskowała królowa Anna Jagiellonka, żona zmarłego w 1586 roku króla Stefana Batorego.",
+        "interpretation_note": null,
+        "citation_id": 1
+      },
+      {
+        "id": "G3",
+        "claim": "Zygmunt III został wybrany w elekcji w 1587 roku.",
+        "url": "https://zpe.gov.pl/a/polskie-dynastie-wazowie/DQTNWVadb",
+        "accessed_at": "2026-11-16T19:57:29.715875+00:00",
+        "source_file": "wazowie.txt",
+        "quote": "Dzięki staraniom kanclerza i hetmana wielkiego koronnego Jana Zamoyskiego oraz swojej ciotki Anny Jagiellonki, która wyłożyła pieniądze na elekcjęelekcjaelekcję, został wybrany na tron Rzeczypospolitej w 1587 roku.",
+        "interpretation_note": null,
+        "citation_id": 1
+      },
+      {
+        "id": "F1",
+        "claim": "Oficjalny materiał Wawelu opisuje pożar w styczniu 1595 roku i zapalenie sadzy w kominku.",
+        "url": "https://wawel.krakow.pl/media/filesetsfiletranslation/filePath/wawel-dynastie-wazowie.pdf",
+        "accessed_at": "2026-11-16T19:58:39.478546+00:00",
+        "source_file": "wawel-wazowie-excerpt.txt",
+        "quote": "GROŹNY POŻAR • STYCZEŃ 1595\nPożar, którego zarzewiem było zapalenie się sadzy w komin- ku komnaty Pod Ptakami zniszczył północne skrzydło zam- ku i narożnik przy Kurzej Nodze. Żywioł udało się opanować dzięki pomocy Bernardynów, którzy w skórzanych wiadrach nosili wodę.",
+        "interpretation_note": "Wypis z odczytu strony 3 pełnego PDF zachowuje dzielenie wyrazów ekstraktora. Materiał edukacyjny współczesny, mimo stylizacji nagłówka na rok 1597. Nie dowodzi związku przyczynowego pożaru z wyborem Warszawy.",
+        "citation_id": 9
+      },
+      {
+        "id": "F2",
+        "claim": "Warszawa znajdowała się centralnie między Krakowem a Wilnem i wcześniej była miejscem sejmów i elekcji.",
+        "url": "https://www.zamek-krolewski.pl/strona/historia/603-zamek-wazow-i-krolow-rodakow-1587-1696",
+        "accessed_at": "2026-11-16T19:57:33.972840+00:00",
+        "source_file": "warszawa.txt",
+        "quote": "Elementem tych przeobrażeń było długotrwałe zjawisko formowania się nowego centrum stołecznego, dostosowanego do kształtu ustrojowego i terytorialnego państwa po zawarciu unii lubelskiej w 1569 roku. Do rangi tej, kosztem starych ośrodków - Krakowa i Wilna - awansowała centralnie położona między nimi Warszawa. Uzyskawszy w latach 1568-1573 status rezydencji króla Zygmunta Augusta, stolicy sejmowej i elekcyjnej, w latach przełomu XVI i XVII wieku awansowała także do funkcji stałej siedziby monarszej.",
+        "interpretation_note": null,
+        "citation_id": 4
+      },
+      {
+        "id": "F3",
+        "claim": "Oficjalna historia Zamku wskazuje podróże sejmowe, śmierć Anny i sprawy szwedzkie; zamieszkanie jesienią 1611 roku.",
+        "url": "https://www.zamek-krolewski.pl/strona/historia/603-zamek-wazow-i-krolow-rodakow-1587-1696",
+        "accessed_at": "2026-11-16T19:57:33.972840+00:00",
+        "source_file": "warszawa.txt",
+        "quote": "Uciążliwości ciągłych sejmowych podróży Kraków-Warszawa, śmierć Anny Jagiellonki w 1596 roku i problemy z utrzymaniem władzy w Szwecji, były przesłankami decyzji o przeniesieniu się dworu do Warszawy na stałe, a za tym i rozbudowie Zamku. Zasadnicze prace ruszyły w 1600 roku. Król w swej nieukończonej jeszcze, północnej rezydencji zamieszkał na jesieni w 1611 roku.",
+        "interpretation_note": "W tym odczytanym akapicie nie ma pożaru Wawelu. Nie przypisywać tej stronie twierdzenia, którego nie zawiera.",
+        "citation_id": 4
+      },
+      {
+        "id": "F4",
+        "claim": "Warszawa stała się faktycznym centrum, a Kraków zachował koronacje.",
+        "url": "https://www.zamek-krolewski.pl/strona/historia/603-zamek-wazow-i-krolow-rodakow-1587-1696",
+        "accessed_at": "2026-11-16T19:57:33.972840+00:00",
+        "source_file": "warszawa.txt",
+        "quote": "Od tego czasu Warszawa – centrum parlamentarne oraz siedziba króla i centralnych urzędów – stała się de facto stolicą Rzeczypospolitej, przy zachowaniu tytułu (Sedes Regni Poloniae) i części stołecznych funkcji przez Kraków (miejsce koronacji, sejmów koronacyjnych i nekropolia królewska). Państwowe funkcje Warszawy skupiły się w gruntownie przekształconym Zamku.",
+        "interpretation_note": null,
+        "citation_id": 4
+      },
+      {
+        "id": "F5",
+        "claim": "Popularne nowe opracowanie kwestionuje związek przyczynowy pożaru z przeniesieniem stolicy w 1596 roku.",
+        "url": "https://wielkahistoria.pl/przyczyny-przeniesienia-stolicy-do-warszawy-co-naprawde-popchnelo-krola-polski-do-takiej-decyzji/",
+        "accessed_at": "2026-11-16T19:59:58.611922+00:00",
+        "source_file": "warszawa-spor.txt",
+        "quote": "Badania nad miejscami pobytu i polityką Zygmunta III Wazy prowadzone w ostatnich latach podważyły tak prosty obraz wypadków. Trudno nadal twierdzić, że pożar stanowił przyczynę zmiany rezydencji. Nie był on nawet pretekstem do przeniesienia stolicy, bo w roku 1596 wcale nie zapadła taka decyzja.",
+        "interpretation_note": "To opracowanie wtórne, nie oficjalne stanowisko Zamku. Wskazuje rzeczywistą rozbieżność interpretacyjną; najbezpieczniej oddzielić fakt pożaru od przyczyn procesu.",
+        "citation_id": 13
+      },
+      {
+        "id": "D1",
+        "claim": "Smuta łączyła kryzys dynastyczny po 1598 roku z głodem, epidemiami i niepokojami.",
+        "url": "https://zpe.gov.pl/watek/LPAMVE4GV7/23/a/polacy-w-moskwie-walka-o-wplywy-w-rosji/DCH7KAU9R",
+        "accessed_at": "2026-11-16T19:58:13.715924+00:00",
+        "source_file": "moskwa.txt",
+        "quote": "Po śmierci Iwana IV Groźnego władzę objął jego syn Fiodor I, lecz faktycznie rządził regent Borys Godunow. Po śmierci Fiodora w 1598 r. wygasła dynastia Rurykowiczów, a tron objął Godunow.\nPaństwo było osłabione kryzysem gospodarczym, głodem i epidemiami, co wywoływało niepokoje społeczne.",
+        "interpretation_note": null,
+        "citation_id": 7
+      },
+      {
+        "id": "D2",
+        "claim": "Prawdziwy carewicz Dymitr zmarł w Ugliczu w 1591 roku.",
+        "url": "https://pl.wikipedia.org/wiki/Wasyl_IV_Szujski",
+        "accessed_at": "2026-11-16T19:59:04.616260+00:00",
+        "source_file": "szujski.txt",
+        "quote": "Natychmiast po objęciu władzy powołał komisję Fiodora Nikitycza Romanowa, mającą na celu potwierdzenie śmierci carewicza Dymitra w Ugliczu w 1591 roku.",
+        "interpretation_note": "Nie wprowadzać na slajd spornej przyczyny jego śmierci.",
+        "citation_id": 11
+      },
+      {
+        "id": "D3",
+        "claim": "Część magnatów wspierała Samozwańca, licząc na ziemie i wpływy; nie był to jednolity plan całego państwa.",
+        "url": "https://pl.wikipedia.org/wiki/Dymitr_Samozwaniec_I",
+        "accessed_at": "2026-11-16T19:59:06.500878+00:00",
+        "source_file": "dymitr1.txt",
+        "quote": "W 1604 Samozwaniec przybył do Krakowa. Został przyjęty przez Zygmunta III Wazę. Przedstawił mu plan wyprawy na Moskwę w celu zdobycia tronu carskiego. Król nie zajął jednoznacznego stanowiska, natomiast wiele wpływowych osobistości z Janem Zamoyskim na czele uznało przedsięwzięcie za szkodliwe dla interesów Rzeczypospolitej. Magnackie rody Mniszchów i Wiśniowieckich spoglądały z zainteresowaniem na ten plan – wierzyły w nabycie nowych ziem dla swoich domen i rozszerzenie wpływów. Tak samo jak rosyjskie rody bojarów: Szujskich, Bielskich, Romanowów, Mścisławskich – liczyli na przywileje podobne do tych, jakie mieli polscy magnaci. Mniszchowie pragnęli wykorzystać zamęt w Rosji wywołany sporem cara Godunowa z wielkimi rosyjskimi rodami.",
+        "interpretation_note": null,
+        "citation_id": 10
+      },
+      {
+        "id": "D4",
+        "claim": "Wyprawa zaczęła się w 1604 roku; w 1605 roku po śmierci Godunowa Samozwaniec dotarł do Moskwy i został carem.",
+        "url": "https://pl.wikipedia.org/wiki/Dymitr_Samozwaniec_I",
+        "accessed_at": "2026-11-16T19:59:06.500878+00:00",
+        "source_file": "dymitr1.txt",
+        "quote": "Wyruszył na wschód 15 sierpnia 1604 roku. Po przekroczeniu granic Moskowii (31 października) napotkał on opór wojsk carskich. Rozpoczęło się trwające od 16 listopada 1604 do 12 stycznia 1605 roku nieudane oblężenie Nowogrodu Siewierskiego, bronionego przez wojewodę Piotra Fiodorowicza Basmanowa. 31 grudnia 1604 roku pod Nowogrodem Siewierskim doszło do zwycięskiej bitwy wojsk Dymitra z armią carską dowodzoną przez kniazia Mścisławskiego. Po przegranej bitwie pod Dobryniczami koło Siewska 31 stycznia 1605 zmuszony był wycofać swoje siły na południe. Sytuację Dymitra poprawiły powstanie ludowe na Siewierszczyźnie oraz zajęcie przez kozaków dońskich twierdzy w Kromach[3]. Po nagłej śmierci Borysa Godunowa Dymitr 20 czerwca 1605 roku zajął Moskwę. Uznany przez carycę Marfę (żonę Iwana Groźnego i matkę zabitego carewicza) za syna – Dymitra Iwanowicza. Koronowany 30 lipca.",
+        "interpretation_note": "Na slajdzie zachować tylko lata; szczegółowe daty w tym artykule wymagają kontroli kalendarza.",
+        "citation_id": 10
+      },
+      {
+        "id": "D5",
+        "claim": "Dymitr I zginął w 1606 roku; carem został Szujski, a później pojawił się drugi Samozwaniec.",
+        "url": "https://zpe.gov.pl/watek/LPAMVE4GV7/23/a/polacy-w-moskwie-walka-o-wplywy-w-rosji/DCH7KAU9R",
+        "accessed_at": "2026-11-16T19:58:13.715924+00:00",
+        "source_file": "moskwa.txt",
+        "quote": "Dymitr Samozwaniec pojawił się w Rzeczypospolitej i z pomocą polskich magnatów wkroczył do Moskwy. Po śmierci Borysa Godunowa w 1605 r. objął władzę, lecz już w 1606 r. został zamordowany. Carem został Wasyl IV Szujski. W kraju wybuchły bunty (m.in. pod wodzą Iwana Bołotnikowa) oraz pojawił się drugi Samozwaniec.",
+        "interpretation_note": null,
+        "citation_id": 7
+      },
+      {
+        "id": "D6",
+        "claim": "Spisek Szujskiego wykorzystywał niechęć do otoczenia Dymitra i obawy religijne.",
+        "url": "https://pl.wikipedia.org/wiki/Wasyl_IV_Szujski",
+        "accessed_at": "2026-11-16T19:59:04.616260+00:00",
+        "source_file": "szujski.txt",
+        "quote": "Po kilku miesiącach został ułaskawiony przez Dymitra Samozwańca I i wrócił do Moskwy. Początkowo stwarzał pozory lojalności wobec cara, jednak od 1606 roku rozpoczął przygotowywania do kolejnego spisku antycarskiego. Wykorzystując antypolskie nastroje w Moskwie, budował wokół siebie opozycję. Wykorzystał zwłaszcza wrogość, jaką darzyli Dymitra mnisi prawosławni z Monasteru Czudowskiego, którzy uważali carskie reformy w państwie za początek katolicyzacji Rosji.",
+        "interpretation_note": null,
+        "citation_id": 11
+      },
+      {
+        "id": "D7",
+        "claim": "Dymitr II pojawił się w 1607 roku; nie jest to dopiero rok 1608.",
+        "url": "https://pl.wikipedia.org/wiki/Dymitr_Samozwaniec_II",
+        "accessed_at": "2026-11-16T19:58:14.467930+00:00",
+        "source_file": "dymitr2.txt",
+        "quote": "Dymitr Samozwaniec II pojawił się po raz pierwszy na niwie publicznej około 20 lipca 1607 r. w Starodubie. Po ogłoszeniu, że jest carewiczem Dymitrem przyłączyły się do niego tysiące zwolenników.",
+        "interpretation_note": null,
+        "citation_id": 8
+      },
+      {
+        "id": "D8",
+        "claim": "Obóz Dymitra II w Tuszynie pod Moskwą istniał w 1608 roku.",
+        "url": "https://pl.wikipedia.org/wiki/Wasyl_IV_Szujski",
+        "accessed_at": "2026-11-16T19:59:04.616260+00:00",
+        "source_file": "szujski.txt",
+        "quote": "Najbardziej niebezpieczny dla władzy Wasyla IV okazał się być wykreowany przez Mikołaja Mieleckiego w 1607 roku w Starodubie Dymitr Samozwaniec II. Zgromadził on wokół siebie grupę bojarstwa niechętnego władzy Szujskich na Kremlu oraz resztki oddziałów polskiej i litewskiej szlachty ocalałej z pogromu otoczenia Dymitra I. Opanował większą część Rosji, pokonał lub zgładził innych pretendentów do tronu. W 1608 roku Dymitr II poślubił potajemnie carycę Marynę Mniszchównę, założył obóz warowny w Tuszynie, rozpoczął blokadę Moskwy i prowadził regularną wojnę z oddziałami carskimi w latach 1608–1610[10].",
+        "interpretation_note": null,
+        "citation_id": 11
+      },
+      {
+        "id": "D9",
+        "claim": "Jerzy Mniszech był ojcem Maryny, wdowy po Dymitrze I, która poparła także Dymitra II.",
+        "url": "https://pl.wikipedia.org/wiki/Dymitr_Samozwaniec_II",
+        "accessed_at": "2026-11-16T19:58:14.467930+00:00",
+        "source_file": "dymitr2.txt",
+        "quote": "Wkrótce Jerzy Mniszech, ojciec Maryny Mniszech, wdowy po zamordowanym carze Dymitrze I Samozwańcu, doprowadził do ich spotkania, w wyniku którego Maryna rozpoznała w nim swojego zmarłego męża. To przyniosło mu poparcie kresowych magnatów, takich jak książę Adam Wiśniowiecki, Roman Różyński i Jan Sapieha, którzy postanowili poprzeć także tego kolejnego pretendenta do tronu, dostarczając mu funduszy i 7500 żołnierzy,",
+        "interpretation_note": "Liczby wojsk nie są potrzebne uczniom ani dalej audytowane.",
+        "citation_id": 8
+      },
+      {
+        "id": "D10",
+        "claim": "Sojusz ze Szwecją miał dać Szujskiemu pomoc wojskową przeciw przeciwnikom; stał się pretekstem wojny królewskiej.",
+        "url": "https://pl.wikipedia.org/wiki/Wasyl_IV_Szujski",
+        "accessed_at": "2026-11-16T19:59:04.616260+00:00",
+        "source_file": "szujski.txt",
+        "quote": "Gdy okazało się, że rozejm z Rzecząpospolitą jest w praktyce fikcją i coraz większa liczba oddziałów polskich i litewskich przebywa pod Moskwą, Wasyl IV zdecydował się na rozmowy z Królestwem Szwecji. Za cenę ustępstw terytorialnych wobec Karola IX Wazy podpisał 10 marca 1609 roku w Wyborgu traktat pokojowy, który gwarantował wsparcie armii szwedzkiej dla cara oraz zobowiązywał obie strony do prowadzenia wspólnej polityki przeciwko Rzeczypospolitej Obojga Narodów[12].\nNa odsiecz Moskwie ruszyła kilkunastotysięczna armia szwedzka, która połączyła się z wojskami księcia Michała Skopin Szujskiego. Przymierze szwedzko-rosyjskie stało się pretekstem do interwencji zbrojnej Zygmunta III Wazy w Rosji i rozpoczęcia wojny polsko-rosyjskiej.",
+        "interpretation_note": "Nie przedstawiać jako sojuszu zawartego w celu pokonania Zygmunta już oblegającego Smoleńsk: nastąpił wcześniej. Pomijać dzień podpisania z powodu kalendarzy.",
+        "citation_id": 11
+      },
+      {
+        "id": "D11",
+        "claim": "Oficjalna interwencja królewska rozpoczęła się w 1609 roku.",
+        "url": "https://zpe.gov.pl/watek/LPAMVE4GV7/23/a/polacy-w-moskwie-walka-o-wplywy-w-rosji/DCH7KAU9R",
+        "accessed_at": "2026-11-16T19:58:13.715924+00:00",
+        "source_file": "moskwa.txt",
+        "quote": "W 1609 r. Zygmunt III Waza rozpoczął interwencję w Rosji.",
+        "interpretation_note": null,
+        "citation_id": 7
+      },
+      {
+        "id": "D12",
+        "claim": "Bojarzy stanowili najwyższą warstwę społeczną dawnej Moskwy.",
+        "url": "https://zpe.gov.pl/watek/LPAMVE4GV7/23/a/polacy-w-moskwie-walka-o-wplywy-w-rosji/DCH7KAU9R",
+        "accessed_at": "2026-11-16T19:58:13.715924+00:00",
+        "source_file": "moskwa.txt",
+        "quote": "(ros. bojarin; by może od istniejącego na Rusi określenia bojarin - wielmoża) najwyższa warstwa społeczna w dawnej Moskwie",
+        "interpretation_note": null,
+        "citation_id": 7
+      },
+      {
+        "id": "X1",
+        "claim": "Nie powielać błędu ZPE nazywającego Godunowa teściem Fiodora.",
+        "url": "https://zpe.gov.pl/a/despoci---rosja-i-turcja/D1GMFQyaS",
+        "accessed_at": "2026-11-16T19:57:29.721986+00:00",
+        "source_file": "despoci.txt",
+        "quote": "Następcą tronu został Fiodor, który nie posiadał jednak predyspozycji do sprawowania władzy, dlatego bezpośrednie rządy powierzył teściowi - Borysowi Godunowowi, który zresztą po jego śmierci zasiadł na tronie carskim.",
+        "interpretation_note": "Cytat dokumentuje błąd źródła, a nie zaakceptowaną informację. Relację rodzinną pominąć w uczniowskiej syntezie.",
+        "citation_id": 3
+      }
+    ],
+    "media_private_directory": "/opt/data/history-production/2026-11-16/grade6/war-russia-teacher-revision/media-research",
+    "soldier_private_directory": "/opt/data/history-production/2026-11-16/grade6/war-russia-teacher-revision/soldier-recovery",
+    "publication": "private-only; no new authorization",
+    "genealogy_sha256": "01a023dddf68dacd691e4e865f930df3598dd89dbddf74e66516315af5e1a8b1",
+    "teacher_engraving": {
+      "id": "krakow-warszawa-ryciny-nauczyciela",
+      "file": "assets/krakow-warszawa-ryciny-nauczyciela.jpg",
+      "subject": "Dostarczone zestawienie dawnych widoków do przenosin dworu z Krakowa do Warszawy; prawy widok z napisem VARSOVIA",
+      "creator": "Autorzy rycin i autor zestawienia nieustaleni",
+      "date": "Daty wykonania rycin i zestawienia nieustalone; nie podpisywać 1596 jako daty obrazu",
+      "source_url": null,
+      "source": "Załącznik nauczyciela /opt/data/cache/images/img_b10a1206851f.jpg, Telegram, 16 XI 2026",
+      "license": "Nieustalona; dostarczenie załącznika nie oznacza otwartej licencji",
+      "rights_note": "Bieżący prywatny materiał do przeglądu. Nie wnioskować o prawach z dawnego wyglądu rycin. Żadnej publicznej publikacji nie zlecono w tej rewizji.",
+      "sha256": "81666c2490d586748d79214c99850084434141dcc38013957afd22430d12973d",
+      "dimensions": [
+        800,
+        480
+      ],
+      "changes": "Kopia bez zmian; bez generowania, retuszu lub kadrowania. Zastępuje współczesną fotografię Wawelu zgodnie z wyborem nauczyciela.",
+      "visual_verified": true,
+      "scope_limit": "Zestawienie nie przedstawia pożaru1595 ani aktu przenosin dworu. Napis VARSOVIA odczytany; brak niezależnego potwierdzenia autorów i dat lewego oraz prawego widoku.",
+      "used_in_current_slides": true
+    },
+    "post_polanow_map": {
+      "author": "Englishsquare.pl sp. z o.o.",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_page": "https://zpe.gov.pl/a/mapa-interaktywna/D5HvOAwP",
+      "resource_base": "https://static.zpe.gov.pl/portal/f/res/REGdj14LOXC1V/1662483432/2cRVI69FcfM0M6VLzSvkXS0kbmyVbOlk/",
+      "exact_layer_urls": {
+        "background": "https://static.zpe.gov.pl/portal/f/res/REGdj14LOXC1V/1662483432/2cRVI69FcfM0M6VLzSvkXS0kbmyVbOlk/resources/2hknqksmbo1cpohoxyk0bdulaqyhzfls.png",
+        "border_1637": "https://static.zpe.gov.pl/portal/f/res/REGdj14LOXC1V/1662483432/2cRVI69FcfM0M6VLzSvkXS0kbmyVbOlk/resources/evdwvw4gxcc4cdr8mhlflsjcqzcjo84h.png",
+        "text": "https://static.zpe.gov.pl/portal/f/res/REGdj14LOXC1V/1662483432/2cRVI69FcfM0M6VLzSvkXS0kbmyVbOlk/resources/1hmavn7wv2qf4yx7yeq68xx9nareyagr.png"
+      },
+      "depicted_border_year": 1637,
+      "town_focus_examples": [
+        {
+          "name": "Gdańsk",
+          "role": "Baltic/northwest orientation; not mathematical westernmost point",
+          "approx_pixel_xy": [
+            310,
+            706
+          ]
+        },
+        {
+          "name": "Dyneburg",
+          "role": "Polish-held Livonia, north",
+          "approx_pixel_xy": [
+            983,
+            461
+          ]
+        },
+        {
+          "name": "Smoleńsk",
+          "role": "eastern Lithuania/frontier region",
+          "approx_pixel_xy": [
+            1345,
+            534
+          ]
+        },
+        {
+          "name": "Kudak",
+          "role": "southeast on the Dnieper",
+          "approx_pixel_xy": [
+            1805,
+            1317
+          ]
+        }
+      ],
+      "fiefs": {
+        "Prusy Książęce": "Separate pink/cream hatching: lenna polskie; Królewiec labelled. Not ordinary Crown territory.",
+        "Kurlandia": "Separate brown/cream hatching: lenna polsko-litewskie; Mitawa labelled. Not ordinary Lithuanian voivodeship."
+      },
+      "livonia": "Swedish-held northern/western Livonia visibly yellow-hatched, labelled acquisition 1622 rather than 1629; Polish-held southeast with Dyneburg outside that hatching. Do not turn original 1622 caption into 1629.",
+      "black_sea": "No Polish strip of open Black Sea coastline shown. Jedysan and Crimean Khanate intervene. Red border approaches the Dnieper estuary; this scale does not resolve exact liman shoreline ownership.",
+      "id": "rzeczpospolita-po-polanowie-1637",
+      "file": "assets/rzeczpospolita-po-polanowie-1637.png",
+      "title": "Rzeczpospolita po pokoju w Polanowie — źródłowa granica1637",
+      "date": "Granice1637; terytorialne pola rozróżniają1582 i nabytki1618; nie mapa wykonana w1634",
+      "sha256": "b8cb398b250e1fc1560be8b934cd92edf64f4fa2b61f89d84ce144d9cae90e54",
+      "dimensions": [
+        2048,
+        1701
+      ],
+      "changes": "Połączono wyłącznie oryginalne warstwy tło+granice1637+tekst. Wyłączono warstwy bitew i wszystkich3wypraw. Z warstwy tekstu pominięto tylko prostokąt nieczynnej legendy wypraw [1574,34,441,221] (x,y,w,h), zachowując ramkę i wszystkie napisy geograficzne oraz pełną legendę terytorialną. Nie rysowano granic, przebiegów rzek ani historycznej geografii i nie zmieniono oryginalnych dat.",
+      "provenance_kind": "Source-layer derivative, not AI or invented map",
+      "visual_verified": true,
+      "scope_limit": "Stan kilka lat po Polanowie, a nie dokładna migawka roku1634. Zachowany oryginalny tytuł Rzeczpospolita w1połXVIIw. Granica1637 w legendzie. Źródłowe barwy nabytków1618 nie oznaczają nowych zdobyczy1634.",
+      "reproduce": "node compose-territorial.cjs",
+      "rights_note": "Opracowanie na podstawie konkretnej figury ZPE Englishsquare.pl; odziedziczona CC BY-SA3.0, informacje o zmianach zachowane w źródłach nauczyciela.",
+      "used_in_current_slides": true
+    }
+  },
+  "textbook_images_current_availability": {
+    "checked_date": "2026-11-16",
+    "current_files_present": false,
+    "claim_scope": "Lista textbook_images_inspected dokumentuje wcześniejszy pakiet, nie nowy odczyt w tej sesji. Brak pełnego podręcznika.",
+    "missing_files": [
+      "/opt/data/cache/images/img_4721a89ab8a3.jpg",
+      "/opt/data/cache/images/img_17ed4979f641.jpg",
+      "/opt/data/cache/images/img_baf2cc50d22e.jpg"
+    ]
+  },
+  "opening_revision_2026_11_17": {
+    "accessed_at": "2026-11-17T08:03:56.215848+00:00",
+    "claims": [
+      {
+        "claim": "Batory książę od 1571; król 1576–1586.",
+        "url": "https://pl.wikipedia.org/wiki/Stefan_Batory",
+        "quote": "książę siedmiogrodzki od 1571, król Polski i wielki książę litewski 1576–1586",
+        "source_file": "/opt/data/cache/scratch/batory-opening/batory.txt"
+      },
+      {
+        "claim": "Kanclerz 1578 i hetman 1581.",
+        "url": "https://pl.wikipedia.org/wiki/Jan_Zamoyski",
+        "quote": "kanclerz wielki koronny od 1578 i hetman wielki koronny Rzeczypospolitej Obojga Narodów od roku 1581",
+        "source_file": "/opt/data/cache/scratch/batory-opening/zamoyski.txt"
+      },
+      {
+        "claim": "Kancelaria oraz polityka zagraniczna.",
+        "url": "https://pl.wikipedia.org/wiki/Kanclerz_wielki_koronny",
+        "quote": "urzędnik kierujący kancelarią królewską Korony Królestwa Polskiego i odpowiadający za politykę zagraniczną",
+        "source_file": "/opt/data/cache/scratch/batory-opening/kanclerz.txt"
+      },
+      {
+        "claim": "Pieczęć uwierzytelniała dokumenty.",
+        "url": "https://pl.wikipedia.org/wiki/Kanclerz_wielki_koronny",
+        "quote": "pieczętarzem, od pieczęci, którymi uwierzytelniał dokumenty",
+        "source_file": "/opt/data/cache/scratch/batory-opening/kanclerz.txt"
+      },
+      {
+        "claim": "Hetman dowodził pod zwierzchnictwem monarchy.",
+        "url": "https://pl.wikipedia.org/wiki/Hetman",
+        "quote": "W wielu przypadkach monarcha przejmował na siebie obowiązki dowódcze, a hetman pozostawał wówczas jego pierwszym podkomendnym.",
+        "source_file": "/opt/data/cache/scratch/batory-opening/hetman.txt"
+      },
+      {
+        "claim": "Historyczny region w środkowej Rumunii.",
+        "url": "https://pl.wikipedia.org/wiki/Siedmiogr%C3%B3d",
+        "quote": "kraina historyczna położona na Wyżynie Siedmiogrodzkiej w centralnej Rumunii",
+        "source_file": "/opt/data/cache/scratch/batory-opening/siedmiogrod.txt"
+      }
+    ],
+    "map": {
+      "id": "siedmiogrod-rumunia",
+      "file": "assets/siedmiogrod-rumunia.png",
+      "subject": "Historyczny Siedmiogród oraz Banat, Kriszana i Marmarosz na tle współczesnej Rumunii",
+      "creator": "Andrein (w historii pliku także ArdadN)",
+      "date": "Współczesna mapa lokalizacyjna; wersja SVG 4 IV 2012, nie granica z XVI w.",
+      "inspected_url": "https://commons.wikimedia.org/wiki/File:Transylvania,_Banat,_Crisana_and_Maramures.svg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Transylvania%2C_Banat%2C_Crisana_and_Maramures.svg",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Transylvania%2C_Banat%2C_Crisana_and_Maramures.svg/1280px-Transylvania%2C_Banat%2C_Crisana_and_Maramures.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "dimensions": [
+        1280,
+        902
+      ],
+      "sha256": "16433f69ad3be1a31b1bb255c807bcc652a85a97b569e3a08f6e4dae29824a54",
+      "changes": "Kopia renderu PNG Commons bez zmian obrazu, granic, kolorów i kadru; legenda opisowa poza mapą w HTML.",
+      "scope_limit": "Współczesny lokalizator regionu; nie mapa państwa Batorego ani przebiegu jego podróży. Sąsiednie regiony zaznaczone osobnym odcieniem.",
+      "used_in_current_slides": true,
+      "visual_verified": true
+    },
+    "portrait_reused": "assets/zamoyski.webp",
+    "published": false
+  }
 }

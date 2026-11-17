@@ -17,3 +17,7 @@ Czy 3 minuty wystarczyły na każdą notatkę? Czy uczeń potrafił odróżnić 
 
 ## Decyzja do następnej wersji
 Brak automatycznej rewizji. Najpierw rzeczywiste uwagi nauczyciela. Ewentualne surowe obserwacje zapisywać append-only do feedback.jsonl; tutaj dopiero decyzja skonsolidowana. Nie wymyślać pomiaru oszczędności czasu ani opinii klasy.
+
+
+## Rewizja 16 XI 2026 — po odrzuceniu grafiki i kolejności
+Poprzednie wyniki QA są historyczne i nie dowodzą jakości tej wersji. Nauczyciel odrzucił patyczaka, notatki z basztami oraz jakość całości. Zastąpiono wszystkie SVG na slajdach źródłowymi mediami lub prostą wyjaśniającą typografią. Zmieniono kolejność, dodano przebieg wypraw, skutki i bilans Batorego przed genealogią; wyjaśnienia dymitriad są teraz na ekranie. Osobny temat o Romanowach usunięto, mapę zasięgu przeniesiono po Polanowie, syntezę z omówieniem zadania. Chronione działania zachowano. Plan 38 minut jest szybkim przeglądem, nie próbą potwierdzoną w klasie. Bieżąca rewizja prywatna, przed odbiorem; bez publikacji i nowych PDF/PPTX. Aktualny raport QA powstaje z istniejącego runnera; brak nowego frameworka.

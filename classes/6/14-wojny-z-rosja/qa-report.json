@@ -1,17 +1,79 @@
 {
   "summaryPaper": {
-    "width": 702.984375,
-    "height": 832,
+    "width": 900,
+    "height": 1490,
     "limit": 1031.8110236220473
+  },
+  "offline": {
+    "file": "/opt/data/history-lessons/classes/6/14-wojny-z-rosja/wojny-z-rosja-batory-zamoyski-2026-11-17-portable.html",
+    "slides": 30,
+    "images": 17,
+    "http_requests": [],
+    "notes": [
+      {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "slide": {
+          "x": 14,
+          "y": 14,
+          "right": 946,
+          "bottom": 538.25
+        },
+        "notes": {
+          "x": 960,
+          "y": 0,
+          "right": 1279.984375,
+          "bottom": 720
+        }
+      },
+      {
+        "viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "slide": {
+          "x": 14,
+          "y": 14,
+          "right": 783.4222412109375,
+          "bottom": 446.79998779296875
+        },
+        "notes": {
+          "x": 0,
+          "y": 537.59375,
+          "right": 1024,
+          "bottom": 767.984375
+        }
+      },
+      {
+        "viewport": {
+          "width": 1920,
+          "height": 1080
+        },
+        "slide": {
+          "x": 14,
+          "y": 14,
+          "right": 1426,
+          "bottom": 808.25
+        },
+        "notes": {
+          "x": 1440,
+          "y": 0,
+          "right": 1919.984375,
+          "bottom": 1080
+        }
+      }
+    ]
   },
   "adapted_from": "classes/6/13-pierwsza-wolna-elekcja/qa.mjs",
   "geometry_helper": "scripts/render-probe.mjs",
   "mode": "final",
-  "live_url": "https://ai-agent.tail53435f.ts.net/classes/6/14-wojny-z-rosja/",
-  "slides": 28,
-  "core_minutes": 36,
+  "live_url": "http://127.0.0.1:40559/classes/6/14-wojny-z-rosja/",
+  "slides": 30,
+  "core_minutes": 39,
   "buffer_minutes": 2,
-  "total_minutes": 38,
+  "total_minutes": 41,
   "readback": [
     "index.html",
     "slides.md",
@@ -31,34 +93,23 @@
     "student-summary.html",
     "assets/batory-pskow.webp",
     "assets/stefan.jpg",
-    "assets/mapa-baltyk.jpg",
-    "assets/wybraniecka.svg",
+    "assets/siedmiogrod-rumunia.png",
     "assets/zamoyski.webp",
+    "assets/mapa-baltyk.jpg",
+    "assets/wybraniec-wroblewski.png",
+    "assets/wybraniec-dragon-wroblewski.jpg",
     "assets/mapa-wyprawy.jpg",
-    "assets/obleganie.svg",
-    "assets/notatka-batory.svg",
-    "assets/zygmunt-iii.jpg",
-    "assets/warszawa.svg",
-    "assets/ivan.jpg",
+    "assets/drzewo-jagiellonowie-wazowie.jpg",
+    "assets/krakow-warszawa-ryciny-nauczyciela.jpg",
     "assets/dymitr.webp",
-    "assets/dymitr-upadek.svg",
-    "assets/mapa-orientacja.png",
+    "assets/mapa-wojna-1609-1618.png",
     "assets/kluszyn.webp",
     "assets/zolkiewski.webp",
-    "assets/moskwa-uklad.svg",
     "assets/wladyslaw-iv.jpg",
     "assets/szujscy.jpg",
-    "assets/korona-warunek.svg",
-    "assets/oblezenie-moskwa.svg",
-    "assets/dynastia.svg",
     "assets/mapa-dywilino.png",
     "assets/deulino-full.png",
-    "assets/mapa-zasieg.png",
-    "assets/polanowo.svg",
-    "assets/notatka-waza.svg",
-    "assets/bilans.svg",
-    "assets/synteza.svg",
-    "assets/dwa-slady.svg"
+    "assets/rzeczpospolita-po-polanowie-1637.png"
   ],
   "viewports": [
     {
@@ -85,15 +136,19 @@
     },
     {
       "viewport": 1280,
+      "id": "siedmiogrod"
+    },
+    {
+      "viewport": 1280,
+      "id": "zamoyski"
+    },
+    {
+      "viewport": 1280,
       "id": "baltyk"
     },
     {
       "viewport": 1280,
       "id": "piechota"
-    },
-    {
-      "viewport": 1280,
-      "id": "zamoyski"
     },
     {
       "viewport": 1280,
@@ -105,11 +160,19 @@
     },
     {
       "viewport": 1280,
+      "id": "bilans-batorego"
+    },
+    {
+      "viewport": 1280,
       "id": "notatka-1"
     },
     {
       "viewport": 1280,
       "id": "waza"
+    },
+    {
+      "viewport": 1280,
+      "id": "drzewo"
     },
     {
       "viewport": 1280,
@@ -126,6 +189,10 @@
     {
       "viewport": 1280,
       "id": "upadek-dymitra"
+    },
+    {
+      "viewport": 1280,
+      "id": "przyczyny-1609"
     },
     {
       "viewport": 1280,
@@ -157,19 +224,15 @@
     },
     {
       "viewport": 1280,
-      "id": "romanow"
-    },
-    {
-      "viewport": 1280,
       "id": "dywilino"
     },
     {
       "viewport": 1280,
-      "id": "najwieksza"
+      "id": "polanowo"
     },
     {
       "viewport": 1280,
-      "id": "polanowo"
+      "id": "najwieksza"
     },
     {
       "viewport": 1280,
@@ -178,10 +241,6 @@
     {
       "viewport": 1280,
       "id": "bilans-zadanie"
-    },
-    {
-      "viewport": 1280,
-      "id": "synteza"
     },
     {
       "viewport": 1280,
@@ -197,15 +256,19 @@
     },
     {
       "viewport": 1024,
+      "id": "siedmiogrod"
+    },
+    {
+      "viewport": 1024,
+      "id": "zamoyski"
+    },
+    {
+      "viewport": 1024,
       "id": "baltyk"
     },
     {
       "viewport": 1024,
       "id": "piechota"
-    },
-    {
-      "viewport": 1024,
-      "id": "zamoyski"
     },
     {
       "viewport": 1024,
@@ -217,11 +280,19 @@
     },
     {
       "viewport": 1024,
+      "id": "bilans-batorego"
+    },
+    {
+      "viewport": 1024,
       "id": "notatka-1"
     },
     {
       "viewport": 1024,
       "id": "waza"
+    },
+    {
+      "viewport": 1024,
+      "id": "drzewo"
     },
     {
       "viewport": 1024,
@@ -238,6 +309,10 @@
     {
       "viewport": 1024,
       "id": "upadek-dymitra"
+    },
+    {
+      "viewport": 1024,
+      "id": "przyczyny-1609"
     },
     {
       "viewport": 1024,
@@ -269,19 +344,15 @@
     },
     {
       "viewport": 1024,
-      "id": "romanow"
-    },
-    {
-      "viewport": 1024,
       "id": "dywilino"
     },
     {
       "viewport": 1024,
-      "id": "najwieksza"
+      "id": "polanowo"
     },
     {
       "viewport": 1024,
-      "id": "polanowo"
+      "id": "najwieksza"
     },
     {
       "viewport": 1024,
@@ -290,10 +361,6 @@
     {
       "viewport": 1024,
       "id": "bilans-zadanie"
-    },
-    {
-      "viewport": 1024,
-      "id": "synteza"
     },
     {
       "viewport": 1024,
@@ -309,15 +376,19 @@
     },
     {
       "viewport": 1920,
+      "id": "siedmiogrod"
+    },
+    {
+      "viewport": 1920,
+      "id": "zamoyski"
+    },
+    {
+      "viewport": 1920,
       "id": "baltyk"
     },
     {
       "viewport": 1920,
       "id": "piechota"
-    },
-    {
-      "viewport": 1920,
-      "id": "zamoyski"
     },
     {
       "viewport": 1920,
@@ -329,11 +400,19 @@
     },
     {
       "viewport": 1920,
+      "id": "bilans-batorego"
+    },
+    {
+      "viewport": 1920,
       "id": "notatka-1"
     },
     {
       "viewport": 1920,
       "id": "waza"
+    },
+    {
+      "viewport": 1920,
+      "id": "drzewo"
     },
     {
       "viewport": 1920,
@@ -350,6 +429,10 @@
     {
       "viewport": 1920,
       "id": "upadek-dymitra"
+    },
+    {
+      "viewport": 1920,
+      "id": "przyczyny-1609"
     },
     {
       "viewport": 1920,
@@ -381,19 +464,15 @@
     },
     {
       "viewport": 1920,
-      "id": "romanow"
-    },
-    {
-      "viewport": 1920,
       "id": "dywilino"
     },
     {
       "viewport": 1920,
-      "id": "najwieksza"
+      "id": "polanowo"
     },
     {
       "viewport": 1920,
-      "id": "polanowo"
+      "id": "najwieksza"
     },
     {
       "viewport": 1920,
@@ -402,18 +481,14 @@
     {
       "viewport": 1920,
       "id": "bilans-zadanie"
-    },
-    {
-      "viewport": 1920,
-      "id": "synteza"
     },
     {
       "viewport": 1920,
       "id": "wyjscie"
     }
   ],
-  "illustrated_slides": 28,
-  "notes_slides": 28,
+  "illustrated_slides": 16,
+  "notes_slides": 30,
   "oral_activities": 3,
   "graphic_notes": 2,
   "lightboxes": [
@@ -429,6 +504,16 @@
     },
     {
       "viewport": 1280,
+      "id": "siedmiogrod",
+      "image": 0
+    },
+    {
+      "viewport": 1280,
+      "id": "zamoyski",
+      "image": 0
+    },
+    {
+      "viewport": 1280,
       "id": "baltyk",
       "image": 0
     },
@@ -439,27 +524,12 @@
     },
     {
       "viewport": 1280,
-      "id": "zamoyski",
-      "image": 0
-    },
-    {
-      "viewport": 1280,
       "id": "wyprawy",
       "image": 0
     },
     {
       "viewport": 1280,
-      "id": "jam",
-      "image": 0
-    },
-    {
-      "viewport": 1280,
-      "id": "notatka-1",
-      "image": 0
-    },
-    {
-      "viewport": 1280,
-      "id": "waza",
+      "id": "drzewo",
       "image": 0
     },
     {
@@ -469,17 +539,7 @@
     },
     {
       "viewport": 1280,
-      "id": "smuta",
-      "image": 0
-    },
-    {
-      "viewport": 1280,
       "id": "dymitr",
-      "image": 0
-    },
-    {
-      "viewport": 1280,
-      "id": "upadek-dymitra",
       "image": 0
     },
     {
@@ -499,11 +559,6 @@
     },
     {
       "viewport": 1280,
-      "id": "moskwa",
-      "image": 0
-    },
-    {
-      "viewport": 1280,
       "id": "wladyslaw",
       "image": 0
     },
@@ -514,52 +569,12 @@
     },
     {
       "viewport": 1280,
-      "id": "trzy-zdania",
-      "image": 0
-    },
-    {
-      "viewport": 1280,
-      "id": "kapitulacja",
-      "image": 0
-    },
-    {
-      "viewport": 1280,
-      "id": "romanow",
-      "image": 0
-    },
-    {
-      "viewport": 1280,
       "id": "dywilino",
       "image": 0
     },
     {
       "viewport": 1280,
       "id": "najwieksza",
-      "image": 0
-    },
-    {
-      "viewport": 1280,
-      "id": "polanowo",
-      "image": 0
-    },
-    {
-      "viewport": 1280,
-      "id": "notatka-2",
-      "image": 0
-    },
-    {
-      "viewport": 1280,
-      "id": "bilans-zadanie",
-      "image": 0
-    },
-    {
-      "viewport": 1280,
-      "id": "synteza",
-      "image": 0
-    },
-    {
-      "viewport": 1280,
-      "id": "wyjscie",
       "image": 0
     },
     {
@@ -574,6 +589,16 @@
     },
     {
       "viewport": 1024,
+      "id": "siedmiogrod",
+      "image": 0
+    },
+    {
+      "viewport": 1024,
+      "id": "zamoyski",
+      "image": 0
+    },
+    {
+      "viewport": 1024,
       "id": "baltyk",
       "image": 0
     },
@@ -584,27 +609,12 @@
     },
     {
       "viewport": 1024,
-      "id": "zamoyski",
-      "image": 0
-    },
-    {
-      "viewport": 1024,
       "id": "wyprawy",
       "image": 0
     },
     {
       "viewport": 1024,
-      "id": "jam",
-      "image": 0
-    },
-    {
-      "viewport": 1024,
-      "id": "notatka-1",
-      "image": 0
-    },
-    {
-      "viewport": 1024,
-      "id": "waza",
+      "id": "drzewo",
       "image": 0
     },
     {
@@ -614,17 +624,7 @@
     },
     {
       "viewport": 1024,
-      "id": "smuta",
-      "image": 0
-    },
-    {
-      "viewport": 1024,
       "id": "dymitr",
-      "image": 0
-    },
-    {
-      "viewport": 1024,
-      "id": "upadek-dymitra",
       "image": 0
     },
     {
@@ -644,11 +644,6 @@
     },
     {
       "viewport": 1024,
-      "id": "moskwa",
-      "image": 0
-    },
-    {
-      "viewport": 1024,
       "id": "wladyslaw",
       "image": 0
     },
@@ -659,52 +654,12 @@
     },
     {
       "viewport": 1024,
-      "id": "trzy-zdania",
-      "image": 0
-    },
-    {
-      "viewport": 1024,
-      "id": "kapitulacja",
-      "image": 0
-    },
-    {
-      "viewport": 1024,
-      "id": "romanow",
-      "image": 0
-    },
-    {
-      "viewport": 1024,
       "id": "dywilino",
       "image": 0
     },
     {
       "viewport": 1024,
       "id": "najwieksza",
-      "image": 0
-    },
-    {
-      "viewport": 1024,
-      "id": "polanowo",
-      "image": 0
-    },
-    {
-      "viewport": 1024,
-      "id": "notatka-2",
-      "image": 0
-    },
-    {
-      "viewport": 1024,
-      "id": "bilans-zadanie",
-      "image": 0
-    },
-    {
-      "viewport": 1024,
-      "id": "synteza",
-      "image": 0
-    },
-    {
-      "viewport": 1024,
-      "id": "wyjscie",
       "image": 0
     },
     {
@@ -719,6 +674,16 @@
     },
     {
       "viewport": 1920,
+      "id": "siedmiogrod",
+      "image": 0
+    },
+    {
+      "viewport": 1920,
+      "id": "zamoyski",
+      "image": 0
+    },
+    {
+      "viewport": 1920,
       "id": "baltyk",
       "image": 0
     },
@@ -729,27 +694,12 @@
     },
     {
       "viewport": 1920,
-      "id": "zamoyski",
-      "image": 0
-    },
-    {
-      "viewport": 1920,
       "id": "wyprawy",
       "image": 0
     },
     {
       "viewport": 1920,
-      "id": "jam",
-      "image": 0
-    },
-    {
-      "viewport": 1920,
-      "id": "notatka-1",
-      "image": 0
-    },
-    {
-      "viewport": 1920,
-      "id": "waza",
+      "id": "drzewo",
       "image": 0
     },
     {
@@ -759,17 +709,7 @@
     },
     {
       "viewport": 1920,
-      "id": "smuta",
-      "image": 0
-    },
-    {
-      "viewport": 1920,
       "id": "dymitr",
-      "image": 0
-    },
-    {
-      "viewport": 1920,
-      "id": "upadek-dymitra",
       "image": 0
     },
     {
@@ -789,11 +729,6 @@
     },
     {
       "viewport": 1920,
-      "id": "moskwa",
-      "image": 0
-    },
-    {
-      "viewport": 1920,
       "id": "wladyslaw",
       "image": 0
     },
@@ -804,52 +739,12 @@
     },
     {
       "viewport": 1920,
-      "id": "trzy-zdania",
-      "image": 0
-    },
-    {
-      "viewport": 1920,
-      "id": "kapitulacja",
-      "image": 0
-    },
-    {
-      "viewport": 1920,
-      "id": "romanow",
-      "image": 0
-    },
-    {
-      "viewport": 1920,
       "id": "dywilino",
       "image": 0
     },
     {
       "viewport": 1920,
       "id": "najwieksza",
-      "image": 0
-    },
-    {
-      "viewport": 1920,
-      "id": "polanowo",
-      "image": 0
-    },
-    {
-      "viewport": 1920,
-      "id": "notatka-2",
-      "image": 0
-    },
-    {
-      "viewport": 1920,
-      "id": "bilans-zadanie",
-      "image": 0
-    },
-    {
-      "viewport": 1920,
-      "id": "synteza",
-      "image": 0
-    },
-    {
-      "viewport": 1920,
-      "id": "wyjscie",
       "image": 0
     }
   ],
@@ -888,7 +783,7 @@
         "right": 1279.984375,
         "bottom": 720
       },
-      "text": "1:00. Nawiąż do wolnej elekcji: po ucieczce Henryka Walezego doszło do podwójnego wyboru; szlachta popierająca Annę Jagiellonkę wskazała Batorego na jej męża. Dla ucznia kluczowe rozróżnienie: elekcja 1575, koronacja 1576, nie jedna data. Siedmiogród leży przede wszystkim na obszarze dzisiejszej Rumunii, był związany z kulturą i dziejami Węgier; nie sprowadzaj pochodzenia do dzisiejszej granicy. Batory był doświadczonym wodzem. Portret jest XIX-wieczną kopią według obrazu z 1583 r.; nie podpisujemy go jako oryginału Kobera."
+      "text": "1:00. Nawiąż do wolnej elekcji: po ucieczce Henryka Walezego doszło do podwójnego wyboru; szlachta popierająca Annę Jagiellonkę wskazała Batorego na jej męża. Dla ucznia kluczowe rozróżnienie: elekcja 1575, ślub i koronacja 1576, nie jedna data. Batory od 1571 r. był władcą Siedmiogrodu, kraju związanego z węgierską tradycją polityczną. Nie przedstawiaj go jako króla współczesnej Rumunii; taka Rumunia wówczas nie istniała. Był doświadczonym wodzem, co łączy jego wcześniejsze życie z wyprawami o Inflanty. Portret jest XIX-wieczną kopią według obrazu z 1583 r.; nie podpisujemy go jako oryginału Kobera. Na następnym ekranie zlokalizuj Siedmiogród, potem wyjaśnij obie funkcje Zamoyskiego."
     },
     {
       "viewport": 1024,
@@ -904,7 +799,7 @@
         "right": 1024,
         "bottom": 767.984375
       },
-      "text": "1:00. Nawiąż do wolnej elekcji: po ucieczce Henryka Walezego doszło do podwójnego wyboru; szlachta popierająca Annę Jagiellonkę wskazała Batorego na jej męża. Dla ucznia kluczowe rozróżnienie: elekcja 1575, koronacja 1576, nie jedna data. Siedmiogród leży przede wszystkim na obszarze dzisiejszej Rumunii, był związany z kulturą i dziejami Węgier; nie sprowadzaj pochodzenia do dzisiejszej granicy. Batory był doświadczonym wodzem. Portret jest XIX-wieczną kopią według obrazu z 1583 r.; nie podpisujemy go jako oryginału Kobera."
+      "text": "1:00. Nawiąż do wolnej elekcji: po ucieczce Henryka Walezego doszło do podwójnego wyboru; szlachta popierająca Annę Jagiellonkę wskazała Batorego na jej męża. Dla ucznia kluczowe rozróżnienie: elekcja 1575, ślub i koronacja 1576, nie jedna data. Batory od 1571 r. był władcą Siedmiogrodu, kraju związanego z węgierską tradycją polityczną. Nie przedstawiaj go jako króla współczesnej Rumunii; taka Rumunia wówczas nie istniała. Był doświadczonym wodzem, co łączy jego wcześniejsze życie z wyprawami o Inflanty. Portret jest XIX-wieczną kopią według obrazu z 1583 r.; nie podpisujemy go jako oryginału Kobera. Na następnym ekranie zlokalizuj Siedmiogród, potem wyjaśnij obie funkcje Zamoyskiego."
     },
     {
       "viewport": 1920,
@@ -920,7 +815,7 @@
         "right": 1919.984375,
         "bottom": 1080
       },
-      "text": "1:00. Nawiąż do wolnej elekcji: po ucieczce Henryka Walezego doszło do podwójnego wyboru; szlachta popierająca Annę Jagiellonkę wskazała Batorego na jej męża. Dla ucznia kluczowe rozróżnienie: elekcja 1575, koronacja 1576, nie jedna data. Siedmiogród leży przede wszystkim na obszarze dzisiejszej Rumunii, był związany z kulturą i dziejami Węgier; nie sprowadzaj pochodzenia do dzisiejszej granicy. Batory był doświadczonym wodzem. Portret jest XIX-wieczną kopią według obrazu z 1583 r.; nie podpisujemy go jako oryginału Kobera."
+      "text": "1:00. Nawiąż do wolnej elekcji: po ucieczce Henryka Walezego doszło do podwójnego wyboru; szlachta popierająca Annę Jagiellonkę wskazała Batorego na jej męża. Dla ucznia kluczowe rozróżnienie: elekcja 1575, ślub i koronacja 1576, nie jedna data. Batory od 1571 r. był władcą Siedmiogrodu, kraju związanego z węgierską tradycją polityczną. Nie przedstawiaj go jako króla współczesnej Rumunii; taka Rumunia wówczas nie istniała. Był doświadczonym wodzem, co łączy jego wcześniejsze życie z wyprawami o Inflanty. Portret jest XIX-wieczną kopią według obrazu z 1583 r.; nie podpisujemy go jako oryginału Kobera. Na następnym ekranie zlokalizuj Siedmiogród, potem wyjaśnij obie funkcje Zamoyskiego."
     }
   ],
   "keyboard": "arrows/S/B/F/Enter/Escape and focus restoration passed",
@@ -928,5 +823,5 @@
   "errors": [],
   "issues": [],
   "overflows": [],
-  "review_directory": "/opt/data/history-lessons/.hermes/reviews/6/14-wojny-z-rosja"
+  "review_directory": "/opt/data/history-lessons/.hermes/reviews/6/14-wojny-z-rosja/revision-2026-11-17-batory"
 }

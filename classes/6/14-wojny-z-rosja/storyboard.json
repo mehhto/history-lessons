@@ -1,8 +1,8 @@
 {
   "title": "Wojny z Rosją — Od Bałtyku do Kremla",
-  "core_minutes": 36,
+  "core_minutes": 39.0,
   "buffer_minutes": 2,
-  "total_minutes": 38,
+  "total_minutes": 41,
   "slides": [
     {
       "number": 1,
@@ -21,39 +21,47 @@
       "layout": "split"
     },
     {
-      "number": 3,
-      "id": "baltyk",
-      "title": "Dlaczego car chciał Inflant?",
-      "minutes": 1.5,
+      "id": "siedmiogrod",
+      "title": "Skąd przybył Batory?",
+      "minutes": 1.0,
       "purpose": "evidence",
-      "layout": "map-focus"
+      "layout": "map-focus",
+      "number": 3
     },
     {
-      "number": 4,
-      "id": "piechota",
-      "title": "1578 · Piechota wybraniecka",
-      "minutes": 1.0,
+      "id": "zamoyski",
+      "title": "Jan Zamoyski — dwie ważne funkcje",
+      "minutes": 1.5,
       "purpose": "explanation",
-      "layout": "plain"
+      "layout": "source-split",
+      "number": 4
     },
     {
       "number": 5,
-      "id": "zamoyski",
-      "title": "Król i jego ważny współpracownik",
-      "minutes": 0.75,
-      "purpose": "explanation",
-      "layout": "split"
-    },
-    {
-      "number": 6,
-      "id": "wyprawy",
-      "title": "Trzy wyprawy Batorego",
-      "minutes": 1.5,
+      "id": "baltyk",
+      "title": "Dlaczego car chciał Inflant?",
+      "minutes": 1.0,
       "purpose": "evidence",
       "layout": "map-focus"
     },
     {
+      "number": 6,
+      "id": "piechota",
+      "title": "1578 · Piechota wybraniecka",
+      "minutes": 1.5,
+      "purpose": "explanation",
+      "layout": "source-split"
+    },
+    {
       "number": 7,
+      "id": "wyprawy",
+      "title": "Trzy wyprawy Batorego",
+      "minutes": 2.0,
+      "purpose": "evidence",
+      "layout": "map-focus"
+    },
+    {
+      "number": 8,
       "id": "jam",
       "title": "Rozejm mimo niezdobytego Pskowa?",
       "minutes": 1.5,
@@ -61,63 +69,87 @@
       "layout": "task-board"
     },
     {
-      "number": 8,
+      "number": 9,
+      "id": "bilans-batorego",
+      "title": "Skuteczny wódz, nie tylko wojna",
+      "minutes": 1.0,
+      "purpose": "synthesis",
+      "layout": "plain"
+    },
+    {
+      "number": 10,
       "id": "notatka-1",
-      "title": "Do zeszytu: droga do odzyskania Inflant",
+      "title": "Do zeszytu: Batory i Inflanty",
       "minutes": 3.0,
       "purpose": "synthesis",
       "layout": "plain"
     },
     {
-      "number": 9,
-      "id": "waza",
-      "title": "1587 · Zygmunt III Waza",
-      "minutes": 1.0,
-      "purpose": "explanation",
-      "layout": "split"
-    },
-    {
-      "number": 10,
-      "id": "warszawa",
-      "title": "Warszawa: bliżej spraw całego państwa",
-      "minutes": 1.0,
-      "purpose": "explanation",
-      "layout": "plain"
-    },
-    {
       "number": 11,
-      "id": "smuta",
-      "title": "Rosja bez pewnego następcy tronu",
+      "id": "waza",
+      "title": "Jak Wazowie łączyli się z Jagiellonami?",
       "minutes": 1.0,
       "purpose": "explanation",
       "layout": "plain"
     },
     {
       "number": 12,
+      "id": "drzewo",
+      "title": "Jagiellonowie i Wazowie — całe drzewo",
+      "minutes": 0.5,
+      "purpose": "evidence",
+      "layout": "evidence"
+    },
+    {
+      "number": 13,
+      "id": "warszawa",
+      "title": "Dlaczego dwór przenosił się do Warszawy?",
+      "minutes": 1.5,
+      "purpose": "explanation",
+      "layout": "source-split"
+    },
+    {
+      "number": 14,
+      "id": "smuta",
+      "title": "Wielka smuta — kryzys państwa moskiewskiego",
+      "minutes": 1.0,
+      "purpose": "explanation",
+      "layout": "plain"
+    },
+    {
+      "number": 15,
       "id": "dymitr",
-      "title": "Dymitr Samozwaniec: wyprawa i tron",
+      "title": "Pierwszy Dymitr Samozwaniec",
+      "minutes": 2.0,
+      "purpose": "explanation",
+      "layout": "source-split"
+    },
+    {
+      "number": 16,
+      "id": "upadek-dymitra",
+      "title": "Przewrót nie zakończył walk o tron",
       "minutes": 1.5,
       "purpose": "explanation",
       "layout": "timeline-band"
     },
     {
-      "number": 13,
-      "id": "upadek-dymitra",
-      "title": "Dlaczego Dymitr stracił władzę?",
-      "minutes": 0.75,
+      "number": 17,
+      "id": "przyczyny-1609",
+      "title": "Dlaczego Zygmunt III rozpoczął wojnę?",
+      "minutes": 1.0,
       "purpose": "explanation",
       "layout": "plain"
     },
     {
-      "number": 14,
+      "number": 18,
       "id": "wojna-1609",
-      "title": "1609 · Wojna królewska",
+      "title": "Wyprawy na Moskwę — mapa",
       "minutes": 1.0,
       "purpose": "evidence",
       "layout": "map-focus"
     },
     {
-      "number": 15,
+      "number": 19,
       "id": "kluszyn",
       "title": "4 lipca 1610 · Kłuszyn",
       "minutes": 1.5,
@@ -125,31 +157,31 @@
       "layout": "source-split"
     },
     {
-      "number": 16,
+      "number": 20,
       "id": "moskwa",
-      "title": "1610 · Droga do Moskwy",
+      "title": "1610 · Z bitwy do układu w Moskwie",
       "minutes": 1.0,
       "purpose": "explanation",
-      "layout": "plain"
+      "layout": "timeline-band"
     },
     {
-      "number": 17,
+      "number": 21,
       "id": "wladyslaw",
       "title": "Piętnastolatek kandydatem na cara",
-      "minutes": 1.25,
+      "minutes": 1.0,
       "purpose": "explanation",
       "layout": "split"
     },
     {
-      "number": 18,
+      "number": 22,
       "id": "szujscy",
       "title": "29 października 1611 · Warszawa",
-      "minutes": 1.0,
+      "minutes": 0.5,
       "purpose": "evidence",
       "layout": "evidence"
     },
     {
-      "number": 19,
+      "number": 23,
       "id": "trzy-zdania",
       "title": "Napraw wiadomość z Moskwy",
       "minutes": 1.0,
@@ -157,39 +189,23 @@
       "layout": "task-board"
     },
     {
-      "number": 20,
+      "number": 24,
       "id": "kapitulacja",
-      "title": "Dlaczego załoga nie utrzymała Moskwy?",
-      "minutes": 1.5,
+      "title": "1611–1612 · Dlaczego załoga skapitulowała?",
+      "minutes": 1.0,
       "purpose": "explanation",
       "layout": "timeline-band"
     },
     {
-      "number": 21,
-      "id": "romanow",
-      "title": "1613 · Nowa dynastia w Rosji",
-      "minutes": 0.75,
-      "purpose": "explanation",
-      "layout": "plain"
-    },
-    {
-      "number": 22,
+      "number": 25,
       "id": "dywilino",
       "title": "Dywilino: ziemie zamiast korony",
-      "minutes": 1.25,
+      "minutes": 1.0,
       "purpose": "evidence",
       "layout": "map-focus"
     },
     {
-      "number": 23,
-      "id": "najwieksza",
-      "title": "Około miliona km²",
-      "minutes": 1.25,
-      "purpose": "evidence",
-      "layout": "map-focus"
-    },
-    {
-      "number": 24,
+      "number": 26,
       "id": "polanowo",
       "title": "1634 · Pokój w Polanowie",
       "minutes": 1.5,
@@ -197,15 +213,23 @@
       "layout": "plain"
     },
     {
-      "number": 25,
+      "number": 27,
+      "id": "najwieksza",
+      "title": "Rzeczpospolita po pokoju w Polanowie",
+      "minutes": 1.0,
+      "purpose": "evidence",
+      "layout": "map-focus"
+    },
+    {
+      "number": 28,
       "id": "notatka-2",
-      "title": "Do zeszytu: korona czy ziemie?",
+      "title": "Do zeszytu: ziemie, nie rosyjska korona",
       "minutes": 3.0,
       "purpose": "synthesis",
       "layout": "plain"
     },
     {
-      "number": 26,
+      "number": 29,
       "id": "bilans-zadanie",
       "title": "Czy te wojny były sukcesem?",
       "minutes": 1.5,
@@ -213,20 +237,14 @@
       "layout": "task-board"
     },
     {
-      "number": 27,
-      "id": "synteza",
-      "title": "Od Bałtyku do Kremla — i do granicy",
-      "minutes": 1.0,
-      "purpose": "synthesis",
-      "layout": "plain"
-    },
-    {
-      "number": 28,
+      "number": 30,
       "id": "wyjscie",
       "title": "Na koniec: dwa zdania w zeszycie",
       "minutes": 1.5,
       "purpose": "exit-ticket",
       "layout": "plain"
     }
-  ]
+  ],
+  "timing_status": "Szybki przegląd; niepotwierdzone spokojne opanowanie całości przez klasę.",
+  "revision": "2026-11-16-private-draft"
 }

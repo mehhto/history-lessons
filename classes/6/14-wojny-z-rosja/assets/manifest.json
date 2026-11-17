@@ -12,7 +12,8 @@
     "sha256": "11fa0a194bf3a1d494ef73611a67fe9f85b7dc3b203a3d295aeb0364483c91f8",
     "gallery": true,
     "file": "assets/stefan.jpg",
-    "reused_from": "/opt/data/history-lessons/classes/6/13-pierwsza-wolna-elekcja/assets/stefan.jpg"
+    "reused_from": "/opt/data/history-lessons/classes/6/13-pierwsza-wolna-elekcja/assets/stefan.jpg",
+    "used_in_current_slides": true
   },
   {
     "id": "ivan",
@@ -27,7 +28,8 @@
     "sha256": "94bccf28c2bcb865689fb4558456be7141eef95dcc1d0704e3ab5971018ff371",
     "gallery": false,
     "file": "assets/ivan.jpg",
-    "reused_from": "/opt/data/history-lessons/classes/6/13-pierwsza-wolna-elekcja/assets/ivan.jpg"
+    "reused_from": "/opt/data/history-lessons/classes/6/13-pierwsza-wolna-elekcja/assets/ivan.jpg",
+    "used_in_current_slides": false
   },
   {
     "id": "zygmunt-iii",
@@ -42,7 +44,8 @@
     "sha256": "8cf3c5bf5c444877d2bbe36e376e6cf542635700fb53e0557107ff4e6212526e",
     "gallery": true,
     "file": "assets/zygmunt-iii.jpg",
-    "reused_from": "/opt/data/history-lessons/classes/6/13-pierwsza-wolna-elekcja/assets/zygmunt-iii.jpg"
+    "reused_from": "/opt/data/history-lessons/classes/6/13-pierwsza-wolna-elekcja/assets/zygmunt-iii.jpg",
+    "used_in_current_slides": false
   },
   {
     "id": "wladyslaw-iv",
@@ -57,7 +60,8 @@
     "sha256": "9a1ad05169dca79ee86a031ad7d9428cb1b5da4737b4e4332d7182084777ce68",
     "gallery": true,
     "file": "assets/wladyslaw-iv.jpg",
-    "reused_from": "/opt/data/history-lessons/classes/6/13-pierwsza-wolna-elekcja/assets/wladyslaw-iv.jpg"
+    "reused_from": "/opt/data/history-lessons/classes/6/13-pierwsza-wolna-elekcja/assets/wladyslaw-iv.jpg",
+    "used_in_current_slides": true
   },
   {
     "id": "zamoyski",
@@ -67,7 +71,8 @@
     "description": "Jan Zamoyski na wyidealizowanym portrecie Bacciarelliego , przedstawiony jako kanclerz, nie hetman, o czym ma świadczyć łagodny wyraz twarzy, zamyślenie i prezentacja księgi Źródło: Marceli Bacciarelli , olej na płótnie, Muzeum Narodowe w Warszawie, domena publiczna.",
     "license": "Domena publiczna — potwierdzona karta ZPE",
     "type": "malarstwo / opracowanie ikonograficzne",
-    "sha256": "1c82b59468de104c5c9167c8c2c831e6aeeddcb2858f89193e51ee3f92a6baa8"
+    "sha256": "1c82b59468de104c5c9167c8c2c831e6aeeddcb2858f89193e51ee3f92a6baa8",
+    "used_in_current_slides": true
   },
   {
     "id": "batory-pskow",
@@ -77,7 +82,8 @@
     "description": "Obraz Jana Matejki „Batory pod Pskowem” (1872). Obraz obecnie znajduje się na Zamku Królewskim w Warszawie Źródło: Jan Matejko, 1872, olej na płótnie, Zamek Królewski w Warszawie, domena publiczna.",
     "license": "Domena publiczna — potwierdzona karta ZPE",
     "type": "malarstwo / opracowanie ikonograficzne",
-    "sha256": "39db0aea3b3cfcadcfab7a6908d0c4c97d4b0344f5f2201ab93af787fb404836"
+    "sha256": "39db0aea3b3cfcadcfab7a6908d0c4c97d4b0344f5f2201ab93af787fb404836",
+    "used_in_current_slides": true
   },
   {
     "id": "dymitr",
@@ -87,7 +93,8 @@
     "description": "Portret Dymitra Samozwańca w stroju koronacyjnym; obraz namalowany przez Szymona Boguszewicza, przechowywany obecnie w Muzeum Państwowym w Moskwie Źródło: Szymon Boguszowicz, olej na płótnie, Muzeum Państwowe w Moskwie, domena publiczna.",
     "license": "Domena publiczna — potwierdzona karta ZPE",
     "type": "malarstwo / opracowanie ikonograficzne",
-    "sha256": "98033babdd4db9098e80c3bceded47403822cf5e4cff98cbc888be57826422b0"
+    "sha256": "98033babdd4db9098e80c3bceded47403822cf5e4cff98cbc888be57826422b0",
+    "used_in_current_slides": true
   },
   {
     "id": "zolkiewski",
@@ -97,7 +104,8 @@
     "description": "Podobizna hetmana Żółkiewskiego na obrazie J. Matejki pt. „Batory pod Pskowem” Źródło: Jan Matejko, domena publiczna.",
     "license": "Domena publiczna — potwierdzona karta ZPE",
     "type": "malarstwo / opracowanie ikonograficzne",
-    "sha256": "d2c526f254789b1f4ceb4a2d78454f848e1d100340929579e03af6ef2c90a26b"
+    "sha256": "d2c526f254789b1f4ceb4a2d78454f848e1d100340929579e03af6ef2c90a26b",
+    "used_in_current_slides": true
   },
   {
     "id": "kluszyn",
@@ -107,7 +115,8 @@
     "description": "Obraz Boguszewicza „Bitwa pod Kłuszynem” (1610); obraz namalowany ok. 1620, obecnie przechowywany w Galerii Narodowej we Lwowie Źródło: Szymon Boguszowicz, olej na płótnie, Lwowska Narodowa Galeria Sztuki, domena publiczna.",
     "license": "Domena publiczna — potwierdzona karta ZPE",
     "type": "malarstwo / opracowanie ikonograficzne",
-    "sha256": "69b3db3dc7f26bb10a860c669b294a35b32762bc87326b06f769dbf0824d0d04"
+    "sha256": "69b3db3dc7f26bb10a860c669b294a35b32762bc87326b06f769dbf0824d0d04",
+    "used_in_current_slides": true
   },
   {
     "id": "szujscy",
@@ -117,7 +126,8 @@
     "description": "Carowie Szujscy przed Zygmuntem III Wazą na sejmie warszawskim 1611 roku Źródło: Jan Matejko, Carowie Szujscy przed Zygmuntem III na sejmie warszawskim 1611 roku , 1892, domena publiczna.",
     "license": "Domena publiczna — potwierdzona karta ZPE",
     "type": "malarstwo / opracowanie ikonograficzne",
-    "sha256": "a1d473bcf408ad270063a5dc7dd95b5365057f328d14a493fc232e67f8dc9077"
+    "sha256": "a1d473bcf408ad270063a5dc7dd95b5365057f328d14a493fc232e67f8dc9077",
+    "used_in_current_slides": true
   },
   {
     "id": "bilans",
@@ -126,7 +136,9 @@
     "license": "CC BY-SA 4.0",
     "type": "autorski schemat objaśniający; nie źródło z epoki, nie rekonstrukcja historyczna, nie mapa",
     "source_url": null,
-    "sha256": "cd8e3999664b52cada55ed17b19e3db1d52b5bf54681f90f1616e6d2698259a4"
+    "sha256": "cd8e3999664b52cada55ed17b19e3db1d52b5bf54681f90f1616e6d2698259a4",
+    "used_in_current_slides": false,
+    "revision_status": "Nie użyto w rewizji 2026-11-16; dawny schemat zachowany jako wcześniejszy materiał, nie źródło historyczne."
   },
   {
     "id": "dwa-slady",
@@ -135,7 +147,9 @@
     "license": "CC BY-SA 4.0",
     "type": "autorski schemat objaśniający; nie źródło z epoki, nie rekonstrukcja historyczna, nie mapa",
     "source_url": null,
-    "sha256": "0539b5137d8f4f79b16f7222c87071768e5588aa5b10a53032fc12c79bf3b3b4"
+    "sha256": "0539b5137d8f4f79b16f7222c87071768e5588aa5b10a53032fc12c79bf3b3b4",
+    "used_in_current_slides": false,
+    "revision_status": "Nie użyto w rewizji 2026-11-16; dawny schemat zachowany jako wcześniejszy materiał, nie źródło historyczne."
   },
   {
     "id": "dymitr-upadek",
@@ -144,7 +158,9 @@
     "license": "CC BY-SA 4.0",
     "type": "autorski schemat objaśniający; nie źródło z epoki, nie rekonstrukcja historyczna, nie mapa",
     "source_url": null,
-    "sha256": "72dbe381a44c98c67bf96e39cca81aea81597a6d8053c0a4b8214cd70202f71c"
+    "sha256": "72dbe381a44c98c67bf96e39cca81aea81597a6d8053c0a4b8214cd70202f71c",
+    "used_in_current_slides": false,
+    "revision_status": "Nie użyto w rewizji 2026-11-16; dawny schemat zachowany jako wcześniejszy materiał, nie źródło historyczne."
   },
   {
     "id": "dynastia",
@@ -153,7 +169,9 @@
     "license": "CC BY-SA 4.0",
     "type": "autorski schemat objaśniający; nie źródło z epoki, nie rekonstrukcja historyczna, nie mapa",
     "source_url": null,
-    "sha256": "0611a3956dcc442dc278facc327b55cb848734f0c96bab11bff24e2414930e4b"
+    "sha256": "0611a3956dcc442dc278facc327b55cb848734f0c96bab11bff24e2414930e4b",
+    "used_in_current_slides": false,
+    "revision_status": "Nie użyto w rewizji 2026-11-16; dawny schemat zachowany jako wcześniejszy materiał, nie źródło historyczne."
   },
   {
     "id": "korona-warunek",
@@ -162,7 +180,9 @@
     "license": "CC BY-SA 4.0",
     "type": "autorski schemat objaśniający; nie źródło z epoki, nie rekonstrukcja historyczna, nie mapa",
     "source_url": null,
-    "sha256": "c4388ee8e005fb92bfeea36fd21b17c64b2909bd071d4aa4f2c8018f7bb8c18b"
+    "sha256": "c4388ee8e005fb92bfeea36fd21b17c64b2909bd071d4aa4f2c8018f7bb8c18b",
+    "used_in_current_slides": false,
+    "revision_status": "Nie użyto w rewizji 2026-11-16; dawny schemat zachowany jako wcześniejszy materiał, nie źródło historyczne."
   },
   {
     "id": "moskwa-uklad",
@@ -171,7 +191,9 @@
     "license": "CC BY-SA 4.0",
     "type": "autorski schemat objaśniający; nie źródło z epoki, nie rekonstrukcja historyczna, nie mapa",
     "source_url": null,
-    "sha256": "ae76e24283fdb4ffb8334f5779067c3fe273e8abb21916e36946882659c31c58"
+    "sha256": "ae76e24283fdb4ffb8334f5779067c3fe273e8abb21916e36946882659c31c58",
+    "used_in_current_slides": false,
+    "revision_status": "Nie użyto w rewizji 2026-11-16; dawny schemat zachowany jako wcześniejszy materiał, nie źródło historyczne."
   },
   {
     "id": "notatka-batory",
@@ -181,7 +203,9 @@
     "type": "autorski schemat objaśniający; nie źródło z epoki, nie rekonstrukcja historyczna, nie mapa",
     "source_url": null,
     "sha256": "94001baa39dd97a2b0960e73c3e18b61a3ef4b9ab3c592b5fdcb1c229043a0be",
-    "changes": "Rewizja graficzna: spójna kreska, wyróżnienia dat, czytelna hierarchia; uproszczone symbole do przerysowania. Oryginał zachowany lokalnie."
+    "changes": "Rewizja graficzna: spójna kreska, wyróżnienia dat, czytelna hierarchia; uproszczone symbole do przerysowania. Oryginał zachowany lokalnie.",
+    "used_in_current_slides": false,
+    "revision_status": "Nie użyto w rewizji 2026-11-16; dawny schemat zachowany jako wcześniejszy materiał, nie źródło historyczne."
   },
   {
     "id": "notatka-waza",
@@ -191,7 +215,9 @@
     "type": "autorski schemat objaśniający; nie źródło z epoki, nie rekonstrukcja historyczna, nie mapa",
     "source_url": null,
     "sha256": "206153020e671370c41d368db60912a83aac9eba551beabbf074c0cb69afba32",
-    "changes": "Rewizja graficzna: spójna kreska, wyróżnienia dat, czytelna hierarchia; uproszczone symbole do przerysowania. Oryginał zachowany lokalnie."
+    "changes": "Rewizja graficzna: spójna kreska, wyróżnienia dat, czytelna hierarchia; uproszczone symbole do przerysowania. Oryginał zachowany lokalnie.",
+    "used_in_current_slides": false,
+    "revision_status": "Nie użyto w rewizji 2026-11-16; dawny schemat zachowany jako wcześniejszy materiał, nie źródło historyczne."
   },
   {
     "id": "obleganie",
@@ -200,7 +226,9 @@
     "license": "CC BY-SA 4.0",
     "type": "autorski schemat objaśniający; nie źródło z epoki, nie rekonstrukcja historyczna, nie mapa",
     "source_url": null,
-    "sha256": "3791e1d1d453b237b85947f97e174bb2c4299841bf60b0ab3a076cd3980eb532"
+    "sha256": "3791e1d1d453b237b85947f97e174bb2c4299841bf60b0ab3a076cd3980eb532",
+    "used_in_current_slides": false,
+    "revision_status": "Nie użyto w rewizji 2026-11-16; dawny schemat zachowany jako wcześniejszy materiał, nie źródło historyczne."
   },
   {
     "id": "oblezenie-moskwa",
@@ -209,7 +237,9 @@
     "license": "CC BY-SA 4.0",
     "type": "autorski schemat objaśniający; nie źródło z epoki, nie rekonstrukcja historyczna, nie mapa",
     "source_url": null,
-    "sha256": "040d84719ff6b4e3e98e98047cbb28548764260ddf982ad78ba55761d73987e8"
+    "sha256": "040d84719ff6b4e3e98e98047cbb28548764260ddf982ad78ba55761d73987e8",
+    "used_in_current_slides": false,
+    "revision_status": "Nie użyto w rewizji 2026-11-16; dawny schemat zachowany jako wcześniejszy materiał, nie źródło historyczne."
   },
   {
     "id": "polanowo",
@@ -218,7 +248,9 @@
     "license": "CC BY-SA 4.0",
     "type": "autorski schemat objaśniający; nie źródło z epoki, nie rekonstrukcja historyczna, nie mapa",
     "source_url": null,
-    "sha256": "af84a850b6d07e7862687de6e951a393a416c9c6be9549773a6410c26c850c52"
+    "sha256": "af84a850b6d07e7862687de6e951a393a416c9c6be9549773a6410c26c850c52",
+    "used_in_current_slides": false,
+    "revision_status": "Nie użyto w rewizji 2026-11-16; dawny schemat zachowany jako wcześniejszy materiał, nie źródło historyczne."
   },
   {
     "id": "synteza",
@@ -227,7 +259,9 @@
     "license": "CC BY-SA 4.0",
     "type": "autorski schemat objaśniający; nie źródło z epoki, nie rekonstrukcja historyczna, nie mapa",
     "source_url": null,
-    "sha256": "777d26e022e7e7512ac58c0fb1232ef7cabf663e423ba4b90c632b08afa89eef"
+    "sha256": "777d26e022e7e7512ac58c0fb1232ef7cabf663e423ba4b90c632b08afa89eef",
+    "used_in_current_slides": false,
+    "revision_status": "Nie użyto w rewizji 2026-11-16; dawny schemat zachowany jako wcześniejszy materiał, nie źródło historyczne."
   },
   {
     "id": "warszawa",
@@ -236,7 +270,9 @@
     "license": "CC BY-SA 4.0",
     "type": "autorski schemat objaśniający; nie źródło z epoki, nie rekonstrukcja historyczna, nie mapa",
     "source_url": null,
-    "sha256": "7d6740bc9459a1a054d32e08bacdb3a554e87e788f2b5bf3cf57ae439958ec5a"
+    "sha256": "7d6740bc9459a1a054d32e08bacdb3a554e87e788f2b5bf3cf57ae439958ec5a",
+    "used_in_current_slides": false,
+    "revision_status": "Nie użyto w rewizji 2026-11-16; dawny schemat zachowany jako wcześniejszy materiał, nie źródło historyczne."
   },
   {
     "id": "wybraniecka",
@@ -245,7 +281,9 @@
     "license": "CC BY-SA 4.0",
     "type": "autorski schemat objaśniający; nie źródło z epoki, nie rekonstrukcja historyczna, nie mapa",
     "source_url": null,
-    "sha256": "83cd05536b2dfa79a84198ca2dff5f2587e6de4ff0cdbd0ffa007325ea304a23"
+    "sha256": "83cd05536b2dfa79a84198ca2dff5f2587e6de4ff0cdbd0ffa007325ea304a23",
+    "used_in_current_slides": false,
+    "revision_status": "Nie użyto w rewizji 2026-11-16; dawny schemat zachowany jako wcześniejszy materiał, nie źródło historyczne."
   },
   {
     "source_url": "https://zpe.gov.pl/a/mapa-interaktywna/DddWhUmQ0",
@@ -261,7 +299,8 @@
     "limits": "original graticule/labels have slightly different raster rounding; visually inspected. Include readable legend for selected layers.",
     "original_file": "batory-composite.jpg",
     "file": "assets/mapa-baltyk.jpg",
-    "sha256": "277ce0a03599de96893b0f7575e225e557ab98ed184556390dc5476859ff83f6"
+    "sha256": "277ce0a03599de96893b0f7575e225e557ab98ed184556390dc5476859ff83f6",
+    "used_in_current_slides": true
   },
   {
     "source_url": "https://zpe.gov.pl/a/mapa-interaktywna/DddWhUmQ0",
@@ -277,7 +316,8 @@
     "limits": "original graticule/labels have slightly different raster rounding; visually inspected. Include readable legend for selected layers.",
     "original_file": "batory-composite.jpg",
     "file": "assets/mapa-wyprawy.jpg",
-    "sha256": "4abf68b47502f54730a36c8a9993a10bf9ffdce936b14fa728b582694bcb846f"
+    "sha256": "4abf68b47502f54730a36c8a9993a10bf9ffdce936b14fa728b582694bcb846f",
+    "used_in_current_slides": true
   },
   {
     "source_url": "https://commons.wikimedia.org/wiki/File:Truce_of_Deulino_1618-1619.PNG",
@@ -290,7 +330,8 @@
     "limits": "English legend needs Polish explanation; no exact administrative boundary of Severia separately.",
     "original_file": "deulino.png",
     "file": "assets/deulino-full.png",
-    "sha256": "259e46c36de791809a9fbea7cfb1525928b1c75a97cdbf867ca3691b2fee7d6e"
+    "sha256": "259e46c36de791809a9fbea7cfb1525928b1c75a97cdbf867ca3691b2fee7d6e",
+    "used_in_current_slides": true
   },
   {
     "source_url": "https://commons.wikimedia.org/wiki/File:Truce_of_Deulino_1618-1619.PNG",
@@ -303,7 +344,8 @@
     "limits": "English legend needs Polish explanation; no exact administrative boundary of Severia separately.",
     "original_file": "deulino.png",
     "file": "assets/mapa-dywilino.png",
-    "sha256": "529d09104b4b1a046e7c7b4b728583c497a3449c413ffafd0feb85bf2800e108"
+    "sha256": "529d09104b4b1a046e7c7b4b728583c497a3449c413ffafd0feb85bf2800e108",
+    "used_in_current_slides": true
   },
   {
     "source_url": "https://commons.wikimedia.org/wiki/File:Polish-Lithuanian_Commonwealth_(1619)_compared_with_today%27s_borders_PL.png",
@@ -316,7 +358,8 @@
     "limits": "Legend1Korona2PrusyKsiążęcelenno3WKL4Inflanty5Kurlandialenno; include this key outside map. Red dotted modern borders; grey solid historical. Historical extent includes fiefs, not identical measurement basis990000.",
     "original_file": "modern-pl.png",
     "file": "assets/mapa-zasieg.png",
-    "sha256": "02e2fd7095941ea3d5a8b3af0415af1922b4991493f2fb261dc76397a00253b9"
+    "sha256": "02e2fd7095941ea3d5a8b3af0415af1922b4991493f2fb261dc76397a00253b9",
+    "used_in_current_slides": false
   },
   {
     "source_url": "https://zpe.gov.pl/watek/LPAMVE4GV7/23/a/polacy-w-moskwie-walka-o-wplywy-w-rosji/DCH7KAU9R",
@@ -327,7 +370,8 @@
     "limits": "Actual image checked: tactical plan, NOT state map despite generic alt.",
     "original_file": "R6C1XC6Q5F7ZN.png",
     "file": "assets/kluszyn-plan.png",
-    "sha256": "d1906458ffa2a0656d024e51b6fbece5406f0c10cd1b0d80e8a99c77ea31d5a6"
+    "sha256": "d1906458ffa2a0656d024e51b6fbece5406f0c10cd1b0d80e8a99c77ea31d5a6",
+    "used_in_current_slides": false
   },
   {
     "id": "mapa",
@@ -339,6 +383,239 @@
     "source_url": "https://static.zpe.gov.pl/portal/f/res-minimized/R10NoDGrwRfAd/1713170002/1iARuhHTlaAgUeQohYBRMUSPKIgcZNHr.png",
     "inspected_url": "https://zpe.gov.pl/a/D12LkQne7",
     "rights_note": "Ponowne wykorzystanie dokładnego lokalnego zasobu; bez zmiany treści.",
-    "sha256": "2e10711218b1d2414574d3828144f3aa30dc7e9ec77f68ba02dfdbdc10015743"
+    "sha256": "2e10711218b1d2414574d3828144f3aa30dc7e9ec77f68ba02dfdbdc10015743",
+    "used_in_current_slides": false
+  },
+  {
+    "id": "wawel",
+    "file": "assets/wawel-2014.jpg",
+    "creator": "Stanislau 93",
+    "date": "2014-09-24",
+    "depicted_date": "2014-09-24",
+    "subject": "Wawel widziany znad Wisły",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Wawel_on_Wisla.JPG",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Wawel_on_Wisla.JPG/1280px-Wawel_on_Wisla.JPG",
+    "resource_base": null,
+    "license": "CC BY-SA 3.0 PL",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/pl/",
+    "changes": "Downloaded Wikimedia thumbnail, original composition unchanged.",
+    "limits": [
+      "Not an image of the fire of 1595; does not prove the fire or its causes."
+    ],
+    "sha256": "431d1d0dadb95aae90e78f624de740c7ad9b9c8ef69d58658c1ba04297d0f37f",
+    "dimensions": [
+      1280,
+      853
+    ],
+    "used_in_current_slides": false
+  },
+  {
+    "id": "war-map",
+    "file": "assets/mapa-wojna-1609-1618.png",
+    "creator": "Englishsquare.pl sp. z o.o. (per-figure caption on current ZPE page)",
+    "date": null,
+    "depicted_date": "1582 base extent; acquisitions 1618; selected state border 1637; campaigns 1609–1611 and 1617–1618, and Turkish campaign 1620",
+    "subject": "Rzeczpospolita w 1. poł. XVII w.",
+    "source_url": "https://zpe.gov.pl/a/mapa-interaktywna/D5HvOAwP",
+    "download_url": null,
+    "resource_base": "https://static.zpe.gov.pl/portal/f/res/REGdj14LOXC1V/1662483432/2cRVI69FcfM0M6VLzSvkXS0kbmyVbOlk/",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "changes": "Lossless browser composition of all seven downloaded original PNG layers, at actual native 2048x1701 resolution. No redrawing, relabelling, boundary editing or legend cropping. Original Turkish campaign retained to match original legend.",
+    "limits": [
+      "Kremlin is not independently labelled: do not claim this map identifies it.",
+      "Smoleńsk 1609–1611, Kłuszyn 1610, Moskwa 1618 and both campaign arrows are visibly legible.",
+      "Background extent, 1618 gains and 1637 border MUST retain original legend.",
+      "ZPE alt text says Kircholm 1606, but actual map pixels correctly show 1605. Do not copy erroneous alt text.",
+      "Embedded manifest claims 3000x2491 but downloaded layers decode as 2048x1701. Render uses actual pixel size.",
+      "Use full-canvas with zoom; whole-state map contains additional historical context."
+    ],
+    "sha256": "13a147947ada466b0b7df166e0180c18313965d75c897efe126215ecd996bd15",
+    "dimensions": [
+      2048,
+      1701
+    ],
+    "used_in_current_slides": true
+  },
+  {
+    "id": "drzewo-jagiellonowie-wazowie",
+    "file": "assets/drzewo-jagiellonowie-wazowie.jpg",
+    "creator": "Nieustalony; materiał dostarczony przez nauczyciela",
+    "source_url": null,
+    "original_teacher_file": "/opt/data/cache/images/img_8391837b9035.jpg",
+    "license": "Prawa nieustalone; bieżący prywatny przegląd",
+    "changes": "Cały obraz bez zmian i bez przerysowania.",
+    "limits": "Daty przy † oznaczają śmierć, nie panowanie.",
+    "sha256": "01a023dddf68dacd691e4e865f930df3598dd89dbddf74e66516315af5e1a8b1",
+    "used_in_current_slides": true
+  },
+  {
+    "id": "wybraniec-wroblewski",
+    "file": "assets/wybraniec-wroblewski.png",
+    "subject": "Piechur wybraniecki (z lewej); oryginał pokazuje także dragona z prawej",
+    "creator": "Bohdan Wróblewski",
+    "collection": "Muzeum Wojska Polskiego, według podpisu artykułu Historia: Poszukaj",
+    "date": "Data wykonania rysunku nieustalona; późniejsza rekonstrukcja żołnierzy XVII w.",
+    "depicted_date": "XVII w., nie wygląd udokumentowany dla roku 1578",
+    "inspected_url": "https://web.archive.org/web/20230203072939/https://historiaposzukaj.pl/wiedza,historiomat,1480,historiomat_piechota_wybraniecka_krola_stefana_batorego.html",
+    "archived_at": "2023-02-03T07:29:39Z",
+    "source_url": "https://www.historiaposzukaj.pl/wiedza,historiomat,1480,historiomat_piechota_wybraniecka_krola_stefana_batorego.html",
+    "download_url": "https://www.tpkamien.pl/images/phocagallery/1_artykuly/2021_artykuly/2022/3_2.jpg",
+    "secondary_source_page": "https://www.tpkamien.pl/index.php/aktualnoci/445-rocznica-lokacji-kamienia",
+    "secondary_caption": "Polscy żołnierze z XVII wieku na rysunku Bohdana Wróblewskiego. Z lewej strony piechur wybraniecki, z prawej dragon - Muzeum Wojska Polskiego",
+    "license": "Nie potwierdzono otwartej licencji ani praw publicznego rozpowszechniania",
+    "rights_note": "Tylko bieżący prywatny materiał do przeglądu i użytku dydaktycznego; nie publikować jako prawnie otwartego. Uznanie muzealnego podpisu nie jest licencją. Pełny oryginał z sygnaturą zachowany; kadr usuwa drugą postać, nie retuszuje pierwszej. Dawna zgoda na publiczne repo nie oznacza otwartej licencji.",
+    "sha256": "641ea0bcf180f19351e420568d62ea41ada54e9c005ec47243755e32a92cfd1a",
+    "dimensions": [
+      260,
+      535
+    ],
+    "changes": {
+      "crop_from_original": [
+        25,
+        180,
+        285,
+        715
+      ],
+      "no_retouch": true,
+      "original_preserved": "assets/wybraniec-dragon-wroblewski.jpg"
+    },
+    "visual_verified": true,
+    "used_in_current_slides": true
+  },
+  {
+    "id": "wybraniec-dragon-wroblewski",
+    "file": "assets/wybraniec-dragon-wroblewski.jpg",
+    "subject": "Piechur wybraniecki (z lewej); oryginał pokazuje także dragona z prawej",
+    "creator": "Bohdan Wróblewski",
+    "collection": "Muzeum Wojska Polskiego, według podpisu artykułu Historia: Poszukaj",
+    "date": "Data wykonania rysunku nieustalona; późniejsza rekonstrukcja żołnierzy XVII w.",
+    "depicted_date": "XVII w., nie wygląd udokumentowany dla roku 1578",
+    "inspected_url": "https://web.archive.org/web/20230203072939/https://historiaposzukaj.pl/wiedza,historiomat,1480,historiomat_piechota_wybraniecka_krola_stefana_batorego.html",
+    "archived_at": "2023-02-03T07:29:39Z",
+    "source_url": "https://www.historiaposzukaj.pl/wiedza,historiomat,1480,historiomat_piechota_wybraniecka_krola_stefana_batorego.html",
+    "download_url": "https://www.tpkamien.pl/images/phocagallery/1_artykuly/2021_artykuly/2022/3_2.jpg",
+    "secondary_source_page": "https://www.tpkamien.pl/index.php/aktualnoci/445-rocznica-lokacji-kamienia",
+    "secondary_caption": "Polscy żołnierze z XVII wieku na rysunku Bohdana Wróblewskiego. Z lewej strony piechur wybraniecki, z prawej dragon - Muzeum Wojska Polskiego",
+    "license": "Nie potwierdzono otwartej licencji ani praw publicznego rozpowszechniania",
+    "rights_note": "Tylko bieżący prywatny materiał do przeglądu i użytku dydaktycznego; nie publikować jako prawnie otwartego. Uznanie muzealnego podpisu nie jest licencją. Pełny oryginał z sygnaturą zachowany; kadr usuwa drugą postać, nie retuszuje pierwszej. Dawna zgoda na publiczne repo nie oznacza otwartej licencji.",
+    "sha256": "e9143c217e5e7f199b6c62b4040a715ca0e7e8f3f69e0a886579f6abfa589d4c",
+    "dimensions": [
+      529,
+      768
+    ],
+    "changes": "Oryginalna pobrana reprodukcja, bez zmian",
+    "visual_verified": true,
+    "used_in_current_slides": true
+  },
+  {
+    "id": "krakow-warszawa-ryciny-nauczyciela",
+    "file": "assets/krakow-warszawa-ryciny-nauczyciela.jpg",
+    "subject": "Dostarczone zestawienie dawnych widoków do przenosin dworu z Krakowa do Warszawy; prawy widok z napisem VARSOVIA",
+    "creator": "Autorzy rycin i autor zestawienia nieustaleni",
+    "date": "Daty wykonania rycin i zestawienia nieustalone; nie podpisywać 1596 jako daty obrazu",
+    "source_url": null,
+    "source": "Załącznik nauczyciela /opt/data/cache/images/img_b10a1206851f.jpg, Telegram, 16 XI 2026",
+    "license": "Nieustalona; dostarczenie załącznika nie oznacza otwartej licencji",
+    "rights_note": "Bieżący prywatny materiał do przeglądu. Nie wnioskować o prawach z dawnego wyglądu rycin. Żadnej publicznej publikacji nie zlecono w tej rewizji.",
+    "sha256": "81666c2490d586748d79214c99850084434141dcc38013957afd22430d12973d",
+    "dimensions": [
+      800,
+      480
+    ],
+    "changes": "Kopia bez zmian; bez generowania, retuszu lub kadrowania. Zastępuje współczesną fotografię Wawelu zgodnie z wyborem nauczyciela.",
+    "visual_verified": true,
+    "scope_limit": "Zestawienie nie przedstawia pożaru1595 ani aktu przenosin dworu. Napis VARSOVIA odczytany; brak niezależnego potwierdzenia autorów i dat lewego oraz prawego widoku.",
+    "used_in_current_slides": true
+  },
+  {
+    "author": "Englishsquare.pl sp. z o.o.",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "source_page": "https://zpe.gov.pl/a/mapa-interaktywna/D5HvOAwP",
+    "resource_base": "https://static.zpe.gov.pl/portal/f/res/REGdj14LOXC1V/1662483432/2cRVI69FcfM0M6VLzSvkXS0kbmyVbOlk/",
+    "exact_layer_urls": {
+      "background": "https://static.zpe.gov.pl/portal/f/res/REGdj14LOXC1V/1662483432/2cRVI69FcfM0M6VLzSvkXS0kbmyVbOlk/resources/2hknqksmbo1cpohoxyk0bdulaqyhzfls.png",
+      "border_1637": "https://static.zpe.gov.pl/portal/f/res/REGdj14LOXC1V/1662483432/2cRVI69FcfM0M6VLzSvkXS0kbmyVbOlk/resources/evdwvw4gxcc4cdr8mhlflsjcqzcjo84h.png",
+      "text": "https://static.zpe.gov.pl/portal/f/res/REGdj14LOXC1V/1662483432/2cRVI69FcfM0M6VLzSvkXS0kbmyVbOlk/resources/1hmavn7wv2qf4yx7yeq68xx9nareyagr.png"
+    },
+    "depicted_border_year": 1637,
+    "town_focus_examples": [
+      {
+        "name": "Gdańsk",
+        "role": "Baltic/northwest orientation; not mathematical westernmost point",
+        "approx_pixel_xy": [
+          310,
+          706
+        ]
+      },
+      {
+        "name": "Dyneburg",
+        "role": "Polish-held Livonia, north",
+        "approx_pixel_xy": [
+          983,
+          461
+        ]
+      },
+      {
+        "name": "Smoleńsk",
+        "role": "eastern Lithuania/frontier region",
+        "approx_pixel_xy": [
+          1345,
+          534
+        ]
+      },
+      {
+        "name": "Kudak",
+        "role": "southeast on the Dnieper",
+        "approx_pixel_xy": [
+          1805,
+          1317
+        ]
+      }
+    ],
+    "fiefs": {
+      "Prusy Książęce": "Separate pink/cream hatching: lenna polskie; Królewiec labelled. Not ordinary Crown territory.",
+      "Kurlandia": "Separate brown/cream hatching: lenna polsko-litewskie; Mitawa labelled. Not ordinary Lithuanian voivodeship."
+    },
+    "livonia": "Swedish-held northern/western Livonia visibly yellow-hatched, labelled acquisition 1622 rather than 1629; Polish-held southeast with Dyneburg outside that hatching. Do not turn original 1622 caption into 1629.",
+    "black_sea": "No Polish strip of open Black Sea coastline shown. Jedysan and Crimean Khanate intervene. Red border approaches the Dnieper estuary; this scale does not resolve exact liman shoreline ownership.",
+    "id": "rzeczpospolita-po-polanowie-1637",
+    "file": "assets/rzeczpospolita-po-polanowie-1637.png",
+    "title": "Rzeczpospolita po pokoju w Polanowie — źródłowa granica1637",
+    "date": "Granice1637; terytorialne pola rozróżniają1582 i nabytki1618; nie mapa wykonana w1634",
+    "sha256": "b8cb398b250e1fc1560be8b934cd92edf64f4fa2b61f89d84ce144d9cae90e54",
+    "dimensions": [
+      2048,
+      1701
+    ],
+    "changes": "Połączono wyłącznie oryginalne warstwy tło+granice1637+tekst. Wyłączono warstwy bitew i wszystkich3wypraw. Z warstwy tekstu pominięto tylko prostokąt nieczynnej legendy wypraw [1574,34,441,221] (x,y,w,h), zachowując ramkę i wszystkie napisy geograficzne oraz pełną legendę terytorialną. Nie rysowano granic, przebiegów rzek ani historycznej geografii i nie zmieniono oryginalnych dat.",
+    "provenance_kind": "Source-layer derivative, not AI or invented map",
+    "visual_verified": true,
+    "scope_limit": "Stan kilka lat po Polanowie, a nie dokładna migawka roku1634. Zachowany oryginalny tytuł Rzeczpospolita w1połXVIIw. Granica1637 w legendzie. Źródłowe barwy nabytków1618 nie oznaczają nowych zdobyczy1634.",
+    "reproduce": "node compose-territorial.cjs",
+    "rights_note": "Opracowanie na podstawie konkretnej figury ZPE Englishsquare.pl; odziedziczona CC BY-SA3.0, informacje o zmianach zachowane w źródłach nauczyciela.",
+    "used_in_current_slides": true
+  },
+  {
+    "id": "siedmiogrod-rumunia",
+    "file": "assets/siedmiogrod-rumunia.png",
+    "subject": "Historyczny Siedmiogród oraz Banat, Kriszana i Marmarosz na tle współczesnej Rumunii",
+    "creator": "Andrein (w historii pliku także ArdadN)",
+    "date": "Współczesna mapa lokalizacyjna; wersja SVG 4 IV 2012, nie granica z XVI w.",
+    "inspected_url": "https://commons.wikimedia.org/wiki/File:Transylvania,_Banat,_Crisana_and_Maramures.svg",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Transylvania%2C_Banat%2C_Crisana_and_Maramures.svg",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Transylvania%2C_Banat%2C_Crisana_and_Maramures.svg/1280px-Transylvania%2C_Banat%2C_Crisana_and_Maramures.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "dimensions": [
+      1280,
+      902
+    ],
+    "sha256": "16433f69ad3be1a31b1bb255c807bcc652a85a97b569e3a08f6e4dae29824a54",
+    "changes": "Kopia renderu PNG Commons bez zmian obrazu, granic, kolorów i kadru; legenda opisowa poza mapą w HTML.",
+    "scope_limit": "Współczesny lokalizator regionu; nie mapa państwa Batorego ani przebiegu jego podróży. Sąsiednie regiony zaznaczone osobnym odcieniem.",
+    "used_in_current_slides": true,
+    "visual_verified": true
   }
 ]
