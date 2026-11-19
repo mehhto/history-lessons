@@ -1,0 +1,529 @@
+{
+  "scope": "Prywatny pakiet nauczycielski, bez zgody na publikację",
+  "text_sources": [
+    {
+      "id": "nato-article5-textbook-supplement",
+      "type": "supplied_text_excerpt",
+      "input_file": "/opt/data/cache/documents/native-inputs/0a3f3c5676258a47af939a60433b68f93c5da1d43a175e13090e3a1b77e3ec70/img_9a38459cd7b7.jpg",
+      "input_pages": "103",
+      "input_sha256": "0a3f3c5676258a47af939a60433b68f93c5da1d43a175e13090e3a1b77e3ec70",
+      "publisher": "nieustalone",
+      "scope": "Cały dostarczony fragment, nie cały art. 5; oryginalne [...] zachowane",
+      "transcription": "/opt/data/history-production/grade8/two-textbooks-2026-11-19/lesson13/article5-transcription.txt",
+      "transcription_sha256": "923232b89740729517af68a720a0385df4d0020a0ce8e826824ef47180ffc9b3",
+      "slide_id": "nato-artykul-5",
+      "verification_urls": [
+        "https://www.nato.int/cps/en/natohq/official_texts_17120.htm?selectedLocale=pl"
+      ],
+      "publication_approval": false,
+      "rights": "Prawa reprodukcji i polskiego wydania nieustalone; wyłącznie wersja prywatna"
+    }
+  ],
+  "assets": [
+    {
+      "id": "potsdam",
+      "file": "assets/potsdam.jpg",
+      "status": "downloaded",
+      "selection": "selected",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Potsdam_conference_1945-8.jpg",
+      "resource_url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Potsdam_conference_1945-8.jpg",
+      "author": "Army Signal Corps Collection, U.S. National Archives; fotograf indywidualny nieustalony",
+      "creation_date": "1945; opis: ok. 28 VII–1 VIII, pole Date: 1 VIII 1945",
+      "represented_date": "ok. 28 VII–1 VIII 1945",
+      "license": "Domena publiczna w USA; karta oznacza PD-USGov/PD-US Navy (niespójność instytucjonalna z opisem kolekcji Army Signal Corps)",
+      "license_url": "https://commons.wikimedia.org/wiki/Help:Public_domain",
+      "attribution": "Army Signal Corps Collection, U.S. National Archives; fotograf indywidualny nieustalony",
+      "shows": "Poczdam: siedzą od lewej Clement Attlee, Harry S. Truman, Józef Stalin; stoją William D. Leahy, Ernest Bevin, James F. Byrnes, Wiaczesław Mołotow.",
+      "cautions": "Nie podpisywać Churchill: na tym zdjęciu jest Attlee. Zakres konferencji 17 VII–2 VIII nie jest dokładną datą fotografii. USA C-1860.",
+      "source_evidence": "evidence/commons-potsdam.html",
+      "pixel_review": {
+        "reviewed": true,
+        "method": "Native visual inspection of downloaded raster or actual Chromium rasterization of source SVG",
+        "preview": null,
+        "observations": "Poczdam: siedzą od lewej Clement Attlee, Harry S. Truman, Józef Stalin; stoją William D. Leahy, Ernest Bevin, James F. Byrnes, Wiaczesław Mołotow."
+      },
+      "sha256": "a71f84a70e42bac9c6e472c6ae9bfe18a9b4904f624f89c099e03c2736bc46fb",
+      "bytes": 85288,
+      "modifications": "Brak lokalnego kadrowania, retuszu, tłumaczenia wewnątrz obrazu ani zmiany geografii.",
+      "publication_approval": false,
+      "upstream_sha256": "a71f84a70e42bac9c6e472c6ae9bfe18a9b4904f624f89c099e03c2736bc46fb"
+    },
+    {
+      "id": "nuremberg",
+      "file": "assets/nuremberg.jpg",
+      "status": "downloaded",
+      "selection": "selected",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Defendants_in_the_dock_at_the_Nuremberg_Trials.jpg",
+      "resource_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Defendants_in_the_dock_at_the_Nuremberg_Trials.jpg/960px-Defendants_in_the_dock_at_the_Nuremberg_Trials.jpg",
+      "author": "Rząd USA; Office of the U.S. Chief of Counsel for the Prosecution of Axis Criminality; fotograf indywidualny nieustalony",
+      "creation_date": "1945–1946; dzień nieustalony",
+      "represented_date": "główny proces norymberski, 1945–1946",
+      "license": "Domena publiczna w USA, PD-US Army",
+      "license_url": "https://commons.wikimedia.org/wiki/Help:Public_domain",
+      "attribution": "Rząd USA; Office of the U.S. Chief of Counsel for the Prosecution of Axis Criminality; fotograf indywidualny nieustalony",
+      "shows": "Ośmiu oskarżonych: pierwszy rząd od lewej Hermann Göring, Rudolf Hess, Joachim von Ribbentrop, Wilhelm Keitel; drugi Karl Dönitz, Erich Raeder, Baldur von Schirach, Fritz Sauckel; za nimi strażnicy.",
+      "cautions": "NAID 540128. Nie mylić z późniejszymi procesami ani procesem tokijskim. Identyfikacja wg karty obiektu, nie zgadywania twarzy.",
+      "source_evidence": "evidence/commons-nuremberg.html",
+      "pixel_review": {
+        "reviewed": true,
+        "method": "Native visual inspection of downloaded raster or actual Chromium rasterization of source SVG",
+        "preview": null,
+        "observations": "Ośmiu oskarżonych: pierwszy rząd od lewej Hermann Göring, Rudolf Hess, Joachim von Ribbentrop, Wilhelm Keitel; drugi Karl Dönitz, Erich Raeder, Baldur von Schirach, Fritz Sauckel; za nimi strażnicy."
+      },
+      "sha256": "2b8f0b1bd6292582373e8bf7bd1f696134b497af41db9b3c34df947978e72f2c",
+      "bytes": 171745,
+      "modifications": "Brak lokalnego kadrowania, retuszu, tłumaczenia wewnątrz obrazu ani zmiany geografii.",
+      "publication_approval": false,
+      "upstream_sha256": "2b8f0b1bd6292582373e8bf7bd1f696134b497af41db9b3c34df947978e72f2c"
+    },
+    {
+      "id": "eleanor-roosevelt-1949",
+      "file": "assets/eleanor-roosevelt-1949.jpg",
+      "status": "downloaded",
+      "selection": "selected_optional",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Eleanor_Roosevelt_UDHR.jpg",
+      "resource_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Eleanor_Roosevelt_UDHR.jpg/960px-Eleanor_Roosevelt_UDHR.jpg",
+      "author": "FDR Presidential Library & Museum (kredyt kolekcji; fotograf indywidualny nieustalony)",
+      "creation_date": "listopad 1949 wg opisu; techniczne pole Date 28 II 2008 nie jest datą historycznej sceny",
+      "represented_date": "listopad 1949, Lake Success, Nowy Jork",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "attribution": "FDR Presidential Library & Museum (kredyt kolekcji; fotograf indywidualny nieustalony)",
+      "shows": "Eleanor Roosevelt trzyma angielskojęzyczny plakat Universal Declaration of Human Rights.",
+      "cautions": "Nie przedstawia podpisania Karty ONZ w 1945 ani uchwalenia PDPC w 1948. Czytelny tytuł, drobny tekst nie do lektury z całej fotografii.",
+      "source_evidence": "evidence/roosevelt.html",
+      "pixel_review": {
+        "reviewed": true,
+        "method": "Native visual inspection of downloaded raster or actual Chromium rasterization of source SVG",
+        "preview": null,
+        "observations": "Eleanor Roosevelt trzyma angielskojęzyczny plakat Universal Declaration of Human Rights."
+      },
+      "sha256": "a2a24b0de155346c9050b29c087407a40cdf71f422a61d9d820151fe75d2dea0",
+      "bytes": 145851,
+      "modifications": "Brak lokalnego kadrowania, retuszu, tłumaczenia wewnątrz obrazu ani zmiany geografii.",
+      "publication_approval": false,
+      "upstream_sha256": "a2a24b0de155346c9050b29c087407a40cdf71f422a61d9d820151fe75d2dea0"
+    },
+    {
+      "id": "berlin-sectors-1945",
+      "file": "assets/berlin-sectors-1945.svg",
+      "status": "downloaded",
+      "selection": "selected_rights_pending",
+      "page_url": "https://germanhistorydocs.org/en/occupation-and-the-emergence-of-two-states-1945-1961/berlin-september-1-1945",
+      "resource_url": "https://germanhistorydocs.org/media/volume-8/map-522/64731_ca_object_representations_media_5151_original.svg",
+      "author": "IEG-MAPS, Institut für Europäische Geschichte Mainz, A. Kunz; rewizja Gabriel Moss",
+      "creation_date": "karta: A. Kunz 2004; widoczne © A. Kunz 2005; rewizja Gabriel Moss 2021",
+      "represented_date": "1 IX 1945",
+      "license": "Indywidualna licencja mapy niepodana; © A. Kunz. GHDI: indywidualny, akademicki, edukacyjny i niekomercyjny użytek; prawa dalszej publikacji do wyjaśnienia",
+      "license_url": "https://germanhistorydocs.org/en/terms",
+      "attribution": "IEG-MAPS, Institut für Europäische Geschichte Mainz, A. Kunz; rewizja Gabriel Moss",
+      "shows": "Cztery podpisane sektory Berlina: francuski, brytyjski, amerykański i sowiecki; rzeki, dzielnice i lotniska; tytuł z datą i skala.",
+      "cautions": "Mapa współczesna, nie dokument z 1945. Odrębna mapa miasta; nie utożsamiać sowieckiej strefy Niemiec z całym Berlinem.",
+      "source_evidence": "evidence/berlin1945.html",
+      "pixel_review": {
+        "reviewed": true,
+        "method": "Native visual inspection of downloaded raster or actual Chromium rasterization of source SVG",
+        "preview": "evidence/berlin-sectors-1945-preview.png",
+        "observations": "Cztery podpisane sektory Berlina: francuski, brytyjski, amerykański i sowiecki; rzeki, dzielnice i lotniska; tytuł z datą i skala."
+      },
+      "sha256": "3cb5bccda1b94f3cd5588d2888ece78f0d4fd3a617fa8408e7287dd903d446c2",
+      "bytes": 183918,
+      "modifications": "Bez zmian geografii, podpisów i kolorów. Sprawdzono brak wykonywalnej treści i zewnętrznego DOCTYPE; adres przestrzeni nazw nie jest pobieranym DTD.",
+      "publication_approval": false,
+      "upstream_sha256": "3cb5bccda1b94f3cd5588d2888ece78f0d4fd3a617fa8408e7287dd903d446c2"
+    },
+    {
+      "id": "frg-1949",
+      "file": "assets/frg-1949.svg",
+      "status": "downloaded",
+      "selection": "selected_rights_pending",
+      "page_url": "https://germanhistorydocs.org/en/occupation-and-the-emergence-of-two-states-1945-1961/states-of-the-federal-republic-1949",
+      "resource_url": "https://germanhistorydocs.org/media/volume-8/map-527/87236_ca_object_representations_media_5161_original.svg",
+      "author": "IEG-MAPS, Institut für Europäische Geschichte Mainz, A. Kunz; rewizja Gabriel Moss",
+      "creation_date": "A. Kunz 2005; rewizja Gabriel Moss 2021",
+      "represented_date": "1949",
+      "license": "Indywidualna licencja mapy niepodana; © A. Kunz. GHDI: indywidualny, akademicki, edukacyjny i niekomercyjny użytek; prawa dalszej publikacji do wyjaśnienia",
+      "license_url": "https://germanhistorydocs.org/en/terms",
+      "attribution": "IEG-MAPS, Institut für Europäische Geschichte Mainz, A. Kunz; rewizja Gabriel Moss",
+      "shows": "Kraje RFN, sąsiednia NRD, osobno oznaczony Berlin Zachodni; Saara jako protektorat francuski.",
+      "cautions": "Podział landów z 1949, nie dzisiejszy. Berlin Zachodni jest odrębnie pokazany, ale sam obraz nie wyjaśnia całego statusu czteromocarstwowego; zestawić z mapą sektorów.",
+      "source_evidence": "evidence/ghdi-frg1949.html",
+      "pixel_review": {
+        "reviewed": true,
+        "method": "Native visual inspection of downloaded raster or actual Chromium rasterization of source SVG",
+        "preview": "evidence/frg-1949-preview.png",
+        "observations": "Kraje RFN, sąsiednia NRD, osobno oznaczony Berlin Zachodni; Saara jako protektorat francuski."
+      },
+      "sha256": "9b11d9812615e4a49a2576bf1921225e776d5121314a5c5b1fe4da49a7cad194",
+      "bytes": 1693395,
+      "modifications": "Bez zmian geografii, podpisów i kolorów. Sprawdzono brak wykonywalnej treści i zewnętrznego DOCTYPE; adres przestrzeni nazw nie jest pobieranym DTD.",
+      "publication_approval": false,
+      "upstream_sha256": "9b11d9812615e4a49a2576bf1921225e776d5121314a5c5b1fe4da49a7cad194"
+    },
+    {
+      "id": "occupation-zones",
+      "file": "assets/occupation-zones.webp",
+      "status": "downloaded",
+      "selection": "selected",
+      "page_url": "https://zpe.gov.pl/a/skutki-ii-wojny-swiatowej/D7drJuTQC",
+      "resource_url": "https://static.zpe.gov.pl/portal/f/res-minimized/R1XMKgzoUONra/1662387831/1lhLcy4lBDlWr3v7quWalhn2wJQgTdUw.jpg.webp",
+      "author": "Krystian Chariza i zespół",
+      "creation_date": "data opracowania niepodana; timestamp serwera nie jest datą autorstwa",
+      "represented_date": "Wielodatowa mapa: strefy po 1945; RFN i NRD od 1949, Austria od 1955, Saara od 1957.",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "attribution": "Krystian Chariza i zespół",
+      "shows": "Polska mapa stref okupacyjnych Niemiec i Austrii, z oryginalną wielodatową legendą.",
+      "cautions": "Nie jest jednym migawkowym stanem 1945: legenda zawiera różne daty aż po 1957. W lekcji czytamy warstwę stref okupacyjnych. Nie zawiera szczegółowej mapy sektorów Berlina; zestawiono z berlin-sectors-1945.",
+      "source_evidence": "evidence/zpe-skutki.html",
+      "pixel_review": {
+        "reviewed": true,
+        "method": "Native visual inspection of downloaded raster or actual Chromium rasterization of source SVG",
+        "preview": null,
+        "observations": "Polska mapa stref okupacyjnych Niemiec i Austrii, z oryginalną legendą, Bizonią i Trizonią."
+      },
+      "sha256": "41a028360cb9f0532a80dc3e5adf16a9c5acb98de1b82bce8778206e1c39d68f",
+      "bytes": 320186,
+      "modifications": "Brak lokalnego kadrowania, retuszu, tłumaczenia wewnątrz obrazu ani zmiany geografii.",
+      "publication_approval": false,
+      "upstream_sha256": "41a028360cb9f0532a80dc3e5adf16a9c5acb98de1b82bce8778206e1c39d68f"
+    },
+    {
+      "id": "europe-1949-labelled",
+      "file": "assets/europe-1949-labelled.jpg",
+      "status": "downloaded",
+      "selection": "selected_rights_pending",
+      "page_url": "https://omniatlas.com/maps/europe/19491007",
+      "resource_url": "https://omniatlas-media.b-cdn.net/dist/img/articles/complete/europe/europe19491007_rHSkJah.jpg",
+      "author": "Rick Westera / Omniatlas (meta author)",
+      "creation_date": "© 2019 na obrazie; bieżąca strona © 2011–2026",
+      "represented_date": "7 X 1949, jedna migawka końcowej fazy lat 1945–1949; NIE cały przebieg procesu",
+      "license": "Copyright Omniatlas; brak ustalonej otwartej licencji. Link Download map nie stanowi zezwolenia publikacji.",
+      "license_url": null,
+      "attribution": "Rick Westera / Omniatlas (meta author)",
+      "shows": "Polityczna mapa Europy i basenu Morza Śródziemnego: Polska, Czechosłowacja, Węgry, Rumunia, Bułgaria podpisane Soviet satellite; wschodnie Niemcy Soviet occupied; osobne West Berlin i Jugosławia.",
+      "cautions": "Oryginalna legenda zachowana osobno: https://omniatlas.com/maps/europe/19491007/key/ oraz evidence/omni1949-key.html. Wersji bez podpisów nie używać zamiast wersji opisanej. Autor zastrzega, że kolory opisują kontrolę/wpływy, nie legitymizację granic. Nie twierdzić, że 1949 istniał Układ Warszawski.",
+      "source_evidence": "evidence/omni1949.html",
+      "pixel_review": {
+        "reviewed": true,
+        "method": "Native visual inspection of downloaded raster or actual Chromium rasterization of source SVG",
+        "preview": null,
+        "observations": "Polityczna mapa Europy i basenu Morza Śródziemnego: Polska, Czechosłowacja, Węgry, Rumunia, Bułgaria podpisane Soviet satellite; wschodnie Niemcy Soviet occupied; osobne West Berlin i Jugosławia."
+      },
+      "sha256": "0845d35e4ea104577f1b0fd3f49e6585362d18662a938532c59cbe8a87e232b0",
+      "bytes": 228166,
+      "modifications": "Brak lokalnego kadrowania, retuszu, tłumaczenia wewnątrz obrazu ani zmiany geografii.",
+      "publication_approval": false,
+      "upstream_sha256": "0845d35e4ea104577f1b0fd3f49e6585362d18662a938532c59cbe8a87e232b0"
+    },
+    {
+      "id": "berlin-airlift",
+      "file": "assets/berlin-airlift.jpg",
+      "status": "downloaded",
+      "selection": "selected",
+      "page_url": "https://history.state.gov/milestones/1945-1952/berlin-airlift",
+      "resource_url": "https://static.history.state.gov/milestones/berlin-airlift.jpg",
+      "author": "U.S. Air Force; fotograf indywidualny nieustalony",
+      "creation_date": "1948–1949; dzień nieustalony",
+      "represented_date": "most powietrzny 1948–1949",
+      "license": "Urzędowa praca rządu federalnego USA: domena publiczna w USA; indywidualny kredyt USAF",
+      "license_url": "https://www.law.cornell.edu/uscode/text/17/105",
+      "attribution": "U.S. Air Force; fotograf indywidualny nieustalony",
+      "shows": "Samoloty U.S. Navy i Air Force rozładowywane na lotnisku Tempelhof, ciężarówki i terminal.",
+      "cautions": "Skopiowano istniejący lokalny plik bez edycji lekcji; nie podawać wymyślonego dnia ani fotografa.",
+      "source_evidence": "evidence/airlift-source.html",
+      "pixel_review": {
+        "reviewed": true,
+        "method": "Native visual inspection of downloaded raster or actual Chromium rasterization of source SVG",
+        "preview": null,
+        "observations": "Samoloty U.S. Navy i Air Force rozładowywane na lotnisku Tempelhof, ciężarówki i terminal."
+      },
+      "sha256": "986b71139e003bf5f37b601ea5a372aeaea03c8c19f0b1da11feae7ad8607e39",
+      "bytes": 40560,
+      "modifications": "Brak lokalnego kadrowania, retuszu, tłumaczenia wewnątrz obrazu ani zmiany geografii.",
+      "publication_approval": false,
+      "upstream_sha256": "986b71139e003bf5f37b601ea5a372aeaea03c8c19f0b1da11feae7ad8607e39"
+    },
+    {
+      "id": "wall-brandenburg-1961",
+      "file": "assets/wall-brandenburg-1961.jpg",
+      "status": "downloaded",
+      "selection": "selected",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_B_145_Bild-P061246.jpg?uselang=en",
+      "resource_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Bundesarchiv_Bild_B_145_Bild-P061246.jpg",
+      "author": "o.Ang. (fotograf nieustalony) / Bundesarchiv",
+      "creation_date": "lato/jesień 1961",
+      "represented_date": "lato/jesień 1961",
+      "license": "CC BY-SA 3.0 DE",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "attribution": "Bundesarchiv, Bild 145-P061246 / o.Ang. / CC-BY-SA 3.0",
+      "shows": "Brama Brandenburska i budowa muru; widok z góry, segmenty muru, pojazdy wojskowe i budowlane, okolica po obu stronach.",
+      "cautions": "Nie datować na 13 VIII: katalog podaje lato/jesień 1961. Oryginalny podpis Schandmauer to wartościujące słownictwo źródła, nie neutralny opis.",
+      "source_evidence": "evidence/wall-brandenburg.html",
+      "pixel_review": {
+        "reviewed": true,
+        "method": "Native visual inspection of downloaded raster or actual Chromium rasterization of source SVG",
+        "preview": null,
+        "observations": "Brama Brandenburska i budowa muru; widok z góry, segmenty muru, pojazdy wojskowe i budowlane, okolica po obu stronach."
+      },
+      "sha256": "82c3ef1a3537c5cb02ec68f8b6ae7f0c1ec093b8539c4a1665d121a3e6095af9",
+      "bytes": 75568,
+      "modifications": "Brak lokalnego kadrowania, retuszu, tłumaczenia wewnątrz obrazu ani zmiany geografii.",
+      "publication_approval": false,
+      "upstream_sha256": "82c3ef1a3537c5cb02ec68f8b6ae7f0c1ec093b8539c4a1665d121a3e6095af9"
+    },
+    {
+      "id": "ruiny-warszawy",
+      "file": "assets/ruiny-warszawy.webp",
+      "page_url": "https://zpe.gov.pl/a/geneza-zimnej-wojny/DyHff9ODa",
+      "resource_url": "https://static.zpe.gov.pl/portal/f/res-minimized/Ry1af4KYMLM5U/1662387774/1mckmuHKlD88wiKEl0n8M5xKAX54DNWP.jpg.webp",
+      "author": "M. Swierczynski",
+      "creation_date": "styczeń 1945",
+      "represented_date": "Zniszczona Warszawa, styczeń 1945",
+      "license": "Domena publiczna",
+      "license_url": null,
+      "shows": "Zniszczona Warszawa, styczeń 1945",
+      "cautions": "Identyfikacja i prawa według indywidualnego podpisu ZPE; nie wywodzić danych z daty pliku serwera.",
+      "sha256": "fcdfe4311ba1255b72ea970a11c9b066300005c1d2febaf68a9cccd1328f2e19",
+      "bytes": 242674,
+      "modifications": "Bez retuszu i kadrowania.",
+      "publication_approval": false,
+      "source_evidence": "/opt/data/history-production/2026-11-16/grade8/teacher-revision/media-research/evidence/zpe-geneza.html",
+      "pixel_review": {
+        "reviewed": true,
+        "method": "Własne obejrzenie rzeczywistych pobranych obrazów w vision_analyze",
+        "observations": "Zniszczona Warszawa, styczeń 1945"
+      }
+    },
+    {
+      "id": "wysiedlona-rodzina",
+      "file": "assets/wysiedlona-rodzina.webp",
+      "page_url": "https://zpe.gov.pl/a/skutki-ii-wojny-swiatowej/D7drJuTQC",
+      "resource_url": "https://static.zpe.gov.pl/portal/f/res-minimized/R1BVXw1XiuKeE/1662387825/rEoPQTgNprc6wnGlnCkNZfZ2cp7egKSY.jpg.webp",
+      "author": "autor nieznany",
+      "creation_date": "1948 według oryginalnego podpisu w pikselach",
+      "represented_date": "Wysiedlona rodzina niemiecka, 1948; miejsce nieustalone",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "shows": "Wysiedlona rodzina niemiecka; dzień i miejsce nieustalone",
+      "cautions": "Zachowano oryginalny kredyt Bundesarchiv w obrazie. Rok 1948 odczytany z oryginalnego nadruku; strona ZPE nie podaje daty w podpisie.",
+      "sha256": "45bd4e57e19cf73f9f4a14fa76c8b54ca66c29d33a9c1b5a266b786741b2f0c3",
+      "bytes": 75256,
+      "modifications": "Bez retuszu i kadrowania.",
+      "publication_approval": false,
+      "source_evidence": "/opt/data/history-production/2026-11-16/grade8/teacher-revision/media-research/evidence/zpe-skutki.html",
+      "attribution": "Bundesarchiv, Bild 183-W0911-501 / o.Ang.; indywidualny podpis ZPE CC BY-SA 3.0",
+      "pixel_review": {
+        "reviewed": true,
+        "method": "Własne obejrzenie rzeczywistych pobranych obrazów w vision_analyze",
+        "observations": "Wysiedlona rodzina niemiecka; dzień i miejsce nieustalone"
+      }
+    },
+    {
+      "id": "zagrabione-obrazy",
+      "file": "assets/zagrabione-obrazy.webp",
+      "page_url": "https://zpe.gov.pl/a/skutki-ii-wojny-swiatowej/D7drJuTQC",
+      "resource_url": "https://static.zpe.gov.pl/portal/f/res-minimized/R1009Co3AC52C/1662387829/2Dzl2ULPtY2IQQw6NMIRjOKaLCyPuwmD.jpg.webp",
+      "author": "autor nieznany",
+      "creation_date": "Data nieustalona",
+      "represented_date": "Eisenhower w magazynie dzieł zagrabionych przez III Rzeszę; dzień nieustalony",
+      "license": "Domena publiczna",
+      "license_url": null,
+      "shows": "Eisenhower w magazynie dzieł zagrabionych przez III Rzeszę; dzień nieustalony",
+      "cautions": "Identyfikacja i prawa według indywidualnego podpisu ZPE; nie wywodzić danych z daty pliku serwera.",
+      "sha256": "2b8cc959d061d3f1306315da92d744ca19b0c439f37103ff20464612ebd9a3e9",
+      "bytes": 174156,
+      "modifications": "Bez retuszu i kadrowania.",
+      "publication_approval": false,
+      "source_evidence": "/opt/data/history-production/2026-11-16/grade8/teacher-revision/media-research/evidence/zpe-skutki.html",
+      "pixel_review": {
+        "reviewed": true,
+        "method": "Własne obejrzenie rzeczywistych pobranych obrazów w vision_analyze",
+        "observations": "Eisenhower w magazynie dzieł zagrabionych przez III Rzeszę; dzień nieustalony"
+      }
+    },
+    {
+      "id": "marshall",
+      "file": "assets/marshall.jpg",
+      "page_url": "https://zpe.gov.pl/a/przeczytaj/D13CduMSg",
+      "resource_url": "https://static.zpe.gov.pl/portal/f/res-minimized/R64weNih8HGHu/1621556642/tyK3k2cUYWdMuKqbiONbv86R0hx0hMAa.jpg",
+      "author": "Departament Stanu USA według indywidualnego podpisu ZPE",
+      "creation_date": "Data i fotograf nieustaleni",
+      "represented_date": "George C. Marshall",
+      "license": "Domena publiczna według podpisu ZPE",
+      "shows": "Portret George’a C. Marshalla",
+      "sha256": "278d529d5058f5ec48ebe737d183d035e1f776c67d4ca6f4305094bbc3e4b8ed",
+      "bytes": 100386,
+      "publication_approval": false,
+      "modifications": "Bez zmian."
+    },
+    {
+      "id": "schumann-1961-textbook",
+      "file": "assets/schumann-1961-textbook.jpg",
+      "status": "supplied_crop",
+      "selection": "selected_rights_pending",
+      "page_url": "https://www.loc.gov/item/2010645736/",
+      "resource_url": null,
+      "input_file": "/opt/data/cache/images/img_c952323fb05b.jpg",
+      "input_pages": "102–103",
+      "author": "Peter Leibing; identyfikacja katalogowa LoC, nie sam podpis podręcznika",
+      "creation_date": "15 VIII 1961",
+      "represented_date": "15 VIII 1961",
+      "license": "Nieustalona licencja fotografii i reprodukcji podręcznikowej; wyłącznie prywatny przegląd, nie publikować",
+      "license_url": null,
+      "attribution": "Peter Leibing; identyfikacja katalogowa LoC, nie sam podpis podręcznika",
+      "shows": "Conrad Schumann przeskakuje drut w Berlinie",
+      "cautions": "Kadr z przesłanego zdjęcia podręcznika, ograniczona rozdzielczość. Identyfikacja i datowanie nie ustalają prawa publikacji.",
+      "source_evidence": "/opt/data/history-production/2026-11-17/grade8/berlin-wall-revision/research/textbook-102-103-reading.json",
+      "verification_urls": [
+        "https://www.loc.gov/item/2010645736/",
+        "https://www.chronik-der-mauer.de/fluchten/180921/sprung-in-die-freiheit-die-flucht-des-ddr-grenzpolizisten-conrad-schumann-15-august-1961"
+      ],
+      "sha256": "f7d144ba8b0ed1398cd7a62ff9d49045c2bf98ad67a19249f91b779f1ae7a7a7",
+      "bytes": 26801,
+      "modifications": "Wycięto wyłącznie prostokąt zdjęcia bez tekstu strony; brak generowania, retuszu i skalowania. Zachowano znacznik 1 na fotografii Kennedy’ego.",
+      "crop_xywh": [
+        322,
+        479,
+        250,
+        232
+      ],
+      "publication_approval": false
+    },
+    {
+      "id": "kennedy-1963-textbook",
+      "file": "assets/kennedy-1963-textbook.jpg",
+      "status": "supplied_crop",
+      "selection": "selected_rights_pending",
+      "page_url": "https://en.wikipedia.org/wiki/Ich_bin_ein_Berliner",
+      "resource_url": null,
+      "input_file": "/opt/data/cache/images/img_c952323fb05b.jpg",
+      "input_pages": "102–103",
+      "author": "Fotograf nieustalony; identyfikacja Kennedy’ego i wydarzenia na podstawie podpisu dostarczonej s. 103",
+      "creation_date": "1963; wizyta Kennedy’ego 26 VI 1963, dzień zdjęcia nieustalony niezależnie",
+      "represented_date": "1963; wizyta Kennedy’ego 26 VI 1963, dzień zdjęcia nieustalony niezależnie",
+      "license": "Nieustalona licencja fotografii i reprodukcji podręcznikowej; wyłącznie prywatny przegląd, nie publikować",
+      "license_url": null,
+      "attribution": "Fotograf nieustalony; identyfikacja Kennedy’ego i wydarzenia na podstawie podpisu dostarczonej s. 103",
+      "shows": "Kennedy ogląda mur z podestu, nie wygłasza słynnego przemówienia",
+      "cautions": "Kadr z przesłanego zdjęcia podręcznika, ograniczona rozdzielczość. Identyfikacja i datowanie nie ustalają prawa publikacji.",
+      "source_evidence": "/opt/data/history-production/2026-11-17/grade8/berlin-wall-revision/research/textbook-102-103-reading.json",
+      "verification_urls": [
+        "https://en.wikipedia.org/wiki/Ich_bin_ein_Berliner",
+        "https://en.wikipedia.org/wiki/Checkpoint_Charlie"
+      ],
+      "sha256": "b8b9acdafe15d9c3c895fe1060a75fc925acff77fbad582502fa17b4d474db2b",
+      "bytes": 51652,
+      "modifications": "Wycięto wyłącznie prostokąt zdjęcia bez tekstu strony; brak generowania, retuszu i skalowania. Zachowano znacznik 1 na fotografii Kennedy’ego.",
+      "crop_xywh": [
+        663,
+        522,
+        372,
+        234
+      ],
+      "publication_approval": false
+    }
+  ],
+  "videos": [
+    {
+      "id": "jb5QR2cbdug",
+      "status": "teacher_selected",
+      "page_url": "https://www.youtube.com/watch?v=jb5QR2cbdug",
+      "embed_url": "https://www.youtube-nocookie.com/embed/jb5QR2cbdug?rel=0",
+      "title": "Z dnia na dzień mur rozdzielił mieszkańców Berlina!",
+      "author": "National Geographic Polska",
+      "duration_seconds_metadata": 190,
+      "downloaded": false,
+      "full_audio_reviewed": false,
+      "visual_review_scope": "wcześniejszy research: 20 próbek i automatyczne napisy, nie pełny odsłuch",
+      "verification_scope_this_revision": "launcher click/Enter oraz fallback, bez certyfikacji odtwarzania",
+      "publication_approval": false
+    },
+    {
+      "id": "ted-berlin-wall",
+      "status": "proposal_only",
+      "title": "The rise and fall of the Berlin Wall - Konrad H. Jarausch",
+      "page_url": "https://www.youtube.com/watch?v=A9fQPzZ1-hg",
+      "resource_url": null,
+      "downloaded": false,
+      "author": "TED-Ed; lesson Konrad H. Jarausch; animation Remus & Kiki; narration Addison Anderson",
+      "publication_date": "2017-08-16",
+      "duration_seconds_metadata": 386,
+      "duration_seconds_playback": 385.861,
+      "duration_label": "6:26",
+      "language": "Angielska narracja. Polski track napisów widnieje w metadanych, ale endpoint zwrócił 0 bajtów; treści napisów nie zatwierdzono.",
+      "license": "Brak potwierdzonej licencji do kopiowania. Propozycja oglądania na stronie źródłowej; nie pobrano filmu ani nie osadzono w slajdach.",
+      "no_talking_presenter": "Próbki to animacja rysunkowa i animowane mapy, nie filmowane wystąpienie prezentera. Rysunkowe portrety przywódców nie są gadającym prowadzącym.",
+      "playback": {
+        "verified": true,
+        "muted": true,
+        "audio_reviewed": false,
+        "evidence": [
+          "evidence/ted-playback-samples.json",
+          "evidence/ted-playback-100.json"
+        ],
+        "samples": [
+          {
+            "start": 40.378139,
+            "end": 42.590958,
+            "paused": false,
+            "frames_before": 158,
+            "frames_after": 211
+          },
+          {
+            "start": 105.721879,
+            "end": 108.235716,
+            "paused": false,
+            "frames_before": 248,
+            "frames_after": 308
+          }
+        ]
+      },
+      "visual_review": {
+        "reviewed": true,
+        "evidence": [
+          "evidence/ted-sample-40.png",
+          "evidence/ted-verified-100.png",
+          "evidence/ted-storyboard-0.jpg",
+          "evidence/ted-storyboard-2.jpg",
+          "evidence/ted-storyboard-4.jpg",
+          "evidence/ted-storyboard-6.jpg",
+          "evidence/ted-storyboard-8.jpg"
+        ],
+        "storyboard_windows_seconds": [
+          [
+            0,
+            40
+          ],
+          [
+            90,
+            130
+          ],
+          [
+            180,
+            220
+          ],
+          [
+            270,
+            310
+          ],
+          [
+            360,
+            385
+          ]
+        ],
+        "note": "Klatki storyboardowe po czasie końca filmu są paddingiem, nie materiałem."
+      },
+      "suggested_review": {
+        "start_url": "https://www.youtube.com/watch?v=A9fQPzZ1-hg&t=36s",
+        "manual_stop": "2:01",
+        "reason": "Dla nauczyciela do wglądu: powojenny podział i status Berlina, bez konieczności oglądania całej historii muru. Nie jest to zatwierdzony językowo wycinek do lekcji."
+      },
+      "publication_approval": false
+    }
+  ],
+  "publication": {
+    "approved": false,
+    "published": false
+  }
+}

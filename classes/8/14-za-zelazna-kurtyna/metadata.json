@@ -1,0 +1,51 @@
+{
+  "id": "14-za-zelazna-kurtyna",
+  "title": "Za żelazną kurtyną",
+  "grade": 8,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa",
+  "duration_minutes": 45,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "presentation_mode": "slides",
+  "goalContract": {
+    "version": "1.0"
+  },
+  "presentationContract": {
+    "version": "1.0"
+  },
+  "status": "DO PRZEGLĄDU NAUCZYCIELA",
+  "curriculum_requirement": "XXXV.3: wskazuje na mapie państwa NATO i Układu Warszawskiego, charakteryzując oba bloki polityczno-wojskowe; XXXV.4: charakteryzuje politykę ZSRS wobec państw bloku wschodniego na przykładzie interwencji zbrojnych na Węgrzech i Czechosłowacji;",
+  "main_question": "Jak Moskwa ograniczała samodzielność państw za żelazną kurtyną i co działo się przy próbach zmiany?",
+  "source_reviewed": false,
+  "teacher_reviewed": true,
+  "offline_checked": true,
+  "pdf_exported": false,
+  "appearance": {
+    "style": "source-lab",
+    "palette": "evidence-grey"
+  },
+  "teacher_accepted": false,
+  "publication_approved": true,
+  "revision": {
+    "date": "2026-11-19",
+    "scope": "Nowa Era104–108 jako szkolna podstawa; wybiórcze uzupełnienie z obejrzanych106–113 drugiego podręcznika (wydawca niepotwierdzony): Schuman/EWWiS–RWPG, RWE, przyczyny Węgier; pełny referat NE106 bez zmian; bez wykładu1968; wybrany przez nauczycielkę film PKiN po propagandzie",
+    "teacher_feedback_implemented": true,
+    "classroom_timing_verified": false,
+    "author_source_check": true,
+    "final_teacher_acceptance": false
+  },
+  "curriculum_coverage": "XXXV.3: sojusze i mapy; XXXV.4: część dotycząca Węgier1956. Czechosłowacja1968 pozostaje poza zakresem tej rewizji, nie deklaruje się zamknięcia całego wymagania.",
+  "slide_count": 27,
+  "selected_video": {
+    "url": "https://www.youtube.com/watch?v=BGP_Rqvg7_0",
+    "video_id": "BGP_Rqvg7_0",
+    "slide_id": "film-socrealizm",
+    "runtime_seconds": 189,
+    "allocated_minutes": 3.5,
+    "mode": "click_to_load_embed_with_watch_link",
+    "autoplay": false,
+    "requires_internet": true,
+    "full_audio_reviewed": false
+  }
+}

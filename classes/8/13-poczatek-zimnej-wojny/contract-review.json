@@ -1,0 +1,15 @@
+{
+  "contractVersion": "1.0",
+  "presentationRevision": "8b0c2bd4fcfff82a90a42a776730d3c1ab93e9f1f08cd07733c98e00f58119ce",
+  "browser": {
+    "completed": true,
+    "issues": []
+  },
+  "human": {
+    "completed": false,
+    "blockers": [],
+    "warnings": [
+      "Niezależne oględziny rodzica i akceptacja nauczyciela pozostają otwarte."
+    ]
+  }
+}

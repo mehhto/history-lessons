@@ -1,0 +1,391 @@
+{
+  "lesson": "VIII. Za żelazną kurtyną",
+  "scope": "Aktywne media prywatnej rewizji lekcji14; historyczne zasoby pozostawione, ale nie są w aktywnym decku",
+  "teacher_url": "https://zpe.gov.pl/a/kraje-demokracji-ludowej/D1AdGHlOG",
+  "status": "verified_with_explicit_map_limitations",
+  "publication_approved": true,
+  "assets": [
+    {
+      "id": "soviet-expansion-1938-1948",
+      "selection": "selected_with_scope_limit",
+      "file": "assets/border-changes.png",
+      "dimensions": [
+        1280,
+        2176
+      ],
+      "bytes": 608552,
+      "sha256": "31b6fef2f41135c3893c26003efd28b47a24ab0277940e2dc06c18715af8ba23",
+      "page_url": "https://commons.wikimedia.org/wiki/File:EasternBloc_BorderChange38-48.svg",
+      "resource_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/EasternBloc_BorderChange38-48.svg/1280px-EasternBloc_BorderChange38-48.svg.png",
+      "vector_resource_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/EasternBloc_BorderChange38-48.svg",
+      "author": "Mosedschurte; bieżąca wersja z poprawkami Spesh531 i innych, historia zmian na karcie",
+      "creation_date": "pierwowzór 1 VI 2009; bieżąca wersja 17 VII 2023",
+      "represented_date": "zmiany 1938–1948; kategoria satelitów przed zerwaniem Tito–Stalin w 1948, nie stan 1955",
+      "license": "CC BY-SA 3.0 Unported; alternatywnie GFDL",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "shows": "Granice 1938 czarne, nowe granice zielone; ZSRS1938, wcielone lub powiększone republiki, satelici oraz ich nabytki mają odrębne kolory. Litwa, Łotwa, Estonia i Mołdawska SRS podpisane jako republiki sowieckie.",
+      "limits": "Nie rozdziela kolorem aneksji1939–40 od nowych nabytków1945; wymaga podpisu z report.md. Ograniczony europejski wycinek, nie pełna mapa nabytków azjatyckich ani migawka po1948. Jugosławia w kategorii satelitów dotyczy okresu sprzed rozłamu.",
+      "pixel_review": {
+        "reviewed": true,
+        "method": "Obejrzenie rzeczywistego PNG",
+        "observations": "Czytelna duża legenda, nazwy republik i satelitów; mapa wąska pionowa, bez kadrowania legendy. SVG bez script, foreignObject i zewnętrznych href."
+      },
+      "source_evidence": "evidence/border-changes.html",
+      "caption_pl": "Zmiany granic w Europie Środkowo-Wschodniej 1938–1948. Wcielenie ziem do ZSRS to nie to samo co podporządkowanie państwa satelickiego.",
+      "modifications": "Brak lokalnej zmiany geografii, kolorów i legendy. PNG jest renderem Commons, SVG kopią oryginału."
+    },
+    {
+      "id": "europe-1949",
+      "selection": "selected_private_rights_pending",
+      "file": "assets/europe-1949-labelled.jpg",
+      "dimensions": [
+        900,
+        620
+      ],
+      "bytes": 228166,
+      "sha256": "0845d35e4ea104577f1b0fd3f49e6585362d18662a938532c59cbe8a87e232b0",
+      "reuse_from": "/opt/data/history-lessons/classes/8/13-poczatek-zimnej-wojny/assets/europe-1949-labelled.jpg",
+      "page_url": "https://omniatlas.com/maps/europe/19491007",
+      "resource_url": "https://omniatlas-media.b-cdn.net/dist/img/articles/complete/europe/europe19491007_rHSkJah.jpg",
+      "legend_url": "https://omniatlas.com/maps/europe/19491007/key/",
+      "legend_evidence": "evidence/omni1949-key.html",
+      "author": "Rick Westera / Omniatlas",
+      "creation_date": "2019 według oznaczenia na obrazie",
+      "represented_date": "7 X 1949",
+      "license": "Copyright Omniatlas; brak ustalonej otwartej licencji, prywatna kopia badawcza, nie zatwierdzona do publikacji",
+      "license_url": null,
+      "shows": "Podpisani satelici ZSRS, strefy okupacyjne Niemiec i Austrii, osobna Jugosławia; granice republik ZSRS. Albania jest odrębnym państwem, mimo wspólnej purpurowej barwy wpływu.",
+      "limits": "Nie mapa Układu Warszawskiego1955 ani NATO lat80. Legenda atlasu opisuje kontrolę i wpływy, nie legalność aneksji. Rozdzielczość900px ogranicza powiększanie drobnych nazw.",
+      "pixel_review": {
+        "reviewed": true,
+        "method": "Obejrzenie lokalnej kopii",
+        "observations": "Polska/Czechosłowacja/Węgry/Rumunia/Bułgaria mają podpis Sov.sat. Jugosławia osobnym kolorem bez sowieckiego szrafu; ZSRS purpurowy."
+      },
+      "source_evidence": "evidence/omni1949.html",
+      "caption_pl": "Sowiecka strefa wpływów w Europie, 7 października1949. Jugosławia po zerwaniu ze Stalinem pozostaje państwem komunistycznym, ale poza blokiem podporządkowanym Moskwie.",
+      "modifications": "Bez zmian; powtórne użycie istniejącego pliku zamiast tworzenia nowej mapy."
+    },
+    {
+      "id": "khrushchev1963",
+      "selection": "selected",
+      "file": "assets/khrushchev-berlin-1963.jpg",
+      "dimensions": [
+        596,
+        800
+      ],
+      "bytes": 47883,
+      "sha256": "ab9456e099a0abc7aafeb5412bcf2bd6ecfff126331752b0a253cc0cc3887885",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B0628-0015-035,_Nikita_S._Chruschtschow.jpg",
+      "resource_url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Bundesarchiv_Bild_183-B0628-0015-035%2C_Nikita_S._Chruschtschow.jpg",
+      "author": "Heinz Junge / Bundesarchiv",
+      "attribution": "Bundesarchiv, Bild183-B0628-0015-035 / Heinz Junge / CC-BY-SA3.0",
+      "creation_date": "1963-06-28",
+      "place": "lotnisko Berlin-Schönefeld, NRD",
+      "license": "CC BY-SA3.0 DE",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/",
+      "shows": "Chruszczow podczas przemówienia powitalnego po przylocie do NRD; trzyma kartki, ma okulary i odznaczenia.",
+      "limits": "Portret późniejszy niż referat1956: nie podpisywać XXzjazd ani odczytywanie tajnego referatu. Oryginalny opis archiwalny ma propagandowy język wizyty przyjaźni.",
+      "pixel_review": {
+        "reviewed": true,
+        "method": "Obejrzenie oryginalnego JPEG",
+        "observations": "Wyraźna twarz i półpostać, kartki w dłoniach; odpowiedni portret postaci, nie dowód sceny1956."
+      },
+      "source_evidence": "evidence/khrushchev1963.html",
+      "caption_pl": "Nikita Chruszczow na lotnisku Berlin-Schönefeld, 28czerwca1963.",
+      "modifications": "Bez zmian; pobrano największy oryginał z karty pliku."
+    },
+    {
+      "id": "tito1942",
+      "selection": "selected_optional",
+      "file": "assets/tito-1942.webp",
+      "dimensions": [
+        412,
+        538
+      ],
+      "bytes": 27634,
+      "sha256": "73322b17f5d248609805743e8946da4d3f6a0e2c440027840f063cc4a2125e65",
+      "page_url": "https://zpe.gov.pl/a/kraje-demokracji-ludowej/D1AdGHlOG",
+      "resource_url": "https://static.zpe.gov.pl/portal/f/res-minimized/R1afR59KtzR8n/1662387751/1l90DRfMvu6ehXvbFWio7c11jqt8EEnF.jpg.webp",
+      "author": "Marxists Internet Archive — kredyt ZPE; fotograf indywidualny nieustalony",
+      "creation_date": "1942 według indywidualnego podpisu ZPE; dzień nieustalony",
+      "place": "nieustalone",
+      "license": "CC BY3.0 według indywidualnego podpisu ZPE",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "shows": "Josip Broz-Tito w kurtce wojskowej, czarno-biały portret z profilu.",
+      "limits": "Nie zdjęcie spotkania ze Stalinem ani rozłamu1948; portret wojenny. W zasobie ZPE brak większego linkowanego oryginału.",
+      "pixel_review": {
+        "reviewed": true,
+        "method": "Obejrzenie rzeczywistego WEBP",
+        "observations": "Rozpoznawalny portret, ziarno epokowej fotografii; do półkolumny, nie wielkiego tła."
+      },
+      "source_evidence": "evidence/zpe.html",
+      "caption_pl": "Josip Broz-Tito, portret z1942 roku.",
+      "modifications": "Bez zmian; zachowano udostępniony pełnoekranowy zasób ZPE."
+    },
+    {
+      "id": "hungary-demonstration24361",
+      "selection": "selected",
+      "file": "assets/hungary-demonstration.jpg",
+      "dimensions": [
+        3840,
+        2505
+      ],
+      "bytes": 2656238,
+      "sha256": "c3fe20c23175591d1497465ea57dcab99980d135f304e0c9ced0175654370a15",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Kossuth_Lajos_t%C3%A9r,_a_Munk%C3%A1smozgalmi_Int%C3%A9zet_(egykor_K%C3%BAria,_ma_N%C3%A9prajzi_M%C3%BAzeum)_%C3%A9p%C3%BClete._Fortepan_24361.jpg",
+      "resource_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Kossuth_Lajos_t%C3%A9r%2C_a_Munk%C3%A1smozgalmi_Int%C3%A9zet_%28egykor_K%C3%BAria%2C_ma_N%C3%A9prajzi_M%C3%BAzeum%29_%C3%A9p%C3%BClete._Fortepan_24361.jpg/3840px-Kossuth_Lajos_t%C3%A9r%2C_a_Munk%C3%A1smozgalmi_Int%C3%A9zet_%28egykor_K%C3%BAria%2C_ma_N%C3%A9prajzi_M%C3%BAzeum%29_%C3%A9p%C3%BClete._Fortepan_24361.jpg",
+      "author": "FOTO:FORTEPAN / Nagy Gyula; karta wymienia Nagy Gyula jako donatora, odrębne potwierdzenie fotografa nieustalone",
+      "attribution": "FOTO:FORTEPAN / Nagy Gyula / CC BY-SA3.0; Fortepan24361",
+      "creation_date": "1956; dokładny dzień nieustalony na karcie",
+      "place": "Budapeszt, Kossuth Lajos tér, przed dawnym gmachem Kúrii, wówczas Instytutem Ruchu Robotniczego",
+      "license": "CC BY-SA3.0 Unported",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "shows": "Demonstracja podczas powstania węgierskiego; gęsty tłum z flagami, budynek z kolumnadą.",
+      "limits": "Budynek w tle nie jest parlamentem. Nie dopisywać23X ani25X bez dodatkowego źródła. Karta źródłowa łączy ID24361 z historycznym URL fortepan39768 — zachowano identyfikację pliku Commons, nie pobierano niepewnego numeru.",
+      "pixel_review": {
+        "reviewed": true,
+        "method": "Obejrzenie pobranego3840px JPEG",
+        "observations": "Tłum i flagi dobrze widoczne, brak drastycznych scen; nie pomnik ani rekonstrukcja współczesna."
+      },
+      "source_evidence": "evidence/hungary-demonstration.html",
+      "caption_pl": "Demonstracja na placu Kossutha w Budapeszcie podczas powstania węgierskiego,1956. Dokładny dzień fotografii nieustalony.",
+      "modifications": "Bez kadrowania/retuszu. Oryginał4768×3110 HTTP429; pobrano linkowany na karcie3840px, nie małą miniaturę."
+    },
+    {
+      "id": "hungary-tanks24349",
+      "selection": "selected",
+      "file": "assets/hungary-tanks.jpg",
+      "dimensions": [
+        3840,
+        2435
+      ],
+      "bytes": 2531266,
+      "sha256": "a32b079fc886bd79a94691934a02007940d7940b6a14ddedd912410bfa5c20a9",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Budapest_VI.,_Andr%C3%A1ssy_%C3%BAt_a_Munk%C3%A1csy_Mih%C3%A1ly_utca_fel%C3%A9_n%C3%A9zve._Jobbr%C3%B3l_balra,_t%C3%ADpus_szerint-_egy_ISZ-3_neh%C3%A9z,_egy_T-34-85_k%C3%B6zepes_%C3%A9s_egy_PT-76_%C3%BAsz%C3%B3_harckocsi_l%C3%A1that%C3%B3_a_k%C3%A9pen._Fortepan_24349.jpg",
+      "resource_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Budapest_VI.%2C_Andr%C3%A1ssy_%C3%BAt_a_Munk%C3%A1csy_Mih%C3%A1ly_utca_fel%C3%A9_n%C3%A9zve._Jobbr%C3%B3l_balra%2C_t%C3%ADpus_szerint-_egy_ISZ-3_neh%C3%A9z%2C_egy_T-34-85_k%C3%B6zepes_%C3%A9s_egy_PT-76_%C3%BAsz%C3%B3_harckocsi_l%C3%A1that%C3%B3_a_k%C3%A9pen._Fortepan_24349.jpg/3840px-thumbnail.jpg",
+      "author": "FOTO:FORTEPAN / Nagy Gyula; donator/kredyt, odrębne potwierdzenie fotografa nieustalone",
+      "attribution": "FOTO:FORTEPAN / Nagy Gyula / CC BY-SA3.0; Fortepan24349",
+      "creation_date": "1956; dokładny dzień nieustalony na karcie",
+      "place": "Budapeszt VI, Andrássy út, widok w stronę Munkácsy Mihály utca;47.511810,19.073304 według karty",
+      "license": "CC BY-SA3.0 Unported",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "shows": "Sowieckie czołgi podczas rewolucji1956; od prawej IS-3, T-34-85, PT-76 według opisu katalogowego.",
+      "limits": "Pokazuje obecność wojsk, nie samo strzelanie ani moment szturmu4XI. Nie jest Pragą1968. Historyczny URL fortepan39756 na karcie różni się od ID24349; nie podmieniano obrazu z pamięci.",
+      "pixel_review": {
+        "reviewed": true,
+        "method": "Obejrzenie pobranego3840px JPEG",
+        "observations": "Trzy pojazdy pancerne stoją na zadrzewionej ulicy; żadnej widocznej aktywnej walki. Nadaje się do kontrastu z demonstracją."
+      },
+      "source_evidence": "evidence/hungary-tanks.html",
+      "caption_pl": "Sowieckie czołgi przy Andrássy út w Budapeszcie podczas powstania1956. Dokładny dzień fotografii nieustalony.",
+      "modifications": "Bez kadrowania/retuszu. Oryginał4820×3056 HTTP429; pobrano linkowany3840px."
+    },
+    {
+      "id": "dinner1959",
+      "selection": "selected_alternative_larger",
+      "file": "assets/commons-dinner1959.png",
+      "dimensions": [
+        1190,
+        1006
+      ],
+      "bytes": 932214,
+      "sha256": "0bb43e6bf51f419e95b3eef3838b96258c7e1ff522202ff2a8c96679228b5883",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Dwight_Eisenhower_Nikita_Khrushchev_and_their_wives_at_state_dinner_1959.png",
+      "resource_url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Dwight_Eisenhower_Nikita_Khrushchev_and_their_wives_at_state_dinner_1959.png",
+      "author": "National Archives and Records Administration — kredyt karty; fotograf indywidualny nieustalony",
+      "creation_date": "1959; dzień nieustalony na głównej karcie pliku",
+      "place": "nieustalone z tej karty; nie dopisywać konkretnej sali",
+      "license": "Domena publiczna, PD-USGov według Commons",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "shows": "Od lewej Nina Chruszczowa, Mamie Eisenhower, Nikita Chruszczow, Dwight Eisenhower podczas przyjęcia państwowego1959.",
+      "limits": "Nie scena podręcznikowa z kolorowej fotografii na s.108. Większa alternatywa, lecz mniej dokładne dane miejsca i dnia; nie przenosić daty25IX z fotografii CampDavid.",
+      "pixel_review": {
+        "reviewed": true,
+        "method": "Obejrzenie oryginalnego PNG",
+        "observations": "Cztery osoby pozują, obaj przywódcy wyraźni; obraz w rozdzielczości dostatecznej do dużego slajdu."
+      },
+      "source_evidence": "evidence/commons-dinner1959.html",
+      "caption_pl": "Nina Chruszczowa, Mamie Eisenhower, Nikita Chruszczow i Dwight Eisenhower podczas przyjęcia państwowego,1959.",
+      "modifications": "Bez zmian; oryginał1190×1006."
+    },
+    {
+      "id": "europe-1949-key-pl",
+      "file": "assets/europe-1949-key-pl.png",
+      "page_url": "https://omniatlas.com/maps/europe/19491007/key/",
+      "author": "Polski skład legendy na podstawie źródłowego klucza Ricka Westery / Omniatlas",
+      "license": "Prawa atlasu nieustalone do publikacji; skład lokalny prywatny",
+      "modifications": "18 źródłowych kolorów bez zmiany kodów; polskie tłumaczenie objaśnień. Nie rysowano geografii.",
+      "represented_date": "7 X 1949",
+      "sha256": "8ae5401660a3ee2777c5e7aa67fa67d8907468d5cb6e7eec5b70c4cc1ca806bd",
+      "bytes": 109738
+    },
+    {
+      "id": "textbook-map-107",
+      "file": "assets/textbook-nato-uw-1949-1989.png",
+      "author": "Autor mapy i wydanie podręcznika nieustalone",
+      "page_url": null,
+      "source_input": "/opt/data/cache/images/img_1ef0e41cbaba.jpg",
+      "license": "Dostarczony skan; prawa do publicznej redystrybucji nieustalone",
+      "represented_date": "NATO1949–1989, UW; Albania z dopiskiem wystąpienia1968",
+      "modifications": "Wycinek (657,33,1212,386) z oryginału1234×808, bez retuszu; zachowano mapę i całą legendę. Nie podpisano stanem1955.",
+      "sha256": "e16dcd4358a5b0d650cd36b8b985efa919251f9c2c07b2e30fe445b132d38243",
+      "bytes": 242393
+    },
+    {
+      "id": "183-11500-0994",
+      "file": "assets/stalin-demonstration-berlin-1951.jpg",
+      "slide": "otwarcie",
+      "title": "File:Bundesarchiv Bild 183-11500-0994, Berlin, III. Weltfestspiele.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-11500-0994,_Berlin,_III._Weltfestspiele.jpg",
+      "resource_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Bundesarchiv_Bild_183-11500-0994%2C_Berlin%2C_III._Weltfestspiele.jpg",
+      "dimensions": [
+        800,
+        516
+      ],
+      "author": "Martin",
+      "creation_date": "9 August 1951 date QS:P571,+1951-08-09T00:00:00Z/11",
+      "license": "CC BY-SA 3.0 de",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "attribution": "Bundesarchiv, Bild 183-11500-0994 / Martin / CC-BY-SA 3.0",
+      "original_description": "For documentary purposes the German Federal Archive often retained the  original image captions , which may be  erroneous, biased, obsolete or politically extreme .          Illus-Martin \n 09.08.1951 \nDie große Demonstration am \"Tag der jungen Mädchen\" am 09.08.1951 zum Friedrichshain. \n \nJunge FDJlerinnen tragen das Portrtät des großen Stalin.",
+      "sha256": "9b1405db1ca2ea2fcace25fd47b875dd5cb2f14284d872152dd992445160d416",
+      "bytes": 75126,
+      "modifications": "Brak; oryginalny JPEG udostępniony przez Bundesarchiv w Commons, bez kadrowania i retuszu.",
+      "selection": "selected",
+      "shows": "Uczestniczki pochodu FDJ niosą liczne portrety Stalina w Berlinie Wschodnim, 9 VIII 1951.",
+      "limits": "Fotografia: Berlin Wschodni, 9 VIII 1951, uczestniczki FDJ niosą portrety Stalina podczas festiwalu młodzieży. To scena kultu jednostki i propagandy, nie portret Stalina ani dowód poparcia wszystkich mieszkańców. Wskaż obraz bez osobnego ćwiczenia.",
+      "pixel_review": {
+        "reviewed": true,
+        "method": "Oględziny rzeczywistego JPEG przez vision_analyze przed składem",
+        "observations": "Duża grupa uczestniczek, wiele portretów Stalina, brukowana ulica; scena propagandy, nie samotny portret."
+      }
+    },
+    {
+      "id": "183-15844-0027",
+      "file": "assets/propaganda-newspaper-worin-1952.jpg",
+      "slide": "demokracja-ludowa",
+      "title": "File:Bundesarchiv Bild 183-15844-0027, Worin, Mitglieder der LPG, Zeitungslektüre.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-15844-0027,_Worin,_Mitglieder_der_LPG,_Zeitungslekt%C3%BCre.jpg",
+      "resource_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Bundesarchiv_Bild_183-15844-0027%2C_Worin%2C_Mitglieder_der_LPG%2C_Zeitungslekt%C3%BCre.jpg/960px-Bundesarchiv_Bild_183-15844-0027%2C_Worin%2C_Mitglieder_der_LPG%2C_Zeitungslekt%C3%BCre.jpg",
+      "dimensions": [
+        960,
+        1320
+      ],
+      "author": "Horst Sturm",
+      "creation_date": "Taken on 11 August 1952",
+      "license": "CC BY-SA 3.0 de",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "attribution": "Bundesarchiv, Bild 183-15844-0027 / CC-BY-SA 3.0",
+      "original_description": "For documentary purposes the German Federal Archive often retained the  original image captions , which may be  erroneous, biased, obsolete or politically extreme .           Worin, Mitglieder der LPG, Zeitungslektüre \nZentralbild Sturm 11.8.1952 Durch die Bodenreform, die den Landarbeitern, Umsiedlern und landarmen Bauern Land gab, wurde für die werktätigen Bauern in der DDR der Weg frei zu einem besseren Leben. Die Regierung der DDR fördert und unterstützt weitgehend die Entwicklung der Landwirtschaft und die Verbeserung der Lage der werktätigen Bauern durch die MAS, durch Zuteilung von Zucht- und Nutzvieh, durch Gewährung günstiger Kredite und die Zuteilung von hochwertigem Saatgut und Dünger. In Worin bildeten 29 Neubauern eine Produktionsgenossenschaft, der sie den Namen \"Thomas Müntzer\" gaben, um durch genossenschaftliche Wirtschaft eine schnelle Steigerung der landwirtschaftlichen Produktion und eine weitere Verbesserung der Lebensbedingungen zu erreichen. UBz: Während einer Pause bei der Feldarbeit lesen Mitglieder der Produktionsgenossenschaft begeistert einen Bericht über ihre genossenschaftliche Wirtschaftsweise in der Zeitung.",
+      "sha256": "0f3c268ea862c9db68ae4925b3427c166c697326300f61da97805874feeef094",
+      "bytes": 173918,
+      "modifications": "Kopia serwowanego wariantu 960px; źródło ma maksymalnie 800px, powiększenie nie tworzy detali. Bez kadrowania, retuszu i usuwania znaków archiwalnych.",
+      "selection": "selected",
+      "shows": "Członkowie spółdzielni Thomas Müntzer w Worin czytają wspólnie gazetę, 11 VIII 1952.",
+      "limits": "Fotografia: Worin, NRD, 11 VIII 1952, członkowie spółdzielni Thomas Müntzer czytają gazetę. Oficjalny opis chwalił ich życie i entuzjazm; nie przyjmuj tego za dowód powszechnego dobrobytu lub dobrowolności kolektywizacji. Kadr pokazuje czytanie prasy, sam nie dowodzi działania cenzury.",
+      "pixel_review": {
+        "reviewed": true,
+        "method": "Oględziny rzeczywistego JPEG przez vision_analyze przed składem",
+        "observations": "Ludzie skupieni nad otwartą gazetą, worki i narzędzia; zachowano historyczny znak archiwalny."
+      }
+    },
+    {
+      "id": "183-20463-0006",
+      "file": "assets/collective-harvest-schenkenberg-1953.jpg",
+      "slide": "gospodarka",
+      "title": "File:Bundesarchiv Bild 183-20463-0006, Schenkenberg, Ernte, Mähdrescher und Strohpresse.jpg",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-20463-0006,_Schenkenberg,_Ernte,_M%C3%A4hdrescher_und_Strohpresse.jpg",
+      "resource_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Bundesarchiv_Bild_183-20463-0006%2C_Schenkenberg%2C_Ernte%2C_M%C3%A4hdrescher_und_Strohpresse.jpg/960px-Bundesarchiv_Bild_183-20463-0006%2C_Schenkenberg%2C_Ernte%2C_M%C3%A4hdrescher_und_Strohpresse.jpg",
+      "dimensions": [
+        960,
+        646
+      ],
+      "author": "Illner",
+      "creation_date": "21 July 1953 date QS:P571,+1953-07-21T00:00:00Z/11",
+      "license": "CC BY-SA 3.0 de",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "attribution": "Bundesarchiv, Bild 183-20463-0006 / CC-BY-SA 3.0",
+      "original_description": "For documentary purposes the German Federal Archive often retained the  original image captions , which may be  erroneous, biased, obsolete or politically extreme .           Schenkenberg, Ernte, Mähdrescher und Strohpresse \nZentralbild Illner x 21.7.1953 Erntezeit bei der LPG \"7. Oktober\" in Schenkenberg, Kreis Delitzsch Mit grossem Arbeitseifer sind die Genossenschaftsbauern der Produktionsgenossenschaft \"7. Oktober\" in Schenkenberg, unterstützt durch die MTS Döbernitz, mit dem Einbringen der Roggenernte beschäftigt. Alle Arbeitsgänge sind mechanisiert und werden nach dem sowjetischen Fließsystem durchgeführt. Das heisst, ohne Unterbrechung mäht und drischt der \"Stalinez 4\", werden die Körner abgefahren, das Stroh gepresst, die Felder nachts geschält und am anderen Morgen die Zwischenfrucht gedrillt. UBz: Unmittelbar hinter dem \"S4\" fährt die Strohpresse und presst das vom \"S4\" abgeworfene Stroh zu Ballen. Auch die Strohballen werden sofort vom Felde abgefahren.",
+      "sha256": "f4c3fc5f4464e38d1ca57f1ae4c0b1ad82073b8153bad74612a144afc7099b0e",
+      "bytes": 110308,
+      "modifications": "Kopia serwowanego wariantu 960px; źródło ma maksymalnie 800px, powiększenie nie tworzy detali. Bez kadrowania, retuszu i usuwania znaków archiwalnych.",
+      "selection": "selected",
+      "shows": "Kombajn i prasa do słomy pracują podczas żniw spółdzielni 7. Oktober w Schenkenberg, 21 VII 1953.",
+      "limits": "Fotografia: żniwa spółdzielni 7. Oktober w Schenkenberg, NRD, 21 VII 1953. Widać kombajn i prasę, nie moment odbierania ziemi. Oficjalny opis chwali mechanizację; zdjęcie nie dowodzi dobrowolności kolektywizacji ani jej ogólnego sukcesu.",
+      "pixel_review": {
+        "reviewed": true,
+        "method": "Oględziny rzeczywistego JPEG przez vision_analyze przed składem",
+        "observations": "Maszyny na polu, pracownicy; zachowany znak archiwalny. Nie widać przymusu ani ogólnego poziomu życia."
+      }
+    }
+  ],
+  "rejected_or_unfinished": [
+    {
+      "file": "evidence/zpe-demoludy.webp",
+      "reason": "Jednakowy czerwony kolor Jugosławii i ZSRS; brak legendy statusu i różnicy wcielenie/satelici. PRL sugeruje datowanie od1952, więc nie wolno podpisywać1949 tylko na podstawie obecności NRD."
+    },
+    {
+      "file": "evidence/aphg-urss1939-1949.pdf",
+      "reason": "Pełny skan poza assets i repo. Mapa ma legendę RSFSR/Kaliningrad1945, która miesza przydział1945 z formalnym obwodem1946; nie wybrano do montażu. Brak ustalonej licencji reprodukcji."
+    },
+    {
+      "file": "evidence/commons-khrushchev1959.png",
+      "reason": "Autentyczny, lecz tylko231×300; zastąpiony identyfikowanym portretem1963."
+    },
+    {
+      "file": "assets/europe-1949-legend.html",
+      "reason": "NIE MONTOWAĆ: nieudany roboczy wyciąg zawiera tylko caveat, nie legendę. Próba poprawy czeka na approval narzędzia. Pełna prawidłowa legenda zachowana w evidence/omni1949-key.html."
+    }
+  ],
+  "enrichment_revision": {
+    "date": "2026-11-19",
+    "school_textbook": "Nowa Era, s.104–108; wydanie nieustalone",
+    "supplementary_textbook": "wydawca niepotwierdzony, rzeczywiście obejrzane s.106–113",
+    "selected": [
+      "porównanie Schuman/EWWiS–RWPG",
+      "rola RWE",
+      "trudne warunki życia na Węgrzech"
+    ],
+    "new_assets": 0,
+    "schuman_quote_used": false,
+    "rights_change": "brak; dawne ograniczenia map i przekładu pozostają",
+    "input_hashes": "/opt/data/history-production/grade8/two-textbooks-2026-11-19/lesson14/input-hashes.json"
+  },
+  "textbook_inputs": [
+    {
+      "path": "/opt/data/cache/images/img_f3a24d3f5b5e.jpg",
+      "pages": "104–105",
+      "visually_reviewed": true
+    },
+    {
+      "path": "/opt/data/cache/images/img_1ef0e41cbaba.jpg",
+      "pages": "106–107",
+      "visually_reviewed": true
+    },
+    {
+      "path": "/opt/data/cache/images/img_77f44f82f7f3.jpg",
+      "pages": "108",
+      "visually_reviewed": true
+    }
+  ],
+  "issues": [
+    "Idealnej pojedynczej mapy rozdzielającej kolorem1939–40/1945 i wcielenia/satelitów nie zatwierdzono; wybrany rzeczywisty wariant1938–1948 wymaga jawnego objaśnienia.",
+    "Gateway wyszukiwania bywał niedostępny; bezpośrednie urllib z User-Agent działało.",
+    "Oryginały Fortepan na Commons zwracały429; pobrano3840px z rzeczywistych kart.",
+    "BrowserUse nie udostępniłCDP; lokalny Playwright wymagał projektowego PLAYWRIGHT_BROWSERS_PATH. Render wyciągu legendy wykrył błąd selekcji, nie zatwierdzono go jako gotowego."
+  ],
+  "selected_video": {
+    "url": "https://www.youtube.com/watch?v=BGP_Rqvg7_0",
+    "video_id": "BGP_Rqvg7_0",
+    "slide_id": "film-socrealizm",
+    "runtime_seconds": 189,
+    "allocated_minutes": 3.5,
+    "mode": "click_to_load_embed_with_watch_link",
+    "autoplay": false,
+    "requires_internet": true,
+    "full_audio_reviewed": false,
+    "channel": "National Geographic Polska",
+    "downloaded": false,
+    "verification": "Metadata, Polish ASR and 20 sampled images; not full audio review or school playback."
+  }
+}

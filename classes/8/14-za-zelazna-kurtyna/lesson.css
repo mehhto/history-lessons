@@ -1,0 +1,166 @@
+@font-face{font-family:"Lesson Work";src:url("../../../template/presentation/fonts/collection/work-sans-400.ttf");font-weight:400}
+@font-face{font-family:"Lesson Work";src:url("../../../template/presentation/fonts/collection/work-sans-700.ttf");font-weight:700}
+.reveal{--font-body:"Lesson Work",sans-serif;--font-heading:"Lesson Work",sans-serif}
+.reveal .slides section[data-slide-canvas]>.slide-content{display:block;max-width:none;margin:0;padding:42px 54px;font:27px/1.27 "Lesson Work",sans-serif;color:#202c2c;background:#f7faf8}
+.reveal .slides section[data-slide-canvas] :is(h1,h2,h3){font-family:"Lesson Work",sans-serif;text-transform:none;font-variant:normal;letter-spacing:-.025em;font-weight:700;color:inherit;background:none;border:0;padding:0;max-width:none}
+.reveal .slides section[data-slide-canvas] h2{font-size:43px;line-height:1.1;margin:0 0 28px}
+.reveal .slides section[data-slide-canvas] h3{font-size:29px;line-height:1.15;margin:0 0 18px}
+.reveal .slides section[data-slide-canvas] p{margin:0 0 23px}
+.reveal .slides section[data-slide-canvas] .lead{font-size:32px;line-height:1.28;margin-bottom:35px}
+.reveal .slides section[data-slide-canvas] .eyebrow,.reveal .slides section[data-slide-canvas] .date{font-size:23px;letter-spacing:0;font-weight:700}
+.reveal .slides section[data-slide-canvas] .small{font-size:22px;line-height:1.25}
+.reveal .slides section[data-slide-canvas] figure{margin:0;min-width:0}
+.reveal .slides section[data-slide-canvas] figure img{display:block;max-width:100%;width:100%;height:400px;object-fit:contain;border:0;box-shadow:none;background:none;margin:0}
+.reveal .slides section[data-slide-canvas] figcaption{font:20px/1.22 "Lesson Work",sans-serif;color:inherit;background:none;padding:0;margin-top:10px}
+.reveal .slides section[data-slide-canvas] .bar{font-size:25px;border-top:4px solid #44766b;padding-top:17px;margin-top:27px}
+.reveal .slides section[data-slide-canvas] .opening{position:relative;height:100%;border-left:16px solid #8bc7b5;padding-left:36px}
+.reveal .slides section#otwarcie>.slide-content{background:#214b43;color:#fff}
+.reveal .slides section#otwarcie h1{font-size:94px;line-height:1.02;margin:40px 0 32px}
+.reveal .slides section#otwarcie .opening-line{font-size:32px;line-height:1.25}
+.reveal .slides section#otwarcie .period{position:absolute;right:0;bottom:0;font-size:54px;font-weight:700;color:#a8dbc9}
+.reveal .fork{display:grid;grid-template-columns:1fr 1fr;gap:45px;margin-top:35px}
+.reveal .fork>div{border-top:6px solid #44766b;padding-top:23px}
+.reveal .indexed{margin:0}
+.reveal .indexed>div{display:grid;grid-template-columns:290px 1fr;gap:30px;border-top:2px solid #7eaaa0;padding:22px 0}
+.reveal .indexed dt{font-weight:700;font-size:28px;line-height:1.17}
+.reveal .indexed dd{margin:0;font-size:27px;line-height:1.26}
+.reveal .economics>div{padding:22px 0}
+.reveal .process{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:34px;margin:38px 0 32px;padding:0;border-top:5px solid #44766b}
+.reveal .process li{position:relative;margin:0;padding-top:23px}
+.reveal .process li::before{content:"";position:absolute;top:-12px;left:0;width:19px;height:19px;background:#214b43;border-radius:50%}
+.reveal .process p{font-size:26px;margin-top:20px!important}
+.reveal .portrait-story{display:grid;grid-template-columns:340px 1fr;gap:56px}
+.reveal .slides section[data-slide-canvas] .portrait-story img{height:470px}
+.reveal .slides section#tito .portrait-story{grid-template-columns:300px 1fr;gap:55px}
+.reveal .slides section#tito .portrait-story img{height:395px}
+.reveal .slides section#chruszczow .portrait-story p{font-size:26px;margin-bottom:20px}
+.reveal .slides section#rwpg>.slide-content{background:#d5eae1}
+.reveal .slides section#uklad-warszawski>.slide-content{background:#214b43;color:white}
+.reveal .slides section#uklad-warszawski .bar,.reveal .slides section#uklad-warszawski .fork>div{border-color:#a8dbc9}
+.reveal .slides section.map-slide[data-slide-canvas]>.slide-content{padding:18px;background:white;position:relative}
+.reveal .slides section.map-slide .map-side{position:absolute;right:26px;top:30px;width:350px;padding-left:24px;border-left:4px solid #44766b;font-size:23px;line-height:1.25}
+.reveal .slides section.map-slide .map-side h2{font-size:35px;margin-bottom:25px}
+.reveal .slides section.map-slide .map-side p{margin-bottom:23px}
+.reveal .slides section.map-slide .border-map{width:570px;height:684px;margin-left:90px}
+.reveal .slides section.map-slide .border-map img{height:684px;width:100%;object-fit:contain}
+.reveal .slides section.map-slide .europe-map{width:900px;height:684px}
+.reveal .slides section.map-slide .europe-map img{width:900px;height:684px;object-fit:contain}
+.reveal .slides section.map-slide .europe{width:270px;right:22px;font-size:22px}
+.reveal .slides section.map-slide .europe p{margin-bottom:16px}
+.reveal .slides section.map-slide .europe figure img{height:170px;width:240px;object-fit:contain}
+.reveal .slides section.map-slide .europe figcaption{font-size:20px;margin-top:6px}
+.reveal .slides section.map-slide .alliance-map{width:860px;height:684px}
+.reveal .slides section.map-slide .alliance-map img{width:860px;height:684px;object-fit:contain}
+.reveal .slides section.map-slide .alliances{width:300px}
+.reveal .slides section#przed-referatem>.slide-content{background:#d5eae1}
+.reveal .questions{display:block;margin:0;padding-left:40px}
+.reveal .questions li{font-size:29px;line-height:1.25;margin:0;padding:17px 0;border-top:2px solid #44766b}
+.reveal .slides section#przed-referatem .lead{font-size:28px;margin-bottom:22px}
+.reveal .slides section#przed-referatem .bar{margin-top:15px;font-size:24px}
+.reveal .slides section#referat>.slide-content{padding:32px 44px;background:#fff}
+.reveal .document{height:100%;border-left:8px solid #44766b;padding:5px 27px;box-sizing:border-box}
+.reveal .slides section#referat .eyebrow{font-size:22px;margin:0 0 15px}
+.reveal .slides section#referat h2{font-size:35px;line-height:1.13;margin:0 0 24px}
+.reveal .slides section#referat blockquote{font:26px/1.36 "Lesson Work",sans-serif;font-style:normal;background:none;box-shadow:none;padding:0;margin:0;width:auto;text-align:left;color:#202c2c}
+.reveal .slides section#odwilz>.slide-content{background:#214b43;color:white}
+.reveal .slides section#odwilz .indexed>div{border-color:#a8dbc9}
+.reveal .slides section[data-slide-canvas] .limit{border-top:6px solid #74b79e;padding-top:29px;margin-top:35px}
+.reveal .photo-story{display:grid;grid-template-columns:1.23fr 1fr;gap:36px}
+.reveal .photo-story p{font-size:26px}
+.reveal .slides section[data-slide-canvas] .photo-story img{height:405px}
+.reveal .slides section#wegry-przyczyny h2{font-size:41px}
+.reveal .timeline{display:grid;grid-template-columns:repeat(4,1fr);list-style:none;padding:0;margin:60px 0 35px;border-top:5px solid #44766b;gap:28px}
+.reveal .timeline li{position:relative;padding-top:28px;margin:0;font-size:26px}
+.reveal .timeline li::before{content:"";position:absolute;left:0;top:-11px;width:18px;height:18px;border-radius:50%;background:#214b43}
+.reveal .timeline b{font-size:31px}
+.reveal .timeline p{margin-top:20px!important;font-size:26px}
+.reveal .timeline p b{font-size:26px}
+.reveal .timeline.three{grid-template-columns:repeat(3,1fr);margin-top:60px}
+.reveal .slides section#wegry-interwencja>.slide-content{background:#202c2c;color:white}
+.reveal .slides section#wegry-interwencja .tank-photo img{height:415px}
+.reveal .slides section#wegry-interwencja .bar{margin-top:18px;border-color:#8bc7b5}
+.reveal .consequences{display:grid;grid-template-columns:repeat(3,1fr);gap:35px;margin-top:45px}
+.reveal .consequences>div{border-top:5px solid #44766b;padding-top:23px}
+.reveal .consequences p{font-size:27px;margin-top:20px!important}
+.reveal .diplomacy{grid-template-columns:1.1fr 1fr}
+.reveal .slides section#usa-u2 .photo-story img{height:420px}
+.reveal .copy-time{font-size:23px;color:#35584f}
+.reveal .note-network{position:relative;height:480px;margin-top:32px}
+.reveal .note-hub{position:absolute;left:435px;top:155px;width:295px;background:#214b43;color:white;text-align:center;padding:25px 10px;font-size:29px;font-weight:700;box-sizing:border-box}
+.reveal .note-hub small{font-size:21px;font-weight:400;display:block;margin-top:12px}
+.reveal .note-branch{position:absolute;width:385px;border-top:5px solid #44766b;padding-top:14px;font-size:25px}
+.reveal .note-branch p{font-size:25px;line-height:1.25;margin-top:12px!important}
+.reveal .b1{left:0;top:0}.reveal .b2{right:0;top:0}.reveal .b3{left:0;top:285px}.reveal .b4{right:0;top:285px}
+.reveal .note-branch::after{content:"";position:absolute;width:66px;border-top:3px solid #44766b;top:100px}
+.reveal .b1::after{right:-65px;top:150px;transform:rotate(20deg);transform-origin:left}
+.reveal .b2::after{left:-65px;top:150px;transform:rotate(-20deg);transform-origin:right}
+.reveal .b3::after{right:-65px;top:-15px;transform:rotate(-20deg);transform-origin:left}
+.reveal .b4::after{left:-65px;top:-15px;transform:rotate(20deg);transform-origin:right}
+.reveal .notebook-axis{display:grid;grid-template-columns:1fr 70px 1fr;gap:25px;align-items:start;margin:38px 0 0}
+.reveal .notebook-axis>div{border-top:6px solid #44766b;padding-top:20px}
+.reveal .notebook-axis b{font-size:38px}
+.reveal .notebook-axis p{font-size:26px;margin-top:15px!important}
+.reveal .notebook-axis>span{font-size:46px;text-align:center;padding-top:30px}
+.reveal .note-fork{display:grid;grid-template-columns:1fr 1fr;gap:95px;margin-top:35px}
+.reveal .note-fork>div{position:relative;border-top:4px solid #44766b;padding:18px 20px 0}
+.reveal .note-fork>div::before{content:"";position:absolute;left:50%;top:-35px;height:30px;border-left:3px solid #44766b}
+.reveal .note-fork p{font-size:26px;margin-top:14px!important}
+.reveal .slides section#notatka-2>.slide-content{background:#e4efe9}
+.reveal .slides section#sprawdzenie>.slide-content{background:#44766b;display:flex;flex-direction:column;justify-content:center}
+.reveal .slides section#sprawdzenie h2{color:white}
+.reveal .ticket{border:3px solid #214b43;background:#f7faf8;padding:25px 35px;width:100%;box-sizing:border-box}
+.reveal .ticket ol{display:block;margin:20px 0;padding-left:35px}
+.reveal .ticket li{font-size:29px;line-height:1.3;margin:0;padding:20px 0;border-top:2px solid #44766b}
+.reveal .summary{display:block;margin:0;padding:0;list-style:none;counter-reset:sum}
+.reveal .summary li{font-size:29px;line-height:1.28;padding:22px 0 22px 80px;border-top:2px solid #7eaaa0;position:relative;margin:0;counter-increment:sum}
+.reveal .summary li::before{content:counter(sum);position:absolute;left:0;top:18px;font-size:43px;font-weight:700;color:#44766b}
+.reveal .slides section[data-slide-canvas]#przed-referatem .student-task,.reveal .slides section[data-slide-canvas]#sprawdzenie .student-task{display:block;border:0;background:none;box-shadow:none;padding:0;margin:0;color:inherit;font:inherit}
+.reveal .slides section[data-slide-canvas]#sprawdzenie>.slide-content{max-width:none;width:100%;margin:0;border:0;align-content:normal}
+.reveal .slides section[data-slide-canvas]#podsumowanie .summary{display:block;grid-template-columns:none;gap:0}
+.reveal.show-notes .slides{top:14px!important;margin-top:0!important;transform-origin:top center;transform:translateX(-50%) scale(min(calc((75vw - 28px) / 1280px),calc((100vh - 28px) / 720px)))!important}
+@media screen and (max-width:1024px){.reveal.show-notes .slides{transform:translateX(-50%) scale(min(calc((100vw - 28px) / 1280px),calc((70vh - 28px) / 720px)))!important}}
+
+/* Fotografie z epoki: lokalna korekta otwarcia i dwóch objaśnień. */
+.reveal .slides section#otwarcie .opening{border:0;padding:0}
+.reveal .opening-photo-grid{display:grid;grid-template-columns:390px 1fr;gap:34px;align-items:center;margin-top:38px}
+.reveal .slides section#otwarcie h1{font-size:76px;line-height:1.04;margin:0 0 32px}
+.reveal .slides section#otwarcie .opening-line{font-size:27px;line-height:1.35}
+.reveal .slides section#otwarcie .period{position:static;font-size:37px;margin-top:28px}
+.reveal .slides section#otwarcie figure img{height:475px}
+.reveal .slides section#otwarcie figcaption{font-size:22px;color:#fff}
+.reveal .democracy-photo-grid{display:grid;grid-template-columns:1fr 335px;gap:36px}
+.reveal .slides section#demokracja-ludowa .lead{font-size:28px;line-height:1.26;margin-bottom:23px}
+.reveal .slides section#demokracja-ludowa .indexed>div{grid-template-columns:190px 1fr;gap:22px;padding:17px 0}
+.reveal .slides section#demokracja-ludowa .indexed dt{font-size:26px}
+.reveal .slides section#demokracja-ludowa .indexed dd{font-size:25px;line-height:1.25}
+.reveal .slides section#demokracja-ludowa figure img{height:450px}
+.reveal .economy-photo-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:42px;align-items:center}
+.reveal .photo-definitions{margin:0}
+.reveal .photo-definitions>div{border-top:2px solid #7eaaa0;padding:14px 0}
+.reveal .photo-definitions dt{font-size:27px;font-weight:700;margin-bottom:8px}
+.reveal .photo-definitions dd{font-size:25px;line-height:1.25;margin:0}
+.reveal .slides section#gospodarka figure img{height:325px}
+.reveal .slides section#gospodarka .bar{margin-top:17px;font-size:24px;padding-top:14px}
+
+/* Zwięzła synteza dwóch podręczników, bez zmiany wspólnego runtime. */
+.reveal .slides section#rwpg .fork{margin-top:24px;gap:42px}
+.reveal .slides section#rwpg .fork>div{padding-top:18px}
+.reveal .slides section#rwpg .fork p{font-size:25px;line-height:1.27;margin-bottom:20px}
+.reveal .slides section#rwpg .bar{margin-top:18px;font-size:24px}
+.reveal .slides section#odwilz .indexed>div{padding:16px 0}
+.reveal .slides section#odwilz .bar{margin-top:18px;border-color:#a8dbc9}
+.reveal .slides section#odwilz .limit{font-size:30px;margin-top:18px;padding-top:18px;margin-bottom:0}
+
+/* Reuse the existing click-to-load video component. */
+.reveal .slides section#film-socrealizm[data-slide-canvas]>.slide-content{display:block;padding:34px 54px;background:#f7faf8;color:#202c2c}
+.reveal .slides section#film-socrealizm h2{margin-bottom:18px}
+.reveal .slides section#film-socrealizm .film-question{font-size:27px;line-height:1.3;margin-bottom:20px}
+.reveal .slides section#film-socrealizm lesson-video{display:block;position:relative;height:410px;min-height:0;width:100%;background:#214b43;overflow:hidden}
+.reveal .slides section#film-socrealizm .video-fallback{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;box-sizing:border-box;width:100%;height:100%;max-width:none;min-height:0;margin:0;padding:35px;border:0;border-radius:0;font:27px/1.3 "Lesson Work",sans-serif;background:#214b43;color:#fff;cursor:pointer}
+.reveal .slides section#film-socrealizm .film-play{font-size:36px;font-weight:700;text-decoration:underline;text-underline-offset:6px}
+.reveal .slides section#film-socrealizm .video-fallback small{font-size:23px}
+.reveal .slides section#film-socrealizm button:focus-visible{outline:5px solid #a8dbc9;outline-offset:-7px}
+.reveal .slides section#film-socrealizm iframe{display:block;width:100%;height:100%;border:0;margin:0;max-width:none;max-height:none}
+.reveal .slides section#film-socrealizm [hidden]{display:none!important}
+.reveal .slides section#film-socrealizm .film-alternative{font-size:21px;line-height:1.25;margin-top:15px}
+.reveal .slides section#film-socrealizm .film-alternative a{color:#202c2c;text-decoration:underline}

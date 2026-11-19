@@ -1,0 +1,43 @@
+{
+  "id": "13-poczatek-zimnej-wojny",
+  "title": "Początek zimnej wojny",
+  "grade": 8,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa",
+  "duration_minutes": 45,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "presentation_mode": "slides",
+  "goalContract": {
+    "version": "1.0"
+  },
+  "presentationContract": {
+    "version": "1.0"
+  },
+  "status": "PO KOREKCIE NAUCZYCIELA — DO AKCEPTACJI",
+  "curriculum_requirement": "XXXV.2: wyjaśnia przyczyny rozpadu koalicji antyhitlerowskiej oraz opisuje początki zimnej wojny;",
+  "main_question": "Dlaczego zwycięscy sojusznicy stali się rywalami i jak walczyli o wpływy bez bezpośredniej wojny ze sobą?",
+  "source_reviewed": false,
+  "teacher_reviewed": true,
+  "offline_checked": true,
+  "pdf_exported": false,
+  "appearance": {
+    "style": "editorial",
+    "palette": "conflict-map"
+  },
+  "teacher_accepted": false,
+  "publication_approved": true,
+  "revision_scope": "Ograniczona synteza dwóch podręczników: reforma walutowa i most powietrzny, pełny dostarczony fragment art. 5; zachowany wybrany film przed murem, 45 min i 6+3 min pracy ucznia; wysłanie bieżącej wersji do remote zlecone przez nauczycielkę",
+  "slide_count": 31,
+  "selected_video": {
+    "url": "https://www.youtube.com/watch?v=jb5QR2cbdug",
+    "id": "jb5QR2cbdug",
+    "slide_id": "mur-film-wprowadzenie",
+    "duration_seconds": 190,
+    "allocated_minutes": 3.5,
+    "mode": "click_to_load_embed_with_watch_link",
+    "requires_internet": true,
+    "autoplay": false,
+    "full_audio_reviewed": false
+  }
+}
