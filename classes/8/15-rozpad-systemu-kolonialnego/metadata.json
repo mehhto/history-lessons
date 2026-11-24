@@ -1,0 +1,31 @@
+{
+  "id": "15-rozpad-systemu-kolonialnego",
+  "title": "Rozpad systemu kolonialnego",
+  "grade": 8,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa",
+  "duration_minutes": 45,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "presentation_mode": "slides",
+  "goalContract": {
+    "version": "1.0"
+  },
+  "status": "DO PRZEGLĄDU NAUCZYCIELA",
+  "curriculum_requirement": "XXXV.5: opisuje przyczyny i ocenia następstwa procesów dekolonizacyjnych; XXXV.8: omawia przemiany w Chinach po II wojnie światowej; XXXV.6: charakteryzuje konflikty doby zimnej wojny, na dwóch wybranych przykładach (tu: Korea, jeden z dwóch).",
+  "main_question": "Dlaczego po II wojnie światowej rozpadały się imperia kolonialne? Co zmieniała niepodległość?",
+  "source_reviewed": true,
+  "teacher_reviewed": false,
+  "offline_checked": false,
+  "pdf_exported": false,
+  "appearance": {
+    "style": "atlas",
+    "palette": "land-sea"
+  },
+  "presentationContract": {
+    "version": "1.0"
+  },
+  "teacher_accepted": false,
+  "publication_approved": true,
+  "slide_count": 33
+}
