@@ -1,0 +1,31 @@
+{
+  "id": "16-konflikt-na-bliskim-wschodzie",
+  "title": "Konflikt na Bliskim Wschodzie",
+  "grade": 8,
+  "school_year": "2026/2027",
+  "curriculum_version": "stara-przejsciowa",
+  "duration_minutes": 45,
+  "kind": "lesson",
+  "lesson_type": "new-knowledge",
+  "presentation_mode": "slides",
+  "goalContract": {
+    "version": "1.0"
+  },
+  "status": "PUBLICZNA WERSJA — DO PRZEGLĄDU NAUCZYCIELA",
+  "curriculum_requirement": "XXXV.6 — charakteryzuje konflikty doby zimnej wojny na przykładzie konfliktu na Bliskim Wschodzie (drugi przykład po Korei). Iran, Irak i Kuwejt – podręcznikowe rozszerzenie.",
+  "main_question": "Jak spory o terytorium, bezpieczeństwo i surowce prowadziły do różnych wojen i jak próbowano je zakończyć?",
+  "source_reviewed": true,
+  "teacher_reviewed": false,
+  "offline_checked": false,
+  "pdf_exported": false,
+  "appearance": {
+    "style": "atlas",
+    "palette": "encounter-atlas"
+  },
+  "presentationContract": {
+    "version": "1.0"
+  },
+  "teacher_accepted": false,
+  "publication_approved": true,
+  "slide_count": 35
+}
